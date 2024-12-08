@@ -26,9 +26,9 @@ body:
       label: Learning Objectives
       description: https://common.codeyourfuture.io/common-theme/shortcodes/objectives/
       placeholder: |
-      <!--{{<objectives}}--> 
-      - [ ] CYF format, task list formatting
-      <!--{{</objectives}}-->
+        <!--{{<objectives}}--> 
+        - [ ] CYF format, task list formatting
+        <!--{{</objectives}}-->
   - type: textarea
     attributes:
       label: Why are we doing this?
