@@ -25,7 +25,7 @@ body:
     attributes:
       label: Learning Objectives
       description: https://common.codeyourfuture.io/common-theme/shortcodes/objectives/
-      placeholder:  
+      placeholder: |
       <!--{{<objectives}}--> 
       - [ ] CYF format, task list formatting
       <!--{{</objectives}}-->
