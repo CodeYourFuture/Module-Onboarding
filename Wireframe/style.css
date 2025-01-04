@@ -56,7 +56,6 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
   border-top: 2px solid black;
   bottom: 0;
   text-align: center;
