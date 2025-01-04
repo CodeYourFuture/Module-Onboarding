@@ -1,3 +1,17 @@
 :root{
-  
+  --light-green: linear-gradient(rgb(10, 255, 10), white);
+  --container: 1280px;
+}
+body{
+  background-image: var(--light-green);
+}
+main{
+  max-width: var(--container);
+
+}
+header{
+  text-align: center;
+}
+footer{
+  text-align: center;
 }
