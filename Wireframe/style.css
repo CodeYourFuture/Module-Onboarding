@@ -38,6 +38,8 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+  font-weight: bold;
 }
 img,
 svg {
