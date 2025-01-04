@@ -17,10 +17,10 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
+  --paper: linear-gradient(rgb(203, 71, 255), rgba(0, 0, 255, 0.76));
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
+  --space: clamp(6px, 6px + 2vw, 12px);
   --line: 1px solid;
   --container: 1280px;
 }
@@ -40,6 +40,7 @@ a {
   max-width: fit-content;
   text-decoration: none;
   font-weight: bold;
+  color: white;
 }
 img,
 svg {
