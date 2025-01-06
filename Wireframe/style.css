@@ -53,22 +53,40 @@ article {
 }
 
 article a {
-  border: 1px solid black;
-  padding: 8px;
   text-decoration: none;
-  border-radius: 10px;
-  background: linear-gradient(lightblue, white);
-  transition: background-color 0.8s ease;
+  color: black;
 }
 
 article a:hover {
-  transform: scale(1.2);
-  background: black;
   color: white;
 }
 
-article a:active {
-  transform: scale(0.9);
+button {
+  border: none;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, #add8e6, #ffffff);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #333;
+  color: #fff;
+}
+
+button:active {
+  transform: scale(0.95);
+  background: #444;
+  color: #ddd;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 footer {
