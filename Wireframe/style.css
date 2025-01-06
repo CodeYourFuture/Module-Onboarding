@@ -1,33 +1,45 @@
 body {
-  background: white;
-  font-family: Mona sans;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ddd;
 }
 
-.container {
-  width: 95%;
-  margin-left: 30px;
-}
 header {
   text-align: center;
 }
-.articleimg1 {
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+p {
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
+
+.article1-img {
   width: 100%;
   border-radius: 10px;
 }
 
 article:first-child {
   border-radius: 10px;
-  width: 100%;
+  max-width: 1300px;
   padding: 15px;
   margin-bottom: 20px;
-  background-color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 article {
   padding: 15px;
   margin-bottom: 10px;
-  background-color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 15px;
@@ -49,21 +61,12 @@ article {
 
 .card {
   flex: 1 1 300px;
-  max-width: 700px;
+  max-width: 750px;
 }
 
 article a {
-  text-decoration: none;
-  color: black;
-}
-
-article a:hover {
-  color: white;
-}
-
-button {
   border: none;
-  padding: 10px 16px;
+  padding: 16px 22px;
   text-decoration: none;
   border-radius: 12px;
   background: linear-gradient(to bottom, #add8e6, #ffffff);
@@ -72,17 +75,16 @@ button {
   color: #333;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  margin-top: 20px;
+  margin-top: 50px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
+article a:hover {
   transform: scale(1.1);
   background: #333;
   color: #fff;
 }
-
-button:active {
+article a:active {
   transform: scale(0.95);
   background: #444;
   color: #ddd;
