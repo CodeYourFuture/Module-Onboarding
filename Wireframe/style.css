@@ -26,12 +26,17 @@ img,svg {
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  grid-template-columns: 1fr 1fr;
+
 }
 
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  background-color: var(--paper);
+  padding: var(--space);
+  border-top: var(--line);
 }
 
 main {
