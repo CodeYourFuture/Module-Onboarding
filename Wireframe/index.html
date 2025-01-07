@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
   </head>
   <body>
+     <div class="Title">
     <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <h1>GIT</h1>
+      <h3>Introduction of Git  -  System software</h3>
     </header>
+    </div>
+  
+
     <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+      <section class="first">
+      <img class="pic" src="git.png" alt="Git">
+      <h2>Git</h2>
+      <p>Git is a free, open-source version control system (VCS) that <i>helps developers track changes to their code and collaborate on projects</i>. 
+        It's considered the modern standard for software development and is the most widely used VCS in the world.</p>
+      <a href="https://docs.github.com/en/get-started/using-git/about-git">Read More</a>
+      </section>
+    <div class="downside">
+    <section class="bottom">
+      <img class="pic" src="developer.jpeg" alt="Why do developers need Git">
+      <h2>Why do developers need Git?</h2>
+      <p>Git eliminates everything from the time wasted passing commits over a network connection to the man hours required to integrate changes in a centralized version control system. 
+        It even makes better use of junior developers by giving them a safe environment to work in.</p>
+      <a href="https://www.atlassian.com/git/tutorials/why-git#:~:text=Git%20is%20all%20about%20efficiency,safe%20environment%20to%20work%20in.">Read More</a>
+      </section>
+      <section class="bottom">
+      <img class="pic" src="branch.png" alt="What is a branch in Git?">
+      <h2>What is a branch in Git</h2>
+      <p>Git branches are effectively a pointer to a snapshot of your changes. 
+        When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes.</p>
+        <a href="https://www.atlassian.com/git/tutorials/using-branches#:~:text=In%20Git%2C%20branches%20are%20a,branch%20to%20encapsulate%20your%20changes.">Read More</a>
+      </section>
+    </div>
+      </main>
+      <footer>
+        <p class="footer">"git" can mean anything, depending on your mood</p>
+      </footer>
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+</body>
 </html>

@@ -16,17 +16,17 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
-:root {
+/* :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
-}
+} */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-body {
+/* body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
@@ -40,20 +40,18 @@ img,
 svg {
   width: 100%;
   object-fit: cover;
-}
+} */
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-main {
+/* main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
-}
+} */
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -61,20 +59,20 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
+/* main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
     grid-column: span 2;
   }
-}
+} */
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-article {
+/* article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
@@ -86,4 +84,70 @@ article {
   > img {
     grid-column: span 3;
   }
+} */
+
+.Title, footer{
+  text-align: center;
+}
+
+
+.first {
+  background-color: white;
+  width: 60%;
+  border: 15px solid rgb(199, 221, 199);
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+i:first-child {
+  background: rgb(211, 232, 90);
+}
+
+.bottom {
+  background-color: white;
+  width: 35%;
+  border: 15px solid rgb(199, 221, 199);
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+  float: left;
+
+}
+
+.downside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+a {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+body {
+  font-family: "Afacad Flux", sans-serif;
+  background-color: blanchedalmond;
+}
+
+img {
+  width: "30%";
 }
