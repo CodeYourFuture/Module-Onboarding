@@ -18,8 +18,7 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
-img,
-svg {
+img,svg {
   width: 100%;
   object-fit: cover;
 }
@@ -28,6 +27,7 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -41,7 +41,6 @@ main {
   > *:first-child {
     grid-column: span 2;
   }
-}
 
   article {
     border: var(--line);
@@ -59,4 +58,4 @@ main {
   article > img {
     grid-column: span 3;
   }
-}
+
