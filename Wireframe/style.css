@@ -27,8 +27,8 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
+  background: slategray;
+  color: whitesmoke;
   font: var(--font);
 }
 a {
