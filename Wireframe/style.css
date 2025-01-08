@@ -64,7 +64,9 @@ main {
     grid-column: span 3;
   }
   section{
-  		text-align: center;
-        background-color: brown;
-      {
+  	text-align: center;
+    padding: 60px;
+    font-size: 30px;
+    background: #1abc9c;
+  {
   
