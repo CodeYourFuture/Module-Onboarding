@@ -34,9 +34,7 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  background-color: var(--paper);
-  padding: var(--space);
-  border-top: var(--line);
+
 }
 
 main {
