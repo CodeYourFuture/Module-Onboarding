@@ -93,3 +93,7 @@ article {
     grid-column: span 3;
   }
 }
+header{
+  text-align: center;
+  background-color: silver;
+}
