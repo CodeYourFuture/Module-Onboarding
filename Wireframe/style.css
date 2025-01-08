@@ -63,4 +63,8 @@ main {
   article > img {
     grid-column: span 3;
   }
-
+  section{
+  		text-align: center;
+        background-color: brown;
+      {
+  
