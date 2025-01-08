@@ -30,6 +30,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  background-color:azure;
 }
 a {
   padding: var(--space);
@@ -97,3 +98,4 @@ header{
   text-align: center;
   background-color: silver;
 }
+
