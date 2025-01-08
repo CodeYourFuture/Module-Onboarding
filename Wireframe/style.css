@@ -12,7 +12,6 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-   background-color: grey;
 }
 a {
   padding: var(--space);
