@@ -37,7 +37,6 @@ footer {
   background-color: var(--paper);
   padding: var(--space);
   border-top: var(--line);
-  width: 100%;
 }
 
 main {
