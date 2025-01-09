@@ -7,3 +7,8 @@ body{
 header{
   text-align: center;
 }
+main{
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
