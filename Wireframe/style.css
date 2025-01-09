@@ -57,6 +57,10 @@ footer {
   background-color: whitesmoke;
   width: 100%;
 }
+
+header {
+  text-align: center;
+}
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
