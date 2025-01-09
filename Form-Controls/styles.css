@@ -1,0 +1,92 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Ensure the body and html cover the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0056b3; /* Slightly darker blue for better contrast */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+main {
+    flex: 1; 
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #888888; /* Darker gray for better contrast */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #0056b3; /* Matches the updated header blue */
+}
+
+button {
+    background-color: #0056b3; /* Consistent blue */
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003d80; /* Slightly darker for hover state */
+}
+
+/* Styling for Hint Text Under Inputs */
+.hint {
+    font-size: 0.9em;
+    color: #666666; /* Neutral gray for clarity */
+    margin-top: -8px; /* Align closer to the input field */
+    margin-bottom: 15px; /* Spacing below the hint */
+    line-height: 1.4;
+    padding-left: 10px; /* Add slight indentation */
+    }
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0; /* Reduced padding for a slimmer footer */
+    background: #222222; /* Darker gray for better contrast */
+    color: #ffffff;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
