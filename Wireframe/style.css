@@ -52,3 +52,10 @@ border-radius: 5px;
 nav a:hover{
   background: #BCCCDC;
 }
+footer{
+  text-align: center;
+  padding: 10px;
+  background: #EEEEEE;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
