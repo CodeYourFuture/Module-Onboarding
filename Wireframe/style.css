@@ -19,3 +19,9 @@ article img{
 article img:hover{
   opacity: 0.8;
 }
+article{
+  border: 1px solid #ddd;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff; ;
+}
