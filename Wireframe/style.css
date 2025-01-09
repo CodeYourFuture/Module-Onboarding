@@ -91,7 +91,7 @@ article {
   }
   .first {
     width: 50%;
-    display: flexbox;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
