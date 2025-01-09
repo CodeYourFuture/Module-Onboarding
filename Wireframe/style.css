@@ -86,6 +86,10 @@ article {
   }
   > img {
     grid-column: span 3;
+    width: 100%;
+    size: 150px;
+  }
+  #first {
     width: 50%;
   }
 }
