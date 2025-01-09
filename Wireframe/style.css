@@ -12,3 +12,7 @@ main{
   max-width: 1200px;
   margin: auto;
 }
+article img{
+  max-width: 100%;
+  height: auto;
+}
