@@ -3,6 +3,7 @@ body{
   margin:0;
   padding:0;
   line-height: 1.6;
+  background: #F5F5F5;
 }
 header{
   text-align: center;
@@ -23,7 +24,7 @@ article{
   border: 1px solid #ddd;
   padding: 30px;
   margin-bottom: 20px;
-  background: #fff; ;
+  background: #fefefe; ;
 }
 .flex-container{
   display:flex;
@@ -44,7 +45,7 @@ p{
 nav a{
 display: inline-block;
 padding: 10px 15px;
-background:#9AA6B2 ;
+background:#007BFF ;
 color: white;
 text-decoration: none;
 border-radius: 5px;
