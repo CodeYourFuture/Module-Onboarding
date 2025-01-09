@@ -25,3 +25,10 @@ article{
   margin-bottom: 20px;
   background: #fff; ;
 }
+.flex-container{
+  display:flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+}
