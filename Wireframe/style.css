@@ -36,11 +36,7 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -85,6 +81,6 @@ article {
   }
   > img {
     grid-column: span 3;
-    size: 150px;
+    width: 100%;
   }
 }
