@@ -26,6 +26,10 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+header {
+  text-align: center;
+  width: 100%;
+} 
 body {
   background: var(--paper);
   color: var(--ink);
@@ -81,6 +85,6 @@ article {
   }
   > img {
     grid-column: span 3;
-    width: 100%;
+    width: 50%;
   }
 }
