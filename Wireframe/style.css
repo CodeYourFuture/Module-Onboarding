@@ -89,7 +89,8 @@ article {
     width: 100%;
     size: 150px;
   }
-  #first {
+  .first {
     width: 50%;
+    display: flex;
   }
 }
