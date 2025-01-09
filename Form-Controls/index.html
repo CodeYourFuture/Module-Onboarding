@@ -15,13 +15,31 @@
     <main>
       <form id="tshirtForm">
         <label for="name">Customer Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" pattern="[A-Za-z\s]{2,}" title=" at least 2 letters." required>
-        <p>Name must contain only letters and be at least 2 characters long.</p>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" pattern="[A-Za-z\s]{2,15}" title="At least 2 to 15 letters." required>
+        <p>Name must contain only letters and be at least 2 to 15 letters long.</p>
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" title="Please enter a valid email address." required>
+        <p>Please use your registered Email</p>
+        
+        <label for="color">T-Shirt Colour</label>
+        <select id="color" name="color" required>
+          <option value="disabled selected">Choose a colour</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+        
+        
+        
+        
+       
+
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      
+      <h2>By Sheetal Kharab</h2>
     </footer>
   </body>
 </html>
