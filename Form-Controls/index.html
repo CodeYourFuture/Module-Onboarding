@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>T-Shirt Order Form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your T-Shirt</h1>
+        <p>Complete the form below to customize your t-shirt order.</p>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form id="tshirtForm">
+        <label for="name">Customer Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" pattern="[A-Za-z\s]{2,}" title=" at least 2 letters." required>
+        <p>Name must contain only letters and be at least 2 characters long.</p>
       </form>
     </main>
     <footer>
