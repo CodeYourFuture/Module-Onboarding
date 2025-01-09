@@ -3,5 +3,3 @@ A git branch is a separate version of a project and it allows changes to be made
 2. Parallel development-developers can code and sugggest changes simultaneously.
 3. Merging-with the main brach or other branch
 
-Summary 
-A Git branch is a separate version of a project that allows developers to work on a code independently from the main repository. Changes suggested and made are merged with the main repository after developers have agreed to do so.

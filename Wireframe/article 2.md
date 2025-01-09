@@ -5,5 +5,3 @@ A wireframe is a sketch of a website or an application. The purpose of a wirefra
 4. Improving efficiency-helps to avoid major changes as the project is developed 
 5. Focusing on functionality- helps to have a user friendly design 
 
-Summary 
-A wireframe is a simple visual layout that outlines the structure and fuctionality of a website or app. It is used by developers before starting the project design and development stage. Wireframes can be seen as addressing fuctionallity rather than design details.

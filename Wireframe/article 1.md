@@ -9,5 +9,3 @@ A README file is a text file that provides information about a project.It is one
 8. Contact information
 9. Acknowledgements
 
-Article summary 
-A README file is a document that gives information of a project. The iformation includes how to use and install the project
