@@ -14,7 +14,7 @@ main{
 }
 article img{
   max-width: 100%;
-  height: auto;
+  height: 600px;
 }
 article img:hover{
   opacity: 0.8;
