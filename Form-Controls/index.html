@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>T-Shirt Order Form</title>
+    <link rel="stylesheet" href="styles.css">
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -15,30 +16,35 @@
     <main>
       <form id="tshirtForm">
         <label for="name">Customer Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" pattern="[A-Za-z\s]{2,15}" title="At least 2 to 15 letters." required>
-        <p>Name must contain only letters and be at least 2 to 15 letters long.</p>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" pattern="[A-Za-z\s]{2,15}" title="At least 2 to 15 letters." required/>
+        <p id="nameHint">Name must contain only letters and be at least 2 to 15 letters long.</p>
         
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" title="Please enter a valid email address." required>
-        <p>Please use your registered Email</p>
+        <input type="email" id="email" name="email" placeholder="Enter your email" title="Please enter a valid email address." required/>
+        <p id="emailHint">Please use your registered Email.</p>
         
         <label for="color">T-Shirt Colour</label>
         <select id="color" name="color" required>
-          <option value="disabled selected">Choose a colour</option>
+          <option value=""disabled selected>Choose a colour</option>
           <option value="red">Red</option>
           <option value="blue">Blue</option>
           <option value="green">Green</option>
         </select>
-        
-        
-        
-        
-       
 
+        <label for="size">T-Shirt Size</label>
+        <select id="size" name="size" required>
+          <option value="" disabled selected>Choose a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+        <button type="submit">Submit Order</button>
       </form>
     </main>
     <footer>
-      
       <h2>By Sheetal Kharab</h2>
     </footer>
   </body>
