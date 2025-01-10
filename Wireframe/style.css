@@ -17,12 +17,13 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+  --paper: #f9f9f9; /* Light background color */
+  --ink: #333; /* Dark text color */
+  --font: 100%/1.6 system-ui, sans-serif; /* System font for readability */
+  --space: 16px; /* Standard space for margins and paddings */
+  --line: 1px solid #ddd; /* Light border color */
+  --container: 1280px; /* Max-width of the content area */
+  --primary-color: #4CAF50; /* Primary color for links, buttons */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -30,12 +31,18 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  margin: 0;
+  padding: 0;
 }
+
+
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+  text-decoration: none;
+  color: var(--primary-color); /* Primary color for links */
+  padding: 5px;
+  border-radius: 3px;
 }
+
 img,
 svg {
   width: 100%;
@@ -45,15 +52,7 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -74,16 +73,77 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  margin-bottom: var(--space);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
 article {
   border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  border-radius: 8px;
+  padding: var(--space);
+  background-color: white;
+  margin-bottom: var(--space);
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+article:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+  border-radius: 8px;
+  margin-bottom: var(--space);
+}
+
+article h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+article p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 var(--space) 0;
+}
+
+article a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+}
+
+article a:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333; /* Dark background */
+  color: white; /* White text */
+  padding: 20px 0; /* Vertical padding */
+  text-align: center; /* Center the text */
+  font-size: 14px; /* Smaller font size */
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  margin-top: 40px; /* Space before the footer */
+  border-top: 1px solid #444; /* Light top border */
+}
+
