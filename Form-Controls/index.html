@@ -12,16 +12,22 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <form action="/submit-form" method="post">
+        <div>
+          <label>Customer Name:</label>
+          <input type="text" name="customer name">
+        </div>
+        <div>
+        <label for="customer-email">Customer Email:</label>
+      <input type="text" id="customer-email" name="customer-email" placeholder="Enter your email" required
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+        title="Please enter a valid email address (e.g., name@example.com)" />
+        </div>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Amirhossein Aminian</h2>
     </footer>
   </body>
 </html>
