@@ -24,16 +24,24 @@
         <label for="lname"> Last Name: </label>
         <input type="text" id="lname" name="lname" minlength="2"/><br><br>
         <!--What is the customer's email?-->
-        <label for="email">Please enter your email.</label>
-        <input type="email" id="email" name="email" required/>
+        <label for="email">Enter your email: </label>
+        <input type="email" id="email" name="email" required/><br><br>
 
         <!--What colour should this t-shirt be? I must give 3 options. 
         How will I make sure they don't pick other colours? -->
-
+        
+        <label for="colours" >T-shirt colours: </label>
+        <select id="colours" name="colours">
+          <option disabled selected value=""> -- select a colour -- </option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+        </select><br>
+        
         <!--What size does the customer want? I must give the 
         following 6 options: XS, S, M, L, XL, XXL-->
 
-        <input type="submit" value="Submit"/>
+        <br><input type="submit" value="Submit"/>
       </form>
     </main>
     <footer>
