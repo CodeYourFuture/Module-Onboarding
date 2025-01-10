@@ -13,10 +13,29 @@
     </header>
     <main>
       <form>
-        <p>Full Name: <input type="text" required></p>
-        <p>Your Email Address: <input type="text" required></p>
-        <p>T-Shirt Colour: <input type="text" required></p>
-        <p>T-Shirt Size: <input type="text" required></p>
+        <p>Full Name: <input type="text" required pattern="[A-Za-z]{3,}"></p>
+        <p>Your Email Address: <input type="text" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"></p>
+        <p><label for="colour">T-Shirt Colour:</label>
+          <select id="colour" name="colour" required >
+            <option selected="selected" disabled="disabled">Please choose your colour</option>
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="black">Black</option>
+          </select>
+        </p>
+        <p>  
+        <label for="size">T-Shirt Size: </plabel>
+          <select id="size" name="size" required>
+            <option selected="selected" disabled="disabled">Please choose your size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </p>
+        <button>Sumbit</button>
         
         <!-- write your html here-->
         <!-- 
