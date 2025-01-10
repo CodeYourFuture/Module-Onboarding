@@ -1,0 +1,35 @@
+
+header {
+text-align: center;
+}
+
+p {
+  font-weight: bold;
+}
+
+li:first-child {
+  border: 2px solid orange;
+}
+  
+  p {
+  font-weight: bold;
+}
+  
+ footer {
+color: yellow;
+text-align: center;
+}
+
+ ul * {
+color: black;
+bakcground-color: black;
+  }
+  
+  body {
+bakcground-color: grey;
+  }
+  
+  div {
+color: blue;
+  }
+  
