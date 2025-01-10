@@ -43,6 +43,11 @@ article {
   justify-content: center;
 }
 
+.flex-container img{
+  width: 600px;
+  height: 400px;
+}
+
 .flex-container article {
   flex: 1;
   max-width: 45%;
