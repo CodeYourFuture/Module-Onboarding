@@ -1,73 +1,53 @@
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+.container {
+  display: flex;
+  justify-content: space-around;
 }
-header {
-  text-align: center;
+
+.container > div {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  font-size: 15px;
   width: 100%;
-} 
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
-}
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+  text-align: left;
+  border: solid 1px black;
 }
 .email {
-  padding: 15px 43%;
+padding: 15px 43%;
+border: solid 1px black;
 }
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
+header {
+text-align: center;
+width: 100%;
+} 
 footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
+position: fixed;
+bottom: 0;
+text-align: center;
+width: 100%;
+}
+a {
+padding: var(--space);
+border: var(--line);
+max-width: fit-content;
+}
+:root {
+--paper: oklch(7 0 0);
+--ink: color-mix(in oklab, var(--color) 5%, black);
+--font: 100%/1.5 system-ui;
+--space: clamp(6px, 6px + 2vw, 15px);
+--line: 1px solid;
+--container: 1280px;
+}
+body {
+background: var(--paper);
+color: var(--ink);
+font: var(--font);
 }
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+max-width: var(--container);
+margin: 0 auto calc(var(--space) * 4) auto;
 }
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-    width: 100%;
-    size: 150px;
-  }
-  
-  .container {
-    display: flex;
-    background-color: purple;
-    justify-content: space-around;
-  }
-  
-  .container > div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-    width: 40%;
-    text-align: center;
-  }
+.start {
+border: var(--line);
 }
