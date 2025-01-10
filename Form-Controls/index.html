@@ -1,65 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My form exercise</title>
   </head>
   <body>
+    <form>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Product Pick</h1>      
     </header>
     <main>
-      <form>
         <div>
-        <label for="name">Name</label>
-        <input type="text" required>
+        <label for="name" aria-label="label">Name: 
+         <input type="text" role="textbox" > 
+        </label>
       </div>
       <div>
-        <label for="email">Email</label>
-        <input type="email" required>
+        <label for="email" aria-label="label">Email: 
+         <input type="email" role="text"> 
+        </label>
       </div>
       <div>
-        <label for="shirtColor">Shirt color</label>
-      <select name="shirtColor" id="shirtColor" required>
-        <option value="Green" value="Green">Green</option>
-        <option label="Red" value="Red">Red</option>
-        <option label="Blue" value="Blue">Blue</option>
+      <label for="shirtColor" aria-label="label">Shirt color: 
+      <select name="shirtColor" role="listbox" id="shirtColorList" style="font-size:24px" required> 
+       <option value="green"> Green </option>
+        <option value="red"> Red </option>
+        <option value="blue"> Blue </option>
       </select>
+    </label>
       </div>
       <div>
-       <label for="shirtSize" id="shirtSize"> Shirt size</label>
-        <div>
-          <label for="extraSmall">XS</label>
-          <input type="radio" name="shirtSize" id="extraSmall" checked>
-        </div>
-        <div>
-          <label for="small">S</label>
-          <input type="radio" name="shirtSize" id="small">
-        </div>
-        <div>
-          <label for="medium">M</label>
-          <input type="radio" name="shirtSize" id="medium">
-        </div>
-        <div>
-          <label for="large">L</label>
-          <input type="radio" name="shirtSize" id="large">
-        </div>
-        <div>
-          <label for="extraLarge">XL</label>
-      <input type="radio" name="shirtSize" id="extraLarge">
-        </div>
-        <div>
-          <label for="extraExtraLarge">XXL</label>
-      <input type="radio" name="shirtSize" id="extraExtraLarge">
-        </div>
+        <label for="shirtSize" aria-label="label">Shirt size: 
+        <select name="shirtSize" role="listbox" id="shirtSizeList" style="font-size: 24px" required>
+        <option value="xs"> XS </option>
+        <option value="s"> S </option>
+        <option value="m"> M </option>
+        <option value="l"> L </option>
+        <option value="xl"> XL </option>
+        <option value="xxl"> XXL </option>
+        </select>
+      </label>
       </div>
-      </form>
     </main>
     <footer>
       <h2>Aden Jones</h2>
     </footer>
+  </form>
   </body>
 </html>
