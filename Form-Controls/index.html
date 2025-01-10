@@ -17,11 +17,23 @@
           <label>Customer Name:</label>
           <input type="text" name="customer name">
         </div>
+        <br><br>
         <div>
         <label for="customer-email">Customer Email:</label>
       <input type="text" id="customer-email" name="customer-email" placeholder="Enter your email" required
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         title="Please enter a valid email address (e.g., name@example.com)" />
+        </div>
+        <br><br>
+        <div>
+          <label for="tshirt-color">What colour should this t-shirt be?</label>
+          <select id="tshirt-color" name="tshirt-color" required>
+            <option value="">--Please choose a color--</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+          <br><br>
         </div>
       </form>
     </main>
