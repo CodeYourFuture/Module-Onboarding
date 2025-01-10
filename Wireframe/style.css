@@ -8,7 +8,7 @@
   margin: 20px;
   padding: 20px;
   font-size: 15px;
-  width: 50%;
+  width: 40%;
   text-align: left;
   border: solid 1px black;
 }
@@ -50,4 +50,9 @@ margin: 0 auto calc(var(--space) * 4) auto;
 }
 .start {
 border: var(--line);
+}
+ img {
+  grid-column: span 3;
+  width: 100%;
+  size: 150px;
 }
