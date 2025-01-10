@@ -13,8 +13,8 @@
     </header>
     <main>
       <form>
-       <p> <span style="color:red">*</span> <span>Name: <input type="text" required pattern="[A-Za-z]{3,}"></span></p>
-        <span style="color:red">*</span>Your Email Address: <input type="text" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"></span>
+       <p> <span style="color:red">*</span><span>Name: <input type="text" id="FullName" name="FullName" required pattern="[A-Za-z]{3,}"></span></p>
+        <span style="color:red">*</span>Your Email Address: <input type="text" id="EmailAddress" name="EmailAddress" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"></span>
         <p><span style="color:red">*</span><label for="colour">T-Shirt Colour:</label>
           <select id="colour" name="colour" required >
             <option selected="selected" disabled="disabled">Please choose your colour</option>
@@ -23,8 +23,7 @@
               <option value="black">Black</option>
           </select>
         </span></p>
-        <p><span style="color:red">*</span>
-        <label for="size">T-Shirt Size: </plabel>
+        <p><span style="color:red">*</span><label for="size">T-Shirt Size: </plabel>
           <select id="size" name="size" required>
             <option selected="selected" disabled="disabled">Please choose your size</option>
             <option value="XS">XS</option>
