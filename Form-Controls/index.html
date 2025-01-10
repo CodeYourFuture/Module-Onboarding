@@ -16,6 +16,27 @@
     <main>
       <form>
         <!-- Requirements for e-commerce t-shirts: (addresses and charging details owned) confirm identity (name validation) - confirm email (consistent pattern and valid) - confirm colour (3 options) - confirm size (XS, S, M, L, XL, XXL) required fields, no form action-->
+        <p>
+          <label for="fname">
+            <span>First Name:
+            </span>
+            <strong>
+              <span aria-label="required">*</span></strong>
+          </label>
+          <input type="text" id="fname" name="fname" required="required" minlength="2" maxlength="50" pattern="^[a-zA-Z\s\-]+$" placeholder="Enter your first name">
+        </p>
+
+        <p>
+          <label for="lname">
+            <span>Last name:
+            </span>
+            <strong>
+              <span aria-label="required">*</span></strong>
+          </label>
+          <input type="text" id="lname" name="lname" required="required" minlength="2" maxlength="50" pattern="^[a-zA-Z\s\-]+$" placeholder="Enter your last name">
+        </p>
+
+        <input type="submit" value="Submit">
 
       </form>
     </main>
