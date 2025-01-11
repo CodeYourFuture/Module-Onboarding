@@ -87,3 +87,19 @@ article {
     grid-column: span 3;
   }
 }
+.side-images{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  
+}
+.side-images .bottom-side1{
+
+  flex-grow: 1;
+}
+.side-images .bottom-side2{
+
+  flex-grow: 1;
+}
+
