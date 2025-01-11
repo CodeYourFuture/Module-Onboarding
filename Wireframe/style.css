@@ -64,6 +64,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
+  margin: auto;
+  max-width: 800px;
   > *:first-child {
     grid-column: span 2;
   }
@@ -89,10 +91,7 @@ header h1 {
 header p {
   font-size: 1.1rem;
 }
-main{
-  margin: auto;
-  max-width: 800px;
-}
+
 article {
   border: var(--line);
   border-radius: 8px;
