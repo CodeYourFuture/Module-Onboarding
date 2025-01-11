@@ -22,7 +22,7 @@ As well as useful links to learn more */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
-  --container: 1280px;
+  --container: 1200px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -31,6 +31,14 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
+header {
+
+  text-align: center;
+
+}
+
+
 a {
   padding: var(--space);
   border: var(--line);
@@ -50,10 +58,19 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   text-align: center;
+  border: var(--line);
 }
+
+footer a{
+  max-width: fit-content; 
+  border:none;
+  
+
+} 
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
