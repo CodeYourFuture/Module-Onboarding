@@ -91,15 +91,15 @@ article {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   
 }
-.side-images .bottom-side1{
-
-  flex-grow: 1;
-}
-.side-images .bottom-side2{
-
-  flex-grow: 1;
+.side-images .bottom-side{
+  max-width: 50%;
+  
 }
 
+
+.paraBold{
+  font-weight: bold;
+}
