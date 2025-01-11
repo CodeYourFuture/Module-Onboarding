@@ -89,7 +89,10 @@ header h1 {
 header p {
   font-size: 1.1rem;
 }
-
+main{
+  margin: auto;
+  max-width: 800px;
+}
 article {
   border: var(--line);
   border-radius: 8px;
@@ -98,7 +101,10 @@ article {
   margin-bottom: var(--space);
   transition: box-shadow 0.3s ease-in-out;
 }
-
+.mini-articles{
+  display: flex;
+  gap: 10PX;
+}
 article:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
