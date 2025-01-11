@@ -15,7 +15,7 @@ As well as useful links to learn more */
  For you to explore and play with if you are interested
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
+====== Design Palette ====== 
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -25,65 +25,89 @@ As well as useful links to learn more */
   --container: 1280px;
 }
 /* ====== Base Elements ======
- General rules for basic HTML elements in any context */
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
-}
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
+ General rules for basic HTML elements in any context *
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
-/* ====== Articles Grid Layout ====
+
+====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
 Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+  flex: 1;
+  padding: 1rem;
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+
+article h2 {
+  margin-top: 0;
+}
+
+article a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  border: 5px solid #cccccc;
+  padding: 5rem;
+  border-radius: 50px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
 }
+article img {
+  width: 500px; 
+  height:auto; 
+  object-fit: 5; 
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
