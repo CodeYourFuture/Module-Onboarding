@@ -92,6 +92,7 @@ article {
   justify-content: space-evenly;
   align-items: center;
   gap: 5px;
+  margin-top: -40px;
   
 }
 .side-images .bottom-side{
@@ -102,4 +103,17 @@ article {
 
 .paraBold{
   font-weight: bold;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  max-height: 50px;
+  margin-top: 20px;
+}
+footer p {
+  padding-top: 20px;
 }
