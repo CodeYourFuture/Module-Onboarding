@@ -1,27 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-Shirt Order Form</title>
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your T-Shirt</h1>
+      <p>Fill out the form below to select your T-shirt preferences.</p>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Customer Name -->
+        <div>
+          <label for="customer-name">Name:</label>
+          <input
+            type="text"
+            id="customer-name"
+            name="customer-name"
+            minlength="2"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <!-- Customer Email -->
+        <div>
+          <label for="customer-email">Email:</label>
+          <input
+            type="email"
+            id="customer-email"
+            name="customer-email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+
+        <!-- T-Shirt Colour -->
+        <fieldset>
+          <legend>Choose a T-Shirt Colour:</legend>
+          <div>
+            <input
+              type="radio"
+              id="color-red"
+              name="tshirt-color"
+              value="Red"
+              required
+            />
+            <label for="color-red">Red</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="color-blue"
+              name="tshirt-color"
+              value="Blue"
+              required
+            />
+            <label for="color-blue">Blue</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="color-green"
+              name="tshirt-color"
+              value="Green"
+              required
+            />
+            <label for="color-green">Green</label>
+          </div>
+        </fieldset>
+
+        <!-- T-Shirt Size -->
+        <fieldset>
+          <legend>Choose a T-Shirt Size:</legend>
+          <div>
+            <input
+              type="radio"
+              id="size-xs"
+              name="tshirt-size"
+              value="XS"
+              required
+            />
+            <label for="size-xs">XS</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="size-s"
+              name="tshirt-size"
+              value="S"
+              required
+            />
+            <label for="size-s">S</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="size-m"
+              name="tshirt-size"
+              value="M"
+              required
+            />
+            <label for="size-m">M</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="size-l"
+              name="tshirt-size"
+              value="L"
+              required
+            />
+            <label for="size-l">L</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="size-xl"
+              name="tshirt-size"
+              value="XL"
+              required
+            />
+            <label for="size-xl">XL</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="size-xxl"
+              name="tshirt-size"
+              value="XXL"
+              required
+            />
+            <label for="size-xxl">XXL</label>
+          </div>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <div>
+          <button type="submit">Submit Order</button>
+        </div>
       </form>
     </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
   </body>
 </html>
