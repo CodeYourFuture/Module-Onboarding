@@ -1,0 +1,1 @@
+This section gives detail information or instructions about the project to other developers.
