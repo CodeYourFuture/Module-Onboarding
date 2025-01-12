@@ -36,10 +36,11 @@ p {
 .btn {
   display: inline-block;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #00509d;
   border: none;
   text-align: center;
   font-size: 20px;
+  font-weight: 600;
   padding: 10px;
   margin-right: 690px;
 }
@@ -81,11 +82,12 @@ h3 {
 .btn-2 {
   display: inline-block;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #00509d;
   border: none;
   color: #ffffff;
   text-align: center;
   font-size: 28px;
+  font-weight: 600;
   padding: 10px;
   cursor: pointer;
 }
@@ -105,7 +107,7 @@ h3 {
   display: flex;
   justify-content: center;
   font-style: italic;
-  background: #f4511e;
+  background: #00509d;
   color: white;
 }
 /* Responsive Styles */
