@@ -6,7 +6,7 @@ body {
   color: #333;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh; /* Ensures the body takes up at least 100vh */
 }
 
 header {
@@ -26,12 +26,12 @@ header p {
 
 main {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;  /* Allows articles to fit their content and wrap naturally */
   gap: 20px;
   width: 90%;
   max-width: 1200px;
   margin: 20px auto;
-  flex-grow: 1; 
+  flex-grow: 1; /* Allows main content to take up remaining space */
 }
 
 .article-1 {
@@ -44,12 +44,12 @@ main {
 
 .article-2,
 .article-3 {
-  flex: 1 1 45%; 
+  flex: 1 1 45%;  /* Ensures these articles take up 45% of the space and grow if needed */
   background: #fff;
   padding: 20px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; 
+  margin-bottom: 20px; /* Ensure there's space below each article */
 }
 
 #img1{
@@ -104,4 +104,7 @@ footer {
   bottom: 0;
   width: 100%;
   left: 0;
+}
+#pr{
+  color: white;
 }
