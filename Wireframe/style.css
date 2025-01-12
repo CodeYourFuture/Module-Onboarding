@@ -40,6 +40,9 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  background-color: blanchedalmond;
+ 
+  
 }
 img,
 svg {
