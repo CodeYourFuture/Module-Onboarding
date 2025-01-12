@@ -1,38 +1,20 @@
-# Wireframe
+# Module Onboarding - Sprint 1: Wireframe to Web Code
 
-![Wireframe](./wireframe.png)
+## Project Overview
 
-Using the provided wireframe and resources, write a new webpage explaining:
+This project involves converting a given wireframe into a functional webpage. The objective is to take a visual wireframe and transform it into a webpage with the corresponding HTML structure and content.
 
-1. What is the purpose of a README file?
-1. What is the purpose of a wireframe?
-1. What is a branch in Git?
+### Author:
+Sam
 
-There are some provided HTML and CSS files you can use to get started. You can use these files as a starting point or create your own files from scratch. You _must_ modify the HTML and CSS files to meet the acceptance criteria and you must check this criteria yourself before you submit your work.
+---
 
-## Learning Objectives
+## Structure
 
-<!--{{<objectives>}}>-->
+The project consists of a basic HTML page with content on wireframes, README files, and Git branches. It includes three main articles and some embedded images.
 
-- [ ] Use semantic HTML tags to structure the webpage
-- [ ] Create three articles, each including a title, summary, and a link
-- [ ] Check a webpage against a wireframe layout
-- [ ] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
-- [ ] Use version control by committing often and pushing regularly to GitHub
-<!--{{</objectives>}}>-->
+### Key Features:
+- **Wireframe Explanation:** The first article explains the purpose of a wireframe and how it helps in product design.
+- **README File Explanation:** The second article explains what a README file is, its key elements, and the importance of including one in every project.
+- **Git Branch Explanation:** The third article describes what a Git branch is and why it’s important for version control and collaboration in software development.
 
-## Acceptance Criteria
-
-- [ ] Semantic HTML tags are used to structure the webpage.
-- [ ] The page scores 100 for Accessibility in the Lighthouse audit.
-- [ ] The page header includes a title and description.
-- [ ] The articles section has three unique articles, each including a title, summary, and a link.
-- [ ] The page footer is fixed to the bottom of the viewport.
-- [ ] The webpage is styled using a linked .css file.
-- [ ] The webpage is properly committed and pushed to a branch on GitHub.
-
-## Resources
-
-- [Wireframe](https://www.productplan.com/glossary/wireframe/)
-- [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
-- [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
