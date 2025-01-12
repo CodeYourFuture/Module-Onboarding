@@ -85,19 +85,19 @@ article a {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 12px;
-  background-color: #007BFF;
+  background-color: #0277C8;
   color: white;
   text-decoration: none;
   border-radius: 5px;
 }
 
 article a:hover {
-  background-color: #0056b3;
+  background-color: #0277C8;
 }
 
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 2px;
   background-color: #333;
   color: white;
   position: fixed;
