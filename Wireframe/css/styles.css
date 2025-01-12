@@ -150,4 +150,46 @@ h3 {
     text-align: center;
     margin-right: 10px;
   }
+  /* Section Responsive */
+  #git-section {
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  #git-section .why-git {
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  #git-section .img-section {
+    width: 100%;
+    margin-right: 80px;
+  }
+  .branch-float {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  #git-section .blanch-float h3 {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  #git-section .blanch-float p {
+    margin-right: 10px;
+    width: 100%;
+  }
+  #git-section .why-git-2 {
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .footer {
+    float: none;
+    text-align: center;
+    margin-left: 60px;
+  }
 }
