@@ -83,3 +83,7 @@ button {
 button:hover {
   background-color: #646892;
 }
+/* footer */
+h2 {
+  text-align: center;
+}
