@@ -24,8 +24,8 @@ header {
 a {
   padding: var(--space);
   border: var(--line);
-  max-width: 80px;
-  height: 25px;
+  max-width: 5em;
+  height: 1.5em;
 }
 
 .img-box {
