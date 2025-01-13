@@ -25,19 +25,18 @@ body {
   line-height: 1.6;
 }
 
-html, body {
-  min-height: 100%; /* Ensures the body takes at least the full height of the viewport */
+header,
+main {
+  padding: 20px;
 }
 
 header {
   background: #222; /* Darker background for better contrast */
   color: #f8f9fa; /* Slightly lighter text */
-  padding: 20px;
   text-align: center;
 }
 
 main {
-  padding: 20px;
   padding-bottom: 10px; /* Added padding at the bottom to avoid content behind footer */
 }
 
@@ -58,7 +57,8 @@ article a {
   text-decoration: none;
 }
 
-article a:hover {
+article a:hover,    
+article a:focus {
   text-decoration: underline; /* Provide a visual cue on hover */
 }
 
@@ -92,12 +92,12 @@ article a:hover {
   border: none; /* Remove border */
   border-radius: 5px; /* Rounded corners */
   text-decoration: none; /* Remove underline */
-  text-align: center; /* Center the text */
+  text-align: center; 
   cursor: pointer; /* Pointer cursor for clickable effect */
   transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-.button:hover {
+.button:hover  {
   background-color: #003d80; /* Even darker blue on hover */
 }
 
