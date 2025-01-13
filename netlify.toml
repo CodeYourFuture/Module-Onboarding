@@ -2,7 +2,7 @@
   package = "@netlify/plugin-lighthouse"
 
   [plugins.inputs]
-    fail_deploy_on_score_thresholds = true
+    fail_deploy = true
 
   [plugins.inputs.thresholds]
     accessibility = 1.0
