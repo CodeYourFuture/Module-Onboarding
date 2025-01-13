@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+h1 {
+  margin-top: 20px;
+  margin-bottom: 1px;
+  font-weight: bold;
+  font-size: 30px;
+}
+form {
+  display: block;
+  flex-direction: column;
+  width: 600px;
+  background: #f2f2f2;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 20px auto 40px auto;
+}
+.label-name {
+  border-radius: 5px;
+  padding: 18px 20px;
+  margin: 8px 0;
+  background: #f2f2f2;
+}
+input[type="text"],
+input[type="date"],
+select {
+  width: 92%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+/* Email */
+.label-email {
+  padding: 18px 20px;
+  margin: 8px 0;
+  background: #f2f2f2;
+}
+/* T-shirt size */
+.tshirt {
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+}
+#size {
+  display: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700px;
+  margin-left: 25px;
+}
+/* T-shirt color */
+.radio {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}

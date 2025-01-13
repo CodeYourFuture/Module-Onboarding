@@ -3,23 +3,66 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
     <meta
       name="description"
-      content="Fill out this form to provide your details, submit requests, or sign up for services."
+      content="T-shirt order form, select t-shirt color, and choose size."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>T-Shirt Order Form</title>
   </head>
   <body>
-    <header>
-      <h1>Product Pick</h1>
+    <header class="header">
+      <h1>T-Shirt Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form action="" method="POST">
+        <div class="label-name">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter full name "
+            required
+          />
+        </div>
+        <div class="label-email">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div>
+          <label for="size" class="tshirt">T-shirt Size</label>
+          <select id="size" name="size" required>
+            <option value="">Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="radio">
+          <div>
+            <label for="black">Black</label>
+            <input type="radio" name="color" id="black" value="black" />
+          </div>
+          <div>
+            <label for="white">White</label>
+            <input type="radio" name="color" id="white" value="white" />
+          </div>
+          <div>
+            <label for="blue">Blue</label>
+            <input type="radio" name="color" id="blue" value="blue" />
+          </div>
+        </div>
       </form>
     </main>
     <footer>
