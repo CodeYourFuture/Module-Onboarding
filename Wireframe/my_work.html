@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Purpose of a wireframe, purpose of a readme file, branching in GIT.</title>
+        <link rel="stylesheet" href="my_style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>WIREFRAME</h1>
+            <p>A wireframe, or website wireframe, also known as page schematic, or screen blueprint, is a visual guide that represent the skeletal framework of a website.
+                In this article, we describe the purpose of a wireframe and a Read.me file, and explore what is a branch in GIT.
+            </p>
+        </header>
+        <main>
+            <article>
+                <img src="my_wireframe_pic.png" alt="wireframe_sample" />
+                <h2>Purpose of a Wireframe</h2>
+                <p>
+                    A wireframe is a visual diagram that outlines the structure and layout of a website, app, or other digital product. The purpose of a wireframe is to:
+                </p>
+                <ul>
+                    <li><b>Plan the Layout:</b><br>
+                        Wireframes help designers and developers plan the placement of elements like buttons, images, and text.
+                    </li>
+                    <li><b>Communicate functionality:</b><br>
+                        Wireframes show how users will interact with the product and how it's expected to work.
+                    </li>
+                    <li><b>Reduce trial and error:</b><br>
+                        Wireframes help teams work out issues before investing too much time or money into the project. 
+                    </li>
+                    <li><b>Explore ideas:</b><br>
+                        Wireframes allow teams to explore different design approaches and aesthetics without writing code. 
+                    </li>
+                    <li><b>Get feedback:</b><br>
+                        Wireframes can be shared with stakeholders for feedback and refinement. 
+                    </li>
+                </ul>
+                <p>
+                    Wireframes are created early in the design process and are often the first step in the development of a website or app. They are also known as page schematics or screen blueprints.
+                </p>
+                <a href="https://www.productplan.com/glossary/wireframe/" target="_blank">Read more</a>
+              </article>
+              
+            <div id="sub-article">
+              <article class="flex">
+                <img src="placeholder.svg" alt="" />
+                <h2>ReadMe Files</h2>
+                <p>
+                    A README file is a text file that describes and launches a project. It comprises information that is frequently needed to grasp the scope of the project. In this blog, we will talk about what a README file is, why is it necessary.
+                </p>
+                <h3>What is a Readme file?</h3>
+                <p>
+                    The Readme file is often the first file that the users read. It is a text file that contains information for the user about the software, project, code, or game, or it might contain instructions, help, or details about the patches or updates.
+                </p>
+                <p>
+                    When you create a repository or a project, GitHub gives you the option of a default readme. The default readme file contains the repository name and some basic instructions. The file format is ‘md’, which stands for Markdown documentation. It is a lightweight markup language that can be easily converted to text.
+                </p>
+                <h3>Purpose of a Readme file</h3>
+                <p>
+                    GitHub has become the platform where most open-source code is shared as the world is pushing more and more towards open-source projects and code. When sharing your code with the world, a problem that might occur is that they may not particularly understand how to use it or even understand it. So that is where the readme file helps. The readme file is used to explain what is uploaded and how we can install or use it. It even allows the uploader to add images and videos to help the reader navigate through the project. A well-written readme file is more important if you intend to show these projects in your resume. The interviewer might go to your project but might not understand a single piece of code. But if there is a readme file, it will help him/her understand better what the project is for, which coding languages/frameworks were used and how to navigate through that project. A good readme file for your project goes a long way in making an impression in your interview. An unsaid thing about readme files is that it even helps your future self. For example: If, for some reason, a bug was found a few months after you have left the project, and the company or the team asks you to fix it. You are completely out of touch and have no clue where to start looking. A readme file comes in handy in this scenario.
+                </p>
+                <a href="https://www.mygreatlearning.com/blog/readme-file/" target="_blank">Read more</a>
+              </article>
+
+              <article class="flex">
+                <img src="git-branches.png" alt="" />
+                <h2>GIT Branch</h2>
+                <p>
+                    In Git, a branch is a new/separate version of the main repository. Let's say you have a large project, and you need to update the design on it. How would that work without and with Git:
+                </p>
+                <p>
+                    <i>Without Git:</i>
+                    <ul>
+                        <li>Make copies of all the relevant files to avoid impacting the live version</li>
+                        <li>Start working with the design and find that code depend on code in other files, that also need to be changed!</li>
+                        <li>Make copies of the dependant files as well. Making sure that every file dependency references the correct file name</li>
+                        <li>EMERGENCY! There is an unrelated error somewhere else in the project that needs to be fixed ASAP!</li>
+                        <li>Save all your files, making a note of the names of the copies you were working on</li>
+                        <li>Work on the unrelated error and update the code to fix it</li>
+                        <li>Go back to the design, and finish the work there</li>
+                        <li>Copy the code or rename the files, so the updated design is on the live version</li>
+                        <li>(2 weeks later, you realize that the unrelated error was not fixed in the new design version because you copied the files before the fix)</li>
+                    </ul>
+                </p>
+                <p>
+                    <i>With Git:</i>
+                    <ul>
+                        <li>With a new branch called new-design, edit the code directly without impacting the main branch</li>
+                        <li>EMERGENCY! There is an unrelated error somewhere else in the project that needs to be fixed ASAP!</li>
+                        <li>Create a new branch from the main project called small-error-fix</li>
+                        <li>Fix the unrelated error and merge the small-error-fix branch with the main branch</li>
+                        <li>You go back to the new-design branch, and finish the work there</li>
+                        <li>Merge the new-design branch with main (getting alerted to the small error fix that you were missing)</li>
+                    </ul>
+                </p>
+                <p>
+                    Branches allow you to work on different parts of a project without impacting the main branch. When the work is complete, a branch can be merged with the main project. You can even switch between branches and work on different projects without them interfering with each other.
+                </p>
+                <p>Branching in Git is very lightweight and fast!</p>
+                <a href="https://www.w3schools.com/git/git_branch.asp?remote=github" target="_blank">Read more</a>
+              </article>
+            </div>
+        </main>
+        <footer>
+            <p>
+              This page was produced by Franklin D Kamela.
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    background-color: aliceblue;
+}
+header{
+    text-align: center;
+}
+
+h1{
+    color: blue;
+}
+
+h2{
+    color: blueviolet;
+}
+
+#sub-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+article{
+    margin: 10px 10px;
+    border: 2px solid black;
+    padding: 10px 5px;
+}
+
+img{
+    width: 100%
+}
+
+.flex{
+    width: 50%;
+}
+
+a{
+    border: 1px solid;
+    padding: 5px;
+    max-width: fit-content;
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
