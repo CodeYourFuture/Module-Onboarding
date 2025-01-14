@@ -36,3 +36,23 @@ main {
     "footer footer footer footer footer footer footer footer";
     gap: 20px;
 }
+
+header {
+    grid-area: header;
+    background-color: rgb(17, 197, 221);
+    border-radius: 10px;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+nav {
+    padding: 20px; 
+    text-align: center;
+}
+nav h3 {
+    font-size: 2rem;
+    text-align: center;
+}
