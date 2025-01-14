@@ -56,3 +56,55 @@ nav h3 {
     font-size: 2rem;
     text-align: center;
 }
+
+.article-section {
+    grid-area: article;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(17, 197, 221);
+    border-radius: 8px;
+}
+.article-section > article:first-child {
+    max-width: 1440px;
+    background-color: rgb(101, 179, 179);
+    flex: 1 1 100%;
+    padding: 20px;
+    margin-bottom: 150px;
+    
+}
+.hero-img {
+    width: 100%;
+}
+
+.article-section > article:first-child h3 {
+    font-size: 1.5rem;
+}
+
+.text-container {
+    max-width: 600px;
+    padding: 10px;
+}
+.article-content {
+    padding: 10px;
+    width: 80%;
+}
+.article-content p {
+    font-size: 1rem;
+}
+.text-container h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.text-container img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+button {
+    padding: 1em;
+    font-size: 1rem;
+    background-color: antiquewhite;
+    border-radius: 6px;
+    color: blueviolet;
+}
