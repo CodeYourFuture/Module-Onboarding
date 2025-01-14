@@ -49,7 +49,7 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
-  max-width: var(--container);
+  max-width: 90%;
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
