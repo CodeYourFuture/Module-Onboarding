@@ -27,10 +27,9 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
+  background: azure;
   color: var(--ink);
   font: var(--font);
-  background-color:azure;
 }
 a {
   padding: var(--space);
