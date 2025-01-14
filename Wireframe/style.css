@@ -37,6 +37,7 @@ a {
   border-radius: 5px;
   max-width: fit-content;
   margin: auto;
+  margin-bottom: 4px;
 }
 img,
 svg {
