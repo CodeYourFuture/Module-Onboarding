@@ -108,3 +108,41 @@ button {
     border-radius: 6px;
     color: blueviolet;
 }
+
+footer {
+    grid-area: footer;
+    background-color: rgb(24, 160, 160);
+    margin-top: 50px;
+    border-radius: 8px;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+}
+.footer-about h3{
+    font-size: 1.5rem;
+}
+.footer-links, p {
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+@media (max-width: 1200px) {
+    .article-section {  
+        justify-content: center;
+        align-items: center;   
+    }
+    .article-section {
+        gap: 40px;
+    }
+  }
+
+
+
+
+
+
+
