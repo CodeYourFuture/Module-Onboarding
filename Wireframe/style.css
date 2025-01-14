@@ -32,8 +32,9 @@ body {
   line-height: 1.5;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
+  padding: 4px;;
+  border:solid;
+  border-radius: 5px;
   max-width: fit-content;
   margin: auto;
 }
