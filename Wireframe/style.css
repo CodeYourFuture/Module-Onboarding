@@ -4,7 +4,7 @@ body {
   padding: 0;
   line-height: 1.6;
   background: #172d13;
-  color: whitesmoke;
+  color: white;
 }
 
 header {
@@ -34,7 +34,7 @@ article {
   border: 1px solid #ddd;
   padding: 30px;
   margin-bottom: 20px;
-  background: #6bb77b;
+  background:  #172d13;
   ;
 }
 
@@ -60,14 +60,14 @@ h2 {
 
 p {
   font-size: 1rem;
-  color: whitesmoke;
+  color: white;
 }
 
 nav a {
   display: inline-block;
   padding: 10px 15px;
   background: #d76f30;
-  color: white;
+  color: black;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -79,9 +79,9 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 10px;
-  background: #6bb77b;
+  background:  #172d13;
   border-top: 1px solid #ddd;
   font-size: 0.9rem;
   font-weight: bold;
-  color: whitesmoke;
+  color: white;
 }
