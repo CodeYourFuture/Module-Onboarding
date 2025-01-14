@@ -7,6 +7,7 @@
 }
 a {
     text-decoration: none;
+    color: #252424;o
 }
 ul li {
     list-style: none;
@@ -67,7 +68,7 @@ nav h3 {
 }
 .article-section > article:first-child {
     max-width: 1440px;
-    background-color: rgb(101, 179, 179);
+    background-color: rgb(9, 180, 202);
     flex: 1 1 100%;
     padding: 20px;
     margin-bottom: 150px;
@@ -101,7 +102,7 @@ nav h3 {
     object-fit: cover;
     height: auto;
 }
-button {
+.button {
     padding: 1em;
     font-size: 1rem;
     background-color: antiquewhite;
@@ -111,12 +112,13 @@ button {
 
 footer {
     grid-area: footer;
-    background-color: rgb(24, 160, 160);
+    background-color: rgb(12, 219, 247);
     margin-top: 50px;
     border-radius: 8px;
     padding: 20px;
     position: sticky;
     bottom: 0;
+    width: 100%;
 }
 .footer-about h3{
     font-size: 1.5rem;
