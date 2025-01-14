@@ -59,8 +59,10 @@ footer {
   justify-content: center;
   font-size: x-large;
   margin-left: 40rem;
-  font-style: oblique;
+  font-style:italic;
+  font-weight: bold;
   color:black;
+  background-color: blanchedalmond;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -99,5 +101,6 @@ article {
 }
 header{
   text-align: center;
+  background-color: blanchedalmond;
 }
 
