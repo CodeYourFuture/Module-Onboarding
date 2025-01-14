@@ -28,8 +28,8 @@ As well as useful links to learn more */
  General rules for basic HTML elements in any context */
 body {
   background: azure;
-  color: var(--ink);
-  font: var(--font);
+  font-size: 100%;
+  line-height: 1.5;
 }
 a {
   padding: var(--space);
@@ -99,6 +99,5 @@ article {
 }
 header{
   text-align: center;
-  background-color: silver;
 }
 
