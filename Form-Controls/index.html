@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       My form exercise
     </title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
@@ -16,18 +15,18 @@
       </h1>
     </header>
     <main>
-      <form>
+      <form action="result.htm " method="get" enctype="multipart/form-data">
         <section>
           <label for="name">
           Name
           </label>
-          <input type="text" minlength="2" id="name" name="user_name"/>
+          <input type="text" minlength="2" id="name" name="user_name" required/>
         </section>
         <section>
           <label for="mail">
           Email
           </label>
-          <input type="email" id="mail" name="user_mail"/>
+          <input type="email" id="mail" name="user_mail" required/>
         </section>
         <section>
           <fieldset>
@@ -38,19 +37,19 @@
               <label for="Color_1">
               Red
               </label>
-              <input type="radio" id="Color_1" value="Red">
+              <input type="radio" id="Color_1" value="Red"/>
             </p>
             <p>
               <label for="Color_2">
               Blue
               </label>
-              <input type="radio" id="Color_2" value="Blue">
+              <input type="radio" id="Color_2" value="Blue"/>
             </p>
             <p>
               <label for="Color_3">
               Green
               </label>
-              <input type="radio" id="Color_3" value="Green">  
+              <input type="radio" id="Color_3" value="Green"/>  
             </P>
           </fieldset>
           <fieldset>
