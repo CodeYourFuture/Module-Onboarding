@@ -55,14 +55,12 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
-  justify-content: center;
-  font-size: x-large;
-  margin-left: 40rem;
-  font-style:italic;
-  font-weight: bold;
-  color:black;
   background-color: blanchedalmond;
+  font-style: italic;
+  font-weight: bold;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
