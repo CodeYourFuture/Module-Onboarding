@@ -36,7 +36,6 @@ a {
   border: var(--line);
   max-width: fit-content;
   margin: auto;
-  background-color: aquamarine;
 }
 img,
 svg {
