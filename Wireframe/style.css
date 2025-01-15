@@ -52,6 +52,9 @@ main {
 header {
   text-align: center;
 }
+header ul {
+  list-style: none;
+}
 footer {
   position: fixed;
   bottom: 0;
