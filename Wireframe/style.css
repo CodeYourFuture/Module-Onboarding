@@ -55,6 +55,9 @@ header {
 header ul {
   list-style: none;
 }
+header ul > * {
+  margin-block: 3em;
+}
 footer {
   position: fixed;
   bottom: 0;
