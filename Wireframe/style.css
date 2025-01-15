@@ -20,7 +20,7 @@ main {
 article img {
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 9;
   box-sizing: 0 4px 8px 0 rgba(0,0,0,0,2), 0 6px 20px 0 rgba(0,0,0.0.19);
   border-radius: 10px;
 }
@@ -46,7 +46,7 @@ article {
 .flex-container img{
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 4 / 3;
 }
 
 .flex-container article {
