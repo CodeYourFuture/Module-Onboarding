@@ -16,32 +16,85 @@
         <h2>Order confirmation</h2>
         <p>
           Required fields are followed by
-          <strong><span aria-label="required">*</span></strong>.
-        </p>    
+          <strong><span aria-label="required">*</span></strong
+          >.
+        </p>
         <section>
           <h3>Contact details</h3>
           <p>
-            <label for = "fname">First name:</label>
-            <input id="fname" type = "text" name="firstName" required>
+            <label for="fname">First name:</label>
+            <input id="fname" type="text" name="firstName" required />
             <strong><span aria-label="required">*</span></strong>
           </p>
           <p>
-            <label for = "lname">Last name:</label>
-            <input id="lname" type = "text" name="lastName" required>
+            <label for="lname">Last name:</label>
+            <input id="lname" type="text" name="lastName" required />
             <strong><span aria-label="required">*</span></strong>
           </p>
           <p>
-            <label for = "email">Email:</label>
-            <input id="email" type = "email" name="email" required>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required />
             <strong><span aria-label="required">*</span></strong>
           </p>
-        </section>    
+        </section>
 
+        <section>
+          <h3>Order details</h3>
+          <fieldset>
+            <legend>Choose the colour</legend>
+
+            <ul>
+              <li>
+                <label for="colour_1">Red:</label>
+                <input
+                  id="colour_1"
+                  type="radio"
+                  name="colour"
+                  value="r"
+                  required
+                />
+                <strong><span aria-label="required">*</span></strong>
+              </li>
+              <li>
+                <label for="colour_2">Green:</label>
+                <input
+                  id="colour_2"
+                  type="radio"
+                  name="colour"
+                  value="g"
+                  required
+                />
+                <strong><span aria-label="required">*</span></strong>
+              </li>
+              <li>
+                <label for="colour_3">Blue:</label>
+                <input
+                  id="colour_3"
+                  type="radio"
+                  name="colour"
+                  value="b"
+                  required
+                />
+                <strong><span aria-label="required">*</span></strong>
+              </li>
+            </ul>
+          </fieldset>
+
+        <label for = "size">Choose the size</label>
+        <select id="size" name="size">
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+        <strong><span aria-label="required">*</span></strong>
+        </section>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>Webpage made by Andrei Filippov for HOMEWORK SOLUTION</h2>
     </footer>
   </body>
 </html>
