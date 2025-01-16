@@ -13,7 +13,51 @@
     </header>
     <main>
       <form>
+          <fieldset>
+            <legend>Please Enter your account</legend>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter Your Full Name" required>
+            <label for="email"></label>
+            <input id="email" type="email" name="email" placeholder="Enter Your Email" required>  
+          </fieldset>
+          <fieldset>
+            <legend>Choose your T-Shirt</legend>
+            <hr> 
+            Colour:          
+              <div>
+                <label for="red">Red</label>
+                <input type="radio" name="Colour" id="red">
+              </div>
+              <div>
+                <label for="white">White</label>
+                <input type="radio" name="Colour" id="White">
+              </div>
+              <div>
+                <label for="Yellow">Yellow</label>
+                <input type="radio" name="Colour" id="Yellow">
+              </div>
+              <hr>
+              Size:
+              <label for="size"></label>
+              <select name="size of the T-Shirt" id="size" required>
+                <option value="Extra Small">XS</option>
+                <option value="Small">S</option>
+                <option value="Medium">M</option>
+                <option value="Large">L</option>
+                <option value="Extra-Large">XL</option>
+                <option value="2*Large">XXL</option>
+              </select>
+          <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </div>    
+          </fieldset>
         <!-- write your html here-->
+         <!--What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+All fields are required. Do not write a form action for this project.-->
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
@@ -21,7 +65,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Hatef Eidi</h2>
     </footer>
   </body>
 </html>
