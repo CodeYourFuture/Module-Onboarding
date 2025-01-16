@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title> My form exercise </title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -13,14 +13,49 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+       <p>
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="user_name" required minlength="2" maxlength="50" placeholder="Enter your name" />
+            Age:
+            <input type="number" id="age" name="age">
+          </p>
+          <p>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" required placeholder="Enter your e-mail"/>
+          </p>
+          <p>
+            <label for="colour"> Please choose a colour </label> <br>
+              <input type="radio" id="green" name="Tshirt_colour" value="Green">
+                <label for="green"> Green</label>
+                <input type="radio" id="red" name="Tshirt_colour" value="Red">
+                <label for="red"> Red</label>
+                <input type="radio" id="yellow" name="Tshirt_colour" value="Yellow">
+                <label for="yellow"> Yellow</label>   
+          </p>
+
+          <p>
+            <label for="size"> Please choose a T-shirt's size: </label>
+            <select id="size" name="size">
+              <option disabled selected value> -- select size --</option>
+              <option> XS </option>
+              <option> S </option>
+              <option> M </option>
+              <option> L </option>
+              <option> XL </option>
+              <option> XXL </option>
+            </select>
+            </p>
+                <p>Comment:
+                <input type="text" id="comment" name="comment">
+                </p>
+          <p>
+           <button type="submit"> SUBMIT</button>
+          </p>
+       
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
+     
       <h2>By Bakytbek Sydykov</h2>
     </footer>
   </body>
