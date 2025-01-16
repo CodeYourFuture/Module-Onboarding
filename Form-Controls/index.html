@@ -13,10 +13,30 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <h2>Order confirmation</h2>
+        <p>
+          Required fields are followed by
+          <strong><span aria-label="required">*</span></strong>.
+        </p>    
+        <section>
+          <h3>Contact details</h3>
+          <p>
+            <label for = "fname">First name:</label>
+            <input id="fname" type = "text" name="firstName" required>
+            <strong><span aria-label="required">*</span></strong>
+          </p>
+          <p>
+            <label for = "lname">Last name:</label>
+            <input id="lname" type = "text" name="lastName" required>
+            <strong><span aria-label="required">*</span></strong>
+          </p>
+          <p>
+            <label for = "email">Email:</label>
+            <input id="email" type = "email" name="email" required>
+            <strong><span aria-label="required">*</span></strong>
+          </p>
+        </section>    
+
       </form>
     </main>
     <footer>
