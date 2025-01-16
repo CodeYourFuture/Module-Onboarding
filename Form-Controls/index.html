@@ -15,31 +15,36 @@
       <form>
           <fieldset>
             <legend>Please Enter your account</legend>
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" placeholder="Enter Your Full Name" required>
-            <label for="email"></label>
-            <input id="email" type="email" name="email" placeholder="Enter Your Email" required>  
+            <div>
+
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name" placeholder="Enter Your Full Name" size="20px" required style="margin: 10px;">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="Enter Your Email" size="20px" style="margin: 10px;"required>  
+
+            </div>
           </fieldset>
           <fieldset>
             <legend>Choose your T-Shirt</legend>
             <hr> 
             Colour:          
               <div>
-                <label for="red">Red</label>
-                <input type="radio" name="Colour" id="red">
+                <label for="red" style="margin: 10px;">Red</label>
+                <input type="radio" name="Colour" id="red" style="margin: 10px;">
               </div>
               <div>
                 <label for="white">White</label>
-                <input type="radio" name="Colour" id="White">
+                <input type="radio" name="Colour" id="white">
               </div>
               <div>
-                <label for="Yellow">Yellow</label>
-                <input type="radio" name="Colour" id="Yellow">
+                <label for="yellow">Yellow</label>
+                <input type="radio" name="Colour" id="yellow" style="margin: 10px;">
               </div>
               <hr>
-              Size:
-              <label for="size"></label>
-              <select name="size of the T-Shirt" id="size" required>
+              <label for="size">Size:</label>
+              <select name="size of the T-Shirt" id="size" style="margin: 10px;"required>
                 <option value="Extra Small">XS</option>
                 <option value="Small">S</option>
                 <option value="Medium">M</option>
