@@ -81,8 +81,9 @@
           </fieldset>
 
         <label for = "size">Choose the size</label>
-        <select id="size" name="size">
-          <option value="xs">XS</option>
+        <select id="size" name="size" required>
+          <option value="">Please choose an option</option>  
+          <option value="xs">XS</option>         
           <option value="s">S</option>
           <option value="m">M</option>
           <option value="l">L</option>
@@ -91,6 +92,9 @@
         </select>
         <strong><span aria-label="required">*</span></strong>
         </section>
+        <p>
+          <button>Submit</button>
+        </p>
       </form>
     </main>
     <footer>
