@@ -6,13 +6,6 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      input[type="radio"] {
-        height: 44px;
-        width: 44px;
-        vertical-align: middle;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -59,57 +52,29 @@
 
         <section>
           <h3>Order details</h3>
-          <fieldset>
-            <legend>Choose the colour</legend>
-
-            <ul>
-              <li>
-                <label for="colour_1">Red:</label>
-                <input
-                  id="colour_1"
-                  type="radio"
-                  name="colour"
-                  value="r"
-                  required
-                />
-                <strong><span aria-label="required">*</span></strong>
-              </li>
-              <li>
-                <label for="colour_2">Green:</label>
-                <input
-                  id="colour_2"
-                  type="radio"
-                  name="colour"
-                  value="g"
-                  required
-                />
-                <strong><span aria-label="required">*</span></strong>
-              </li>
-              <li>
-                <label for="colour_3">Blue:</label>
-                <input
-                  id="colour_3"
-                  type="radio"
-                  name="colour"
-                  value="b"
-                  required
-                />
-                <strong><span aria-label="required">*</span></strong>
-              </li>
-            </ul>
-          </fieldset>
-
-          <label for="size">Choose the size</label>
-          <select id="size" name="size" required>
-            <option value="">Please choose an option</option>
-            <option value="xs">XS</option>
-            <option value="s">S</option>
-            <option value="m">M</option>
-            <option value="l">L</option>
-            <option value="xl">XL</option>
-            <option value="xxl">XXL</option>
-          </select>
-          <strong><span aria-label="required">*</span></strong>
+          <p>
+            <label for="colour">Choose the colour</label>
+            <select id="colour" name="colour" required>
+              <option value="">Please choose an option</option>
+              <option value="r">Red</option>
+              <option value="g">Green</option>
+              <option value="b">Blue</option>
+            </select>
+            <strong><span aria-label="required">*</span></strong>
+          </p>
+          <p>
+            <label for="size">Choose the size</label>
+            <select id="size" name="size" required>
+              <option value="">Please choose an option</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
+            <strong><span aria-label="required">*</span></strong>
+          </p>
         </section>
         <p>
           <button>Submit</button>
