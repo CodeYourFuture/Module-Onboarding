@@ -1,27 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      My form exercise
+    </title>
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>
+        Product Pick Form
+      </h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form action="result.html" method="get" enctype="multipart/form-data">
+        <section>
+          <label for="name">
+          Name
+          </label>
+          &nbsp
+          <input type="text" minlength="2" id="name" name="user_name" required/>
+        </section>
+        &nbsp
+        <section>
+          <label for="mail">
+          Email
+          </label>
+          &nbsp
+          <input type="email" id="mail" name="user_mail" required/>
+        </section>
+        &nbsp
+        <section>
+          <fieldset>
+            <legend> 
+              T-Shirt Color
+            </legend>
+            <p>
+              <label for="Color_1">
+              Red
+              </label>
+              <input type="radio" name="color" id="Color_1" value="Red"/>
+            </p>
+            <p>
+              <label for="Color_2">
+              Blue
+              </label>
+              <input type="radio" name="color" id="Color_2" value="Blue"/>
+            </p>
+            <p>
+              <label for="Color_3">
+              Green
+              </label>
+              <input type="radio" name="color" id="Color_3" value="Green"/>  
+            </P>
+          </fieldset>
+          &nbsp
+          <fieldset>
+            <legend>
+              T-Shirt Size
+            </legend>
+            <p>
+              <label for="Size_1">
+              Extra small
+              </label>
+              <input type="radio" name="size" id="Size_1" value="Extra small" aria-label="extra small">
+            </p>
+            <P>
+              <label for="size_2">
+              Small
+              </label>
+              <input type="radio"name="size" id="Size_2" value="Small" aria-label="small">
+            </P>
+            <P>
+              <label for="Size_3">
+              Medium
+              </label>
+              <input type="radio" name="size" id="Size_3" value="Medium" aria-label="Medium">  
+            </P>
+            <P>
+              <label for="Size_4">
+              Large
+              </label>
+              <input type="radio" name="size" id="Size_4" value="Large" aria-label="large">  
+            </P>
+            <P>
+              <label for="Size_5">
+              Extra large
+              </label>
+              <input type="radio" name="size" id="Size_5" value="Extra large" aria-label="extra large">  
+            </P>
+            <P>
+              <label for="Size_6">
+              Extra extra large
+              </label>
+              <input type="radio" name="size" id="Size_6" value="Extra extra large" alt="extra extra large">  
+            </P>
+          </fieldset>
+          &nbsp
+        </section>
       </form>
+      <button>
+      Submit
+      </button>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>
+        By Farai Muzanenhamo
+      </h2>
     </footer>
   </body>
 </html>
