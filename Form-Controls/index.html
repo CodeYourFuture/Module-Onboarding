@@ -6,6 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -13,15 +14,82 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div class="container">
+          <form>
+              <!-- write your html here-->
+            <!-- try writing out the requirements first-->
+    
+        <h2>T-Shirt Order Form</h2>
+        <form id="tshirtOrderForm">
+            <label for="name">Confirm your Name:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only).">
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="color">T-Shirt Color:</label>
+            <select id="color" name="color" required>
+                <option value="" disabled selected>Select a color</option>
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="white">White</option>
+                <option value="pink">Pink</option>
+            </select>
+    
+            <label for="qtt">Quantity:</label>
+            <input type="number" id="qtt" name="quantity" required><br>
+            
+            <label for="size">T-Shirt Size:</label>
+            <select id="size" name="size" required>
+                <option value="" disabled selected>Select a size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+                <option value="XXXL">XXXL</option>
+        </select>
+    
+            <div class="delivery-container">
+              <h2>Delivery address</h2>
+              <form action="#" method="POST">
+                
+                  <label for="street">Street Address:</label>
+                  <input type="text" id="street" name="street" required>
+    
+                  <label for="city">City:</label>
+                  <input type="text" id="city" name="city" required>
+    
+                  <label for="state">County:</label>
+                  <input type="text" id="state" name="state" required>
+    
+                  <label for="zip">Post Code:</label>
+                  <input type="text" id="zip" name="zip" required>
+              </div>
+    
+            <label for="deliveryDate">Select a delivery date:</label>
+              <input type="date" id="deliveryDate" name="deliveryDate" required>
+              <button type="submit">Submit</button>
+        </form>
+    
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              const today = new Date();
+              const fourWeeksFromToday = new Date();
+              fourWeeksFromToday.setDate(today.getDate() + 28);
+    
+              const dateInput = document.getElementById('deliveryDate');
+              dateInput.setAttribute('min', today.toISOString().split('T')[0]);
+              dateInput.setAttribute('max', fourWeeksFromToday.toISOString().split('T')[0]);
+          });
+      </script>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Maheag Special Solutions</h2>
     </footer>
   </body>
 </html>
