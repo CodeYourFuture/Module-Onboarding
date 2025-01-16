@@ -13,14 +13,66 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+          <label for="fname">First name</label>
+          <input type="text" name="fname" id="fname" required>
+        </div>
+        <div>
+          <label for="lname">Last name</label>
+          <input type="text" name="lname" id="lname" required>
+        </div><div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          What colour of a t-shirt you want?
+        <div>
+          <label for="colour">Purple</label>
+          <input type="radio" name="colour" value="purple" required>
+        </div>
+        <div>
+          <label for="colour">Black</label>
+          <input type="radio" name="colour" value="black" required>
+        </div>
+        <label for="colour">Green</label>
+          <input type="radio" name="colour" value="green" required>
+      </div>
+      <div>
+        Preferable size
+        <div>
+            <label for="xs">XS</label>
+            <input type="checkbox" name="xs" id="xs">
+        </div>
+        <div>
+            <label for="s">S</label>
+            <input type="checkbox" name="s" id="s">
+        </div>
+        <div>
+            <label for="m">M</label>
+            <input type="checkbox" name="m" id="m">
+        </div>
+        <div>
+          <label for="l">L</label>
+          <input type="checkbox" name="l" id="l">
+      </div>
+      <div>
+        <label for="xl">XL</label>
+        <input type="checkbox" name="xl" id="xl">
+    </div>
+    <div>
+      <label for="xxl">XXL</label>
+      <input type="checkbox" name="xxl" id="xxl">
+  </div>
+    </div>
+      <div>
+        <label for="qnt">Quantity</label>
+        <input type="number" name="qnt" id="qnt" min="1" max="20" required>
+    </div>
+    <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
+      Elizabeth Tabala
       <h2>By HOMEWORK SOLUTION</h2>
     </footer>
   </body>
