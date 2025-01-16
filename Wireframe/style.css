@@ -10,21 +10,19 @@ body {
 header {
   text-align: center;
 }
-h1 {
-  font-size: 3em;
-}
 
-h2 {
-  font-size: 2.2em;
+
+h1,h2,h3 {
+  font-size: 2rem;
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 1em;
   margin-bottom: 30px;
 }
 
 .article1-img {
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
 }
 
@@ -42,7 +40,6 @@ article {
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 15px;
   margin-bottom: 20px;
 }
 
@@ -69,7 +66,7 @@ article a {
   padding: 16px 22px;
   text-decoration: none;
   border-radius: 12px;
-  background: linear-gradient(to bottom, #add8e6, #ffffff);
+  background: linear-gradient(to bottom, #c7e6ad, #ffffff);
   font-family: Arial, sans-serif;
   font-size: 16px;
   color: #090009;
@@ -82,13 +79,7 @@ article a {
 article a:hover {
   transform: scale(1.1);
   background: #ceb6b6;
-  color: #fffffff2;
-}
-article a:active {
-  transform: scale(0.95);
-  background: #444;
-  color: #ddd;
-  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.3);
+  color: #fffffff3;
 }
 
 footer {
