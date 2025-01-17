@@ -14,14 +14,3 @@
     [[plugins.inputs.audits]]
       path = "/form-controls/"
       output_path = "reports/form-controls.html"
-
-  [plugins.inputs.thresholds]
-    accessibility = 1.0
-
-  [[plugins.inputs.audits]]
-    path = "/wireframe/"
-    output_path = "reports/wireframe.html"
-
-  [[plugins.inputs.audits]]
-    path = "/form-controls/"
-    output_path = "reports/form-controls.html"
