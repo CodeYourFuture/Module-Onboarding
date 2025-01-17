@@ -4,7 +4,6 @@
   [plugins.inputs]
     fail_deploy_on_score_thresholds = true
 
-CYF-(ITP)-JAN2025-|Zuko-Mnyonyo|-WIREFRAME|-WEEK-1-V2
     [plugins.inputs.thresholds]
       accessibility = 1.0
 
@@ -26,4 +25,3 @@ CYF-(ITP)-JAN2025-|Zuko-Mnyonyo|-WIREFRAME|-WEEK-1-V2
   [[plugins.inputs.audits]]
     path = "/form-controls/"
     output_path = "reports/form-controls.html"
-main
