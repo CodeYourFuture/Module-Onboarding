@@ -13,15 +13,62 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+          <label for="name">Customer Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="username"
+            pattern="[A-Za-z\s]+"
+            title="Name should only contain letters and spaces."
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Customer Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="color">Please select a color:</label>
+          <select name="color" id="color" required>
+            <option value="">--Select Color--</option>
+            <option label="black" value="Black">Black</option>
+            <option label="green" value="Green">Green</option>
+            <option label="Blue" value="Blue">Blue</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="size">Please select your size:</label>
+          <select name="size" id="size" required>
+            <option value="">--Select Size--</option>
+            <option label="XS" value="XS">XS</option>
+            <option label="S" value="S">Small</option>
+            <option label="M" value="M">Medium</option>
+            <option label="L" value="L">Large</option>
+            <option label="XL" value="XL">Xlarge</option>
+            <option label="XXL" value="XXL">XXlarge</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Amir Montazeri</h2>
     </footer>
   </body>
 </html>
