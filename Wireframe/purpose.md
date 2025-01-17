@@ -1,2 +1,4 @@
-<h1>README MD</h1>
-<p>the purpose of redme files are to provide necesary information to the programmers accesing the programing files</p>
+README FILES
+
+A README file is a document that provides essential information about a project. It often explains the purpose of the project, how to install and use it, any dependencies or requirements, and how to contribute. README files help users and developers quickly understand the project and get started with it.
+
