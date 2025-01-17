@@ -22,7 +22,9 @@
             minlength="2"
             placeholder="Enter your full name"
             required
+            aria-required="true"
           />
+          <br><br>
         </div>
 
         <!-- Customer Email -->
@@ -35,107 +37,36 @@
             placeholder="Enter your email address"
             required
           />
+          <br><br>
         </div>
 
         <!-- T-Shirt Colour -->
-        <fieldset>
-          <legend>Choose a T-Shirt Colour:</legend>
-          <div>
-            <input
-              type="radio"
-              id="color-red"
-              name="tshirt-color"
-              value="Red"
-              required
-            />
-            <label for="color-red">Red</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="color-blue"
-              name="tshirt-color"
-              value="Blue"
-              required
-            />
-            <label for="color-blue">Blue</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="color-green"
-              name="tshirt-color"
-              value="Green"
-              required
-            />
-            <label for="color-green">Green</label>
-          </div>
-        </fieldset>
+        <div>
+          <label for="T-shirtcolour">Choose a T-Shirt Colour:</label>
+          <select id="T-shirtcolour" name="T-shirtcolour">
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Orange">Orange</option>
+            <option value="Yellow">Yellow</option>
+          </select>
+          <br><br>
+        </div>
 
         <!-- T-Shirt Size -->
-        <fieldset>
-          <legend>Choose a T-Shirt Size:</legend>
-          <div>
-            <input
-              type="radio"
-              id="size-xs"
-              name="tshirt-size"
-              value="XS"
-              required
-            />
-            <label for="size-xs">XS</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="size-s"
-              name="tshirt-size"
-              value="S"
-              required
-            />
-            <label for="size-s">S</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="size-m"
-              name="tshirt-size"
-              value="M"
-              required
-            />
-            <label for="size-m">M</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="size-l"
-              name="tshirt-size"
-              value="L"
-              required
-            />
-            <label for="size-l">L</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="size-xl"
-              name="tshirt-size"
-              value="XL"
-              required
-            />
-            <label for="size-xl">XL</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="size-xxl"
-              name="tshirt-size"
-              value="XXL"
-              required
-            />
-            <label for="size-xxl">XXL</label>
-          </div>
-        </fieldset>
+        <div>
+          <label for="T-shirtsize">Choose a T-Shirt Size:</label>
+          <select id="T-shirtsize" name="T-shirtsize">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br><br>
+        </div>
 
         <!-- Submit Button -->
         <div>
