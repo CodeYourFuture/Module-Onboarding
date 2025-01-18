@@ -49,6 +49,12 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 footer {
   position: fixed;
   bottom: 0;
