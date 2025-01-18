@@ -17,11 +17,40 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+        <div>
+         <label for="name">Name</label>
+         <input style="font-size: large;" type="name" name="name" pattern="[A-Za-z]{2,}" title="Name should be at least 2 characters long and only contain letters." placeholder="Enter your full name" min="1" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input style="font-size: large;" type="email" name="email" placeholder="Enter your Email" required>
+        </div>
+        <div>
+          <label for="colour">T-shirt colour</label>
+          <select style="font-size: large;" name="colour" id="colour" >
+          <option value="Red">Red</option>
+          <option value="Green">Green</option>
+          <option value="Blue">Blue</option>
+          </select>
+        </div>
+        <div>
+          <label for="size">Size</label>
+          <select style="font-size: large;" name="size" id="size">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <button type="reset" style="font-size: large;">reset</button>
+        <button type="submit" style="font-size: large">submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By JanLo SOLUTION</h2>
     </footer>
   </body>
 </html>
