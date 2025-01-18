@@ -18,7 +18,7 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --ink: color-mix(in oklab, rgb(201, 123, 39) (--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
@@ -27,13 +27,16 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background:rgb(168, 205, 168);
+  color: rgb(25, 202, 25) (--ink);
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:large;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
+  padding: 0px 50px 75px 100px (--space);
+  border: 2px(--line);
   max-width: fit-content;
 }
 img,
