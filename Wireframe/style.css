@@ -78,6 +78,7 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
+  border-radius: 8px;
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
