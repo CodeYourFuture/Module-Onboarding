@@ -30,6 +30,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  background-image: linear-gradient(pink, rgb(194, 194, 233));
 }
 a {
   padding: var(--space);
