@@ -57,8 +57,10 @@ h1{
 }
 #style{
   font-size: 25px;
-  color:red;
   font-style: italic;
+}
+h1, h2{
+  color: brown;
 }
 footer {
   position: fixed;
