@@ -28,12 +28,25 @@
 
         <!-- Last Name field -->
         <div>
-          <label for="last-name">Last Name</label>
+          <label for="email">Last Name</label>
           <input
             type="text"
-            id="last-name"
-            name="last-name"
+            id="email"
+            name="email"
             placeholder="Last Name"
+            required
+            pattern="[A-Za-z]"
+          />
+        </div>
+
+        <!-- Email field -->
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
             required
           />
         </div>
