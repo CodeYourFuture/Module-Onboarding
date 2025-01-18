@@ -1,5 +1,6 @@
 body{
     background-color: aliceblue;
+    margin-bottom: 50px;
 }
 header{
     text-align: center;
@@ -24,6 +25,7 @@ article{
     margin: 10px 10px;
     border: 2px solid black;
     padding: 10px 5px;
+    ;
 }
 
 img{
@@ -45,4 +47,10 @@ footer{
     position: fixed;
     bottom: 0;
     text-align: center;
+    width: 100%;
+    background-color: aqua;
+    left: 0;
+    right: 0;
+    border-top: 2px solid black;
+    ;
 }
