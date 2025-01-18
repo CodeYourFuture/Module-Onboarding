@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+  
   <body>
     <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <h1>Product Pick</h1>
     </header>
     <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
+      <form>
+        <h1>Order Your T-Shirt</h1>
+    
+        <!-- Customer Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" minlength="2" required>
+        <p>Enter your full name (at least 2 characters).</p>
+
+        <!-- Customer Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <p>Enter your email address (e.g., example@example.com).</p>
+
+        <!-- T-Shirt Colour -->
+        <label for="colour">Choose a colour:</label>
+        <select id="colour" name="colour" required>
+            <option value="">Select a colour</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+
+        <!-- T-Shirt Size -->
+        <label for="size">Choose a size:</label>
+        <select id="size" name="size" required>
+            <option value="">Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+
+      </form>
     </main>
     <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <!-- change to your name-->
+      <h2>Sonia Jatinder Kaur</h2>
     </footer>
   </body>
 </html>
