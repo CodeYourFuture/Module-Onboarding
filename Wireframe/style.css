@@ -30,6 +30,12 @@ main {
 
 }
 
+#main-article{
+  width: 100%;
+  position: center;
+  
+}
+
 footer {
   position: fixed;
   bottom: 0;
