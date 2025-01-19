@@ -39,12 +39,9 @@ article {
   border: 3px solid black;
   margin-bottom: 20px;
 }
-#article-img {
-  display: block;
-  width: 60%;
-  margin: 0 auto;
-}
+
 img {
+  max-width: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -90,4 +87,14 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
+}
+
+/* for mobile phones*/
+
+@media screen and (max-width:915px) {
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+}
 }
