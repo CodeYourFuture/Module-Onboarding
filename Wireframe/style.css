@@ -63,19 +63,6 @@ p {
   color: white;
 }
 
-nav a {
-  display: inline-block;
-  padding: 10px 15px;
-  background: #d76f30;
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-nav a:hover {
-  background: #BCCCDC;
-}
-
 footer {
   position: fixed;
   bottom: 0;
