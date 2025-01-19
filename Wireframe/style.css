@@ -37,6 +37,7 @@ article {
   margin: auto;
   padding: 20px;
   border: 3px solid black;
+  margin-bottom: 20px;
 }
 #article-img {
   display: block;
