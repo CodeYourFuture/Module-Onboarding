@@ -17,7 +17,8 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-
+        <fieldset>
+          <legend>Customer details: </legend><br>
         <!--What is the customer's name?-->
         <label for="fname"> First Name: </label>
         <input type="text" id="fname" name="fname" minlength="2" required/><br><br>
@@ -26,10 +27,12 @@
         <!--What is the customer's email?-->
         <label for="email">Enter your email: </label>
         <input type="email" id="email" name="email" required/><br><br>
-
+      </fieldset>
+      
         <!--What colour should this t-shirt be? I must give 3 options. 
         How will I make sure they don't pick other colours? -->
-        
+        <fieldset>
+          <legend>Product details: </legend><br>
         <label for="colours" >T-shirt colours: </label>
         <select id="colours" name="colours" required>
           <option disabled selected value> -- select colour -- </option>
@@ -50,6 +53,7 @@
           <option value="xl"> XL </option>
           <option value="xxl"> XXL </option>
       </select><br>
+    </fieldset>
         <br><input type="reset" value="Reset"/>
         <input type="submit" value="Submit"/>
       </form>
