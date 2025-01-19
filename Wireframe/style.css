@@ -87,6 +87,6 @@ footer {
   padding-bottom: 5px;
   margin-bottom: 5px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
