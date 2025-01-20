@@ -73,12 +73,12 @@ main {
   > *:first-child {
     grid-column: span 2;
   }
+}
   
 @media (min-width: 768px) {
   .css-grid {
       grid-template-areas: 'gridItem3 gridItem2 gridItem1';
-
-  
+  }
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
