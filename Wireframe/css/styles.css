@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  width: 500%;
+}
+#git-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*  What is Git style*/
+.what-git {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f7f7f5;
+}
+.git-img {
+  width: 800px;
+  margin: 5px auto 20px auto;
+}
+.box-git {
+  margin-left: -255px;
+  margin-bottom: 1px;
+}
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 20px;
+}
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #00509d;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  margin-right: 690px;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.btn:hover {
+  padding-right: 25px;
+  transition: 0.5;
+  background-color: #f48c06;
+}
+/* Section Why do developers need Git? */
+#git-section {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 50px auto;
+  padding: 10px;
+  width: 400px;
+}
+.img-section {
+  margin-left: 2px;
+  padding: 0 6px;
+  width: 400px;
+}
+.branch-float {
+  margin-left: 15px;
+  margin-right: 30px;
+}
+h3 {
+  font-size: 15px;
+  display: flex;
+  justify-content: left;
+}
+.paragraph {
+  float: left;
+  font-size: 12px;
+  width: 300px;
+}
+.btn-2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #00509d;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 10px;
+  cursor: pointer;
+}
+/* What is a branch in Git */
+.why-git {
+  padding: 20px;
+  margin-top: 10px;
+}
+.why-git-2 {
+  display: block;
+  margin-top: 30px;
+}
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  background: #00509d;
+  color: white;
+}
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  header #git-header,
+  header h1,
+  header p {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .what-git img {
+    width: 100%;
+  }
+  .what-git {
+    float: none;
+    text-align: center;
+  }
+
+  .box-git {
+    padding-left: 20px;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .box-git h2 {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-left: 60px;
+    font-size: 24px;
+  }
+  .box-git p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: none;
+    padding-left: 100px;
+  }
+  .btn {
+    display: block;
+    text-align: center;
+    margin-right: 10px;
+  }
+  /* Section  */
+
+  #git-section {
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  #git-section .why-git {
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  #git-section .img-section {
+    width: 100%;
+    margin-right: 80px;
+  }
+  .branch-float {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  #git-section .blanch-float h3 {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  #git-section .blanch-float p {
+    margin-right: 10px;
+    width: 100%;
+  }
+  #git-section .why-git-2 {
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .footer {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .btn-2 {
+    display: block;
+    text-align: center;
+    margin-left: 60px;
+  }
+}
