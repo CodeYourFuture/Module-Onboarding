@@ -22,20 +22,21 @@
             id="first-name"
             name="first-name"
             placeholder="First Name"
+            pattern="[A-Za-z ]{1,32}"
             required
           />
         </div>
 
         <!-- Last Name field -->
         <div>
-          <label for="email">Last Name</label>
+          <label for="last-name">Last Name</label>
           <input
             type="text"
-            id="email"
-            name="email"
+            id="last-name"
+            name="last-name"
             placeholder="Last Name"
             required
-            pattern="[A-Za-z]"
+            pattern="[A-Za-z ]{1,32}"
           />
         </div>
 
@@ -50,6 +51,22 @@
             required
           />
         </div>
+
+        <!-- T Shirt Size -->
+        <fieldset>
+          <div>
+            <input type="radio" name="color" id="red" />
+            <label for="red">Red</label>
+          </div>
+          <div>
+            <input type="radio" name="color" id="blue" />
+            <label for="blue">Blue </label>
+          </div>
+          <div>
+            <input type="radio" name="color" id="red" />
+            <label for="red">Red</label>
+          </div>
+        </fieldset>
 
         <button type="submit">Submit</button>
         <!-- 
