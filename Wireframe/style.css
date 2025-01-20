@@ -74,30 +74,31 @@ main {
   > *:first-child {
     grid-column: span 2;
   }
+
   grid-template-areas:
-  'gridItem1'
-  'gridItem2'
-  'gridItem3';
+    "gridItem1 gridItem1"
+    "gridItem3 gridItem2";
 }
 
-@media (min-width: 768px) {
-  main{
-    grid-template-areas: 
-    'gridItem1 gridItem1'
-    'gridItem3 gridItem2';
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "gridItem1"
+      "gridItem2"
+      "gridItem3";
   }
-} 
+}
 
 #grid-item-1 {
-    grid-area: gridItem1;
+  grid-area: gridItem1;
 }
 #grid-item-2 {
-   grid-area: gridItem2;
+  grid-area: gridItem2;
 }
 #grid-item-3 {
-    grid-area: gridItem3;
+  grid-area: gridItem3;
 }
-
 
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
