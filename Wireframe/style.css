@@ -70,16 +70,35 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
+
   > *:first-child {
     grid-column: span 2;
   }
+  grid-template-areas:
+  'gridItem1'
+  'gridItem2'
+  'gridItem3';
 }
-  
+
 @media (min-width: 768px) {
-  .css-grid {
-      grid-template-areas: 'gridItem3 gridItem2 gridItem1';
+  main{
+    grid-template-areas: 
+    'gridItem1 gridItem1'
+    'gridItem3 gridItem2';
   }
+} 
+
+#grid-item-1 {
+    grid-area: gridItem1;
 }
+#grid-item-2 {
+   grid-area: gridItem2;
+}
+#grid-item-3 {
+    grid-area: gridItem3;
+}
+
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
