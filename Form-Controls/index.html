@@ -16,17 +16,31 @@
         <br />
         <label for="name" aria-label="name"
           >Name:
-          <input type="text" role="textbox" style="font-size: 24px" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            role="textbox"
+            style="font-size: 24px"
+            required
+          />
         </label>
         <br />
         <label for="email" aria-label="email"
           >Email:
-          <input type="email" role="textbox" style="font-size: 24px" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            role="textbox"
+            style="font-size: 24px"
+            required
+          />
         </label>
         <br />
         <label for="shirtColor" aria-label="shirtColor"
           >Shirt color:
-          <select name="shirtColor" style="font-size: 24px">
+          <select name="shirtColor" style="font-size: 24px" required>
             <option style="font-size: 24px">Green</option>
             <option style="font-size: 24px">Red</option>
             <option style="font-size: 24px">Blue</option>
@@ -35,7 +49,7 @@
         <br />
         <label for="shirtSize" aria-label="shirtSize"
           >Shirt size:
-          <select name="shirtSize" style="font-size: 24px">
+          <select name="shirtSize" style="font-size: 24px" required>
             <option style="font-size: 24px">XS</option>
             <option style="font-size: 24px">S</option>
             <option style="font-size: 24px">M</option>
@@ -45,6 +59,7 @@
           </select>
         </label>
         <br />
+        <button type="submit">Submit</button>
       </main>
       <footer>
         <h2>Aden Jones</h2>
