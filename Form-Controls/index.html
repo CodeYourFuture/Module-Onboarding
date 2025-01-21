@@ -14,7 +14,8 @@
     <main>
       <form>
         <label for="name">What is the customer's name?</label>
-        <input type="text" id="name" name="name"  minlength="2" required />
+        <input type="text" id="name" name="name"  pattern=".{2,}" 
+          title="Name must be at least 2 characters long" required />
         <span id="nameError" class="error"></span>
 
         <label for="email">What is the customer's email?</label>
