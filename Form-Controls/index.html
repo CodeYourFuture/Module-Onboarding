@@ -13,11 +13,58 @@
     </header>
     <main>
       <form>
-       <label>name</label>
-        <input>
+       <div>
+        <label >name</label>
+        <input  
+        type="text"
+        pattern="[A-Za-z]+"
+        minlength="2"
+        maxlength="9"
+        placeholder="no numbers "
+        required
+        >
+       </div>
+        
 
+       <div>
         <label>email adress</label>
-        <input>
+        <input 
+        type="email"
+        placeholder="exampl@gmail.com" 
+        required>
+        
+
+       </div> 
+       
+       
+       
+        <label for="red">red</label>
+        <input type="radio"  name="color" id="red" required>
+        </button>
+       </div>
+       <div>
+        <label for="blue">blue</label>
+        <input type="radio"  name="color" id="blue" required>
+        </button>
+       </div>
+       <div>
+        <label for="purple">purple</label>
+        <input type="radio"  name="color" id="purple" required>
+        
+       
+      </div>
+      <label for="shirtsize" aria-label="shirtsize"
+      >Shirt size:
+      <select name="shirtSize"  required>
+        <option >XS</option>
+        <option >S</option>
+        <option >M</option>
+        <option >L</option>
+        <option >XL</option>
+        <option >XXL</option>
+      </select>
+    </label>
+      <div><button type="submit">submit</button></div>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
