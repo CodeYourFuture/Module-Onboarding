@@ -17,6 +17,7 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
+   font-family: "Lucida Console", "Courier New", monospace;
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
@@ -32,9 +33,7 @@ header{
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+background-color: bisque;
 }
 a {
   padding: var(--space);
@@ -80,18 +79,15 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
-  border: var(--line);
+
+  background-color: white; 
+  border-style: solid;
+  border-radius: 15px;
   padding: 50px;
   text-align: left;
   display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
-  pa
+ 
+
 }
 
 
