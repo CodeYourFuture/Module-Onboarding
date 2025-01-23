@@ -64,7 +64,7 @@ As well as useful links to learn more */
   */
   main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--space);
     > *:first-child {
       grid-column: span 2;
