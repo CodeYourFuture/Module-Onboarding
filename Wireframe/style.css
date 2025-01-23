@@ -24,6 +24,11 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
+header{
+    text-align: center;
+
+}
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -76,7 +81,7 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
-  padding-bottom: var(--space);
+  padding: 50px;
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
@@ -86,4 +91,7 @@ article {
   > img {
     grid-column: span 3;
   }
+  pa
 }
+
+
