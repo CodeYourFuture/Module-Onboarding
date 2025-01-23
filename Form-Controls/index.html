@@ -9,19 +9,46 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Customers'T-shirt Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+      <div>
+        <label for="username"> Enter username:</label>
+        <input type= "text" id="username" name="username" placeholder= "Username" pattern="[A-Za-z]{34-10"} required  autocomplete="off"/><br><br>   
+      </div>
+      <div>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required autocomplete="off"/><br><br>
+      </div>
+      <div>
+        <label for="T-shirtcolour">Choose a colour:</label>
+        <select id="T-shirtcolour" name="T-shirtcolour">
+          <option value="">Colour</option>
+          <option value="Pink">Pink</option>
+          <option value="Blue<">Blue</option>
+          <option value="Red">Red</option>
+        </select><br><br>
+      </div>
+      <div>
+        <label for="T-shirtsize">Choose a size:</label>
+        <select id="T-shirtsize" name="T-shirtsize">
+          <option value="">Size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select><br><br>
+      </div>
+    <div>
+      <button type="button">Submit</button>
+    </div>
+    </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Basheerah Bello</h2>
     </footer>
   </body>
 </html>
