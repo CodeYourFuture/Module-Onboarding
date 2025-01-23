@@ -13,17 +13,33 @@
     </header>
     <main>
       <form>
+        <div>
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name" minlength="3" placeholder="John Gump" required>
+        <input type="text" name="name" id="name" minlength="3" placeholder="John Gump" required> 
+        </div>
+        
+        <br>
+
+        <div>
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" required>
-        <label for="colour">colour:</label>
-        <select name="colour" id="colour" required>
-          <option value="">Choose colour</option>
+        </div>
+
+        <br>
+
+        <div>
+        <label for="color">colour:</label>
+        <select name="color" id="colour" required>
+          <option value="">Choose color</option>
           <option value="blue">Blue</option>
           <option value="red">Red</option>
           <option value="green">green</option>
         </select>
+        </div>
+
+        <br>
+        
+        <div>
         <label for="size">Size:</label>
         <select name="size" id="size" required>
           <option value="">Please select </option>
@@ -34,10 +50,21 @@
           <option value="xl">XL</option>
           <option value="xxl">XXL</option>
         </select>
+        </div>
+
+        <br>
+
+        <div>
         <label for="date">Date:</label>
         <input type="date" name="date" id="date" min="2024/11/05" max="2024/12/05" required>
+        </div>
+
+        <br>
+
+        <div>
         <button type="reset">Reset</button>
         <button type="submit">Summit</button>
+        </div>
       </form>
     </main>
     <footer>
