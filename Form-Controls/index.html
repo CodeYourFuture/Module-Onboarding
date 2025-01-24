@@ -13,50 +13,51 @@
     </header>
     <main>
       <form>
-       <p>
+       <div>
             <label for="name">Full name:</label>
             <input type="text" id="name" name="user_name" required minlength="2" maxlength="50" placeholder="Enter your name" />
             Age:
             <input type="number" id="age" name="age">
-          </p>
-          <p>
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email" required placeholder="Enter your e-mail"/>
-          </p>
-          <p>
-            <label for="colour"> Please choose a colour </label> <br>
-              <input type="radio" id="green" name="Tshirt_colour" value="Green">
+       </div>
+          <div>
+            <label for="e-mail">Email:</label>
+            <input type="e-mail" id="e-mail" name="user e-mail" required placeholder="Enter your e-mail"/>
+          </div>
+          <div>
+            <label for="color"> Please choose a color </label> <br>
+              <input type="radio" id="green" name="t-shirt color" value="green">
                 <label for="green"> Green</label>
-                <input type="radio" id="red" name="Tshirt_colour" value="Red">
+                <input type="radio" id="red" name="t-shirt color" value="red">
                 <label for="red"> Red</label>
-                <input type="radio" id="yellow" name="Tshirt_colour" value="Yellow">
+                <input type="radio" id="yellow" name="t-shirt color" value="yellow">
                 <label for="yellow"> Yellow</label>   
-          </p>
+          </div>
 
-          <p>
+          <div>
             <label for="size"> Please choose a T-shirt's size: </label>
             <select id="size" name="size">
               <option disabled selected value> -- select size --</option>
-              <option> XS </option>
-              <option> S </option>
-              <option> M </option>
-              <option> L </option>
-              <option> XL </option>
-              <option> XXL </option>
+              <option value="XS"> XS </option>
+              <option value="S"> S </option>
+              <option value="M"> M </option>
+              <option value="L"> L </option>
+              <option value="XL"> XL </option>
+              <option value="XXL"> XXL </option>
             </select>
-            </p>
-                <p>Comment:
+          </div>
+                <div>
+                  <label for="comment"> Comment: </label>
                 <input type="text" id="comment" name="comment">
-                </p>
-          <p>
+                </div>
+          <div>
            <button type="submit"> SUBMIT</button>
-          </p>
+          </div>
        
       </form>
     </main>
     <footer>
      
-      <h2>By Bakytbek Sydykov</h2>
+      <p>By Bakytbek Sydykov</p>
     </footer>
   </body>
 </html>
