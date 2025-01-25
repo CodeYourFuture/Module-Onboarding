@@ -92,6 +92,7 @@ article {
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
+  align-content: space-between;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
