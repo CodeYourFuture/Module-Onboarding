@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>Shohreh's form exercise</title>
+    <meta name="description" content="Product Pick" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,15 +13,47 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+        <legend> Personal details </legend>
+        <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="type your full name" required minlength="2"> <br> <br>
+        </div>
+        <div>
+               <label for="email">E-mail</label>
+               <input type="email" name="email" id="email" placeholder="e.g., user@example.com" required > <br> <br>
+        </div>
+        </fieldset> <br>
+        <fieldset>
+          <legend>T-shirt information</legend>
+          <div>
+                <label for="colour"> Colour</label> 
+                <select name="colour" id="colour" required> 
+                    <option value="select a colour"></option>
+                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    <option value="White"> White </option>
+                </select> <br><br>
+          </div>
+          <div>
+            <label for="size">Size</label> 
+                <select name="size" id="size" required>
+                  <option value="select a size"></option>
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M"> M </option>
+                  <option value="L"> L </option>
+                  <option value="XL"> XL </option>
+                  <option value="XXL"> XXL</option>
+                </select>
+          </div>
+        </fieldset> <br>
+
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Shohreh Bayat for CYF</h2>
     </footer>
   </body>
 </html>
