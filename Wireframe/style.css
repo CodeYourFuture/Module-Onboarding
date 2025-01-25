@@ -30,6 +30,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  background-color: aquamarine;
 }
 a {
   padding: var(--space);
@@ -86,4 +87,5 @@ article {
   > img {
     grid-column: span 3;
   }
+  background-color: aqua;
 }
