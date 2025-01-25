@@ -3,25 +3,64 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>Document</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    
     <header>
-      <h1>Product Pick</h1>
+      <h2>Collecting Data</h2>
     </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+     <form>
+    <section> 
+       <fieldset>
+        <legend>Personal information:</legend>
+        <p>
+           <label for="FirstName">First Name:</label>
+             <input type="text" id="FirstName" name="FirstName" placeholder="Jane"  pattern="[A-Za-zÀ-ÿ ,.'-]+$" required>
+            </p>
+            <p>
+           <label for="lastName">Last Name:</label>
+             <input type="text" id="lastName" name="lastName" placeholder="Doe" pattern="[A-Za-zÀ-ÿ ,.'-]+$" required>
+            </p>
+            <p>
+             <label for="mail">Enter your email:</label>
+               <input type="email" id="email" name="email" placeholder="example@domain.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                </p>
+                  </fieldset>
+                  <br>
+<fieldset>
+  <legend>Choose one of our colour:</legend>
+
+ <p> <input type="radio" name="colour" id="color_1" value="Red"> 
+  <label for="color_1">Small</label> </p>
+  <p> <input type="radio" name="colour" id="color_2" value="Green"> 
+    <label for="color_2">Medium</label> </p>
+    <p> <input type="radio" name="colour" id="color_3" value="Black"> 
+      <label for="color_3">Large</label> </p>
+        </fieldset>
+     <br>
+  
+  <p>
+    <label for="sizes">Choose your size:</label>
+     <select name="size" id="sizes">
+      <option value="extraSmall">Extra small</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="Large">Large</option>
+      <option value="extraLarge"> Extra Large</option>
+      <option value="XXLarge">XX Large</option>
+       </select>
+        </p>
+  <br>
+     <button type="submit">Submit</button>
+
+
+         
+        
+
+     </section>
       </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
   </body>
 </html>
