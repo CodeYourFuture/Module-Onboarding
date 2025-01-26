@@ -20,17 +20,18 @@
             <input type="number" id="age" name="age">
        </div>
           <div>
-            <label for="e-mail">Email:</label>
-            <input type="e-mail" id="e-mail" name="user e-mail" required placeholder="Enter your e-mail"/>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your e-mail"/>
           </div>
+
           <div>
-            <label for="color"> Please choose a color </label> <br>
+            <p> Please choose a color </p>
+            <label for="green"> Green </label>
               <input type="radio" id="green" name="t-shirt color" value="green">
-                <label for="green"> Green</label>
-                <input type="radio" id="red" name="t-shirt color" value="red">
-                <label for="red"> Red</label>
-                <input type="radio" id="yellow" name="t-shirt color" value="yellow">
-                <label for="yellow"> Yellow</label>   
+            <label for="red"> Red</label>
+              <input type="radio" id="red" name="t-shirt color" value="red">
+            <label for="yellow"> Yellow</label>   
+              <input type="radio" id="yellow" name="t-shirt color" value="yellow"> 
           </div>
 
           <div>
@@ -46,8 +47,8 @@
             </select>
           </div>
                 <div>
-                  <label for="comment"> Comment: </label>
-                <input type="text" id="comment" name="comment">
+                  <p><label for="comment"> Comment: </label></p>
+                <textarea id="comment" name="comment" rows="5" cols="50"> </textarea>
                 </div>
           <div>
            <button type="submit"> SUBMIT</button>
