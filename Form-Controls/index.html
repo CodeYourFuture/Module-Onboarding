@@ -6,6 +6,21 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      label{
+        margin: 10px;
+      }
+      input{
+        size: 20px;
+        margin: 10px;
+      }
+      fieldset{
+        margin-bottom: 20px;
+      }
+      select{
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -18,11 +33,11 @@
             <div>
 
               <label for="name">Name</label>
-              <input id="name" type="text" name="name" placeholder="Enter Your Full Name" size="20px" required style="margin: 10px;">
+              <input id="name" type="text" name="name" placeholder="Enter Your Full Name" required >
             </div>
             <div>
               <label for="email">Email</label>
-              <input id="email" type="email" name="email" placeholder="Enter Your Email" size="20px" style="margin: 10px;"required>  
+              <input id="email" type="email" name="email" placeholder="Enter Your Email" required>  
 
             </div>
           </fieldset>
@@ -31,26 +46,26 @@
             <hr> 
             Colour:          
               <div>
-                <label for="red" style="margin: 10px;">Red</label>
-                <input type="radio" name="Colour" id="red" style="margin: 10px;">
+                <label for="red">Red</label>
+                <input type="radio" name="colour" id="red">
               </div>
               <div>
                 <label for="white">White</label>
-                <input type="radio" name="Colour" id="white">
+                <input type="radio" name="colour" id="white">
               </div>
               <div>
                 <label for="yellow">Yellow</label>
-                <input type="radio" name="Colour" id="yellow" style="margin: 10px;">
+                <input type="radio" name="colour" id="yellow">
               </div>
               <hr>
               <label for="size">Size:</label>
-              <select name="size of the T-Shirt" id="size" style="margin: 10px;"required>
-                <option value="Extra Small">XS</option>
-                <option value="Small">S</option>
-                <option value="Medium">M</option>
-                <option value="Large">L</option>
-                <option value="Extra-Large">XL</option>
-                <option value="2*Large">XXL</option>
+              <select name="size of the T-Shirt" id="size" required>
+                <option value="extraSmall">XS</option>
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="extraLarge">XL</option>
+                <option value="doubleExtraLarge">XXL</option>
               </select>
           <div>
             <button type="reset">Reset</button>
