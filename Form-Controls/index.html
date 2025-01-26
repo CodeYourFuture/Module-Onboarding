@@ -33,7 +33,35 @@
             <input type="email" id="email" name="email" placeholder="Email Address" required>
           </p>    
           </fieldset>
-      </section>
+       </section>
+       <section>
+        <fieldset>
+          <legend>Order Details</legend>
+            <p>
+              <label for="color">Please pick a color for the T-shirt:</label>
+              <select id="color" name="color">
+                  <option value="Black">Black</option>
+                  <option value="Gray">Gray</option>
+                  <option value="White">White</option>
+              </select> 
+            </p>
+            <p>
+                <label for="size">Please pick a size for the T-shirt:</label>
+                <select id="size" name="size">
+                    <option value="XS">Extra Small</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                    <option value="XXL">2XL</option>
+                </select>
+              </p>
+              <p>
+                <label for="quantity">Please input quantity you would like to order:<strong><a aria-label="required">*</a></strong></label>
+                <input type="number" id="number" name="number" min="1" max="10" required>
+              </p>
+          </fieldset>
+       </section>
       </form>
     </main>
     <footer>
