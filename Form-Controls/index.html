@@ -13,10 +13,29 @@
     </header>
     <main>
       <form>
-        <label for="fname">Full name</label><br>
-        <input type="text" id="fname" name="fname" required><br>
+       <fieldset>
+
+<legend>Personal details</legend>
+
+      <div>
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname" required><br> 
+         
+      <div>
+        <label for="fname">Last name</label><br>
+        <input type="text" id="lname" name="lname" required><br>   
+          
+      <div>
         <label for="email">Email</label><br>
-        <input type="text" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        </fieldset>
+        
+        <fieldset>
+<legend>Options</legend>
+
+    <div>
+        
         <label for="colours">Choose colours</label><br>
         <select id="colours" name="colours" required> 
           <option value="blue">Blue</option>
@@ -25,7 +44,7 @@
         </select>
         <br><br>
         
-        <div>
+    <div>
           <label for="sizes">Select size:</label><br>
           <select id="sizes" name="sizes" required>
             <option value="xs">XS</option>
@@ -35,9 +54,11 @@
             <option vaulue="xl">XL</option>
             <option vaulue="xxl">XXL</option>
           </select>
-        </div>
-        
-        
+        </div> <br>
+      
+      <button type="submit">Submit</button>  
+      
+      </fieldset> <br>
         
       </form>
     </main>
