@@ -18,11 +18,11 @@
         <legend>Personal information:</legend>
         <p>
            <label for="FirstName">First Name:</label>
-             <input type="text" id="FirstName" name="FirstName" placeholder="Jane"  pattern="[A-Za-zÀ-ÿ ,.'-]+$" required>
+             <input type="text" id="FirstName" name="FirstName" placeholder="Jane" minlength="2" pattern="[A-Za-zÀ-ÿ ,.'-]+$" required>
             </p>
             <p>
            <label for="lastName">Last Name:</label>
-             <input type="text" id="lastName" name="lastName" placeholder="Doe" pattern="[A-Za-zÀ-ÿ ,.'-]+$" required>
+             <input type="text" id="lastName" name="lastName" placeholder="Doe" minlength="2" required pattern="[A-Za-zÀ-ÿ ,.'-]+$">
             </p>
             <p>
              <label for="mail">Enter your email:</label>
@@ -33,18 +33,19 @@
 <fieldset>
   <legend>Choose one of our colour:</legend>
 
- <p> <input type="radio" name="colour" id="color_1" value="Red"> 
+ <p> <input type="radio" name="colour" id="color_1" value="Red" required> 
   <label for="color_1">Small</label> </p>
-  <p> <input type="radio" name="colour" id="color_2" value="Green"> 
+  <p> <input type="radio" name="colour" id="color_2" value="Green" required> 
     <label for="color_2">Medium</label> </p>
-    <p> <input type="radio" name="colour" id="color_3" value="Black"> 
+    <p> <input type="radio" name="colour" id="color_3" value="Black" required> 
       <label for="color_3">Large</label> </p>
         </fieldset>
      <br>
   
   <p>
     <label for="sizes">Choose your size:</label>
-     <select name="size" id="sizes">
+     <select name="size" id="sizes" required>
+      <option value="">Choose size</option>
       <option value="extraSmall">Extra small</option>
       <option value="small">Small</option>
       <option value="medium">Medium</option>
