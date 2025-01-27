@@ -80,12 +80,12 @@ h3,h4{
 .box2 {
   border-style: solid;
   color: black;
-  width: 700px;
+  
 }
 .box3 {
   border-style: solid;
   color: black;
-  width: 700px;
+  width: 435px;
 }
 
 
@@ -97,6 +97,23 @@ h3,h4{
     justify-content: space-evenly;
     align-items: center;
     
+  }
+
+  @media (max-width: 768px) {
+
+    .row {
+  
+      flex-direction: column;
+  
+    }
+    .box2 {
+      margin-bottom: 10px;
+
+    }
+    .box3{
+      width: 435px;
+    }
+  
   }
  
   .footer {
