@@ -102,4 +102,9 @@ header{
   text-align: center;
   background-color: blanchedalmond;
 }
+a:focus,
+button:focus {
+  outline: 2px dashed #005fcc;
+  outline-offset: 2px;
+}
 
