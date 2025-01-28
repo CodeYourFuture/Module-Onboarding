@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Our T-shirt order form" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -20,13 +20,13 @@
         <fieldset>
         <legend>Personal Information</legend>
         <label for="name">Name</label>
-        <input name="name" type="text" id="name" pattern =".{2,}" required>
+        <input name="name" type="text" id="name" pattern =".{2,}" title="Name must be at least 2 characters long" required/>
   
         <br><br>
 
         
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" required/>
       
 
       </fieldset>
@@ -35,17 +35,17 @@
 
         <div>
         <label for = "red" >Red</label>
-        <input type="radio" name="T-shirt colour" id="red"
+        <input type="radio" name="T-shirt colour" id="red" style = "width: 24px; height: 24px;" required/>
         </div>
 
         <div>
         <label for ="blue" >Blue</label>
-        <input type="radio" name="T-shirt colour" id="blue"
+        <input type="radio" name="T-shirt colour" id="blue" style = "width: 24px; height: 24px;"/>
         </div>
 
         <div>
         <label for="white">White</label>
-        <input type="radio" name="T-shirt colour" id="white"
+        <input type="radio" name="T-shirt colour" id="white" style = "width: 24px; height: 24px;"" />
         </div>
         
         </fieldset>
@@ -53,32 +53,32 @@
           <legend>T-shirt Size</legend>
           <div>
           <label for="XS">XS</label>
-          <input type="radio" name =T-shirt size id="XS"
+          <input type="radio" name ="T-shirt size" id="XS" style="width: 24px; height: 24px;" required />
           </div>
 
           <div>
           <label for="S">S</label>
-          <input type="radio" name = T-shirt size id=S
+          <input type="radio" name = "T-shirt size" id="S" style="width: 24px; height: 24px;"/>
           </div>
 
           <div>
           <label for ="M">M</label>
-          <input type="radio" name=T-shirt size id=M
+          <input type="radio" name="T-shirt size" id="M" style="width: 24px; height: 24px;"/>
           </div>
 
           <div>
           <label for ="L">L</label>
-          <input type="radio" name=T-shirt size id=L
+          <input type="radio" name="T-shirt size" id="L" style="width: 24px; height: 24px;"/>
           </div>
 
           <div>
           <label for ="XL">XL</label>
-          <input type="radio" name=T-shirt size id=XL
+          <input type="radio" name="T-shirt size" id="XL" style="width: 24px; height: 24px;"/>
           </div>
 
           <div>
           <label for ="XXL">XXL</label>
-          <input type="radio" name=T-shirt size id=XXL
+          <input type="radio" name="T-shirt size" id="XXL" style="width: 24px; height: 24px;"/>
           </div>
         </fieldset>
         
