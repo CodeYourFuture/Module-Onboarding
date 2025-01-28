@@ -120,17 +120,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.footer-about h3{
-    font-size: 1.5rem;
-}
-.footer-links, p {
-    font-size: 1rem;
-    line-height: 1.5em;
-}
-.footer-links ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
 
 @media (max-width: 1200px) {
     .article-section {  
