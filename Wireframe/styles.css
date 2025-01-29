@@ -114,18 +114,20 @@ footer {
     background-color: rgb(12, 219, 247);
     margin-top: 2rem;
     padding: 20px;
-    position: sticky;
     bottom: 0;
     width: 100%;
 }
-
+.footer-container {
+    font-size: larger;
+}
 @media (max-width: 1200px) {
     .article-section {  
         justify-content: center;
         align-items: center;   
     }
-    .article-section {
-        gap: 2em;
+    .article-section p{
+       font-size: 1rem;
+       font-weight: 500;
     }
   }
 
