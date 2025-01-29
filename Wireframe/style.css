@@ -50,6 +50,7 @@ main {
   margin: auto;
 }
 footer {
+  background-color: rgb(184, 134, 249);
   position: fixed;
   bottom: 0;
   text-align: center;
