@@ -6,36 +6,40 @@
     <title>Form exercise</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formstyles.css">
   </head>
   <body>
     <header>
       <h1>Place Your Order</h1>
     </header>
     <main>
+     
       <form method="get">
-        <div class="input-container">
-            <label for="name">First Name</label>
-            <input type="text" id="name" required minlength="3" maxlength="15" placeholder="Enter First Name">
-        </div>
-        <div class="input-container">
-            <label for="surname">Surname</label>
-            <input type="text" id="surname" required minlength="3" maxlength="15" placeholder="Enter Surname">
-        </div>
-        <div class="input-container">
-            <label for="email">Email</label>
-            <input type="email" id="email" required placeholder="Enter Your Email">
-        </div>
+        <section class="form-container">
 
-        <fieldset class="fieldset-two">
-            <legend>Please select color</legend>
-            <select class="selector" name="color" id="color" aria-label="Color selection" required>
-                <option value="" disabled selected>Click to select color</option>
-                <option class="red" value="red">Red</option>
-                <option class="green" value="green">Green</option>
-                <option class="blue" value="blue">Blue</option>
-            </select>
-        </fieldset>
+          <fieldset class="fieldset-one">
+              <div class="input-container">
+                  <label for="name">First Name</label>
+                  <input type="text" id="name" required minlength="3" maxlength="15" placeholder="Enter First Name">
+              </div>
+              <div class="input-container">
+                  <label for="surname">Surname</label>
+                  <input type="text" id="surname" required minlength="3" maxlength="15" placeholder="Enter Surname">
+              </div>
+              <div class="input-container">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required placeholder="Enter Your Email">
+              </div>
+
+          <fieldset class="fieldset-two">
+              <legend>Please select color</legend>
+              <select class="selector" name="color" id="color" aria-label="Color selection" required>
+                  <option value="" disabled selected>Click to select color</option>
+                  <option class="red" value="red">Red</option>
+                  <option class="green" value="green">Green</option>
+                  <option class="blue" value="blue">Blue</option>
+              </select>
+          </fieldset>
      
         <fieldset class="fieldset-three">
             <legend>Pick a color</legend>
@@ -80,11 +84,14 @@
 
                 <button type="submit">Order Now</button>
                 <button type="reset">Reset</button>
+              </fieldset>
+            </section>
+             
     </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Obert Tilimandzi</h2>
     </footer>
   </body>
 </html>
