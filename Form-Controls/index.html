@@ -3,21 +3,83 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>Form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Place Your Order</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+      <form method="get">
+        <div class="input-container">
+            <label for="name">First Name</label>
+            <input type="text" id="name" required minlength="3" maxlength="15" placeholder="Enter First Name">
+        </div>
+        <div class="input-container">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" required minlength="3" maxlength="15" placeholder="Enter Surname">
+        </div>
+        <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="Enter Your Email">
+        </div>
+
+        <fieldset class="fieldset-two">
+            <legend>Please select color</legend>
+            <select class="selector" name="color" id="color" aria-label="Color selection" required>
+                <option value="" disabled selected>Click to select color</option>
+                <option class="red" value="red">Red</option>
+                <option class="green" value="green">Green</option>
+                <option class="blue" value="blue">Blue</option>
+            </select>
+        </fieldset>
+     
+        <fieldset class="fieldset-three">
+            <legend>Pick a color</legend>
+            <div class="colors-container">
+                <div>
+                    <input type="radio" id="xs" name="color" value="xs" required>
+                    <label for="xs">XS</label>
+                </div>
+                <div>
+                    <input type="radio" name="color" id="s" value="s" required>
+                    <label for="s">S</label>
+                </div>
+                <div>
+                    <input type="radio" name="color" id="m" value="m" required>
+                    <label for="m">M</label>
+                </div>
+                <div>
+                    <input type="radio" name="color" id="l" value="l" required>
+                    <label for="l">L</label>
+                </div>
+                <div>
+                    <input type="radio" name="color" id="xl" value="xl" required>
+                    <label for="xl">XL</label>
+                </div>
+                <div>
+                    <input type="radio" name="color" id="xxl" value="xxl" required>
+                    <label for="xxl">XXL</label>
+                </div>
+              </div>
+        </fieldset>
+
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" min="1" max="10">
+                </div>
+
+                <div class="input-container">
+                    <label for="date">Delivery date</label>
+                    <input type="date" id="date" name="date" min="03.01.2025" max="01.02.2025">
+                    <!-- <span class="tooltip">Select a date within 4 weeks (Jan 2 - Jan 30, 2025).</span> -->
+                </div>
+
+                <button type="submit">Order Now</button>
+                <button type="reset">Reset</button>
+    </form>
     </main>
     <footer>
       <!-- change to your name-->
