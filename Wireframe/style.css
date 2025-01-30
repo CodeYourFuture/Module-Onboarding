@@ -136,3 +136,16 @@ main {
 .card button:hover {
   background-color: #1e7e34;;
 }
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #282c34;
+  color: white;
+  border-radius: 8px;
+}
+
+.footer footer {
+  font-size: 0.875rem;
+}
