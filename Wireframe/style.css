@@ -18,23 +18,40 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --ink: color-mix(in oklab, var(--color) 5%, rgb(53, 51, 77));
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
+  --big-space: 1.5rem;
+  --line: 1px solid rgb(45, 57, 74);
   --container: 1280px;
+  --active: rgb(133, 219, 133);
+  --inactive: rgb(16, 18, 66);
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+
+
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
 }
+h1, header p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header, .articles {
+padding-bottom: var(--big-space);
+}
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  color: var(--inactive)
+}
+a:hover {
+  color: var(--active)
 }
 img,
 svg {
@@ -49,11 +66,14 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
-  position: fixed;
+footer{
   bottom: 0;
   text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -87,3 +107,4 @@ article {
     grid-column: span 3;
   }
 }
+
