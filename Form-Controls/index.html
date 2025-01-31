@@ -16,12 +16,67 @@
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        this will also help you fill in your PR message later
+
+        Collect name, validate. 
+        Validate emails.
+        3 color options only.
+        6 size options: XS, S, M, L, XL, XXL
+        All fields are required.-->
+        
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name?" required>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+      
+        <div>
+          <label for="colors">What colour would you like?</label>
+          <select name="color" id="color" required>
+              <option value="Blue">Blue</option>
+              <option value="White">White</option>
+              <option value="Black">Black</option>
+          </select>
+      </div>
+    
+      <p class="section-heading">What's your size?</p>
+      <div>
+          <label for="xs">xs</label>
+          <input type="radio" name="size" value="xs" required>
+      </div>
+      <div>
+         <label for="s">s</label>
+         <input type="radio" name="size" value="s" required>
+      </div>
+      <div>
+         <label for="m">m</label>
+         <input type="radio" name="size" value="m" required>
+      </div>
+      <div>
+          <label for="l">l</label>
+          <input type="radio" name="size" value="l" required>
+      </div>
+      <div>
+          <label for="xl">xl</label>
+          <input type="radio" name="size" value="xl" required>
+      </div>
+      <div>
+          <label for="xxl">xxl</label>
+          <input type="radio" name="size" value="xxl" required>
+      </div>
+         
+      <button type="submit">Submit</button>
+
       </form>
+      
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Katarzyna Kazimeirczuk</h2>
     </footer>
   </body>
 </html>
