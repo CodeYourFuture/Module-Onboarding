@@ -11,17 +11,28 @@
   
       <form id="tshirtOrderForm">
   
-          <!-- Collect Customer Name -->
+          
+        <!-- Collect Customer Name -->
+        <div>
           <label for="customerName">Customer Name:</label>
           <input type="text" id="customerName" name="customerName" required pattern="[A-Za-z\s]{2,50}" placeholder="John Doe">
           <small class="error" id="nameError">Name must only contain letters and be between 2 and 50 characters long.</small>
-  
+        </div>
+        
+        <br>
+
+   
           <!-- Collect Customer Email -->
+          <div>
           <label for="customerEmail">Email Address:</label>
           <input type="email" id="customerEmail" name="customerEmail" required placeholder="example@email.com">
           <small class="error" id="emailError">Please enter a valid email address.</small>
+          </div>
+
+          <br>
   
           <!-- Select T-shirt Color -->
+           <div>
           <label for="tshirtColor">Choose T-shirt Color:</label>
           <select id="tshirtColor" name="tshirtColor" required>
               <option value="">Select a color</option>
@@ -29,8 +40,12 @@
               <option value="white">White</option>
               <option value="blue">Blue</option>
           </select>
+           </div>
+
+           <br>
   
           <!-- Select T-shirt Size -->
+           <div>
           <label for="tshirtSize">Choose T-shirt Size:</label>
           <select id="tshirtSize" name="tshirtSize" required>
               <option value="">Select a size</option>
@@ -41,11 +56,9 @@
               <option value="XL">XL</option>
               <option value="XXL">XXL</option>
           </select>
-  
-          <!-- Select Delivery Date -->
-          <label for="deliveryDate">Preferred Delivery Date:</label>
-          <input type="date" id="deliveryDate" name="deliveryDate" required>
-          <small class="error" id="dateError">Please select a valid delivery date within the next 4 weeks.</small>
+           </div>
+
+           <br>
   
           <button type="submit">Place Order</button>
   
