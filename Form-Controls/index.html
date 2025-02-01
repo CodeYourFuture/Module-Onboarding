@@ -13,26 +13,28 @@
   
           
         <!-- Collect Customer Name -->
-        <div>
-          <label for="customerName">Customer Name:</label>
-          <input type="text" id="customerName" name="customerName" required pattern="[A-Za-z\s]{2,50}" placeholder="John Doe">
-          <small class="error" id="nameError">Name must only contain letters and be between 2 and 50 characters long.</small>
-        </div>
+    <div>
+          <label for="customerName">Customer Name:</label><br>
+          <input type="text" id="customerName" name="customerName" required pattern="[A-Za-z\s]{2,50}" placeholder="John Doe"
+          pattern="[A-Za-z\s]{2,50}" placeholder="John Doe"
+          title="Name must only contain letters and be between 2 and 50 characters long.">
+    </div>
         
-        <br>
+    <br>
 
    
           <!-- Collect Customer Email -->
-          <div>
-          <label for="customerEmail">Email Address:</label>
-          <input type="email" id="customerEmail" name="customerEmail" required placeholder="example@email.com">
-          <small class="error" id="emailError">Please enter a valid email address.</small>
-          </div>
+    <div>
+           <label for="customerEmail">Email Address:</label><br>
+           <input type="email" id="customerEmail" name="customerEmail" required placeholder="example@email.com"
+          placeholder="example@email.com"
+          title="Please enter a valid email address.">
+    </div>
 
-          <br>
+    <br>
   
           <!-- Select T-shirt Color -->
-           <div>
+    <div>
           <label for="tshirtColor">Choose T-shirt Color:</label>
           <select id="tshirtColor" name="tshirtColor" required>
               <option value="">Select a color</option>
@@ -40,12 +42,12 @@
               <option value="white">White</option>
               <option value="blue">Blue</option>
           </select>
-           </div>
+    </div>
 
-           <br>
+    <br>
   
           <!-- Select T-shirt Size -->
-           <div>
+    <div>
           <label for="tshirtSize">Choose T-shirt Size:</label>
           <select id="tshirtSize" name="tshirtSize" required>
               <option value="">Select a size</option>
@@ -56,9 +58,9 @@
               <option value="XL">XL</option>
               <option value="XXL">XXL</option>
           </select>
-           </div>
+    </div>
 
-           <br>
+    <br>
   
           <button type="submit">Place Order</button>
   
