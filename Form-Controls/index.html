@@ -16,17 +16,37 @@
       <form>
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" required minlength="2">
+        <br></br>
         
         <lable for="email">Email</lable>
-        <input type="email" id="Email" name="Email" required minlength="2">
+        <input type="email" id="Email" name="Email" required>
+        <br></br>
 
-        
+        <label for="colour">Select A Colour</label>
+        <select id="color" name="color" required>
+            <option value="" disabled selected>Select a Colour</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="black">black</option>
+        </select>
+        <br></br>
 
+        <label for="size">Select A Size</label>
+        <select id="size" name="size" required>
+            <option value=""disabled selected>Select a Size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="LX">LX</option>
+        </select>
+        <br></br>
+
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+          <h2>By Yorsalem Mesmer</h2>
     </footer>
   </body>
 </html>
