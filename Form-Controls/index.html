@@ -18,17 +18,21 @@
         <input type="text" id="name" name="name" required minlength="2">
         <br></br>
         
-        <lable for="email">Email</lable>
-        <input type="email" id="Email" name="Email" required>
+        <label for="email">Email</lable>
+        <input type="email" id="email" name="Email" required>
         <br></br>
 
-        <label for="colour">Select A Colour</label>
-        <select id="color" name="color" required>
-            <option value="" disabled selected>Select a Colour</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="black">black</option>
-        </select>
+      <fieldset>
+          <legend>Choose a Colour</legend>
+          <input type="radio" id="red" name="colour" value="red" required>
+          <label for="red">Red</label>
+
+          <input type="radio" id="blue" name="colour" value="Blue" required>
+          <label for="blue">Blue</label>
+
+          <input type="radio" id="black" name="colour" value="Black" required>
+          <label for="black">Black</label>
+     </fieldset>
         <br></br>
 
         <label for="size">Select A Size</label>
