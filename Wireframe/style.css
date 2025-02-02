@@ -106,7 +106,7 @@ article {
 }
 @media screen and (min-width:320px) and (max-width:640px) {
 
-  body {
+body {
       max-width: 100%;
       overflow-x: hidden;
     }
