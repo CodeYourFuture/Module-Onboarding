@@ -16,6 +16,8 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+
+
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -24,6 +26,7 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1000px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -100,4 +103,19 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+@media screen and (min-width:320px) and (max-width:640px) {
+
+  body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+main {
+  display: block; 
+  }
+article{
+margin-bottom: 15px;
+border: solid 2px rgb(2, 0, 0)
+}
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
 }
