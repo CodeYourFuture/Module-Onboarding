@@ -103,3 +103,8 @@ article {
     grid-column: span 3;
   }
 }
+
+article img {
+
+  height: 600px;
+}
