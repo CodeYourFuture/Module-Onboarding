@@ -4,8 +4,8 @@
 
 <!--{{<objectives>}}>-->
 
-- [ ] Interpret requirements and check against a list of criteria
-- [ ] Write a valid form
+- [x] Interpret requirements and check against a list of criteria
+- [x] Write a valid form
 - [ ] Test with Devtools
 - [ ] Refactor using Devtools
 <!--{{<objectives>}}>-->
@@ -30,18 +30,18 @@ Do not write a form action for this project.
 
 Let's write out our testable criteria. Check each one off as you complete it.
 
-- [ ] I have used HTML only.
+- [x] I have used HTML only.
 - [x] I have not used any CSS or JavaScript.
 
 ### HTML
 
-- [ ] My form is semantic html.
-- [ ] All inputs have associated labels.
+- [x] My form is semantic html.
+- [x] All inputs have associated labels.
 - [ ] My Lighthouse Accessibility score is 100.
-- [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
+- [x] I require a valid name. I have defined a valid name as a text string of two characters or more.
 - [ ] I require a valid email.
-- [ ] I require one colour from a defined set of 3 colours.
-- [ ] I require one size from a defined set of 6 sizes.
+- [x] I require one colour from a defined set of 3 colours.
+- [x] I require one size from a defined set of 6 sizes.
 
 ## Resources
 
