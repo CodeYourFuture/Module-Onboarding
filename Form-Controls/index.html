@@ -20,12 +20,13 @@
 
         <div>
           <label for="email">E-mail address</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
         </div>
 
         <div>
           <label for="colour">T-shirt colour</label>
-          <select name="colour" id="colour">
+          <select name="colour" id="colour" required>
+            <option value="" disabled selected>Please choose a colour</option>
             <option label="Red" value="Red"></option>
             <option label="Green" value="Green"></option>
             <option label="Blue" value="Blue"></option>
@@ -34,7 +35,8 @@
 
         <div>
           <label for="size">T-shirt size</label>
-          <select name="size" id="size">
+          <select name="size" id="size" required>
+            <option value="" disabled selected>Please choose a size</option>
             <option label="XS" value="XS"></option>
             <option label="S" value="S"></option>
             <option label="M" value="M"></option>
