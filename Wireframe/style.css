@@ -31,6 +31,7 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
 header, header p {
   text-align: center;
   font-weight: bold;
@@ -62,7 +63,12 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  width: 100%;
+  background-color: antiquewhite;
 }
+
+
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
