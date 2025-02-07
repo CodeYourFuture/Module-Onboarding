@@ -31,6 +31,7 @@ body {
   color: var(--ink);
   font: var(--font);
   margin: 0%;
+  background:gray;
 }
 
 a {
@@ -58,7 +59,7 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  background: turquoise;
+  background: rgb(99, 97, 97);
   width: 100%;
 }
 /* ====== Articles Grid Layout ====
@@ -83,6 +84,8 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
+  border-radius: 15px;
+  overflow: hidden;
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -93,4 +96,9 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+
+#img3{
+  height:"420px";
 }
