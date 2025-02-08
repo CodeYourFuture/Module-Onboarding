@@ -58,17 +58,7 @@
               <button type="submit">Submit</button>
         </form>
     
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-              const today = new Date();
-              const fourWeeksFromToday = new Date();
-              fourWeeksFromToday.setDate(today.getDate() + 28);
-    
-              const dateInput = document.getElementById('deliveryDate');
-              dateInput.setAttribute('min', today.toISOString().split('T')[0]);
-              dateInput.setAttribute('max', fourWeeksFromToday.toISOString().split('T')[0]);
-          });
-      </script>
+        
       </form>
     </main>
     <footer>
