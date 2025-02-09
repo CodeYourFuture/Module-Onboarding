@@ -82,6 +82,9 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+#img3{
+  height: 420px;
+}
 article {
   border: var(--line);
   border-radius: 15px;
@@ -98,7 +101,3 @@ article {
   }
 }
 
-
-#img3{
-  height:"420px";
-}
