@@ -81,9 +81,43 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: #646892;
+  background-color: #926487;
 }
 /* footer */
 h2 {
   text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header,
+  header h1,
+  header p,
+  form {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  input[type="text"],
+  input[type="date"],
+  select {
+    float: none;
+    text-align: center;
+    width: 90%;
+    display: block;
+  }
+  button {
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: center;
+    margin-left: 1px;
+  }
+  #size {
+    float: none;
+    text-align: center;
+  }
+  .label-size {
+    text-align: center;
+  }
 }
