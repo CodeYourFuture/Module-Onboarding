@@ -49,3 +49,42 @@ label {
   margin: 8px 0;
   background: #f2f2f2;
 }
+/* T-shirt size */
+.tshirt {
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+}
+#size {
+  display: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700px;
+  margin-left: 25px;
+}
+/* T-shirt color */
+.radio {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+/* Button */
+button {
+  width: 92%;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 4px;
+  background: #0019f7;
+  margin: 8px 26px 20px;
+  padding: 14px 20px;
+  display: center;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #926487;
+}
+/* footer */
+h2 {
+  text-align: center;
+}
