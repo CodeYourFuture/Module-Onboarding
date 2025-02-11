@@ -1,7 +1,7 @@
-body {
-  margin: 0;
+/* body { */
+/* margin: 0;
   padding: 0;
-}
+} */
 .header {
   display: flex;
   flex-direction: column;
@@ -31,6 +31,7 @@ form {
 }
 input[type="text"],
 input[type="date"],
+input[type="email"],
 select {
   width: 92%;
   padding: 12px 20px;
