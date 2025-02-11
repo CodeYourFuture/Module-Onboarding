@@ -43,3 +43,9 @@ label {
   font-weight: bold;
   font-size: 20px;
 }
+/* Email */
+.label-email {
+  padding: 18px 20px;
+  margin: 8px 0;
+  background: #f2f2f2;
+}
