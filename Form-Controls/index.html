@@ -9,19 +9,59 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-shirt order form</h1>
     </header>
     <main>
-      <form>
+      
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        this will also help you fill in your PR message later--
+        //requierment 
+        //1- collect customer valid name (at least 2 character )
+        //2-customer email address (valid email address )
+        //3-allow customer to choose one color from defined three colors 
+        // 4-allow customer to choose one size from defined six size  
+
+  <form action="" method="POST">
+    <h1>T-Shirt Order Form</h1>
+
+    <!--Customer's Name -->
+    <label for="name">What is your name?</label>
+    <input type="text" id="name" name="name" required minlength="2" placeholder="Enter your full name">
+
+    <!-- Customer's Email -->
+    <label for="email">What is your email?</label>
+    <input type="email" id="email" name="email" required placeholder="Enter a valid email">
+
+    <!-- T-Shirt Colour -->
+    <label for="colour">What colour should this t-shirt be?</label>
+    <select id="colour" name="colour" required>
+      <option value="">Select a colour</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+
+    <!-- T-Shirt Size -->
+    <label for="size">What size would you like?</label>
+    <select id="size" name="size" required>
+      <option value="">Select a size</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Order</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By SARA AMIRI </h2>
     </footer>
   </body>
 </html>
