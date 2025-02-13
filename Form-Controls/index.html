@@ -15,13 +15,13 @@
       <form>
         
           <label for="u_name">Name</label><br>
-          <input type="text" name="u_name" id="u_name" placeholder="Enter your name" pattern="^[a-zA-Z\s]+$"
-          title="User name should contain only letter and spaces" minlength="2" required />
-          <br>
+          <input type="text" name="u_name" id="u_name" placeholder="Enter your name" pattern="^[a-zA-Z\s]{2,}$"
+          title="User name should contain only letter and spaces"  required />
+          <br><br>
      
           <label for="email">E-mail</label><br>
           <input type="email" name="email" id="email" placeholder="Enter your e-mail" required />
-          <br>
+          <br><br>
        
 
         <fieldset>
@@ -30,7 +30,7 @@
            <input type="radio" name="shirt_color" /><label for="green">Green</label>
            <input type="radio" name="shirt_color" /><label for="blue">Blue</label>
         </fieldset>
-        <br>
+        <br><br>
 
       
           <label for="size">Select Size</label> <br>
@@ -43,7 +43,7 @@
             <option value="xl" >XL</option>
             <option value="xxl">XXL</option>
           </select>
-        <br>  
+        <br><br>  
           <input type="submit" value="Submit">
          
       </form>
