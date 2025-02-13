@@ -24,11 +24,13 @@
         // 4-allow customer to choose one size from defined six size  
 
   <form action="" method="POST">
+    <fieldset>
+      <legend >customer information</legend>
     <h1>T-Shirt Order Form</h1>
 
     <!--Customer's Name -->
     <label for="name">What is your name?</label>
-    <input type="text" id="name" name="name" required minlength="2" placeholder="Enter your full name">
+    <input type="text" id="name" name="name" required minlength="2" pattern="[A-Za-z\s]{2,}" title="Please enter a valid name with at least 2 characters, containing only letters and spaces."> placeholder="Enter your full name">
 
     <!-- Customer's Email -->
     <label for="email">What is your email?</label>
@@ -54,7 +56,7 @@
       <option value="XL">XL</option>
       <option value="XXL">XXL</option>
     </select>
-
+  </fieldset>
     <!-- Submit Button -->
     <button type="submit">Submit Order</button>
       </form>
