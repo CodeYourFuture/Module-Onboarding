@@ -13,16 +13,16 @@
     </header>
     <main>
       <form>
-        <p>
+        
           <label for="u_name">Name</label><br>
           <input type="text" name="u_name" id="u_name" placeholder="Enter your name" pattern="^[a-zA-Z\s]+$"
-          title="User name should contain only letter and spaces" required minlenght="2"/>
-        </p>
-
-        <p>
+          title="User name should contain only letter and spaces" minlength="2" required />
+          <br>
+     
           <label for="email">E-mail</label><br>
           <input type="email" name="email" id="email" placeholder="Enter your e-mail" required />
-        </p>
+          <br>
+       
 
         <fieldset>
           <legend>Choose One Color</legend>
@@ -30,8 +30,9 @@
            <input type="radio" name="shirt_color" /><label for="green">Green</label>
            <input type="radio" name="shirt_color" /><label for="blue">Blue</label>
         </fieldset>
+        <br>
 
-        <p>
+      
           <label for="size">Select Size</label> <br>
           <select name="size" required>
             <option value="" selected >--Select Size--</option>
@@ -42,11 +43,9 @@
             <option value="xl" >XL</option>
             <option value="xxl">XXL</option>
           </select>
-        </p>
-         <p>
+        <br>  
           <input type="submit" value="Submit">
-        </p>
-        
+         
       </form>
     </main>
     <footer>
