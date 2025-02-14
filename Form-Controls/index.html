@@ -23,6 +23,8 @@
         3. What color should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colors?
         4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
         -->
+
+        <!-- pattern="^[a-zA-Z\s\-']{2,}$"This is a regular expression that checks for a minimum of two letters, and allows for spaces, hyphens, and apostrophes-->
         <fieldset>
           <legend>Customer Details:</legend>
   
@@ -31,7 +33,7 @@
                  type="text"
                  id="name"
                  name="name"
-                 minlength="2"
+                 pattern="^[a-zA-Z\s\-']{2,}$"
                  placeholder="More than two letters,please"
                  required />
           <br />
@@ -84,8 +86,8 @@
           </select>
         </fieldset>
         <br />
-        <input type="button" value="Submit" />
-        <input type="button" value="Reset" />
+        <input type="Submit" value="Submit" />
+        <input type="Reset" value="Reset" />
       </form>
     </main>
     <footer>
