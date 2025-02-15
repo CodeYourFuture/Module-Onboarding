@@ -13,10 +13,43 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Requirements:
+        - Collect customer name; ensure it's at least two characters long.
+        - Collect customer email; ensure it's in a valid email format.
+        - Provide three color options for the t-shirt.
+        - Provide six size options for the t-shirt.
+        - All fields must be required. -->
+
+        <fieldset>
+          <legend>T-Shirt Order</legend>
+          
+          <label for="customerName">Name:</label>
+          <input type="text" id="customerName" name="customerName" required minlength="2" pattern=".{2,}">
+          
+          <label for="customerEmail">Email:</label>
+          <input type="email" id="customerEmail" name="customerEmail" required>
+          
+          <label for="shirtColor">Color:</label>
+          <select id="shirtColor" name="shirtColor" required>
+            <option value="">Select a color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+          
+          <label for="shirtSize">Size:</label>
+          <select id="shirtSize" name="shirtSize" required>
+            <option value="">Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          
+          <button type="submit">Submit Order</button>
+        </fieldset>
       </form>
     </main>
     <footer>
