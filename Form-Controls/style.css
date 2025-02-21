@@ -1,0 +1,18 @@
+body {
+    background-color: bisque;
+    opacity: 0.8; 
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpy98dMScFbfgHyrpe367zKGKO7Ui66svLHg&s");
+} 
+
+form {
+ width: 420px;
+ box-sizing: border-box;
+ border: 2px solid #ccc;
+ border-radius: 5px;
+ font-size: 22px;
+ background-color: rosybrown;
+ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzGzaWTYf6UTVgexOHtNJHLtyiAJmUGSk8gA&s");
+ background-position: 20px 20px;
+ padding: 12px 20px 12px 40px;
+ transition: width 0.01s;
+}

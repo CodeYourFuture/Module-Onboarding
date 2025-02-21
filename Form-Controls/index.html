@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,11 +18,58 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+        <!-- Writing that out as a series of questions to ask yourself:
+
+1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+
+All fields are required.-->
+<p>
+   <label for="Customer_Name">Name:</label>
+   <input minlength="3" maxlength="10" type="text" id="name" name="customer_name"/>
+    <!-- I used the minlength and maxlength to validate the user input for the name in the range of 3-10 letters-->
+  </p>
+  <p>
+    <label for="Customer_Email">Email:</label>
+    <input type="email" id="email" email="Customer_Email"/> 
+    <!-- using the input type email will validate the input put by the user to be in the email form-->
+  </p>
+  
+  <p>
+    <label for="t-shirt color">
+      <span>T-Shirt Color:</span>
+
+    </label>
+    <select id="t-shirt-color" name="t-shirt-color"> <!-- giving the user choices to choose from using the select tag -->
+      <option value="red">Red t-shirt</option>
+      <option value="blue">white t-shirt</option>
+      <option value="green">Green t-shirt</option>
+
+
+    </select>
+  </p>
+  <p>
+    <label for="t-shirt size">
+      <span>T-Shirt Size:</span>
+
+    </label>
+    <select id="t-shirt-size" name="t-shirt-size">
+      <option value="XS">XS size</option>
+      <option value="S">S Size</option>
+      <option value="M">M size</option>
+      <option value="XL">XL Size</option>
+      <option value="XXL">XXL size</option>
+
+    </select>
+  </p>
+   <input type="submit" value="submit">
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>Rawan Almutairi</h2>
     </footer>
   </body>
 </html>
