@@ -2,6 +2,8 @@
 
 ## 🔑 Do the prep
 
+## This ReadMe file describes about the workflow. And give more description about the project work.
+
 Before you try to complete the work in this repo, go to your curriculum and work through the prep. The prep shows you how to complete the work in this repo. Start with the prep.
 
 Your workflow should always be:
