@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Article Layout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Site</h1>
+  </header>
+
+  <article class="main-article">
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240702120959/Readme1.png" alt="Main Article Image" />
+    <div class="content">
+      <p>Purpose of README file</p>
+      <p>A text file that provides essential information about a software project, directory, or dataset.</p>
+      <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank">Read the README</a> 
+    </div>
+  </article>
+
+  <main>
+    <section class="sub-articles">
+      <article class="sub-article">
+        <img src="https://www.miriamsuzanne.com/images/talks/7TrmlKJqvk-640.jpeg" alt="Sub Article 1" />
+        <div class="content">
+          <p>Purpose of wireframe</p>
+          <p>Basic blueprints that help teams align on requirements, keeping UX design conversations focused and constructive.</p>
+          <a href="#">Read More</a>
+        </div>
       </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+
+      <article class="sub-article">
+        <img src="https://hpc-wiki.info/mediawiki/hpc_images/thumb/6/6d/Git_tutorial_-_branching.png/700px-Git_tutorial_-_branching.png" alt="Sub Article 2" />
+        <div class="content">
+          <p>Purpose of Git branching</p>
+          <p>A branch is a new/separate version of the main repository.</p>
+          <a href="#">Read More</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Rahwa's Site
+  </footer>
+</body>
 </html>
