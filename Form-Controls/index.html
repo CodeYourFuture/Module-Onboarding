@@ -26,14 +26,28 @@
           <input type="email" id="email" name="email"> 
         </div>
         <div class="user_selection">
+          <!-- What color should this t-shirt be? I must give 3 options. 
+          How will I make sure they don't pick other colors? -->
           <label for="color"></label>
           <select name="color" required>
-              <option value=""></option>
+              <option value="">Select a color</option>
               <option value="pink">Pink</option>
               <option value="black">Black</option>
               <option value="white">White</option>
           </select>
-          
+          <!-- What size does the customer want? 
+          I must give the following 6 options: XS, S, M, L, XL, XXL -->
+          <label for="size"></label>
+          <select name="size" required>
+              <option value="">Select a size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+          </select>
+          <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
