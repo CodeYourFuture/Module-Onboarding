@@ -13,15 +13,80 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <br>
+        <div>
+            <label>Password
+            <input type="password" name="password" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div>
+            Sizes of T-Shirt
+            <div>
+                <label for="xs">Xtra-Small</label>
+                <input type="checkbox" name="xs" id="xs">
+            </div>
+            <div>
+                <label for="small">Small</label>
+                <input type="checkbox" name="small" id="small">
+            </div>
+            <div>
+                <label for="m">Medium</label>
+                <input type="checkbox" name="m" id="m">
+            </div>
+            <div>
+                <label for="l">Large</label>
+                <input type="checkbox" name="l" id="l">
+            </div>
+            <div>
+                <label for="xl">XtrLarge</label>
+                <input type="checkbox" name="xl" id="xl">
+            </div>
+            <div>
+                <label for="xxl">Double Xtra Large</label>
+                <input type="checkbox" name="xxl" id="xxl">
+            </div>
+        </div>
+        <br>
+        
+        <div>
+            Colors of the T-shirts
+            <label for="colors">Colors</label>
+                <select name="color" id="color" multiple>
+                    <option label="green" value="green"></option>
+                    <option value="Red">Red </option>
+                    <option label="blue" value="blue"></option>
+                    <option label="purple" value="purple"></option>
+                    <option label="yellow" value="yellow"></option>
+                    <option label="black" value="black"></option>
+                    
+                </select> 
+          
+        </div><br><br>
+        <div>
+            <label for="date">Delivery date</label>
+            <input type="date" name="date" id="date">
+        </div><br>        
+
+        <button type="submit">Submit The Form</button>
+        
+    </form>
+ 
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Umar Mohammed</h2>
     </footer>
   </body>
 </html>
