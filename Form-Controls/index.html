@@ -17,18 +17,20 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-
-        <!-- customers name, use minlength to ensure at least 2 characters-->
-         <label for="name">Name(required)</label>
-
-         <input type="text" id="name" name="name" required minlength="2">
-    
-        <!-- customers email-->
-         <label for="email">Email(required)</label>
-         <input type="email" id="email" name="email" required>
-
-        <!-- shirt color dropdown - select one from 3-->
         <fieldset>
+          <legend>Customer Information</legend>
+          <!-- customers name, use minlength to ensure at least 2 characters-->
+          <label for="name">Name(required)</label>
+
+          <input type="text" id="name" name="name" required minlength="2">
+
+        <!-- customers email-->
+          <label for="email">Email(required)</label>
+          <input type="email" id="email" name="email" required>
+        </fieldset>
+        
+        <fieldset>
+          <!-- shirt color dropdown - select one from 3-->
           <legend>Shirt Options</legend>
           <label for="colour" aria-label="Shirt color">Color</label>
         
@@ -46,7 +48,7 @@
             <option value="l">L</option>
             <option value="xl">XL</option>
             <option value="xxl">XXL</option>
-        </select>
+          </select>
         </fieldset>
         <!-- submit button-->
         <button type="submit" aria-label="Submit product pick form">Submit</button>
