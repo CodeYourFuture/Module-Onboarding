@@ -28,24 +28,28 @@
          <input type="email" id="email" name="email" required>
 
         <!-- shirt color dropdown - select one from 3-->
-        <label for="colour">Color</label>
-        <select id="colour" name="color">
-          <option value="pink">Pink</option>
-          <option value="brown">Brown</option>
-          <option value="black">Black</option>
+        <fieldset>
+          <legend>Shirt Options</legend>
+          <label for="colour" aria-label="Shirt color">Color</label>
+        
+          <select id="colour" name="color">
+            <option value="pink">Pink</option>
+            <option value="brown">Brown</option>
+            <option value="black">Black</option>
+          </select>
+          <!-- shirt size dropdown - select one from 6-->
+          <label for="size" aria-label="Shirt Size">Size</label>
+          <select id="size" name="size">
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
         </select>
-        <!-- shirt size dropdown - select one from 6-->
-        <label for="size">Size</label>
-        <select id="size" name="size">
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-          <option value="xxl">XXL</option>
-        </select>
+        </fieldset>
         <!-- submit button-->
-        <button type="submit">Submit</button>
+        <button type="submit" aria-label="Submit product pick form">Submit</button>
 
 
       </form>
