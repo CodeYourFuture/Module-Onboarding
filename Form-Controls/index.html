@@ -17,22 +17,22 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-        <fieldset>
-          <legend>Customer Information</legend>
+        <fieldset class="customer-info">
+          <legend>Customer Information*</legend>
           <!-- customers name, use minlength to ensure at least 2 characters-->
-          <label for="name">Name(required)</label>
+          <label for="name">Name</label>
 
           <input type="text" id="name" name="name" required minlength="2">
 
         <!-- customers email-->
-          <label for="email">Email(required)</label>
+          <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
         </fieldset>
         
-        <fieldset>
+        <fieldset class="shirt-options">
           <!-- shirt color dropdown - select one from 3-->
-          <legend>Shirt Options</legend>
-          <label for="colour" aria-label="Shirt color" required>Color(required)</label>
+          <legend>Shirt Options*</legend>
+          <label for="colour" aria-label="Shirt color" required>Color</label>
         
           <select id="colour" name="color">
             <option value="" disabled selected>Select a color</option>
@@ -41,7 +41,7 @@
             <option value="black">Black</option>
           </select>
           <!-- shirt size dropdown - select one from 6-->
-          <label for="size" aria-label="Shirt Size" required>Size(required)</label>
+          <label for="size" aria-label="Shirt Size" required>Size</label>
           <select id="size" name="size">
             <option value="" disabled selected>Select a size</option>
             <option value="xs">XS</option>
