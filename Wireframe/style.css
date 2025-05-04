@@ -71,19 +71,23 @@ https://gridbyexample.com/learn/
 */
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-
   
+  gap: var(--space);
+  grid-template-columns: 1fr;
+  padding: 10px;
+  /* width: 100%; */
+  @media (min-width: 768px) {
+    /* width:60%; */
+    padding: 100px;
+    grid-template-columns: 1fr 1fr;
     > *:first-child {
-      @media (min-width: 768px) {
+     
       grid-column: span 2;
     }
   }
 
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  
+  
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
