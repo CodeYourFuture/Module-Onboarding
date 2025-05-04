@@ -20,9 +20,10 @@ As well as useful links to learn more */
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
+  --space: clamp(6px, 6px + 2vw, 25px);
   --line: 1px solid;
   --container: 1280px;
+
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -32,8 +33,7 @@ body {
   font: var(--font);
 }
 a {
-  padding: var(--space);
-  border: var(--line);
+ 
   max-width: fit-content;
 }
 img,
@@ -57,9 +57,10 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgba(97, 97, 97, 1);
+  background-color: var(--paper);
   left: 0;
-  color: white;
+  color: var(--ink);
+  border-top: var(--line);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -92,5 +93,21 @@ article {
   }
   > img {
     grid-column: span 3;
+  }
+  > a {
+    padding: var(--space);
+    border: var(--line);
+  }
+
+}
+header {
+  /* display: flex-col; */
+  /* flex-direction: column; */
+  /* background-color: var(--primary-background); */
+  width: 100%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  > *{
+    text-align: center;
   }
 }
