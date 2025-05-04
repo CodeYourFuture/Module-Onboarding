@@ -5,3 +5,4 @@ Explains a project: what it does, how to install/use it, and contribution guidel
 Simple sketch of a website/app layout. Shows where elements go before coding.
 
 1. What is a branch in Git?
+ Isolated workspace for changes. Lets you edit safely without breaking the main code.
