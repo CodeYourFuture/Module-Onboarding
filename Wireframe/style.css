@@ -73,8 +73,16 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
+
+  
+    > *:first-child {
+      @media (min-width: 768px) {
+      grid-column: span 2;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 }
 /* ====== Article Layout ====== 
