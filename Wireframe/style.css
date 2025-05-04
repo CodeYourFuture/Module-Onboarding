@@ -56,6 +56,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background-color: rgba(97, 97, 97, 1);
+  left: 0;
+  color: white;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
