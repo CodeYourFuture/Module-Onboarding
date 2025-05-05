@@ -27,20 +27,87 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
+  background-color: rgb(249, 188, 141);
+  
   color: var(--ink);
   font: var(--font);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
-img,
-svg {
-  width: 100%;
+#wireframe-image
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
   object-fit: cover;
 }
+
+
+#box-1 {
+  width: 300px;
+  height: 350px;
+  background-color: rgba(247, 139, 7, 0.507);
+  padding: 7px;
+  float: left;
+  border: 3px solid white;
+  flex: 1;
+  
+}
+
+#box-2 {
+  width: 300px;
+  height: 350px;
+  background-color: rgba(247, 139, 7, 0.507);
+  padding: 7px;
+  float:left;
+  border: 3px solid white;
+  flex: 1;
+  
+}
+
+#box-3 {
+  width: 300px;
+  height: 350px;
+  background-color: rgba(247, 139, 7, 0.507);
+  padding: 7px;
+  float: left;
+  border: 3px solid white;
+  flex: 1;
+  
+}
+
+.button {
+  background-color: black;
+  color: aliceblue;
+  float: inline-end;
+  font-size: small;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.first-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+ padding-left: 15%;
+}
+
+#wireframe-title {
+  background-color: black;
+  color: aliceblue;
+  font: bold;
+  text-align: center;
+}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -50,9 +117,13 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  background-color: black;
+  color: aliceblue;
   bottom: 0;
-  text-align: center;
+  text-align: right;
+  margin-top: auto;
+  font-size: small;
+  padding-right: 12px;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
