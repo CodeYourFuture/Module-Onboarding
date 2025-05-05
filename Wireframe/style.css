@@ -50,12 +50,17 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
   padding-bottom: calc(var(--space) * 4);
 }
+header {
+  text-align: center;
+  margin-bottom: calc(var(--space) * 2);
+}
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
   width: 100%;
   background: var(--paper);
+  padding: var(--space);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -68,10 +73,9 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: var(--space);
-  row-gap: calc(var(--space) *2);
+  row-gap: calc(var(--space) * 2);
   
 }
-
 main > *:first-child {
   grid-column: span 2;
 }
@@ -94,16 +98,16 @@ article {
   }
   > img {
     grid-column: span 3;
+    border: var(--line);
+    border-radius: 5px;
   }
 }
-
 a { 
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
   border-radius: 4px;
 }
-
 a:hover {
   color: var(--ink);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
