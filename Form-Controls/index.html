@@ -1,27 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <br>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" required>
+
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div>
+            T-Shirt Size
+            <div>
+                <label for="xs">X-Small</label>
+                <input type="checkbox" name="xs" id="xs">
+            </div>
+            <div>
+                <label for="small">Small</label>
+                <input type="checkbox" name="small" id="small">
+            </div>
+            <div>
+                <label for="m">Medium</label>
+                <input type="checkbox" name="m" id="m">
+            </div>
+            <div>
+                <label for="l">Large</label>
+                <input type="checkbox" name="l" id="l">
+            </div>
+            <div>
+                <label for="xl">X-Large</label>
+                <input type="checkbox" name="xl" id="xl">
+            </div>
+            <div>
+                <label for="xxl">XX-Large</label>
+                <input type="checkbox" name="xxl" id="xxl">
+            </div>
+        </div>
+        <br>
+        
+        <div>
+            T-Shirt Colours
+            <label for="Colours">Colours</label>
+                <select name="Colours" id="Colours"
+                    <option label="green" value="green"></option>
+                    <option value="red">red </option>
+                    <option label="blue" value="blue"></option>
+                    <option label="purple" value="purple"></option>
+                    <option label="yellow" value="yellow"></option>
+                    <option label="black" value="black"></option>
+                    
+                </select> 
+          
+        </div><br><br>
+        <div>
+            <label for="date">Please select delivery date</label>
+            <input type="date" name="date" id="date">
+        </div><br>        
+
+        <button type="submit">Submit</button>
+        
+    </form>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+        <h2>Dylan Maeder</h2>
+      </footer>
+</body>
 </html>
