@@ -17,12 +17,13 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --paper: oklch(7% 0 0);             
+  --ink: oklch(20% 0 0);              
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+  --teal: oklch(55% 0.15 200);        
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -30,6 +31,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  margin: 0;
 }
 a {
   padding: var(--space);
@@ -51,16 +53,33 @@ main {
   padding-bottom: calc(var(--space) * 4);
 }
 header {
+  background: var(--paper);
+  color: oklch(95% 0 0);        
   text-align: center;
-  margin-bottom: calc(var(--space) * 2);
+  padding: calc(var(--space) * 2);
+  border-bottom: 2px solid var(--teal);
+}
+header h1 {
+  color: oklch(95% 0 0);
+  border-bottom: 3px solid var(--teal);
+  display: inline-block;
+  padding-bottom: var(--space);
+}
+header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
   width: 100%;
-  background: var(--paper);
+  background: var(--paper); 
+  color: oklch(95% 0 0);         
   padding: var(--space);
+  font-size: 0.9rem;
+  border-top: 2px solid var(--teal);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -85,9 +104,11 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
-  border: var(--line);
+  border: oklch(95% 0 0);
+  color: oklch(100% 0 0);
+  border: 2px solid var(--teal);
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px var;
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -98,8 +119,7 @@ article {
   }
   > img {
     grid-column: span 3;
-    border: var(--line);
-    border-radius: 5px;
+    border-radius: 8px 8px 0 0;
   }
 }
 a { 
@@ -107,8 +127,11 @@ a {
   border: var(--line);
   max-width: fit-content;
   border-radius: 4px;
+  color: var(--teal);
+  text-decoration: none;
 }
 a:hover {
-  color: var(--ink);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--teal);
+  color: oklch(100% 0 0);
+  
 }
