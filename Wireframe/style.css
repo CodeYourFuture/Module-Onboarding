@@ -50,7 +50,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
- /*-- border: solid, red; --*/
+ /*-- border: solid, red; --> */
    bottom: 0;
   left:0;
   width:100%;
@@ -90,4 +90,8 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+header{
+  text-align: center;
 }

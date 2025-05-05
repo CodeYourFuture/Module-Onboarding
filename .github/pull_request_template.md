@@ -1,15 +1,9 @@
 <!--
 
-You must title your PR like this:
 
-COHORT_NAME | FIRST_NAME LAST_NAME | REPO_NAME | WEEK
 
-For example,
+London | ITP-May-2025 | Aida Eslami | Module-Onboarding | Week1 
 
-NW4 | Carol Owen | HTML-CSS-Module | Week1
-
-Complete the task list below this message.
-If your PR is rejected, check the task list.
 
 -->
 
@@ -17,11 +11,11 @@ If your PR is rejected, check the task list.
 
 Self checklist
 
-- [ ] I have committed my files one by one, on purpose, and for a reason
-- [ ] I have titled my PR with COHORT_NAME | FIRST_NAME LAST_NAME | REPO_NAME | WEEK 
-- [ ] I have tested my changes
-- [ ] My changes follow the [style guide](https://curriculum.codeyourfuture.io/guides/reviewing/style-guide/)
-- [ ] My changes meet the [requirements](./README.md) of this task
+- [Y] I have committed my files one by one, on purpose, and for a reason
+- [Y] I have titled my PR with COHORT_NAME | Aida Eslami  | REPO_NAME | WEEK 
+- [Y] I have tested my changes
+- [Y] My changes follow the [style guide](https://curriculum.codeyourfuture.io/guides/reviewing/style-guide/)
+- [Y] My changes meet the [requirements](./README.md) of this task
 
 ## Changelist
 
