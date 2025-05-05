@@ -58,6 +58,9 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  background-color: #5b7182;
+  width: 100%;
+  color: white;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
