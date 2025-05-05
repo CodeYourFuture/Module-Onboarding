@@ -65,6 +65,21 @@ nav {
   color: rgb(244, 61, 61);
 }
 
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ol {
+  padding: 0 0 0 20px;
+}
+
 .container {
   width: 80%;
   max-width: 100%;
