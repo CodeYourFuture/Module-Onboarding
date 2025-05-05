@@ -21,37 +21,77 @@ As well as useful links to learn more */
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
+  --line: 1px solid #444457;
   --container: 1280px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
+  background: #1e1e2f;
+  color: #f0f0f5;
   font: var(--font);
 }
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+  color: #0e0d0d;
+  text-decoration: none;
+  background-color: #5fafff;
+  padding: 10px 15px;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  transition: .3s;
+}
+a:hover{
+  color: #f0f0f5;
+  background-color: #267acb;
 }
 img,
 svg {
   width: 100%;
   object-fit: cover;
+  filter: brightness(0.7);
+  transition: .5;
+}
+img:hover,
+svg:hover {
+  filter: brightness(1);
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header{
+  text-align: center;
+  background-color: #2f2f47;
+  border-radius: 15px;
+  margin-bottom: 0;
+}
+header h1{
+  margin-bottom: 0;
+}
+header p{
+  padding: 10px;
+  margin-top: 0;
+}
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+main h2{
+  margin-bottom: 0;
+  text-align: center;
+}
+main h3{
+  margin: 0;
+}
+
 footer {
   position: fixed;
   bottom: 0;
+  background-color: #2f2f47;
+  width: 100%;
+  font-size: 20px;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
