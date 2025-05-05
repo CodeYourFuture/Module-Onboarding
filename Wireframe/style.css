@@ -48,6 +48,7 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding-bottom: calc(var(--space) * 4);
 }
 footer {
   position: fixed;
@@ -66,10 +67,13 @@ https://gridbyexample.com/learn/
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+  column-gap: var(--space);
+  row-gap: calc(var(--space) *2);
+  
+}
+
+main > *:first-child {
+  grid-column: span 2;
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -78,9 +82,12 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
+  height: 100%;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
@@ -88,4 +95,16 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+a { 
+  padding: var(--space);
+  border: var(--line);
+  max-width: fit-content;
+  border-radius: 4px;
+}
+
+a:hover {
+  color: var(--ink);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
