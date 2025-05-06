@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+  margin: 0; /* Remove default margins */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+main {
+  padding: 20px;
+  flex: 1; /* Allow main content to expand */
+}
+
+#main-img{
+  width: 100%;
+  height: 300px;
+}
+#art-img{
+  width: 200px;
+}
+
+
+article {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+article h2 {
+  margin-top: 0;
+}
+
+article a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* Needed for sticky footer */
+  bottom: 0; /* Stick to bottom */
+  width: 100%; /* Full width */
+}
+
+
+#articles {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default (mobile) */
+  gap: 20px;
+}
+
+@media (min-width: 768px) { /* Example breakpoint for larger screens */
+  #articles {
+      grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  }
+}
