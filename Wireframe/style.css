@@ -17,11 +17,11 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
+  --paper: rgba(0, 0, 0, 0.975);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
+  --line: 1px solid rgb(160, 140, 113);
   --container: 1280px;
 }
 /* ====== Base Elements ======
@@ -31,10 +31,25 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+header{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.859);
+  color: black;
+}
+a:hover{
+  color: rgb(229, 130, 130);
+  background-color: rgba(206, 251, 236, 0.815);
+  transition: .3s;
 }
 img,
 svg {
@@ -49,10 +64,18 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
+footer  {
   position: fixed;
   bottom: 0;
+  background: rgb(224, 144, 144);
+  width: 100%;
   text-align: center;
+  padding: 2px;
+}
+footer p{
+  font-size: larger;
+  font-weight: bolder;
+  color: black;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -75,6 +98,7 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
+  background-color: rgba(253, 162, 162, 0.719);
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
@@ -86,4 +110,10 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+article:hover{
+  border: 1px solid cadetblue;
+}
+article h1 {
+  text-decoration: underline;
 }
