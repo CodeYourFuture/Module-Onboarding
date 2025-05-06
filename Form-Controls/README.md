@@ -4,7 +4,7 @@
 
 <!--{{<objectives>}}>-->
 
-- [ ] Interpret requirements and check against a list of criteria
+- [ v] Interpret requirements and check against a list of criteria
 - [ ] Write a valid form
 - [ ] Test with Devtools
 - [ ] Refactor using Devtools

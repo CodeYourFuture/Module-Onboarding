@@ -12,7 +12,19 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
+      <form method="GET">
+        <div>
+          <label for="name">Customer Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+
+        <div>
+          <label for="email">Customer email address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
