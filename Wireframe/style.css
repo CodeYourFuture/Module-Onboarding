@@ -30,17 +30,56 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  background-color: whitesmoke;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  border-radius: 6px;
+
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+#readmeimg{
+  width:100%;
+  max-width:300px;
+  display:block;
+  margin:0 auto;
+  height:auto;
 }
+#gitimg{
+  width:100%;
+  max-width:300px;
+  display:block;
+  margin:0 auto;
+  height:auto;
+}
+#wireframeimg{
+  width:100%;
+  max-width:500px;
+  display:block;
+  margin:0 auto;
+  height: auto;
+}
+#head1{
+  text-align: center;
+  background-color:pink;
+  font-style: italic;
+}
+#firstp{
+  text-align: center;
+}
+ul{
+  color: crimson;
+  list-style-type: none;
+  text-align: center;
+  
+}
+
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -53,6 +92,26 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+}
+.footera{
+  all: unset;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: left;
+
+}
+.footer-box{
+  border: 2px solid gray ;
+  text-align: left;
+}
+.footer-box ul {
+  padding-left: 0;
+
+
+}
+.footer-box li{
+  margin-bottom: 5px;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
