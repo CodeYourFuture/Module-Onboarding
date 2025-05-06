@@ -1,0 +1,1 @@
+The primary purpose of a wireframe is to establish the basic structure and layout of a website or app before any visual design or content is added. I
