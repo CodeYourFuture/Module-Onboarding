@@ -1,27 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>T-Shirt Order Form</h1>
+    <form id="tshirtForm">
+        <!-- Name Field -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only).">
+            <div class="error" id="nameError"></div>
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error" id="emailError"></div>
+        </div>
+
+        <!-- Color Selection -->
+        <div class="form-group">
+            <label for="color">T-Shirt Color:</label>
+            <select id="color" name="color" required>
+                <option value="">Select a color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+            <div class="error" id="colorError"></div>
+        </div>
+
+        <!-- Size Selection -->
+        <div class="form-group">
+            <label for="size">T-Shirt Size:</label>
+            <select id="size" name="size" required>
+                <option value="">Select a size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <div class="error" id="sizeError"></div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <button type="submit">Place Order</button>
+        </div>
+    </form>
+
+    <script>
+        // Basic form validation
+        document.getElementById('tshirtForm').addEventListener('submit', function(event) {
+            let isValid = true;
+
+            // Validate Name
+            const name = document.getElementById('name').value.trim();
+            if (!name.match(/^[A-Za-z\s]+$/)) {
+                document.getElementById('nameError').textContent = 'Please enter a valid name (letters and spaces only).';
+                isValid = false;
+            } else {
+                document.getElementById('nameError').textContent = '';
+            }
+
+            // Validate Email
+            const email = document.getElementById('email').value.trim();
+            if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+                isValid = false;
+            } else {
+                document.getElementById('emailError').textContent = '';
+            }
+
+            // Validate Color
+            const color = document.getElementById('color').value;
+            if (!color) {
+                document.getElementById('colorError').textContent = 'Please select a color.';
+                isValid = false;
+            } else {
+                document.getElementById('colorError').textContent = '';
+            }
+
+            // Validate Size
+            const size = document.getElementById('size').value;
+            if (!size) {
+                document.getElementById('sizeError').textContent = 'Please select a size.';
+                isValid = false;
+            } else {
+                document.getElementById('sizeError').textContent = '';
+            }
+
+            // Prevent form submission if validation fails
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
 </html>
