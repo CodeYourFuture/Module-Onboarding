@@ -6,7 +6,7 @@ Using the provided wireframe and resources, write a new webpage explaining:
 
 1. What is the purpose of a README file?
 1. What is the purpose of a wireframe?
-1. What is a branch in Git?
+1. What is a branch in Git? Why do developers need Git?
 
 There are some provided HTML and CSS files you can use to get started. You can use these files as a starting point or create your own files from scratch. You _must_ modify the HTML and CSS files to meet the acceptance criteria and you must check this criteria yourself before you submit your work.
 
