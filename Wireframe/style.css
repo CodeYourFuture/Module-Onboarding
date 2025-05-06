@@ -55,9 +55,13 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer  p{
-  position: relative;
+footer  {
+  background: var(--paper);
+  color: var(--ink);
+  position: fixed;
   bottom: 0;
+  right: 0;
+  left: 0;  
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
