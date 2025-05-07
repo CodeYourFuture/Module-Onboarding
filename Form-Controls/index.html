@@ -13,15 +13,53 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+       <fieldset>
+
+<legend>Personal details</legend>
+
+      <div>
+        <label for="fname">Full name</label><br>
+        <input type="text" id="fname" name="fname" minlength="2" required><br> 
+          
+      <div>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        </fieldset>
+        
+        <fieldset>
+<legend>Options</legend>
+
+    <div>
+        
+        <label for="colours">Choose colours</label><br>
+        <select id="colours" name="colours" required> 
+          <option value="blue">Blue</option>
+          <option vaulue="green">Green</option>
+          <option vaulue="red">Red</option>
+        </select>
+        <br><br>
+        
+    <div>
+          <label for="sizes">Select size:</label><br>
+          <select id="sizes" name="sizes" required>
+            <option value="xs">XS</option>
+            <option vaulue="s">S</option>
+            <option vaulue="m">M</option>
+            <option value="l">L</option>
+            <option vaulue="xl">XL</option>
+            <option vaulue="xxl">XXL</option>
+          </select>
+        </div> <br>
+      
+      <button type="submit">Submit</button>  
+      
+      </fieldset> <br>
+        
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Chi Mbah</h2>
     </footer>
   </body>
 </html>
