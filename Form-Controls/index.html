@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Our T-shirt order form" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,15 +13,88 @@
     </header>
     <main>
       <form>
+    
+      <fieldset>
+      <legend>Customer information and order details</legend>
+
+        <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name</label>
+        <input name="name" type="text" id="name" pattern =".{2,}" title="Name must be at least 2 characters long" required/>
+  
+        <br><br>
+
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required/>
+      
+
+      </fieldset>
+      <fieldset>
+        <legend>T-shirt Colour</legend>
+
+        <div>
+        <label for = "red" >Red</label>
+        <input type="radio" name="T-shirt colour" id="red" style = "width: 24px; height: 24px;" required/>
+        </div>
+
+        <div>
+        <label for ="blue" >Blue</label>
+        <input type="radio" name="T-shirt colour" id="blue" style = "width: 24px; height: 24px;"/>
+        </div>
+
+        <div>
+        <label for="white">White</label>
+        <input type="radio" name="T-shirt colour" id="white" style = "width: 24px; height: 24px;"" />
+        </div>
+        
+        </fieldset>
+        <fieldset>
+          <legend>T-shirt Size</legend>
+          <div>
+          <label for="XS">XS</label>
+          <input type="radio" name ="T-shirt size" id="XS" style="width: 24px; height: 24px;" required />
+          </div>
+
+          <div>
+          <label for="S">S</label>
+          <input type="radio" name = "T-shirt size" id="S" style="width: 24px; height: 24px;"/>
+          </div>
+
+          <div>
+          <label for ="M">M</label>
+          <input type="radio" name="T-shirt size" id="M" style="width: 24px; height: 24px;"/>
+          </div>
+
+          <div>
+          <label for ="L">L</label>
+          <input type="radio" name="T-shirt size" id="L" style="width: 24px; height: 24px;"/>
+          </div>
+
+          <div>
+          <label for ="XL">XL</label>
+          <input type="radio" name="T-shirt size" id="XL" style="width: 24px; height: 24px;"/>
+          </div>
+
+          <div>
+          <label for ="XXL">XXL</label>
+          <input type="radio" name="T-shirt size" id="XXL" style="width: 24px; height: 24px;"/>
+          </div>
+        </fieldset>
+        
+
+
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+      </fieldset>
+    
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Segun Folayan</h2>
     </footer>
   </body>
 </html>
