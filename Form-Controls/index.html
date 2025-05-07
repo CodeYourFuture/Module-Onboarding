@@ -3,25 +3,44 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>My Form Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
+        <label for="name">Full name:</label>
+        <input
+          type="text"
+          id="name"
+          name="first_name"
+          placeholder="Enter full name"
+          autocomplete="name"
+          maxlength="32"
+          pattern="[A-Za-z ]{2,32}"
+          required
+        />
+        <br /><br />
+
+        <label for="email">Email address:</label>
+        <input
+          type="email"
+          id="email"
+          name="user_email"
+          autocomplete="email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+        <br /><br />
+
+       
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>&copy; 2025 Rahwa Haile</p>
     </footer>
   </body>
 </html>
