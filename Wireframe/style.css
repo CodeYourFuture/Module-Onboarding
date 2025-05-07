@@ -37,7 +37,7 @@ a {
 }
 img,
 svg {
-  width: 50%;
+  width: 100%;
   object-fit: cover;
 }
 /* ====== Site Layout ====== 
@@ -52,6 +52,7 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
