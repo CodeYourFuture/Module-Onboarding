@@ -12,16 +12,73 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          max-width: 600px;
+          margin: 0 auto;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+        label {
+          font-weight: bold;
+        }
+      </style>
+          
+          <label for="customer-name">What is the customer's name?</label>
+          <input 
+            type="text" 
+            id="customer-name" 
+            name="customer-name" 
+            required 
+            pattern="^[a-zA-Z\s]+$" 
+            title="Name should only contain letters and spaces."
+            placeholder="Enter customer's name"
+          />
+        
+      
+          <label for="customer-email">What is the customer's email?</label>
+          <input 
+            type="email" 
+            id="customer-email" 
+            name="customer-email" 
+            required 
+            placeholder="Enter customer's email"
+          />
+        
+      
+          <fieldset>
+            <legend>What colour should this t-shirt be?</legend>
+            <label>
+              <input type="radio" name="tshirt-colour" value="red" required /> Red
+            </label>
+            <label>
+              <input type="radio" name="tshirt-colour" value="blue" /> Blue
+            </label>
+            <label>
+              <input type="radio" name="tshirt-colour" value="green" /> Green
+            </label>
+          </fieldset>
+  
+          <label for="tshirt-size">What size does the customer want?</label>
+          <select id="tshirt-size" name="tshirt-size" required>
+            <option value="" disabled selected>Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Loveth Okafor</h2>
     </footer>
   </body>
 </html>
