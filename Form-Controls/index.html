@@ -15,6 +15,8 @@
       <form>
         <!-- write your html here-->
         <!-- What is the customer's first name -->
+         <fieldset>
+          <legend>Customer Information</legend>
         <div>
           <label for="first_name">Firs Name:</label>
           <input type="text" id="first_name" name="first_name" required minlength="2" /><br /><br />
@@ -29,7 +31,9 @@
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required /><br /><br /> 
         <div>
-        <!-- What is the customer's choice of t-shirt color? -->
+        </fieldset>
+        <fieldset>
+          <legend>Product Information</legend>
         <div>
           T-shirt Color:
           <div>
@@ -59,6 +63,7 @@
           <input type="radio" id="xxl" name="size" value="XXL" required />
           <label for="xxl">XXL</label><br />
           </div>
+        </fieldset>
         <br>
           <button type="reset">Reset</button>
           <button type="submit">Submit</button> 
