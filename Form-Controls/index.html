@@ -1,82 +1,79 @@
-m<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-Shirt Order Form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Shirt Order Form</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <form>
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
-        </div>
-        <br>
-        <div>
-            <label>Password</label>
-            <input type="password" name="password" required>
+  <form aria-label="T-Shirt Order Form">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+    </div>
 
-        </div>
-        <br>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-        <br>
-        <div>
-            T-Shirt Size
-            <div>
-                <label for="xs">X-Small</label>
-                <input type="checkbox" name="xs" id="xs">
-            </div>
-            <div>
-                <label for="small">Small</label>
-                <input type="checkbox" name="small" id="small">
-            </div>
-            <div>
-                <label for="medium">Medium</label>
-                <input type="checkbox" name="m" id="m">
-            </div>
-            <div>
-                <label for="large">Large</label>
-                <input type="checkbox" name="l" id="l">
-            </div>
-            <div>
-                <label for="xl">X-Large</label>
-                <input type="checkbox" name="xl" id="xl">
-            </div>
-            <div>
-                <label for="xxl">XX-Large</label>
-                <input type="checkbox" name="xxl" id="xxl">
-            </div>
-        </div>
-        <br>
-        
-        <div>
-            T-Shirt Colours
-            <label for="Colours">Colours</label>
-                <select name="Colours" id="Colours"
-                    <option label="green" value="green">Green</option>
-                    <option value="red">Red</option>
-                    <option label="blue" value="blue">Blue</option>
-                    <option label="purple" value="purple">Purple</option>
-                    <option label="yellow" value="yellow">Yellow</option>
-                    <option label="black" value="black">Black</option>
-                    
-                </select> 
-          
-        </div><br><br>
-        <div>
-            <label for="date">Please select delivery date</label>
-            <input type="date" name="date" id="date">
-        </div><br>        
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required />
+    </div>
 
-        <button type="submit">Submit</button>
-        
-    </form>
-    <footer>
-        <h2>Dylan Maeder</h2>
-      </footer>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+    </div>
+
+    <fieldset>
+      <legend>T-Shirt Size</legend>
+      <div>
+        <input type="checkbox" name="size" id="xs" value="XS" />
+        <label for="xs">X-Small</label>
+      </div>
+      <div>
+        <input type="checkbox" name="size" id="small" value="S" />
+        <label for="small">Small</label>
+      </div>
+      <div>
+        <input type="checkbox" name="size" id="medium" value="M" />
+        <label for="medium">Medium</label>
+      </div>
+      <div>
+        <input type="checkbox" name="size" id="large" value="L" />
+        <label for="large">Large</label>
+      </div>
+      <div>
+        <input type="checkbox" name="size" id="xl" value="XL" />
+        <label for="xl">X-Large</label>
+      </div>
+      <div>
+        <input type="checkbox" name="size" id="xxl" value="XXL" />
+        <label for="xxl">XX-Large</label>
+      </div>
+    </fieldset>
+
+    <div>
+      <label for="Colours">T-Shirt Colour</label>
+      <select name="Colours" id="Colours" required>
+        <option value="" disabled selected>Select a colour</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="purple">Purple</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="date">Please select delivery date</label>
+      <input type="date" name="date" id="date" />
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+    <h2>Dylan Maeder</h2>
+  </footer>
 </body>
 </html>
