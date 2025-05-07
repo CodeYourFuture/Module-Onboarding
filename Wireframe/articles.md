@@ -8,3 +8,5 @@ The purpose of the wireframe is to provide the layout and structure of a website
 
 
 1. What is a branch in Git?
+
+A branch in Git is a pointer to a snapshot of your changes.
