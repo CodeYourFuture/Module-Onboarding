@@ -12,6 +12,7 @@
     </header>
 
     <main>
+      <h2>Order Form</h2>
       <form>
         <label for="name">Full name:</label>
         <input
@@ -23,9 +24,10 @@
           maxlength="32"
           pattern="[A-Za-z ]{2,32}"
           required
+          aria-describedby="nameHint"
         />
+        <small id="nameHint">Only letters and spaces, 2–32 characters.</small>
         <br /><br />
-
         <label for="email">Email address:</label>
         <input
           type="email"
@@ -36,11 +38,43 @@
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           required
         />
+        <small id="emailHint">We'll never share your email.</small>
         <br /><br />
+        <fieldset>
+          <legend>Choose a T-shirt Colour:</legend>
+          <label>
+            <input type="radio" name="color" value="Red" required /> Red
+          </label><br />
+          <label>
+            <input type="radio" name="color" value="Green" required /> Green
+          </label><br />
+          <label>
+            <input type="radio" name="color" value="Blue" required /> Blue
+          </label>
+        </fieldset>
+        <br />
 
-       
+        <fieldset>
+          <legend>Choose a T-shirt Size:</legend>
+          <label for="size">Select your size:</label>
+          <select id="size" name="size" required>
+            <option value="" disabled selected>--Select--</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </fieldset>
+        
+        <br />
+        <button type="submit">Submit Order</button>
+      </form>
+    </main>
+
     <footer>
-      <p>&copy; 2025 Rahwa Haile</p>
+      <p>By Rahwa Haile</p>
     </footer>
   </body>
 </html>
