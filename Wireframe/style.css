@@ -1,21 +1,19 @@
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --paper: #f5f5f5;
+  --ink: #222;
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
+  --space: clamp(10px, 2vw, 20px);
+  --line: 1px solid #ccc;
   --container: 1280px;
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  font: var(--font);
   background: var(--paper);
   color: var(--ink);
-  font: var(--font);
 }
 
 header, footer {
@@ -26,70 +24,62 @@ header, footer {
 }
 
 main {
-  flex-grow: 1;
   max-width: var(--container);
   margin: 0 auto;
-  padding-bottom: var(--space);
+  padding: var(--space);
+}
+
+.articles-parent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
 }
 
 .main-article {
-  width: 100%;
-  margin: var(--space) 0;
   background: white;
+  padding: var(--space);
   border: var(--line);
-  display: flex;
-  flex-direction: column;
 }
-
 .main-article img {
-  width: 100%;
-  height: 400px;
-  object-fit: contain;
-  margin: 0;
+  display: block;
+  margin: 0 auto;
 }
 
-.main-article .content {
-  padding: var(--space);
+.child-articles {
   display: flex;
   flex-direction: column;
   gap: var(--space);
 }
 
-.sub-articles {
-  display: flex;
-  gap: var(--space);
-  flex-wrap: wrap;
-  margin: var(--space) 0;
-}
-
-.sub-article {
+.child-articles article {
   background: white;
-  border: var(--line);
-  flex: 1 1 48%;
-  display: flex;
-  flex-direction: column;
-}
-
-.sub-article img {
-  width: 100%;
-  height: 300px;
-  object-fit: contain;
-}
-
-.sub-article .content {
   padding: var(--space);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space);
-  flex-grow: 1;
+  border: var(--line);
+}
+@media (min-width: 768px) {
+  .child-articles {
+    flex-direction: row;
+  }
+
+  .child-articles article {
+    width: 50%;
+  }
 }
 
-.content a {
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: var(--space);
+}
+
+a {
   text-decoration: none;
   color: blue;
   font-weight: bold;
   border: var(--line);
   padding: 5px 10px;
+  display: inline-block;
+  margin-top: var(--space);
   background-color: #f9f9f9;
-  align-self: flex-start;
 }
