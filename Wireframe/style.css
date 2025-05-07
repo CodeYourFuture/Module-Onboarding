@@ -17,6 +17,7 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
+   font-family: "Lucida Console", "Courier New", monospace;
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
@@ -24,12 +25,15 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
+header{
+    text-align: center;
+
+}
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+background-color: bisque;
 }
 a {
   padding: var(--space);
@@ -46,6 +50,12 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+  > *:first-child {
+    grid-column: span 2;
+  }
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
@@ -54,36 +64,25 @@ footer {
   bottom: 0;
   text-align: center;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
+
 article {
-  border: var(--line);
-  padding-bottom: var(--space);
+
+  background-color: white; 
+  border-style: solid;
+  border-radius: 15px;
+  padding: 50px;
   text-align: left;
   display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+ 
+
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
