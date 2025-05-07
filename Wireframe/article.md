@@ -1,7 +1,7 @@
 1. What is the purpose of a README file?
 provides important information about a project.
 
-1. What is the purpose of a wireframe?
+2. What is the purpose of a wireframe?
+A wireframe is a visual blueprint of a website 
 
-
-1. What is a branch in Git?
+3. What is a branch in Git?
