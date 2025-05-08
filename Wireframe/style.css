@@ -31,6 +31,21 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
+header {
+  text-align: center;
+  padding: var(--space) 0;
+  margin-bottom: var(--space);
+  border-bottom: var(--line);
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: var(--space) 0;
+  text-decoration: underline;
+}
+
 a {
   padding: var(--space);
   border: var(--line);
