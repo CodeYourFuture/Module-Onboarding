@@ -2,31 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Controls</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>T-Shirt Order Form</title>
 </head>
 <body>
 
-  <h1>Register</h1>
+  <h1>Order Your T-Shirt</h1>
 
   <form>
+    <!-- Name -->
     <label for="name">Full Name:</label>
-    <input type="text" id="name" name="name" required />
+    <input type="text" id="name" name="name" required minlength="2" />
 
+    <!-- Email -->
     <label for="email">Email Address:</label>
     <input type="email" id="email" name="email" required />
 
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age" min="18" max="99" required />
+    <!-- Colour -->
+    <p>Select a colour:</p>
+    <input type="radio" id="red" name="color" value="Red" required />
+    <label for="red">Red</label>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" minlength="6" required />
+    <input type="radio" id="blue" name="color" value="Blue" />
+    <label for="blue">Blue</label>
 
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob" required />
+    <input type="radio" id="green" name="color" value="Green" />
+    <label for="green">Green</label>
 
-    <button type="submit">Submit</button>
+    <!-- Size -->
+    <label for="size">Choose a size:</label>
+    <select id="size" name="size" required>
+      <option value="">--Select a size--</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+
+    <!-- Submit Button -->
+    <br><br>
+    <button type="submit">Place Order</button>
   </form>
 
 </body>
