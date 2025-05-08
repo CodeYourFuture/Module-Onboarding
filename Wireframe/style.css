@@ -1,13 +1,9 @@
 header{
-  background-color: red;
   text-align: center;
-  padding: 0px;
 }
-footer{
-  background-color: red;
-  width: 100%;
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  text-align: center;
+#first_article_wrap{
+  border-style:solid;
+  width:70vw;
+  overflow:scroll;
+  margin: auto;
 }
