@@ -7,3 +7,5 @@ Its purpose is to tell other people information about why your project is useful
 Its purpose is to create a schematic in the early stages of digital product design to help visualize and communicate the structure of a product or website.
 
 3. What is a branch in Git?
+
+A branch is a sequence of commits in a project.
