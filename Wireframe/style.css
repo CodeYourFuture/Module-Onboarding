@@ -36,7 +36,8 @@ article {
   border-radius: 6px;
 }
 
-article h2 {
+
+article :first-child {
   margin-top: 0;
 }
 
