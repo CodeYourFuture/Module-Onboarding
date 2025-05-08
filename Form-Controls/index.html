@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Controls</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Register</h1>
+
+  <form>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="99" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="6" required />
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
 </html>
