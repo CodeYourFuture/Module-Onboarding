@@ -24,10 +24,35 @@
         <a href="">Read more</a>
       </article>
     </main>
+
+    <main>
+      <article>
+        <div class="row">
+          <div class="column">
+            <img src="placeholder.svg" alt="" />
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="">Read more</a>
+          </div>
+          <div class="column">
+            <img src="placeholder.svg" alt="" />
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="">Read more</a>
+          </div>
+        </div>
+      </article>
+    </main>
+    <br />
+
     <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <p>&copy; <span id="currentYear"></span> Modified by iteddy16. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to dynamically insert the current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
     </footer>
   </body>
 </html>
