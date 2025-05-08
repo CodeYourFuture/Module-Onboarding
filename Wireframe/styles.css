@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #252424;
+}
+ul li {
+    list-style: none;
+}
+img {
+    border-radius: .2rem;
+}
+
+body {
+    font-size: 62%;
+    background-color: antiquewhite;
+    max-width: 1440px;
+    margin: 1rem auto;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: rgb(14, 12, 12);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header header header header header"
+    "article article article article article article article article"
+    "footer footer footer footer footer footer footer footer";
+    gap: 20px;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(17, 197, 221);
+    border-radius: .8rem;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+nav {
+    padding: 1rem; 
+    text-align: center;
+}
+nav h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.article-section {
+    grid-area: article;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(17, 197, 221);
+    border-radius: 1em;
+}
+.article-section > article:first-child {
+    max-width: 1440px;
+    background-color: rgb(9, 180, 202);
+    flex: 1 1 100%;
+    padding: 1em;
+}
+.hero-img {
+    width: 100%;
+}
+
+.article-section > article:first-child h3 {
+    font-size: 1.5rem;
+}
+
+.text-container {
+    max-width: 600px;
+    padding: 1em;
+    margin-bottom: 1rem;
+}
+.article-content {
+    padding: 1em;
+    width: 80%;
+}
+.article-content p {
+    font-size: 1rem;
+}
+.text-container h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.text-container img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+.button {
+    padding: 1em;
+    font-size: 1rem;
+    background-color: antiquewhite;
+    border-radius: .5em;
+    color: blueviolet;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(12, 219, 247);
+    margin-top: 2rem;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+.footer-container {
+    font-size: larger;
+}
+@media (max-width: 1200px) {
+    .article-section {  
+        justify-content: center;
+        align-items: center;   
+    }
+    .article-section p{
+       font-size: 1rem;
+       font-weight: 500;
+    }
+  }
+
+
+
+
+
+
+
