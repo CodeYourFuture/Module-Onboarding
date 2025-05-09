@@ -13,15 +13,29 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- getting the customer's name by defining it's a real name by making sure its restricted from less then 2 characters-->
+         <div style="display: inline-block; margin-right: 10px;">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required-minlength="2" placeholder="Enter Your First Name"/>
+         </div>
+
+         <div style="display: inline-block;">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required-minlength="2" placeholder="Enter Your Last Name">
+         </div>
+        <!-- getting the customer's email and making sure its valid -->
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+        </div>
+        <!-- adding a <checkbox> element for being able to choose the 3 colors of the t-shirts -->
+        <!-- use a <select> type element for being able to choose between the size's of the t-shirts (XS, S, M, L, XL, XXL)-->
+        <!-- add a submit button to the page-->
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Declan Williams</h2>
     </footer>
   </body>
 </html>
