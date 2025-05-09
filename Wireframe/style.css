@@ -30,11 +30,18 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0IDQ0NDQ0ICAcHCA8IDQcNFREWFhURExMYHSggGCYlGxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OFQ8PFSsZFRkrKy0tKy0rLSstKy0rKystNysrKy0rKy0rLTcrLSsrKys3KysrLSsrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQADB//EABoQAQEBAQADAAAAAAAAAAAAAAABEQISMXH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBf/EABkRAQEBAQEBAAAAAAAAAAAAAAABEQIxEv/aAAwDAQACEQMRAD8A9FZlYegypFBlZhGWMsEbFZcEtTCxlkGUXFxQTGwsbxBGwsbAFMPG8QCxMPEAGwsTAGxCSwBQmG5QZagqMqCohICMzAytFgMqKDKhSCNFZYM2tFYpBlpFYpASRYshSCaOLhYuCaGLhY2AOJh42BrnjHiC6FgumCKFiU8SgA4dSwAqUko3BZagqMtQVGZgZWjArMsErRWiiVoTSLIMLIrFIDFI0hSCa2LIshSDNqY2FIuDNo42HIufBNc8aw8bA2ueDY64Ng1K54ljpYNgrnYNjpRGoFB0sGihYhUaLKNQqg0iK1GkZmBosRYDKiiKsYoMVikSQoIshxCglWQkhyDOtIUjSFIMW62LiyFIIONh42CaGJjpiYK51LHTBsBzsGx0sGwWVysGulCjoFE6NGgo2HRARpVKNQWasNRGZhWVFBoURYMrCgwhgoUGHAWHB5PkZpQokODHSwokOQZaQpGkURsbCYTRxLDQAGnYlFc7ArpQornRp0aNxzo06I3HOjTGijRpURYlRag2zMwrRmjAqxFgyUVIUGCKCQHDgQ4MU+Sgw4MUoYwp7GSixIUEqszKjJVYAGnRqKFCunQUac6NOhRrlzE6A6QKNJKKFRagvPo1FqDTMzDTRmjAqxFgyUKBCGDISgHDjnycGa6QoHJ8jnThxzhyjJwoEpSiEyKuoyNrUEo1aNRRoUqNGhoUqFG+QEqI3Ao0qNFGotQXn0ai1BuMzMKiooNCgwoMrCEoM0ofLnDgh8lyEKDNdOTjnKUGOo6ylK5wpRl0LXPS0Q20dbRC1LU1NBaNa0bRUo2raFoqULStC0dIlCrRo3Eo1aIJRq1KNcoi1BqMzMKixIwKqKISwYsGacIClGThc1zhhhynHOUpRmukKVzlKDFjpKsoSroyeroa2gWpqamgtqJaNoLaFa1LRuRLRtWhRqNQW0aNJUrJQRKojcRmYaiMzAiosBWSKISisEKKJDBSlKEKAZSucpCY6Sq5ylojpqyucq6M4eroa2iYepaOoHyWpaOpo1i2pamjoq2ja1ojTDWtQGotUosajVQbZFQVmRgaMigqowKsRoIbQYQzYUWBKWjJrKEXQNZQWUMPV0NXRMNtDW0MPU0dbQwtTR1NDCG1E0VUtS1AZLWtQWRhq1BpGZBWZkFZmYEWIwKrMCszAyxmGSaVWGem1WYRdLUYFZmQbW1mBtZmUZNZgTUZko1HVYgiVmVtEZhWRmFRqzAjMwr/2Q==);
 }
 a {
   padding: var(--space);
-  border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+  transition: 0.3 ease;
+}
+a:hover {
+  color: rgb(179, 67, 141);
+  text-decoration: underline;
+  
 }
 img,
 svg {
@@ -56,6 +63,8 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  color:rgb(247, 69, 143);
+  font-weight: 600;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -74,7 +83,10 @@ article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
-  display: grid;
+  border: 3px solid rgb(247, 69, 143);
+padding: 10px;
+}
+ /* display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
@@ -82,7 +94,7 @@ article {
   > img {
     grid-column: span 3;
   }
-}
+}*/
 .sidebyside{
   display: flex;
   gap: 20px;
@@ -92,4 +104,15 @@ article {
   flex: 1 1 48%;
   box-sizing: border-box;
   margin-bottom: 20px;
+}
+
+h1, h2{
+  font-style: italic;
+  text-decoration: underline rgb(247, 69, 143);
+}
+
+p{
+  line-height: 26px;
+  font-family: "Courier New", monospace;
+  font-weight:500;
 }
