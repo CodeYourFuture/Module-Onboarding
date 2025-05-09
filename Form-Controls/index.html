@@ -13,15 +13,34 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <label for="name">Customer's Name:</label>
+        <input type="text" id="name" name="name" aria-label="Customer's name" required aria-required="true" />
+        
+        <label for="email">Customer's Email:</label>
+        <input type="email" id="email" name="email" aria-label="Customer's email" required aria-required="true" />
+
+        <label for="color">Choose a T-shirt color:</label>
+        <select id="color" name="color" required>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+
+        <label for="size">Choose a T-shirt size:</label>
+        <select id="size" name="size" required>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Abdullah Albaiti</h2>
     </footer>
   </body>
 </html>
