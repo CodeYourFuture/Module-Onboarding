@@ -12,16 +12,73 @@
       <h1>Product Pick</h1>
     </header>
     <main>
+      <p>
+        <strong>Required fields are followed by</strong>
+        <strong><span aria-label="required">*</span></strong>.
+      </p>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        <!-- 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+        2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+        3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+        4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
+        <section id="customer">
+          <fieldset>
+            <legend>Customer Details</legend>
+            <p>
+              <label for="name">Name:<strong><a aria-label="required">*</a></strong>
+                <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Full Name" 
+                minlength="2" 
+                title="Please ensure your name has more than 2 characters" 
+                required>
+            </p>
+            <p>
+              <label for="email">Email:<strong><a aria-label="required">*</a></strong>
+                <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Email Address"
+                title="Please ensure you are using valid email address"
+                required>
+            </p>    
+            </fieldset>
+       </section>
+       <section id="order">
+        <fieldset>
+          <legend>Order Details</legend>
+            <p>
+              <label for="color">Please pick a color for the T-shirt:</label>
+              <select id="color" name="color">
+                  <option value="Black">Black</option>
+                  <option value="Gray">Gray</option>
+                  <option value="White">White</option>
+              </select> 
+            </p>
+            <p>
+                <label for="size">Please pick a size for the T-shirt:</label>
+                <select id="size" name="size">
+                    <option value="XS">Extra Small</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                    <option value="XXL">2XL</option>
+                </select>
+              </p>
+              </fieldset>
+       </section>
+       </form>
+      <section id="buttons">
+        <button>Submit</button>
+      </section>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Samunta Sunuwar - Jan 2025 London Cohort</h2>
     </footer>
   </body>
 </html>
