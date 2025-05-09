@@ -17,11 +17,46 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+
+        <!--Adding labels to enter name and email address and validate-->
+<label for="name"></label>Name</label>
+<input type="string" name="name" id="name" minlength="2" required >
+<br><br>
+<label for="email"></label>Email</label>
+<input type="email" name="email" id="email" required>
+<br><br><br>
+
+       <!--Adding labels to select shirt colours-->
+  <label>Shirt Colour</label>
+  <br><br>
+  <input type="radio" id="red" name="color" value="Red" required>
+  <lablel for="red">Red</lablel>
+  <input type="radio" id="white" name="color" value="White" required>
+  <lablel for="white">White</lablel>
+  <input type="radio" id="blue" name="color" value="Blue" required>
+  <lablel for="blue">Blue</lablel>
+
+  <br><br><br>
+    <!--Adding labels to select shirt sizes-->
+
+  <label>Shirt Size</label>
+  <select name="size" id="size">
+    <option value="XS">XS</option>
+    <option label="S">S</option>
+    <option label="M">M</option>
+    <option label="L">L</option>
+    <option label="XL">XL</option>
+    <option label="XXL">XXL</option>
+  </select>
+
+<br><br>
+<button type="submit">Submit</button>
+  <br><br>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h4>By DURGA WELIWITEGODA</h4>
     </footer>
   </body>
 </html>
