@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- getting the customer's name by defining it's a real name by making sure its restricted from less then 2 characters-->
-         <div style="display: inline-block; margin-right: 10px;">
-          <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName" required-minlength="2" placeholder="Enter Your First Name"/>
-         </div>
 
-         <div style="display: inline-block;">
-          <label for="lastName">Last Name:</label>
-          <input type="text" id="lastName" name="lastName" required-minlength="2" placeholder="Enter Your Last Name">
-         </div>
-        <!-- getting the customer's email and making sure its valid -->
-        <div>
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
-        </div>
-        <!-- adding a <checkbox> element for being able to choose the 3 colors of the t-shirts -->
-        <!-- use a <select> type element for being able to choose between the size's of the t-shirts (XS, S, M, L, XL, XXL)-->
-        <!-- add a submit button to the page-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By Declan Williams</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- getting the customer's name by defining it's a real name by making sure its restricted from less then 2 characters-->
+      <div style="display: inline-block; margin-right: 10px;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required-minlength="2" placeholder="Enter Your First Name" />
+      </div>
+
+      <div style="display: inline-block;">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required-minlength="2" placeholder="Enter Your Last Name">
+      </div>
+
+      <!-- getting the customer's email and making sure its valid -->
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+      </div>
+
+      <!-- adding a <radio> element for being able to choose between the colors of the t-shirts-->
+      <div>
+        <label for="color">Choose a color:</label>
+        <label for="black">Black:</label>
+        <input type="radio" id="black" name="color" value="black">
+        <label for="white">White:</label>
+        <input type="radio" id="white" name="color" value="white">
+        <label for="gray">Gray:</label>
+        <input type="radio" id="gray" name="color" value="gray">
+      </div>
+      <!-- use a <select> type element for being able to choose between the size's of the t-shirts (XS, S, M, L, XL, XXL)-->
+      <!-- add a submit button to the page-->
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By Declan Williams</h2>
+  </footer>
+</body>
+
 </html>
