@@ -3,58 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>CYF Coursework Overview</title>
     <style>
       :root {
-        --paper: oklch(7 0 0);
-        --ink: color-mix(in oklab, var(--color) 5%, black);
+        --paper: #fdfdfd;
+        --ink: #111;
         --font: 100%/1.5 system-ui;
         --space: clamp(6px, 6px + 2vw, 15px);
-        --line: 1px solid;
+        --line: 1px solid #ccc;
       }
+
       body {
         background: var(--paper);
         color: var(--ink);
         font: var(--font);
         max-width: 1280px;
         margin: 0 auto;
+        padding: var(--space);
+      }
+
+      header,
+      footer {
+        background-color: #e1f0ff;
+        padding: var(--space);
+        border-bottom: var(--line);
+      }
+
+      nav {
+        margin: 10px 0;
+      }
+
+      nav a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #007acc;
+      }
+
+      main {
+        padding: var(--space);
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      h1, h2 {
+        color: #0a3d62;
+      }
+
+      footer {
+        border-top: var(--line);
+        text-align: center;
+        font-size: 0.9em;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Understanding Web Development Basics</h1>
-      <p>This page explains key tools developers use: README files, wireframes, and Git branches.</p>
+      <h1>🧐 CYF Coursework Overview</h1>
+      <nav>
+        <a href="#wireframe">Wireframe</a>
+        <a href="#form-controls">Form Controls</a>
+      </nav>
     </header>
 
     <main>
-      <section class="articles">
+      <section id="wireframe">
         <article>
-          <img src="placeholder.svg" alt="README file example" />
-          <h2>What is a README File?</h2>
-          <p>A README file introduces a project, explains how to install and use it, and helps others understand your code.</p>
-          <a href="https://www.makeareadme.com/">Read more</a>
+          <h2><a href="/Wireframe">Project 1: Wireframe</a></h2>
+          <p>
+            Mentors: <a href="/Wireframe/readme.md">Open the assignment</a>
+          </p>
         </article>
+      </section>
 
+      <section id="form-controls">
         <article>
-          <img src="placeholder.svg" alt="Wireframe sketch" />
-          <h2>What is a Wireframe?</h2>
-          <p>A wireframe is a visual guide for a web page layout. It helps plan structure before coding begins.</p>
-          <a href="https://www.productplan.com/glossary/wireframe/">Read more</a>
-        </article>
-
-        <article>
-          <img src="placeholder.svg" alt="Git branching illustration" />
-          <h2>What is a Git Branch?</h2>
-          <p>A Git branch allows developers to work on changes separately from the main codebase, then merge safely.</p>
-          <a href="https://www.atlassian.com/git/tutorials/using-branches">Read more</a>
+          <h2><a href="/Form-Controls">Project 2: Form Controls</a></h2>
+          <p>
+            Mentors: <a href="/Form-Controls/readme.md">Open the assignment</a>
+          </p>
         </article>
       </section>
     </main>
 
     <footer>
       <p>Created by Mansour Ibrahim | CodeYourFuture 2025</p>
+      <a href="HOW_TO_REVIEW.md">How to Review</a>
     </footer>
   </body>
 </html>
