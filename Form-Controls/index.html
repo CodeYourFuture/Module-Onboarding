@@ -3,31 +3,36 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>T-Shirt Order Form</title>
+    <meta name="description" content="Order your custom t-shirt" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your T-Shirt</h1>
     </header>
     <main>
       <form>
-        <label for="name">Customer's Name:</label>
-        <input type="text" id="name" name="name" aria-label="Customer's name" required aria-required="true" />
-        
-        <label for="email">Customer's Email:</label>
-        <input type="email" id="email" name="email" aria-label="Customer's email" required aria-required="true" />
+        <!-- Name input -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="2" />
 
-        <label for="color">Choose a T-shirt color:</label>
-        <select id="color" name="color" required>
-          <option value="red">Red</option>
-          <option value="blue">Blue</option>
-          <option value="green">Green</option>
-        </select>
+        <!-- Email input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
 
-        <label for="size">Choose a T-shirt size:</label>
+        <!-- T-shirt colour (radio buttons) -->
+        <fieldset>
+          <legend>Choose a T-shirt Colour:</legend>
+          <label><input type="radio" name="color" value="red" required /> Red</label>
+          <label><input type="radio" name="color" value="blue" /> Blue</label>
+          <label><input type="radio" name="color" value="green" /> Green</label>
+        </fieldset>
+
+        <!-- T-shirt size (select dropdown) -->
+        <label for="size">Choose a Size:</label>
         <select id="size" name="size" required>
+          <option value="">--Select Size--</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>
@@ -36,11 +41,12 @@
           <option value="XXL">XXL</option>
         </select>
 
+        <!-- Submit -->
         <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <h2>By Abdullah Albaiti</h2>
+      <p>By Abdullah Albaiti</p>
     </footer>
   </body>
 </html>
