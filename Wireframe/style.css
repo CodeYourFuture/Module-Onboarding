@@ -41,6 +41,14 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+
+ul li {
+  color:darkcyan;
+}
+ul li:first-child {
+  color:darkslategray;
+  font-weight:bold;
+}
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -86,4 +94,20 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+.README h2, p {
+  margin: 4px;
+  font-size: 90%;
+
+}
+
+.Wireframe h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+.Branch > h2, p {
+  margin: 4px;
+  font-size: 90%;
 }
