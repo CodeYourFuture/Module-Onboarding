@@ -39,6 +39,10 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+h1{
+  margin:0 auto;
+  width: fit-content;
+}
 a {
   padding: var(--space);
   border: var(--line);
