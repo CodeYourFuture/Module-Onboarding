@@ -17,11 +17,82 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+        <!-- 
+        1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+        2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+        3. What color should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colors?
+        4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+        -->
+
+        <!-- pattern="^[a-zA-Z\s\-']{2,}$"This is a regular expression that checks for a minimum of two letters, and allows for spaces, hyphens, and apostrophes-->
+        <fieldset>
+          <legend>Customer Details:</legend>
+  
+          <label for="name">Name:</label>
+          <input
+                 type="text"
+                 id="name"
+                 name="name"
+                 pattern="^[a-zA-Z\s\-']{2,}$"
+                 placeholder="More than two letters,please"
+                 required />
+          <br />
+          <br />
+          <label for="email">Email:</label>
+          <input
+                 type="email"
+                 id="email"
+                 name="email"
+                 autocomplete="on"
+                 placeholder="Example@gmail.com"
+                 required />
+        </fieldset>
+  
+        <fieldset>
+          <legend>Color:</legend>
+          <input 
+                  type="radio" 
+                  id="red" 
+                  name="color" 
+                  value="red" 
+                  required/>
+          <label for="red">Red</label>
+  
+          <input 
+                  type="radio" 
+                  id="green" 
+                  name="color" 
+                  value="green" />
+          <label for="green">Green</label>
+  
+          <input 
+                  type="radio" 
+                  id="blue" 
+                  name="color" 
+                  value="blue" />
+          <label for="blue">Blue</label>
+        </fieldset>
+  
+        <fieldset>
+          <legend>Size:</legend>
+          <label for="size">size:</label>
+          <select id="size" name="size" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </fieldset>
+        <br />
+        <input type="Submit" value="Submit" />
+        <input type="Reset" value="Reset" />
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Khalil Ali</h2>
     </footer>
   </body>
 </html>
