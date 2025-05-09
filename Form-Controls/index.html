@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Order Form</title>
+</head>
+<body>
+    <h1>Order Your Custom T-Shirt</h1>
+    <!-- This form collects information from customers for ordering a t-shirt -->
+    <form action="/submit-order" method="POST">
+        <!-- Customer's Name -->
+        <!-- A valid name should include only alphabets and spaces, and be non-empty -->
+        <label for="name">What is your name?</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" 
+               title="Please enter a valid name (letters and spaces only).">
+        <br><br>
+        
+        <!-- Customer's Surname -->
+        <!-- A valid surname should include only alphabets and spaces, and be non-empty -->
+        <label for="surname">What is your surname?</label>
+        <input type="text" id="surname" name="surname" required pattern="[A-Za-z\s]+" 
+               title="Please enter a valid surname (letters and spaces only).">
+        <br><br>
+        
+        <!-- Customer's Email -->
+        <!-- A valid email should follow the standard format: something@domain.com -->
+        <label for="email">What is your email?</label>
+        <input type="email" id="email" name="email" required 
+               title="Please enter a valid email address.">
+        <br><br>
+        
+        <!-- T-Shirt Colour -->
+        <!-- The customer must choose one of three valid colors: red, blue, or black -->
+        <label for="colour">Choose your t-shirt colour:</label>
+        <select id="colour" name="colour" required>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+        </select>
+        <br><br>
+        
+        <!-- T-Shirt Size -->
+        <!-- Customers must pick one of the six options: XS, S, M, L, XL, XXL -->
+        <label for="size">Select your t-shirt size:</label>
+        <select id="size" name="size" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+        <br><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit Order</button>
+    </form>
+</body>
 </html>
