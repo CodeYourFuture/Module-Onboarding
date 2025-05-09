@@ -102,3 +102,24 @@ article {
     grid-column: span 3;
   }
 }
+
+#Branch-in-GIT {
+  margin-bottom: 0rem;
+}
+
+#Branch-in-GIT p {
+  margin: 0.5rem 0;
+}
+
+#Branch-in-GIT img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1rem auto;
+}
+#Branch-in-GIT a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: underline;
+  color: blue;;
+}
