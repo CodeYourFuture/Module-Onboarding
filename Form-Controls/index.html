@@ -13,11 +13,27 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+   <fieldset>
+     <legend>Order details</legend>
+  <label for="size">Sizes available</label>
+   <br><br>
+  <select id="size" required>
+    <option value="" disabled selected>Select your option</option>
+    <option value="xs">Size XS</option>
+    <option value="x">Size X</option>
+    <option value="m">Size M</option>
+    <option value="l">Size L</option>
+    <option value="XL">Size XL</option>
+  </select>
+  <p>Pick your colour</p>
+   <label for="black">Black</label>
+   <input type="radio"name="shirt_size"id="black"value="black"required>
+   <label for="white">White</label>
+   <input type="radio"name="shirt_size"id="white"value="white"required>
+   <label for="red">Red</label>
+   <input type="radio"name="shirt_size"id="red"value="red"required>
+  </fieldset>   
+</form> 
     </main>
     <footer>
       <!-- change to your name-->
