@@ -13,6 +13,65 @@
     </header>
     <main>
       <form>
+        <section>
+          <div>
+            <label>Full Name:</label> &nbsp; &nbsp; &nbsp; &nbsp;
+            <input
+              type="text"
+              required
+              pattern="[A-Za-z ]{2,50}"
+              title="2-50 alphabetical characters"
+            />
+          </div>
+          <br />
+          <div>
+            <label>Account Email:</label>&nbsp;
+            <input
+              type="email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+          </div>
+        </section>
+
+        <section>
+          <h2>Design Your T-Shirt</h2>
+
+          <fieldset>
+            <legend>Select Color:</legend>
+
+            <label>
+              <input type="radio" name="color" value="red" required />
+              Red
+            </label>
+
+            <label>
+              <input type="radio" name="color" value="blue" />
+              Blue
+            </label>
+
+            <label>
+              <input type="radio" name="color" value="green" />
+              Green
+            </label>
+          </fieldset>
+          <br />
+          <div>
+            <label>Select Size:</label>&nbsp; &nbsp; &nbsp; &nbsp;
+            <select required>
+              <option value="" disabled selected>Choose size...</option>
+              <option value="XS">Extra Small (XS)</option>
+              <option value="S">Small (S)</option>
+              <option value="M">Medium (M)</option>
+              <option value="L">Large (L)</option>
+              <option value="XL">Extra Large (XL)</option>
+              <option value="XXL">Double Extra Large (XXL)</option>
+            </select>
+          </div>
+        </section>
+        <br /><br />
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+        &nbsp; &nbsp;<button type="submit">Place Order</button>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
@@ -21,7 +80,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h5>&copy; cyf - Modified by: Tewodors Bekere</h6>
     </footer>
   </body>
 </html>
