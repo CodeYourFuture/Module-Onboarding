@@ -87,3 +87,13 @@ article {
     grid-column: span 3;
   }
 }
+
+header {
+  
+  padding: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgb(106, 96, 96);
+  font-size: xx-large;
+
+}
