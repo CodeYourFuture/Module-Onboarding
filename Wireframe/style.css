@@ -16,6 +16,14 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+#readme {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* adjust this value as needed */
+  object-fit: cover;
+  display: block;
+}
+
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
