@@ -13,7 +13,45 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
+        <fieldset>
+    <legend>Order Your T-Shirt</legend>
+
+    <!-- Customer Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required pattern="[A-Za-z\s\-']{2,50}" title="Name must be 2–50 characters, letters only">
+    <br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <!-- T-shirt Colour -->
+    <label for="colour">Choose a colour:</label>
+    <select id="colour" name="colour" required>
+      <option value="">--Please choose--</option>
+      <option value="black">Black</option>
+      <option value="white">White</option>
+      <option value="red">Red</option>
+    </select>
+    <br><br>
+
+    <!-- Size -->
+    <label for="size">Size:</label>
+    <select id="size" name="size" required>
+      <option value="">--Select a size--</option>
+      <option value="xs">XS</option>
+      <option value="s">S</option>
+      <option value="m">M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>
+      <option value="xxl">XXL</option>
+    </select>
+    <br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </fieldset><!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
