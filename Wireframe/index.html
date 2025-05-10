@@ -1,33 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wire-frame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section -->
     <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+        <div class="hero-image">
+            <img src="Git img/githubimg.jpg" alt="Hero Image"/>
+            <div class="hero-text">
+                <h1>Wire•Frame</h1>
+                <h2>Learn About Git</h2>
+            </div>
+        </div>
     </header>
+ 
+    <!-- Main content area -->
     <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+        <div class="text-container">
+            <!-- Article 1: What is Git -->
+            <article id="question1" class="main">
+                <h2>What is Git?</h2>
+                <img src="Git img/git.png" alt="gitAIimg" width="300" height="300"/>
+                <p>Git is a distributed version control system. It empowers developers to track changes to their code, create branches for different features or bug fixes, and seamlessly merge changes. Let's explore its essential concepts and how it fits into your workflow.</p>
+                <p><a href="https://docs.github.com/en/get-started/using-git/about-git">Learn more</a></p>
+                
+            </article>
+
+            <!-- Article 2: Why developers need Git -->
+            <article id="question2" class="second">
+                <h2>Why Git?</h2>
+                <img src="Git img/git(1).png" alt="gitbotimg" width="300" height="300"/>
+                <h3>Why do developers need Git?</h3>
+                <p>Version control, a fundamental practice in software development, offers numerous advantages that streamline the development process and elevate the quality of your projects. Git and GitHub are at the forefront of these advantages.</p>
+                <div class="container">
+                    <ul class="content">
+                        <li>History Tracking</li>
+                        <li>Team Collaboration</li>
+                        <li>Conflict Resolution</li>
+                        <li>Code Quality</li>
+                        <li>Backup and Disaster Recovery</li>
+                        <li>Experimentation</li>
+                        <li>Accountability</li>
+                        <li>Efficient Collaboration</li>
+                        <li>Stable Releases</li>
+                        <li>Custom Workflows</li>
+                        <li>Remote Access</li>
+                        <li>Continuous Integration</li>
+                    </ul>
+                </div>
+                <p><a href="https://www.youtube.com/watch?v=QV0kVNvkMxc">Video-Learn more</a></p>
+            </article>
+
+            <!-- Article 3: What is a branch in Git -->
+            <article id="question3" class="last">
+                <h2>Git Branch</h2>
+                <img src="Git img/git2.png" alt="gitbranchimg" width="350" height="300"/>
+                <h3>What is a branch in Git?</h3>
+                <p>In Git, a branch is similar to a separate line of development. It allows you to work on new features, bug fixes, or experiments without affecting the main codebase. Branching creates a new branch based on your current branch (usually the main branch). You can think of it as creating a parallel universe for your work.</p>
+                <p>Branching is especially useful for collaborative projects. Each developer can work on their branch, making changes independently.</p>
+                <p><a href="https://docs.github.com/en/get-started/using-git/about-git">More</a></p>
+            </article>
+        </div>
+
+        <!-- Summary section -->
+        <section>
+            <h2>Summary</h2>
+            <ul>
+                <li>Git is a version control system that tracks changes in your project over time.</li>
+                <li>Understanding Git terminology and the basic workflow is essential.</li>
+                <li>Common Git commands enable you to create, commit, and share code.</li>
+                <li>Branches help you work on different features simultaneously.</li>
+                <li>Git preserves a comprehensive version history for your project.</li>
+            </ul>
+        </section>
+    
+    
+    <!-- Footer section -->
+     <div class="footer">
+    <footer class="footer">
+        <p>Footer</p>
+        <p>email: git@github.com</p>
     </footer>
-  </body>
+    </div>
+</main>
+</body>
 </html>
