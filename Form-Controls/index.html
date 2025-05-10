@@ -14,6 +14,68 @@
     <main>
       <form>
         <!-- write your html here-->
+        <!-- First Name field -->
+        <div>
+          <label for="name">Full Name</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            pattern="[A-Za-z ]{1,32}"
+            minlength="2"
+            required
+          />
+        </div>
+
+        <!-- Email field -->
+        <div>
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
+        </div>
+
+        <!-- T Shirt Colour -->
+        <fieldset>
+          <legend>Colour</legend>
+          <div>
+            <input type="radio" name="color" id="red" required />
+            <label for="red">Red</label>
+          </div>
+          <br />
+          <div>
+            <input type="radio" name="color" id="blue" required />
+            <label for="blue">Blue </label>
+          </div>
+          <br />
+          <div>
+            <input type="radio" name="color" id="green" required />
+            <label for="green">Green</label>
+          </div>
+        </fieldset>
+
+        <!-- Size -->
+        <div>
+          <label for="size">Size</label><br /><br />
+
+          <select name="size" id="size" required>
+            <option value="">--Please select a size--</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </div>
+        <br />
+
+        <button type="submit">Submit</button>
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
@@ -21,7 +83,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Sulaiman Kamara</h2>
     </footer>
   </body>
 </html>
