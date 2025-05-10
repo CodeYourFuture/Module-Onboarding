@@ -12,16 +12,50 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
+      <form action="results.html" method="post">
+        <nav>
+          <label for="name">Name:</label><br/>
+          <input type="text" name="Name" id="name" minlength="2" required autocomplete="on" ><br/>
+        </nav>
+        <section>
+          <label for="Email">Email:</label><br/>
+          <input type="email" name="Email" id="Email" autocomplete="on" style="padding:10px; font-size:30px;"><br/>
+        </nav><br/>
+        </section>
+        <article>
+          <label for="t-shirt colour">T-shirt Colour:</label>
+          <select name="t-shirt colour" id="t-shirt colour" required style="padding:10px; font-size:16px;">
+        </nav>>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+          </select>
+        </article><br>
+        <aside>
+          <label for="t-shirt size">T-shirt Size:</label>
+          <select name="t-shirt size" id="t-shirt size" required style="padding:10px; font-size:16px;">
+        </nav>>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </aside><br>
+        <section>
+          <button>Submit</button>
+        </section>
+
+        <!-- customer name 
+        customer email,colour of t-shirt ( 3 options) size(xs s m l xl xxl)
+        try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>Sabita Shrestha</h2>
     </footer>
   </body>
 </html>
