@@ -20,6 +20,13 @@ header {
   text-align: center;
   background: #e9ecef;
 }
+.main-body{
+  display: flex;
+  gap: 20px;
+}
+.main-body article{
+ margin-top: 20px;
+}
 
 main {
   max-width: var(--max-width);
@@ -44,6 +51,10 @@ article :first-child {
 a {
   color: var(--accent);
   text-decoration: none;
+  border:  1px solid black;
+  padding: 5px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 0px var(--text);
 }
 
 a:hover {
@@ -58,4 +69,7 @@ footer {
   color: white;
   text-align: center;
   padding: 0.5rem;
+}
+article img{
+  width: 150px;
 }
