@@ -20,8 +20,7 @@ As well as useful links to learn more */
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
-  --space: clamp(3
-  px, 3px + 2vw, 13px);
+  --space: clamp(3px, 3px + 2vw, 13px);
   --line: 1px solid;
   --container: 1280px;
 }
