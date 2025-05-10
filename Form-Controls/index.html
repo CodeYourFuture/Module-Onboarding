@@ -9,19 +9,52 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your T-shirt</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+"
+        title="Name should only contain letters and spaces."><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+"
+        title="Name should only contain letters and spaces."><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+
+       
+        <label for="color">Select color:</label><br>
+        <select id="color" name="color"><br>
+          <option value="select name">select color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="purple">Purple</option>
+        </select> <br>
+
+
+        <label for="Size"> Select size:</label><br>
+        <select id="size" name="size">
+          <option value="select size">select size</option>
+          <option value="red">XS</option>
+          <option value="green">S</option>
+          <option value="blue">M</option>
+          <option value="yellow">L</option>
+          <option value="orange">XL</option>
+          <option value="purple">XXL</option>
+          </select>
+          
+          <p>
+
+          <button type="submit">Order Now</button>
+          </p>
+          </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      
+      <h2>By kebrom Gebretinsay</h2>
     </footer>
   </body>
 </html>
