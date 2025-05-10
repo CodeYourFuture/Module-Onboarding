@@ -1,27 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>T-Shirt Order Form</legend>
+        <br>
+        <label for="tshirt-size">Sizes Available: </label>
+        <br>
+        <select id="tshirt-size" name="tshirt-size" required>
+          <option value="">-- Please choose --</option>
+          <option value="xs">X Small</option>
+          <option value="s">Small</option>
+          <option value="m">Medium</option>
+          <option value="l">Large</option>
+          <option value="xl">X Large</option>
+          <option value="xxl">XX Large</option>
+        </select>
+        <br>
+        <br>
+        <label for="tshirt-colour">Colours Available: </label>
+        <br>
+        <label><input type="radio" name="colour" value="green" required>Green</label>
+        <label><input type="radio" name="colour" value="black" required>Black</label>
+        <label><input type="radio" name="colour" value="grey" required>Grey</label>
+        <br>
+        <br>
+        <fieldset>
+          <legend>Customer Details</legend>
+          <label for="title">Title: </label>
+          <select id="title" name="title" required>
+            <option value=""disabled selected>-- Please choose --</option>
+            <option value="mr">Mr.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="ms">Ms</option>
+            <option value="mx">Mx</option>
+            <option value="miss">Miss</option>
+            <option value="dr">Dr.</option>
+            <option value="prof">Prof.</option>
+            <option value="rev">Rev.</option>
+          </select>
+          <br>
+          <br>
+          <label for="first-name">First Name: </label>
+          <input type="text" id="first-name" name="first-name" required pattern="[A-Za-z\s\-]{2,50}">
+          <br>
+          <br>
+          <label for="last-name">Last Name: </label>
+          <input type="text" id="last-name" name="last-name" pattern="[A-Za-z\s\-]{2,50}" required>
+          <br>
+          <br>
+          <label for="email">Email Address: </label>
+          <input type="email" id="email" name="email" placeholder="e.g. joe@geemail.com" pattern="^[^@]+@[^@]+\.[^@]{2,}$" required>
+        </fieldset>
+        <br>
+        <br>
+        <button type="submit">Submit Order</button>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By GERALDINE EDWARDS</h2>
+  </footer>
+</body>
+
 </html>
