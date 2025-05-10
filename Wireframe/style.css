@@ -1,3 +1,4 @@
+@@ -1,89 +1,88 @@
 /* Here are some starter styles
 You can edit these or replace them entirely 
 It's showing you a common way to organise CSS 
@@ -23,23 +24,85 @@ As well as useful links to learn more */
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+  --paper: #ffffff;
+  --ink: #222222;
+  --font: 100%/1.6 system-ui, sans-serif;
+  --space: clamp(10px, 2vw, 20px);
+  --line: 1px solid #ccc;
+  --container: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  line-height: 1.6;
+}
+
+header,
+footer {
+  background-color: #f8f8f8;
+  padding: var(--space);
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5em;
+  font-size: 2em;
 }
 a {
+
+main {
+  max-width: var(--container);
+  margin: var(--space) auto calc(var(--space) * 4) auto;
   padding: var(--space);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space);
+}
+
+article {
   border: var(--line);
+  padding: var(--space);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+}
+
+article h2 {
+  font-size: 1.4em;
+}
+
+article a {
+  padding: 0.5em;
+  border: 1px solid #444;
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
   max-width: fit-content;
 }
+
+article a:hover,
+article a:focus {
+  background-color: #eef;
+  outline: none;
+}
+
 img,
 svg {
   width: 100%;
+  height: auto;
   object-fit: cover;
+  border-radius: 4px;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -49,6 +112,7 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -86,4 +150,9 @@ article {
   > img {
     grid-column: span 3;
   }
+  width: 100%;
+  padding: var(--space);
+  background: #f0f0f0;
+  border-top: var(--line);
+  font-size: 0.9em;
 }

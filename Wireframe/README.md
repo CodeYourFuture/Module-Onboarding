@@ -1,38 +1,58 @@
-# Wireframe
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframe</title>
+    <meta name="description" content="Learn about the purpose of README files, wireframes, and Git branches through a structured and accessible web page." />
+    <meta name="keywords" content="README, wireframe, Git, Git branch, coding basics, HTML, web development" />
+    <meta name="author" content="Abdullah Albaiti" />
+    <title>Introduction to README, Wireframes, and Git Branches</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Wireframe</h1>
+      <p>
+        This is the default, provided code and no changes have been made yet.
+      </p>
+      <h1>Web Development Basics</h1>
+      <p>This page explains the purpose of README files, wireframes, and Git branches.</p>
+    </header>
 
-![Wireframe](./wireframe.png)
+    <main>
+      <article>
+        <img src="placeholder.svg" alt="" />
+        <h2>Title</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          voluptates. Quisquam, voluptates.
+        </p>
+        <a href="">Read more</a>
+        <img src="placeholder.svg" alt="Illustration representing a README file" />
+        <h2>What is the purpose of a README file?</h2>
+        <p>A README file introduces and explains a project. It provides instructions, context, and information to help others understand and use the project.</p>
+        <a href="https://www.makeareadme.com/" target="_blank" rel="noopener">Learn more about README files</a>
+      </article>
 
-Using the provided wireframe and resources, write a new webpage explaining:
+      <article>
+        <img src="placeholder.svg" alt="Wireframe design concept illustration" />
+        <h2>What is the purpose of a wireframe?</h2>
+        <p>A wireframe is a basic visual layout of a web page or app. It shows the structure and layout before design and coding begin.</p>
+        <a href="https://www.productplan.com/glossary/wireframe/" target="_blank" rel="noopener">Explore wireframes</a>
+      </article>
 
-1. What is the purpose of a README file?
-1. What is the purpose of a wireframe?
-1. What is a branch in Git?
+      <article>
+        <img src="placeholder.svg" alt="Git branching visual diagram" />
+        <h2>What is a branch in Git?</h2>
+        <p>A Git branch is an independent line of development. It allows developers to work on features, fixes, or experiments without affecting the main codebase.</p>
+        <a href="https://www.atlassian.com/git/tutorials/using-branches" target="_blank" rel="noopener">Read more about Git branches</a>
+      </article>
+    </main>
 
-There are some provided HTML and CSS files you can use to get started. You can use these files as a starting point or create your own files from scratch. You _must_ modify the HTML and CSS files to meet the acceptance criteria and you must check this criteria yourself before you submit your work.
-
-## Learning Objectives
-
-<!--{{<objectives>}}>-->
-
-- [ ] Use semantic HTML tags to structure the webpage
-- [ ] Create three articles, each including a title, summary, and a link
-- [ ] Check a webpage against a wireframe layout
-- [ ] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
-- [ ] Use version control by committing often and pushing regularly to GitHub
-<!--{{</objectives>}}>-->
-
-## Acceptance Criteria
-
-- [ ] Semantic HTML tags are used to structure the webpage.
-- [ ] The page scores 100 for Accessibility in the Lighthouse audit.
-- [ ] The page header includes a title and description.
-- [ ] The articles section has three unique articles, each including a title, summary, and a link.
-- [ ] The page footer is fixed to the bottom of the viewport.
-- [ ] The webpage is styled using a linked .css file.
-- [ ] The webpage is properly committed and pushed to a branch on GitHub.
-
-## Resources
-
-- [Wireframe](https://www.productplan.com/glossary/wireframe/)
-- [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
-- [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
+    <footer>
+      <p>
+        This is the default, provided code and no changes have been made yet.
+      </p>
+      <p>&copy; 2025 Abdullah Albaiti. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
