@@ -13,6 +13,61 @@
     </header>
     <main>
       <form>
+       <div>
+        <label >name</label>
+        <input  
+        style="font-size: 24px"
+        type="text"
+        pattern="[A-Za-z]+"
+        minlength="2"
+        maxlength="9"
+        placeholder="no numbers "
+        required
+        
+        >
+       </div>
+        
+
+       <div>
+        <label>email adress</label>
+        <input  
+        style="font-size: 24px"
+        type="email"
+        placeholder="exampl@gmail.com" 
+        required>
+        
+
+       </div> 
+       
+       
+       
+        <label style="font-size: 24px" for="red">red</label>
+        <input type="radio"  name="color" id="red" required>
+        </button>
+       </div>
+       <div>
+        <label style="font-size: 24px" for="blue">blue</label>
+        <input type="radio"  name="color" id="blue" required>
+        </button>
+       </div>
+       <div>
+        <label style="font-size: 24px" for="purple">purple</label>
+        <input type="radio"  name="color" style="font-size: 100px" id="purple" required>
+        
+       
+      </div>
+      <label for="shirtsize" style="font-size: 24px" aria-label="shirtsize" 
+      >Shirt size:
+      <select name="shirtSize"  required>
+        <option style="font-size: 24px">XS</option>
+        <option style="font-size: 24px">S</option>
+        <option style="font-size: 24px">M</option>
+        <option style="font-size: 24px">L</option>
+        <option style="font-size: 24px">XL</option>
+        <option style="font-size: 24px">XXL</option>
+      </select>
+    </label>
+      <div><button style="font-size: 24px"  type="submit">submit</button></div>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
@@ -21,7 +76,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By TAITUM KOETZEE</h2>
     </footer>
   </body>
 </html>
