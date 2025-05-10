@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 2rem;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .logo {
+    font-family: 'Georgia', serif; 
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    border-bottom: 2px solid #2c3e50; 
+    display: inline-block; 
+    padding-bottom: 0.5rem; 
+  }
+
+
+
+  header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-group.inline {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .form-group.inline > div {
+    flex: 1;
+  }
+  
+  button {
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #34495e;
+  }
+  
+  .help-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .help-text a {
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  
+  .help-text a:hover {
+    text-decoration: underline;
+  }
+  
