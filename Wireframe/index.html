@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    
     <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <h1>GitHub Fundamentals: Everything You Need to Know</h1>
+      <p>Unlock the power of version control and collaboration with GitHub.</p>
     </header>
+
     <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
+      <section class="articles">
+        <!--Main article -->
+        <article class="main-article">
+          <img class="main-img" src="https://www.bleepstatic.com/content/hl-images/2018/05/30/Git.jpg" alt="git logo background black">
+
+          <h2> What is Git?</h2>
+          <p> Git is an essential tool for any developer. Imagine a detailed diary of all the changes made to your code. Git allows you to track these changes, revert to previous versions, and collaborate with other developers efficiently</p>
+          <a href="https://learn.microsoft.com/en-us/devops/develop/git/what-is-git"> Read More</a>
+        </article>
+           
+        <!--second article again -->   
+        <div class="sub-articles">
+         <article class="sub-article">
+           <img class="second-img" src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="itech picture and glasses">
+
+           <h2>Why do developers need Git?</h2>
+           <p>In today’s software development landscape, Git has become an indispensable ally for developers. This version control system allows you to track changes to the code and collaborate efficiently within teams. With Git, it’s easy to manage multiple versions, revert to previous versions, and resolve conflicts. In this article, we will explore why every developer should master Git and how it can optimize workflow and productivity. </p>
+           <a href="https://www.atlassian.com/git/tutorials/why-git">Read More</a>
+          </article>
+        
+         <!--Third article -->
+         <article class="sub-article">
+           <img src="https://miro.medium.com/v2/resize:fit:600/1*e6EkEBIDZcOmlwPqCnsJKg.jpeg" alt="branch git schema">
+
+           <h2>Wat is a branch in Git?</h2>
+           <p>In Git, a branch is an independent copy of the source code that allows developers to work on new features, bug fixes, or experiments without affecting the main codebase, known as "main" or "master." Branches facilitate collaboration and parallelism, enabling multiple developers to work simultaneously on different projects. In this article, we will explore the concept of branches in Git, how to use them, and why they are essential for an efficient workflow in software development.</p>
+           <a href="https://www.atlassian.com/git/tutorials/using-branches">Read More</a>
+          </article>
+        </div>
+
+
+      </section>
+
     </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+    
+ <footer>
+  <p>Git empowers developers to track progress, collaborate effortlessly, and bring ideas to life with streamlined version control.</p>
+ </footer>
+ 
+</body>
 </html>
