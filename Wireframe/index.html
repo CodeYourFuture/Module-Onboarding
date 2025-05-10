@@ -3,63 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
+    <title>Wireframe Project</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #222;
+      }
+
+      header {
+        background-color: #cce5ff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      main {
+        padding: 20px;
+        text-align: center;
+      }
+
+      article {
+        margin: 20px auto;
+        max-width: 700px;
+      }
+
+      article img {
+        width: 100%;
+        height: auto;
+      }
+
+      .small-images {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .small-images article {
+        flex: 1;
+        min-width: 280px;
+      }
+
+      footer {
+        background-color: #d4edda;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        margin-top: 40px;
+      }
+
+      a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Welcome to the Wireframe Project</h1>
-      <p>This page introduces you to key concepts in web development through a simple layout based on a wireframe.</p>
+      <p>This website explains key concepts: wireframes, README files, and Git branches.</p>
     </header>
 
     <main>
-      <section id="web-intro">
-        <h2>What is the Web?</h2>
+      <article>
+        <img src="placeholder.svg" alt="Wireframe illustration" />
+        <h2>What is a Wireframe?</h2>
         <p>
-          The World Wide Web (Web) is a system of interlinked pages and media that can be accessed through the internet using a browser. It allows users to share and consume information from anywhere in the world.
+          A wireframe is a visual guide that represents the structure of a web page. It's used by designers and developers
+          to plan layout and functionality before building.
         </p>
-        <p>
-          The web was invented to make information sharing easier and faster, and it has grown into a platform for communication, learning, business, entertainment, and collaboration.
-        </p>
-        <p>
-          The web provides access to websites, apps, emails, videos, images, documents, and so much more. It connects people and enables global communication and knowledge sharing.
-        </p>
-      </section>
+        <a href="https://www.productplan.com/glossary/wireframe/" target="_blank">Read more about wireframes</a>
+      </article>
 
-      <section id="web-articles">
-        <h2>Key Concepts</h2>
-
+      <div class="small-images">
         <article>
-          <img src="placeholder.svg" alt="README file icon" />
-          <h3>What is a README file?</h3>
+          <img src="placeholder.svg" alt="README file concept" />
+          <h2>What is a README File?</h2>
           <p>
-            A README file explains what a project does, how to use it, and who created it. It is the first place users and developers look to understand a repository on GitHub.
+            A README file introduces a project. It includes information such as how to use it, install it, and contribute to it.
           </p>
-          <a href="https://www.makeareadme.com/" target="_blank">Read more about README</a>
+          <a href="https://www.makeareadme.com/" target="_blank">Learn about README files</a>
         </article>
 
         <article>
-          <img src="placeholder.svg" alt="Wireframe layout icon" />
-          <h3>What is a Wireframe?</h3>
+          <img src="placeholder.svg" alt="Git branch concept" />
+          <h2>What is a Git Branch?</h2>
           <p>
-            A wireframe is a basic visual guide that outlines the structure of a website or app. It helps plan content and layout before coding and designing.
+            A branch in Git allows developers to work on separate features without affecting the main project. It supports collaboration and testing.
           </p>
-          <a href="https://www.productplan.com/glossary/wireframe/" target="_blank">Explore Wireframes</a>
+          <a href="https://www.atlassian.com/git/tutorials/using-branches" target="_blank">Read more about Git branches</a>
         </article>
-
-        <article>
-          <img src="placeholder.svg" alt="Git branch icon" />
-          <h3>What is a Branch in Git?</h3>
-          <p>
-            A branch in Git lets developers work on new features or fixes separately from the main code. When ready, changes can be reviewed and merged into the main project.
-          </p>
-          <a href="https://www.atlassian.com/git/tutorials/using-branches" target="_blank">Learn about Git branches</a>
-        </article>
-      </section>
+      </div>
     </main>
 
     <footer>
-      <p>Created by Mohamed Ibrahim | CodeYourFuture ITP-MAY-25</p>
+      <p>Project by Mohamed Ibrahim | CodeYourFuture ITP MAY 2025</p>
     </footer>
   </body>
 </html>
