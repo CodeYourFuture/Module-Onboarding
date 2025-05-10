@@ -12,16 +12,76 @@
       <h1>Product Pick</h1>
     </header>
     <main>
+      
       <form>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Your first name" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Your last name" required><br>
+        <!-- ######## -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value="Your email address" required><br>
+        <!-- ######### -->
+        <p>Choose your favorite colour of for the t-shirt:</p>
+        <input type="radio" id="Green" name="fav_colour" value="Green" style="font-size: 24px">
+        <label for="Green">Green</label><br>
+
+        <input type="radio" id="Yellow" name="fav_colour" value="Yellow">
+        <label for="Yellow">Yellow</label><br>
+
+        <input type="radio" id="Blue" name="fav_colour" value="Blue">
+        <label for="Blue">Blue</label><br>
+
+        <!-- ############ -->
+        <p>Choose the size of for the t-shirt:</p>
+
+        <input type="radio" id="xs" name="t_shirt_size" value="xs" required>
+        <label for="xs">XS</label><br>
+
+        <input type="radio" id="s" name="t_shirt_size" value="s">
+        <label for="s">S</label><br>
+
+        <input type="radio" id="m" name="t_shirt_size" value="m">
+        <label for="m">M</label><br>
+
+        <input type="radio" id="l" name="t_shirt_size" value="l">
+        <label for="l">L</label><br>
+
+        <input type="radio" id="xl" name="t_shirt_size" value="xl">
+        <label for="xl">XL</label><br>
+
+        <input type="radio" id="xll" name="t_shirt_size" value="xll">
+        <label for="xll">XLL</label><br>
+
       </form>
+      <style>
+        
+        input[type="radio"] {
+          width: 30px; 
+          height: 30px; 
+          margin-right: 12px; 
+          vertical-align: middle;
+        }
+      
+        
+        label {
+          font-size: 18px; 
+          padding: 15px; 
+          display: inline-block; 
+          cursor: pointer; 
+          margin-bottom: 15px; 
+        }
+      
+        
+      </style>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Ahmed Mahmoud</h2>
     </footer>
   </body>
 </html>
