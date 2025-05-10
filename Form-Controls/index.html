@@ -13,7 +13,42 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
+        <p>
+          <label for="u_name">Name</label><br>
+          <input type="text" name="u_name" id="u_name" placeholder="Enter your name" pattern="^[a-zA-Z\s]+$"
+          title="User name should contain only letter and spaces" required/>
+        </p>
+
+        <p>
+          <label for="email">E-mail</label><br>
+          <input type="email" name="email" id="email" placeholder="Enter your e-mail" required />
+        </p>
+
+        <fieldset>
+          <legend>Choose One Color</legend>
+           <input type="radio" name="shirt_color" required/><label for="red">Red</label>
+           <input type="radio" name="shirt_color" /><label for="green">Green</label>
+           <input type="radio" name="shirt_color" /><label for="blue">Blue</label>
+        </fieldset>
+
+        <p>
+          <label for="size">Select Size</label> <br>
+          <select name="size" required>
+            <option value="" selected >--Select Size--</option>
+            <option value="xs" >XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl" >XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </p>
+
+        <p>
+          <input type="submit" value="Submit">
+        </p>
+
+        
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
@@ -21,7 +56,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>By Aung Ye Kyaw</p>
     </footer>
   </body>
 </html>
