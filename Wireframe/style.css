@@ -1,9 +1,53 @@
 body {
-  text-align: center;
-  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-img {
-  width: 800px;
+.article1 img {
+  width: 100%;
+  inline-size: 102%;
+}
+
+.article1 {
+  margin-bottom: 50px;
+}
+
+.article-container img {
+  width: 400px;
+}
+
+.article2 img {
+  height: 220px;
+}
+
+.header {
   text-align: center;
 }
+
+.article-container {
+  display: flex;
+  gap: 20px;
+}
+
+.article-container > div {
+  background-color: #f1f1f1;
+
+}
+.article-container button {
+  color:blue;
+  border-color: blue;
+}
+.article1 button {
+  color:blue;
+  border-color: blue;
+}
+.footer {
+  position-try-order: 100px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  color: rgb(51, 46, 124);
+  text-align: center;}
