@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="Form exercise" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <h2>Please enter following information</h2>
+    <form>
+
+      <!-- write your html here-->
+      <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+      <!-- What is the customer's name?  -->
+      <div>
+        <label for="fname">First name:</label><br>
+        <input type="text" pattern="[A-Za-z]{2,}" id="fname" name="fname" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" pattern="[A-Za-z]{2,}" id="lname" name="lname" required><br>
+      </div>
+      <!-- What is the customer's email?  -->
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <!-- What colour should this t-shirt be? -->
+      <div>
+        <label for="color">Choose a color:</label><br>
+        <select name="color" id="color" required>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="white">White</option>
+        </select>
+      </div>
+      <!-- What size does the customer want?  -->
+      <div>
+        <label for="size">Choose a Size:</label><br>
+        <select name="size" id="size" required>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select><br><br>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By Hasan Demiroz</h2>
+  </footer>
+</body>
+
 </html>
