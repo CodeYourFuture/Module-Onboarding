@@ -1,9 +1,3 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
 /* ====== Design Palette ======
  This is our "design palette".
  It sets out the colours, fonts, styles etc to be used in this design 
@@ -17,18 +11,25 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --paper: RGB(187, 187, 187);
+  --paper_main: RGB(136, 136, 136);
+  --ink: RGB(0, 0, 0);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
-  --container: 1280px;
+  --container: 1250;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+ header{
+  background: var(--paper_main);
+  max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 4) auto;
+
+ }
 body {
   background: var(--paper);
-  color: var(--ink);
+  color: var(--ink);        
   font: var(--font);
 }
 a {
@@ -39,7 +40,7 @@ a {
 img,
 svg {
   width: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -50,9 +51,13 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
+  background: var(--paper_main);
   text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
