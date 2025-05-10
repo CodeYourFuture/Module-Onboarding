@@ -9,19 +9,53 @@
   </head>
   <body>
     <header>
+            <!-- Title-->
       <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <form>
+  <fieldset>
+          <!-- get names and email validating -->
+    <legend>Confirm your identity 🧍</legend>
+
+    <label for="name">Name (required) :</label>
+    <input type="text" id="name" name="name" required minlength="2" />
+
+    <label for="email">E-mail (required)*:</label>
+    <input type="email" id="email" name="email" required />
+  </fieldset>
+
+  <fieldset>
+          <!-- slect with colors-->
+    <legend>Choose your t-shirt 👕</legend>
+
+    <label for="color">Colors (required):</label>
+    <select id="color" name="color" required>
+      <option value="">--Choose your color--</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+      <!-- select the size -->
+    <label for="size">Choose your Size (required):</label>
+    <select id="size" name="size" required>
+      <option value="">--Selecciona una talla--</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+  </fieldset>
+      <!-- button send-->
+  <button type="submit">Send</button>
+
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By ALDEMAR OSORIO</h2>
     </footer>
   </body>
 </html>
