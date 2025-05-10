@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Results</title>
+  </head>
+        <body>
+          <div>
+          
+            <div id="results">
+
+            </div>
+            <a href="C:/Users/User/CYF/Module-Onboarding/Module-Onboarding/Form-Controls/index.html">Back To Form</a>
+            
+            <script>
+                const resultslist=document.getElementById('results')
+                new URLSearchParams(window.location.search).forEach((value,name)=> 
+                {
+                    resultslist.append(`${name}:${value}`)
+                    resultslist.append(document.createElement(`br`))
+                })
+                
+            </script>
+            </div>
+
+        </body>
+    
