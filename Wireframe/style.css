@@ -95,7 +95,7 @@ body {
 }
 .article1, .article2 {
   border-bottom: 20px;
-   img {height: 400px;}
+   img {height: 400px;} /*how do i resize all images */
 }
 
 footer {
