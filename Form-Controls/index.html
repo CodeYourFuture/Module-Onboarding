@@ -13,6 +13,39 @@
     </header>
     <main>
       <form>
+        <div>
+          <label for="name">Name</label>
+          <input type="name" name="name" id="name" minlength="2" required />
+        </div>
+
+        <div>
+          <label for="email">E-mail address</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div>
+          <label for="colour">T-shirt colour</label>
+          <select name="colour" id="colour" required>
+            <option value="" disabled selected>Please choose a colour</option>
+            <option label="Red" value="Red"></option>
+            <option label="Green" value="Green"></option>
+            <option label="Blue" value="Blue"></option>
+          </select>
+        </div>
+
+        <div>
+          <label for="size">T-shirt size</label>
+          <select name="size" id="size" required>
+            <option value="" disabled selected>Please choose a size</option>
+            <option label="XS" value="XS"></option>
+            <option label="S" value="S"></option>
+            <option label="M" value="M"></option>
+            <option label="L" value="L"></option>
+            <option label="XL" value="XL"></option>
+            <option label="XXL" value="XXL"></option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
@@ -21,7 +54,11 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Aida Zhukova</h2>
     </footer>
   </body>
 </html>
+<!-- 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something. -->
+<!-- 2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern. -->
+<!-- 3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours? -->
+<!-- 4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
