@@ -1,21 +1,3 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -24,66 +6,97 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-img,
-svg {
+img {
   width: 100%;
   object-fit: cover;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4 fr);
+  grid-template-rows: 60px 1fr 1fr 60px;
+  gap: 1.5rem;
+  padding: 5px;
 }
-footer {
-  position: fixed;
-  bottom: 0;
+
+.item0 {
+  margin-bottom: 5px;
+  font-style: italic;
   text-align: center;
-}
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+  grid-row: 1;
+  grid-column: 1 / span 6;
+  background: black;
+  color: whitesmoke;
+  font: var(--font);
+  font-size: larger;
+  gap: 1.5rem;
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
+.item1 {
+  text-align: center;
+
+  background: #6b5b95;
+  color: yellow;
   display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  grid-column: 2 / span 6;
+  grid-row: 2;
+  gap: 1.5rem;
+  filter: contrast(150%);
+}
+.item2 {
+  text-align: center;
+  background: #335c67;
+  color: beige;
+  display: grid;
+  grid-row: 3;
+  grid-column: 3 / span 2;
+  gap: 1.5rem;
+  filter: contrast(150%);
+}
+.item3 {
+  text-align: center;
+  background: linear-gradient(#386641, #6a994e, #a7c957);
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: bold;
+  padding: 3px 5px 3px 5px;
+  display: grid;
+  grid-column: 3 / span2;
+  grid-row: 3;
+  gap: 1.5rem;
+  filter: contrast(150%);
+}
+.item4 {
+  text-align: center;
+  background: #cbc0d3;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+
+}
+button {
+  height: 60px;
+  width: 80px;
+  margin: 2px 15px 15px 20px;
+  padding-left: 3px;
+  padding-right: 3px;
+  background: #ee6c4d;
+}
+a{
+  filter: contrast(150%);
+  color:#fff3b0 ;
+
+}
+.bottom{
+  color: #6b5b95;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
 }
