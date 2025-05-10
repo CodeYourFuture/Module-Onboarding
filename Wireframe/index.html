@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <h1>Product Pick</h1>
     </header>
     <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
+      <form>
+        <!-- Customer name - required, min length 2 -->
+        <label for="name">Name (2 to 10 characters):</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          maxlength="10"
+          size="10"
+        />
+
+        <!-- Customer email - required, must be a valid email -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+
+        <!-- T-shirt color - choose one from 3 fixed options -->
+        <fieldset>
+          <legend>Choose a T-shirt colour:</legend>
+          <label>
+            <input type="radio" name="color" value="red" required />
+            Red
+          </label>
+          <label>
+            <input type="radio" name="color" value="blue" required />
+            Blue
+          </label>
+          <label>
+            <input type="radio" name="color" value="green" required />
+            Green
+          </label>
+        </fieldset>
+
+        <!-- T-shirt size - choose one from 6 fixed options -->
+        <label for="size">Choose a T-shirt size:</label>
+        <select id="size" name="size" required>
+          <option value="">--Select size--</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <h2>Homework solution by Nataliya Virych</h2>
     </footer>
   </body>
 </html>
