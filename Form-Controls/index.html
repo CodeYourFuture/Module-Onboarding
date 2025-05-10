@@ -13,15 +13,39 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <label for="name">What is the customer's name?</label>
+        <input type="text" id="name" name="name"  pattern=".{2,}" 
+          title="Name must be at least 2 characters long" required />
+        <span id="nameError" class="error"></span>
+
+        <label for="email">What is the customer's email?</label>
+        <input type="email" id="email" name="email" required />
+        <span id="emailError" class="error"></span>
+
+        <label for="color">What colour should this t-shirt be?</label>
+        <select id="color" name="color" required>
+          <option value="">Select a color</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+
+        <label for="size">What size does the customer want?</label>
+        <select id="size" name="size" required>
+          <option value="">Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Forogh Aghaeiyarijani</h2>
     </footer>
   </body>
 </html>
