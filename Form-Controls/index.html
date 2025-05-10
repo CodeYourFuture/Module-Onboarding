@@ -8,20 +8,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
+    <form>
+      <header>
+        <h1>Product Pick</h1>
+      </header>
+      <main>
+        <br />
+        <label for="name" aria-label="name"
+          >Name:
+          <input
+            type="text"
+            minlength="2"
+            name="name"
+            id="name"
+            role="textbox"
+            style="font-size: 24px"
+            required
+          />
+        </label>
+        <br />
+        <label for="email" aria-label="email"
+          >Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            role="textbox"
+            style="font-size: 24px"
+            required
+          />
+        </label>
+        <br />
+        <label for="shirtColor" aria-label="shirtColor"
+          >Shirt color:
+          <select name="shirtColor" style="font-size: 24px" required>
+            <option style="font-size: 24px">Green</option>
+            <option style="font-size: 24px">Red</option>
+            <option style="font-size: 24px">Blue</option>
+          </select>
+        </label>
+        <br />
+        <label for="shirtSize" aria-label="shirtSize"
+          >Shirt size:
+          <select name="shirtSize" style="font-size: 24px" required>
+            <option style="font-size: 24px">XS</option>
+            <option style="font-size: 24px">S</option>
+            <option style="font-size: 24px">M</option>
+            <option style="font-size: 24px">L</option>
+            <option style="font-size: 24px">XL</option>
+            <option style="font-size: 24px">XXL</option>
+          </select>
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+      </main>
+      <footer>
+        <h2>Aden Jones</h2>
+      </footer>
+    </form>
   </body>
 </html>
