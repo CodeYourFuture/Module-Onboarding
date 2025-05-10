@@ -23,9 +23,30 @@
         2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
         3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
         4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="name" required>
-        
+        <section>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="name" required>
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+        </section>
+        <section>
+        <div>
+          <input type="radio" name="t-shirt-colour" id="t-shirt-colour">
+          <label for="radio">Red</label>
+        </div>
+        <div>
+          <input type="radio" name="t-shirt-colour" id="t-shirt-colour">
+          <label for="radio">Green</label>
+        </div>
+        <div>
+          <input type="radio" name="t-shirt-colour" id="t-shirt-colour">
+          <label for="radio">Black</label>
+        </div>
+        </section>
       </form>
     </main>
     <footer>
