@@ -12,16 +12,46 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <form class="t-shirt-form">
+          <section class="user-info">
+            <div class="user-name">
+              <label for="name ">Name: </label>
+              <input type="text" name ="name" id="name" placeholder="username" required>
+            </div>
+            <br>
+            <div class="user-email">
+              <label for="email ">Email:</label>
+              <input type="email" name ="email" id="email" placeholder="Enter your email" required>
+             </div>
+            </section>
+            <br>
+            <section class="t-shirt-colour-selection">
+              <label for="t-shirt-colour">T shirt color</label>
+              <select name="t-shirt-colour" id="t-shirt-colour">
+                 <option value="Black">Black</option>
+                 <option value="white">White</option>
+                 <option value="Grey">Grey</option>
+              </select>
+         </section>
+         <br>
+         <section class="t-shirt-size-selection">
+          <label for="t-shirt-size">T shirt Size</label>
+          <select name="t-shirt-size" id="t-shirt-size">
+             <option value="XS">XS</option>
+             <option value="S">S</option>
+             <option value="M">M</option>
+             <option value="L">L</option>
+             <option value="XL">XL</option>
+             <option value="XXL">XXL</option>
+          </select>
+     </section>
+     <br>
+         <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Mohammed alzaki</h2>
     </footer>
   </body>
 </html>
