@@ -5,29 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wireframe</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
+    <div>
+      <header>
+        <h1>Learning about Git</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
+          Git is a free and open-source distributed version control system
+          designed to help developers manage and track changes in their code. It
+          allows multiple people to collaborate on a project, maintain different
+          versions of the code, and ensure that changes are documented and
+          reversible.
         </p>
-        <a href="">Read more</a>
-      </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
+      </header>
+      <main class="articles">
+        <div class="top-article">
+          <article>
+            <img
+              class="article1-img"
+              src="./articleimg1.png"
+              alt="purpose of readme file"
+            />
+            <h2>What is the purpose of a README file?</h2>
+            <p>
+              A README file serves as an introduction and guide to a project,
+              typically found in the root directory of a codebase or repository.
+              It provides essential information to help users and contributors
+              understand the project and how to interact with it effectively.
+            </p>
+            <a
+              href="https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/readme-files#:~:text=README%20files%20are%20created%20for,being%20deposited%20in%20a%20repository"
+              target="_blank"
+              >Read more</a
+            >
+          </article>
+        </div>
+
+        <div class="bottom-articles">
+          <article class="card">
+            <img
+              class="articleimg"
+              src="./articleimg2.jpg"
+              alt="wireframe purposes"
+            />
+            <h2>What is the purpose of a wireframe?</h2>
+
+            <p>
+              A wireframe is a visual blueprint or schematic representation of a
+              user interface (UI) for a website, application, or software. It
+              outlines the structure, layout, and hierarchy of elements on a
+              page without focusing on design details like colors, images, or
+              fonts.Helps designers and developers conceptualize the structure
+              of a page or interface.
+            </p>
+            <a
+              href="https://adamfard.com/blog/wireframes#:~:text=Wireframes%20are%20a%20visual%20guide,a%20UI%20has%20a%20purpose."
+              target="_blank"
+              >Read more</a
+            >
+          </article>
+
+          <article class="card">
+            <img
+              class="articleimg"
+              src="./git.jpg"
+              alt="what is a branch in git?"
+            />
+            <h2>What is a branch in Git?</h2>
+            <p>
+              A branch in Git is a pointer to a specific commit in a
+              repository's history, allowing you to work on different versions
+              of a project simultaneously. It is commonly used to develop
+              features, fix bugs, or experiment without affecting the main
+              codebase.
+            </p>
+            <a
+              href="https://www.atlassian.com/git/tutorials/using-branches#:~:text=Git%20branches%20are%20effectively%20a,branch%20to%20encapsulate%20your%20changes."
+              target="_blank"
+              >Read more</a
+            >
+          </article>
+        </div>
+      </main>
+      <footer>
+        <p>This was coded by Evelyn.</p>
+      </footer>
+    </div>
   </body>
 </html>
