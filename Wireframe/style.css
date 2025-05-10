@@ -31,28 +31,29 @@ body {
   color: var(--ink);
   font: var(--font);
 }
-a {
+.a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+img {
+  width: 20%;
+  padding-left: 40%;
+text-align: center;
+padding-top: 5px;
+padding-bottom: 5px;
+
+
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
+
 footer {
-  position: fixed;
-  bottom: 0;
+ 
   text-align: center;
+  padding: 5px;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -62,7 +63,7 @@ https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
 main {
-  display: grid;
+ 
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
@@ -74,12 +75,13 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-article {
+.article1 {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
-  display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+  margin: 30px;
+  padding: 30px;
   > * {
     grid-column: 2/3;
   }
@@ -87,3 +89,28 @@ article {
     grid-column: span 3;
   }
 }
+
+.div2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  justify-content: center;
+  border-radius: 8px;
+}
+.article2 {
+  border: var(--line);
+  padding: 20px;
+  flex: 1; /* Allow items to take up available space equally */
+}
+
+h1 {
+  text-align: center;
+}
+.titp {
+  text-align: center;
+}
+
+
