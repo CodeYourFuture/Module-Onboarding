@@ -1,46 +1,112 @@
+Conversation opened. 1 unread message.
+
+Skip to content
+Using Gmail with screen readers
+1 of 4,648
+fc.html
+Inbox
+
+Mohammad Umar
+Attachments
+12:37 PM (21 minutes ago)
+to me
+
+hi
+ One attachment
+  •  Scanned by Gmail
+<!--Task
+We are selling t-shirts. Write a form to collect the following data:
+
+Our customers already have accounts, so we know their addresses and charging details already. We don't need to collect that data. We want to confirm they are the right person, then get them to choose a colour and then pick a delivery date.
+
+Writing that out as a series of questions to ask yourself:
+
+1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+5. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?
+
+All fields are required. Do not write a form action for this project.-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coursework</title>
-    <style>
-      :root {
-        --paper: oklch(7 0 0);
-        --ink: color-mix(in oklab, var(--color) 5%, black);
-        --font: 100%/1.5 system-ui;
-        --space: clamp(6px, 6px + 2vw, 15px);
-        --line: 1px solid;
-      }
-      body {
-        background: var(--paper);
-        color: var(--ink);
-        font: var(--font);
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-    </style>
-  </head>
-  <body>
-    <header><h1>🧐 CYF Coursework Disposable Branch Previews</h1></header>
-    <main>
-      <ol>
-        <li>
-          <h2><a href="/Wireframe">Project 1: Wireframe</a></h2>
-          <p>
-            Mentors:
-            <a href="Wireframe/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-        <li>
-          <h2><a href="/Form-Controls">Project 2: Form Controls</a></h2>
-          <p>
-            Mentors:
-            <a href="Form-Controls/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-      </ol>
-    </main>
-    <footer><a href="HOW_TO_REVIEW.md">HOW TO REVIEW MD</a></footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Creation of a Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <br>
+        <div>
+            <label>Password
+            <input type="password" name="password" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div>
+            Sizes of T-Shirt
+            <div>
+                <label for="xs">Xtra-Small</label>
+                <input type="checkbox" name="xs" id="xs">
+            </div>
+            <div>
+                <label for="small">Small</label>
+                <input type="checkbox" name="small" id="small">
+            </div>
+            <div>
+                <label for="m">Medium</label>
+                <input type="checkbox" name="m" id="m">
+            </div>
+            <div>
+                <label for="l">Large</label>
+                <input type="checkbox" name="l" id="l">
+            </div>
+            <div>
+                <label for="xl">XtrLarge</label>
+                <input type="checkbox" name="xl" id="xl">
+            </div>
+            <div>
+                <label for="xxl">Double Xtra Large</label>
+                <input type="checkbox" name="xxl" id="xxl">
+            </div>
+        </div>
+        <br>
+        
+        <div>
+            Colors of the T-shirts
+            <label for="colors">Colors</label>
+                <select name="color" id="color" multiple>
+                    <option label="green" value="green"></option>
+                    <option value="Red">Red </option>
+                    <option label="blue" value="blue"></option>
+                    <option label="purple" value="purple"></option>
+                    <option label="yellow" value="yellow"></option>
+                    <option label="black" value="black"></option>
+                    
+                </select> 
+          
+        </div><br><br>
+        <div>
+            <label for="date">Delivery date</label>
+            <input type="date" name="date" id="date">
+        </div><br>        
+
+        <button type="submit">Submit The Form</button>
+        
+    </form>
+    <footer>
+        <h2>Kalyani ITP-2025</h2>
+      </footer>
+</body>
 </html>
