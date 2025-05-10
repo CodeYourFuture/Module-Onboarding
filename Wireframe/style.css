@@ -27,13 +27,13 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background: rgb(207, 193, 232);
+  color: rgb(14, 14, 25);
+  float: inline-start;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
+  padding: 100% 1.5;
+  border: 1px solid;
   max-width: fit-content;
 }
 img,
@@ -46,10 +46,11 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  max-width: 1300px;
+  margin: auto;
 }
 footer {
+  background-color: rgb(156, 151, 152);
   position: fixed;
   bottom: 0;
   text-align: center;
@@ -64,7 +65,7 @@ https://gridbyexample.com/learn/
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space);
+  gap: 15px;
   > *:first-child {
     grid-column: span 2;
   }
@@ -75,13 +76,13 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
+  border: 1px solid;
+  padding-bottom: 10px;
+  text-align: center;
+  display: flexbox;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
-    grid-column: 2/3;
+    grid-column: span 2/3 ;
   }
   > img {
     grid-column: span 3;

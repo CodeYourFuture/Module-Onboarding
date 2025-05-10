@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,19 +10,47 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your T-Shirt</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required minlength="2">
+        <br></br>
+        
+        <label for="email">Email</lable>
+        <input type="email" id="email" name="Email" required>
+        <br></br>
+
+      <fieldset>
+          <legend>Choose a Colour</legend>
+          <input type="radio" id="red" name="colour" value="red" required>
+          <label for="red">Red</label>
+
+          <input type="radio" id="blue" name="colour" value="Blue" required>
+          <label for="blue">Blue</label>
+
+          <input type="radio" id="black" name="colour" value="Black" required>
+          <label for="black">Black</label>
+     </fieldset>
+        <br></br>
+
+        <label for="size">Select A Size</label>
+        <select id="size" name="size" required>
+            <option value=""disabled selected>Select a Size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="LX">LX</option>
+        </select>
+        <br></br>
+
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+          <h2>By Yorsalem Mesmer</h2>
     </footer>
   </body>
 </html>
