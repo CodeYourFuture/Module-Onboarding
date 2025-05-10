@@ -30,10 +30,10 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  background-image: linear-gradient(pink, rgb(194, 194, 233));
 }
 a {
   padding: var(--space);
-  border: var(--line);
   max-width: fit-content;
 }
 img,
@@ -49,10 +49,25 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#style{
+  font-size: 25px;
+  font-style: italic;
+}
+h1, h2{
+  color: brown;
+}
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  background: white;
+  width: 100vw;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -75,7 +90,9 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
-  border: var(--line);
+  border: 5px solid brown;
+  border-radius: 10px;
+  box-shadow: 5px 5px 7px;
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
