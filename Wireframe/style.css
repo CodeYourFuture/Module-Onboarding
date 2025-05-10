@@ -17,7 +17,7 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
+  --paper: oklch(94.71% 0.0148 69.88);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
@@ -29,7 +29,10 @@ As well as useful links to learn more */
 body {
   background: var(--paper);
   color: var(--ink);
-  font: var(--font);
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 a {
   padding: var(--space);
@@ -39,7 +42,9 @@ a {
 img,
 svg {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  margin: auto;
+  display: block;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -49,9 +54,7 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
-  position: fixed;
-  bottom: 0;
+footer, header {
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
