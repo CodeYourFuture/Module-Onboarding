@@ -25,13 +25,6 @@ a {
 ul, ol {
   list-style: none;
 }
-/* body {
-  display: grid;
-  
-  min-height: 100vh;
- 
-  gap: 50px;
-} */
 
 header {
   grid-area: header-sec;
@@ -52,7 +45,16 @@ body {
   padding: 20px;
 
 }
-
+.button {
+  background-color: cadetblue;
+  padding: 10px;
+  background-color: aliceblue;
+  display: inline-block; 
+  width: fit-content;     
+  max-width: 100%;
+  border-radius: 2px;
+  color: #000;
+}
 .article-section {
   grid-area: main;
   display: grid;
@@ -61,23 +63,58 @@ body {
   grid-template-areas: 
     "hero hero"
     "article1 article2";
-  background-color: beige;
   padding: 20px;
   gap: 10px;
 }
 .hero-article {
   grid-area: hero;
-  background-color: aquamarine;
+  background-color: rgb(76, 130, 185);
 
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+  gap: 10px
+} 
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px;
 }
 .article1 {
   grid-area: article1;
-  background-color: rgb(11, 123, 86);
+  background-color: rgb(162, 187, 216);
 }
 .article2 {
   grid-area: article2;
-  background-color: rgb(232, 213, 190);
+  background-color: rgb(162, 187, 216);
 }
+.article1, .article2 {
+  border-bottom: 20px;
+   img {height: 400px;}
+}
+
 footer {
+  grid-area: footer;
   background-color: azure;
+  padding: 20px;
+}
+
+
+
+
+
+
+@media (max-width: 750px) {
+  .article-section {
+    grid-template-columns: 1fr; /* Change to a single column */
+    grid-template-areas:
+      "hero"
+      "article1"
+      "article2";
+  }
 }
