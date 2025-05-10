@@ -34,13 +34,16 @@ main {
   padding: var(--spacing);
   display: grid;
   gap: var(--spacing);
+
 }
 
 article {
-  background: white;
+  background: var(--background);
   border: 1px solid #ccc;
   padding: var(--spacing);
   border-radius: 6px;
+ 
+ 
 }
 
 
@@ -55,6 +58,7 @@ a {
   padding: 5px;
   border-radius: 2px;
   box-shadow: 1px 1px 0px var(--text);
+  cursor: pointer;
 }
 
 a:hover {
@@ -71,5 +75,5 @@ footer {
   padding: 0.5rem;
 }
 article img{
-  width: 150px;
+  height: 100px;
 }
