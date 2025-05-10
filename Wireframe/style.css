@@ -16,6 +16,12 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+h1 {
+   text-align: center;
+  background-color: rgb(224, 254, 254);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -36,7 +42,7 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
-img,
+img, 
 svg {
   width: 100%;
   object-fit: cover;
@@ -46,6 +52,7 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
+
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
