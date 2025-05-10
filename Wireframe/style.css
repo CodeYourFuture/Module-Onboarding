@@ -43,10 +43,10 @@ svg {
 }
 
 ul li {
-  color:darkcyan;
+  color:rgb(49, 58, 58);
 }
 ul li:first-child {
-  color:darkslategray;
+  color:rgb(41, 47, 47);
   font-weight:bold;
 }
 /* ====== Site Layout ====== 
