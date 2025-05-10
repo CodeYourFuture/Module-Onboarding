@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>My form </title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -12,16 +12,72 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        <form>
+          <!-- Customer information -->
+          <fieldset>
+            <legend>Customer Information</legend>
+            <div>
+              <label for="name">Name:</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                minlength="2" 
+                required 
+                aria-describedby="nameHelp">
+              <small id="nameHelp">Enter your full name (minimum 2 characters).</small>
+            </div>
+        
+            <!-- Customer Email -->
+            <div>
+              <label for="email">Email:</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                aria-describedby="emailHelp">
+              <small id="emailHelp">Enter a valid email address (e.g., user@example.com).</small>
+            </div>
+          </fieldset>
+        
+          <!-- T-Shirt Options available  -->
+          <fieldset>
+            <legend>T-Shirt Options available </legend>
+        
+            <!-- Colour Selection -->
+            <div>
+              <label for="color">Choose a colour:</label>
+              <select id="color" name="color" required>
+                <option value="" disabled selected>Select a colour</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+              </select>
+            </div>
+        
+            <!-- Size Selection -->
+            <div>
+              <label for="size">Choose a size:</label>
+              <select id="size" name="size" required>
+                <option value="" disabled selected>Select a size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
+          </fieldset>
+        
+          <button type="submit">Submit</button>
+        </form>
+        
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>Bestun Mohammedi</h2>
     </footer>
   </body>
 </html>
