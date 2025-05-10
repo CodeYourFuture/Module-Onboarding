@@ -3,44 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coursework</title>
+    <title>CYF Coursework Overview</title>
     <style>
       :root {
-        --paper: oklch(7 0 0);
-        --ink: color-mix(in oklab, var(--color) 5%, black);
+        --paper: #fdfdfd;
+        --ink: #111;
         --font: 100%/1.5 system-ui;
         --space: clamp(6px, 6px + 2vw, 15px);
-        --line: 1px solid;
+        --line: 1px solid #ccc;
       }
+
       body {
         background: var(--paper);
         color: var(--ink);
         font: var(--font);
         max-width: 1280px;
         margin: 0 auto;
+        padding: var(--space);
+      }
+
+      header,
+      footer {
+        background-color: #e1f0ff;
+        padding: var(--space);
+        border-bottom: var(--line);
+      }
+
+      nav {
+        margin: 10px 0;
+      }
+
+      nav a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #007acc;
+      }
+
+      main {
+        padding: var(--space);
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      h1, h2 {
+        color: #0a3d62;
+      }
+
+      footer {
+        border-top: var(--line);
+        text-align: center;
+        font-size: 0.9em;
       }
     </style>
   </head>
   <body>
-    <header><h1>🧐 CYF Coursework Disposable Branch Previews</h1></header>
+    <header>
+      <h1>🧐 CYF Coursework Overview</h1>
+      <nav>
+        <a href="#wireframe">Wireframe</a>
+        <a href="#form-controls">Form Controls</a>
+      </nav>
+    </header>
+
     <main>
-      <ol>
-        <li>
+      <section id="wireframe">
+        <article>
           <h2><a href="/Wireframe">Project 1: Wireframe</a></h2>
           <p>
-            Mentors:
-            <a href="Wireframe/readme.md">open the assignment in a tab</a>
+            Mentors: <a href="/Wireframe/readme.md">Open the assignment</a>
           </p>
-        </li>
-        <li>
+        </article>
+      </section>
+
+      <section id="form-controls">
+        <article>
           <h2><a href="/Form-Controls">Project 2: Form Controls</a></h2>
           <p>
-            Mentors:
-            <a href="Form-Controls/readme.md">open the assignment in a tab</a>
+            Mentors: <a href="/Form-Controls/readme.md">Open the assignment</a>
           </p>
-        </li>
-      </ol>
+        </article>
+      </section>
     </main>
-    <footer><a href="HOW_TO_REVIEW.md">HOW TO REVIEW MD</a></footer>
+
+    <footer>
+      <p>Created by Mohamed Ibrahim | CodeYourFuture ITP-MAY-25</p>
+      <a href="HOW_TO_REVIEW.md">How to Review</a>
+    </footer>
   </body>
 </html>
