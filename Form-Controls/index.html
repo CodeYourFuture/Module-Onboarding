@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Product a Pick</h1>
     </header>
     <main>
       <form>
@@ -17,41 +17,45 @@
         <!--
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-
-        <!-- What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide
-        something.
-        2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-        3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
-        4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
+        <fieldset>
+        <legend>Customer information</legend><br>
         <section>
           <div>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="name" required>
-          </div>
+          </div><br>
           <div>
             <label for="password">Password</label>
             <input type="password" name="password" id="password" required>
-          </div>
+          </div><br>
         </section>
-        <section>
-        <div>
-          <input type="radio" name="t-shirt-colour" id="t-shirt-colour">
-          <label for="radio">Red</label>
-        </div>
-        <div>
-          <input type="radio" name="t-shirt-colour" id="t-shirt-colour">
-          <label for="radio">Green</label>
-        </div>
-        <div>
-          <input type="radio" name="t-shirt-colour" id="t-shirt-colour">
-          <label for="radio">Black</label>
-        </div>
-        </section>
-      </form>
+        </fieldset><br>
+
+        <fieldset>
+          <legend>Product Information</legend><br>
+          <label for="colour">Chose a t-shirt Color</label>
+            <select name="shirt-color" id="colour">
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+            </select>
+          </label><br><br>
+        <label for="size">Chose a Size</label>
+        <select name="shoe-size" id="size">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+        </fieldset>
+      </form><br>
+<button type"submit">submit</button>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Ikenna Agulobi</h2>
     </footer>
   </body>
 </html>
