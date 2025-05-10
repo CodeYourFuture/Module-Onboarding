@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-Shirt Order Form</title>
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your T-Shirt</h1>
+      <p>Fill out the form below to select your T-shirt preferences.</p>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Customer Name -->
+        <div>
+          <label for="customer-name">Name:</label>
+          <input
+            type="text"
+            id="customer-name"
+            name="customer-name"
+            minlength="2"
+            placeholder="Enter your full name"
+            required
+            aria-required="true"
+          />
+          <br><br>
+        </div>
+
+        <!-- Customer Email -->
+        <div>
+          <label for="customer-email">Email:</label>
+          <input
+            type="email"
+            id="customer-email"
+            name="customer-email"
+            placeholder="Enter your email address"
+            required
+          />
+          <br><br>
+        </div>
+
+        <!-- T-Shirt Colour -->
+        <div>
+          <label for="shirtcolour">Choose a T-Shirt Colour:</label>
+          <select id="shirtcolour" name="shirtcolour">
+            <option>Choose a color</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Orange">Orange</option>
+            <option value="Yellow">Yellow</option>
+          </select>
+          <br><br>
+        </div>
+
+        <!-- T-Shirt Size -->
+        <div>
+          <label for="shirtsize">Choose a T-Shirt Size:</label>
+          <select id="shirtsize" name="shirtsize">
+            <option>Choose a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br><br>
+        </div>
+
+        <!-- Submit & reset Button -->
+        <div>
+          <button type="reset">Reset Order</button>
+          <button type="submit">Submit Order</button>
+        </div>
       </form>
     </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
   </body>
 </html>
