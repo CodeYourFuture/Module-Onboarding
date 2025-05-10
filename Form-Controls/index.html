@@ -13,15 +13,76 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <h2>Order confirmation</h2>
+        <p>
+          Required fields are followed by
+          <strong><span aria-label="required">*</span></strong
+          >.
+        </p>
+        <section>
+          <h3>Contact details</h3>
+          <p>
+            <label for="fname">First name:</label>
+            <input
+              id="fname"
+              type="text"
+              name="firstName"
+              required
+              minlength="2"
+            />
+            <strong><span aria-label="required">*</span></strong>
+          </p>
+          <p>
+            <label for="lname">Last name:</label>
+            <input
+              id="lname"
+              type="text"
+              name="lastName"
+              minlength="2"
+              required
+            />
+            <strong><span aria-label="required">*</span></strong>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required />
+            <strong><span aria-label="required">*</span></strong>
+          </p>
+        </section>
+
+        <section>
+          <h3>Order details</h3>
+          <p>
+            <label for="colour">Choose the colour</label>
+            <select id="colour" name="colour" required>
+              <option value="">Please choose an option</option>
+              <option value="r">Red</option>
+              <option value="g">Green</option>
+              <option value="b">Blue</option>
+            </select>
+            <strong><span aria-label="required">*</span></strong>
+          </p>
+          <p>
+            <label for="size">Choose the size</label>
+            <select id="size" name="size" required>
+              <option value="">Please choose an option</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
+            <strong><span aria-label="required">*</span></strong>
+          </p>
+        </section>
+        <p>
+          <button>Submit</button>
+        </p>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>Webpage made by Andrei Filippov for HOMEWORK SOLUTION</h2>
     </footer>
   </body>
 </html>
