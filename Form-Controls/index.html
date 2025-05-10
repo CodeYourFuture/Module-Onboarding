@@ -12,11 +12,42 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
+      <form method="post">
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </p>
+        <p>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" />
+        </p>
+        <p>
+          <label for="t1"
+            >Colour of tee-shirt?<span aria-label="required">*</span></label>
+          <input
+            type="text"
+            id="t1"
+            name="colour"
+            list="l1"
+            required
+            pattern="[Gg]reen|[Yy]ellow|[Rr]ed" />
+          <datalist id="l1">
+            <option>Green</option>
+            <option>Yellow</option>
+            <option>Red</option>
+          </datalist>
+        </p>
+      
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+        <!-- 
+        1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+        2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+        3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+        4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+-->
       </form>
     </main>
     <footer>
