@@ -13,15 +13,64 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+          <label for="name">Customer Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="username"
+            minlength="2"
+            pattern="^[a-zA-ZÀ-ÖØ-öø-ÿ\s'-]+$"
+            title="Please enter a valid name of at least 2 characters without special symbols."
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Customer Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="e.g., user@example.com"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            title="Please enter a valid email address (e.g., user@example.com). Special characters like !#$%&'*+/=?^_`{|}~ are allowed before '@'."
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="color">Please select a color:</label>
+          <select name="color" id="color" required>
+            <option value="">--Select Color--</option>
+            <option label="black" value="Black">Black</option>
+            <option label="green" value="Green">Green</option>
+            <option label="blue" value="Blue">Blue</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="size">Please select your size:</label>
+          <select name="size" id="size" required>
+            <option value="">--Select Size--</option>
+            <option label="XS" value="XS">XS</option>
+            <option label="S" value="S">Small</option>
+            <option label="M" value="M">Medium</option>
+            <option label="L" value="L">Large</option>
+            <option label="XL" value="XL">Xlarge</option>
+            <option label="XXL" value="XXL">XXlarge</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Amir Montazeri</h2>
     </footer>
   </body>
 </html>
