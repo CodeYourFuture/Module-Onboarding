@@ -37,8 +37,8 @@ Let's write out our testable criteria. Check each one off as you complete it.
 
 - [x] My form is semantic html.
 - [x] All inputs have associated labels.
-- [ ] My Lighthouse Accessibility score is 100.
-- [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
+- [x] My Lighthouse Accessibility score is 100.
+- [x] I require a valid name. I have defined a valid name as a text string of two characters or more.
 - [ ] I require a valid email.
 - [ ] I require one colour from a defined set of 3 colours.
 - [ ] I require one size from a defined set of 6 sizes.
