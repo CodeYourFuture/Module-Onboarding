@@ -1,16 +1,16 @@
 /* Here are some starter styles
 You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
+It's showing you a common way to organize CSS 
 And includes solutions to common problems 
 As well as useful links to learn more */
 
 /* ====== Design Palette ======
  This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
+ It sets out the colors, fonts, styles etc to be used in this design 
  At work, a designer will give these to you based on the corporate brand, but while you are learning
  You can design it yourself if you like
  Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
+ Click on the color swatches to see what is happening
  I've put some useful CSS you won't have learned yet
  For you to explore and play with if you are interested
  https://web.dev/articles/min-max-clamp
@@ -31,10 +31,14 @@ body {
   color: var(--ink);
   font: var(--font);
 }
-header {
+header,
+footer {
   text-align: center;
+  padding: 15px;
+  background-color: #2c3e50;
+  color: white;
 }
-a {
+.main a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
@@ -51,12 +55,7 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
-  margin: 0 auto;
-  padding: 1px auto;
-  bottom: 0;
-  text-align: center;
-}
+
 .social-media {
   margin: 0 auto;
   padding: var(--space) 0;
@@ -64,6 +63,43 @@ footer {
   justify-content: center;
   gap: var(--space);
 }
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Light gray background */
+    text-decoration: none;
+    color: #000; /* Default icon color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-media a:hover {
+    background-color: #0077b5; /* Example hover color */
+    color: #fff; /* White icon color on hover */
+}
+
+.social-media svg {
+    width: 20px;
+    height: 20px;
+}
+
+.social-media a svg {
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 50%; /* Makes the background circular */
+    padding: 10px; /* Adds spacing around the SVG */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.social-media a svg:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+}
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -106,4 +142,21 @@ article {
   article {
     grid-template-columns: 1fr;
   }
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #0077b5; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
+}
+
+.button-link:hover {
+    background-color: #005fa3; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
