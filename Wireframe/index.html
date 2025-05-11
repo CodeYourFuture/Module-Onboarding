@@ -3,106 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
+    <title>Welcome to the Wireframe Project</title>
     <style>
+      :root {
+        --bg: #f0f8ff;
+        --primary: #0a3d62;
+        --text: #222;
+        --highlight: #fff;
+      }
+
       body {
-        background-color: #f0f8ff;
-        color: #222;
+        background-color: var(--bg);
+        color: var(--text);
         font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-      }
-
-      header {
-        background-color: #d0eaff;
-        padding: 20px;
-        text-align: center;
-      }
-
-      header h1 {
-        margin: 0;
-        font-size: 2em;
-        color: #0a3d62;
-      }
-
-      main {
-        padding: 20px;
-        max-width: 800px;
         margin: 0 auto;
+        max-width: 1000px;
+        padding: 20px;
+      }
+
+      header,
+      footer {
+        background-color: #cce5ff;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        color: var(--primary);
       }
 
       .article-box {
         position: relative;
         margin-bottom: 20px;
-        background-color: white;
+        background-color: var(--highlight);
         padding: 15px;
         border-radius: 8px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        text-align: center;
       }
 
       .article-box img {
-        width: 100%;
-        max-width: 500px;
+        max-width: 100%;
         height: auto;
-        border-radius: 6px;
+        display: block;
+        margin: 10px auto;
       }
 
-      .small-articles {
+      .article-container {
         display: flex;
-        flex-direction: column;
         gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
       }
 
       footer {
-        background-color: #d0eaff;
-        padding: 10px;
         text-align: center;
-        position: relative;
-        margin-top: 40px;
+        font-size: 0.9em;
+      }
+
+      a {
+        color: #007acc;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
     <header>
       <h1>Welcome to the Wireframe Project</h1>
+      <p>This website introduces basic web project planning and version control concepts.</p>
     </header>
 
     <main>
-      <!-- Big Image Section -->
-      <section class="article-box">
-        <img src="https://via.placeholder.com/600x300.png?text=Wireframe" alt="Wireframe Image" />
-        <h2>What is a Wireframe?</h2>
+      <!-- Large wireframe article -->
+      <article class="article-box">
+        <h2>Wireframe Overview</h2>
+        <img
+          src="https://via.placeholder.com/600x300.png?text=Wireframe"
+          alt="Wireframe image"
+        />
         <p>
-          A wireframe is a visual guide that represents the skeletal framework of a website. It helps plan layout and functionality before coding begins.
+          A wireframe is a visual guide representing the layout of a webpage. It helps designers and developers plan the structure before building.
         </p>
-        <a href="https://www.productplan.com/glossary/wireframe/">Read more</a>
-      </section>
+        <a href="https://www.productplan.com/glossary/wireframe/" target="_blank">Read more</a>
+      </article>
 
-      <!-- Two Small Images Under -->
-      <div class="small-articles">
-        <section class="article-box">
-          <img src="https://via.placeholder.com/300x150.png?text=README" alt="README File" />
-          <h2>What is a README file?</h2>
+      <!-- Two small articles under the big one -->
+      <div class="article-container">
+        <article class="article-box">
+          <h2>README File</h2>
+          <img
+            src="https://via.placeholder.com/280x200.png?text=README"
+            alt="Readme image"
+          />
           <p>
-            A README file explains the purpose, setup, and usage of a project. It guides developers and users through understanding your code.
+            A README file gives an overview of the project—its purpose, how to install and run it, and any other important details.
           </p>
-          <a href="https://www.makeareadme.com/">Read more</a>
-        </section>
+          <a href="https://www.makeareadme.com/" target="_blank">Read more</a>
+        </article>
 
-        <section class="article-box">
-          <img src="https://via.placeholder.com/300x150.png?text=Git+Branch" alt="Git Branch" />
-          <h2>What is a Branch in Git?</h2>
+        <article class="article-box">
+          <h2>Git Branches</h2>
+          <img
+            src="https://via.placeholder.com/280x200.png?text=Git+Branches"
+            alt="Git branch image"
+          />
           <p>
-            A Git branch allows developers to work on different features or fixes separately before merging them back into the main project.
+            Git branches let you work on different features or fixes without affecting the main project. This helps teams work in parallel safely.
           </p>
-          <a href="https://www.atlassian.com/git/tutorials/using-branches">Read more</a>
-        </section>
+          <a href="https://www.atlassian.com/git/tutorials/using-branches" target="_blank">Read more</a>
+        </article>
       </div>
     </main>
 
     <footer>
-      <p>Created by Mohamed Ibrahim | CodeYourFuture</p>
+      <p>Created by Mohamed Ibrahim – CodeYourFuture ITP</p>
     </footer>
   </body>
 </html>
