@@ -17,11 +17,48 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+
+        <!-- 1. Create a form with a text input for the customer name -->
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required minlength="2"/>
+        <br /><br>
+        
+        <!-- 2. Create customer email address -->
+        <label for="customerEmail">Customer Email:</label>
+        <input type="email" id="customerEmail" name="customerEmail" required />
+        <br><br>
+
+        <!-- 3. Create a select input for t-shirt colour  -->
+        <label for="tshirtColour">T-shirt Colour:</label>
+        <select id="tshirtColour" name="tshirtColour">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          </select>
+        <br><br>
+
+        <!-- 4. Create a radio button for t-shirt size -->
+        <label>T-shirt Size:</label>
+        <input type="radio" id="Xsmall" name="tshirtSize" value="Xsmall" />
+        <label for="Xsmall">Xsmall</label>
+        <input type="radio" id="small" name="tshirtSize" value="small" />
+        <label for="small">small</label>
+        <input type="radio" id="medium" name="tshirtSize" value="medium" />
+        <label for="medium">medium</label>
+        <input type="radio" id="large" name="tshirtSize" value="large" />
+        <label for="large">large</label>
+        <input type="radio" id="Xlarge" name="tshirtSize" value="Xlarge" />
+        <label for="Xlarge">Xlarge</label>
+        <input type="radio" id="XXlarge" name="tshirtSize" value="XXlarge" />
+        <label for="XXlarge">XXlarge</label>
+        <br><br>
+
+
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Seddiq Azam</h2>
     </footer>
   </body>
 </html>
