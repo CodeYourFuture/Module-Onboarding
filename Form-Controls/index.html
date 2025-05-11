@@ -1,66 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- write your html here-->
+      <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-        <fieldset class="customer-info">
-          <legend>Customer Information*</legend>
-          <!-- customers name, use minlength to ensure at least 2 characters-->
-          <label for="name">Name:</label>
+      <fieldset class="customer-info">
+        <legend>Customer Information*</legend>
+        <!-- customers name, now uses regex -->
+        <label for="name"> Name: </label>
 
-          <input type="text" id="name" name="name" required minlength="2">
-
+        <input type="text" id="name" name="name" required pattern="[A-Za-z]{2,}" placeholder="Enter your name"
+          title="Please enter at least 2 letters (no spaces)" />
+        <br>
+        <small>
+          <em>Please enter a name that is at least 2 letters, no spaces</em>
+        </small>
+        <br>
+        <br>
         <!-- customers email-->
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </fieldset>
-        
-        <fieldset class="shirt-options">
-          <!-- shirt color dropdown - select one from 3-->
-          <legend>Shirt Options*</legend>
-          <label for="colour" aria-label="Shirt color" required>Color</label>
-        
-          <select id="colour" name="color">
-            <option value="" disabled selected>Select a color</option>
-            <option value="pink">Pink</option>
-            <option value="brown">Brown</option>
-            <option value="black">Black</option>
-          </select>
-          <!-- shirt size dropdown - select one from 6-->
-          <label for="size" aria-label="Shirt Size" required>Size</label>
-          <select id="size" name="size">
-            <option value="" disabled selected>Select a size</option>
-            <option value="xs">XS</option>
-            <option value="s">S</option>
-            <option value="m">M</option>
-            <option value="l">L</option>
-            <option value="xl">XL</option>
-            <option value="xxl">XXL</option>
-          </select>
-        </fieldset>
-        <!-- submit button-->
-        <button type="submit" aria-label="Submit product pick form">Submit</button>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"
+          title="Please enter a valid email address" />
+        <br>
+        <small>
+          <em>Please enter a valid email address</em>
+        </small>
+      </fieldset>
+      <br>
+      <fieldset class="shirt-options">
+        <!-- shirt colour dropdown - select one from 3-->
+        <legend>Shirt Options*</legend>
+        <label for="colour" aria-label="Shirt colour">Colour</label>
 
+        <select id="colour" name="colour" required>
+          <option value="" disabled selected>Select a colour</option>
+          <option value="pink">Pink</option>
+          <option value="brown">Brown</option>
+          <option value="black">Black</option>
+        </select>
+        <br>
+        <small>
+          <em>Please select a colour</em>
+        </small>
+        <br>
+        <br>
+        <!-- shirt size dropdown - select one from 6-->
+        <label for="size" aria-label="Shirt Size">Size</label>
+        <select id="size" name="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+        <br>
+        <small>
+          <em>Please select a size</em>
+        </small>
+      </fieldset>
+      <br>
+      <!-- submit button-->
+      <button type="submit" aria-label="Submit product pick form">
+        Submit
+      </button>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By Christopher Caldwell</h2>
+  </footer>
+</body>
 
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By Christopher Caldwell</h2>
-    </footer>
-  </body>
 </html>
