@@ -17,30 +17,64 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
+  --ink: black;
+  --font-serif: "Serif", Georgia;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background-color: rgb(35, 35, 35);
+  background-size: cover;
+  background-position: centre;
+  background-attachment: fixed;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font: var(--font-serif);
 }
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
+
 img,
 svg {
   width: 100%;
   object-fit: cover;
+  border-radius: var(--space);
 }
+
+h1 {
+  font-size: 90px;
+  font-weight: 800;
+  text-shadow: 0 0 2px var(--ink);
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+header {
+text-align: center;
+color: rgb(255, 255, 255);
+padding: 30px 20px;
+border-radius: 10px;
+border: 4px solid rgba(255, 255, 255, 0.5);
+margin-bottom: 20px;
+background-color: black;
+}
+
+.card { 
+background-color: rgba(255, 255, 255);
+}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -49,10 +83,13 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  padding: var(--space);
+  color: white;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -69,21 +106,27 @@ main {
     grid-column: span 2;
   }
 }
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
+  background: var(--paper);
+  border-radius: var(--space);
   border: var(--line);
   padding-bottom: var(--space);
+  font-size: 17px;
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
+  > * 
+  {
+    grid-column: 2;
   }
   > img {
     grid-column: span 3;
   }
 }
+
