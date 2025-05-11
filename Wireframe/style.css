@@ -35,12 +35,19 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  color: rgb(9, 61, 63);
 }
 img,
 svg {
-  width: 100%;
+  float: right;
+  width: 50%;
+   padding: var(--space);
+  border: var(--line);
+  max-width: fit-content;
+  color: rgb(9, 61, 63);
   object-fit: cover;
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
