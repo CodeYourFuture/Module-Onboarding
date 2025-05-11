@@ -29,7 +29,7 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
+  background-color: rgb(219, 216, 213);
   color: var(--ink);
   font: var(--font);
 }
@@ -38,7 +38,7 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
-  color: rgb(9, 61, 63);
+  color: rgb(7, 99, 102);
 }
 
 img,
@@ -52,6 +52,16 @@ svg {
   object-fit: cover;
 }
 
+h1 {
+  text-align: center;
+  font-style: italic;
+}
+
+#PDescription {
+  text-align: center;
+  font-style: italic;
+}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -62,9 +72,12 @@ main {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   text-align: center;
+  background-color: rgb(183, 162, 184);
+  padding: 5px;
+  font-style: italic;
 }
 
 /* ====== Articles Grid Layout ====
@@ -95,6 +108,7 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+
 
   >* {
     grid-column: 2/3;
