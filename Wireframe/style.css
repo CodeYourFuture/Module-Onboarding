@@ -28,9 +28,6 @@ As well as useful links to learn more */
 
 body {
   background-color: rgb(35, 35, 35);
-  background-size: cover;
-  background-position: centre;
-  background-attachment: fixed;
   display: grid;
   place-content: center;
   text-align: center;
