@@ -87,15 +87,17 @@ h2 {
   margin-top: 1rem;
 }
 
-a {
+.sub-articles article a {
+  color: #0077cc;
+  text-decoration: underline; /* Make the link more visible */
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #0077cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
+  margin-top: 10px;
 }
+
+.sub-articles article a:hover {
+  color: #005fa3; /* Change color on hover */
+}
+
 
 a:hover {
   background-color: #005fa3;
