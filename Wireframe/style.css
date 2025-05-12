@@ -35,6 +35,10 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
 }
 img,
 svg {
@@ -45,6 +49,15 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header {
+  text-align: center;
+  padding: var(--space);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
@@ -65,9 +78,9 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+}
+main > article:first-child {
+  grid-column: span 2;
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
