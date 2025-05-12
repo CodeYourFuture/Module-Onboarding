@@ -24,9 +24,10 @@ As well as useful links to learn more */
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 100%;
   padding: 10px;
-  height: 500px; /* Should be removed. Only for demonstration */
+  height: auto;
+  /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -83,7 +84,9 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  align-content: center;
+  width: 100%;
+  font-weight: bold;
+  color: darkgrey;
 }
 
 /* ====== Articles Grid Layout ====
