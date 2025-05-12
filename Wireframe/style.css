@@ -82,7 +82,7 @@ main {
   > *:first-child {
     grid-column: span 2;
   }
-}
+} 
 
 article {
   border: var(--line);
@@ -94,7 +94,26 @@ article {
     grid-column: 2/3; 
   }
   > img {
-    grid-column: span 3;
+    grid-column: span 3; 
+  }
+} 
+
+article:first-of-type {
+  > h2 {
+    grid-column: 1/4;
+    text-align: center;
+  }
+  > p {
+    grid-column: 1/4;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  > a {
+    grid-column: 1/4;
+    text-align: center;
+    margin-left: 7.5rem;
   }
 }
 
