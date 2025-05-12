@@ -91,9 +91,13 @@ article {
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
-    grid-column: 2/3;
+    grid-column: 2/3; 
   }
   > img {
     grid-column: span 3;
   }
+}
+
+article:last-of-type img {
+  border-bottom: 1px solid #151515;
 }
