@@ -24,36 +24,105 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #222;
+  color: #fff;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
 main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-article img,
+.sub-articles article img {
+  width: 100%;
+  object-fit: cover; /* Ensure images are not distorted */
+}
+
+/* For the main article image */
+.main-article img {
+  height: 452px; /* Match 'readme' image height */
+}
+
+/* For the first image in the sub-article */
+.sub-articles article img:first-of-type {
+  height: 452px; /* Match 'readme' image height */
+}
+
+/* For the last image in the sub-article */
+.sub-articles article img:last-of-type {
+  height: 175px; /* Match 'git-branch' image height */
+}
+
+.main-article {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sub-articles {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sub-articles article {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+.sub-articles article a {
+  color: #0077cc;
+  text-decoration: underline; /* Make the link more visible */
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.sub-articles article a:hover {
+  color: #005fa3; /* Change color on hover */
+}
+
 footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
   position: fixed;
   bottom: 0;
-  text-align: center;
+  width: 100%;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -69,6 +138,10 @@ main {
     grid-column: span 2;
   }
 }
+main {
+  padding-bottom: 120px; 
+}
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
