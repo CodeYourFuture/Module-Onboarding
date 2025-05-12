@@ -40,8 +40,11 @@ a {
 }
 img,
 svg {
+  aspect-ratio: 16 / 9;
   width: 100%;
+  height: auto;
   object-fit: cover;
+  padding-top: var(--space);
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -58,6 +61,7 @@ header {
   text-align: center;
   padding: calc(var(--space) * 2);
   border-bottom: 2px solid var(--teal);
+  margin-bottom: var(--space);
 }
 header h1 {
   color: oklch(95% 0 0);
@@ -90,36 +94,34 @@ https://gridbyexample.com/learn/
 */
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: var(--space);
-  row-gap: calc(var(--space) * 2);
-  
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  padding-bottom: calc(var(--space) * 7);
 }
-main > *:first-child {
-  grid-column: span 2;
-}
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
-  border: oklch(95% 0 0);
   color: oklch(100% 0 0);
   border: 2px solid var(--teal);
   border-radius: 5px;
-  box-shadow: 0 4px 6px var;
   padding-bottom: var(--space);
+  margin: var(--space);
   text-align: left;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
+  padding: var(--space);
+  margin: var(--space);
   > img {
-    grid-column: span 3;
+    aspect-ratio: 16/9;
     border-radius: 8px 8px 0 0;
+  }
+  > p {
+    flex-grow: 1;
   }
 }
 a { 
@@ -129,9 +131,22 @@ a {
   border-radius: 4px;
   color: var(--teal);
   text-decoration: none;
+  align-self: flex-start;
 }
 a:hover {
   background-color: var(--teal);
   color: oklch(100% 0 0);
   
 }
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space) * 2);
+  }
+  main > article {
+    margin:  0 var(--space) var(--space) var(--space)!important; 
+  }
+  }
+
