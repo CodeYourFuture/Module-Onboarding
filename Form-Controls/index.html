@@ -10,18 +10,55 @@
   <body>
     <header>
       <h1>Product Pick</h1>
+      <h2>By Hibo Sharif </h2>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+        <label for= "name">  Name</label>
+<input type="text" name="name" name="id" required  
+pattern="[A-Za-z\s]{2,50}" title="Name should only contain letters and spaces (2-50 characters)">
+</div><br><br>
+<div> 
+    <label for="Email"> Email</label>
+    <input type="email" name="email" id="email" required >
+</div><br><br>
+<div>
+    <label for="tshirtcolour">Tshirt-colour</label>
+    <select name="tshirtcolour" id="tshirtcolour">
+        <option value="Blue"> Blue</option>
+       <option label="Purple" value="Purple"> Purple</option> 
+       <option label="Orange" value="Orange"> Orange</option> 
+    </select>
+</div><br><br>
+<div>
+  <label for="Size"> Size</label>
+  <select name="Size" id="Size">
+    <option value="size"> XS </option>
+     <option value="size"> S </option>
+      <option value="size"> M </option>
+       <option value="size"> L </option>
+        <option value="size"> XL </option>
+         <option value="size"> XXL</option>
+  </select></div>
+  
+        <!-- We are selling t-shirts. Write a form to collect the following data:
+
+Our customers already have accounts, so we know their addresses and charging details already.
+ We don't need to collect that data. We want to confirm they are the right person, then get them to choose a colour and size.
+
+Writing that out as a series of questions to ask yourself:
+
+What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+All fields are required. Do not write a form action for this project.-->
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+    
+      
     </footer>
   </body>
 </html>
