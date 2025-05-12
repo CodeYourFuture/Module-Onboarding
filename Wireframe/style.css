@@ -33,6 +33,16 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: var(--space);
+  background-color: #ff3333;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: #151515;
   color: #ff3333;
 }
 
@@ -54,11 +64,7 @@ footer {
 }
 
 footer a {
-  border: none; 
-  padding: 0;
-  text-decoration: none;
   color: #33ffff;
-  font-weight: 500;
 }
 
 /* ====== Site Layout ====== */
