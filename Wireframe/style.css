@@ -57,7 +57,7 @@ main {
 .main-article img,
 .sub-articles article img {
   width: 100%;
-  height: auto;
+  height: 200px;
   border: 1px solid #ccc;
 }
 
