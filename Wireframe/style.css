@@ -24,6 +24,7 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -57,8 +58,22 @@ main {
 .main-article img,
 .sub-articles article img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  object-fit: cover; /* Ensure images are not distorted */
+}
+
+/* For the main article image */
+.main-article img {
+  height: 452px; /* Match 'readme' image height */
+}
+
+/* For the first image in the sub-article */
+.sub-articles article img:first-of-type {
+  height: 452px; /* Match 'readme' image height */
+}
+
+/* For the last image in the sub-article */
+.sub-articles article img:last-of-type {
+  height: 175px; /* Match 'git-branch' image height */
 }
 
 .main-article {
@@ -98,11 +113,6 @@ h2 {
   color: #005fa3; /* Change color on hover */
 }
 
-
-a:hover {
-  background-color: #005fa3;
-}
-
 footer {
   background-color: #222;
   color: #fff;
@@ -128,6 +138,7 @@ main {
     grid-column: span 2;
   }
 }
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
