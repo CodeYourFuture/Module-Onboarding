@@ -15,69 +15,81 @@
   </header>
   <main>
     <form>
-  
-       
+
+
+      <br>
+      <label for="tshirt-size">Choose a T-shirt size: </label>
+      <br>
+      <select id="tshirt-size" name="tshirt-size" required
+        title="Please select a T-shirt size from the options in the list">
+        <option value="" disabled selected>-- Please choose --</option>
+        <option value="xs">X Small</option>
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">X Large</option>
+        <option value="xxl">XX Large</option>
+      </select>
+      <br>
+      <br>
+      <fieldset aria-labelledby="colour-label">
+        <legend id="colour-label">Choose a T-shirt Colour: </legend>
+        <label for="green">Green</label>
+        <input type="radio" name="colour" id="green" value="green" required>
+        <label for="black">Black</label>
+        <input type="radio" name="colour" id="black" value="black" required>
+        <label for="grey">Grey</label>
+        <input type="radio" name="colour" id="grey" value="grey" required>
+      </fieldset>
+
+      <br>
+      <br>
+      <fieldset>
+        <legend>Your Details</legend>
         <br>
-        <label for="tshirt-size">Choose a T-shirt size: </label>
-        <br>
-        <select id="tshirt-size" name="tshirt-size" required>
+        <label for="title">Title: </label>
+        <select id="title" name="title" required title="Please select your title from the options in the list">
           <option value="" disabled selected>-- Please choose --</option>
-          <option value="xs">X Small</option>
-          <option value="s">Small</option>
-          <option value="m">Medium</option>
-          <option value="l">Large</option>
-          <option value="xl">X Large</option>
-          <option value="xxl">XX Large</option>
+          <option value="mr">Mr.</option>
+          <option value="mrs">Mrs.</option>
+          <option value="ms">Ms</option>
+          <option value="mx">Mx</option>
+          <option value="miss">Miss</option>
+          <option value="dr">Dr.</option>
+          <option value="prof">Prof.</option>
+          <option value="rev">Rev.</option>
         </select>
         <br>
         <br>
-        <fieldset aria-labelledby="colour-label">
-        <legend>Choose a T-shirt Colour: </legend>
-        <label><input type="radio" name="colour" value="green" required>Green</label>
-        <label><input type="radio" name="colour" value="black" required>Black</label>
-        <label><input type="radio" name="colour" value="grey" required>Grey</label>
-        </fieldset>
-        
+        <label for="first-name">First Name: </label>
+        <input type="text" id="first-name" name="first-name" placeholder="e.g. Jane" required
+          pattern="[A-Za-z\s\-]{2,50}" title="Please enter your first name" aria-describedby="first-name-help">
+        <span id="first-name-help"><small>Please enter a valid first name using only letters and spaces, 2-50
+          characters long.</small></span>
         <br>
         <br>
-        <fieldset>
-          <legend>Your Details</legend>
-          <br>
-          <label for="title">Title: </label>
-          <select id="title" name="title" required>
-            <option value="" disabled selected>-- Please choose --</option>
-            <option value="mr">Mr.</option>
-            <option value="mrs">Mrs.</option>
-            <option value="ms">Ms</option>
-            <option value="mx">Mx</option>
-            <option value="miss">Miss</option>
-            <option value="dr">Dr.</option>
-            <option value="prof">Prof.</option>
-            <option value="rev">Rev.</option>
-          </select>
-          <br>
-          <br>
-          <label for="first-name">First Name: </label>
-          <input type="text" id="first-name" name="first-name" placeholder="e.g. Jane" required pattern="[A-Za-z\s\-]{2,50}">
-          <br>
-          <br>
-          <label for="last-name">Last Name: </label>
-          <input type="text" id="last-name" name="last-name" placeholder="e.g. Doe" pattern="[A-Za-z\s\-]{2,50}" required>
-          <br>
-          <br>
-          <label for="email">Email Address: </label>
-          <input type="email" id="email" name="email" placeholder="e.g. jane@geemail.com" pattern="^[^@]+@[^@]+\.[^@]{2,}$" title="Please enter a valid email address in the format such as: username@domain.com" aria-describedby="email-help" required>
-          
-        </fieldset>
+        <label for="last-name">Last Name: </label>
+        <input type="text" id="last-name" name="last-name" placeholder="e.g. Doe" required 
+          pattern="[A-Za-z\s\-]{2,50}" title="Please enter your last name" aria-describedby="last-name-help">
+          <span id="last-name-help"><small>Please enter a valid last name using only letters and spaces, 2-50
+          characters long.</small></span>
         <br>
         <br>
-        <button type="submit" aria-label="submit button">Submit Order</button>
+        <label for="email" title="Please enter your email address">Email Address: </label>
+        <input type="email" id="email" name="email" placeholder="e.g. jane@geemail.com"
+          pattern="^[^@]+@[^@]+\.[^@]{2,}$"
+          title="Please enter a valid email address in the format such as: username@domain.com"
+          aria-describedby="email-help" required>
+        <span id="email-help"><small>Please enter a valid email address in the following format e.g.
+          username@domain.com</small></span>
+      </fieldset>
+      <br>
+      <br>
+      <button type="submit">Submit Order</button>
     </form>
   </main>
   <br>
-  
   <footer>
-    <!-- change to your name-->
     <h2>By GERALDINE EDWARDS</h2>
   </footer>
 </body>
