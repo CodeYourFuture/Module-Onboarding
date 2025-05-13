@@ -20,6 +20,12 @@ header {
   text-align: center;
 } 
 
+header p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: var(--space) auto;
+}
+
 h1 {
   background-color: #ff3333;
   color: #ffffff;
