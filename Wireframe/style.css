@@ -1,9 +1,3 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
 /* ====== Design Palette ======
  This is our "design palette".
  It sets out the colours, fonts, styles etc to be used in this design 
@@ -17,16 +11,20 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --paper: #5B4ACC;
+  --ink: #edecf7;
+  /*--ink: color-mix(in oklab, var(--color) 5%, black); */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+  --line: 0.5px solid #edecf7;
+  --container: 900px;
 }
 
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+h2 {
+  margin-bottom: 0;
+}
+
+/* ====== Base Elements ====== */
 body {
   background: var(--paper);
   color: var(--ink);
@@ -37,27 +35,49 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
+  border-radius: 5px;
+  color: var(--ink);
+  text-decoration: none;
 }
 
 img,
 svg {
   width: 100%;
+  height: 350px;
+  object-position: center;
   object-fit: cover;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
 }
+
+img:hover,
+a:hover {
+  scale: 0.9;
+}
+
+
+/* ====== Header ====== */
+
+header {
+  text-align: center;
+  margin: 80px 0;
+}
+
+header h1 {
+  font-size: clamp(2rem, 2rem + 5vw, 5rem);
+  margin: var(--space) auto;
+  margin-bottom: 0;
+}
+
 
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
 }
 
 /* ====== Articles Grid Layout ====
@@ -77,6 +97,7 @@ main {
   }
 }
 
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -84,6 +105,7 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
+  border-radius: 5px;
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -96,4 +118,12 @@ article {
   >img {
     grid-column: span 3;
   }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 40px;
 }
