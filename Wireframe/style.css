@@ -39,7 +39,7 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   font-weight: 500;
   border-radius: var(--space);
@@ -70,7 +70,7 @@ footer {
 }
 
 footer a {
-  color: #33ffff;
+  color: #000000;
 }
 
 /* ====== Site Layout ====== */
