@@ -13,15 +13,53 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <p> Required fields are followed by <strong><span aria-label="required">*</span></strong>.</p>
+
+        <section>
+          <h2>Customer Information</h2>      
+          <!-- 1. Collecting data for customer's name -->
+          <label for="name">Name:<strong><span aria-label="required">*</span></strong></label></br>
+          <input type="text" id="name" name="name" required pattern="[A-Za-z]{1,32}"/><br />
+
+          <!-- 2. Collecting data for customer's email -->
+          <label for="email">Email:<strong><span aria-label="required">*</span></strong></label></br>
+          <input type="email" id="email" name="email" required /><br />
+        </section>
+
+        <section>
+          <h2>Product Information</h2>
+          <!-- 3. Collecting data for t-shirt colour choice-->
+          <fieldset>
+          <legend>Choose a t-shirt colour:<strong><span aria-label="required">*</span></strong></legend>
+          <input type="radio" id="red" name="colour" value="red" />
+          <label for="red">Red</label><br />
+          <input type="radio" id="blue" name="colour" value="blue" />
+          <label for="blue">Blue</label><br />
+          <input type="radio" id="green" name="colour" value="green" />
+          <label for="green">Green</label><br />
+          </fieldset> 
+
+          <p><!--4. Collecting data for t-shirt size choice-->
+          <label for="size" aria-required="true">Choose a t-shirt size:<strong><span aria-label="required">*</span></strong></label></br></p>
+          <select id="size" name="size">            
+            <option value="xsmall">X-Small</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xlarge">X-Large</option>
+            <option value="xxlarge">XX-Large</option>
+          </select><br />
+        </section>  
+
+        <section>
+          <p><button type="submit">Submit</button></p>
+        </section>
+
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By ADIYAH FARHAN</h2>
     </footer>
   </body>
 </html>
