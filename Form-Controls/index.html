@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>My form exercise</title>
-  <meta name="description" content="" />
+  <meta name="description" content="Order a t-shirt using this form" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -27,18 +27,18 @@
             <strong><span aria-label="required">*</span></strong>
           </label>
           <input type="name" id="name" name="name" required minlength="2" maxlength="50" pattern="[A-Za-z\s]+"
-            placeholder="Enter name">
+            placeholder="Enter your name" oninvalid="setCustomValidity('Name must be 2 characters and contain only letters.')" oninput="setCustomValidity('')">
           <!-- Enter valid customer email  -->
           <label for="mail">
             <span>Customer Email: </span>
             <strong><span aria-label="required">*</span></strong>
           </label>
-          <input type="email" id="email" name="email" required placeholder="Enter email" />
+          <input type="email" id="email" name="email" required placeholder="your@example.com" />
         </fieldset><br>
 
         <!-- Choose t-shirt color  -->
         <div>
-          <label for="color"> <span>T-shirt colour: </span>
+          <label for="color"> <span>Choose a T-shirt colour: </span>
             <strong><span aria-label="required">*</span></strong>
           </label>
           <select id="color" name="color" required>
@@ -50,7 +50,7 @@
         </div><br>
         <!-- Choose t-shirt size  -->
         <div>
-          <label for="size"> <span>T-shirt size: </span>
+          <label for="size"> <span>Choose a T-shirt size: </span>
             <strong><span aria-label="required">*</span></strong>
           </label>
           <select id="size" name="size" required>
