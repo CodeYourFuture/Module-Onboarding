@@ -109,7 +109,6 @@ main {
   }
 }
 
-
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -134,10 +133,18 @@ article {
 
 footer {
   position: fixed;
-  width: clamp(25%, 20%, 30%);
+  width: clamp(25%, 30%, 40%);
   bottom: 0;
   text-align: left;
   font-size: 12px;
   margin-bottom: 30px;
   mix-blend-mode: overlay;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    footer {
+      width: clamp(40%, 50%, 50%);
+    }
+  }
 }
