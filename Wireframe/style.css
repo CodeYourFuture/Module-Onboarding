@@ -101,3 +101,5 @@ article {
   > img {
     grid-column: span 3;
   }}
+h2{font-weight: bold;}
+#readme-title,#wireframe-title,#gitbranches-title{font-family: Arial, Helvetica, sans-serif;}
