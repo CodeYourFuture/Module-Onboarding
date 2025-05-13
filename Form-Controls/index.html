@@ -12,16 +12,96 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+      <form class="tshirt-form" id="orderForm" novalidate style="max-width: 500px; margin: 20px auto; padding: 20px; border: 2px solid #392f5a">
+    <!-- Customer Section -->
+    <fieldset style="margin-bottom: 20px; padding: 10px; border: 1px solid #9dd9d2">
+        <legend class="sr-only" style="color: #392f5a; font-weight: bold"> Your Details </legend>
+        
+        <div class="form-group">
+            <label for="fullname" style="display: block; margin-bottom: 10px">Full Name:<br>
+            <input type="text" id="fullname" name="fullname" required 
+                   pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]{2,50}$"
+                   title="Please enter your full name (letters and spaces only)"
+                   minlength="2"
+                   maxlength="50"
+                   aria-describedby="nameHelp"
+                   autocomplete="name"
+                   style="width: 100%; padding: 5px; margin-top: 5px">
+             <div id="nameHelp" class="help-text">As it appears on your account</div>
+             </label>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" 
+                   required
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                   title="Please enter a valid email address"
+                   aria-describedby="emailHelp"
+                   autocomplete="email">
+            <div id="emailHelp" class="help-text">We'll send confirmation here</div>
+        </div>
+    </fieldset>
+
+    <!-- T-Shirt Section -->
+    <fieldset>
+        <legend class="sr-only">T-Shirt Details</legend>
+
+        <div class="form-group" role="group" aria-labelledby="colorHeading">
+            <h3 id="colorHeading">Choose Color:</h3>
+            <div class="options-group">
+            <label><input type="radio" name="color" value="red" required 
+                           aria-required="true">
+                    Red
+                </label>
+                <label>
+                    <input type="radio" name="color" value="blue">
+                    Blue
+                </label>
+                <label>
+                    <input type="radio" name="color" value="green">
+                    Green
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group" role="group" aria-labelledby="sizeHeading">
+            <h3 id="sizeHeading">Choose Size:</h3>
+            <div class="options-group" data-required="true">
+                <label>
+                    <input type="radio" name="size" value="XS" required>
+                    XS
+                </label>
+                <label>
+                    <input type="radio" name="size" value="S">
+                    S
+                </label>
+                <label>
+                    <input type="radio" name="size" value="M">
+                    M
+                </label>
+                <label>
+                    <input type="radio" name="size" value="L">
+                    L
+                </label>
+                <label>
+                    <input type="radio" name="size" value="XL">
+                    XL
+                </label>
+                <label>
+                    <input type="radio" name="size" value="XXL">
+                    XXL
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+    <button type="submit">Place Order</button>
+</form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Dawud Vermeulen </h2>
     </footer>
   </body>
 </html>
