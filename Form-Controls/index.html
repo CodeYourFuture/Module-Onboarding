@@ -26,7 +26,7 @@
             pattern="^[A-Za-z ,.'-]{2,50}$"
           />
         </p>
-        
+
         <!-- Customer email-->
         <p>
           <label for="email">Email:</label>
@@ -39,7 +39,19 @@
             placeholder="Enter your email"
           />
         </p>
-        <!-- Product colour-->
+
+        <!-- Product colour (limited to 3 options)-->
+        <p>
+          <label for="colour">Colour:</label>
+          <br>
+          <select id="colour" name="colour" required>
+            <option value=""> - Select a colour - </option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </p>
+
         <!-- Product size-->
       </form>
     </main>
