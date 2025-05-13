@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+       
+       <form>
+ <fieldset>
+   <legend>Customer details</legend>
+   <div>
+     <label for="name">Customer Name(required):</label>
+      <input type="text" id="name" name="name" required>
+     
+   </div>
+   
+   <div>
+     <label for="Email">Email(required):</label>
+     <input type="text" id="Email" name="Email" required>
+        </div>
+   
+  </fieldset>
+   
+   <fieldset>
+     <legend>T-shirt color</legend>
+     <div>
+       <label for="color">color(required):<label>
+    <select id="color" name="color" required>
+        <option Value=""disabled selected>select a color</option>
+        <option value="Yellow">Yellow</option>
+        <option Value="Green">Green</option>
+        <option value="Red">Red</option>
+        </select>
+         </div>
+         </fieldset>
+
+<fieldset>
+         <div>
+           <label for="size">T shirt size(required):</label>
+     <select id="size" name="size" required>
+            <option Value=""disabled selected>select size</option>
+            <option value="S">S</option>
+            <option Value="M">M</option>
+            <option value="L">L</option> 
+            <option value="XL">XL</option>
+            <option Value="XXL">XXL</option>
+</select>
+
+</div>
+</fieldset>
+
+
+<button type="Submit">Submit Order
+</button>
+         
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By HOMEWORK SOLUTION</h2>
+    </footer>
+  </body>
+</html>
