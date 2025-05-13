@@ -13,55 +13,46 @@
     </header>
     <main>
       <form>
-        <fieldset> 
-          <legend>CUSTOMER INFORMATION </legend>
-            <div> 
-              <label for='name'>Name:</label><br>
-              <input type='text' name='name' id='name' required minlength='2'>
-    
-            </div>
-            <div> 
-              <label for='email'> Email:</label><br>
-              <input type='email' name='email' id='email' required>
-            </div>  
-            
-        
+        <fieldset>
+          <legend>CUSTOMER INFORMATION</legend>
+          <div>
+            <label for="name">Name:</label><br />
+            <input type="text" name="name" id="name" required minlength="2" />
+          </div>
+          <div>
+            <label for="email"> Email:</label><br />
+            <input type="email" name="email" id="email" required />
+          </div>
         </fieldset>
         <fieldset>
           <legend>PRODUCT INFORMATION</legend>
-          <div> 
-            <label for='color'>T-shirt color</label><br>
-            <select id ='color' name='tshirt_color' required>
-              <option value="red">red</option>
-              <option value="blue">blue</option>
-              <option value="purple">purple</option>
-            </select>  
-  
+          <div>
+            <label for="color">T-shirt color</label><br />
+            <select id="color" name="tshirt_color" required>
+              <option value="" disabled selected>Select a color</option>
+              <option value="red">RED</option>
+              <option value="blue">BLUE</option>
+              <option value="purple">PURPLE</option>
+            </select>
           </div>
-          <div> 
-            <label for='size'>Size:</label><br>
-            <select id ='size' name='size' required>
-              <option value='xs'>XS</option>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>  
-  
+          <div>
+            <label for="size">Size:</label><br />
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
           </div>
         </fieldset>
-        
-        <button type='submit' size='20'>SUBMİT</button>
-        
 
-         
-
-
+        <button type="submit">SUBMIT</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
       <h2>By Fatma Degirmenci</h2>
     </footer>
   </body>
