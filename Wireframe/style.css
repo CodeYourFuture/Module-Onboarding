@@ -31,10 +31,17 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+header{ border: 2px solid grey;
+  color:blue;
+  background-color: grey;}
+  
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  border-color:aqua;
+  color:black;} 
 }
 img,
 svg {
@@ -52,7 +59,7 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
+  text-align: right;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -75,6 +82,8 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
+  background-color: grey;
+  color:blue
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
