@@ -102,6 +102,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
+  margin-bottom: 20vh;
 
   >*:first-child {
     grid-column: span 2;
@@ -132,9 +133,11 @@ article {
 }
 
 footer {
-  position: relative;
+  position: fixed;
+  width: clamp(25%, 20%, 30%);
   bottom: 0;
-  text-align: center;
+  text-align: left;
   font-size: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  mix-blend-mode: overlay;
 }
