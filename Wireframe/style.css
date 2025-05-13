@@ -144,7 +144,7 @@ footer {
 @media only screen and (max-width: 600px) {
   body {
     footer {
-      width: clamp(40%, 50%, 50%);
+      width: clamp(40%, 70%, 70%);
     }
   }
 }
