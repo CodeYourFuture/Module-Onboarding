@@ -13,15 +13,47 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>CUSTOMER INFORMATION</legend>
+          <div>
+            <label for="name">Name:</label><br />
+            <input type="text" name="name" id="name" required minlength="2" />
+          </div>
+          <div>
+            <label for="email"> Email:</label><br />
+            <input type="email" name="email" id="email" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>PRODUCT INFORMATION</legend>
+          <div>
+            <label for="color">T-shirt color</label><br />
+            <select id="color" name="tshirt_color" required>
+              <option value="" disabled selected>Select a color</option>
+              <option value="red">RED</option>
+              <option value="blue">BLUE</option>
+              <option value="purple">PURPLE</option>
+            </select>
+          </div>
+          <div>
+            <label for="size">Size:</label><br />
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <button type="submit">SUBMIT</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Fatma Degirmenci</h2>
     </footer>
   </body>
 </html>
