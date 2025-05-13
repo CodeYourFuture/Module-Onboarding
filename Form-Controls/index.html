@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="product-pick" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -12,16 +12,71 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form method="post">
+        <!-- Customer name-->
+        <p>
+          <label for="username">Name:</label>
+          <br>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="Enter your name"
+            pattern="^[A-Za-z ,.'-]{2,50}$"
+          />
+        </p>
+
+        <!-- Customer email-->
+        <p>
+          <label for="email">Email:</label>
+          <br>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+        </p>
+
+        <!-- Product colour (limited to 3 options)-->
+        <p>
+          <label for="colour">Colour:</label>
+          <br>
+          <select id="colour" name="colour" required>
+            <option value=""> - Select a colour - </option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </p>
+
+        <!-- Product size (XS-XXL)-->
+        <p>
+          <label for="size">Size:</label>
+          <br>
+          <select id="size" name="size" required>
+            <option value=""> - Select a size - </option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </p>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+        <!-- Reset Button -->
+        <button type="reset">Reset</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Halyna K</h2>
     </footer>
   </body>
 </html>
