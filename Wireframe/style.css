@@ -35,10 +35,21 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
-  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
   border-radius: 5px;
   color: var(--ink);
   text-decoration: none;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
+}
+
+header a {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 img,
