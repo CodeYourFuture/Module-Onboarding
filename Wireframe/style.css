@@ -155,7 +155,7 @@ details {
 summary {
   font-weight: bold;
   cursor: pointer;
-  color: #007BFF;
+  color: #0056b3; /* Darker blue for better contrast */
   text-decoration: underline;
 }
 
