@@ -31,22 +31,28 @@ body {
   color: var(--ink);
   font: var(--font);
 }
-header{ border: 2px solid grey;
-  color:blue;
-  background-color: grey;}
+header{ border: 1px solid grey;
+  color:rgb(54, 15, 87);
+  height: min-content;
+  overflow:hidden;
+  padding-bottom:20px;
+  background-color:white;}
   
 
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
-  border-color:aqua;
-  color:black;} 
-}
+  font-weight: bold;
+  border-style: double;
+  border-color:rgb(1, 34, 34);
+  color:rgb(54, 15, 87);} 
+
 img,
 svg {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  margin-top: 15px;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -59,7 +65,7 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  text-align: right;
+  text-align: left;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -82,10 +88,10 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
-  background-color: grey;
-  color:blue
+  background-color:white;
+  color:rgb(54, 15, 87);
   border: var(--line);
-  padding-bottom: var(--space);
+  padding: bottom 20px;
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
@@ -94,5 +100,4 @@ article {
   }
   > img {
     grid-column: span 3;
-  }
-}
+  }}
