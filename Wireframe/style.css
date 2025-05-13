@@ -30,17 +30,72 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  background-color: whitesmoke;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  border-radius: 6px;
 }
-img,
-svg {
+
+.image {
   width: 100%;
-  object-fit: cover;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  object-fit: contain;
 }
+
+#head1 {
+  text-align: center;
+  background-color: pink;
+  font-style: italic;
+}
+.intro-text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+ul {
+  color: crimson;
+  list-style-type: none;
+  text-align: center;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+.read-more {
+  font-size: 16px;
+  text-decoration: underline;
+  padding: 10px 5px;
+  display: block;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid blue;
+  margin-top: 10px;
+}
+.context-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -48,12 +103,37 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding-bottom: 100px;
+  
 }
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  width: 100%;
+  padding: 15px;
+  box-shadow: 0px -2px 5px;
 }
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-link {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.footer-link:hover {
+  background-color: gray;
+  color: white;
+}
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
