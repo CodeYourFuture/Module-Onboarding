@@ -35,7 +35,20 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+
 }
+.btn-readmore{
+    background: #1a1ae0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #ded1d1;
+}
+
+.btn-readmore:hover {
+    background: #4444e4;
+}
+
 img,
 svg {
   width: 100%;
