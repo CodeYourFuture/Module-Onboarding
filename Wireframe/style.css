@@ -45,12 +45,15 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header{
+  font: var(--font);
+  text-align: center;
+}
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
   bottom: 0;
   text-align: center;
 }
@@ -84,6 +87,11 @@ article {
     grid-column: 2/3;
   }
   > img {
-    grid-column: span 3;
+    grid-column: span 2;
   }
 }
+/*resize the height of first image*/
+#resize-image1{
+  height: 400px;
+}
+
