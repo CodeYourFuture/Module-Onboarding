@@ -64,15 +64,16 @@ max-width: var(--container);
   }
 
 #branch { 
-width: 45%;
-height: 375px;
+width: 50%;
+height: 405px;
 padding-left: 120px;
 }
 
 #wire {
-  width: 97%;
-  height: 395px;
+  width: 90%;
+  height: 400px;
   padding-left: 10px;
+  padding-bottom: 5px;
 }
 
 article { 
@@ -83,7 +84,6 @@ font-size: 17px;
 text-align: justify;
 display: grid;
 }
-
 
 main {
   max-width: var(--container);
