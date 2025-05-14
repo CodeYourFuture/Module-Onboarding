@@ -1,0 +1,130 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-bottom: 60px; /* Space for the footer */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f8f8f8;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* For medium screens and larger */
+@media (min-width: 768px) {
+    .articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .articles article:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.article-image {
+    height: 200px;
+    background-color: #eee;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+
+article h2 {
+    margin-bottom: 1rem;
+}
+
+article p {
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    /* Add underline to make links distinguishable without relying on color */
+    text-decoration: underline;
+    /* Add a border to make even more distinguishable */
+    border: 2px solid #111;
+}
+
+.read-more:hover, .read-more:focus {
+    background-color: #555;
+    outline: 2px solid #777;
+    text-decoration: underline;
+}
+
+/* Hide text visually but keep for screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: #fff; /* Brighter color for better contrast */
+    text-decoration: underline; /* Always show underline for footer links */
+    font-weight: bold; /* Make text bold for better visibility */
+    padding: 2px 4px; /* Add some padding around links */
+    border-radius: 3px;
+}
+
+footer a:hover, footer a:focus {
+    color: white;
+    background-color: #555; /* Background change on hover/focus */
+    outline: 2px solid #ddd;
+    text-decoration: underline;
+}
