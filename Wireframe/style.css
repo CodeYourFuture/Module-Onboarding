@@ -95,10 +95,16 @@ main {
 }
 
 footer {
+  position: fixed;
   bottom: 0;
   text-align: center;
-  padding: var(--space);
+  font-size: 17px;
+  color: rgb(17, 14, 14);
+  background-color: rgba(0, 0, 0, 0.627);
+  width: 100%;
   color: white;
+  left: 0;
+  padding: 4px;
 }
 
  
