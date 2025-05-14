@@ -26,7 +26,7 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-body {
+body {background-color:#6E3B;
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
@@ -50,6 +50,8 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
+  padding: 15px
+  border: 9px
   position: fixed;
   bottom: 0;
   text-align: center;
@@ -74,6 +76,8 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+.title{text-align: center;}
+.content{text-align: center;}
 article {
   border: var(--line);
   padding-bottom: var(--space);
