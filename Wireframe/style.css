@@ -95,3 +95,25 @@ article {
     grid-column: span 3;
   }
 }
+.logo-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-text {
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #0d2e46;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.slogan-text {
+  font-size: 13.5px;
+  color: #3a3935;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+  text-decoration-line: underline;
+}
+
