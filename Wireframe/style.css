@@ -50,9 +50,12 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  background: rgb(177, 177, 170);
+  position:static;
   bottom: 0;
   text-align: center;
+  font-size: 2rem;
+  padding: var(--space) 0;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,4 +89,28 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+h1{
+
+  font-size: 5rem;
+  margin: var(--space) 0;
+  grid-column: span 3;
+  text-align: center;
+}
+.h1-wireframe {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: var(--space) 0;
+  text-align: center;
+}
+
+.h2-details {
+  font-size: 1.5rem;
+  margin: var(--space) 0;
+  text-align: left;
 }
