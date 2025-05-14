@@ -100,11 +100,10 @@ article {
 
 
 footer {
-  text-align;:center;
-  background-color: #f1f1f1;
-  padding: 24px;
-  gap: 24px;
   text-align: center;
-  color: #555;
-  border-top: 1px solid #ccc;
+  background-color: white;
+  padding: 24px;
+  text-align: center;
+  color: black;
+  border-top: 1px solid white;
 }
