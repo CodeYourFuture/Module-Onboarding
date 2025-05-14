@@ -41,16 +41,20 @@ p {
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-  padding: 10px;
-  margin-right: 690px;
+  padding: 14px 20px;
+  min-width: 48px;
+  min-height: 48px;
+  margin: 8px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: inherit;
 }
 .btn:hover {
   padding-right: 25px;
-  transition: 0.5;
+
 }
 /* Section of Why do developers need  Git */
 #git-section {
