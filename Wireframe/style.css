@@ -75,6 +75,8 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
+  flex: 1;
+  justify-content: space-between;
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
@@ -86,4 +88,10 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+.container{
+  display: flex;
+  padding: 10px;
+  
 }
