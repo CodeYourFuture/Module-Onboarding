@@ -9,19 +9,76 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your T-Shirt</h1>
     </header>
     <main>
+      <section>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+
+       <!--What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
+        <label for="name">your name:</label>
+        <span aria-label="required"><strong> * </strong></span>
+        <input type="text" id="name" name="user-name" autocomplete="name" placeholder="enter your name" required>
+        <br>
+        <label for="email">your email: </label>
+        <span aria-label="required"><strong>*</strong></span>
+        <input type="email" id="email" name="user-email" autocomplete="email" placeholder="enter your email" required>
+        <br>
+        <label for="password">password : </label>
+        <span aria-label="required"><strong>*</strong></span>
+        <input type="password" id="password" name="password"  placeholder="enter your password" minlength="8"  required>
+
+      
+       </section>
+       <section>
+       <h2> choice your t-shirt </h2>
+       <p> pleas fill all required information</p>
+      
+        <label for="color"> t-shirt color:</label>
+        <span aria-label="required"><strong>*</strong></span>
+        <select name="color" id="color" required> 
+          <option value=""> ???</option>
+        <option value="red"> red</option>
+        <option value="green">green</option>
+        <option value="blue"> blue</option>
+        </select>
+        </br>
+        <span aria-label="required">choose your size</span>
+        <br>
+        <label for="xs"> XS </label>
+        <input type="radio" id="xs" name="size" value="xs" required>
+        <br>
+        <label for="s"> S </label>
+        <input type="radio" id="s" name="size" value="s" required>
+        <br>
+        <label for="m"> M</label>
+        <input type="radio" id="m" name="size" value="M" required>
+        <br>
+        <label for="l"> L</label>
+        <input type="radio" id="l"  name="size" value="L" required>
+        <br>
+        <label for="xl"> XL</label>
+        <input type="radio" id="xl" name="size" value="XL" required>
+        <br>
+        <label for="xxl"> XXL</label>
+        <input type="radio" id="xxl" name="size" value="XXL" required>
+
+        
+        
+      
+        </section>
+         <div>
+      
+        <button aria-label="required"> submit</button>
       </form>
+    </div>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By MOHAMMAD ALDALI</h2>
     </footer>
   </body>
 </html>
