@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <div>
+        <label for="name">Name
+          <input type="text" required name="Name" id="name" minlength="2">
+        </label>
+      </div>
+      <br>
+      <div>
+        <label for="email">Email
+          <input type="email" name="email" id="emal" required>
+      </div>
+      </label>
+      <br>
+      <div>
+        <label for="color">Select color</label>
+        <div>
+          <br>
+          <div>
+            <label for="black">
+              <input type="radio" required id="black" name="color">Black
+            </label>
+          </div>
+          <br>
+          <div>
+            <label for="white">
+              <input type="radio" required id="white" name="color">White
+            </label>
+          </div>
+          <br>
+          <div>
+            <label for="blue">
+              <input type="radio" required id="blue" name="color">Blue
+            </label>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <label for="size">Select size</label>
+      <select id="size" required>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By HOMEWORK SOLUTION</h2>
+  </footer>
+</body>
+
 </html>
