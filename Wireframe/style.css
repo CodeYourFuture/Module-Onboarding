@@ -96,4 +96,7 @@ article {
   > img {
     grid-column: span 3;
   }
+  > *:not(img) {
+    margin:  var(--space);    
+  }
 }
