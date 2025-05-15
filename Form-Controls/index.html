@@ -13,14 +13,60 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+ <fieldset>
+        <legend>Your Information</legend>
+        
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="2">
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>T-Shirt Options</legend>
+        
+        <div>
+            <p>Select a color:</p>
+            <div>
+                <input type="radio" id="color-red" name="color" value="red" required>
+                <label for="color-red">Red</label>
+            </div>
+            <div>
+                <input type="radio" id="color-blue" name="color" value="blue">
+                <label for="color-blue">Blue</label>
+            </div>
+            <div>
+                <input type="radio" id="color-green" name="color" value="green">
+                <label for="color-green">Green</label>
+            </div>
+        </div>
+        
+        <div>
+            <label for="size">Select a size:</label>
+            <select id="size" name="size" required>
+                <option value="">-- Select Size --</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+        </div>
+    </fieldset>
+    
+    <div>
+        <button type="submit">Submit Order</button>
+    </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
+      <h1>Jawad Noori</h1>
       <h2>By HOMEWORK SOLUTION</h2>
     </footer>
   </body>
