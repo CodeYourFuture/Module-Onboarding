@@ -29,7 +29,7 @@ There are some provided HTML and CSS files you can use to get started. You can u
 - [ ] The articles section has three unique articles, each including a title, summary, and a link.
 - [ ] The page footer is fixed to the bottom of the viewport.
 - [ ] The webpage is styled using a linked .css file.
-- [ ] The webpage is properly committed and pushed to a branch on GitHub.
+- [] The webpage is properly committed and pushed to a branch on GitHub.
 
 ## Resources
 
