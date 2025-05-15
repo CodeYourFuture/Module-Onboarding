@@ -25,11 +25,11 @@
           9. I require one size from a defined set of 6 sizes -->
         <div>
           <label for="customer-name">Name</label>
-          <input name="customer-name" id="customer-name">
+          <input type="text" name="customer-name" pattern="^[A-Za-z\s]+$" minlength="2" id="customer-name" required>
         </div>
         <div>
           <label for="email-address">Email Address</label>
-          <input name="email-address" id="email-address">
+          <input type="email" name="email-address" id="email-address" required>
         </div>
         <div>
           <label>T-shirt Colour</label>
