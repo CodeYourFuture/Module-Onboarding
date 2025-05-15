@@ -1,89 +1,169 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
+/* ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+  --background: linear-gradient(120deg, oklch(97% 0.02 230) 0%, oklch(99% 0.01 250) 50%, oklch(95% 0.03 220) 100%);
+  --primary-color: #34495e;
+  --accent-color: #1abc9c;
+  --heading-color: #2563eb;
+  --hover-color: color-mix(in oklab, var(--accent-color) 30%, white);
+  --text-color: color-mix(in oklab, var(--primary-color) 12%, black);
+  --text-color-light: color-mix(in oklab, var(--primary-color) 20%, white);
+  --article-bg: oklch(98% 0.02 220);
+  --box-shadow: 0 4px 16px rgba(52,73,94,0.12), 0 1.5px 6px rgba(0,0,0,0.05);
+  --border: 1.5px solid color-mix(in oklab, var(--primary-color) 40%, white);
+  --border-radius: 20px;
+  --font-main: 100%/1.5 'JetBrains Mono', 'Fira Mono', 'Menlo', 'Consolas', monospace;
+  --spacing: clamp(8px, 8px + 2vw, 20px);
+  --container-width: 1280px;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
+/* ====== Base Elements ====== */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background: var(--background);
+  color: var(--text-color);
+  font: var(--font-main);
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  min-height: 100vh;
+}
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin: calc(var(--spacing) * 4) 0;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
+  color: var(--accent-color);
   max-width: fit-content;
 }
-img,
-svg {
+a:hover, a:focus {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+img, svg {
   width: 100%;
   object-fit: cover;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+
+/* ====== Header ====== */
+header {
+  background: var(--primary-color);
+  color: var(--text-color-light);
+  box-shadow: var(--box-shadow);
+  padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2.5rem);
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
+header nav span {
+  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: clamp(1rem, 3vw, 3rem);
+  margin: 0;
+  padding: 0;
+}
+header nav ul li a {
+  color: var(--hover-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+header nav ul li a:hover,
+header nav ul li a:focus {
+  color: var(--accent-color);
+  outline: none;
+}
+
+/* ====== Site Layout ====== */
 main {
+  max-width: var(--container-width);
+  margin: 0 auto calc(var(--spacing) * 8);
+  padding: 0 clamp(0.5rem, 4vw, 2rem);
+  gap: clamp(1rem, 4vw, 4rem);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+  grid-template-columns: 1fr;
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
+main > *:first-child {
+  grid-column: span 1;
+}
+
+.title {
+  font-weight: 700;
+  margin: calc(var(--spacing) * 2) 0;
+  text-align: center;
+  color: var(--primary-color);
+  text-shadow: 0 4px 2px rgba(0,0,0,0.1);
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+.title p {
+  color: var(--accent-color);
+}
+.title,
+.title p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem); 
+}
+
+/* ====== Article Layout ====== */
 article {
-  border: var(--line);
-  padding-bottom: var(--space);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background: var(--article-bg);
+  box-shadow: var(--box-shadow);
   text-align: left;
   display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  grid-template-columns: var(--spacing) 1fr var(--spacing);
+  padding: clamp(1rem, 4vw, 2rem) clamp(1rem, 6vw, 4rem) clamp(1rem, 6vw, 4rem);
+  margin: 0 clamp(0.5rem, 6vw, 6rem);
+  overflow: hidden;
+}
+article > * {
+  grid-column: 1/3;
+}
+article > img {
+  background-color: white;
+  border: var(--border);
+  border-radius: calc(var(--border-radius) * 0.75) calc(var(--border-radius) * 0.75) 0 0;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+article > img:hover, article > img:focus-within {
+  box-shadow: 0 8px 32px rgba(79,140,255,0.16), 0 3px 12px rgba(0,0,0,0.06);
+  transform: translateY(-2px) scale(1.01);
+}
+article h2 {
+  color: var(--heading-color);
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+  letter-spacing: 0.03em;
+}
+article p {
+  padding: clamp(0.5rem, 2vw, 2.5rem) 0;
+}
+
+/* ====== Footer ====== */
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  padding: clamp(0.7em, 2vw, 1em) 0;
+  z-index: 100;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+footer p {
+  margin: 0;
+}
+footer strong {
+  color: var(--hover-color);
 }
