@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="A form to pick a t-shirt" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,15 +13,66 @@
     </header>
     <main>
       <form>
+        <section>
+          <fieldset>
+  <h2>Customer information</h2>
+     <p>
+    <label for="name">
+      <span>Full Name: </span>
+    </label>
+    <input type="text" id="name" name="username" required />
+  </p>
+  <p>
+    <label for="mail">
+      <span>Email: </span>
+    </label>
+    <input type="email" id="mail" name="user-mail" required />
+  </p>
+<fieldset>
+  <h2>Product specification</h2>
+  <p>
+    <label for="size">
+      <span>Select a size:</span>
+    </label>
+    <select id="size" name="product size">
+      <option value=""></option>
+      <option value="XS">XSmall</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">XLarge</option>
+      <option value="XXL">XXLarge</option>
+      </select>
+  </p>
+  <p>
+    <label for="Colour">
+      <span>Select a colour:</span>
+    </label>
+    <select id="Colour" name="product colour">
+      <option value=""></option>
+      <option value="White">White</option>
+      <option value="Black">Black</option>
+      <option value="Blue">Blue</option>
+      </select>
+  </p>
+  <section>
+  <p>
+    <button type="submit"><strong>Place the order</strong></button>
+  </p>
+</section>
+  </fieldset>
+</fieldset>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        this will also help you fill in your P  R message later-->
+        </section>
+          </form>
+       
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By KhilolaRustam HOMEWORK SOLUTION</h2>
     </footer>
   </body>
 </html>
