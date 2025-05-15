@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Simple product pick form" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -18,7 +18,7 @@
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
         <!--1. Name :required, minimum 2 characters-->
-        <label for="name">Name</label>
+        <label for="name">Name</label><br />
         <input
         type="text"
         id="name"
@@ -27,49 +27,55 @@
         minlength="2"
         aria-describedby="nameHelp"
         />
-        <small id="nameHelp">Please enter your full name (at least 2 characters).</small>
-        <br />
-        <br />
+        <small id="nameHelp">Please enter your full name (at least 2 characters).</small><br /><br />
+
         <!--2. Email: required, must be valid format-->
-        <label for="email">Email</label>
+        <label for="email">Email</label><br />
         <input
         type="email"
         id="email"
         name="email"
         required
         />
-        <br />
-        <br />
+        <br /><br />
+
         <!--3. T-shirt Colour: must choose one from 3 options -->
         <fieldset>
           <legend>choose a T-shirt Colour:</legend>
           <input type="radio" id="red" name="colour" value="Red" required />
-          <label for="red">Red</label><br />
+          <label for="red">Red</label><br /><br />
 
           <input type="radio" id="blue" name="colour" value="Blue" required />
-          <label for="blue">Blue</label><br />
+          <label for="blue">Blue</label><br /><br />
 
           <input type="radio" id="green" name="colour" value="Green" required />
-          <label for="green">Green</label><br />
+          <label for="green">Green</label><br /><br />
         </fieldset>
         <br />
+
         <!--4. T-shirt size must choose one from 6 option-->
         <fieldset>
           <legend>Select your T-shirt size:</legend>
           <input type="radio" id="xs" name="size" value="XS" required />
-          <label for="xs">XS</label><br />
+          <label for="xs">XS</label><br /><br />
+          
           <input type="radio" id="s" name="size" value="S" required />
-          <label for="s">S</label><br />
+          <label for="s">S</label><br /><br />
+          
           <input type="radio" id="m" name="size" value="M" required />
-          <label for="m">M</label><br />
+          <label for="m">M</label><br /><br />
+          
           <input type="radio" id="l" name="size" value="L" required />
-          <label for="l">L</label><br />
+          <label for="l">L</label><br /><br />
+          
           <input type="radio" id="xl" name="size" value="XL" required />
-          <label for="xl">XL</label><br />
-           <input type="radio" id="xxl" name="size" value="XXL" required />
-          <label for="xxl">XXL</label><br />
+          <label for="xl">XL</label><br /><br />
+          
+          <input type="radio" id="xxl" name="size" value="XXL" required />
+          <label for="xxl">XXL</label><br /><br />
         </fieldset>
         <br />
+
         <button type="submit">Submit</button>
       </form>
     </main>
