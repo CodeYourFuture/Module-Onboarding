@@ -89,11 +89,14 @@ article {
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
+  grid-template-columns: var(--space) 1fr var(--space);  
   > * {
     grid-column: 2/3;
   }
   > img {
     grid-column: span 3;
   }
+  > *:not(img) {
+    margin: var(--space);
+  } 
 }
