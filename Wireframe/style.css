@@ -13,6 +13,9 @@ body {
   font: var(--font);
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -29,6 +32,7 @@ main {
   max-width: var(--container);
   margin: 0 auto;
   padding: var(--space);
+  flex: 1;
 }
 
 main > article:first-child {
@@ -76,7 +80,7 @@ footer {
   background-color: #d4edda;
   text-align: center;
   padding: 15px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
