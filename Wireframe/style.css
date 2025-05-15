@@ -45,7 +45,7 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-header{
+header {
   font: var(--font);
   text-align: center;
 }
@@ -91,7 +91,6 @@ article {
   }
 }
 /*resize the height of first image*/
-#resize-image1{
+#resize-image1 {
   height: 400px;
 }
-
