@@ -20,7 +20,8 @@
     <label for="name">
       <span>Full Name: </span>
     </label>
-    <input type="text" id="name" name="username" required />
+    <input type="text" id="name" name="username" required pattern="[A-Za-z\s]{2,}"
+              title="Please enter a valid name (at least 2 letters)."/>
   </p>
   <p>
     <label for="mail">
