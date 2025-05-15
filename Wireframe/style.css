@@ -1,4 +1,4 @@
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,6 +10,11 @@ body {
   background: #f9f9f9;
   padding: 20px;
   padding-bottom:50px;
+}
+
+img {
+  width: 100%;         /* Image will expand to fill its container */
+  height: auto;        /* Keeps the aspect ratio */
 }
 
 header {
@@ -53,13 +58,6 @@ p {text-align: center;}
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 .footer{
   position: fixed;
    left: 0;
@@ -70,3 +68,4 @@ p {text-align: center;}
    text-align: center;
   line-height: 50px;
 }
+
