@@ -49,10 +49,14 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
-  position: fixed;
+.wontmove{
+  /*position: fixed;*/
+  margin-top: auto;
   bottom: 0;
   text-align: center;
+}
+.wontmove a:hover{
+  color:blue;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,4 +90,19 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+h1,h2{
+  font-weight: 700;
+  color: #957C3D;
+}
+#welcome{
+  text-align: center;
+  font-weight: bold;
+}
+#wire1{
+  text-align: left;
+}
+.wireframehead{
+  text-align: center;
 }
