@@ -147,6 +147,13 @@ article p {
   padding: clamp(0.5rem, 2vw, 2.5rem) 0;
 }
 
+a.readmore {
+  color: color-mix(in oklab, var(--accent-color) 70%, black);
+}
+a.readmore:hover, a.readmore:focus {
+  color: var(--accent-color);
+}
+
 /* ====== Footer ====== */
 footer {
   width: 100%;
