@@ -29,10 +29,10 @@ There are some provided HTML and CSS files you can use to get started. You can u
 - [ ] The articles section has three unique articles, each including a title, summary, and a link.
 - [ ] The page footer is fixed to the bottom of the viewport.
 - [ ] The webpage is styled using a linked .css file.
-- [] The webpage is properly committed and pushed to a branch on GitHub.
+- [ ] The webpage is properly committed and pushed to a branch on GitHub.
 
 ## Resources
 
 - [Wireframe](https://www.productplan.com/glossary/wireframe/)
-- [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elemen-ts.asp)
+- [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
