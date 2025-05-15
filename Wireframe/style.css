@@ -35,6 +35,12 @@ main > article:first-child {
   grid-column: span 2;
 }
 
+main > article:first-child img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
 article {
   border: var(--line);
   background-color: white;
