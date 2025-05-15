@@ -27,7 +27,8 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
+  
+ background: var(--paper);
   color: var(--ink);
   font: var(--font);
 }
@@ -41,6 +42,7 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
