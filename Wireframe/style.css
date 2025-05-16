@@ -69,13 +69,18 @@ article > img {
 }
 
 a {
-  color: #0066cc;
-  text-decoration: none;
-  padding: 4px;
+  color: #007acc;
+  padding: 8px 12px;
   display: inline-block;
-  max-width: fit-content;
+  background-color: white;
+  border: 1px solid #007acc;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
-
+a :hover {
+  background-color: #e6f0ff;
+}
 footer {
   background-color: #d4edda;
   text-align: center;
