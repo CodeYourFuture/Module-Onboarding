@@ -12,16 +12,49 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+
+      <form action="/my-handling-form-page" method="post">
+
+        <!-- What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.-->
+        <p>
+          <label for="name">Your full Name:</label>
+          <input type="text" id="name" name="user_name" required 
+          pattern="^[A-Za-zÀ-ÿ ,.'-]{2,}$" title="Please enter a valid name with at least 2 characters."/>
+        </p>
+
+        <!--What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.-->
+        <p>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_mail" required/>
+        </p>
+
+        <!-- What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?-->
+        <label for="color">Choose your T-shirt colour:</label><br>
+        <select id="color" name="color" required>
+          <option value="">-- Select a colour --</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="navy">Navy</option>
+        </select><br><br> 
+
+        <!--What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL-->
+      
+        <label for="size">Choose your size:</label><br>
+        <select id="size" name="size" required>
+          <option value="">-- Select a size --</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select><br><br> 
+
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By JESUS DEL MORAL</h2>
     </footer>
   </body>
 </html>
