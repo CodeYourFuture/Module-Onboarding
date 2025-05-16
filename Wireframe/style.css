@@ -51,9 +51,13 @@ main {
 }
 footer {
   position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
+  width: 100%;
   text-align: center;
- width: 100%;
+  background: var(--paper); /* Ensures footer is readable */
+  z-index: 100; 
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
