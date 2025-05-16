@@ -50,7 +50,7 @@ svg {
   width: 100%;
   object-fit: cover;
   filter: brightness(0.7);
-  transition: .5;
+  transition: .5s;
 }
 img:hover,
 svg:hover {
