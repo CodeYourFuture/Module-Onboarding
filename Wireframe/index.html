@@ -1,51 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
+/* Here are some starter styles
+You can edit these or replace them entirely 
+It's showing you a common way to organise CSS 
+And includes solutions to common problems 
+As well as useful links to learn more */
 
-<head>
-  <meta name="description" content="Author: A.N. Author,
-    Illustrator: P. Picture, Category: Books, Price: $17.99,
-    Length: 784 pages">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wireframe</title>
-  <link rel="icon" href="readme.jpg">
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-    <h1>Wireframe</h1>
-    <p>Onboarding Task one</p>
-  </header>
-  <main>
-    <article class="readme">
-      <img src="readme.jpg" alt="Readme image">
-      <h1>Readme file</h1>
-      <p> README file introduces and guides users on a project's purpose and basic usage.</p>
-      <a
-        href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">Read
-        More About Readme Files</a>
-    </article>
-    <article class="wireframe">
-      <img src="wireframe.png" alt="Wireframe image">
-      <h1>Wireframe</h1>
-      <p>A wireframe visually outlines a website or app's structure and layout before adding design and content.</p>
-      <a href="https://wireframe.cc/">Read More About Wireframes</a>
-    </article>
-    <article class="branch">
-      <img src="branch.png" alt="Branch image ">
-      <h1>Branch</h1>
-      <p>Is a distinct version of your project's files, allowing isolated development and experimentation.</p>
-      <a
-        href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository">Read
-        More About Branches</a>
-    </article>
-  </main>
-  <footer>
-    <p>
-      &copy;2025. Bassam Alshujaa
-    </p>
-  </footer>
-</body>
-
-</html>
+/* ====== Design Palette ======
+ This is our "design palette".
+ It sets out the colours, fonts, styles etc to be used in this design 
+ At work, a designer will give these to you based on the corporate brand, but while you are learning
+ You can design it yourself if you like
+ Inspect the starter design with Devtools
+ Click on the colour swatches to see what is happening
+ I've put some useful CSS you won't have learned yet
+ For you to explore and play with if you are interested
+ https://web.dev/articles/min-max-clamp
+ https://scrimba.com/learn-css-variables-c026
+====== Design Palette ====== */
+:root {
+  --paper: rgba(0, 0, 0, 0.975);
+  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --font: 100%/1.5 system-ui;
+  --space: clamp(6px, 6px + 2vw, 15px);
+  --line: 1px solid rgb(160, 140, 113);
+  --container: 1280px;
+}
+/* ====== Base Elements ======
+ General rules for basic HTML elements in any context */
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: var(--font);
+}
+header{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  padding: var(--space);
+  border: var(--line);
+  max-width: fit-content;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.859);
+  color: black;
+}
+a:hover{
+  color: rgb(229, 130, 130);
+  background-color: rgba(206, 251, 236, 0.815);
+  transition: .3s;
+}
+img,
+svg {
+  width: 100%;
+  object-fit: cover;
+}
+/* ====== Site Layout ====== 
+Setting the overall rules for page regions
+https://www.w3.org/WAI/tutorials/page-structure/regions/
+*/
+main {
+  max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 4) auto;
+}
+footer  {
+  position: fixed;
+  bottom: 0;
+  background: rgb(224, 144, 144);
+  width: 100%;
+  text-align: center;
+  padding: 2px;
+}
+footer p{
+  font-size: larger;
+  font-weight: bolder;
+  color: black;
+}
+/* ====== Articles Grid Layout ====
+Setting the rules for how articles are placed in the main element.
+Inspect this in Devtools and click the "grid" button in the Elements view
+Play with the options that come up.
+https://developer.chrome.com/docs/devtools/css/grid
+https://gridbyexample.com/learn/
+*/
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+  > *:first-child {
+    grid-column: span 2;
+  }
+}
+/* ====== Article Layout ====== 
+Setting the rules for how elements are placed in the article. 
+Now laying out just the INSIDE of the repeated card/article design.
+Keeping things orderly and separate is the key to good, simple CSS.
+*/
+article {
+  background-color: rgba(253, 162, 162, 0.719);
+  border: var(--line);
+  padding-bottom: var(--space);
+  text-align: left;
+  display: grid;
+  grid-template-columns: var(--space) 1fr var(--space);
+  > * {
+    grid-column: 2/3;
+  }
+  > img {
+    grid-column: span 3;
+  }
+}
+article:hover{
+  border: 1px solid cadetblue;
+}
+article h1 {
+  text-decoration: underline;
+}
+article img {
+  height: 500px;
+}
