@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>My First Form</title>
+</head>
+<body>
+     <h2>Contact Form</h2>
+    <form action="index.php" method="post">
+      <label for="Name">Username:</label>     <br />
+      <input type="text" id="name" placeholder="Adam Ahamed" minlength="5" name="name" ><br>
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" placeholder="Email" name="email"><br>
+      <label for="password"> Password:</label><br />
+ <input type="password" id="password"><br>
+      <label for="phone">Phone#:</label><br>
+<input type="tel" id="phone" placeholder="123-456-7895"><br>
+      <label for="bd">Birthday:</label ><br>
+<input type="date" id="bd"><br>
+      <label for="mr.">MR.</label>
+<input type="radio" id="mr." value="mr." name="title">
+      <label for="MS.">MS.</label>
+<input type="radio" id="MS." value="MS." name="title">
+      <label for="PH.">PHD.</label>
+<input type="radio" id="PH" value="PHD" name="title"><br>
+
+
+    <input type="submit" value="Submit" />
+  </form>
+</body>
 </html>
