@@ -32,9 +32,11 @@ body {
   font: var(--font);
 }
 a {
-  padding: var(--space);
+  padding: 5px;
   border: var(--line);
   max-width: fit-content;
+  background-color: rgb(3, 5, 37);
+  color: white;  
 }
 img,
 svg {
