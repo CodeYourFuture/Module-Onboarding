@@ -32,9 +32,11 @@ body {
   font: var(--font);
 }
 a {
-  padding: var(--space);
+  padding: 5px;
   border: var(--line);
   max-width: fit-content;
+  background-color: rgb(3, 5, 37);
+  color: white;  
 }
 img,
 svg {
@@ -53,6 +55,14 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  background-color: antiquewhite;
+  font-size: 12px;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -76,6 +86,7 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
+  padding-top: 0;
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -87,3 +98,25 @@ article {
     grid-column: span 3;
   }
 }
+.logo-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-text {
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #0d2e46;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.slogan-text {
+  font-size: 13.5px;
+  color: #3a3935;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+  text-decoration-line: underline;
+}
+
