@@ -16,12 +16,46 @@
     </header>
 
     <main>
+
       <form>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only)." />
+        <br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+
+        <label for="color">T-Shirt Colour:</label>
+        <select id="color" name="color" required>
+          <option value="" disabled selected>Select a colour</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+        <br /><br />
+
+        <label for="size">T-Shirt Size:</label>
+        <select id="size" name="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+        <br /><br /> 
+
+        <button type="submit">Submit</button>
+
       </form>
+
     </main>
 
     <footer>
-      <p>By Malusi Skunyana, CYF Trainee</p> 
+      <p>By Malusi Skunyana, CYF Trainee</p>
     </footer>
 
   </body>
