@@ -20,6 +20,14 @@
               <input type="text" id="customerName" name="customerName" minlength="2" required>
               <small>Please enter your name (at least two characters).</small>
           </div>
+          <div>
+              <label for="customerEmail">Email:</label>
+              <input type="email" id="customerEmail" name="customerEmail" required>
+              <small>Please enter a valid email address.</small>
+          </div>
+        </fieldset>
+
+        <fieldset>
           <legend>T-shirt options</legend>
                     <div>
               <label for="tshirtColor">Color:</label>
@@ -30,13 +38,20 @@
                   <option value="green">Green</option>
               </select>
           </div>
-
           <div>
-              <label for="customerEmail">Email:</label>
-              <input type="email" id="customerEmail" name="customerEmail" required>
-              <small>Please enter a valid email address.</small>
+              <label for="tshirtSize">Size:</label>
+              <select id="tshirtSize" name="t-shirtSize" required>
+                  <option value="" disabled selected>Please select a size</option>
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+              </select>
           </div>
-      </fieldset> 
+      </fieldset>
+
 
       </form>
     </main>
