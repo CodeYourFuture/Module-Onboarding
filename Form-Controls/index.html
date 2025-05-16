@@ -13,15 +13,44 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          <fieldset>
+            <legend>Confirm Personal Details</legend>
+            <label for="name">First Name</label><br />
+            <input type="text" id="name" name="name" required minlength="2" placeholder="John"><br />
+  
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="email" required><br />
+          </fieldset>
+  
+          <fieldset>
+            <legend>Choices for the Item</legend>
+  
+            <label for="chosen_color">Color</label><br />
+            <select id="chosen_color" name="chosen_color" required>
+              <option value="" disabled selected>Select a color</option>
+              <option value="Red">Red</option>
+              <option value="Black">Black</option>
+              <option value="Blue">Blue</option>
+            </select><br /><br />
+  
+            <label for="size">Size</label><br />
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select><br />
+          </fieldset>
+          
+          <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>London | ITP-MAY-25 | Reza Jahanimir | form controls   | Week1 </h2>
     </footer>
   </body>
 </html>
