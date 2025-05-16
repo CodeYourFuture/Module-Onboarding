@@ -39,7 +39,7 @@ a {
 img,
 svg {
   width: 100%;
-  object-fit: cover;
+  height:400px;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -50,8 +50,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
+  background-color: bisque;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
@@ -86,4 +85,7 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+header {
+  text-align: center;
 }
