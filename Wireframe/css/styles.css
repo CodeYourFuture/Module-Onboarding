@@ -51,7 +51,8 @@ a {
   color: #ffffff;
 }
 .btn:hover {
-  padding-right: 25px;
+  /* padding-right: 25px; */
+  opacity: 0.8;
 
 }
 /* Section of Why do developers need  Git */
