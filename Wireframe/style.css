@@ -72,11 +72,12 @@ main {
 }
 
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
-  background-color: rgb(183, 162, 184);
-  padding: 5px;
+  background-color: rgb(218, 197, 219);
+  padding: 1px;
   font-style: italic;
 }
 
