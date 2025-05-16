@@ -7,3 +7,4 @@ Product designers and UX (user experience) professionals draw up wireframes to c
 
 
 3. What is a branch in Git?
+In Git, a branch is like a separate workspace where you can make changes and try new ideas without affecting the main project.
