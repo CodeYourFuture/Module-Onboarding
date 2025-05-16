@@ -12,23 +12,65 @@
       <h1>Product Pick</h1>
     </header>
       <form>
-        <!-- Reuiremt-->
-        <!-- 
+       
           - Collect valid name (min 2 characters)
           - Collect valid email
           - Choose one of 3 fixed t-shirt colours
           - Choose one of 6 fixed t-shirt sizes (XS–XXL)
-          - All fields are required
           
-        r-->
-        <!-- Name -->
-         <div>
-         <label for="name"> Name</label>
-          <input type="text" id ="name" name="name" required aria-describedby="help-name">
-          <div></div>
-          </div id="help-name">
+          - All fields are required
+           <!-- Name Field -->
+  <div>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required minlength="2" pattern="[A-Za-z ]{2,}" 
+           placeholder="Enter your full name" aria-required="true">
+    <small>Minimum 2 alphabetical characters (required)</small>
+  </div>
 
-      </form>
+  <!-- Email Field -->
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required 
+           placeholder="your.email@example.com" aria-required="true">
+    <small>Required for order confirmation</small>
+  </div>
+
+  <!-- T-shirt Options -->
+  <fieldset>
+    <legend>T-shirt Selection (required)</legend>
+    
+    <!-- Color Selection -->
+    <div>
+      <p>Choose color:</p>
+      <input type="radio" id="color-red" name="color" value="red" required aria-required="true">
+      <label for="color-red">Red</label><br>
+      
+      <input type="radio" id="color-blue" name="color" value="blue">
+      <label for="color-blue">Blue</label><br>
+      
+      <input type="radio" id="color-green" name="color" value="green">
+      <label for="color-green">Green</label>
+    </div>
+
+    <!-- Size Selection -->
+    <div>
+      <label for="size">Choose size:</label>
+      <select id="size" name="size" required aria-required="true">
+        <option value="" disabled selected>-- Please select --</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <button type="submit">Place Order</button>
+       
+       
+    </form>
     </main>
     <footer>
       <!-- change to your name-->
