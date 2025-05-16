@@ -13,15 +13,50 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+   <fieldset>
+     <legend>Order details</legend>
+  <label for="size">Sizes available*</label>
+   <br><br>
+  <select id="size" required>
+    <option value="" disabled selected>Select your option</option>
+    <option value="xs">Size XS</option>
+    <option value="x">Size X</option>
+    <option value="m">Size M</option>
+    <option value="l">Size L</option>
+    <option value="XL">Size XL</option>
+    <option value="XXL">Size XXL</option>
+  </select>
+  <fieldset>
+   <legend>Pick your colour</legend>
+
+   <label for="black">Black</label>
+   <input type="radio" name="shirt_size" id="black" value="black" required>
+
+   <label for="white">White</label>
+   <input type="radio" name="shirt_size" id="white" value="white" required>
+
+   <label for="red">Red</label>
+   <input type="radio" name="shirt_size" id="red" value="red" required>
+</fieldset>
+     <fieldset>
+       <legend>Customer details</legend>
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" required minlength="2">  
+       <br><br>
+       <label for="surname">Surname:</label>
+       <input type="text" id="surname" name="surname" required minlength="2"><br><br>
+           <label for="email">email:</label>
+       <input type="email" id="email" name="email" required>
+       <br><br>
+       
+     </fieldset>
+     <button type="submit">Submit</button>
+  </fieldset>   
+</form> 
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      
+      <h2>By Nor ZEHHAF</h2>
     </footer>
   </body>
 </html>
