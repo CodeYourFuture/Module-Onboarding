@@ -40,7 +40,9 @@ body {
   font: var(--font);
 }
 header p{
- text-align:center:
+ text-align:center;
+ margin-top:2 REM;
+}
 h1{
   margin:0 auto;
   width: fit-content;
