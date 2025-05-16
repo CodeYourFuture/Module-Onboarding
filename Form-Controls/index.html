@@ -13,10 +13,20 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Customer Information</legend>
+          <div>
+              <label for="customerName">Name:</label>
+              <input type="text" id="customerName" name="customerName" minlength="2" required>
+              <small>Please enter your name (at least two characters).</small>
+          </div>
+
+          <div>
+              <label for="customerEmail">Email:</label>
+              <input type="email" id="customerEmail" name="customerEmail" required>
+              <small>Please enter a valid email address.</small>
+          </div>
+      </fieldset>     
       </form>
     </main>
     <footer>
