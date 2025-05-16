@@ -3,76 +3,90 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>T-Shirt Order Form</title>
     <meta name="description" content="T-Shirt" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your T-Shirt</h1>
     </header>
     <main>
       <form>
+        <!-- This input satisfies the requirement to collect the user's name -->
         <div>
-          <label for="username">Name</label>
-          <input type="text" name="username" id="username" minlength="2" required>*
+          <label for="username">Full Name</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            minlength="2"
+            required
+          />*
         </div>
-        <br>
+        <br />
+
+        <!-- This input satisfies the requirement to collect the user's email -->
         <div>
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" required>*
+          <input type="email" name="email" id="email" required />*
         </div>
-        <br>
-        <hr>
+        <br />
+        <hr />
+        <!-- These radio buttons satisfy the requirement to let the user choose a T-shirt color -->
         <div>
-          <span>Choose a color:*</span>
+          <span>Choose your T-shirt color:*</span>
           <div>
-
             <div>
-              <input type="radio" name="color" id="red" value="red" required>
-              <label for="red">Red</label>
+              <input type="radio" name="color" id="red" value="red" required />
+              <label for="red">🟥 Red</label>
             </div>
-            <br>
+            <br />
             <div>
-              <input type="radio" name="color" id="green" value="green">
-              <label for="green">Green</label>
+              <input type="radio" name="color" id="green" value="green" />
+              <label for="green">🟩 Green</label>
             </div>
-            <br>
+            <br />
             <div>
-              <input  type="radio" name="color" id="blue" value="blue">
-              <label for="blue">Blue</label>
+              <input type="radio" name="color" id="blue" value="blue" />
+              <label for="blue">🟦 Blue</label>
             </div>
-            <br>
+            <br />
             <div>
-              <input checked type="radio" name="color" id="black" value="black">
-              <label for="black">Black</label><sup><small>most popular</small></sup>
+              <input
+                checked
+                type="radio"
+                name="color"
+                id="black"
+                value="black"
+              />
+              <label for="black">⬛ Black</label
+              ><sup><small>most popular</small></sup>
             </div>
           </div>
         </div>
-        <br>
-        <hr>
+        <br />
+        <hr />
+        <!-- This dropdown satisfies the requirement to let the user choose a T-shirt size -->
         <div>
-          <label for="size">Size</label>
+          <label for="size">Choose your T-shirt size:*</label>
           <select name="size" id="size" required>
-            <option selected disabled >Select Size</option>
+            <option selected disabled>--Please choose a size--</option>
             <option value="x-smal">X-Small</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
             <option value="x-large">X-Large</option>
-            <option value="xx-Large" disabled>XX-Large  --out of stock</option>
-          </select>*
+            <option value="xx-Large" disabled>
+              XX-Large --out of stock
+            </option></select
+          >*
         </div>
-        <br>
+        <br />
         <button type="submit">Submit</button>
-        
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
       <h2>&copy;2025 By Loai Alshujaa</h2>
     </footer>
   </body>
