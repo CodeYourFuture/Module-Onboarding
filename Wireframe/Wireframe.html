@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            width: 80%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .article-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .article1 {
+            width: 100%;
+            background: #eaeaea;
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .article-row {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .article2, .article3 {
+            width: 50%;
+            background: #ddd;
+            padding: 15px;
+            border: 2px solid #bbb;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .footer {
+            width: 100%;
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Wireframe</h1>
+        <p> A wireframe is a basic, two-dimensional visual representation of a web page, app interface, or product layout. You can think of it as a low-fidelity, functional sketch. </p>
+    </header>
+
+    <main>
+        <div class="article-container">
+            <article class="article1 article">
+                <img src="https://raw.githubusercontent.com/CodeYourFuture/Module-Onboarding/a575a3693b2b9afcc8d04a1ccdb666f0c081ddd5/Wireframe/placeholder.svg" alt="Article 1 Image">
+                <h2>What is the purpose of a wireframe? </h2>
+                <p>Product designers and UX (user experience) professionals draw up wireframes to communicate how they plan to arrange and prioritize features, and how they intend for users to interact with its product or website. </p>
+                <a href="https://www.productplan.com/glossary/wireframe/">Read More</a>
+            </article>
+
+            <div class="article-row">
+                <article class="article2 article">
+                    <img src="https://raw.githubusercontent.com/CodeYourFuture/Module-Onboarding/a575a3693b2b9afcc8d04a1ccdb666f0c081ddd5/Wireframe/placeholder.svg" alt="Article 2 Image">
+                    <h2>What is the purpose of a README file? </h2>
+                    <p>The primary purpose of a README file is to provide a clear and concise introduction to the project. It explains what the project is, how to set it up, and how to use it. This is crucial for effective collaboration and user engagement. </p>
+                    <a href="https://www.geeksforgeeks.org/what-is-readme-md-file/">Read More</a>
+                </article>
+
+                <article class="article3 article">
+                    <img src="https://raw.githubusercontent.com/CodeYourFuture/Module-Onboarding/a575a3693b2b9afcc8d04a1ccdb666f0c081ddd5/Wireframe/placeholder.svg" alt="Article 3 Image">
+                    <h2>What is a branch in Git? </h2>
+                    <p>In Git, a branch is like a separate workspace where you can make changes and try new ideas without affecting the main project. </p>
+                    <a href="https://www.w3schools.com/git/git_branch.asp">Read More</a>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wireframe | Articles</p>
+    </footer>
+
+</body>
+</html>
