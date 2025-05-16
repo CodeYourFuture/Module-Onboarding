@@ -17,7 +17,7 @@
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
-  --container: 1250;
+  --container: 750px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -25,8 +25,9 @@
   background: var(--paper_main);
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-
+   text-align: center;
  }
+
 body {
   background: var(--paper);
   color: var(--ink);        
@@ -40,6 +41,7 @@ a {
 img,
 svg {
   width: 100%;
+  
   object-fit: scale-down;
 }
 /* ====== Site Layout ====== 
