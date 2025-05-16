@@ -1,33 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wireframe</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Wireframe</h1>
+  </header>
+
+  <nav>
+    <a href="#readme">README.FILE</a>
+    <a href="#wireframe">Wireframe</a>
+    <a href="#branch">Branch in Git</a>
+  </nav>
+
+
+  <main>
+    <div class="hero">
+      <h2>Welcome to the Wireframe Page</h2>
+      <p>Explore the purpose of a wireframe and its significance in web design.</p>
+    </div>
+
+    <article id="readme">
+      <img src="README.FILE.png" alt="README File Image">
+      <div class="content">
+        <h2>README.FILE</h2>
+        <h3>What is the purpose of a README file?</h3>
+        <p>The purpose of a README file is to introduce and explain a project.</p>
+        <ul>
+          <li>Project overview – what it does and why it exists</li>
+          <li>Installation instructions – how to set it up and run it</li>
+          <li>Usage guide – examples of how to use it</li>
+          <li>Contribution guidelines – how others can contribute</li>
+          <li>License and credits – legal info and acknowledgments</li>
+        </ul>
+
+        <!-- Read more functionality using <details> and <summary> -->
+        <details>
+          <summary class="read-more">Read more</summary>
+          <p>In short, a README acts as the front page of a project, helping others quickly understand and interact with
+            it.</p>
+        </details>
+      </div>
+    </article>
+
+    <!-- Flex container to place Branch and Wireframe articles next to each other -->
+    <div class="flex-container">
+
+      <article id="wireframe">
+        <img src="wf.png" alt="Wireframe Image">
+        <div class="content">
+          <h2>Wireframe</h2>
+          <h3>What is the purpose of a wireframe?</h3>
+          <p>The purpose of a wireframe is to serve as a blueprint for a website or application’s layout and structure.
+            It’s a visual guide that outlines the placement of key elements like headers, navigation, content sections,
+            buttons, and images without focusing on design details like color or typography.</p>
+          <ul>
+            <li>Clarifies layout and functionality</li>
+            <li>Facilitates communication among team members</li>
+            <li>Helps identify potential usability issues early</li>
+            <li>Saves time and resources in the design process</li>
+          </ul>
+
+          <!-- Read more functionality using <details> and <summary> -->
+          <details>
+            <summary class="read-more">Read more</summary>
+            <p>Wireframes help teams focus on how something works before deciding how it looks.</p>
+          </details>
+        </div>
       </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+
+      <article id="branch">
+        <img src="branch.png" alt="Branch in Git Image">
+        <div class="content">
+          <h2>Branch in Git</h2>
+          <h3>What is a branch in Git?</h3>
+          <p>A branch in Git is a pointer to a specific line of development in your project. It allows you to work on
+            features, fixes, or experiments in isolation from the main codebase.</p>
+          <ul>
+            <li>Branches enable parallel development.</li>
+            <li>They help keep the main codebase stable.</li>
+            <li>Branches can be merged back into the main branch once changes are complete and tested.</li>
+          </ul>
+
+          <!-- Read more functionality using <details> and <summary> -->
+          <details>
+            <summary class="read-more">Read more</summary>
+            <p>In essence, branches are a powerful feature of Git that facilitate collaborative and organized software
+              development.</p>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 designed by Yousef. All rights reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Contact Us</a>
+    </p>
+  </footer>
+
+</body>
+
 </html>
