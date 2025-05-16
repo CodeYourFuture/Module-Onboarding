@@ -1,5 +1,5 @@
 1. What is the purpose of a README file?
-Developers use readme files To explain their project others.
+Developers use readme files To explain their projects to  others.
 
 1. What is the purpose of a wireframe?
 
