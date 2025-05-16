@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Product Pick</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+
+  <main>
+    <form method="POST">
+
+      <!-- Customer Name -->
+      <fieldset>
+        <legend>Customer Name</legend>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required minlength="2"
+               pattern="(?=.*[A-Za-z])[A-Za-z\s]+"
+               title="Only letters and spaces allowed; must include at least one letter.">
+      </fieldset>
+      <br>
+
+      <!-- Email Address -->
+      <fieldset>
+        <legend>Email Address</legend>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+      <br>
+
+      <!-- T-Shirt Colour -->
+      <fieldset>
+        <legend>T-Shirt Colour</legend>
+        <label for="colour">Select a Colour:</label><br>
+        <select id="colour" name="colour" required>
+          <option value="" disabled selected>Select a colour</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">yellow</option>
+
+        </select>
+      </fieldset>
+      <br>
+
+      <!-- T-Shirt Size -->
+      <fieldset>
+        <legend>T-Shirt Size</legend>
+        <label for="size">Select a Size:</label><br>
+        <select id="size" name="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </fieldset>
+      <br>
+
+      <!-- Submit Button -->
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <h2>By Yousef</h2>
+  </footer>
+</body>
+
 </html>
+
+
