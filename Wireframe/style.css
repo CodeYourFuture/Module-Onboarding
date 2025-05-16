@@ -1,12 +1,12 @@
 /* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
+You can edit these or replace them entirely
+It's showing you a common way to organise CSS
+And includes solutions to common problems
 As well as useful links to learn more */
 
 /* ====== Design Palette ======
  This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
+ It sets out the colours, fonts, styles etc to be used in this design
  At work, a designer will give these to you based on the corporate brand, but while you are learning
  You can design it yourself if you like
  Inspect the starter design with Devtools
@@ -35,24 +35,50 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+
 }
+.btn-readmore{
+    background: #1a1ae0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #ded1d1;
+}
+
+.btn-readmore:hover {
+    background: #4444e4;
+}
+
 img,
 svg {
   width: 100%;
   object-fit: cover;
+  height: auto;
 }
-/* ====== Site Layout ====== 
+/* ====== Site Layout ======
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+
+header{
+
+      text-align: center;
+}
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
+
+
 footer {
   position: fixed;
   bottom: 0;
+  left:0;
   text-align: center;
+  background-color: #5b7182;
+  width: 100%;
+  color: white;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -69,8 +95,8 @@ main {
     grid-column: span 2;
   }
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
+/* ====== Article Layout ======
+Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
