@@ -24,8 +24,15 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
+header {
+  /* Any other styles you have for your header */
+  margin-left: auto;
+  margin-right: auto;
+   /* Optional: Set a maximum width for the header */
+}
+
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -72,6 +79,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
+    margin-top: 0;
     grid-column: span 2;
   }
 }
