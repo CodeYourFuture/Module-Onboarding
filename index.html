@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coursework</title>
-    <style>
-      :root {
-        --paper: oklch(7 0 0);
-        --ink: color-mix(in oklab, var(--color) 5%, black);
-        --font: 100%/1.5 system-ui;
-        --space: clamp(6px, 6px + 2vw, 15px);
-        --line: 1px solid;
-      }
-      body {
-        background: var(--paper);
-        color: var(--ink);
-        font: var(--font);
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-    </style>
+    <title>Understanding README, Wireframes, and Git Branches</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header><h1>🧐 CYF Coursework Disposable Branch Previews</h1></header>
+    <header>
+      <nav>
+          <h1>README Files Wireframes and Git Branches</h1>
+          <h2>Learn about the essential tools</h2>
+      </nav>
+    </header>
+
     <main>
-      <ol>
-        <li>
-          <h2><a href="/Wireframe">Project 1: Wireframe</a></h2>
-          <p>
-            Mentors:
-            <a href="Wireframe/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-        <li>
-          <h2><a href="/Form-Controls">Project 2: Form Controls</a></h2>
-          <p>
-            Mentors:
-            <a href="Form-Controls/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-      </ol>
+      <section class="article-section ">
+        <article class="hero-article">
+          <div class="hero-container">
+            <img class="hero-img" src="assets/hero.jpg" alt="person-on-laptop">
+            <div class="hero-content">
+              <h2>What is a README File?</h2>
+              <h3>A README file is a documentation file that explains the purpose, usage, and other relevant information about a project.</h3>
+              <p>It provides essential context for anyone working with the code, helping them understand how to use it and what to expect from it.</p>
+              <a href="https://www.makeareadme.com/" class="button">Learn more</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article1">
+          <div class="text-container">
+            <img src="assets/wireframe.jpg" alt="wireframe-sketch">
+            <div class="article-content">
+                <h2>What is a Wireframe?</h2>
+                <p>A wireframe is a visual representation of the layout and structure of a web page or app. It helps define the elements on the page and their arrangement before any actual design or development begins.</p>
+                <p>Wireframes are typically used by designers and developers to plan the user interface (UI) and user experience (UX).</p>
+                <a href="https://www.smashingmagazine.com/2018/03/wireframing-guide-web-design/" class="button">Learn more</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article2">
+          <div class="text-container">
+            <img src="assets/git1.jpg" alt="git-branch">
+            <div class="article-content">
+                <h2> So what is a Git Branch?</h2>
+                <p>A Git branch allows developers to work on different versions of a project independently. It enables parallel development by creating a separate line of work, leaving the main version (usually the master or main branch) unaffected.</p>
+                <p>Branches are particularly useful for features, bug fixes, and experiments, allowing developers to work without interfering with the main codebase.</p>
+                <a href="https://git-scm.com/docs/git-branch" class="button">Learn more</a>
+            </div>
+          </div>
+        </article>
+
+      </section>
     </main>
-    <footer><a href="HOW_TO_REVIEW.md">HOW TO REVIEW MD</a></footer>
+
+    <footer class="footer-container">
+     <p>Author: Obert Tilimandzi <p>
+     <a href="mailto:obertilimandzi@gmail.com">obertilimandzi@gmail.com</a>
+    </footer>
   </body>
 </html>
+
