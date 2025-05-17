@@ -3,30 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
+    <title>Web Development</title>
     <link rel="stylesheet" href="style.css" />
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1rem 5rem; /* Bottom padding to avoid overlap with fixed footer */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.large-article {
+  background-color: #e0fbfc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.large-article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.two-columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.two-columns article {
+  flex: 1;
+  background-color: #e0fbfc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.two-columns img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+article h2 {
+  margin-bottom: 0.5rem;
+  color: #0a9396;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+article a {
+  display: inline-block;
+  background-color: #005f73;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+article a:hover {
+  background-color: #0a9396;
+}
+
+footer {
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+</style>
+
   </head>
   <body>
     <header>
-      <h1>Wireframe</h1>
+      <h1>Web Development concepts</h1>
       <p>
-        This is the default, provided code and no changes have been made yet.
+        The purpose of webframe and Readme as part of web development.
       </p>
     </header>
     <main>
-      <article>
+      <section class="articles">
+      <article class="large-articles">
         <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
+        <h2>What is a ReadMe file</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
+          A README file introduces and explains a project. It provides instructions, usage, and how others can contribute
         </p>
-        <a href="">Read more</a>
+        <a href="https://www.makeareadme.com/"target="_blank">Read More</a>
       </article>
+
+<div class=""two columns>
+  <article>
+      <img src="https://via.placeholder.com/400x200" alt="Placeholder image" />
+          <h2>What is a branch in Git?</h2>
+          <p>A Git branch is a separate line of development. It allows you to work independently from the main project.</p>
+          <a href="https://www.atlassian.com/git/tutorials/using-branches" target="_blank">Read More</a>
+
+  </article>
+
+<article>
+          <img src="https://via.placeholder.com/400x200" alt="Placeholder image" />
+          <h2>What is a wireframe?</h2>
+          <p>A wireframe is a blueprint for a website’s layout. It helps visualize structure before design and development.</p>
+          <a href="https://careerfoundry.com/en/blog/ux-design/what-is-a-wireframe/" target="_blank">Read More</a>
+        </article>
+
+</div>
+</section>
     </main>
     <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
+      <p>2025 Innocent Niwatwine
       </p>
     </footer>
   </body>
