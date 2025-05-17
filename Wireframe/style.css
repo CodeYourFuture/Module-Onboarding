@@ -16,6 +16,14 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 300px; 
+  object-fit: cover;
+  display: block;
+}
+
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -30,6 +38,14 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+}
+header p{
+ text-align:center;
+ margin-top:2 REM;
+}
+h1{
+  margin:0 auto;
+  width: fit-content;
 }
 a {
   padding: var(--space);
@@ -47,12 +63,15 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px;
 }
+
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
+  padding: 20px;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
