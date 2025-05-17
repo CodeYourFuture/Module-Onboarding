@@ -16,14 +16,12 @@
   <main>
     <form>
       <fieldset>
-
         <!-- customer's name ,as a text string of two characters or more-->
         <legend>Customer Detail</legend>
         <label for="customername">Name*:
           <input type="text" id="customername" name="customername" minlength="2" required placeholder="Customer Name">
           <br><br>
         </label>
-
         <!--customer's email ,valid email-->
         <label for="email">Email-Address*:
           <input type="email" id="email" name="email" required placeholder="Email">
@@ -34,31 +32,27 @@
       <fieldset>
         <legend>Product Detail</legend>
         <!--3 options t-shirt colour-->
-        Select Colour*:
-        <input type="radio" id="Red" name="Choose t-shirt colour:" required>
-        <label for="Red">Red
-          <input type="radio" id="Blue" name="Choose t-shirt colour:" required>
-          <label for="Blue">Blue
-            <input type="radio" id="Yellow" name="Choose t-shirt colour:" required>
-            <label for="Yellow">Yellow
-              <br><br>
-            </label>
-
-            <!--6 options size: XS, S, M, L, XL, XXL-->
-            <lable for="size">Select Size*:</lable>
-            <select name="size" id="size" required >
-              <option value="" disabled selected>Insert Size:</option>
-              <option value="XS">XSmall</option>
-              <option value="S">Small</option>
-              <option value="M">Medium</option>
-              <option value="L">Large</option>
-              <option value="XL">XLarge</option>
-              <option value="S">XXLarge</option>
-            </select>
-            <br><br>
-            <font color ="Blue" >Required fields are marked with *</font>
+        Colour*:
+        <input type="radio" id="Red" name="Colour*:" required>
+        <label for="Red">Red</label>
+        <input type="radio" id="Blue" name="Colour*:" required>
+        <label for="Blue">Blue</label>
+        <input type="radio" id="Yellow" name="Colour*:" required>
+        <label for="Yellow">Yellow</label>
+        <br><br>
+        <!--6 options size: XS, S, M, L, XL, XXL-->
+        <label for="size">Size*:</label>
+        <select name="size" id="size" required>
+          <option value="" disabled selected>Select Size:</option>
+          <option value="XS">XSmall</option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">XLarge</option>
+          <option value="S">XXLarge</option>
+        </select>
+        <br><br>
       </fieldset>
-
       <fieldset>
         <legend>Take Action</legend>
         <button type="submit">Add to basket</button>
