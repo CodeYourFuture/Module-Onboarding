@@ -27,22 +27,28 @@
           <label for="email">Your Email</label>
           <input type="email" name="email" id="email" value="Your Email" required >
         </div>
-        <div>
-          <label for="color"> at least one color option</label>
-           Select at least one option
-            <input type="checkbox" name="option" id="option1" required>
-            <label for="option1">Option 1</label>
-
-            <input type="checkbox" name="option" id="option2">
-            <label for="option2">Option 2</label>
-
-            <input type="checkbox" name="option" id="option3">
-            <label for="option3">Option 3</label>
-       </div>
-        </div>
-
-
-        <button type="submit">Submit</button>
+      <div>
+        <label for="color">Select T-shirt color:</label>
+        <input type="radio" name="color" id="option1" value="Green" required>
+        <label for="option1">Green</label>
+        <input type="radio" name="color" id="option2" value="Black">
+        <label for="option2">Black</label>
+        <input type="radio" name="color" id="option3" value="Red">
+        <label for="option3">Red</label>
+      </div>
+      <div>
+        <label for="size">Size</label>
+        <select name="size" id="size" required>
+    <option value="" disabled selected>Select a size</option>
+          <option label="XS" value="XS">S</option>
+          <option label="S" value="S">S</option>
+          <option label="M" value="M">S</option>
+          <option label="L" value="L">S</option>
+          <option label="XL" value="XL">S</option>
+          <option label="XXL" value="XXL">S</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
