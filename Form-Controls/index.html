@@ -15,13 +15,58 @@
       <form>
         <!-- write your html here-->
         <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          I must use HTML Only, use semantic HTML, have labels for all associated inputs,
+          Lighthouse Accessibility score must be 100, 
+          I must require a valid name (2 characters), I must require a valid email,
+          I must require to pick one of 3 predifined colors,
+          and I must require one size from a predifined set of 6 sizes-->
+
+
+        <label for="name">Customer Name</label><br>
+        <input type="text" id="name" required minlength="2">
+        <br><br>
+
+        <label for="email">Customer Email</label><br>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <fieldset>
+          <legend><strong>T-shirt Color</strong></legend>
+          
+          <input type="radio" id="color1" name="color" required>
+          <label for="color1">Green</label>
+          
+          <br><br>
+          <input type="radio" id="color2" name="color" required>
+          <label for="color2">Red</label>
+          
+          <br><br>
+          <input type="radio" id="color3" name="color" required>
+          <label for="color3">Yellow</label>
+        </fieldset>
+        <br>
+
+        <label for="size">Shirt Sizes</label>
+        <select id="size" name="shirt-sizes" required>
+          <option value="" disabled selected>Select an option</option>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+          <option>Extra-Large</option>
+          <option>2XL</option>
+          <option>3XL</option> 
+        </select>
+
+
+        <br><br>
+        <button>Submit</button>
+
       </form>
     </main>
+    <br>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Christian Mayamba</h2>
     </footer>
   </body>
 </html>
