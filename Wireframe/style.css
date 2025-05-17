@@ -1,4 +1,4 @@
- 
+  
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
