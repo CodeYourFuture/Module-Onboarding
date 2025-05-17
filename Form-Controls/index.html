@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1> Oreder Your Favorite T-Shirt</h1>
     </header>
     <main>
       <form>
@@ -17,11 +17,74 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Customer Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            minlength="2"
+            required
+          />
+
+          <br><br>
+
+          <!-- Customer email -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </fieldset>
+
+        <br>
+
+        <!-- T-shirt colour (3 options only) -->
+        <fieldset>
+          <legend>Choose a T-shirt Colour:</legend>
+
+          <label for="red">
+            <input type="radio" id="red" name="color" value="red" required />
+            Red
+          </label><br>
+
+          <label for="blue">
+            <input type="radio" id="blue" name="color" value="blue" />
+            Blue
+          </label><br>
+
+          <label for="green">
+            <input type="radio" id="green" name="color" value="green" />
+            Green
+          </label>
+        </fieldset>
+
+                <!-- T-shirt size (6 options) -->
+        <fieldset>
+          <legend>Select a Size:</legend>
+          <label for="size">Size:</label>
+          <select id="size" name="size" required>
+            <option value="">--Select--</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </fieldset>
+        <br>
+
+        <button type="submit">Submit Order</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By MOHAMED IBRAHIM</h2>
     </footer>
   </body>
 </html>
