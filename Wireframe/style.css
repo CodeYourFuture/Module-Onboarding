@@ -18,8 +18,8 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
     --primary: #392f5a;
-    --accent: #ff8811;
-    --secondary: #9dd9d2;
+    --accent: #9dd9d2;
+    --secondary: #ff8811; /*changes for accessibility score*/
     --background: #fff8f0;
     --highlight: #f4d06f;
 }
@@ -53,7 +53,8 @@ body {
 }
 
 .card {
-    background: white;
+    background: var(--background);
+    color: var(--primary);
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -67,6 +68,8 @@ body {
 
 .hero-card {
     margin: 0 1rem;
+    background: var(--primary);
+    color: var(--highlight);
 }
 
 .card-group {
@@ -94,16 +97,22 @@ body {
 .card-link {
     display: inline-block;
     margin-top: 1rem;
-    color: var(--accent);
+    color: var(--primary);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
+    border-bottom: 2px solid var(--accent);
 }
 
 .card-link:hover {
-    color: var(--primary);
+    color: var(--secondary);
+    border-bottom-color: var(--secondary);
 }
 
+.card-link:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
 .page-footer {
     position: fixed;
     bottom: 0;
