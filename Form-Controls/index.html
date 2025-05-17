@@ -13,15 +13,50 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Check each one of these requirements off as you complete:
+          1. I have used HTML only.
+          2. I have not used any CSS or JavaScript.
+          3. My form is semantic html.
+          4. All inputs have associated labels.
+          5. My Lighthouse Accessibility score is 100..
+          6. I require a valid name. I have defined a valid name as a text string of two characters or more.
+          7. I require a valid email.
+          8. I require one colour from a defined set of 3 colours.
+          9. I require one size from a defined set of 6 sizes -->
+        <div>
+          <label for="customer-name">Name</label> <br>
+          <input type="text" name="customer-name" pattern="^[A-Za-z]+(?:\s[A-Za-z]+)*$" minlength="2" id="customer-name" placeholder="Enter your full name" required>
+        </div> <br>
+        <div>
+          <label for="email-address">Email Address</label> <br>
+          <input type="email" name="email-address" id="email-address" placeholder="name@example.com" required>
+        </div> <br>
+        <div>
+          <label for="colour">T-shirt Colour</label> <br>
+          <select name="colour" id="colour" required>
+            <option value="" disabled selected>Select a Colour</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div> <br>
+        <div>
+          <label for="size">T-shirt Size</label> <br>
+          <select name="size" id="size" required>
+            <option value="" disabled selected>Select a Size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div> <br>
+        <button>Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Hassan Osman</h2>
     </footer>
   </body>
 </html>
