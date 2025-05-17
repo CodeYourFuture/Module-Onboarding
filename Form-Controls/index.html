@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,13 +14,62 @@
     </header>
     <main>
       <form>
+        <fieldset>
+          <legend>Bill details:</legend>
+          <p>
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="name" pattern="[A-Za-z ]{4,}" title="Only letters and spaces are allowed. At least 4 characters." placeholder="Full Name" required></p>
+
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email@mail.com" required></p>  
+        </fieldset>
+        <fieldset>
+          <legend>Item details:</legend>
+          <p>
+            <label for="item">Item:</label>
+            <select id="item" name="item">
+              <option value="t-shirt">T-shirt</option>
+              <option value="shorts">Shorts</option>
+              <option value="sweater">Sweater</option>
+              <option value="hat">Hat</option>
+            </select>
+          </p>
+          <p>Size:
+            <label for="size-xs">XS</label>
+            <input type="radio" id="size-xs" name="size_item" value="XS">
+            <label for="size-s">S</label>
+            <input type="radio" id="size-s" name="size_item" value="S">
+            <label for="size-m">M</label>
+            <input type="radio" id="size-m" name="size_item" value="M">
+            <label for="size-l">L</label>
+            <input type="radio" id="size-l" name="size_item" value="L">
+            <label for="size-xl">XL</label>
+            <input type="radio" id="size-xl" name="size_item" value="XL">
+            <label for="size-xxl">XXL</label>
+            <input type="radio" id="size-xxl" name="size_item" value="XXL">
+          </p>
+          <p>
+            <label for="color">Color:</label>
+            <select id="color" name="color">
+              <option value="Red">Red</option>
+              <option value="Green">Green</option>
+              <option value="Black" selected>Black</option>
+              <option value="White">White</option>
+              <option value="Grey">Grey</option>
+              <option value="Yellow">Yellow</option>
+            </select>
+          </p>
+        </fieldset>
         <!-- write your html here-->
         <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          try writing out the requirements first as comments this will also help you fill in your PR message later-->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </form>
     </main>
     <footer>
+      <p> &copy; Nataliia_Volkova </p>
       <!-- change to your name-->
       <h2>By HOMEWORK SOLUTION</h2>
     </footer>
