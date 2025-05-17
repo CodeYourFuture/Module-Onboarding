@@ -109,7 +109,7 @@ body {
 
 footer {
   grid-area: footer;
-  background-color: azure;
+  background-color: rgb(164, 234, 234);
   padding: 20px;
   position: fixed;
   bottom: 0;
