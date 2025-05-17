@@ -1,3 +1,4 @@
+
 /* Here are some starter styles
 You can edit these or replace them entirely 
 It's showing you a common way to organise CSS 
@@ -24,25 +25,12 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
-.centered-text {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  height:100%;
-  display:flex;
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
-  justify-content: center;
-  text-align: center;
-}
-h1{
-  justify-content: center;
-  display:flex;
+  font: var(--font);
 }
 a {
   padding: var(--space);
@@ -88,9 +76,7 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
-  border-width:1px;
-  border-style:solid;
-  border-color: black;
+  border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -98,7 +84,11 @@ article {
   > * {
     grid-column: 2/3;
   }
-  > img {
-    grid-column: span 3;
-  }
+  
+}
+.title{
+  text-align: center;
+}
+.sentence1{
+  text-align:center;
 }
