@@ -19,7 +19,7 @@ As well as useful links to learn more */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
+  --font:  16px/1.6 'Arial', sans-serif;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
@@ -30,6 +30,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  text-align: center
 }
 a {
   padding: var(--space);
@@ -50,7 +51,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  
   bottom: 0;
   text-align: center;
 }
