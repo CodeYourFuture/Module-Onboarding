@@ -3,9 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>My form exercise - Sell a T-shirt</title>
+    <meta name="description" content="Order form for selling a t-shirt" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Optional: Improve touch targets for radio buttons */
+      .radio-group label {
+        display: inline-block;
+        min-width: 48px;
+        padding: 8px 8px 8px 0;
+        margin-right: 12px;
+        cursor: pointer;
+      }
+      .radio-group input[type="radio"] {
+        margin-right: 6px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -13,15 +26,61 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Requirements as comments -->
+        <!-- 1. Customer name (min 2 chars) -->
+        <!-- 2. Customer email -->
+        <!-- 3. 3 color options, only one allowed -->
+        <!-- 4. 6 size options -->
+        <section>
+          <h2>T-shirt Selection Form</h2>
+          <p>
+            Required fields are marked with <span style="color: red;" aria-label="required">*</span>
+          </p>
+          <fieldset>
+            <legend>Customer Information</legend>
+            <label for="name">
+              Name: <span style="color: red;" aria-label="required">*</span>
+            </label>
+            <input type="text" id="name" name="name" required minlength="2" autocomplete="name" />
+            <br><br>
+            <label for="email">
+              Email: <span style="color: red;" aria-label="required">*</span>
+            </label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Color Options <span style="color: red;" aria-label="required">*</span></legend>
+            <div class="radio-group">
+              <input type="radio" id="color_red" name="color" value="red" required>
+              <label for="color_red">Red</label>
+              <input type="radio" id="color_blue" name="color" value="blue">
+              <label for="color_blue">Blue</label>
+              <input type="radio" id="color_yellow" name="color" value="yellow">
+              <label for="color_yellow">Yellow</label>
+            </div>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Size <span style="color: red;" aria-label="required">*</span></legend>
+            <label for="size">Select size:</label>
+            <select id="size" name="size" required>
+              <option value="">--Please choose an option--</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
+          </fieldset>
+          <br>
+          <button type="submit">Submit Order</button>
+        </section>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>By Byron Medina</p>
     </footer>
   </body>
 </html>
