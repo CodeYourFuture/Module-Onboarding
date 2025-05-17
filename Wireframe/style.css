@@ -27,87 +27,47 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background-color: rgb(249, 188, 141);
-  
+  background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color:lightsalmon;
+}
+#wireframe-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: var(--space) auto;
+  background-color: black;
+  color: white;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
-#wireframe-image
-{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+img,
+svg {
+  width: 100%;
   object-fit: cover;
 }
-
-
-#box-1 {
-  width: 300px;
-  height: 350px;
-  background-color: rgba(247, 139, 7, 0.507);
-  padding: 7px;
-  float: left;
-  border: 3px solid white;
-  flex: 1;
-  
-}
-
-#box-2 {
-  width: 300px;
-  height: 350px;
-  background-color: rgba(247, 139, 7, 0.507);
-  padding: 7px;
-  float:left;
-  border: 3px solid white;
-  flex: 1;
-  
-}
-
-#box-3 {
-  width: 300px;
-  height: 350px;
-  background-color: rgba(247, 139, 7, 0.507);
-  padding: 7px;
-  float: left;
-  border: 3px solid white;
-  flex: 1;
-  
-}
-
 .button {
-  background-color: black;
-  color: aliceblue;
-  float: inline-end;
-  font-size: small;
-  border-radius: 5px;
-  width: fit-content;
-  height: fit-content;
-}
-
-.first-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
- padding-left: 15%;
-}
-
-#wireframe-title {
-  background-color: black;
-  color: aliceblue;
-  font: bold;
+  background-color: orangered;
+  color:white;
+  border-radius: 7px;
+  width: auto;
+  height: 15px;
+  font-weight: bold;
+  allign-items: center;
   text-align: center;
+  align-content: center;
+  display: flex;
 }
-
+.article-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+  height: 300px;
+}
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -117,13 +77,9 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  background-color: black;
-  color: aliceblue;
+  position: fixed;
   bottom: 0;
-  text-align: right;
-  margin-top: auto;
-  font-size: small;
-  padding-right: 12px;
+  text-align: center;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
