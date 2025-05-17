@@ -4,21 +4,22 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Order your custom t-shirt"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#392f5a"/>
   </head>
   <body>
     <header style="text-align: center;">
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form class="tshirt-form" id="orderForm" novalidate style="max-width: 500px; margin: 20px auto; padding: 20px; border: 2px solid #392f5a">
+      <form class="tshirt-form" id="orderForm" novalidate style="max-width: 500px; margin: 20px auto; padding: 20px; border: 2px solid #fff8f0">
     <!-- Customer Section -->
-    <fieldset style="margin-bottom: 20px; padding: 10px; border: 1px solid #9dd9d2">
-        <legend class="sr-only" style="color: #392f5a; font-weight: bold"> Your Details </legend>
+    <fieldset style="margin-bottom: 20px; padding: 10px; border: 1px solid #392f5a">
+        <legend class="sr-only" style="color: #392f5a; font-weight: bold"><h2>Your Details</h2></legend>
         
         <div class="form-group">
-            <label for="fullname" style="display: block; margin-bottom: 10px">Full Name:<br>
+            <label for="fullname" style="display: block; margin-bottom: 1rem;">Full Name:<br>
             <input type="text" id="fullname" name="fullname" required 
                    pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]{2,50}$"
                    title="Please enter your full name (letters and spaces only)"
@@ -26,7 +27,7 @@
                    maxlength="50"
                    aria-describedby="nameHelp"
                    autocomplete="name"
-                   style="width: 100%; padding: 5px; margin-top: 5px">
+                   style="width: 96%; padding: 8px; margin-top: 8px; border:1px solid #9dd9d2; background: #fff8f8;">
              <div id="nameHelp" class="help-text">As it appears on your account</div>
              </label>
         </div>
@@ -39,18 +40,19 @@
                    title="Please enter a valid email address"
                    aria-describedby="emailHelp"
                    autocomplete="email"
-                   style="width: 100%; padding: 5px; margin-top: 5px">
+                   style="width: 96%; padding: 8px; margin-top: 8px; border: 1px solid #9dd9d2; background: #fff8f8;">
             <div id="emailHelp" class="help-text">We'll send confirmation here</div>
             </label>
         </div>
     </fieldset>
 
     <!-- T-Shirt Section -->
-    <fieldset style="margin-bottom: 20px; padding: 10px; border: 1px solid #9dd9d2">
-        <legend class="sr-only" style="color: #392f5a; font-weight: bold">T-Shirt Details</legend>
+    <fieldset style="margin-bottom: 1rem; padding: 10px; border: 1px solid #9dd9d2">
+        <legend class="sr-only" style="color: #392f5a; font-weight: bold"><h2>T-Shirt Details</h2></legend>
+        
 
-        <div class="form-group" role="group" aria-labelledby="colorHeading" style="margin-bottom: 15px">
-            <h3 id="colorHeading">Choose Color:</h3>
+        <div class="form-group" role="radiogroup" aria-labelledby="colorHeading" style="margin-bottom: 15px">
+            <h3 id="colorHeading" style="font-weight: bold">Choose Color:</h3>
             <div class="options-group">
             <label style="display: block; margin: 5px 0"><input type="radio" name="color" value="red" required 
                            aria-required="true">
@@ -98,13 +100,13 @@
         </div>
     </fieldset>
 
-    <button type="submit" value="Place Order" 
-           style="background: #ff8811; color: white; border: none; padding: 10px 20px; cursor: pointer">Place Order</button>
+    <button type="submit" value="Place Order" aria-label="Submit order form"
+           style="outline: 2px solid #9dd9d2; outline-offset: 2px; background: #392f5a; color: #ff8811; border: none; padding: 10px 20px; cursor: pointer">Place Order</button>
 </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By Dawud Vermeulen </h2>
+      <h4>By Dawud Vermeulen </h4>
     </footer>
   </body>
 </html>
