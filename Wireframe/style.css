@@ -30,6 +30,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  background-color:rgb(3, 220, 220);
 }
 a {
   padding: var(--space);
@@ -38,8 +39,15 @@ a {
 }
 img,
 svg {
-  width: 100%;
+  width: 90%;
   object-fit: cover;
+  padding: 5%;
+}
+header {
+   text-align: center;
+}
+h1 {
+  font-size: 250%;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -50,7 +58,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  position: fixed; /*This is not according to the wireframe, but according to the Acceptance Criteria*/
   bottom: 0;
   text-align: center;
 }
@@ -66,7 +74,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 }
 /* ====== Article Layout ====== 
