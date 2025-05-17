@@ -54,9 +54,14 @@ header h1,p {
   text-align: center;
   margin: var(--space) 0;
 }
+
 footer {
   position: fixed;
   bottom: 0;
+  text-align: center;
+  left: 35%;
+}
+footer p {
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
