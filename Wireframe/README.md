@@ -12,7 +12,7 @@ There are some provided HTML and CSS files you can use to get started. You can u
 
 ## Learning Objectives
 
-<!--{{<objectives>}}>-->
+<!--{{<objectives>}}>--> I have checked all the boxes.
 
 - [x] Use semantic HTML tags to structure the webpage
 - [x] Create three articles, each including a title, summary, and a link
