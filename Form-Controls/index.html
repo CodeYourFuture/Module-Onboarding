@@ -15,47 +15,55 @@
   </header>
   <main>
     <form>
-      <fieldset name="tsttt">
-        <!-- customer's name ,as a text string of two characters or more-->
-        
-          <label for="customername">User-Name:
-            <input type="text" id="customername" name="customername" minlength="2" required>
-            <br><br>
-          </label>
-        
-        <!--customer's email ,valid email-->
-        
-          <label for="email">Email-Address:
-            <input type="email" id="email" name="email" required>
-            <br><br>
-          </label>
-        
-               
-      </fieldset>
       <fieldset>
-        
-           <!--3 options t-shirt colour-->
-          Choose t-shirt colour:
-          <input type="radio" id="Red" name="Choose t-shirt colour:" required>
-          <label for="Red">Red
-            <input type="radio" id="Blue" name="Choose t-shirt colour:" required>
-            <label for="Blue">Blue
-              <input type="radio" id="Yellow" name="Choose t-shirt colour:" required>
-              <label for="Yellow">Yellow
-                <br><br>
-              </label>
-       
-        <!--6 options size: XS, S, M, L, XL, XXL-->
-        <lable for="size">Size</lable>
-        <select name="size" id="size" required>
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="S">XXL</option>
-        </select>
+
+        <!-- customer's name ,as a text string of two characters or more-->
+        <legend>Customer Detail</legend>
+        <label for="customername">Name*:
+          <input type="text" id="customername" name="customername" minlength="2" required placeholder="Customer Name">
+          <br><br>
+        </label>
+
+        <!--customer's email ,valid email-->
+        <label for="email">Email-Address*:
+          <input type="email" id="email" name="email" required placeholder="Email">
+          <br><br>
+        </label>
       </fieldset>
+
+      <fieldset>
+        <legend>Product Detail</legend>
+        <!--3 options t-shirt colour-->
+        Choose T-Shirt Colour*:
+        <input type="radio" id="Red" name="Choose t-shirt colour:" required>
+        <label for="Red">Red
+          <input type="radio" id="Blue" name="Choose t-shirt colour:" required>
+          <label for="Blue">Blue
+            <input type="radio" id="Yellow" name="Choose t-shirt colour:" required>
+            <label for="Yellow">Yellow
+              <br><br>
+            </label>
+
+            <!--6 options size: XS, S, M, L, XL, XXL-->
+            <lable for="size">T-Shirt Size*:</lable>
+            <select name="size" id="size" required>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="S">XXL</option>
+            </select>
+            <br><br>
+            <font color ="Blue" >Required fields are marked with *</font>
+      </fieldset>
+
+      <fieldset>
+        <legend>Take Action</legend>
+        <button type="submit">Add to basket</button>
+        <button type="reset">Clear Form</button>
+      </fieldset>
+
     </form>
   </main>
   <footer>
