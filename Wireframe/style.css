@@ -30,6 +30,14 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  background-color:lightsalmon;
+}
+#wireframe-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: var(--space) auto;
+  background-color: black;
+  color: white;
 }
 a {
   padding: var(--space);
@@ -40,6 +48,25 @@ img,
 svg {
   width: 100%;
   object-fit: cover;
+}
+.button {
+  background-color: orangered;
+  color:white;
+  border-radius: 7px;
+  width: auto;
+  height: 15px;
+  font-weight: bold;
+  allign-items: center;
+  text-align: center;
+  align-content: center;
+  display: flex;
+}
+.article-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+  height: 300px;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
