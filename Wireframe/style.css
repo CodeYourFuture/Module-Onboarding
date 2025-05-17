@@ -1,3 +1,4 @@
+
 /* Here are some starter styles
 You can edit these or replace them entirely 
 It's showing you a common way to organise CSS 
@@ -83,7 +84,11 @@ article {
   > * {
     grid-column: 2/3;
   }
-  > img {
-    grid-column: span 3;
-  }
+  
+}
+.title{
+  text-align: center;
+}
+.sentence1{
+  text-align:center;
 }
