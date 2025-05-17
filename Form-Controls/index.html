@@ -11,17 +11,64 @@
     <header>
       <h1>Product Pick</h1>
     </header>
-    <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+       
+          
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required minlength="2" pattern="[A-Za-z ]{2,}" 
+           placeholder="Enter your full name" aria-required="true">
+    <small>Minimum 2 alphabetical characters (required)</small>
+  </div>
+
+  <!-- Email Field -->
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required 
+           placeholder="your.email@example.com" aria-required="true">
+    <small>Required for order confirmation</small>
+  </div>
+
+  <!-- T-shirt Options -->
+  <fieldset>
+  <legend>Choose T-shirt Color</legend>
+  <div>
+    <input type="radio" id="color-red" name="color" value="red" required>
+    <label for="color-red">Red</label><br>
+
+    <input type="radio" id="color-blue" name="color" value="blue">
+    <label for="color-blue">Blue</label><br>
+
+    <input type="radio" id="color-green" name="color" value="green">
+    <label for="color-green">Green</label>
+  </div>
+</fieldset>
+
+    <!-- Size Selection -->
+    <fieldset>
+  <legend>Choose T-shirt Size</legend>
+  <div>
+    <label for="size">Size:</label>
+    <select id="size" name="size" required>
+      <option value="" disabled selected>-- Please select --</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+  </div>
+</fieldset>
+
+  <button type="submit">Place Order</button>
+       
+
+    </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>Mouawia Elkhalifa</h2>
     </footer>
   </body>
 </html>
