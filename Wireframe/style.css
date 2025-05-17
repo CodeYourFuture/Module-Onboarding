@@ -1,89 +1,119 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
+  --ink: black;
+  --font-serif: "Serif", Georgia;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background-color: rgb(35, 35, 35);
+  display: grid;
+  place-content: center;
+  font: var(--font-serif);
 }
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+a:hover {
+  background-color: rgba(125, 122, 122, 0.5);
+  color: var(--ink);
+  text-decoration: none;
+  border-radius: 10px;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
+h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+header {
+text-align: center;
+color: white;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 10px;
+max-width: var(--container);
+}
+
+#first {
+  grid-column: 1 / span 2;
+  width: 100%;
+}
+
+.image-container {
+  border: 2px solid rgba(14, 6, 6, 0.73);
+  border-radius: 10px;
+}
+
+#readme{
+  width: 70%;
+  height: 400px;
+  padding-left: 180px;
+  border-radius: 10px;
+  }
+
+#branch { 
+width: 50%;
+height: 405px;
+padding-left: 120px;
+}
+
+#wire {
+  width: 90%;
+  height: 400px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+article { 
+background-color: rgba(255, 255, 255);
+padding: 40px;
+border-radius: var(--space);
+font-size: 17px;
+text-align: justify;
+display: grid;
+}
+
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: 0 auto calc(var(--space) * 4) auto;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:5px;
+  
 }
+
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  font-size: 17px;
+  color: rgb(17, 14, 14);
+  background-color: rgba(0, 0, 0, 0.627);
+  width: 100%;
+  color: white;
+  left: 0;
+  padding: 4px;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
-}
+
+ 
+
+
+
+
+ 
+
+
+
+
