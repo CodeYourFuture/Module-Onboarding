@@ -13,28 +13,49 @@
     </header>
     <main>
       <form>
-        <div>
-          <label for="name">Name</label>
-           <input type="text" id="name">
+        <fieldset>
+          <legend> Contact Information</legend>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name required">
+          </div>
         
+          <div><br>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required> 
+          
 
-        
-        <label for="email">Email</label>
-        <input type="email" id="email">
-        </div>
+          </div>
 
+          <h1> T-shirt Colours</h1>
+        <label>
+          <select>
+            <option>Red</option>
+                        <option>Blue</option>
+            <option>Black</option>
+          </select>
+        </label>
+         
+
+        <h1>Size</h1>
+        <label>
+          <select>
+            <option>S</option>
+            <option>XS</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL
+          </select> <br>
+
+        </label><br>
 <div>
-  <div><br>
-         <label for="colour">T-Shirt Colour:</label><br></div><div></div>
-  <select id="colour" name="colour" required>
-    <option value="">--Please choose a colour--</option>
-    <option value="black">Black</option>
-    <option value="white">White</option>
-    <option value="blue">Blue</option>
-  </select><br><br>
-       </div>
-       <div><button>Submit</button></div>
-<div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+</div>
+        </fieldset>
+
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
@@ -43,7 +64,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>Fatima Belkedari (Farah-stu)</h2>
     </footer>
   </body>
 </html>
