@@ -33,7 +33,8 @@ body {
 }
 a {
   padding: var(--space);
-  border: var(--line);
+  /*
+  border: var(--line); */
   max-width: fit-content;
 }
 img,
