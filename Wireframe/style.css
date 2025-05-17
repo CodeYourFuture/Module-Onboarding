@@ -31,6 +31,9 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+p {
+  padding-bottom: 0em; /* Adjust this value as needed */
+}
 a {
   padding: var(--space);
   border: var(--line);
@@ -45,6 +48,12 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header {
+
+  text-align: center;
+  padding: var(--space);
+  border-bottom: var(--line);
+} 
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
