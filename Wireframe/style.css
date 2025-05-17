@@ -27,12 +27,19 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  height: 30px;
+  bottom: 0;
 }
-img,
+article > a:last-child {
+  align-self:end
+}
+
+embed,
 svg {
   width: 100%;
-  height: 150px;
+  height: 100%;
   object-fit: cover;
+  margin: null;
 }
 
 main {
