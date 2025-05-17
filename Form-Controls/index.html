@@ -9,19 +9,49 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Form Controls</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" minlength="2" required />       
+        </div>
+        <br/>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />       
+        </div>
+        <br/>
+
+        <fieldset>
+          <legend>Color and Size</legend>
+          <label for="color">Choose a color:</label>
+          <select id="color" name="color">
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+          </select>
+         
+          <label for="size">Choose a size:</label>
+          <select id="size" name="size">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </fieldset>
+        <br/> 
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Salah Ahmed</h2>
     </footer>
   </body>
 </html>
