@@ -34,7 +34,7 @@
       <fieldset>
         <legend>Product Detail</legend>
         <!--3 options t-shirt colour-->
-        Choose T-Shirt Colour*:
+        Select Colour*:
         <input type="radio" id="Red" name="Choose t-shirt colour:" required>
         <label for="Red">Red
           <input type="radio" id="Blue" name="Choose t-shirt colour:" required>
@@ -45,14 +45,15 @@
             </label>
 
             <!--6 options size: XS, S, M, L, XL, XXL-->
-            <lable for="size">T-Shirt Size*:</lable>
-            <select name="size" id="size" required>
-              <option value="XS">XS</option>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="S">XXL</option>
+            <lable for="size">Select Size*:</lable>
+            <select name="size" id="size" required >
+              <option value="" disabled selected>Insert Size:</option>
+              <option value="XS">XSmall</option>
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
+              <option value="XL">XLarge</option>
+              <option value="S">XXLarge</option>
             </select>
             <br><br>
             <font color ="Blue" >Required fields are marked with *</font>
@@ -68,7 +69,7 @@
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By Sheida Shabankari May 2025</h2>
+    <h2>By Sheida Shabankari|Sheffield | MAY-2025 |Form-Control</h2>
   </footer>
 </body>
 
