@@ -1,89 +1,134 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+
+html, body {
+  height: 100%;
+  font-family: Roboto, sans-serif;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+  color: inherit;
+  text-decoration: none;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+ul, ol {
+  list-style: none;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+
+header {
+  grid-area: header-sec;
+  background-color: cornflowerblue;
+  padding: 20px;
+  margin: 10px 20px;
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header-sec"
+    "main"
+    "footer";
+  height: 100vh;
+  background-color: #ebeae3;
+  padding: 20px;
+
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
+.button {
+  background-color: cadetblue;
+  padding: 10px;
+  background-color: aliceblue;
+  display: inline-block; 
+  width: fit-content;     
+  max-width: 100%;
+  border-radius: 2px;
+  color: #000;
+}
+.article-section {
+  grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+    "hero hero"
+    "article1 article2";
+  padding: 20px;
+  gap: 10px;
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
+.hero-article {
+  grid-area: hero;
+  background-color: rgb(76, 130, 185);
+
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+  gap: 10px
+} 
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.article1 {
+  grid-area: article1;
+  background-color: rgb(162, 187, 216);
+}
+.article2 {
+  grid-area: article2;
+  background-color: rgb(162, 187, 216);
+}
+.article1, .article2 {
+  width: 100%;
+  border-bottom: 20px;
+   /*how do i resize all images */
+}
+
+.text-container img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  height: 400px;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(164, 234, 234);
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+
+
+
+
+@media (max-width: 750px) {
+  .article-section {
+    grid-template-columns: 1fr; /* Change to a single column */
+    grid-template-areas:
+      "hero"
+      "article1"
+      "article2";
   }
 }
