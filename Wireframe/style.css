@@ -116,3 +116,13 @@ p{
   font-family: "Courier New", monospace;
   font-weight:500;
 }
+
+header{
+  text-align: center;
+}
+
+button{
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: rgb(247, 69, 143);
+}
