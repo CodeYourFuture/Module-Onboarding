@@ -17,7 +17,7 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
+  --paper: rgb(164, 161, 161);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font:  16px/1.6 'Arial', sans-serif;
   --space: clamp(6px, 6px + 2vw, 15px);
