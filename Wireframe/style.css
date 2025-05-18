@@ -27,14 +27,18 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: purple;
+  background: lightgray;
   color: black;
   font: Arial, sans-serif;
 }
 a {
-  padding: 1.5em;
-  border: 500px;
-  max-width: 960px;
+ display: inline-block;
+ padding: 0.5em 1em;
+ color: blue;
+ text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 
@@ -44,6 +48,9 @@ svg {
   object-fit: cover;
   max-height: 100%;
   height: auto;
+}
+img.cover {
+  object-fit: cover;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -61,9 +68,10 @@ header {
 
 
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
+  padding: 1rem;
+  background: lightgrey;
+  color: blue;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -76,7 +84,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+  
+ > *:first-child {
     grid-column: span 2;
   }
 }
@@ -91,10 +100,11 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+  
   > * {
     grid-column: 2/3;
   }
-  > img {
+ > img {
     grid-column: span 3;}
   }
   
