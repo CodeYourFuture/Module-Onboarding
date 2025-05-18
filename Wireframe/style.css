@@ -93,6 +93,7 @@ article {
   > img {
     grid-column: span 3;
     grid-row: span 1;
-    align-self: center;
+    align-self: end;
+    justify-content: end;
   }
 }
