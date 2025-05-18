@@ -100,6 +100,8 @@ article {
   }
   > img {
     grid-column: span 3;
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -111,15 +113,9 @@ article {
   margin: 0.5rem 0;
 }
 
-#Branch-in-GIT img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto 1rem auto;
-}
 #Branch-in-GIT a {
   display: inline-block;
   margin-top: 0.5rem;
   text-decoration: underline;
-  color: blue;;
+  color: blue;
 }
