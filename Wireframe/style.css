@@ -27,18 +27,29 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background: lightgray;
+  color: black;
+  font: Arial, sans-serif;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+ display: inline-block;
+ padding: 0.5em 1em;
+ color: blue;
+ text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
+
+
 img,
 svg {
   width: 100%;
+  object-fit: cover;
+  max-height: 100%;
+  height: auto;
+}
+img.cover {
   object-fit: cover;
 }
 /* ====== Site Layout ====== 
@@ -46,13 +57,21 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
-  position: fixed;
-  bottom: 0;
+header {
   text-align: center;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: lightgrey;
+  color: blue;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -65,7 +84,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+  
+ > *:first-child {
     grid-column: span 2;
   }
 }
@@ -80,10 +100,11 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+  
   > * {
     grid-column: 2/3;
   }
-  > img {
-    grid-column: span 3;
+ > img {
+    grid-column: span 3;}
   }
-}
+  
