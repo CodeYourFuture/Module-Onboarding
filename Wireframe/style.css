@@ -21,16 +21,16 @@
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
- header{
+header {
   background: var(--paper_main);
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-   text-align: center;
- }
+  text-align: center;
+}
 
 body {
   background: var(--paper);
-  color: var(--ink);        
+  color: var(--ink);
   font: var(--font);
 }
 a {
@@ -41,7 +41,7 @@ a {
 img,
 svg {
   width: 100%;
-  
+
   object-fit: scale-down;
 }
 /* ====== Site Layout ====== 
@@ -59,7 +59,6 @@ footer {
   width: 100%;
   bottom: 0px;
   left: 0px;
-
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -87,10 +86,13 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+  grid-template-rows: 1fr;
   > * {
     grid-column: 2/3;
   }
   > img {
     grid-column: span 3;
+    grid-row: span 1;
+    align-self: center;
   }
 }
