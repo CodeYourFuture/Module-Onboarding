@@ -13,6 +13,8 @@
     </header>
     <main>
       <form>
+        <fieldset>
+          <legend>Customer Information</legend>
         <div>
         <label for="customer-name">Name</label>
         <input type="text" name="customer-name" id="customer-name" minlength="2" placeholder="Enter your full name"  required> 
@@ -22,11 +24,15 @@
         <label for="customer-email">Email</label>
         <input type="email" name="customer-email" id="customer-email" placeholder="name@example.com"  required>
         </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Product Selection</legend>
 
         <div>
         <label for="color">Choose your T-shirt color</label>
-        <select name="" id="color" required>
-          <option value="Default" disabled selected>Choose a color</option>
+        <select name="color" id="color" required>
+          <option value="" disabled selected>Choose a color</option>
           <option value="purple">Purple</option>
           <option value="red">Red</option>
           <option value="green">Green</option>
@@ -36,7 +42,7 @@
         <div>
  
         <label for="size">please choose from the sizes listed</label>
-        <select name="size" id="size">
+        <select name="size" id="size" required>
           <option value="" disabled selected>Choose a Size</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
@@ -46,6 +52,7 @@
           <option value="XXL">XXL</option>
         </select>
         </div>
+        </fieldset>
         <button>Submit</button>
  
       </form>
