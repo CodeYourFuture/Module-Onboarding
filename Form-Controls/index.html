@@ -24,33 +24,29 @@
         <section>
           <div>
             <label for="name">Name</label>
-            <input type="text" name="name" id="name"  minlength="2" pattern="[A-Za-z\s'-]+"
-            required>
+            <input type="text" name="name" id="name"  minlength="2" pattern="[A-Za-z\s'-]+" required>
           </div><br>
           <div>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required>
           </div><br>
           <div>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required>
-          </div><br>
         </section>
       </fieldset><br>
 
       <fieldset>
         <legend>Product Information</legend><br>
         <label for="colour">T-shirt Color</label>
-        <select name="shirt-color" id="colour">
-          <option value="Red">Select a Color</option>
+        <select name="shirt-color" id="colour" required>
+          <option value="">Select a Color</option>
           <option value="Red">Red</option>
           <option value="Blue">Blue</option>
           <option value="Green">Green</option>
         </select>
         </label><br><br>
         <label for="size">T-shirt Size</label>
-        <select name="shoe-size" id="size">
-          <option value="XS">Select a size</option>
+        <select name="shoe-size" id="size" required>
+          <option value="">Select a size</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>
