@@ -37,11 +37,12 @@ a {
   max-width: 960px;
 }
 
+
 img,
 svg {
   width: 100%;
   object-fit: cover;
-  max-height: 400px;
+  max-height: 100%;
   height: auto;
 }
 /* ====== Site Layout ====== 
@@ -49,9 +50,16 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+header {
+  text-align: center;
+}
+
+
 footer {
   position: fixed;
   bottom: 0;
