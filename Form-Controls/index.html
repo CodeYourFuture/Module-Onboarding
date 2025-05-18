@@ -14,15 +14,15 @@
   </header>
   <main>
     <form>
-      <!-- getting the customer's name by defining it's a real name by making sure its restricted from less then 2 characters-->
+      <!-- getting the customer's name by defining it's a real name by making sure its restricted from less then 2 alphabetic characters-->
       <div style="display: inline-block; margin-right: 10px;">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" minlength="2" required placeholder="Enter Your First Name" />
+        <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" pattern="[a-zA-Z]{2,}" required/>
       </div>
 
       <div style="display: inline-block;">
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" minlength="2" required placeholder="Enter Your Last Name" />
+        <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name" pattern="[a-zA-Z]{2,}" required/>
       </div>
 
       <!-- getting the customer's email and making sure its valid -->
@@ -44,7 +44,8 @@
       <!-- use a <select> type element for being able to choose between the size's of the t-shirts (XS, S, M, L, XL, XXL)-->
       <div>
         <label for="size">Choose a size:</label>
-        <select id="size" name="size">
+        <select id="size" name="size" required>
+          <option value="" disabled selected>Select a size</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>
