@@ -117,3 +117,6 @@ article:hover{
 article h1 {
   text-decoration: underline;
 }
+article img {
+  height: 500px;
+}
