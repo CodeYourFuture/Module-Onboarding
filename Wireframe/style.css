@@ -27,15 +27,16 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background: purple;
+  color: black;
+  font: Arial, sans-serif;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+  padding: 1.5em;
+  border: 500px;
+  max-width: 960px;
 }
+
 img,
 svg {
   width: 100%;
@@ -84,6 +85,5 @@ article {
     grid-column: 2/3;
   }
   > img {
-    grid-column: span 3;
+    grid-column: span 3;}
   }
-}
