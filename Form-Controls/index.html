@@ -8,19 +8,6 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-
-<style>
-  div {
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-
-  input[type="radio"] {
-    margin-left: 10px;
-    margin-right: 5px;
-  }
-</style>
-
 <body>
   <header>
     <h1>Product Pick</h1>
@@ -48,11 +35,11 @@
       <div>
         <label for="color">Choose a color:</label>
         <label for="black">Black:</label>
-        <input type="radio" id="black" name="color" value="black">
+        <input type="radio" id="black" name="color" value="black" required>
         <label for="white">White:</label>
-        <input type="radio" id="white" name="color" value="white">
+        <input type="radio" id="white" name="color" value="white" required>
         <label for="gray">Gray:</label>
-        <input type="radio" id="gray" name="color" value="gray">
+        <input type="radio" id="gray" name="color" value="gray" required>
       </div>
       <!-- use a <select> type element for being able to choose between the size's of the t-shirts (XS, S, M, L, XL, XXL)-->
       <div>
