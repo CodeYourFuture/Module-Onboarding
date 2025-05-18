@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,15 +14,37 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!--
+        Requirements:
+        - Ask for the user's name (text input)
+        - Ask for the user's email (email input)
+        - Let the user pick a product (dropdown/select)
+        - Let the user select a quantity (number input)
+        - Add a submit button
+        -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="product">Choose a product:</label>
+        <select id="product" name="product" required>
+          <option value="">Select...</option>
+          <option value="notebook">Notebook</option>
+          <option value="pen">Pen</option>
+          <option value="eraser">Eraser</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Meseret</h2>
     </footer>
   </body>
 </html>
