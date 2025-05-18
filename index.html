@@ -1,46 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coursework</title>
-    <style>
-      :root {
-        --paper: oklch(7 0 0);
-        --ink: color-mix(in oklab, var(--color) 5%, black);
-        --font: 100%/1.5 system-ui;
-        --space: clamp(6px, 6px + 2vw, 15px);
-        --line: 1px solid;
-      }
-      body {
-        background: var(--paper);
-        color: var(--ink);
-        font: var(--font);
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-    </style>
-  </head>
-  <body>
-    <header><h1>🧐 CYF Coursework Disposable Branch Previews</h1></header>
-    <main>
-      <ol>
-        <li>
-          <h2><a href="/Wireframe">Project 1: Wireframe</a></h2>
-          <p>
-            Mentors:
-            <a href="Wireframe/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-        <li>
-          <h2><a href="/Form-Controls">Project 2: Form Controls</a></h2>
-          <p>
-            Mentors:
-            <a href="Form-Controls/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-      </ol>
-    </main>
-    <footer><a href="HOW_TO_REVIEW.md">HOW TO REVIEW MD</a></footer>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development Basics</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+background-color: #f9f9f9;
+}
+
+header {
+text-align: center;
+padding: 40px 20px;
+background-color: #e0e0e0;
+}
+
+header h1 {
+margin: 0;
+font-size: 2.5em;
+color: #333;
+}
+
+header p {
+margin: 10px 0 0;
+color: #666;
+}
+
+main {
+padding: 40px 20px;
+}
+
+.articles {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.article-card {
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 20px;
+width: 300px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+transition: transform 0.2s;
+}
+
+.article-card:hover {
+transform: translateY(-5px);
+}
+
+.article-card h2 {
+margin-top: 0;
+font-size: 1.5em;
+color: #333;
+}
+
+.article-card p {
+color: #555;
+}
+
+.read-more {
+display: inline-block;
+margin-top: 10px;
+color: #0066cc;
+text-decoration: none;
+font-weight: bold;
+}
+
+.read-more:hover {
+text-decoration: underline;
+}
+
+footer {
+text-align: center;
+padding: 20px;
+background-color: #e0e0e0;
+color: #666;
+position: relative;
+bottom: 0;
+width: 100%;
+margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Web Development Basics</h1>
+<p>Understanding key concepts in web development</p>
+</header>
+
+<main>
+<section class="articles">
+<article class="article-card">
+<h2>Purpose of a README File</h2>
+<p>A README file is a document, typically written in plain text or Markdown, that provides an overview of a project. Its purpose is to give users and contributors essential information such as the project's description, installation instructions, usage guidelines, and contribution rules. It serves as the first point of reference for anyone interacting with the project, ensuring clarity and ease of use.</p>
+<a href="#" class="read-more">Read More</a>
+</article>
+
+<article class="article-card">
+<h2>Purpose of a Wireframe</h2>
+<p>A wireframe is a visual blueprint or skeletal outline of a webpage or application. Its purpose is to plan the layout and structure before detailed design and development begin. It helps stakeholders visualize the user interface and user experience, focusing on functionality and content placement without distractions from colors or graphics.</p>
+<a href="#" class="read-more">Read More</a>
+</article>
+
+<article class="article-card">
+<h2>What is a Branch in Git?</h2>
+<p>A branch in Git is a lightweight movable pointer to a commit. Its purpose is to allow multiple lines of development to occur simultaneously. Developers use branches to work on features, fixes, or experiments independently from the main codebase, merging changes back when ready, which helps manage collaboration and version control efficiently.</p>
+<a href="#" class="read-more">Read More</a>
+</article>
+</section>
+</main>
+
+<footer>
+<p>Useful links and other information about the site overall.</p>
+</footer>
+</body>
 </html>
