@@ -31,6 +31,21 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
+header {
+  text-align: center;
+  padding: var(--space) 0;
+  margin-bottom: var(--space);
+  border-bottom: var(--line);
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: var(--space) 0;
+  text-decoration: underline;
+}
+
 a {
   padding: var(--space);
   border: var(--line);
@@ -85,5 +100,22 @@ article {
   }
   > img {
     grid-column: span 3;
+    height: auto;
+    width: 100%;
   }
+}
+
+#Branch-in-GIT {
+  margin-bottom: 0rem;
+}
+
+#Branch-in-GIT p {
+  margin: 0.5rem 0;
+}
+
+#Branch-in-GIT a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: underline;
+  color: blue;
 }
