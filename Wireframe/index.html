@@ -5,48 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wireframe</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+      }
+      article {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+      a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #4CAF50;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Wireframe</h1>
-      <p>
-        learning fundemental tools about desgning wireframe layout.
-      </p>
+      <p>Learning fundamental tools for designing a wireframe layout.</p>
     </header>
     <main>
-      
       <article>
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240702120959/Readme1.png" alt="README" />
-        <h2> What is the purpose of a README file?</h2>
-        <p>
-           To provides important information about a project.
-        </p>
-        <a href="https://www.makeareadme.com/">Read more</a>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240702120959/Readme1.png" alt="README file example" />
+        <h2>What is the purpose of a README file?</h2>
+        <p>It provides important information about a project.</p>
+        <a href="https://www.makeareadme.com/" target="_blank" rel="noopener noreferrer">Read more</a>
       </article>
 
       <article>
-        <img src="data:image/jpeg;base64,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" alt="" />
-        <h2>What is the purpose of a wireframe?</h2>
-        <p>
-          A wireframe is a visual blueprint of a website 
-        </p>
-        <a href="https://adamfard.com/blog/wireframes#:~:text=Wireframes%20are%20a%20visual%20guide,a%20UI%20has%20a%20purpose.">Read more</a>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." alt="Design concept image" />
+        <h2>Why use wireframes in web design?</h2>
+        <p>Wireframes help plan layout and user experience before development starts.</p>
+        <a href="https://careerfoundry.com/en/blog/ux-design/what-is-a-wireframe-in-ux-design/" target="_blank" rel="noopener noreferrer">Learn more</a>
       </article>
-
-      <article>
-        <img src="https://miro.medium.com/v2/resize:fit:650/1*K9scAx1Ezd-KJFabaYseCw.jpeg" alt="" />
-        <h2>What is a branch in Git?</h2>
-        <p>
-          is a separate line of development that allows you to work on new features
-        </p>
-        <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#:~:text=A%20branch%20in%20Git%20is,Note">Read more</a>
-      </article>
-
     </main>
-    <footer>
-      <p>
-        © 2025 Alaeldine LTD.All rights reserved.
-      </p>
-    </footer>
   </body>
-</html>
