@@ -36,7 +36,7 @@ a {
   padding: var(--space);
   max-width: fit-content;
   text-decoration: none;
-  transition: 0.3 ease;
+  
 }
 a:hover {
   color: rgb(179, 67, 141);
@@ -125,4 +125,10 @@ button{
   background-color: transparent;
   border-radius: 5px;
   border-color: rgb(247, 69, 143);
+  padding: 6px;
+  height: 50px;
+}
+
+a {
+  font-weight: bold;
 }
