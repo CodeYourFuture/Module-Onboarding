@@ -121,7 +121,7 @@ header{
   text-align: center;
 }
 
-button{
+.btn {
   background-color: transparent;
   border-radius: 5px;
   border-color: rgb(247, 69, 143);
