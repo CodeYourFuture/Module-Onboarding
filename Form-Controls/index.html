@@ -4,47 +4,51 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>My form exercise</title>
+  <title>T-shirts</title>
   <meta name="description" content="Form control page" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>T-shirts</h1>
   </header>
   <main>
     <form>
+      <!-- required name input field -->
       <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" minlength="2" required />
       </div>
-      <br>
+      <br/>
+      <!-- required email input field -->
       <div>
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required />
       </div>
-      <br>
-      <hr>
+      <br/>
+      <hr/>
+      <!-- required radial color input -->
       <div>
         <span> choose a color:</span>
         <div>
           <input type="radio" id="red" name="color" />
           <label for="red">Red</label>
         </div>
-        <br>
+        <br/>
         <div>
           <input type="radio" id="green" name="color" />
           <label for="green">green</label>
         </div>
-        <br>
+        <br/>
         <div>
           <input checked type="radio" id="black" name="color" />
           <label for="black">black</label>
         </div>
       </div>
-      <br>
-      <hr>
+      <br/>
+      <hr/>
+      <!-- required size select field -->
       <div>
         <label for="size">Size</label>
         <select name="size" id="size">
@@ -57,12 +61,9 @@
           <option value="xxl">XXL</option>
         </select>
       </div>
-      <br>
+      <br/>
       <button type="submit">Submit</button>
     </form>
-    <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
     </form>
   </main>
   <footer>
