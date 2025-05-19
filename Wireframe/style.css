@@ -1,6 +1,7 @@
 
 :root {
   --background: #f8f9fa;
+  --border:#004080;
   --text: #212529;
   --accent: #0077cc;
   --spacing: 1rem;
@@ -18,13 +19,12 @@ body {
 header {
   padding: var(--spacing);
   text-align: center;
-  background: #e9ecef;
 }
-.main-body{
+.articles-wrapper{
   display: flex;
   gap: 20px;
 }
-.main-body article{
+.articles-wrapper article{
  margin-top: 20px;
 }
 
@@ -38,10 +38,9 @@ main {
 }
 
 article {
-  background: var(--background);
-  border: 1px solid #ccc;
-  padding: var(--spacing);
-  border-radius: 6px;
+  background: var(--background);  
+  border: 1px solid #ccc; 
+  padding: 20px;
  
  
 }
@@ -50,20 +49,37 @@ article {
 article :first-child {
   margin-top: 0;
 }
+article img {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  width: auto; 
+}
+img{
+  height:100px
+ 
+}
 
 a {
-  color: var(--accent);
+  display: inline-block;
+  color: #ffffff;
+  background-color: var(--border);
+  padding: 3px 6px;
+  border: none;
+  border-radius: 6px;
   text-decoration: none;
-  border:  1px solid black;
-  padding: 5px;
-  border-radius: 2px;
-  box-shadow: 1px 1px 0px var(--text);
-  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
 a:hover {
+  background-color:var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-decoration: underline;
 }
+
 
 footer {
   position: fixed;
@@ -74,9 +90,19 @@ footer {
   text-align: center;
   padding: 0.5rem;
 }
+@media (max-width: 768px) {
+  .articles-wrapper {
+    flex-direction: column;
+  }
+  header{
+   background-color: var(--text);
+   color: var(--background);
+   
+  
+  }
 
-
- img{
-  height: 100px;
-  width: 100%;
+ 
+}
+main{
+  margin-bottom: 6rem;
 }
