@@ -50,7 +50,11 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
+  position: fixed;
+  bottom: 0;
   background-color: bisque;
+  width:100%;
+  font-weight: bold;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
