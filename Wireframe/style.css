@@ -133,12 +133,14 @@ article {
 
 footer {
   position: fixed;
-  width: clamp(25%, 30%, 40%);
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
   bottom: 0;
-  text-align: left;
   font-size: 12px;
   margin-bottom: 30px;
-  mix-blend-mode: overlay;
+  /*mix-blend-mode: overlay; */
+
 }
 
 @media only screen and (max-width: 600px) {
