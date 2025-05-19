@@ -17,13 +17,13 @@
           <legend>Customer Information</legend>
           <br>
         <div>
-        <label>Customer Name:</label>
-        <input type="text" placeholder="Enter Your Full Name" required>
+        <label for="name">Customer Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
         </div><br>
         <div>
-        <label>Customer Email:</label>
-        <input type="email" placeholder="Name@example.com" required>
-        </div><br>
+        <label for="email">Customer Email:</label>
+        <input type="email" name="email" id="email" placeholder="Name@example.com" required>
+      </div><br>
           </fieldset>
           <br>
 
@@ -31,32 +31,32 @@
             <legend>Product Details</legend>
             <br>
             <div>
-        <label>T-shirt Colour:</label>
-        <select required>
+        <label for="colour">T-shirt Colour:</label>
+        <select name="colour" id="colour" required>
           <option value disabled selected>Choose a colour</option>
-            <option>Blue</option>
-            <option>Green</option>
-            <option>White</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="white">White</option>
         </select>
         </div><br><br>
         <div>
-        <label>Choose Size:</label>
-        <select required>
+        <label for="size">Choose Size:</label>
+        <select name="size" id="size" required>
           <option value disabled selected>Choose a size</option>
-            <option>XS</option>
-            <option>S</option>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
-            <option>XXL</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
         </select>
         </div><br>
         </fieldset>
         <br><br><br>
 
         <div>
-        <input type="submit">
-        <input type="reset">
+        <input type="submit" value="Submit">
+        <input type="reset" Value="Clear Form">
         </div>
         <br><br>
         
