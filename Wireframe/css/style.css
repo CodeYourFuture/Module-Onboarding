@@ -22,11 +22,16 @@ header{
   margin-bottom: 40px;
 }
 
+header p {
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 .read-btn{
       display: inline-block;
       padding: 10px 20px;
-      background-color: #333;
+      background-color: #082B51;
       color: white;
       text-decoration: none;
       border-radius: 5px;
@@ -36,7 +41,7 @@ header{
 }
 
 .read-btn:hover{
-  background-color: #555;
+  background-color: #0b3a72;
 }
 
 
@@ -48,10 +53,14 @@ header{
   flex-wrap: wrap;
 }
 
+.container section {
+  margin-bottom: 40px;
+}
+
 .container section:first-child{
 
   margin-bottom: 40px;
-  text-align: center; 
+  text-align: left;
 }
 
 .container p{
@@ -61,7 +70,11 @@ header{
 
 .container .column{
   width: 48%;
-  text-align: center;
+  text-align:left;
+}
+
+.container .column .read-btn {
+  display: inline-block;
 }
 
 .container .column img{
@@ -79,11 +92,11 @@ header{
 }
 
 .site-footer {
-  position: fixed;
+  display: flex;
   bottom: 0;
   left: 0;
   width: 100%;
-  text-align: center;
+  align-items: center;
   padding: 15px;
   font-size: 0.9rem;
   color: whitesmoke;
@@ -98,6 +111,7 @@ header{
   transform: translateY(-50%);  /* Center vertically */
   color: whitesmoke;
   font-size: 0.9rem;
+  margin-left: auto;
 }
 
 .footer-email a {
