@@ -1,33 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WireFrame</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   </head>
   <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+    <div class="content">
+
+      <header>
+        <h1>Learn Git</h1>
+        <p>Master Git to manage your code, collaborate with teams, and streamline your development process.</p>
+      </header>
+
+      <main class="container">
+
+        <section>
+          <h2>What is Git?</h2>
+          <p>
+            Git is a version control system that helps developers track changes
+            in code, collaborate easily, and manage project versions. It allows
+            branching, committing changes, and reverting to earlier versions.
+            Popular platforms like GitHub use Git for smooth teamwork on coding
+            projects.
+          </p>
+          <a href="#" class="read-btn">Read More</a>
+        </section>
+
+        <section class="column">
+          <img src="image/img2.png" alt="git-developer">
+          <h2>Why do developers need Git?</h2>
+          <p>
+            Developers need Git to manage code efficiently, especially in teams.
+            It tracks changes, preventing code conflicts when multiple people work on the same files.
+            Git also allows developers to experiment with new features in branches, merge them later,
+            and easily roll back mistakes.
+            It ensures smooth collaboration and keeps a detailed history of project development.
+          </p>
+                    <a href="#" class="read-btn"  >Read More</a>
+        </section>
+
+        <section class="column">
+          <img src="image/img3.jpeg" alt="branch-image">
+          <h2>What is a branch in Git?</h2>
+          <p>
+            A branch in Git is a separate line of development that allows you to work on
+            different features or fixes without affecting the main codebase.
+            You can create a branch to isolate your changes, and once you’re done,
+            merge it back into the main branch (often called “main” or “master”).
+            This helps manage parallel WorkStreams and keeps the code organized and stable.
+          </p>
+                    <a href="#" class="read-btn">Read More</a>
+        </section>
+      </main>
+    </div>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+      <footer class="site-footer">
+        <p>Copyright © 2024 Code Your Future. All Rights Reserved.</p>
+        <span class="footer-email">Email:<a href="mailto:sh.panahian@gmail.com" >sh.panahian@gmail.com</a></span>
     </footer>
-  </body>
+    </body>
 </html>
