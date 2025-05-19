@@ -16,11 +16,16 @@
   <main>
     <h1 id="form-heading">Order Your Custom T-Shirt</h1>
     <p>Please fill out the form below. All fields are required.</p>
-    <form>
-      <!-- write your html here-->
-      <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+
+    <form aria-labelledby="form-heading">
+      <!-- Name -->
+      <label for="name">Full Name: </label>
+      <input type="text" id="name" name="name" minlength="2" autocomplete="name" required> <br><br>
+
+       <!-- E-mail -->
+      <label for="email">Email address: </label>
+      <input type="text" id="email" name="email" autocomplete="email" required> <br><br>
+
     </form>
   </main>
   <footer>
