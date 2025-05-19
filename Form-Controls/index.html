@@ -8,70 +8,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form method="post">
-        <p>
-          <label for="name">Name:<span aria-label="required">*</span></label>
-          <input type="text" id="name" name="user_name" minlength="2">
-          
-        </p>
-        <p>
-          <label for="mail">Email:<span aria-label="required">*</span></label>
-          <input type="email" id="mail" name="user_email" />
-        </p>
-        <p>
-          <label for="t1"
-            >Colour of tee-shirt?<span aria-label="required">*</span></label>
-          <input
-            type="text"
-            id="t1"
-            name="colour"
-            list="l1"
-            required
-            pattern="[Gg]reen|[Yy]ellow|[Rr]ed" />
-          <datalist id="l1">
-            <option>Green</option>
-            <option>Yellow</option>
-            <option>Red</option>
-          </datalist>
-        </p>
-        <p>
-          <label for="t2"
-            >Size of tee-shirt?<span aria-label="required">*</span></label>
-          <input
-            type="text"
-            id="t2"
-            name="size"
-            list="l2"
-            required
-            pattern="[Xx]small|[Ss]mall|[Mm]edium|[Ll]arge|[Xl]|arge[Xxl]arge" />
-    <datalist id="l2">
-      <option>XS</option>
-      <option>S</option>
-      <option>M</option>
-      <option>L</option>
-      <option>XL</option>
-      <option>XXL</option>
-    </datalist>
-  </p>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-        <!-- 
-        1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
-        2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-        3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
-        4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
--->
-      </form>
-    </main>
-    <footer>
-      Halimatou Saddiyaa
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <p>
+        <label for="name">Name:<span aria-label="required">*</span></label>
+        <input type="text" id="name" name="user_name" minlength="2">
+
+      </p>
+      <p>
+        <label for="mail">Email:<span aria-label="required">*</span></label>
+        <input type="email" id="mail" name="user_email" />
+      </p>
+      <p>
+        <label for="colour">Colour of tee-shirt?<span aria-label="required">*</span></label>
+        <input type="text" id="colour" name="colour" list="colours" required />
+        <datalist id="colours">
+          <option>Green</option>
+          <option>Yellow</option>
+          <option>Red</option>
+        </datalist>
+      </p>
+      <p>
+        <label for="size">Size of tee-shirt?<span aria-label="required">*</span></label>
+        <input type="text" id="size" name="size" list="sizes" required />
+        <datalist id="sizes">
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </datalist>
+      </p>
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <h2>By HALIMATOU SADDIYAA</h2>
+  </footer>
+</body>
 </html>
