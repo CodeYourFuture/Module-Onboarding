@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="form to pick up cloth for existing users" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,15 +13,39 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+         <fieldset>
+           <legend>Custumer's Details</legend>
+           <label for="name">Name:</label>
+           <input type="text" id="first-name" name="first-name" required />
+           <label for="last-name">Last Name:</label>
+           <input type="text" id="last-name" name="last-name" required />
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" placeholdeer="youremail@...com"required/>
+         </fieldset>
+
+         <fieldset>
+           <legend>T-Shirt Options</legend>
+           <label for="color">Color</label>
+           <select id="color" name="color">color</select>
+           <option value="grey">Grey</option>
+           <option value="blue">Blue</option>
+           <option value="red">Red</option>
+         </fieldset>
+
+          <fieldset>
+            <legend>Size</legend>
+            <label for="size">Size</label>
+            <select id="size" name="size">size</select>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">X-Large</option> 
+          </fieldset>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Saleh Yousef</h2>
     </footer>
   </body>
 </html>
