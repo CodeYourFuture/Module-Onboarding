@@ -108,5 +108,7 @@ article {
   }}
 article a {
   align-self: center;
-  margin-top: auto; /* Pushes the button down uniformly */
+  margin-top: auto; 
 }
+h2{font-weight: bold;}
+#readme-title,#wireframe-title,#gitbranches-title{font-family: Arial, Helvetica, sans-serif;}
