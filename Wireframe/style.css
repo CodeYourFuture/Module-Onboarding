@@ -38,6 +38,14 @@ body {
 }
 h1, h2 {
   color: var(--color_h1_border);
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+p {
+  text-align: justify;
+  margin: auto;
+  padding: 35px;
 }
 a {
   padding: var(--space);
@@ -46,6 +54,8 @@ a {
   border-color: var(--color_h1_border);
   color: var(--color_a);
   max-width: fit-content;
+  margin: 32px;
+  
 }
 img,
 svg {
@@ -64,9 +74,12 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: static;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
-  text-align: left;
+  position: fixed;
+
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
