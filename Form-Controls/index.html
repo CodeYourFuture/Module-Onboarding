@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- Customer's Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required minlength="2" placeholder="Enter your name">
+      <br><br>
+
+      <!-- Customer's Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+      <br><br>
+
+      <!-- T-Shirt Colour -->
+      <label for="colour">T-Shirt Colour:</label>
+      <select id="colour" name="colour" required>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      <br><br>
+
+      <!-- T-Shirt Size -->
+      <label for="size">T-Shirt Size:</label>
+      <select id="size" name="size" required>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+      <br><br>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By Mr_ASH</h2>
+  </footer>
+</body>
+
 </html>
