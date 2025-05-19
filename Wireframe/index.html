@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development Essentials</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Web Development Essentials</h1>
+    <p class="description">A quick guide to core concepts like README files, wireframes, and Git branching.</p>
+  </header>
+<!-- The first article -->
+  <main class="articles">
+    <article>
+      <img src="./images/readme.jpg" alt="README file illustration" />
+      <h2>What is the purpose of a README file?</h2>
+      <p>A README file introduces and explains a project. It helps users understand the purpose, usage, and setup of a repository.</p>
+      <a href="#">Read More</a>
+    </article>
+    <!-- The bottom two article -->
+    <div class="article-row">
       <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
+        <img src="./images/wireframe.png" alt="Wireframe example" />
+        <h2>What is the purpose of a wireframe?</h2>
+        <p>A wireframe is a visual layout of a web page that focuses on structure and user flow before actual design and development.</p>
+        <a href="#">Read More</a>
       </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+
+      <article>
+        <img src="./images/branch.png" alt="Git branch diagram" />
+        <h2>What is a branch in Git?</h2>
+        <p>A branch in Git allows you to develop features, fix bugs, or experiment independently from the main codebase.</p>
+        <a href="#">Read More</a>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>Tarek Abounaheya.</p>
+  </footer>
+</body>
 </html>
