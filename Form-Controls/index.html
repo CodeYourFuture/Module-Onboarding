@@ -22,12 +22,12 @@
       <label for="name">Full Name: </label>
       <input type="text" id="name" name="name" minlength="2" autocomplete="name" required> <br><br>
 
-       <!-- E-mail -->
+      <!-- E-mail -->
       <label for="email">Email address: </label>
       <input type="text" id="email" name="email" autocomplete="email" required> <br><br>
 
 
- <!-- T-Shirt Colour -->
+      <!-- T-Shirt Colour -->
       <fieldset>
         <legend>Select a T-Shirt Colour </legend> <br>
         <label>
@@ -41,8 +41,22 @@
         <label>
           <input type="radio" name="colour" value="green" required> Green
         </label> <br> <br>
-      </fieldset>
-      <br>
+
+        <!-- T-Shirt Size -->
+        <fieldset><br>
+          <label for="size">Select a size: </label>
+          <select id="size" name="size" required>
+            <!-- <option value="">--Select a size--</option> -->
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select> <br> <br>
+
+        </fieldset>
+        <br>
 
     </form>
   </main>
