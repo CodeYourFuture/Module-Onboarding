@@ -90,6 +90,6 @@ article {
   }
   > img {
     grid-column: span 3;
-   height: auto;
+    height: auto;
   }
 }
