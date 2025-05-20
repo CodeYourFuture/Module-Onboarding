@@ -97,27 +97,23 @@ article {
     display: block;
   }
 
-  h2,
-  h3 {
+  >h2,
+  h3,h4 {
     padding: var(--space);
     color: #0771f2;
     margin-bottom: auto;
     font-style: oblique;
     font-size: x-large;
   }
-
-  >h4 {
-    padding: 5px;
-    color: #0771f2;
-    font-style: oblique;
-    font-size: x-large;
-    /* margin: 160px 0 auto 0; */
-    height: auto;
-  }
-
   >p {
     margin-top: auto;
     padding: var(--space);
+    width: fit-content;
+  }
+  >.gitbranch {
+    margin-bottom: 70px;
+    padding: var(--space);
+    width: fit-content;
   }
 
   >a {
