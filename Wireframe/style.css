@@ -6,6 +6,10 @@
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+    --color-primary: oklch(70% 0.1 240);   /* Soft Blue */
+  --color-secondary: oklch(75% 0.1 60);  /* Warm Orange */
+  --color-accent: oklch(65% 0.08 150);  /* Muted Green */
+  --color-highlight: oklch(80% 0.05 300); /* Gentle Purple */
 }
 
 header {
