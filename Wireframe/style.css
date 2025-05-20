@@ -60,7 +60,7 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 footer {
-  background-color:white;
+  background-color:rgb(250, 234, 234);
   color:green;
   position: fixed;
   bottom: 0;
