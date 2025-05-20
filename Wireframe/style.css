@@ -85,3 +85,8 @@ article {
     grid-column: span 3;
   }
 }
+
+article p {
+  color : var(--color-primary)
+}
+
