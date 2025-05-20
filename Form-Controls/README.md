@@ -44,7 +44,7 @@ Let's write out our testable criteria. Check each one off as you complete it.
 - [ ] I require one size from a defined set of 6 sizes.
 
 ## Resources
-
+2
 - [MDN: Form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms)
 - [MDN: Form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
