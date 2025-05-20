@@ -68,7 +68,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
@@ -111,7 +111,7 @@ article {
   grid-template-rows: auto auto 1fr;
   > * {
     grid-column: 2/3;
-  }
+  }}
   > 
   img {
     max-width:800px;
