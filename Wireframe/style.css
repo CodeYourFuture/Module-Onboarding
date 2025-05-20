@@ -33,18 +33,21 @@ a {
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: var(--space);
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--paper);
-  text-align: center;
-  padding: var(--space);
+/* Wrapper for bottom two articles */
+.articles-row {
+  display: flex;
+  gap: var(--space);
+  flex-wrap: wrap;
+}
+
+.articles-row article {
+  flex: 1;
+  min-width: 300px;
 }
 
 article {
@@ -67,6 +70,16 @@ article h2 {
 
 article p {
   font-size: 1rem;
+}
+
+/* Footer fixed */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: var(--space);
+  width: 100%;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
