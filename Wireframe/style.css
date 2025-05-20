@@ -31,6 +31,9 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+.centered {
+  text-align: center;
+}
 a {
   padding: var(--space);
   border: var(--line);
