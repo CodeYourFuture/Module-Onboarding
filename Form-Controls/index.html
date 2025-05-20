@@ -18,24 +18,23 @@
          <input type="text" name="name" id="name" placeholder="Enter your full name" minlength="2" required >
         </div>
         <br>
-        <div>
-          <label for="email">Your Email</label>
-          <input type="email" name="email" id="email" value="Your Email" required >
+          <label for="email">Email Address:</label>
+          <div>
+          <input type="email" name="email" id="email" placeholder="name@example.com" required >
         </div>
         <br>
-      <div>
-        <label for="color">Select T-shirt color:</label>
-        <input type="radio" name="color" id="option1" value="Green" required>
-        <label for="option1">Green</label>
-        <input type="radio" name="color" id="option2" value="Black">
-        <label for="option2">Black</label>
-        <input type="radio" name="color" id="option3" value="Red">
-        <label for="option3">Red</label>
-      </div>
-      <div>
+           <label for="color">Select T-shirt color:</label>
+          <div>
+            <select type="colour" name="colour" id="colour" required>
+              <option value="Green">Green</option>
+              <option value=""Black>Black</option>
+              <option value="Red">Red</option>
+            </select>
+          </div>
         <br>
-        <label for="size">Size</label>
-        <select name="size" id="size" required>
+          <label for="size">Select T-shirt Size</label>
+        <div>
+          <select name="size" id="size" required>
     <option value="" disabled selected>Select a size</option>
           <option label="XS" value="XS">S</option>
           <option label="S" value="S">S</option>
