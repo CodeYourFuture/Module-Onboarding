@@ -36,7 +36,7 @@ body {
   border-left: var(--line);
   border-color: rgb(0, 0, 0);
   border-width: 5px;
-
+  width: 100%;
 }
 
 a {
@@ -59,6 +59,7 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
   width: 75%;
+  padding-bottom: 80px;
 }
 
 header {
@@ -69,11 +70,14 @@ header {
 }
 
 footer {
+  position: fixed;
   bottom: 0;
+  z-index: 1000;
   text-align: center;
   border-top: var(--line);
   border-color: rgb(0, 0, 0);
   border-width: 5px;
+  width: 100%;  
 }
 
 /* ====== Articles Grid Layout ====
@@ -112,5 +116,7 @@ article {
 
   >img {
     grid-column: span 3;
+    height: 400px;
+    ;
   }
 }
