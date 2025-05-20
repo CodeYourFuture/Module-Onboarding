@@ -66,6 +66,7 @@ body {
     "article1 article2";
   padding: 20px;
   gap: 10px;
+  margin-bottom: 20%;
 }
 .hero-article {
   grid-area: hero;
