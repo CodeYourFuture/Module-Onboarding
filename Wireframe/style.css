@@ -32,8 +32,11 @@ body {
   font: var(--font);
 
 }
- .title-container{text-align:center ;}
-header{ border: 1px solid grey;
+.title-container{
+  text-align:center;
+}
+header{ 
+  border: 1px solid grey;
   color:rgb(54, 15, 87);
   height: min-content;
   overflow:hidden;
@@ -67,9 +70,16 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  width:100%;
+  left: 0;
+  right: 0;
+  width: 100%;
   text-align: center;
+  padding: var(--space);
+  border-top: var(--line);
+  background: var(--paper);
+  z-index: 100;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -110,5 +120,7 @@ article a {
   align-self: center;
   margin-top: auto; 
 }
-h2{font-weight: bold;}
-#readme-title,#wireframe-title,#gitbranches-title{font-family: Arial, Helvetica, sans-serif;}
+h2 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
