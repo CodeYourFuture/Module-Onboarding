@@ -23,7 +23,8 @@
             name="username"
             required
             placeholder="Enter your name"
-            pattern="^[A-Za-z ,.'-]{2,50}$"
+            pattern="^(?!.* {2})[A-Za-z]+(?: [A-Za-z]+)*$"
+            title="Please enter a valid name. No numbers or special characters allowed."
           />
         </p>
 
