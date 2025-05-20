@@ -52,11 +52,17 @@ header {
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding-bottom: 80px;
 }
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  background: var(--paper);
+  color: var(--ink);
+  padding: var(--space);
+  border-top: 1px solid;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
