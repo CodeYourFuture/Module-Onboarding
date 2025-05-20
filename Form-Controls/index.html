@@ -15,53 +15,63 @@
     <main>
       <form>
         <!-- REQUIREMENTS -->
-        <!-- what is the custome's name? (min 2 characters) -->
+        <!-- what is the customer's name? (min 2 characters) -->
          <div>
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required mainlength="2" pattern=".{2,}" />
+           <label for="name">Full Name:</label><br />
+           <input type="text" id="name" name="name" required mainlength="2" autocomplete="name" /><br /><br />
          </div> 
 
         <!-- What is the customer's email? (must be valid) -->
          <div>
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required />
+           <label for="email">Email Address:</label><br />
+           <input type="email" id="email" name="email" required autocomplete="email" /><br /><br />
          </div>
 
         <!-- What colour should this t-shirt be? (only 3 options) -->
         <fieldset>
           <legend>Choose a T-shirt Color:</legend> 
+
           <div>
             <input type="radio" id="red" name="color" value="red" />
             <label for="red">Red</label>
-          </div>
+          </div><br />
+
           <div>
             <input type="radio" id="blue" name="color" value="blue" />
             <label for="blue">Blue</label>
-          </div>
+          </div><br />
+
           <div>
             <input type="radio" id="green" name="color" value="green" />
             <label for="green">Green</label>
-          </div>
-        </fieldset>
+          </div><br />
+        </fieldset><br />
 
        <!-- T-shirt Size -->
       <div>
-        <label for="size">Select Size:</label>
-        <select id="size" name="size" required>
-         <option value="">--Select a Size--</option>
-         <option value="XS">XS</option>
-         <option value="S">S</option>
-         <option value="M">M</option>
-         <option value="L">L</option>
-         <option value="XL">XL</option>
-         option value="XXL">XXL</select>option>
-        </select>
+         <label for="size">Select Size:</label>
+         <select id="size" name="size" required>
+           <option value="">--Select a Size--</option>
+           <option value="XS">XS</option>
+           <option value="S">S</option>
+           <option value="M">M</option>
+           <option value="L">L</option>
+           <option value="XL">XL</option>
+           <option value="XXL">XXL</option>
+        </select><br /><br />
       </div>
+
+      <!-- Submit button (optional for testing)-->
+       <div>
+         <button type="submit">Submit</button>
+       </div>
       </form>
     </main>
+
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      
+      <h2>By Zadri Abdule</h2>
     </footer>
   </body>
 </html>
