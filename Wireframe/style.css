@@ -31,6 +31,13 @@ body {
   color: var(--ink);
   font: var(--font);
   background-color:lightsalmon;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
 }
 #wireframe-title {
   font-size: 2rem;
@@ -56,7 +63,7 @@ svg {
   width: auto;
   height: 15px;
   font-weight: bold;
-  allign-items: center;
+  align-items: center;
   text-align: center;
   align-content: center;
   display: flex;
@@ -80,6 +87,12 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  margin-top: auto;
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin-left: 0px;
+  padding-right: 0px;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
