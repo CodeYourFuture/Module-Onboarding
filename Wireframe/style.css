@@ -24,6 +24,7 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -31,16 +32,21 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  max-height: fit-content;
 }
+
 img,
 svg {
-  width: 100%;
-  object-fit: cover;
+  aspect-ratio: 16/10;
+  padding-top: var(--space);
+  padding-bottom: var(--space);
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -49,11 +55,7 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -65,10 +67,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+
+  >*:first-child {
     grid-column: span 2;
   }
 }
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -80,10 +84,82 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
+
+  >* {
     grid-column: 2/3;
   }
-  > img {
+
+  >img {
     grid-column: span 3;
+    box-sizing: border-box;
+    width: 90%;
+    margin: var(--space) auto 0 auto;
+    display: block;
   }
+
+  >h2,
+  h3,h4 {
+    padding: var(--space);
+    color: #0771f2;
+    margin-bottom: auto;
+    font-style: oblique;
+    font-size: x-large;
+  }
+  >p {
+    margin-top: auto;
+    padding: var(--space);
+    width: fit-content;
+  }
+  >.gitbranch {
+    margin-bottom: 70px;
+    padding: var(--space);
+    width: fit-content;
+  }
+
+  >a {
+    align-self: flex-start;
+    margin-top: auto;
+    background-color: #af424c;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: var(--space);
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+  }
+
+}
+
+header {
+  color: #af424c;
+  text-align: center;
+  font-style: italic;
+  font-size: x-large;
+  margin: auto;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: #af424c;
+  color: #fff;
+  font-size: 12px;
+  width: 99%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  margin-top: 20px;
+
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 10px;
 }
