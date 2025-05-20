@@ -1,4 +1,3 @@
-/*====== Design Palette ======*/
 :root {
   --paper: oklch(99% 0 0);
   --ink: oklch(20% 0 0);
@@ -7,62 +6,57 @@
   --line: 1px solid oklch(80% 0 0);
   --container: min(90%, 1200px);
 }
-/* ====== Base Elements ====== */
+
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
   margin: 0;
   min-height: 100vh;
+  padding-bottom: 100px;
 }
-a {
+
+header {
+  text-align: center;
   padding: var(--space);
-  border: var(--line);
-  border-radius: 4px;
-  display: inline-block;
-  margin-top: var(--space);
-  text-decoration: none;
-  color: inherit;
-  transition: background 0.2s;
+  max-width: var(--container);
+  margin: 0 auto var(--space) auto;
 }
-a:hover{
-  background: oklch(95% 0 0);
+
+header p {
+  margin-top: 2rem;
 }
-/* ====== Site Layout ====== */
+
+h1 {
+  margin: 0 auto;
+  width: fit-content;
+}
+
 main {
   max-width: var(--container);
   margin: 0 auto;
   padding: var(--space);
-  padding-bottom: 100px;
-
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%
-  text-align: center;
-  background: var(--paper);
-  border-top: var(--line);
+
+.readme-article {
+  border: var(--line);
   padding: var(--space);
+  margin-bottom: var(--space);
 }
 
+.bottom-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+}
 
-/* ====== Article Layout ======*/
 article {
   border: var(--line);
-  border-radius: 8px;
   padding: var(--space);
-  margin-bottom: calc(var(--space) * 2); 
-  text-align: center;
+  height: 100%;
 }
 
-article img{
-  display: block;
-  margin: 0 auto var(--space) auto;
-  height: 60px;
-  width: auto;
-}
-article h2 {
-  margin-top: 0;
-  color: oklch(30% 0.2 250);
-}
+article img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
