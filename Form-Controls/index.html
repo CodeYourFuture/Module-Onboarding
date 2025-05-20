@@ -6,6 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="product-pick" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -14,9 +15,8 @@
     <main>
       <form method="post">
         <!-- Customer name-->
-        <p>
+        <div class="form-group">
           <label for="username">Name:</label>
-          <br>
           <input
             type="text"
             id="username"
@@ -26,12 +26,11 @@
             pattern="^(?!.* {2})[A-Za-z]+(?: [A-Za-z]+)*$"
             title="Please enter a valid name. No numbers or special characters allowed."
           />
-        </p>
+        </div>
 
         <!-- Customer email-->
-        <p>
+        <div class="form-group">
           <label for="email">Email:</label>
-          <br>
           <input
             type="email"
             id="email"
@@ -39,24 +38,22 @@
             required
             placeholder="Enter your email"
           />
-        </p>
+        </div>
 
         <!-- Product colour (limited to 3 options)-->
-        <p>
+        <fieldset class="form-group">
           <label for="colour">Colour:</label>
-          <br>
           <select id="colour" name="colour" required>
             <option value=""> - Select a colour - </option>
             <option value="red">Red</option>
             <option value="blue">Blue</option>
             <option value="green">Green</option>
           </select>
-        </p>
+        </fieldset>
 
         <!-- Product size (XS-XXL)-->
-        <p>
+        <fieldset class="form-group">
           <label for="size">Size:</label>
-          <br>
           <select id="size" name="size" required>
             <option value=""> - Select a size - </option>
             <option value="xs">XS</option>
@@ -66,7 +63,7 @@
             <option value="xl">XL</option>
             <option value="xxl">XXL</option>
           </select>
-        </p>
+        </fieldset>
         <br>
 
         <!-- Submit Button -->
