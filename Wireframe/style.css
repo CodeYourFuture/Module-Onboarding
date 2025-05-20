@@ -30,16 +30,34 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+
 }
+.title-container{
+  text-align:center;
+}
+header{ 
+  border: 1px solid grey;
+  color:rgb(54, 15, 87);
+  height: min-content;
+  overflow:hidden;
+  padding-bottom:20px;
+  }
+  
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
-}
+  font-weight: bold;
+  border-style: double;
+  border-color:rgb(1, 34, 34);
+  color:rgb(54, 15, 87);} 
+
 img,
 svg {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  margin-top: 15px;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -50,10 +68,18 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   text-align: center;
+  padding: var(--space);
+  border-top: var(--line);
+  background: var(--paper);
+  z-index: 100;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -75,15 +101,30 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
+  background-color:white;
+  color:rgb(54, 15, 87);
   border: var(--line);
-  padding-bottom: var(--space);
+  padding-bottom:20px;
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+  grid-template-rows: auto auto 1fr;
   > * {
     grid-column: 2/3;
+  }}
+   
+  img {
+    max-width:800px;
+    grid-column: span 2/3;
+    aspect-ratio:16/9;
+    grid-row:1;
+    margin:auto;
   }
-  > img {
-    grid-column: span 3;
-  }
+article a {
+  align-self: center;
+  margin-top: auto; 
+}
+h2{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
