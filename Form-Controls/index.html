@@ -13,29 +13,33 @@
     </header>
     <main>
       <form>
+        <!--this requred minimum two character -->
         <label for="name">Full Name</label>
         <div>
          <input type="text" name="name" id="name" placeholder="Enter your full name" minlength="2" required >
         </div>
         <br>
+         <!--this has email validation -->
           <label for="email">Email Address:</label>
           <div>
           <input type="email" name="email" id="email" placeholder="name@example.com" required >
         </div>
         <br>
+         <!--this requred colour selction from three options -->
            <label for="color">Select T-shirt color:</label>
           <div>
             <select type="colour" name="colour" id="colour" required>
               <option value="Green">Green</option>
-              <option value=""Black>Black</option>
+              <option value="Black">Black</option>
               <option value="Red">Red</option>
             </select>
           </div>
         <br>
-          <label for="size">Select T-shirt Size</label>
+         <!--this requred selction from six options -->
+          <label for="size">Select T-shirt Size:</label>
         <div>
           <select name="size" id="size" required>
-    <option value="" disabled selected>Select a size</option>
+          <option value="" disabled selected>Select a size:</option>
           <option label="XS" value="XS">S</option>
           <option label="S" value="S">S</option>
           <option label="M" value="M">S</option>
