@@ -67,6 +67,27 @@ svg {
   text-align: center;
   align-content: center;
   display: flex;
+  padding-left: 10px;
+  position: relative;
+  bottom: 0;
+  left: 10px;
+}
+#button3 {
+  background-color: orangered;
+  color:white;
+  border-radius: 7px;
+  width: auto;
+  height: 15px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  padding-left: 10px;
+  position: relative;
+  bottom: 0;
+  top: 48px;
+  left:10px;
 }
 .article-img {
   width: 100%;
@@ -75,6 +96,19 @@ svg {
   border-radius: 7px;
   height: 300px;
 }
+.bottom-header {
+ display: inline-block;
+ position: relative;
+ left: 10px;
+}
+h2 {
+  position: relative;
+  left: 10px;
+}
+p {
+  padding: 10px;
+}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -126,4 +160,5 @@ article {
   > img {
     grid-column: span 3;
   }
+  display: block;
 }
