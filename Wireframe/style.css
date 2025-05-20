@@ -112,7 +112,7 @@ article {
   > * {
     grid-column: 2/3;
   }}
-  > 
+   
   img {
     max-width:800px;
     grid-column: span 2/3;
