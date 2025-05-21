@@ -41,11 +41,14 @@ footer {
 }
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #f1f1f1;
-    border-radius: 5px;
     margin-top: 10px;
+}
+.btn button {
+    padding: 12px 20px;
+    font-size: 16px;
+    min-width: 48px;
+    min-height: 48px;
+    margin: 8px 0;
 }
 .btn:hover {
     background-color: #0056b3;
