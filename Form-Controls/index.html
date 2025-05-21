@@ -10,58 +10,60 @@
   <body>
     <header>
       <h1>Product Pick</h1>
-      <h2>By Hibo Sharif </h2>
+      <h2>By Hibo Sharif</h2>
     </header>
     <main>
       <form>
-        <div>
-        <label for= "name"> Name </label>
-<input type="text" name="name" id="name" required  
-pattern="[A-Za-z\s]{2,50}" title="Name should only contain letters and spaces (2-50 characters)">
-</div><br><br>
-<div> 
-    <label for="email"> Email</label>
-    <input type="email" name="email" id="email" required >
-</div><br><br>
-<div>
-    <label for="tshirtcolour">Tshirt-colour</label>
-    <select name="tshirtcolour" id="tshirtcolour">
-        <option value="Blue"> Blue</option>
-       <option label="Purple" value="Purple"> Purple</option> 
-       <option label="Orange" value="Orange"> Orange</option> 
-    </select>
-</div><br><br>
-<div>
-  <label for="Size"> Size</label>
-  <select name="Size" id="Size">
-    <option value="size"> XS </option>
-     <option value="size"> S </option>
-      <option value="size"> M </option>
-       <option value="size"> L </option>
-        <option value="size"> XL </option>
-         <option value="size"> XXL</option>
-  </select></div><br>
-  <button type="reset">Reset</button>
-<button type="submit">Submit</button>
+        <div style="margin-bottom: 20px">
+          <label for="name"> Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            pattern="[A-Za-z\s]{2,50}"
+            title="Name should only contain letters and spaces (2-50 characters)"
+          />
+        </div>
 
-  
-        <!-- We are selling t-shirts. Write a form to collect the following data:
+        <div style="margin-bottom: 20px">
+          <label for="email"> Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
 
-Our customers already have accounts, so we know their addresses and charging details already.
- We don't need to collect that data. We want to confirm they are the right person, then get them to choose a colour and size.
+        <div style="margin-bottom: 20px">
+          <label for="tshirtcolour">Tshirt-colour</label>
+          <select name="tshirtcolour" id="tshirtcolour" required>
+            <option value="">--Select a colour</option>
+            <option value="Blue">Blue</option>
+            <option value="Purple">Purple</option>
+            <option value="Orange">Orange</option>
+          </select>
+        </div>
 
-Writing that out as a series of questions to ask yourself:
+        <div style="margin-bottom: 20px">
+          <label for="size"> Size</label>
+          <select name="size" id="Size" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
 
-What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
-What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
-What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
-All fields are required. Do not write a form action for this project.-->
+        <div style="margin-top: 20px">
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
+
     <footer>
-    
-      
+      <div style="margin-top: 60px; margin-bottom: 80px">
+        <p>By ITP May-2025 Hibo Sharif</p>
+      </div>
     </footer>
   </body>
 </html>
