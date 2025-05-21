@@ -52,6 +52,8 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  border: 1px solid black;
+  padding: 20px;
 }
 footer {
   bottom: 0;
