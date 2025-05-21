@@ -9,99 +9,67 @@
     <meta name="theme-color" content="#392f5a"/>
   </head>
   <body>
-    <header style="text-align: center;">
-      <h1>Product Pick</h1>
+    <header>
+        <h1>Product Pick</h1>
     </header>
     <main>
-      <form class="tshirt-form" id="orderForm" novalidate style="max-width: 500px; margin: 20px auto; padding: 20px; border: 2px solid #fff8f0">
-    <!-- Customer Section -->
-    <fieldset style="margin-bottom: 20px; padding: 10px; border: 1px solid #392f5a">
-        <legend class="sr-only" style="color: #392f5a; font-weight: bold"><h2>Your Details</h2></legend>
-        
-        <div class="form-group">
-            <label for="fullname" style="display: block; margin-bottom: 1rem;">Full Name:<br>
-            <input type="text" id="fullname" name="fullname" required 
-                   pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]{2,50}$"
-                   title="Please enter your full name (letters and spaces only)"
-                   minlength="2"
-                   maxlength="50"
-                   aria-describedby="nameHelp"
-                   autocomplete="name"
-                   style="width: 96%; padding: 8px; margin-top: 8px; border:1px solid #9dd9d2; background: #fff8f8;">
-             <div id="nameHelp" class="help-text">As it appears on your account</div>
-             </label>
-        </div>
+        <form class="tshirt-form" id="orderForm">
+            <fieldset>
+                <legend class="sr-only"><h2>Your Details</h2></legend>
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name:<br>
+                        <input type="text" id="fullname" name="fullname" required 
+                               pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]{2,50}$"
+                               title="Please enter your full name (letters and spaces only)"
+                               minlength="2"
+                               maxlength="50"
+                               aria-describedby="nameHelp"
+                               autocomplete="name">
+                        <div id="nameHelp" class="help-text">As it appears on your account</div>
+                    </label>
+                </div>
 
-        <div class="form-group">
-            <label for="email" style="display: block; margin-bottom: 10px">Email Address:<br>
-            <input type="email" id="email" name="email" 
-                   required
-                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                   title="Please enter a valid email address"
-                   aria-describedby="emailHelp"
-                   autocomplete="email"
-                   style="width: 96%; padding: 8px; margin-top: 8px; border: 1px solid #9dd9d2; background: #fff8f8;">
-            <div id="emailHelp" class="help-text">We'll send confirmation here</div>
-            </label>
-        </div>
-    </fieldset>
+                <div class="form-group">
+                    <label for="email">Email Address:<br>
+                        <input type="email" id="email" name="email" 
+                               required
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                               title="Please enter a valid email address"
+                               aria-describedby="emailHelp"
+                               autocomplete="email">
+                        <div id="emailHelp" class="help-text">We'll send confirmation here</div>
+                    </label>
+                </div>
+            </fieldset>
 
-    <!-- T-Shirt Section -->
-    <fieldset style="margin-bottom: 1rem; padding: 10px; border: 1px solid #9dd9d2">
-        <legend class="sr-only" style="color: #392f5a; font-weight: bold"><h2>T-Shirt Details</h2></legend>
-        
+            <fieldset>
+                <legend class="sr-only"><h2>T-Shirt Details</h2></legend>
+                
+                <div class="form-group" role="radiogroup" aria-labelledby="colorHeading">
+                    <h3 id="colorHeading">Choose Color:</h3>
+                    <div class="options-group">
+                        <label><input type="radio" name="color" value="red" required></label>
+                        <label><input type="radio" name="color" value="blue">Blue</label>
+                        <label><input type="radio" name="color" value="green">Green</label>
+                    </div>
+                </div>
 
-        <div class="form-group" role="radiogroup" aria-labelledby="colorHeading" style="margin-bottom: 15px">
-            <h3 id="colorHeading" style="font-weight: bold">Choose Color:</h3>
-            <div class="options-group">
-            <label style="display: block; margin: 5px 0"><input type="radio" name="color" value="red" required 
-                           aria-required="true">
-                    Red
-                </label>
-                <label style="display: block; margin: 5px 0">
-                    <input type="radio" name="color" value="blue">
-                    Blue
-                </label>
-                <label style="display: block; margin: 5px 0">
-                    <input type="radio" name="color" value="green">
-                    Green
-                </label>
-            </div>
-        </div>
+                <div class="form-group" role="group" aria-labelledby="sizeHeading">
+                    <h3 id="sizeHeading">Choose Size: <br></h3>
+                    <div class="options-group" data-required="true">
+                        <label><input type="radio" name="size" value="XS" required>XS</label>
+                        <label><input type="radio" name="size" value="S">S</label>
+                        <label><input type="radio" name="size" value="M">M</label>
+                        <label><input type="radio" name="size" value="L">L</label>
+                        <label><input type="radio" name="size" value="XL">XL</label>
+                        <label><input type="radio" name="size" value="XXL">XXL</label>
+                    </div>
+                </div>
+            </fieldset>
 
-        <div class="form-group" role="group" aria-labelledby="sizeHeading">
-            <h3 id="sizeHeading">Choose Size: <br></h3>
-            <div class="options-group" data-required="true">
-                <label style="display: inline-block; margin: 5px 10px 5px 0">
-                    <input type="radio" name="size" value="XS" required>
-                    XS
-                </label>
-                <label style="display: inline-block; margin: 5px 10px 5px 0">
-                    <input type="radio" name="size" value="S">
-                    S
-                </label>
-                <label style="display: inline-block; margin: 5px 10px 5px 0">
-                    <input type="radio" name="size" value="M">
-                    M
-                </label>
-                <label style="display: inline-block; margin: 5px 10px 5px 0">
-                    <input type="radio" name="size" value="L">
-                    L
-                </label>
-                <label style="display: inline-block; margin: 5px 10px 5px 0">
-                    <input type="radio" name="size" value="XL">
-                    XL
-                </label>
-                <label style="display: inline-block; margin: 5px 10px 5px 0">
-                    <input type="radio" name="size" value="XXL">
-                    XXL
-                </label>
-            </div>
-        </div>
-    </fieldset>
 
-    <button type="submit" value="Place Order" aria-label="Submit order form"
-           style="outline: 2px solid #9dd9d2; outline-offset: 2px; background: #392f5a; color: #ff8811; border: none; padding: 10px 20px; cursor: pointer">Place Order</button>
+    <button type="submit" value="Place Order" aria-label="Submit order form">Place Order</button>
 </form>
     </main>
     <footer>
