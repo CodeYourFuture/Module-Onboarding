@@ -9,48 +9,53 @@
   </head>
   <body>
     <header>
-      <h1>T-shirt Select Form</h1>
+      <h1>The T-shirt Store</h1>
     </header>
     <main>
-      <form>
-        <h3>Customer Information</h3>
-        <div><label for="fullname">Full Name:</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Your full name" required></div>
-         
-          <br>
-        
-        <div><label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required></div>
-        
-          <br>
-        <h3>T-shirt Options</h3>
-        <div><label for="colour">T-shirt Colour:</label>
-          <select id="colour" required>
-            <option value="" disabled selected> Please select a colour</option>
-            <option value="Red">Red</option>
-            <option value="White">White</option>
-            <option value="Black">Black</option>
-          </select>
-        </div>
+      <form id="tshirt-form" action="" method="post">
 
-          <br>
+        <!-- 1. customer's name? validate it. But what is a valid name? I must decide something.
+        2. customer's email? must make sure the email is valid.
+        3. T-shirt colour, give 3 options. How will I make sure they don't pick other colours?
+        4. T-shirt size, 6 options: XS, S, M, L, XL, XXL
+        All fields are required.
+        Do not write a form action for this project. -->
+        <h1>T-shirt Select Form</h1>
+          <h2>Customer Information</h2>
+            <div><label for="fullname">Full Name:</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Your full name" required></div><br>
+        
+            <div><label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required></div><br>
 
-          <div><label for="size">T-shirt Size:</label>
-            <select id="size" required>
-              <option value="" disabled selected> Please select a colour</option>
-              <option value="Red">X-SMALL</option>
-              <option value="White">SMALL</option>
-              <option value="Black">Medium</option>
-              <option value="Black">Large</option>
-              <option value="Black">X-Large</option>
-              <option value="Black">XX-Large</option>
-            </select>
-          </div>
+            <h3>T-shirt Options</h3>
+            <div>
+              <label for="colour">T-shirt Colour:</label>
+              <select id="colour" required>
+                <option value="" disabled selected> Select T-shirt colour</option>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+              </select>
+            </div>
+
+            <div><label for="size">T-shirt Size:</label>
+              <select id="size" required>
+                <option value="" disabled selected> Select T-shirt size</option>
+                <option value="x-small">XS</option>
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="x-large">XL</option>
+                <option value="xx-large">XXL</option>
+              </select>
+            </div><br>
+          <input type="submit" value="Submit">
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By Aly Elsharkawy</h2>
+          <h2>By Aly Elsharkawy</h2>
     </footer>
   </body>
 </html>
