@@ -31,7 +31,6 @@ body {
   color: var(--ink);
   font: var(--font);
   border: var(--line);
-  border: 5px solid black;
 
 }
 a {
@@ -68,7 +67,6 @@ main {
     grid-column: span 2;
   }
   text-align: center;
-  
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -86,14 +84,14 @@ Keeping things orderly and separate is the key to good, simple CSS.
 
 article {
   border: var(--line);
-  border: 3px solid black;
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
   }
-  
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .allArticle{
@@ -113,7 +111,7 @@ article {
 
 .secondArticle img{
   width: 100%;
-  max-height: 100%;
+  height: 300px;
   margin: auto;
   
 }
@@ -121,12 +119,14 @@ article {
 .thirdArticle img{
   width: 100%;
   margin:auto;
-  height: 448px;
+  max-width: 100%;
+  height: 300px;
   
 }
 
 .contenedor{
   display: flex;
+  height: 600px;
 }
 
 .secondArticle .thirdArticle{
@@ -134,6 +134,7 @@ article {
   padding: 20px;
   border: 1px solid #ccc;
   width: 100%;
+  
 }
 
 .secondArticle{
@@ -143,7 +144,9 @@ article {
 
 .thirdArticle{
   width: 100%;  
+  height: 400px;
 }
+
 
 .footer {
   position: fixed;
