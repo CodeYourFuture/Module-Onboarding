@@ -17,43 +17,92 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+  --background: oklch(98% 0.03 280);
+  --text: oklch(15% 0.02 270);
+  --accent: oklch(45% 0.05 200);
+  --accent-dark: oklch(35% 0.02 200);
+  --card-background: white;
+  --border: 1px solid oklch(85% 0.05 270);
+   --font: 105%/1.6 'Inter', system-ui, sans-serif;
+  --space: clamp(12px, 2vw, 24px);
+  --shadow: 0 4px  16px rgba(0, 0, 0, 0.05);
+  --container: 1100px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--background);
+  color: var(--text);
   font: var(--font);
+  margin: 0;
+  padding: 0;  
+  padding-bottom: 80px;
+
 }
+
+h1, h2 {
+
+  margin-top: 0;
+
+}
+
+
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+
+ align-self: flex-start;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  
 }
-img,
-svg {
+
+
+a:hover {
+   background-color: var(--accent-dark);
+  
+
+}
+
+header {
+  background-color: var(--accent);
+  color: white;
+  text-align: center;
+  padding: calc(var(--space) * 2);
+ margin-bottom: var(--space);
+}
+
+header h1 {
+  margin-bottom: var(--space);
+  font-size: 2rem;
+ }
+footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  object-fit: cover;
+  background-color: #eee;
+  padding: var(--space);
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space);
+  padding: var(--space);
+
+  }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -61,29 +110,36 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
+
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  background-color: var(--card-background);
+  border: var(--border);
+  border-radius: 10px;
+  padding: var(--space);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
 }
+ 
+ article > img {
+  grid-column: 1 /-1;
+  width: 100%;
+  border-radius: 6px;
+   
+}
+  
+article h2 {
+  margin: 0;
+  color: var(--accent-dark);
+}
+
+
+  
+
