@@ -51,8 +51,11 @@ button {
 
 footer {
   position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
   padding: 1rem;
   background-color: #f4f4f4;
-  margin-top: 3rem;
+  border-top: 1px solid #ccc;
 }
