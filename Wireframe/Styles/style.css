@@ -50,6 +50,7 @@ button {
 }
 
 footer {
+  position: fixed;
   text-align: center;
   padding: 1rem;
   background-color: #f4f4f4;
