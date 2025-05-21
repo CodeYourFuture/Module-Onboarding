@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <br>
+      <div>
+        <label for="customer-name">Customer Name</label>
+        <input type="text" name="customer-name" id="customer-name" pattern=".*\S.*" title="Name cannot be just spaces"
+          required>
+      </div>
+      <br>
+      <div>
+        <label for="customer-email">Customer Email</label>
+        <input type="email" name="customer-email" id="customer-email" required>
+      </div>
+      <br>
+      <div>
+        <label for="color">Color</label>
+        <select name="color" id="color">
+          <option label="White">White</option>
+          <option label="Black">Black</option>
+          <option label="Blue">Blue</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="size">Size</label>
+        <select name="size" id="size" required>
+          <option value="" disabled selected>Select a color</option>
+          <option label="XS" value="XS"></option>
+          <option label="S" value="S"></option>
+          <option label="M" value="M"></option>
+          <option label="L" value="L"></option>
+          <option label="XL" value="XL"></option>
+          <option label="XXL" value="XXL"></option>
+        </select>
+      </div>
+      <div>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By Hakan Murat Kavut</h2>
+  </footer>
+</body>
 </html>
