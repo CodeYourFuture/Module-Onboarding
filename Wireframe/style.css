@@ -24,6 +24,7 @@ As well as useful links to learn more */
   --line: 1px solid #ccc;
   --container: 1280px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -31,36 +32,42 @@ body {
   color: var(--ink);
   font: var(--font);
 }
-h1{
+
+h1 {
   text-align: center;
 }
+
 a {
   padding: 0.3rem 0.5rem;
   border: var(--line);
-  max-width:fit-content;
+  max-width: fit-content;
   font-size: 16px;
   display: inline-block;
 }
-#textc{
+
+#textc {
   text-align: center;
 }
+
 img {
   width: 75%;
   object-fit: cover;
 }
+
 .center-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
 }
+
 #git-image {
- width: 1000px;
-  height:100%;
+  width: 1000px;
+  height: 100%;
 }
 
-#sizeadj{
+#sizeadj {
   width: 67%;
 }
 
@@ -84,6 +91,7 @@ footer {
   line-height: 60px;
 
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -95,22 +103,25 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+
+  >*:first-child {
     grid-column: span 2;
   }
 }
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
-border: var(--line);
+  border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
+
+  >* {
     grid-column: 2/3;
-}
+  }
 }
