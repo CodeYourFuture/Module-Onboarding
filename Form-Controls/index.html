@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,61 +6,137 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      background {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 20px;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      main {
+        max-width: 600px;
+        background: white;
+        padding: 20px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(121, 104, 104, 0.1);
+        border-radius: 8px;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      legend {
+        font-weight: bold;
+        padding: 0 10px;
+      }
+
+      div {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"], select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #888;
+      }
+    </style>
   </head>
-      <body>
+  <body>
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
-     <form>
+      <form>
+        <fieldset>
+          <legend>Customer details</legend>
+          <div>
+            <label for="name">Customer Name (required):</label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
- <fieldset>
-   <legend>Customer details</legend>
-   <div>
-     <label for="name">Customer Name(required):</label>
-      <input type="text" id="name" name="name" required>
+          <div>
+            <label for="Email">Email (required):</label>
+            <input type="text" id="Email" name="Email" required />
+          </div>
+        </fieldset>
 
-   </div>
+        <fieldset>
+          <legend>T-shirt color</legend>
+          <div>
+            <label for="color">Color (required):</label>
+            <select id="color" name="color" required>
+              <option value="" disabled selected>Select a color</option>
+              <option value="Yellow">Yellow</option>
+              <option value="Green">Green</option>
+              <option value="Red">Red</option>
+            </select>
+          </div>
+        </fieldset>
 
-   <div>
-     <label for="Email">Email(required):</label>
-     <input type="text" id="Email" name="Email" required>
-    </div>
+        <fieldset>
+          <div>
+            <label for="size">T-shirt size (required):</label>
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select size</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </div>
+        </fieldset>
 
-  </fieldset>
-    <fieldset>
-     <legend>T-shirt color</legend>
-     <div>
-       <label for="color">color(required):<label>
-    <select id="color" name="color" required>
-        <option Value=""disabled selected>select a color</option>
-        <option value="Yellow">Yellow</option>
-        <option Value="Green">Green</option>
-        <option value="Red">Red</option>
-        </select>
-      </div></fieldset>
-
-<fieldset>
-         <div>
-           <label for="size">T shirt size(required):</label>
-     <select id="size" name="size" required>
-            <option Value=""disabled selected>select size</option>
-            <option value="S">S</option>
-            <option Value="M">M</option>
-            <option value="L">L</option> 
-            <option value="XL">XL</option>
-            <option Value="XXL">XXL</option>
-</select>
-
-</div>
-</fieldset>
-
-
-<button type="Submit">Submit Order
-</button>
-  </form>
- </main>
-    <footer> 2025 Innocent Niwatwine </footer>
-   </body>
+        <button type="submit">Submit Order</button>
+      </form>
+    </main>
+    <footer>2025 Innocent Niwatwine</footer>
+  </body>
 </html>
-      
+
