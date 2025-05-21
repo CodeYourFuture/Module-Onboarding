@@ -30,18 +30,16 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  border: var(--line);
-
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
-img {
-  width: 35%;
+img,
+svg {
+  width: 100%;
   object-fit: cover;
-  
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -51,7 +49,11 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -66,98 +68,22 @@ main {
   > *:first-child {
     grid-column: span 2;
   }
-  text-align: center;
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-
-.headerWireframe {
-  font-size: 60px; 
-}
-
-#header2{
-  font-size: 40px; 
-}
-
 article {
   border: var(--line);
+  padding-bottom: var(--space);
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
   }
-  padding-bottom: 10px;
-  padding-top: 10px;
+  > img {
+    grid-column: span 3;
+  }
 }
-
-.allArticle{
-  padding: 2% 5% 10% 5%;
-}
-
-.firstArticle{
-  padding-bottom: 3%;
-}
-
-.firstArticle img{
-  width: 100%;
-  max-height: 100%;
-  margin: auto;
-  
-}
-
-.secondArticle img{
-  width: 100%;
-  height: 300px;
-  margin: auto;
-  
-}
-
-.thirdArticle img{
-  width: 100%;
-  margin:auto;
-  max-width: 100%;
-  height: 300px;
-  
-}
-
-.contenedor{
-  display: flex;
-  height: 600px;
-}
-
-.secondArticle .thirdArticle{
-  flex: 1; 
-  padding: 20px;
-  border: 1px solid #ccc;
-  width: 100%;
-  
-}
-
-.secondArticle{
-  width: 100%;
-  padding-right: 3%;
-}
-
-.thirdArticle{
-  width: 100%;  
-  height: 400px;
-}
-
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 14px;
-  z-index: 1000;
-}
- 
