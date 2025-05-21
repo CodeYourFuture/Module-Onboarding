@@ -1,4 +1,4 @@
-<style>
+/* General resets */
 * {
   margin: 0;
   padding: 0;
@@ -85,5 +85,3 @@ footer {
   font-size: 0.9rem;
   color: #777;
 }
-
-</style>
