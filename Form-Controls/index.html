@@ -8,6 +8,7 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
@@ -17,7 +18,8 @@
       <br>
       <div>
         <label for="customer-name">Customer Name</label>
-        <input type="text" name="customer-name" id="customer-name" required>
+        <input type="text" name="customer-name" id="customer-name" pattern=".*\S.*" title="Name cannot be just spaces"
+          required>
       </div>
       <br>
       <div>
@@ -36,7 +38,8 @@
       <br>
       <div>
         <label for="size">Size</label>
-        <select name="size" id="size"> 
+        <select name="size" id="size" required>
+          <option value="" disabled selected>Select a color</option>
           <option label="XS" value="XS"></option>
           <option label="S" value="S"></option>
           <option label="M" value="M"></option>
@@ -49,8 +52,8 @@
 
       <div>
         <br>
-        <button type="reset">Reset</button>
         <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </div>
     </form>
   </main>
