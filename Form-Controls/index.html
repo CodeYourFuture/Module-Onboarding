@@ -6,28 +6,83 @@
     <title>My form exercise May 2025</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        header { max-width: 600px; margin: 10; padding: 10px; }
+        main { font-family: Arial, sans-serif; margin: 10; padding: 10px; }
+        fieldset { max-width: 500px }
+        legend { font-weight: bold;}
+        .form-group { margin-bottom: 15px; }
+        input, select { display: inline-block; width: 100%; padding: 8px; margin-bottom: 5px; max-width: 150px; }
+        label { display: inline-block; width: 100%; padding: 4px; margin: 5px; max-width: 120px; }
+        .radioButton { max-width: 20px; margin-right: 5px; }
+        button { padding: 10px 20px; }
+        footer { max-width: 600px; margin: 10; padding: 10px; }
+    </style>
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
+      <p>
+        * indicates required field
+      </p>
+       <form action="#" method="post">
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
 
-        //first name
+        <fieldset>
+          <legend>Customer Information</legend>
+          <p></p>
+        <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" value="Your First Name" pattern="[A-Za-z]{2,}" title="First name must contain only letters and be at least 2 characters long" required>
+        </div>
 
-        //last name
         
-        //email
-
-        //color
-
-        //size
+        <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" value="Your Last Name" pattern="[A-Za-z]{2,}" title="Last name must contain only letters and be at least 2 characters long" required>
+        </div>
         
+      
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" value="Your Email Address" title="Please enter a valid email address (e.g., name@example.com)" required>
+        </div>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Order Selection</legend>
+         <div class="form-group">
+            <p>T-Shirt Choice *</p>
+            <input class="radioButton" type="radio" id="black" name="color" value="Black" required>
+            <label for="black">Black</label><br>
+            <input class="radioButton" type="radio" id="white" name="color" value="White">
+            <label for="white">White</label><br>
+            <input class="radioButton" type="radio" id="grey" name="color" value="Grey">
+            <label for="grey">Grey</label>
+        </div>
+
+        
+         <div class="form-group">
+            <label for="size">T-Shirt Size *</label>
+            <select id="size" name="size" required>
+                <option value="" disabled selected>Select a size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+        </div>
+        </fieldset>
+        <br>
+
+        <button type="submit">Submit Your Pick</button>
       </form>
     </main>
     <footer>
