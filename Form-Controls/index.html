@@ -7,6 +7,7 @@
     <meta name="description" content="T-Shirt" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
       <h1>Order Your T-Shirt</h1>
@@ -20,70 +21,62 @@
             type="text"
             name="username"
             id="username"
-            minlength="2"
             required
-          />*
+            pattern="^[a-zA-Z]{2,}(?: [a-zA-Z]{2,})?$"
+          />
+          <span> *</span>
         </div>
         <br />
 
         <!-- This input satisfies the requirement to collect the user's email -->
         <div>
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />*
+          <input type="email" name="email" id="email" required /><span> *</span>
         </div>
         <br />
-        <hr />
+
         <!-- These radio buttons satisfy the requirement to let the user choose a T-shirt color -->
-        <div>
-          <span>Choose your T-shirt color:*</span>
+        <fieldset>
+          <legend>Choose a color:</legend>
           <div>
-            <div>
-              <input type="radio" name="color" id="red" value="red" required />
-              <label for="red">🟥 Red</label>
-            </div>
-            <br />
-            <div>
-              <input type="radio" name="color" id="green" value="green" />
-              <label for="green">🟩 Green</label>
-            </div>
-            <br />
-            <div>
-              <input type="radio" name="color" id="blue" value="blue" />
-              <label for="blue">🟦 Blue</label>
-            </div>
-            <br />
-            <div>
-              <input
-                checked
-                type="radio"
-                name="color"
-                id="black"
-                value="black"
-              />
-              <label for="black">⬛ Black</label
-              ><sup><small>most popular</small></sup>
-            </div>
+            <input type="radio" name="color" id="red" value="red" required />
+            <label for="red">🟥 Red</label>
           </div>
-        </div>
+          <br />
+          <div>
+            <input type="radio" name="color" id="green" value="green" />
+            <label for="green">🟩 Green</label>
+          </div>
+          <br />
+          <div>
+            <input type="radio" name="color" id="blue" value="blue" />
+            <label for="blue">🟦 Blue</label>
+          </div>
+          <br />
+          <div>
+            <input type="radio" name="color" id="black" value="black" />
+            <label for="black">⬛ Black</label
+            ><sup><small>most popular</small></sup>
+          </div>
+        </fieldset>
         <br />
-        <hr />
         <!-- This dropdown satisfies the requirement to let the user choose a T-shirt size -->
         <div>
-          <label for="size">Choose your T-shirt size:*</label>
+          <label for="size">Choose your T-shirt size:</label>
           <select name="size" id="size" required>
-            <option selected disabled>--Please choose a size--</option>
-            <option value="x-smal">X-Small</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="x-large">X-Large</option>
-            <option value="xx-Large" disabled>
-              XX-Large --out of stock
-            </option></select
-          >*
+            <option value="" selected disabled>--Please choose a size--</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl" disabled>XXL --out of stock</option></select
+          ><span> *</span>
         </div>
         <br />
-        <button type="submit">Submit</button>
+        <button aria-label="Submit your T-shirt order" type="submit">
+          Submit Order
+        </button>
       </form>
     </main>
     <footer>
