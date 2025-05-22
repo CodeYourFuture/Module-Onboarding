@@ -18,29 +18,26 @@
          <br>
          <br>
          <label for="email">Email</label>
-         <input type="text" id="email" name="name" required>
+         <input type="email" id="email" name="name" required>
          <br>
          <hr>
          <br>
-         <fieldset>
+         <div>
+<fieldset>
           <legend>Choose color of t-shirts</legend>
-
          <input type="radio" id="Black" name="color" value="Black" required>
          <label for="Black">Black</label>
-
          <input type="radio" id="White" name="color" value="White">
          <label for="White">White</label>
-
          <input type="radio" id="Yellow" name="color" value="Yellow">
          <label for="Yellow">Yellow</label>
          </fieldset>
-         
+         </div>
          <br>
          <br>
-         <label for="size">
-          Choose your size
-          </label>
+         <label for="size">Choose your size</label>
          <select name="size" id="size" required>
+          <option value="" disabled selected>Select a size</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>
