@@ -12,6 +12,9 @@
   --color-highlight: oklch(80% 0.05 300); /* Gentle Purple */
 }
 
+.main-title {
+  text-align: center;
+}
 header {
   margin-left: auto;
   margin-right: auto;
