@@ -19,7 +19,7 @@
       <fieldset>
         <legend>Customer details:</legend>
         <label for="name">Name:
-          <input type="text" id="name" minlength="2" required />
+          <input type="text" id="name" minlength="2" required pattern=".*\S.*" title="Name must include at least one non-space character." />
         </label><br><br>
         <label for="surname">Surname:
           <input type="text" id="surname" minlength="2" required />
