@@ -1,5 +1,5 @@
 :root {
-  --paper: #e2d34c3f; /* Light background color */
+  --paper: lch(92.73% 95.48 109.89 / 0.476); /* Light background color */
   --ink: #000000; /* Dark text color */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
@@ -13,6 +13,7 @@ body {
   font: var(--font);
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 header {
@@ -86,7 +87,7 @@ article img {
   width: 100%;
   height: auto;
   max-height: 120px;
-  object-fit: var(--container);
+  object-fit: cover;
 }
 
 article h2 {
