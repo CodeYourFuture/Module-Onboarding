@@ -7,14 +7,20 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
+
   <body>
     <header>
       <h1>Product Pick</h1>
       <h2>By Hibo Sharif</h2>
     </header>
+
+
     <main>
       <form>
-        <div style="margin-bottom: 20px">
+        <fieldset>
+          <legend> Customr Details</legend>
+
           <label for="name"> Name </label>
           <input
             type="text"
@@ -23,25 +29,26 @@
             required
             pattern="[A-Za-z\s]{2,50}"
             title="Name should only contain letters and spaces (2-50 characters)"
-          />
-        </div>
-
-        <div style="margin-bottom: 20px">
+          /><br><br>
+        
           <label for="email"> Email</label>
           <input type="email" name="email" id="email" required />
-        </div>
+        </fieldset>
 
-        <div style="margin-bottom: 20px">
+        <fieldset>
+          <legend> T-shirt Options</legend>
+
+        
           <label for="tshirtcolour">Tshirt-colour</label>
           <select name="tshirtcolour" id="tshirtcolour" required>
             <option value="">--Select a colour</option>
             <option value="Blue">Blue</option>
             <option value="Purple">Purple</option>
             <option value="Orange">Orange</option>
-          </select>
-        </div>
+          </select><br><br>
+        
 
-        <div style="margin-bottom: 20px">
+        
           <label for="size"> Size</label>
           <select name="size" id="size" required>
             <option value="" disabled selected hidden>-- Select size --</option>
@@ -51,20 +58,18 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
-          </select>
-        </div>
+          </select><br><br>
+        </Fieldset>
 
-        <div style="margin-top: 20px">
+        
           <button type="reset">Reset</button>
           <button type="submit">Submit</button>
-        </div>
+        
       </form>
     </main>
 
     <footer>
-      <div style="margin-top: 60px; margin-bottom: 80px">
         <p>By ITP May-2025 Hibo Sharif</p>
-      </div>
     </footer>
   </body>
 </html>
