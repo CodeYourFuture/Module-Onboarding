@@ -1,27 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="this page is about choosing t-shirts based on their size and color" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <h2>Our range of t-shirts.</h2>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Customer details:</legend>
+        <label for="name">Name:
+          <input type="text" id="name" minlength="2" required pattern=".*\S.*" title="Name must include at least one non-space character." />
+        </label><br><br>
+        <label for="surname">Surname:
+          <input type="text" id="surname" minlength="2" required pattern=".*\S.*" title="Surname must include at least one non-space character." />
+        </label><br><br>
+        <label for="email">Email:
+          <input type="email" id="email" required />
+        </label><br><br>
+      </fieldset>
+      <fieldset>
+        <legend>Product details:</legend>
+        <h3>T-shirt Color:</h3>
+        <p>
+          <input type="radio" id="white" value="white" name="color" required>
+          <label for="white">White</label>         
+        </p>
+        <p>
+          <input type="radio" id="grey" value="grey" name="color">
+          <label for="grey">Grey</label>  
+        </p>
+        <p>
+          <input type="radio" id="black" value="black" name="color">
+          <label for="black">Black</label>         
+        </p>
+        <h3>T-shirt Size</h3>
+        <label for="size">Select your Size:</label>
+        <select id="size" name="size" required>
+          <option value="">--Please choose an option--</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select><br><br>
+
+
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  <footer>
+    <h2>By Alexandru Pocovnicu</h2>
+  </footer>
+</body>
+
 </html>
