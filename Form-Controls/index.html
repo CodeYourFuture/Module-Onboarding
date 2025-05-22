@@ -17,7 +17,7 @@
           <legend>Customer Information</legend>
           <div>
               <label for="customerName">Name:</label>
-              <input type="text" id="customerName" name="customerName" minlength="2" required>
+              <input type="text" id="customerName" name="customerName" minlength="2" pattern=".*\s.*" title="Please enter your name (cannot be empty and at least two characters)." required>
               <small>Please enter your name (at least two characters).</small>
           </div>
           <br><div>
