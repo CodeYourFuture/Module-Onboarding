@@ -45,6 +45,10 @@ header p,
 h1 {
   text-align: center;
 }
+
+article p {
+  text-align: justify;
+}
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
