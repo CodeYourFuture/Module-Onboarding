@@ -16,15 +16,15 @@
   <main>
     <form>
       <fieldset>
-        <legend> Contact Information</legend>
+        <legend>Contact Information</legend>
         <div>
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" required pattern=".*/S.*">
+          <input type="text" name="name" id="name" required pattern="[A-Za-z]+">
         </div>
 
-        <div><br>
+        <div>
           <label for="email">Email</label>
-          <input type="text" name="email" id="email" required>
+          <input type="email" name="email" id="email" required>
 
 
         </div>
@@ -33,14 +33,14 @@
         <label for="colors">Colors</label>
         <select id="colors" name="colors">
           <option value="" disabled selected hidden>Select a color</option>
-          <option>Red</option>
-          <option>Blue</option>
-          <option>Black</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="black">Black</option>
         </select>
 
 
 
-        <h2>Size</h2>
+        <h2>T-SHirt Sizes</h2>
         <label for="sizes">Sizes</label>
         <select id="sizes" name="sizes">
           <option value="" disabled selected hidden>Select a size</option>
