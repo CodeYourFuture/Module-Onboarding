@@ -11,34 +11,47 @@
 
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Customer Product Pick</h1>
   </header>
   <main>
     <form>
-      <!-- Customer Name -->
-      <div>
-        <label for="name">Name </label>
-        <input type="text" id="name" name="name" required />
-      </div>
+      <section>
+      <h3>Customer Information</h3>
+     
+      <table>
+        <ul>
+          <li>
+           <!-- Customer Name -->
+            <label for="name">Name </label>
+            <input type="text" id="name" name="name" required />
+          </li>
+          <br>
+          <!-- Customer Email -->
+          <li>
+            <label for="email">Email </label>
+            <input type="email" id="email" name="Email" required />
+          </li>
+        </ul> 
+      </table>
+  </section>
 
-      <!-- Customer Email -->
-      <div>
-        <label for="email">Email </label>
-        <input type="email" id="email" name="Email" required />
-      </div>
-
-      <!-- Option to choose T-Shirt color -->
-      <div>
+      <section>
+        <h3>Product Information</h3>
+        <table>
+          <ul>
+      
+      <li><!-- Option to choose T-Shirt color -->        
         <label for="color"> T-Shirt color</label>
         <select required>
           <option value="black">Black</option>
           <option value="white">White</option>
           <option value="red">Grey</option>
         </select>
-      </div>
+      </li>
+      <br>
 
-      <!-- Option to choose sizes -->
-      <div>
+      
+      <li><!-- Option to choose sizes -->
         <label for="sizes">T-Shirt Size</label>
         <select required>
           <option value="XS">XS</option>
@@ -48,12 +61,21 @@
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
         </select>
-      </div>
+      </li>
+      <br>
+
+      
+        
+    </ul>
+      </table>
+      <button type="reset">reset</button>
+      <button type="submit">submit</button>
+      </section>
     </form>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By ASHFAK AHMAD</h2>
+    <h4>By ASHFAK AHMAD</h4>
   </footer>
 </body>
 
