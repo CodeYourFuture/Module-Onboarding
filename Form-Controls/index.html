@@ -27,8 +27,8 @@
             name="name"
             id="name"
             required
-            pattern="[A-Za-z\s]{2,50}"
-            title="Name should only contain letters and spaces (2-50 characters)"
+            pattern="^(?=.*[A-Za-z])[A-Za-z\s'-]{2,50}$"
+            title="Name should be 2-50 characters long and only include letters, spaces, hyphens, or apostrophes."
           /><br><br>
         
           <label for="email"> Email</label>
