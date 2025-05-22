@@ -4,20 +4,20 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
-  background: #f5f7fa;
-  color: #181818;
+  background: AliceBlue;
+  color: Black;
 }
 
 header {
   width: 100%;
   text-align: center;
   padding: 15px;
-  background: #1a2633;
-  color: #fff;
+  background: MidnightBlue;
+  color: White;
 }
 
 header p {
-  color: #fff;
+  color: White;
   margin: 0;
 }
 
@@ -28,13 +28,13 @@ footer {
   width: 100%;
   text-align: center;
   padding: 15px;
-  background: #1a2633;
-  color: #fff;
+  background: MidnightBlue;
+  color: White;
   z-index: 100;
 }
 
 footer p {
-  color: #fff;
+  color: White;
   margin: 0;
 }
 
@@ -50,7 +50,7 @@ main {
 }
 
 article {
-  background: #fff;
+  background: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -72,25 +72,25 @@ h1 {
 }
 h2 {
   margin: 10px 0 0 0;
-  color: #1a2633;
+  color: MidnightBlue;
 }
 p {
-  color: #222;
+  color: DarkSlateGray;
 }
 
 .button-link {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 18px;
-  background: #005fa3;
-  color: #fff;
+  background: RoyalBlue;
+  color: White;
   border-radius: 4px;
   text-decoration: none;
   font-size: 1em;
   transition: background 0.2s;
 }
 .button-link:hover {
-  background: #003366;
+  background: Navy;
 }
 
 .social-media {
@@ -106,14 +106,14 @@ p {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #e0e0e0;
-  color: #181818;
+  background: Gainsboro;
+  color: Black;
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
 }
 .social-media a:hover {
-  background: #005fa3;
-  color: #fff;
+  background: RoyalBlue;
+  color: White;
 }
 .social-media svg {
   width: 18px;
