@@ -6,8 +6,10 @@ body {
 }
 
 .article1 img {
-  width: 100%;
-  inline-size: 102%;
+  width: 400px;
+  height: 200px;
+  inline-size: 100%;
+  block-size: auto;
 }
 
 .article1 {
@@ -16,10 +18,18 @@ body {
 
 .article-container img {
   width: 400px;
+  inline-size: auto;
 }
 
 .article2 img {
-  height: 220px;
+  height: 200px;
+  width: 190;
+  display: inline;
+}
+.article3 img {
+  height: 200px;
+  width: 190;
+  display: inline;
 }
 
 .header {
@@ -35,19 +45,10 @@ body {
   background-color: #f1f1f1;
 
 }
-.article-container button {
-  color:blue;
-  border-color: blue;
-}
-.article1 button {
-  color:blue;
-  border-color: blue;
-}
 .footer {
   position-try-order: 100px;
   left: 0;
   bottom: 0;
   width: 100%;
   margin-top: 20px;
-  color: rgb(51, 46, 124);
   text-align: center;}
