@@ -30,8 +30,9 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  /* height: 100vh;  */
 }
-a {
+a.framed {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
@@ -52,7 +53,10 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;          
+  width: 100%;      
   text-align: center;
+  padding: 0.5em; 
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -61,6 +65,7 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -86,4 +91,10 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+/* ====== Header Centering ====== */
+header {
+  text-align: center;
+  margin: 2em 0;
 }
