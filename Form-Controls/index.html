@@ -9,19 +9,79 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-Shirt pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
         <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          create a form with the following fields:
+          - name - validate that it is not empty have defined a valid name as a text string of two characters or more.
+          - email - cvalidate that it is not empty and is a valid email address
+           - T shirt color radio
+          - T shirt size radio
+          submit and reset button
+          -->
+
+        
+          <div>
+           <label  for="name" style="font-size: 20px">Name:</label>
+           <input type="text" id="name" name="name" required minlength="2" placeholder="Jane Doe" />
+            </div>
+          <div>
+            <label for="email" style="font-size: 20px">Email:</label>
+            <input type="email" id="email" name="email" placeholder="xyz@domain.com" required />
+          </div>
+          <br>
+           <div>
+            <label style="font-size: 20px"> T-shirt Color: </label>
+            </div>
+            <div style="margin-bottom: 8px;">
+            <input type="radio" id="color1" name="tshirt" value="Red" />
+            <label for="color1">Red</label>
+            </div>
+            <div style="margin-bottom: 8px;">
+            <input type="radio" id="color2" name="tshirt" value="Blue"/>
+            <label for="color2">Blue</label>
+            </div>
+            <div style="margin-bottom: 8px;">
+            <input type="radio" id="color3" name="tshirt" value="Yellow" />
+            <label for="color3">Yellow</label>
+           </div>
+           <br>
+           <div style="margin-bottom: 8px;">
+            <label style="font-size: 20px"> T-shirt Size: </label>
+            </div> 
+            <div style="margin-bottom: 8px;">
+            <input type="radio" id="xsmall" name="size" value="XS" />
+            <label for="xsmall">XS</label>
+            </div>
+            <div style="margin-bottom: 8px;">
+            <input type="radio" id="small" name="size" value="S" />
+            <label for="small">S</label>
+            </div>
+            <div style="margin-bottom: 8px;">
+            <input type="radio" id="medium" name="size" value="M" />
+            <label for="medium">M</label>
+            </div>
+            <div style="margin-bottom: 8px;">
+            <input type="radio" id="large" name="size" value="L" />
+            <label for="large">L</label>
+            </div>
+            <div style="margin-bottom: 8px;">
+            <input type="radio" id="xlarge" name="size" value="XL" />
+            <label for="xlarge">XL</label>
+            </div>
+            <div style="margin-bottom: 8px;">
+            <input type="radio" id="xxlarge" name="size" value="XXL" />
+            <label for="xxlarge">XXL</label>
+            </div>
+            <br>
+       <button type="submit"style="font-size: 18px">Submit</button>
+       <button type="reset" style="font-size: 18px">Reset</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Goitom Hadgu</h2>
     </footer>
   </body>
 </html>
