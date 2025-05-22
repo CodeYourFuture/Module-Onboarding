@@ -9,7 +9,8 @@ body {
 
 .flex-container {
   display: flex;
-  gap: 5px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .flex-container > div {
@@ -17,6 +18,8 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .article1 {
@@ -25,7 +28,8 @@ body {
 
 .article2 img,
 .article3 img {
-  width: 450px;
+ max-width: 100%;
+ height: auto;
 }
 
 .header {
@@ -40,17 +44,25 @@ footer {
   color: #f1f1f1;
 }
 .btn {
-    display: inline-block;
-    margin-top: 16px;
-}
-.btn button {
-    padding: 12px 20px;
-    font-size: 16px;
-    min-width: 48px;
-    min-height: 48px;
-    margin: 12px;
-    cursor: pointer;
+   display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  min-width: 48px;
+  min-height: 48px;
+  margin-top: 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+
 }
 .btn:hover {
     background-color: #0056b3;
+    color: white;
+}
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
