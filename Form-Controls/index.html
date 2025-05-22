@@ -3,25 +3,78 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>T-shirts</title>
+    <meta name="description" content="Form control page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-shirts</h1>
     </header>
     <main>
+      <p>
+        Please confirm your information and select your preferred T-shirt color
+        and size. All fields are required.
+      </p>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- required name input field -->
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" pattern="^[a-zA-Z]{2,}(?: [a-zA-Z]{2,})?$" required />
+        </div>
+        <br />
+        <!-- required email input field -->
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <br />
+        <hr />
+        <!-- required radial color input -->
+        <div>
+          <fieldset>
+            <legend>Choose a color:</legend>
+            <div>
+              <input type="radio" id="red" name="color" value="red" required />
+              <label for="red">Red</label>
+            </div>
+            <br>
+            <div>
+              <input type="radio" id="green" name="color" value="green" />
+              <label for="green">Green</label>
+            </div>
+            <br>
+            <div>
+              <input type="radio" id="black" name="color" value="black" />
+              <label for="black">Black</label>
+            </div>
+          </fieldset>
+        </div>
+        <br />
+        <hr />
+        <!-- required size select field -->
+        <div>
+          <label for="size">Size</label>
+          <select name="size" id="size" required>
+            <option value="" disabled selected>Select Size</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </div>
+        <br />
+        <button aria-label="Submit your T-shirt order" type="submit">
+          Submit
+        </button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Radwan Alshujaa</h2>
     </footer>
   </body>
 </html>
