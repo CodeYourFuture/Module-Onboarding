@@ -13,7 +13,7 @@
   <header>
     <h1>Your t-shirt combo</h1>
     <p>Hi there! We already know who you are but to give you the best experience possible, we'd like to confirm that
-      we've got your t-shirt needs and details all correct.</p>
+      we've got your t-shirt needs and details all correct. 😉</p>
   </header>
   <main>
 
@@ -26,7 +26,7 @@
 
         <div>
           <label for="name">What's your name:</label>
-          <input name="name" id="name" type="text" placeholder="First and last name" required>
+          <input name="name" id="name" type="text" placeholder="First and last name" required minlength="2">
         </div>
 
         <br>
@@ -44,32 +44,38 @@
             <label for="yellow">Yellow</label>
           </div>
 
+          <br>
+
           <div>
             <input type="radio" name="color" id="pink" value="Pink" />
             <label for="pink">Pink</label>
           </div>
+
+          <br>
 
           <div>
             <input type="radio" name="color" id="blue" value="Blue" />
             <label for="blue">Blue</label>
           </div>
 
-          <br>
+        </div>
 
-          <div>
-            <label for="size">Pick your size, superstar!</label>
-            <select name="size" id="size" required>
+        <br>
 
-              <option value="XS" label="XS">XS</option>
-              <option value="S" label="S">S</option>
-              <option value="M" label="M">M</option>
-              <option value="L" label="L">L</option>
-              <option value="XL" label="XL">XL</option>
-              <option value="XXL" label="XXL">XXL</option>
+        <div>
+          <label for="size">Pick your size, superstar!</label>
+          <select name="size" id="size" required>
 
-            </select>
-          </div>
-          <br>
+            <option value="XS" label="XS">XS</option>
+            <option value="S" label="S">S</option>
+            <option value="M" label="M">M</option>
+            <option value="L" label="L">L</option>
+            <option value="XL" label="XL">XL</option>
+            <option value="XXL" label="XXL">XXL</option>
+
+          </select>
+        </div>
+        <br>
 
       </fieldset>
 
