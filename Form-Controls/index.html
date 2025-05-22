@@ -7,21 +7,69 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
+
   <body>
     <header>
       <h1>Product Pick</h1>
+      <h2>By Hibo Sharif</h2>
     </header>
+
+
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend> Customr Details</legend>
+
+          <label for="name"> Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            pattern="^(?=.*[A-Za-z])[A-Za-z\s'-]{2,50}$"
+            title="Name should be 2-50 characters long and only include letters, spaces, hyphens, or apostrophes."
+          /><br><br>
+        
+          <label for="email"> Email</label>
+          <input type="email" name="email" id="email" required />
+        </fieldset>
+
+        <fieldset>
+          <legend> T-shirt Options</legend>
+
+        
+          <label for="tshirtcolour">Tshirt-colour</label>
+          <select name="tshirtcolour" id="tshirtcolour" required>
+            <option value="">--Select a colour</option>
+            <option value="Blue">Blue</option>
+            <option value="Purple">Purple</option>
+            <option value="Orange">Orange</option>
+          </select><br><br>
+        
+
+        
+          <label for="size"> Size</label>
+          <select name="size" id="size" required>
+            <option value="" disabled selected hidden>-- Select size --</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select><br><br>
+        </Fieldset>
+
+        
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+        <p>By ITP May-2025 Hibo Sharif</p>
     </footer>
   </body>
 </html>
