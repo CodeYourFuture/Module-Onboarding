@@ -11,15 +11,79 @@
 
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Your t-shirt combo</h1>
+    <p>Hi there! We already know who you are but to give you the best experience possible, we'll like to confirm that
+      we've got your t-shirt needs and details all correct.</p>
   </header>
   <main>
+
     <form>
-      <!-- write your html here-->
-      <!-- 
+      <fieldset>
+
+        <legend>T-shirt info</legend>
+
+        <br>
+
+        <div>
+          <label for="name">What's your name:</label>
+          <input name="name" id="name" type="text" placeholder="First and last name" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="email">What's your email address:</label>
+          <input name="email" id="email" type="email" placeholder="you@gmail.com" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="size">Select your perfect size</label>
+          <select name="size" id="size" required>
+
+            XS, S, M, L, XL, XXL
+
+            <option value="XS" label="XS">XS</option>
+            <option value="S" label="S">S</option>
+            <option value="M" label="M">M</option>
+            <option value="L" label="L">L</option>
+            <option value="XL" label="XL">XL</option>
+            <option value="XXL" label="XXL">XXL</option>
+
+          </select>
+        </div>
+
+        <div>
+          <p>Which of these colors do you prefer? </p>
+
+          <div>
+            <input type="radio" name="color" id="yellow" value="Yellow" />
+            <label for="yellow">Yellow</label>
+          </div>
+
+          <div>
+            <input type="radio" name="color" id="pink" value="Pink" />
+            <label for="pink">Pink</label>
+          </div>
+
+          <div>
+            <input type="radio" name="color" id="blue" value="Blue" />
+            <label for="blue">Blue</label>
+          </div>
+
+      </fieldset>
+    </form>
+
+
+
+    <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+
+
     </form>
+
   </main>
   <footer>
     <!-- change to your name-->
