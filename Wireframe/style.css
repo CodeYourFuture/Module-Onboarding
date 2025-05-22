@@ -59,11 +59,14 @@ main {
 }
 
 footer {
+  position : fixed;
+  bottom: 0;
   width: 100%;
   text-align: center;
   border-top: var(--line) var(--color-accent);
   color: var(--color-accent);
   padding:var(--space);
+  background-color: rgb(235, 232, 94);
 }
 
 main {
