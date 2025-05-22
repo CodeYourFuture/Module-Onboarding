@@ -30,7 +30,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  height: 100vh; 
+  /* height: 100vh;  */
 }
 a.framed {
   padding: var(--space);
@@ -53,8 +53,10 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;          
+  width: 100%;      
   text-align: center;
-  padding: 1px;
+  padding: 0.5em; 
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -66,12 +68,11 @@ https://gridbyexample.com/learn/
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /*1fr 1fr;*/
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  /*> *:first-child {
+  > *:first-child {
     grid-column: span 2;
-  }*/
+  }
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -90,4 +91,10 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+/* ====== Header Centering ====== */
+header {
+  text-align: center;
+  margin: 2em 0;
 }
