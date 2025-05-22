@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
+    <meta
+      name="description"
+      content="Learn about README files, wireframes, and Git branches in web development basics."
+    />
+    <title>Web Development Basics | README, Wireframe, Git Branch</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,9 +17,9 @@
         branch.
       </p>
     </header>
-
-    <main>
-      <article>
+    <main role="main">
+      <!-- Top article (full width) -->
+      <article class="top-article">
         <img
           src="https://media.geeksforgeeks.org/wp-content/uploads/20240702120959/Readme1.png"
           alt="README File Diagram"
@@ -32,48 +35,45 @@
           target="_blank"
           >Learn more about README files</a
         >
-        <!-- External Link -->
       </article>
-
-      <article>
-        <img
-          src="https://cdn-images.visual-paradigm.com/handbooks/agile-handbook/wireframe/01-youtube-wireframe-example.png"
-          alt="wireframe File Diagram"
-        />
-        <h2>What is the purpose of a wireframe?</h2>
-        <p>
-          A wireframe is a visual guide that represents the skeletal structure
-          of a website or application. It shows the layout and the relationship
-          between different elements on the page.
-        </p>
-        <a
-          href="https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe/"
-          target="_blank"
-          >Learn more about wireframes</a
-        >
-        <!-- External Link -->
-      </article>
-
-      <article>
-        <img
-          src="https://digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png"
-          alt="branch in Git Diagram"
-        />
-        <h2>What is a branch in Git?</h2>
-        <p>
-          A branch in Git is a separate line of development. It allows you to
-          work on different features or bug fixes without affecting the main
-          codebase.
-        </p>
-        <a
-          href="https://www.atlassian.com/git/tutorials/using-branches"
-          target="_blank"
-          >Learn more about Git branches</a
-        >
-        <!-- External Link -->
-      </article>
+      <!-- Two side-by-side articles -->
+      <div class="articles-row">
+        <article>
+          <img
+            src="https://cdn-images.visual-paradigm.com/handbooks/agile-handbook/wireframe/01-youtube-wireframe-example.png"
+            alt="wireframe File Diagram"
+          />
+          <h2>What is the purpose of a wireframe?</h2>
+          <p>
+            A wireframe is a visual guide that represents the skeletal structure
+            of a website or application. It shows the layout and the
+            relationship between different elements on the page.
+          </p>
+          <a
+            href="https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe/"
+            target="_blank"
+            >Learn more about wireframes</a
+          >
+        </article>
+        <article>
+          <img
+            src="https://digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png"
+            alt="branch in Git Diagram"
+          />
+          <h2>What is a branch in Git?</h2>
+          <p>
+            A branch in Git is a separate line of development. It allows you to
+            work on different features or bug fixes without affecting the main
+            codebase.
+          </p>
+          <a
+            href="https://www.atlassian.com/git/tutorials/using-branches"
+            target="_blank"
+            >Learn more about Git branches</a
+          >
+        </article>
+      </div>
     </main>
-
     <footer>
       <p>Created as part of the Web Development course. All rights reserved.</p>
     </footer>

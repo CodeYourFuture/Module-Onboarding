@@ -4,14 +4,15 @@
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid #ccc; /* Light border */
-  --container: 1280px;
+  --container: 900px;
 }
 
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  margin: 10%;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -32,58 +33,74 @@ a {
 
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4);
+  min-height: 80vh;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   gap: var(--space);
+  padding: var(--space);
+  flex-direction: column;
+  justify-content: center;
+} 
+/* Top article (full width) */
+.top-article {
+  width: 100%;
+ border: var(--line);
+ background: #fff;
+ padding: 15px;
 }
-
-/* Wrapper for bottom two articles */
+/* Bottom two side-by-side articles */
 .articles-row {
   display: flex;
-  gap: var(--space);
+  gap: 20px;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
-
 .articles-row article {
   flex: 1;
   min-width: 300px;
+  border: var(--line);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 15px;
+  justify-content: space-between;
 }
 
-article {
-  border: var(--line);
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: var(--paper);
+  text-align: center;
   padding: var(--space);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: var(--space);
+}
+
+article a {
+  border: 1px solid #000000;
+  padding: 8px;
+  display: inline-block;
   background-color: #fff;
 }
 
 article img {
   width: 100%;
   height: auto;
+  max-height: 120px;
+  object-fit: var(--container);
 }
 
 article h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin: 10px 0;
 }
 
 article p {
   font-size: 1rem;
-}
-
-/* Footer fixed */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: var(--space);
-  width: 100%;
-  position: relative;
+  margin: 10px 0;
 }
 
 @media screen and (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr; /* Stack articles on smaller screens */
+  .articles-row {
+    flex-direction: column; /* Stack articles on smaller screens */
   }
 }
