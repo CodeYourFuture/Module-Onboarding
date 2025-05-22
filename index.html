@@ -3,44 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coursework</title>
-    <style>
-      :root {
-        --paper: oklch(7 0 0);
-        --ink: color-mix(in oklab, var(--color) 5%, black);
-        --font: 100%/1.5 system-ui;
-        --space: clamp(6px, 6px + 2vw, 15px);
-        --line: 1px solid;
-      }
-      body {
-        background: var(--paper);
-        color: var(--ink);
-        font: var(--font);
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-    </style>
-  </head>
+    <title>Understanding Developer Tools</title>
+    <link rel="stylesheet" href="style.css"/>
+    </head>
   <body>
-    <header><h1>🧐 CYF Coursework Disposable Branch Previews</h1></header>
+    <header><h1>Developer Basics</h1>
+    <p>This page is a guide for beginner developers, where three essential concepts in web
+      development will be discussed. Each section below introduces the concept, explains its 
+    importance, and links to resources for more indepth learning. </p></header>
     <main>
-      <ol>
-        <li>
-          <h2><a href="/Wireframe">Project 1: Wireframe</a></h2>
-          <p>
-            Mentors:
-            <a href="Wireframe/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-        <li>
-          <h2><a href="/Form-Controls">Project 2: Form Controls</a></h2>
-          <p>
-            Mentors:
-            <a href="Form-Controls/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-      </ol>
+      <section class = "articles">
+        <article class = "featured">
+          <img class="image-1" src="https://miro.medium.com/v2/resize:fit:1200/1*oppPsIqwEiB_kndtd6GWxA.png" alt="README file photo"/>
+          <h2> What is a README file? </h2>
+          <p> A README file gives an overview of a project, including the project objectives, 
+            how to set it up, and how to use it.  </p>
+            <a href="https://www.geeksforgeeks.org/what-is-readme-md-file/">Learn more: README files</a>
+                      
+            </article>
+            <div class="article-row">
+        <article>
+          <img class="image-2" src="data:image/png;base64,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" alt="wireframe design image"/>
+          <h2>What is a Wireframe? </h2>
+          <p> A wireframe is a layout sketch which shows the structure and key components
+            of a web page. </p>
+            <a href="https://www.productplan.com/glossary/wireframe/">Learn more: Wireframe </a>
+          </article>
+          <article>
+            <img class="image-2" src="https://t3.ftcdn.net/jpg/12/10/22/40/360_F_1210224037_7nzaNdxOda8ImUNkg7XSDUfajhLUBGUr.jpg" alt="Git Branch Image"/>   
+            <h2> What is a Git branch?</h2>
+            <p> A Git branch is a separate line of development that allows a developer to
+              work on features independently from the main code. </p>
+              <a href="https://www.w3schools.com/git/git_branch.asp">Learn more: Git branch </a>
+          </article>
+          </div>
+        </section>
     </main>
-    <footer><a href="HOW_TO_REVIEW.md">HOW TO REVIEW MD</a></footer>
+    <footer>
+      <p>2025 Developer Basics Foundation info@devbasic.com </p></footer>
   </body>
 </html>
