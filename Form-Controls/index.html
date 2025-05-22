@@ -22,7 +22,7 @@
           <input type="text" id="name" minlength="2" required pattern=".*\S.*" title="Name must include at least one non-space character." />
         </label><br><br>
         <label for="surname">Surname:
-          <input type="text" id="surname" minlength="2" required />
+          <input type="text" id="surname" minlength="2" required pattern=".*\S.*" title="Surname must include at least one non-space character." />
         </label><br><br>
         <label for="email">Email:
           <input type="email" id="email" required />
@@ -33,7 +33,7 @@
         <h3>T-shirt color:</h3>
         <p>
           <label for="white">White</label>
-          <input type="radio" id="white" value="white" name="color" checked>
+          <input type="radio" id="white" value="white" name="color" >
         </p>
         <p>
           <label for="grey">Grey</label>
