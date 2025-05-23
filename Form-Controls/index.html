@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Pick</title>
+</head>
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+
+  <main>
+    <form>
+      <!-- اسم العميل -->
+      <label for="name">Name:</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        minlength="2" 
+        required 
+        placeholder="Enter your name" 
+      />
+      <br /><br />
+
+      <!-- البريد الإلكتروني -->
+      <label for="email">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required 
+        placeholder="Enter your email" 
+      />
+      <br /><br />
+
+      <!-- اختيار اللون (3 خيارات) -->
+      <fieldset>
+        <legend>Choose a colour:</legend>
+
+        <input 
+          type="radio" 
+          id="red" 
+          name="colour" 
+          value="Red" 
+          required 
+        />
+        <label for="red">Red</label>
+
+        <input 
+          type="radio" 
+          id="blue" 
+          name="colour" 
+          value="Blue" 
+        />
+        <label for="blue">Blue</label>
+
+        <input 
+          type="radio" 
+          id="green" 
+          name="colour" 
+          value="Green" 
+        />
+        <label for="green">Green</label>
+      </fieldset>
+      <br />
+
+      <!-- اختيار المقاس (6 خيارات) -->
+      <label for="size">Choose a size:</label>
+      <select id="size" name="size" required>
+        <option value="" disabled selected>Select size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <h2>By Adel Almurisi</h2>
+  </footer>
+</body>
 </html>
