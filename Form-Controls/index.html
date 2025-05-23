@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My form exercise</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+
   </head>
   <body>
     <header>
@@ -13,15 +14,50 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <p> Required fields are followed by <strong><span>*</span></strong>.</p>
+
+        <section>
+          <h2>Customer Information</h2>      
+          <!-- 1. Collecting data for customer's name -->
+          <label for="name">Name:<strong><span>*</span></strong></label><br>
+          <input type="text" id="name" name="name" required pattern="^(?=.*[A-Za-z])[A-Za-z\s\-]{1,32}$"><br><br>
+
+          <!-- 2. Collecting data for customer's email -->
+          <label for="email">Email:<strong><span>*</span></strong></label><br>
+          <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+        </section>
+
+        <section>
+          <h2>Product Information</h2>
+          <!-- 3. Collecting data for t-shirt colour choice-->
+          <fieldset>
+            <legend>Choose a t-shirt colour:<strong><span>*</span></strong></legend>          
+              <label for="red"><input type="radio" id="red" name="colour" value="red" required> Red</label><br><br>          
+              <label for="blue"><input type="radio" id="blue" name="colour" value="blue"> Blue</label><br><br>          
+              <label for="green"><input type="radio" id="green" name="colour" value="green"> Green</label><br><br>
+          </fieldset><br>
+
+          <!--4. Collecting data for t-shirt size choice-->
+          <label for="size">Choose a t-shirt size:<strong><span>*</span></strong></label><br><br>
+          <select id="size" name="size" required>
+            <option value="" disabled selected>Select a size</option>            
+            <option value="xsmall">X-Small</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xlarge">X-Large</option>
+            <option value="xxlarge">XX-Large</option>
+          </select><br>
+        </section>  
+
+        <div>
+          <p><button type="submit">Submit</button></p>
+        </div>
+
       </form>
     </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+    <footer>      
+      <h2>By ADIYAH FARHAN</h2>
     </footer>
   </body>
 </html>
