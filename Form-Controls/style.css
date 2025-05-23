@@ -27,8 +27,6 @@ footer {
   text-align: center;
 }
 
-/* for 
-
 /* Headings */
 h1,
 h2 {
@@ -40,6 +38,7 @@ h2 {
 label {
   margin-top: 10px;
   font-weight: bold;
+  
 }
 
 input[type="text"],
@@ -49,7 +48,17 @@ input[type="email"] {
   margin-top: 5px;
 }
 
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
 ul {
   list-style-type: none;
   padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
 }
