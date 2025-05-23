@@ -50,9 +50,10 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  
   bottom: 0;
   text-align: center;
+  background-color: rgb(239, 133, 133);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,4 +87,10 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+h1{
+ text-align: center;
+ background-color: rgb(114, 147, 247);
+ 
+
 }
