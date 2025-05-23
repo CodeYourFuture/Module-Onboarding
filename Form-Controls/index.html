@@ -13,6 +13,58 @@
     </header>
     <main>
       <form>
+        <label for="name">full name :</label>
+        <input 
+
+        type="text" 
+        id="name"
+        name="name"
+        required
+        minlength="2"
+          
+        />
+        <br><br>
+        <label for="email">Email Address:</label>
+        <iput></iput>
+          type="email" 
+          id="email"
+          name="email"
+          required
+          placeholder="welid@gmail.com"
+          />
+      
+          <br><br>
+          
+          <fieldset>
+            <legend>Select a T-shirt colour</legend>
+            <label>
+              <input type="radio" name="color" value="red" required />
+              Red
+            </label>
+            <label>
+              <input type="radio" name="color" value="blue"/>
+              Blue
+              
+            </label>
+            <label>
+              <input type="radio" name="color" value="blue"/>
+              Green
+            </label>
+          </fieldset>
+          <br>
+          <label for="size">Choose a Size </label>
+          <select id="Size" name="size" required>
+           <option value="XS">XS</option>
+           <option value="S">S</option>
+           <option value="M">M</option>
+           <option value="L">L</option> 
+           <option value="XL">XL</option>
+           <option value="XXL">XXL</option>
+          </select>
+          <br><br>
+            <button type="submit">Submit Order</button>
+            
+
         
         <!-- write your html here-->
         <!-- 
@@ -22,7 +74,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Welid O</h2>
     </footer>
   </body>
 </html>
