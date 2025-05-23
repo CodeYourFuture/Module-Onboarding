@@ -40,6 +40,7 @@
             pattern="^(?=.*[A-Za-z])[A-Za-z ]+$" 
              required
              title="Only letters and spaces are allowed."
+             minlength="2"
              >
              
 
@@ -52,6 +53,7 @@
            autocomplete="on" 
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             title="Only email format is allowed."
+            minlength="7"
               required>
            
 
@@ -76,20 +78,23 @@
 <fieldset>
   <legend>Size</legend>
   <div class="radio-group">
-    <input type="radio" id="small" name="size" value="S" checked required>
+    <input type="radio" id="xsmall" name="size" value="xs" checked required>
+    <label for="small">xSmall</label>
+
+    <input type="radio" id="small" name="size" value="s">
     <label for="small">Small</label>
 
-    <input type="radio" id="medium" name="size" value="M">
+    <input type="radio" id="medium" name="size" value="m">
     <label for="medium">Medium</label>
 
-    <input type="radio" id="large" name="size" value="L">
+    <input type="radio" id="large" name="size" value="l">
     <label for="large">Large</label>
 
-    <input type="radio" id="xlarge" name="size" value="XL">
-    <label for="xlarge">XLarge</label>
+    <input type="radio" id="xlarge" name="size" value="xl">
+    <label for="xlarge">xLarge</label>
 
-    <input type="radio" id="xxlarge" name="size" value="XXL">
-    <label for="xxlarge">XXLarge</label>
+    <input type="radio" id="xxlarge" name="size" value="xxl">
+    <label for="xxlarge">xxLarge</label>
   </div>
 </fieldset>
 
