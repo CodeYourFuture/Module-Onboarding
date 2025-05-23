@@ -19,8 +19,9 @@
     <h1>Tshirt</h1>
   </header>
   <main>
+    <form>
     <fieldset>
-      <form>
+      
 
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="on" required>
@@ -28,7 +29,7 @@
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="on" required>
 
-      </form>
+      
     </fieldset>
 
     <fieldset>
@@ -45,15 +46,15 @@
 
     <fieldset>
       <legend>Size</legend>
-      <input type="checkbox" id="small" name="smallTshirt" value="S">
+      <input type="radio" id="small" name="smallTshirt" value="S">
       <label for="small">Small</label>
-      <input type="checkbox" id="medium" name="mediumTshirt" value="M">
+      <input type="radio" id="medium" name="mediumTshirt" value="M">
       <label for="medium">Medium</label>
-      <input type="checkbox" id="large" name="largeTshirt" value="L">
+      <input type="radio" id="large" name="largeTshirt" value="L">
       <label for="large">Large</label>
-      <input type="checkbox" id="xlarge" name="xlargeTshirt" value="XL">
+      <input type="radio" id="xlarge" name="xlargeTshirt" value="XL">
       <label for="xlarge">XLarge</label>
-      <input type="checkbox" id="xxlarge" name="xxlargeTshirt" value="XXL">
+      <input type="radio" id="xxlarge" name="xxlargeTshirt" value="XXL">
       <label for="xxlarge">XxLarge</label>
 
     </fieldset>
@@ -66,6 +67,7 @@
     <div>
       <button type="submit">Submit</button>
     </div>
+    </form>
   </main>
   <footer>
     <h2>By Emin Akturk</h2>
