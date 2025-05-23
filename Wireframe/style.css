@@ -38,7 +38,7 @@ a {
 }
 img,
 svg {
-  width: 100%;
+  width: 20%;
   object-fit: cover;
 }
 /* ====== Site Layout ====== 
