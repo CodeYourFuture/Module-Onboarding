@@ -14,7 +14,7 @@ Writing that out as a series of questions to ask yourself:
 All fields are required. Do not write a form action for this project.-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Creation of a Form</title>
@@ -28,9 +28,9 @@ All fields are required. Do not write a form action for this project.-->
         </div>
         <br>
         <div>
-            <label>Password
+            <label for="password">Password </label> 
             <input type="password" name="password" required>
-            </label>
+           
         </div>
         <br>
         <div>
@@ -38,49 +38,52 @@ All fields are required. Do not write a form action for this project.-->
             <input type="email" name="email" id="email" required>
         </div>
         <br>
-        <div>
-            Sizes of T-Shirt
-            <div>
+        <fieldset> 
+
+            <legend>Sizes of T-Shirt</legend>
                 <label for="xs">Xtra-Small</label>
-                <input type="checkbox" name="xs" id="xs">
-            </div>
+                <input type="checkbox" name="sizes[]" id="xs"> 
+            
             <div>
                 <label for="small">Small</label>
-                <input type="checkbox" name="small" id="small">
+                <input type="checkbox" name="sizes[]" id="small">
             </div>
             <div>
                 <label for="m">Medium</label>
-                <input type="checkbox" name="m" id="m">
+                <input type="checkbox" name="sizes[]" id="m">
             </div>
             <div>
                 <label for="l">Large</label>
-                <input type="checkbox" name="l" id="l">
+                <input type="checkbox" name="sizes[]" id="l">
             </div>
             <div>
                 <label for="xl">XtrLarge</label>
-                <input type="checkbox" name="xl" id="xl">
+                <input type="checkbox" name="sizes[]" id="xl">
             </div>
             <div>
                 <label for="xxl">Double Xtra Large</label>
-                <input type="checkbox" name="xxl" id="xxl">
+                <input type="checkbox" name="sizes[]" id="xxl">
             </div>
-        </div>
+        
+        </fieldset>
         <br>
         
-        <div>
-            Colors of the T-shirts
-            <label for="colors">Colors</label>
-                <select name="color" id="color" multiple>
-                    <option label="green" value="green"></option>
+        <fieldset> 
+            <legend>Colors of the T-Shirts</legend> 
+            <label for="color">Colors</label>
+                <select name="color[]" id="color" multiple>
+                    <option value="green">Green</option>
                     <option value="Red">Red </option>
-                    <option label="blue" value="blue"></option>
-                    <option label="purple" value="purple"></option>
-                    <option label="yellow" value="yellow"></option>
-                    <option label="black" value="black"></option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="black">Black</option>
                     
                 </select> 
           
-        </div><br><br>
+        
+        </fieldset>
+        <br><br>
         <div>
             <label for="date">Delivery date</label>
             <input type="date" name="date" id="date">
@@ -90,7 +93,7 @@ All fields are required. Do not write a form action for this project.-->
         
     </form>
     <footer>
-        <h2>Umar Mohammed ITP-2025</h2>
+       <p>&copy; Umar Mohammed ITP-2025</p>
       </footer>
 </body>
 </html>
