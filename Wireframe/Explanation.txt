@@ -1,0 +1,7 @@
+1- The purpose of wireframe is to design visual representation of the software interface
+
+
+1-the purpose of a README file is to give the instructions on how to perform a specific task
+
+
+1 -a branch in Git is a separate workspace where you can make changes and try new ideas without affecting the main project
