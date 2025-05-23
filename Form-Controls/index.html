@@ -20,7 +20,7 @@
           <h2>Customer Information</h2>      
           <!-- 1. Collecting data for customer's name -->
           <label for="name">Name:<strong><span>*</span></strong></label><br>
-          <input type="text" id="name" name="name" required pattern="[A-Za-z\s\-]{1,32}"><br><br>
+          <input type="text" id="name" name="name" required pattern="^(?=.*[A-Za-z])[A-Za-z\s\-]{1,32}$"><br><br>
 
           <!-- 2. Collecting data for customer's email -->
           <label for="email">Email:<strong><span>*</span></strong></label><br>
