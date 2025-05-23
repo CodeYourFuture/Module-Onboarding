@@ -49,11 +49,13 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
 }
+
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -61,6 +63,8 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
+
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -69,11 +73,13 @@ main {
     grid-column: span 2;
   }
 }
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+
 article {
   border: var(--line);
   padding-bottom: var(--space);
@@ -86,4 +92,8 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+header {
+  text-align: center;
 }
