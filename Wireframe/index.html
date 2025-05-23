@@ -8,26 +8,60 @@
   </head>
   <body>
     <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <h1>What is the purpose of a README file?</h1>
+      <p>A README file serves as the backbone of any software project, offering clear documentation for 
+        developers, users, and contributors.</p>
     </header>
     <main>
       <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
+        <img src="placeholder.svg" alt="ReadMe Image" />
+        <h2>ReadMe purpose</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
+          A README file serves as the backbone of any software project, offering clear documentation for 
+          developers, users, and contributors. It provides essential details such as installation instructions, 
+          project structure, and usage guidelines, ensuring accessibility and ease of navigation....
         </p>
-        <a href="">Read more</a>
+        <a href="articles.md">Read more</a>
+      </article>
+       
+      <article>
+        <div class="row">
+          <div class="column">
+            <img src="placeholder.svg" alt="Wireframe Image" />
+            <h2>What is the purpose of a wireframe?</h2>
+            <p>
+              A wireframe is a foundational visual guide used in web and app design to outline structure, 
+              functionality, and user flow. It serves as a blueprint, allowing designers and developers to plan 
+              layouts without distractions from colors or detailed visuals...
+            </p>
+            <a href="articles.md">Read more</a>
+          </div>
+      </article>
+      
+      <article>
+        <div class="column">
+          <img src="placeholder.svg" alt="Branch in Git Image" />
+          <h2>What is a branch in Git?</h2>
+          <p>In Git, a branch is a separate line of development that allows multiple contributors to work on different 
+            features simultaneously. It provides a safe space to experiment, make changes, and refine code without 
+            affecting the main project...</p>
+          <a href="articles.md">Read more</a>
+        </div>
+        </div>
       </article>
     </main>
+    <br />
+
     <footer>
       <p>
-        This is the default, provided code and no changes have been made yet.
+        &copy; CYF <span id="currentYear"></span> Modifed by iteddy16: <br />All
+        Right Reserved.
       </p>
     </footer>
+    <script>
+      // JavaScript to dynamically insert the current year
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
