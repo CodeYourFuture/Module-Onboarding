@@ -1,89 +1,197 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
+/* ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+  --background: linear-gradient(120deg, #f8fafc 0%, #ffffff 50%, #e3eaf6 100%);
+  --primary-color: #34495e;
+  --accent-color: #1abc9c;
+  --heading-color: #2563eb;
+  --hover-color: #48e1c1;
+  --text-color: #222c37;
+  --text-color-light: #e3eaf6;
+  --article-bg: #fafafa;
+  --box-shadow: 0 4px 16px rgba(52,73,94,0.12), 0 1.5px 6px rgba(0,0,0,0.05);
+  --border: 1.5px solid #bfc9d1;
+  --border-radius: 10px;
+  --font-main: 100%/1.5 'JetBrains Mono', 'Fira Mono', 'Menlo', 'Consolas', monospace;
+  --spacing: clamp(8px, 8px + 2vw, 20px);
+  --container-width: 1280px;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+/* ====== CSS Reset ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+/* ====== Base Elements ====== */
+ body {
+  background: var(--background);
+  color: var(--text-color);
+  font: var(--font-main);
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  min-height: 100vh;
+}
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
+  color: var(--accent-color);
   max-width: fit-content;
+}
+a:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+a:hover, a:focus {
+  color: var(--hover-color);
+  text-decoration: none;
 }
 img,
 svg {
   width: 100%;
   object-fit: cover;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+/* ====== Site Layout ====== */
 main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  max-width: var(--container-width);
+  margin: 0 auto calc(var(--spacing) * 8);
+  padding: 0 clamp(1rem, 4vw, 2rem);
 }
+/* ====== Header ====== */
+header {
+  background: var(--primary-color);
+  color: var(--text-color-light);
+  box-shadow: var(--box-shadow);
+  padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2.5rem);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav span {
+  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: clamp(1rem, 3vw, 3rem);
+  margin: 0;
+  padding: 0;
+}
+header nav ul li a {
+  color: var(--hover-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+header nav ul li a:hover,
+header nav ul li a:focus {
+  color: var(--accent-color);
+  outline: none;
+}
+/* ====== Footer ====== */
 footer {
+  width: 100%;
   position: fixed;
+  left: 0;
   bottom: 0;
   text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  padding: clamp(0.7em, 2vw, 1em) 0;
+  z-index: 100;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
+footer p {
+  margin: 0;
+}
+footer strong {
+  color: var(--hover-color);
+}
+/* ====== Title ====== */
+.title {
+  font-weight: 700;
+  margin: calc(var(--spacing) * 2) 0;
+  text-align: center;
+  color: var(--primary-color);
+  text-shadow: 0 4px 2px rgba(0,0,0,0.1);
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+.title > p {
+  color: var(--accent-color);
+  margin-top: calc(var(--spacing) * 2);
+}
+.title,
+.title p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+/* ====== Articles Grid Layout ==== */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+  gap: calc(var(--spacing) * 2);
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
+main > .title {
+  grid-column: 1 / -1;
+}
+main > article:first-of-type {
+  grid-column: 1 / -1;
+}
+/* ====== Article Layout ====== */
 article {
-  border: var(--line);
-  padding-bottom: var(--space);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background: var(--article-bg);
+  box-shadow: var(--box-shadow);
+  text-align: left;
+  padding-bottom: calc(var(--spacing) * 2);
   text-align: left;
   display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  grid-template-columns: calc(var(--spacing) * 2) 1fr calc(var(--spacing) * 2);
+  grid-template-rows: 2fr auto auto auto;
+  row-gap: 1em;
+  overflow: hidden;
 }
+article > * {
+  grid-column: 2/3;
+}
+article > img {
+  grid-column: span 3;
+  grid-row: 1 / 2;
+  align-self: center;
+  border-radius: 0 calc(var(--border-radius) * 2) calc(var(--border-radius) * 2) 0;
+}
+article > h2 {
+    color: var(--heading-color);
+    text-align: left;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    letter-spacing: 0.03em;
+}
+article > p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    min-height: calc(1.5em * 4);
+    max-height: calc(1.5em * 4);
+  }
+article > a {
+    color: #065143;
+    padding: 0.3em 1em;
+    border: var(--border);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+article > a:hover, a:focus {
+    color: var(--text-color-light);
+    background: var(--accent-color);
+  }
