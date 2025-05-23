@@ -17,12 +17,13 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: rgb(164, 161, 161);
+   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font:  16px/1.6 'Arial', sans-serif;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+  
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -51,7 +52,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  
+  position: fixed;
   bottom: 0;
   text-align: center;
 }
@@ -87,4 +88,14 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+h1 {
+  background-color: rgb(110, 23, 231);
+  color: white; /* Optional: to ensure text is readable against blue background */
+  padding: var(--space); /* Optional: for spacing around the text */
+}
+
+p {
+  text-align: left;
 }
