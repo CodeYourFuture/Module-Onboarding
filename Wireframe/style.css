@@ -91,9 +91,9 @@ article {
 }
 
 h1 {
-  background-color: rgb(110, 23, 231);
-  color: white; /* Optional: to ensure text is readable against blue background */
-  padding: var(--space); /* Optional: for spacing around the text */
+  background-color: rgb(107, 52, 196);
+  color: white; /
+  padding: var(--space);
 }
 
 p {
