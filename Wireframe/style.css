@@ -20,20 +20,18 @@ a {
   text-align: left;
 }
 
-.gitpic1 {
-  width: 75%;
-  object-fit: cover;
-}
 
-.wireframe1 {
-  width: 75%;
+.wireframe1,
+.gitpic1 {
+  width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .img1 {
-  margin-left: 150px;
-  width: 75%;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 0;
 }
 
 main {
@@ -76,10 +74,12 @@ article>* {
 
 article > img {
   grid-column: span 3;
-  width: 100%;          
-  height: 250px;        
-  object-fit: cover;    
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
+
 .header {
   padding: 300px;
 }
