@@ -24,21 +24,36 @@
       
 
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="on" required>
+        <input 
+        type="text"
+         id="name"
+          name="name"
+           placeholder="Your Name"
+            autocomplete="on"
+            pattern="^[A-Za-z\s]+$" 
+             required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="on" required>
+        <input
+         type="email"
+          id="email" 
+          name="email" 
+          placeholder="Your Email"
+           autocomplete="on" 
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              required>
+           required>
 
       
     </fieldset>
 
     <fieldset>
       <legend>Please Choose the Colour</legend>
-      <input type="checkbox" id="blue" name="blueTshirt" value="0000FF">
+      <input type="radio" id="blue" name="color" value="0000FF" checked>
       <label for="blue">Blue</label>
-      <input type="checkbox" id="green" name="greenTshirt" value="008000">
+      <input type="radio" id="green" name="color" value="008000">
       <label for="green">Green</label>
-      <input type="checkbox" id="black" name="blacktshirt" value="000000">
+      <input type="radio" id="black" name="color" value="000000">
       <label for="black">Black</label>
 
 
@@ -46,15 +61,15 @@
 
     <fieldset>
       <legend>Size</legend>
-      <input type="radio" id="small" name="smallTshirt" value="S">
+      <input type="radio" id="small" name="size" value="S" checked>
       <label for="small">Small</label>
-      <input type="radio" id="medium" name="mediumTshirt" value="M">
+      <input type="radio" id="medium" name="size" value="M">
       <label for="medium">Medium</label>
-      <input type="radio" id="large" name="largeTshirt" value="L">
+      <input type="radio" id="large" name="size" value="L">
       <label for="large">Large</label>
-      <input type="radio" id="xlarge" name="xlargeTshirt" value="XL">
+      <input type="radio" id="xlarge" name="size" value="XL">
       <label for="xlarge">XLarge</label>
-      <input type="radio" id="xxlarge" name="xxlargeTshirt" value="XXL">
+      <input type="radio" id="xxlarge" name="size" value="XXL">
       <label for="xxlarge">XxLarge</label>
 
     </fieldset>
