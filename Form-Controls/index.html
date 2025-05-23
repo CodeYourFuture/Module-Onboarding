@@ -22,20 +22,22 @@
       <!-- Enter valid customer name  -->
       <fieldset>
         <legend>Personal Information</legend>
-        <!-- <label for="name"> <span>Customer Name: </span>
-            <strong><span aria-label="required">*</span></strong>
-          </label> -->
         <label for="name">Customer Name: <span aria-hidden="true">*</span></label>
-        <input type="text" id="name" name="name" required minlength="2" maxlength="50" pattern="[A-Za-z\s]+"
-          placeholder="Enter your name"
-          oninvalid="setCustomValidity('Name must be 2 characters and contain only letters.')"
-          oninput="setCustomValidity('')">
+        <input type="text" id="name" name="name" required minlength="2" maxlength="50"
+          pattern="^[A-Za-z]{2,}(?:\s[A-Za-z]+)*$" placeholder="Enter your name" title="Please enter your name" aria-describedby="first-name-help">
+          <span id="first-name-help"><small>Please enter a valid name using only letters and spaces, 2-50
+            characters long.</small></span>
+        <br>
+        <br>
         <!-- Enter valid customer email  -->
         <label for="email">
           Customer Email:<span aria-hidden="true">*</span></label>
-        <input type="email" id="email" name="email" required placeholder="your@example.com"
-          oninvalid="this.setCustomValidity('Please enter a valid email address.')"
-          oninput="this.setCustomValidity('')" />
+        <input type="email" id="email" name="email" placeholder="username@gmail.com"
+          pattern="^[^@]+@[^@]+\.[^@]{2,}$"
+          title="Please enter a valid email address in the format such as: username@domain.com"
+          aria-describedby="email-help" required>
+        <span id="email-help"><small>Please enter a valid email address in the following format e.g.
+            username@domain.com</small></span>
       </fieldset><br>
 
       <!-- Choose t-shirt color  -->
