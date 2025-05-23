@@ -12,23 +12,30 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: Helvetica, sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 a {
   padding: var(--space);
-  text-align: center;
+  text-align: left;
 }
 
-.wireframe1,
+
 .gitpic1 {
-  width: 100%;
+  width: 75%;
+  object-fit: cover;
+}
+
+.wireframe1
+{
+  width: 75%;
   object-fit: cover;
 }
 
 .img1 {
-  margin-left: 175px;
-  width: 70%;
+  margin-left: 150px;
+  width: 75%;
+  object-fit: cover;
 }
 
 
@@ -54,7 +61,7 @@ footer {
 article {
   border: var(--line);
   padding-bottom: var(--space);
-  text-align: center;
+  text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
 }
@@ -69,4 +76,36 @@ article>img {
 
 .header {
   padding: 300px;
+}
+article a {
+  border: 2px solid black;        
+  padding: 10px 10px;              
+  border-radius: 0;                
+  text-decoration: none;           
+  display: inline-block;           
+  background-color: white;         
+  color: black;                    
+  font-weight: bold;               
+  margin-top: var(--space);        
+  transition: background-color 0.3s, color 0.3s;
+  width: 87px;
+  height:15px;
+}
+
+article a:hover {
+  background-color: black;
+  color: white;
+}
+
+.headerr {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
