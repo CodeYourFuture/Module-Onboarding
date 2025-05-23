@@ -20,15 +20,22 @@
         4. T-shirt size, 6 options: XS, S, M, L, XL, XXL
         All fields are required.
         Do not write a form action for this project. -->
-        <h1>T-shirt Select Form</h1>
-          <h2>Customer Information</h2>
+        <fieldset>
+        <legend><h1>T-shirt Select Form</h1></legend>
+        
+        <fieldset>
+          <legend><h2>Customer Information</h2></legend>
             <div><label for="fullname">Full Name:</label>
               <input type="text" id="fullname" name="fullname" placeholder="Your full name" required minlength="2"></div><br>
         
             <div><label for="email">Email:</label>
               <input type="email" id="email" name="email" placeholder="Your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></div><br>
+        </fieldset>
 
-            <h3>T-shirt Options</h3>
+        <br>
+
+        <fieldset>
+            <legend><h2>T-shirt Options</h2></legend>
             <div>
               <label for="colour">T-shirt Colour:</label>
               <select id="colour" required>
@@ -50,7 +57,12 @@
                 <option value="xx-large">XXL</option>
               </select>
             </div><br>
+        </fieldset>
+        
+        <br>
+
           <input type="submit" value="Submit">
+        </fieldset>
       </form>
     </main>
     <footer>
