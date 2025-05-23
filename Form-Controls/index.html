@@ -13,16 +13,21 @@
     </header>
     <main>
       <form>
+        <p>Required fields are followed by <span aria-label="required">*</span>.</p>
+ 
         <p>
-          <p>Required fields are followed by <span aria-label="required">*</span>.</p>
+          <label>
+            Full Name: <abbr title="required">*</abbr>
+            <input type="text" id="fullname" name="fullname" required aria-required="true" minlength="2" maxlength="10" size="10">
+          </label>
+        </p>
 
-          <label for="fullname">Full Name:<span aria-label="require">*</span></label>
-          <input type="text" id="fullname" require minlength="2" maxlength="10" size="10">
-        </p>
         <p>
-          <label for="email">Email:<span aria-label="require">*</span></label>                 
-          <input type="email" id="email" name="email">
+          <label> 
+            Email: <abbr title="required">*</abbr>               
+          <input type="email" id="email" name="email" required aria-required="true">
         </p>
+
         <fieldset>
           <legend>Choose Your T-Shirt Colour(s):</legend>
         
@@ -43,41 +48,20 @@
 
       </fieldset><br>
 
-        <fieldset>
-          <legend>Choose Your T-Shirt Size:</legend>
+      <fieldset>
+        <legend>Choose Your T-Shirt Size:</legend>
+
+        <label><input type="radio" name="size" value="XS"> XS</label><br>
+        <label><input type="radio" name="size" value="S"> S</label><br>
+        <label><input type="radio" name="size" value="M"> M</label><br>
+        <label><input type="radio" name="size" value="L"> L</label><br>
+        <label><input type="radio" name="size" value="XL"> XL</label><br>
+        <label><input type="radio" name="size" value="XXL"> XXL</label>
         
-        <div>
-          <input type="radio" name="size" id="XS" value="XS" style="margin-bottom: 10px">
-          <label for="XS">XS</label>
-        </div>
+      </fieldset><br>
 
-        <div>
-          <input type="radio" name="size" id="S" value="S" style="margin-bottom: 10px">
-          <label for="S">S</label>
-        </div>
-
-        <div>
-          <input type="radio" name="size" id="M" value="M" style="margin-bottom: 10px">
-          <label for="M">M</label>
-        </div>
-
-        <div>
-          <input type="radio" name="size" id="L" value="L" style="margin-bottom: 10px">
-          <label for="L">L</label>
-        </div>
-
-        <div>
-          <input type="radio" name="size" id="XL" value="XL" style="margin-bottom: 10px">
-          <label for="XL">XL</label>
-        </div>
-
-        <div>
-          <input type="radio" name="size" id="XXL" value="XXL" style="margin-bottom: 10px">
-          <label for="XXL">XXL</label>
-        </div>
-
-        </fieldset><br>
-       <button style="font-size: 15px">Send Request</button>
+      </fieldset><br>
+      <button style="font-size: 15px">Send Request</button>
        
 
       </form>
