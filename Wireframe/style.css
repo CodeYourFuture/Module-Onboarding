@@ -93,9 +93,9 @@ article {
 h1 {
   background-color: rgb(107, 52, 196);
   color: white; /
-  padding: var(--space);
 }
 
 p {
   text-align: left;
 }
+
