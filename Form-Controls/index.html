@@ -1,27 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <style>
+    main {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .radio-group
+   {
+     display: flex;
+      gap: 5px;
+       align-items: center;
+         flex-wrap: wrap;
+   }
+  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tshirt Factory</title>
+  <meta name="description" content="Tshirt">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <h1>Tshirt</h1>
+  </header>
+  <main>
+    <form>
+    <fieldset>
+    
+        <label for="name">Name</label>
+        <input 
+        type="text"
+         id="name"
+          name="name"
+           placeholder="Your Name"
+            autocomplete="on"
+            pattern="^(?=.*[A-Za-z])[A-Za-z ]+$" 
+             required
+             title="Only letters and spaces are allowed."
+             minlength="2"
+             >
+             
+
+        <label for="email">Email</label>
+        <input
+         type="email"
+          id="email" 
+          name="email" 
+          placeholder="Your Email"
+           autocomplete="on" 
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            title="Only email format is allowed."
+            minlength="7"
+              required>
+           
+
+      
+    </fieldset>
+
+    <fieldset>
+  <legend>Please Choose the Colour</legend>
+
+  <div class="radio-group">
+    <input type="radio" id="blue" name="color" value="blue" checked>
+    <label for="blue">Blue</label>
+
+    <input type="radio" id="green" name="color" value="green">
+    <label for="green">Green</label>
+
+    <input type="radio" id="black" name="color" value="black">
+    <label for="black">Black</label>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Size</legend>
+  <div class="radio-group">
+    <input type="radio" id="xsmall" name="size" value="xs" checked required>
+    <label for="small">xSmall</label>
+
+    <input type="radio" id="small" name="size" value="s">
+    <label for="small">Small</label>
+
+    <input type="radio" id="medium" name="size" value="m">
+    <label for="medium">Medium</label>
+
+    <input type="radio" id="large" name="size" value="l">
+    <label for="large">Large</label>
+
+    <input type="radio" id="xlarge" name="size" value="xl">
+    <label for="xlarge">xLarge</label>
+
+    <input type="radio" id="xxlarge" name="size" value="xxl">
+    <label for="xxlarge">xxLarge</label>
+  </div>
+</fieldset>
+
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+    </form>
+  </main>
+  <footer>
+    <h2>By Emin Akturk</h2>
+  </footer>
+</body>
+
 </html>
