@@ -37,7 +37,7 @@
           name="name"
            placeholder="Your Name"
             autocomplete="on"
-            pattern="^[A-Za-z\s]+$" 
+            pattern="^(?=.*[A-Za-z])[A-Za-z ]+$" 
              required
              title="Only letters and spaces are allowed."
              >
@@ -76,7 +76,7 @@
 <fieldset>
   <legend>Size</legend>
   <div class="radio-group">
-    <input type="radio" id="small" name="size" value="S" checked>
+    <input type="radio" id="small" name="size" value="S" checked required>
     <label for="small">Small</label>
 
     <input type="radio" id="medium" name="size" value="M">
