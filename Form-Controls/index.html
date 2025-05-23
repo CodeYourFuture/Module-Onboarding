@@ -34,16 +34,15 @@
         />
         <br /><br />
 
-        <fieldset>
-          <legend>Choose a t-shirt colour:</legend>
-          <input type="radio" id="red" name="colour" value="Red" required />
-          <label for="red">Red</label><br />
-          <input type="radio" id="blue" name="colour" value="Blue" />
-          <label for="blue">Blue</label><br />
-          <input type="radio" id="green" name="colour" value="Green" />
-          <label for="green">Green</label>
-        </fieldset>
-        <br />
+         
+        <label for="color">Select your t-shirt color:</label>
+       <select id="color" name="color" required>
+          <option value="">--Select color--</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+        <br />  <br/>
 
         <label for="size">Select your t-shirt size:</label>
         <select id="size" name="size" required>
