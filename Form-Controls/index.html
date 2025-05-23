@@ -21,8 +21,7 @@
   <main>
     <form>
     <fieldset>
-      
-
+    
         <label for="name">Name</label>
         <input 
         type="text"
@@ -31,7 +30,10 @@
            placeholder="Your Name"
             autocomplete="on"
             pattern="^[A-Za-z\s]+$" 
-             required>
+             required
+             title="Only letters and spaces are allowed."
+             >
+             
 
         <label for="email">Email</label>
         <input
@@ -41,22 +43,21 @@
           placeholder="Your Email"
            autocomplete="on" 
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            title="Only email format is allowed."
               required>
-           required>
+           
 
       
     </fieldset>
 
     <fieldset>
       <legend>Please Choose the Colour</legend>
-      <input type="radio" id="blue" name="color" value="0000FF" checked>
+      <input type="radio" id="blue" name="color" value="blue" checked>
       <label for="blue">Blue</label>
-      <input type="radio" id="green" name="color" value="008000">
+      <input type="radio" id="green" name="color" value="green">
       <label for="green">Green</label>
-      <input type="radio" id="black" name="color" value="000000">
+      <input type="radio" id="black" name="color" value="black">
       <label for="black">Black</label>
-
-
     </fieldset>
 
     <fieldset>
@@ -70,15 +71,10 @@
       <input type="radio" id="xlarge" name="size" value="XL">
       <label for="xlarge">XLarge</label>
       <input type="radio" id="xxlarge" name="size" value="XXL">
-      <label for="xxlarge">XxLarge</label>
+      <label for="xxlarge">XXLarge</label>
 
     </fieldset>
-    <fieldset>
 
-      <label for="deliveryDate">Delivery Date</label>
-      <input type="date" id="deliveryDate" name="deliveryDate" required>
-
-    </fieldset>
     <div>
       <button type="submit">Submit</button>
     </div>
