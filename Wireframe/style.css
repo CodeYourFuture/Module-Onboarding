@@ -48,9 +48,11 @@ main {
   margin: 0 0 10px;
 } */
 
-.article a {
-  padding: 5px 10px;
-  /* cursor:pointing; */
+/* .article a {
+  cursor: pointer;
+} */
+.article a:hover {
+  background-color:rgb(194, 206, 241)
 }
 
 
