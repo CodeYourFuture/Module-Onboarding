@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="Order a t-shirt using this form" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <p>
+    Required fields are followed by
+    <span aria-hidden="true">*</span>.
+  </p>
+  <main>
+    <form>
+      <!-- Enter valid customer name  -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Customer Name: <span aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" required minlength="2" maxlength="50"
+          pattern="^[A-Za-z]{2,}(?:\s[A-Za-z]+)*$" placeholder="Enter your name" title="Please enter your name" aria-describedby="first-name-help">
+          <span id="first-name-help"><small>Please enter a valid name using only letters and spaces, 2-50
+            characters long.</small></span>
+        <br>
+        <br>
+        <!-- Enter valid customer email  -->
+        <label for="email">
+          Customer Email:<span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" placeholder="username@gmail.com"
+          pattern="^[^@]+@[^@]+\.[^@]{2,}$"
+          title="Please enter a valid email address in the format such as: username@domain.com"
+          aria-describedby="email-help" required>
+        <span id="email-help"><small>Please enter a valid email address in the following format e.g.
+            username@domain.com</small></span>
+      </fieldset><br>
+
+      <!-- Choose t-shirt color  -->
+      <div>
+        <label for="color"> Choose a T-shirt colour:<span aria-hidden="true">*</span>
+        </label>
+        <select id="color" name="color" required>
+          <option value="" disabled selected>choose an option</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+        </select>
+      </div><br>
+      <!-- Choose t-shirt size  -->
+      <div>
+        <label for="size">Choose a T-shirt size:
+          <span aria-hidden="true">*</span>
+        </label>
+        <select id="size" name="size" required>
+          <option value="">Choose an option</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </div><br>
+      <!-- Submit the details  -->
+      <button type="submit">Submit your details</button>
+    </form>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Sangeetha Devi Cuddapha Desaiah</h2>
     </footer>
-  </body>
+  </main>
+
+</body>
+
 </html>
