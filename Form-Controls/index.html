@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>T-Shirt Order Form</title>
+</head>
+<body>
+
+  <h1>Order Your T-Shirt</h1>
+
+  <form>
+
+    
+    <label for="name">Customer Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      minlength="2"
+    >
+    <br><br>
+
+    
+    <label for="email">Email Address:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+    >
+    <br><br>
+
+    
+    <fieldset>
+      <legend>Select T-Shirt Colour:</legend>
+      <label>
+        <input type="radio" name="color" value="Red" required>
+        Red
+      </label>
+      <label>
+        <input type="radio" name="color" value="Blue">
+        Blue
+      </label>
+      <label>
+        <input type="radio" name="color" value="Green">
+        Green
+      </label>
+    </fieldset>
+    <br>
+
+    
+    <label for="size">Choose your size:</label>
+    <select id="size" name="size" required>
+      <option value="">--Please choose--</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+
+    <br><br>
+
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
 </html>
