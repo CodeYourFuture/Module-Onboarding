@@ -6,29 +6,19 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      input:invalid {
-        border: 2px dashed red;
-      }
-
-      input:invalid:required {
-        background-image: linear-gradient(to right, pink, lightgreen);
-      }
-
-      input:valid {
-        border: 2px solid black;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
-    <p>
-      Required field are followed by
-      <strong><span aria-label="required">*</span></strong
-      >.
-    </p>
+    <div>
+      <p>
+        Required field are followed by
+        <strong><span class="starcolor" aria-label="required">*</span></strong
+        >.
+      </p>
+    </div>
     <main>
       <!-- 1) Validate the name and Email of the customer using validate attribute
         2) 3 different color for the t-shirt, we can use radio button for this
@@ -37,36 +27,34 @@
         <fieldset>
           <legend>Customer Information</legend>
           <label for="name">
-            <span>First name:</span>
-            <strong><span aria-label="required">*</span></strong>
+            <span>Name:</span>
+            <strong><span id="starcolor" aria-label="required">*</span></strong>
             <input
               type="text"
               id="name"
               name="username"
               maxlength="10"
-              pattern="([a-z]+|[A-Z]+|[A-Z][a-z]+)"
               required
+              pattern="([a-z]+|[A-Z]+|[A-Z][a-z]+)"
             />
           </label>
           <br />
           <label for="mail">
             <br />
             <span>Email:</span>
-            <strong><span aria-label="required">*</span></strong>
-            <input
-              type="email"
-              id="mail"
-              name="mail"
-              maxlength="50"
-              required
-            />
+            <strong
+              ><span class="starcolor" aria-label="required">*</span></strong
+            >
+            <input type="email" id="mail" name="mail" maxlength="50" required />
           </label>
         </fieldset>
-        <br>
+        <br />
         <fieldset>
           <legend>t-shirt details</legend>
           <span>Color:</span>
-          <strong><span aria-label="required">*</span></strong>
+          <strong
+            ><span class="starcolor" aria-label="required">*</span></strong
+          >
           <ul>
             <li>
               <label for="white">White</label>
@@ -88,17 +76,13 @@
             </li>
           </ul>
           <span>Size:</span>
-          <strong><span aria-label="required">*</span></strong>
+          <strong
+            ><span class="starcolor" aria-label="required">*</span></strong
+          >
           <ul>
             <li>
               <label for="xs">XS</label>
-              <input
-                type="radio"
-                id="xs"
-                name="size"
-                value="xs"
-                checked
-              />
+              <input type="radio" id="xs" name="size" value="xs" checked />
             </li>
             <li>
               <label for="s">S</label>
@@ -125,9 +109,9 @@
         <button type="submit">Submit</button>
       </form>
     </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By Abdullah Saleh</h2>
-    </footer>
   </body>
+  <footer>
+    <!-- change to your name-->
+    <h2>By Abdullah</h2>
+  </footer>
 </html>
