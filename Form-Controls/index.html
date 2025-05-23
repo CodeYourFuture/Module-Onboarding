@@ -23,7 +23,7 @@
         <!-- Customer Name -->
         <p> 
           <label for="name">Name: <span aria-label="required">*</span></label>
-          <input type="text" id="name" name="name" required placeholder="Your Name" />
+          <input type="text" id="name" name="name" minlength="2" pattern="[A-Za-z]{2,}"  placeholder="Eg: Ahmad, *min-2 chars" required/>
         </p>
 
         <!-- Customer Email -->
