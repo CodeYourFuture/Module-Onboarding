@@ -1,15 +1,13 @@
-
-
 body {
   font-family: Arial, sans-serif;
   text-align: center;
   line-height: 1.5;
 
   margin: 0;
-   padding: 0;
-  
+  padding: 0;
 
-  
+
+
 }
 
 .page-header {
@@ -23,20 +21,20 @@ main {
   padding: 20px;
   max-width: 800px;
   /* border: solid; */
-  margin:  auto;
+  margin: auto;
 }
 
 .article {
   /* border: solid; */
   padding: 10px;
   text-align: left;
-  background-color:rgb(236, 230, 230);
+  background-color: rgb(236, 230, 230);
 }
 
 .article-image {
   width: 100%;
   height: auto;
- 
+
   margin-bottom: 10px;
 }
 
@@ -52,7 +50,7 @@ main {
   cursor: pointer;
 } */
 .article a:hover {
-  background-color:rgb(194, 206, 241)
+  background-color: rgb(194, 206, 241)
 }
 
 
@@ -75,7 +73,7 @@ main {
 }
 
 .page-footer {
-  background-color:rgb(243, 238, 238);
+  background-color: rgb(243, 238, 238);
   padding: 10px;
   font-size: 14px;
 }
