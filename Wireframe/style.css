@@ -48,11 +48,8 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    padding: 20px;
+  max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
   position: fixed;
@@ -101,4 +98,5 @@ h1 {
 p {
   text-align: left;
 }
+
 
