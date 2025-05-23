@@ -20,12 +20,12 @@
         <!-- What is the customer's name? I must collect this data, and validate it. 
               But what is a valid name? I must decide something.-->
         <label for="first_name">First name:</label><br>
-        <input type="text" id="first_name" name="first_name" maxlength="32" pattern="^[A-Za-zÀ-ÿ' -]{1,32}$"
+        <input type="text" id="first_name" name="first_name" maxlength="32" pattern="^(?! *$)[A-Za-zÀ-ÿ' -]{1,32}$"
           title="First name can contain letters, hyphens, apostrophes, and spaces" required>
         <br>
 
         <label for="last_name">Last name:</label><br>
-        <input type="text" id="last_name" name="last_name" maxlength="32" pattern="^[A-Za-zÀ-ÿ' -]{1,32}$"
+        <input type="text" id="last_name" name="last_name" maxlength="32" pattern="^(?! *$)[A-Za-zÀ-ÿ' -]{1,32}$"
           title="Last name can contain letters, hyphens, apostrophes, and spaces" required>
         <br>
         <!-- What is the customer's email? I must make sure the email is valid. 
@@ -36,7 +36,7 @@
       <fieldset class="user_selection">
         <!-- What color should this t-shirt be? I must give 3 options. 
             How will I make sure they don't pick other colors? -->
-        <label for="color"></label>
+        <label for="color">T-shirt color:</label>
         <select id="color" name="color" required>
           <option value="" disabled selected>Select a color</option>
           <option value="pink">Pink</option>
@@ -45,7 +45,7 @@
         </select>
         <!-- What size does the customer want? 
             I must give the following 6 options: XS, S, M, L, XL, XXL -->
-        <label for="size"></label>
+        <label for="size">T-shirt size:</label>
         <select id="size" name="size" required>
           <option value="" disabled selected>Select a size</option>
           <option value="XS">XS</option>
