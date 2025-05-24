@@ -25,6 +25,11 @@ As well as useful links to learn more */
   --container: 1280px;
 }
 
+header h1, header p {
+  text-align: center;
+}
+
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
