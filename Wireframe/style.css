@@ -17,45 +17,82 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-   --paper: oklch(7 0 0);
+  --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font:  16px/1.6 'Arial', sans-serif;
+  --font: 16px/1.6 'Arial', sans-serif;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
-  
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  text-align: center
+  text-align: center;
+  margin: 0; 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh;
 }
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+  display: inline-block; /* Allow padding and border to apply correctly */
+  margin-top: var(--space); /* Add some space above the link */
 }
+
 img,
 svg {
   width: 100%;
-  object-fit: cover;
+  height: 100%; /* Make image fill its container */
+  object-fit: cover; /* This will crop if aspect ratios differ, but it's okay because the container has a fixed aspect ratio */
+  display: block; /* Removes extra space below images */
 }
-/* ====== Site Layout ====== 
+
+/* ====== Site Layout ======
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header {
+  background-color: whitesmoke;
+  color: rgb(4, 4, 4);
+  padding: calc(var(--space) * 2) var(--space); /* Add padding to header */
+  text-align: left; /* Align header text to the left */
+}
+
+h1 {
+  background-color:rgb(107, 52, 196);
+  color: whitesmoke; 
+  padding: var(--space); 
+  text-align: center;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: calc(var(--space) * 2) auto;
+  flex-grow: 1; 
+  padding: 0 var(--space);
 }
+
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
+  left: 0; 
+  width: 100%;
+  text-align: centre;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -67,12 +104,14 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+  
+  > article:first-of-type {
     grid-column: span 2;
   }
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
+
+/* ====== Article Layout ======
+Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
@@ -82,21 +121,43 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
+  align-content: start; 
+}
+
+article > * {
+  grid-column: 2/3; 
+}
+
+article > img {
+  grid-column: span 3; 
+  margin-bottom: var(--space); 
+  
+  aspect-ratio: 4/3; 
+  object-fit: contain; 
+}
+
+
+article h2 {
+  margin-top: 0;
+  margin-bottom: calc(var(--space) / 2);
+}
+
+article p {
+  margin-top: 0;
+  margin-bottom: var(--space);
+}
+
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr; /
   }
-  > img {
-    grid-column: span 3;
+
+  main > article:first-of-type {
+    grid-column: span 1; 
+  }
+
+  article {
+    padding-bottom: calc(var(--space) / 2);
   }
 }
-
-h1 {
-  background-color: rgb(107, 52, 196);
-  color: white; /
-}
-
-p {
-  text-align: left;
-}
-
-
