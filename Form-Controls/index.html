@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<head>
-  <meta charset="utf-8" >
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>My form exercise</title>
-  <meta name="description" content="" >
-  <meta name="viewport" content="width=device-width, initial-scale=1" >
-</head>
-
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-    <form>
-      <div>
-        <label for="name">Name</label>
-        <input type="text" required name="name" id="name" minlength="2">
-      </div>
-      <br>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
-      </div>
-      <br>
-      <fieldset>
-        <legend>Select color</legend>
-        <label><input type="radio" name="color" value="black" required> Black</label><br>
-        <label><input type="radio" name="color" value="white"> White</label><br>
-        <label><input type="radio" name="color" value="blue"> Blue</label>
-      </fieldset>
-      <label for="size">Select size</label>
-      <select id="size" name="size" required>
-        <option value="" disabled selected>Select a size</option>
-        <option value="XS">XS</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-        <option value="XXL">XXL</option>
-      </select>
-      <br>
-      <button type="submit">Submit</button>
-    </form>
-  </main>
-  <footer>
-    <h2>By Bassam Alshujaa</h2> 
-  </footer>
-</body>
-
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" required name="name" id="name" minlength="2" />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Select color</legend>
+          <div>
+            <input
+              id="black"
+              type="radio"
+              name="color"
+              value="black"
+              required
+            />
+            <label for="black">Black</label>
+          </div>
+          <br />
+          <div>
+            <input id="white" type="radio" name="color" value="white" />
+            <label for="white">White</label>
+          </div>
+          <br />
+          <div>
+            <input id="blue" type="radio" name="color" value="blue" />
+            <label for="blue"> Blue</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="size">Select size</label>
+          <select id="size" name="size" required>
+            <option value="" disabled selected>Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <h2>By Bassam Alshujaa</h2>
+    </footer>
+  </body>
 </html>
