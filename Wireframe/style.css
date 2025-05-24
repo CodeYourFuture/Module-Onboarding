@@ -48,12 +48,12 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: [left] 1fr [right] 1fr [end];
   gap: var(--space);
 }
 
-main > *:first-child {
-  grid-column: span 2;
+.full-span {
+  grid-column: left / end;
 }
 
 footer {
