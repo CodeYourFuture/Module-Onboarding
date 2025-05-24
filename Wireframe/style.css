@@ -26,7 +26,7 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-body {background-color:#6E3B;
+body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
@@ -50,11 +50,13 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  padding: 15px
-  border: 9px
   position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  background-color: #f1f1f1; /* optional: gives it a background */
+  border: 1px solid black;   /* fixed invalid border */
+  z-index: 1000
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
