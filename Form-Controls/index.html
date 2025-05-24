@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Order Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <label for ="name">Enter your name:</label>
-         <input type="text" id="name" name="name" placeholder="enter your name" required
-         pattern="/^[A-Za-z\s'-]{2,50}$/" title="Please enter a valid name (letters, spaces, hyphens only)".>
-             
-         <label for ="Email">Email:</label>
-         <input type="email" id="email" name="email" placeholder="enter your email" required>
 
-             <label for ="name">Enter your name:</label>
-         <input type="text" id="name" name="name" placeholder="enter your name" required>
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By MAYOWA FADARE</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Order Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- write your html here-->
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name" placeholder="enter your name" required pattern="/^[A-Za-z\s'-]{2,50}$/"
+        title="Please enter a valid name (letters, spaces, hyphens only)" .>
+
+      <label for="Email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="enter your email" required>
+
+      <label for="name">Select color:</label>
+      <input type="color" id="color" name="color" placeholder="choose color" required>
+      <option value="">--Select a color--</option>
+      <option value="white">white</option>
+      <option value="blue">Blue</option>
+      <option value="black">Black</option>
+
+      <label for="name">Select size:</label>
+      <input type="size" id="size" name="siz" placeholder="choose size" required>
+      <option value="">--Select a size--</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="XS">L</option>
+      <option value="S">XL</option>
+      <option value="M">XXL</option>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By MAYOWA FADARE</h2>
+  </footer>
+</body>
+
 </html>
