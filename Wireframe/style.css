@@ -22,14 +22,14 @@ body {
 }
 
 .article2 img {
-  height: 200px;
+  height: auto;
   width: 100%;
-  display: inline;
+  display: block;
 }
 .article3 img {
-  height: 200px;
+  height: auto;
   width: 100%;
-  display: inline;
+  display: block;
 }
 
 .header {
