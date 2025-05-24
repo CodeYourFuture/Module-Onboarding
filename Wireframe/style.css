@@ -15,7 +15,7 @@ As well as useful links to learn more */
  For you to explore and play with if you are interested
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
+/* ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -26,6 +26,12 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+ header {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+  
+}
 body {
   background: var(--paper);
   color: var(--ink);
@@ -50,7 +56,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   text-align: center;
 }
@@ -84,6 +90,6 @@ article {
     grid-column: 2/3;
   }
   > img {
-    grid-column: span 3;
-  }
+    grid-column:'span';
+  }
 }
