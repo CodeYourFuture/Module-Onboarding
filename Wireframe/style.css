@@ -32,6 +32,10 @@ body {
   font: var(--font);
 
 }
+
+* {
+  box-sizing: border-box;
+}
 header {
   max-width: var(--container);
   margin: var(--space)auto;
@@ -51,6 +55,7 @@ header p {
   opacity: 0.8;
   text-align: center;
 }
+
 a {
   padding: var(--space);
   border: var(--line);
