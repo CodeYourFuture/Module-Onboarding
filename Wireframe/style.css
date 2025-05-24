@@ -33,6 +33,9 @@ body {
   font: var(--font);
   text-align: center;
 }
+.p2 {
+  font-family: Arial; /*added new font*/
+}
 h1 { font-family: "Lucida Console";
   font-size: 70px;
   font-weight:200;
