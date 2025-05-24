@@ -63,8 +63,8 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 header {
   background-color: whitesmoke;
   color: rgb(4, 4, 4);
-  padding: calc(var(--space) * 2) var(--space); /* Add padding to header */
-  text-align: left; /* Align header text to the left */
+  padding: calc(var(--space) * 2) var(--space); 
+  text-align: left; 
 }
 
 h1 {
