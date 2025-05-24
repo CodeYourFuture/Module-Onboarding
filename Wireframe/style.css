@@ -1,8 +1,6 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
+header {
+  text-align: center;
+}
 
 /* ====== Design Palette ======
  This is our "design palette".
@@ -32,9 +30,15 @@ body {
   font: var(--font);
 }
 a {
-  padding: var(--space);
+  padding: 4px 8px;
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+  width: 120px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  height: 40px;
 }
 img,
 svg {
@@ -50,10 +54,14 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  
+  border-top: 1px solid rgb(172, 172, 172) ;
   bottom: 0;
   text-align: center;
+  width: 100%;
+  padding: 20px;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
