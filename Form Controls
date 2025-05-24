@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FORM</title>
-    <meta name="description" content ="T-Shirt order form">
+    <meta name="description" content>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -19,7 +19,7 @@
             type="text"
             id="name"
             name="name"
-            placeholder="Enter your full name" minlength="2"
+            placeholder="Enter your full name"
             required>
         </div>
         <br>
@@ -36,10 +36,10 @@
         <label for="colour">T-SHIRT COLOUR</label>
         <div>
           <select
+            type="colour"
             id="colour"
             name="colour"
             required>
-            <option value="" disabled selected>select shirt colour</option>
             <option value="Black">Black</option>
             <option value="White">White</option>
             <option value="Navy Blue">Navy Blue</option>
@@ -49,7 +49,6 @@
         <label for="size">T-SHIRT SIZE</label>
         <div>
           <select id="size" name="size" required>
-            <option value="" disabled selected>select shirt size</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
