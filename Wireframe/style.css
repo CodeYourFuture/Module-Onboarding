@@ -26,6 +26,12 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+ header {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+  
+}
 body {
   background: var(--paper);
   color: var(--ink);
@@ -50,7 +56,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   text-align: center;
 }
