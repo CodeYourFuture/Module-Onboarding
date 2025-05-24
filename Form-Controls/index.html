@@ -7,21 +7,64 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+          <label for="name">Name</label>
+          <input type="text" required name="name" id="name" minlength="2" pattern="^[a-zA-Z]{2,}(?: [a-zA-Z]{2,})?$" />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Select color</legend>
+          <div>
+            <input
+              id="black"
+              type="radio"
+              name="color"
+              value="black"
+              required
+            />
+            <label for="black">Black</label>
+          </div>
+          <br />
+          <div>
+            <input id="white" type="radio" name="color" value="white" />
+            <label for="white">White</label>
+          </div>
+          <br />
+          <div>
+            <input id="blue" type="radio" name="color" value="blue" />
+            <label for="blue"> Blue</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="size">Select size</label>
+          <select id="size" name="size" required>
+            <option value="" disabled selected>Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <br />
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Bassam Alshujaa</h2>
     </footer>
   </body>
 </html>
