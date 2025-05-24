@@ -14,14 +14,52 @@
     <main>
       <form>
         <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <label for="name"> Costume's Name: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            minlength="2"
+            maxlength="32"
+            pattern="[A-Za-z]{2,32}"
+            placeholder="Full Name"
+            required
+          />
+          <label for="email"> Costume's Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="exemple@mail.com"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+          <label for="color">Color:</label>
+          <select id="color" name="color" required>
+            <option value="RED">RED</option>
+            <option value="BLUE">BLUE</option>
+            <option value="GREEN">GREEN</option>
+          </select>
+          <label for="size">Size:</label>
+          <select id="size" name="size" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <button type="submit">Submit</button>
+          <!-- 
+            try writing out the requirements first as comments
+            this will also help you fill in your PR message later-->
+        </fieldset>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By SZABO ZOLTAN</h2>
     </footer>
   </body>
 </html>
