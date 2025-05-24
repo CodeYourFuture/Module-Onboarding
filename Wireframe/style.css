@@ -36,6 +36,7 @@ body {
 * {
   box-sizing: border-box;
 }
+
 header {
   max-width: var(--container);
   margin: var(--space)auto;
@@ -60,7 +61,11 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
 }
+
 img,
 svg {
   width: 100%;
