@@ -18,27 +18,29 @@
       <!-- write your html here-->
       <label for="name">Enter your name:</label>
       <input type="text" id="name" name="name" placeholder="enter your name" required pattern="/^[A-Za-z\s'-]{2,50}$/"
-        title="Please enter a valid name (letters, spaces, hyphens only)" .>
+        title="Please enter a valid name (letters, spaces, hyphens only)" />
 
       <label for="Email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="enter your email" required>
+      <input type="email" id="email" name="email" placeholder="enter your email" required/>
 
       <label for="name">Select color:</label>
-      <input type="color" id="color" name="color" placeholder="choose color" required>
-      <option value="color">--Select a color--</option>
+      <select type="dropdown" id="color" name="color" placeholder="choose color" required>
+      <option value="select">select a color</option>
       <option value="white">white</option>
       <option value="blue">Blue</option>
       <option value="black">Black</option>
+      </input>
 
       <label for="name">Select size:</label>
-      <input type="size" id="size" name="siz" placeholder="choose size" required>
-      <option value="Select a size">sizes</option>
-      <option value="XS">XS</option>
-      <option value="S">S</option>
-      <option value="M">M</option>
-      <option value="XS">L</option>
-      <option value="S">XL</option>
-      <option value="M">XXL</option>
+      <select type="dropdown" id="size" name="size" placeholder="choose size" required>
+        <option value="Select a size">sizes</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="XS">L</option>
+        <option value="S">XL</option>
+        <option value="M">XXL</option>
+      </select>
       <button type="submit">Submit</button>
     </form>
   </main>
