@@ -39,6 +39,18 @@ header {
   text-align: centre;
   border-bottom: var(--line);
 }
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  text-align: center;
+}
 a {
   padding: var(--space);
   border: var(--line);
