@@ -26,6 +26,11 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -33,9 +38,7 @@ body {
 
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 header {
   max-width: var(--container);
@@ -64,6 +67,11 @@ a {
   text-decoration: none;
   color: inherit;
   transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: color-mix(in oklab, var(--paper)90%, white);
+  transform: scale(1.02);
 }
 
 img,
