@@ -30,6 +30,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+
 }
 a {
   padding: var(--space);
@@ -85,5 +86,11 @@ article {
   }
   > img {
     grid-column: span 3;
+    max-height: 250px;
+    object-fit: contain;
+    border-bottom: var(--line);
+    padding-bottom: var(--space);
+    background-color: transparent;
+    display: block;
   }
 }
