@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>My form exercise</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
 </head>
 
 <body>
@@ -25,33 +25,15 @@
         <input type="email" name="email" id="email" required>
       </div>
       <br>
-      <div>
-        <label for="color">Select color</label>
-        <div>
-          <br>
-          <div>
-            <label for="black">
-              <input type="radio" value="black" required id="black" name="color">Black
-            </label>
-          </div>
-          <br>
-          <div>
-            <label for="white">
-              <input type="radio"  value="white" id="white" name="color">White
-            </label>
-          </div>
-          <br>
-          <div>
-            <label for="blue">
-              <input type="radio"  value="blue" id="blue" name="color">Blue
-            </label>
-          </div>
-        </div>
-
-      </div>
-      <br>
+      <fieldset>
+        <legend>Select color</legend>
+        <label><input type="radio" name="color" value="black" required> Black</label><br>
+        <label><input type="radio" name="color" value="white"> White</label><br>
+        <label><input type="radio" name="color" value="blue"> Blue</label>
+      </fieldset>
       <label for="size">Select size</label>
       <select id="size" name="size" required>
+        <option value="" disabled selected>Select a size</option>
         <option value="XS">XS</option>
         <option value="S">S</option>
         <option value="M">M</option>
