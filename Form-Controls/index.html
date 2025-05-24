@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My form exercise</title>
+  <meta name="description" content="Form Controls, form validation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <h1>T-Shirt Order Form</h1>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Customer Details</legend>
+        <br>
+        <!--Validate customer data using character pattern to ensure correct length and format-->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" pattern="[A-Za-z]{2,}" title="Please enter at least 2 characters"
+          required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" pattern="[A-Za-z]{2,}" title="Please enter at least 2 characters"
+          required>
+
+        <label for="email">Email Address:</label> <!--Validate email addresses to have a consistent pattern-->
+        <input type="email" id="email" name="email" placeholder="example@email.com" pattern="^[^@]+@[^@]+\.[^@]+$"
+          required>
+        <!-- ^=start of string, [^@]=one or more characters excluding @, +@=must include @ symbol, /. =dot separating email server and top-level domain, $=end of string-->
+        <br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Colour</legend>
+        <br>
+        <input type="radio" id="black" name="colour" value="black" required>
+        <label for="black">Black</label>
+
+        <input type="radio" id="khaki" name="colour" value="khaki">
+        <label for="khaki">Khaki</label>
+
+        <input type="radio" id="yellow" name="colour" value="yellow">
+        <label for="yellow">Yellow</label>
+        <br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Size</legend>
+        <br>
+        <label for="size">Options:</label>
+        <select name="size" id="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+        <br><br>
+      </fieldset>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  <footer>
+    <h2>By Mo Muchunu</h2>
+  </footer>
+</body>
+
+</html>

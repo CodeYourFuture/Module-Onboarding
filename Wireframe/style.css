@@ -1,0 +1,119 @@
+
+:root {
+  --ink: black;
+  --font-serif: "Serif", Georgia;
+  --space: clamp(6px, 6px + 2vw, 15px);
+  --line: 1px solid;
+  --container: 1280px;
+}
+
+body {
+  background-color: rgb(35, 35, 35);
+  display: grid;
+  place-content: center;
+  font: var(--font-serif);
+}
+
+a {
+  padding: var(--space);
+  border: var(--line);
+  max-width: fit-content;
+}
+
+a:hover {
+  background-color: rgba(125, 122, 122, 0.5);
+  color: var(--ink);
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+header {
+text-align: center;
+color: white;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 10px;
+max-width: var(--container);
+}
+
+#first {
+  grid-column: 1 / span 2;
+  width: 100%;
+}
+
+.image-container {
+  border: 2px solid rgba(14, 6, 6, 0.73);
+  border-radius: 10px;
+}
+
+#readme{
+  width: 70%;
+  height: 400px;
+  padding-left: 180px;
+  border-radius: 10px;
+  }
+
+#branch { 
+width: 50%;
+height: 405px;
+padding-left: 120px;
+}
+
+#wire {
+  width: 90%;
+  height: 400px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+article { 
+background-color: rgba(255, 255, 255);
+padding: 40px;
+border-radius: var(--space);
+font-size: 17px;
+text-align: justify;
+display: grid;
+}
+
+main {
+  max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 4) auto;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:5px;
+  
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 17px;
+  color: rgb(17, 14, 14);
+  background-color: rgba(0, 0, 0, 0.627);
+  width: 100%;
+  color: white;
+  left: 0;
+  padding: 4px;
+}
+
+ 
+
+
+
+
+ 
+
+
+
+
