@@ -12,16 +12,58 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Customer Details:</legend>
+          <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" minlength="2" maxlength="50" autocomplete="name" required pattern=".*\S.*" >
+          </p>
+          <p>
+          <label for="email">Email:</label> 
+          <input type="email" id="email" name="email" autocomplete="email" title="Please enter a valid email (e.g., user@example.com)" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" > 
+          </p>
+        </fieldset>
+        <section>
+          <h2>T-Shirt preferences:</h2>
+          <fieldset>
+          <legend>Select a colour:</legend>
+          <label for="colour">T-shirt Color:</label>
+          <select name="colour" id="colour" required>
+            <option value="" disabled selected>Select a color</option>
+            <option value="Black">Black</option>
+            <option value="Dark-blue">Dark blue</option>
+            <option value="Red">Red</option>
+          </select>
+        </fieldset>
+          <fieldset>
+            <legend>Select size:</legend>
+             <div><input type="radio" id="xs" name="size" value="XS" required >
+             <label for="xs">XS</label></div>
+             <div><input type="radio" id="s" name="size" value="S" >
+             <label for="s">S</label></div>
+             <div><input type="radio" id="m" name="size" value="M" >
+             <label for="m">M</label></div>
+             <div><input type="radio" id="l" name="size" value="L" >
+             <label for="l">L</label></div>
+             <div><input type="radio" id="xl" name="size" value="XL" >
+             <label for="xl">XL</label></div>
+             <div><input type="radio" id="xxl" name="size" value="XXL" >
+             <label for="xxl">XXL</label></div>
+          </fieldset>
+        </section>
+        <button type="submit">Send</button>
+        <!--    
+What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+         fill in your PR message later-->
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>By EMILIANO URUENA</p>
     </footer>
   </body>
 </html>
