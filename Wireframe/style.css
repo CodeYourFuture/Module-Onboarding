@@ -24,8 +24,10 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
   --line-width: 1px;
-  --footer-total-height: calc(2 * var(--space) + var(--line-width) + var(--footer-content-line-height));
-  --footer-content-line-height: 1.5em;  
+  --footer-total-height: calc(
+    2 * var(--space) + var(--line-width) + var(--footer-content-line-height)
+  );
+  --footer-content-line-height: 1.5em;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
