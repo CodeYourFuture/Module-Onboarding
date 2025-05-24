@@ -1,27 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>Product Pick Form Controls</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      font-size: 1rem;
+      padding: 0.75rem;
+      margin-top: 0.25rem;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .radio-option {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 48px;
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+
+    fieldset {
+      margin-bottom: 2rem;
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <h1>Product Pick</h1>
+  </header>
+
+  <main role="main">
+    <form name="tshirt-form">
+      
+      <fieldset>
+        <legend>Confirm Your Details</legend>
+
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          minlength="2"
+        />
+
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Select T-shirt Options</legend>
+
+        <fieldset>
+          <legend>Colour:</legend>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="red" name="colour" value="red" required />
+              <label for="red">Red</label>
+            </div>
+
+            <div class="radio-option">
+              <input type="radio" id="blue" name="colour" value="blue" />
+              <label for="blue">Blue</label>
+            </div>
+
+            <div class="radio-option">
+              <input type="radio" id="green" name="colour" value="green" />
+              <label for="green">Green</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+          <option value="">Select size…</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer role="contentinfo">
+    <p>Indira - HOMEWORK SOLUTION</p>
+  </footer>
+</body>
 </html>
+
