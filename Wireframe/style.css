@@ -23,6 +23,9 @@ As well as useful links to learn more */
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+  --line-width: 1px;
+  --footer-total-height: calc(2 * var(--space) + var(--line-width) + var(--footer-content-line-height));
+  --footer-content-line-height: 1.5em;  
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -30,6 +33,22 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: var(--footer-total-height);
+}
+h1 {
+  text-align: centre;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header {
+  width: 100%;
+  text-align: center;
+  padding-top: var(--space);
+  padding-bottom: var(--space);
 }
 a {
   padding: var(--space);
@@ -48,10 +67,18 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  flex-grow: 1;
 }
 footer {
+  position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  padding: var(--space);
+  background-color: var(--paper);
+  border-top: var(--paper);
+  box-sizing: border-box;
+  justify-content: center;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
