@@ -17,95 +17,79 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 /* ====== Design Palette ====== */
 :root {
-  --paper: #f4f4f4;
-  --ink: #333;
-  --font: 100%/1.5 system-ui, sans-serif;
+  --paper: oklch(7 0 0);
+  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid #ccc;
+  --line: 1px solid;
   --container: 1280px;
 }
-
-/* ====== Base Elements ====== */
+/* ====== Base Elements ======
+ General rules for basic HTML elements in any context */
+ header {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+  
+}
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  margin: 0;
 }
-
-header {
-  background-color: var(--ink);
-  color: white;
-  padding: var(--space) calc(var(--space) * 2);
-  text-align: center;
+a {
+  padding: var(--space);
+  border: var(--line);
+  max-width: fit-content;
 }
-
-header h1 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+img,
+svg {
+  width: 100%;
+  object-fit: cover;
 }
-
-header p {
-  font-size: 1.2em;
-  margin-top: 0;
-}
-
-/* ====== Site Layout ====== */
+/* ====== Site Layout ====== 
+Setting the overall rules for page regions
+https://www.w3.org/WAI/tutorials/page-structure/regions/
+*/
 main {
   max-width: var(--container);
-  margin: 20px auto calc(var(--space) * 4) auto;
+  margin: 0 auto calc(var(--space) * 4) auto;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+/* ====== Articles Grid Layout ====
+Setting the rules for how articles are placed in the main element.
+Inspect this in Devtools and click the "grid" button in the Elements view
+Play with the options that come up.
+https://developer.chrome.com/docs/devtools/css/grid
+https://gridbyexample.com/learn/
+*/
+main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
+  > *:first-child {
+    grid-column: span 2;
+  }
 }
-
-main > article:first-child {
-  grid-column: span 2;
-}
-
-/* ====== Article Layout ====== */
+/* ====== Article Layout ====== 
+Setting the rules for how elements are placed in the article. 
+Now laying out just the INSIDE of the repeated card/article design.
+Keeping things orderly and separate is the key to good, simple CSS.
+*/
 article {
-  background: white;
   border: var(--line);
   padding-bottom: var(--space);
-  text-align: center;
+  text-align: left;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space);
-}
-
-article img {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-}
-
-article h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.2em;
-}
-
-article p {
-  margin: 0 10px;
-}
-
-article a {
-  background-color: var(--ink);
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  max-width: fit-content;
-  margin: 0 auto;
-}
-
-/* ====== Footer ====== */
-footer {
-  background-color: var(--ink);
-  color: white;
-  padding: var(--space);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+  grid-template-columns: var(--space) 1fr var(--space);
+  > * {
+    grid-column: 2/3;
+  }
+  > img {
+    grid-column:'span';
+  }
 }
