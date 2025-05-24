@@ -53,6 +53,8 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  border:solid black;
+  border-radius: 4in;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,4 +88,7 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+header{
+  text-align: center;
 }
