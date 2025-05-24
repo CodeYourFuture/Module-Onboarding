@@ -32,6 +32,13 @@ body {
   font: var(--font);
 
 }
+header {
+  max-width: var(--container);
+  margin: var(--space)auto;
+  padding: var(--space);
+  text-align: centre;
+  border-bottom: var(--line);
+}
 a {
   padding: var(--space);
   border: var(--line);
@@ -84,6 +91,7 @@ article {
   > * {
     grid-column: 2/3;
   }
+
   > img {
     grid-column: span 3;
     max-height: 250px;
