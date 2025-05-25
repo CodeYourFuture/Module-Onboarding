@@ -26,16 +26,51 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+
+
+
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+
 }
+
+
+
+header {
+  max-width: var(--container);
+  margin: var(--space)auto;
+  padding: var(--space);
+  text-align: centre;
+  border-bottom: var(--line);
+}
+
+header h1 {
+  margin: 0;
+  
+  text-align: center;
+}
+
+header p {
+  opacity: 0.8;
+  text-align: center;
+}
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
 }
+
+a:hover {
+  background-color: color-mix(in oklab, var(--paper)90%, white);
+  transform: scale(1.02);
+}
+
 img,
 svg {
   width: 100%;
@@ -48,11 +83,16 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
 }
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  border-top: 1px solid black;
+  width: 100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -83,7 +123,11 @@ article {
   > * {
     grid-column: 2/3;
   }
+
   > img {
     grid-column: span 3;
+  
   }
+
+  
 }
