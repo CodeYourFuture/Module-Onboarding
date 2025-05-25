@@ -18,14 +18,15 @@
           <label for="name">Your name:</label>
           <span aria-label="required"><strong>*</strong></span>
           <input type="text" id="name" name="user-name" placeholder="Enter your full name"
-            pattern="^[A-Za-z]+( [A-Za-z]+)*$" required
+            pattern="^[A-Za-z]+( [A-Za-z]+)*$" required aria-required="true" autocomplete="name"
             oninvalid="this.setCustomValidity('Please enter only letters. No spaces at the beginning or end.')"
             oninput="this.setCustomValidity('')">
           <br>
 
           <label for="email">Your email:</label>
           <span aria-label="required"><strong>*</strong></span>
-          <input type="email" id="email" name="user-email" placeholder="Enter your email" required>
+          <input type="email" id="email" name="user-email" placeholder="Enter your email"
+            required aria-required="true" autocomplete="email">
         </fieldset>
 
         <fieldset>
@@ -33,7 +34,7 @@
 
           <label for="color">T-shirt color:</label>
           <span aria-label="required"><strong>*</strong></span>
-          <select name="color" id="color" required>
+          <select name="color" id="color" required aria-required="true" autocomplete="off">
             <option value="">-- Please choose a color --</option>
             <option value="red">Red</option>
             <option value="green">Green</option>
@@ -46,7 +47,7 @@
           <span aria-label="required">Choose your size:</span>
           <br>
           <label for="xs">XS</label>
-          <input type="radio" id="xs" name="size" value="XS" required><br>
+          <input type="radio" id="xs" name="size" value="XS" required aria-required="true"><br>
 
           <label for="s">S</label>
           <input type="radio" id="s" name="size" value="S"><br>
@@ -74,4 +75,7 @@
     </footer>
   </body>
 </html>
+
+
+
 
