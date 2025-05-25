@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>T-shirt order Form</title>
+</head>
+<body>
+  <h1>T-shirt order Form</h1>
+  <form  method="post">
+     <!-- Name -->
+    <label for="name">Full Name:</label><br />
+    <input type="text" id="name" name="name" required minlength="2"/><br /><br />
+ <!-- Email -->
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+    <!--colour-->
+<fieldset>
+  <legend>Choose a T-Shirt colour:</legend>
+<input type="radio" id="colour-red" name="colour" value="red" required>
+<label for="colour-red">Red</label><br>
+<input type="radio" id="colour-green" name="colour" value="green">
+<label for="colour-green">Green</label><br>
+<input type="radio" id="colour-blue" name="colour" value="blue">
+<label for="colour-blue">Blue</label><br>
+</fieldset>
+<!--Size-->
+<fieldset>
+<label for="size">T-shirt size:</label>
+<select id="size" name="size" required>
+<option value="">-- Select a size --</option>
+<option value="XS">XS</option>
+<option value="S">S</option>
+<option value="M">M</option>
+  <option value="L">L</option>
+<option value="XL">XL</option>
+<option value="XXL">XXL</option>
+</select>
+</fieldset>
+<!--submit-->
+    <input type="submit" value="Submit" />
+  </form>
+</body>
 </html>
