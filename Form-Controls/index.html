@@ -13,30 +13,48 @@
     </header>
     <main>
       <form>
-        <fieldset>
-          <legend>Personal Details</legend>
+        <section>
+          <h2>Personal Details</h2>
+        <p>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
-
+        </p>
+        <p>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
-        </fieldset>
+        </p>
+        </section>
         
+        <section>
+        <h2>Item</h2>
         <fieldset>
-          <legend>Item</legend>
-        <input type="radio" id="color" name="color" value="Yellow">
-        <label for="color">Yellow:</label>
-
-        <input type="radio" id="color" name="color" value="Red">
-        <label for="color">Red:</label>
-        
-        <input type="radio" id="color" name="color" value="Blue">
-        <label for="color">Blue:</label>
-
-        <label for="size">Size:</label>
-        <input type="number" id="size" name="size">
-        
+        <legend>Color</legend>
+        <p>
+        <input type="radio" id="yellow" name="color" value="Yellow">
+        <label for="yellow">Yellow:</label>
+        </p>
+        <p>
+        <input type="radio" id="red" name="color" value="Red">
+        <label for="red">Red:</label>
+        </p>
+        <p>
+        <input type="radio" id="blue" name="color" value="Blue">
+        <label for="blue">Blue:</label>
+        </p>
         </fieldset>
+        <p>
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+        </p>
+      </section>
+        
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
