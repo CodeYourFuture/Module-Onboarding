@@ -20,40 +20,54 @@
 
         <!-- 1. Create a form with a text input for the customer name -->
         <label for="customerName">Customer Name:</label>
-        <input type="text" id="customerName" name="customerName" required minlength="2"/>
-        <br><br><br
+        <input
+          type="text"
+          id="customerName"
+          name="customerName"
+          required
+          minlength="2"
+          pattern=".*\\S.*"
+          title="Name cannot be only spaces"
+        />
+        <br /><br />
         
         <!-- 2. Create customer email address -->
         <label for="customerEmail">Customer Email:</label>
         <input type="email" id="customerEmail" name="customerEmail" required />
-        <br><br><br>
+        <br /><br />
 
           <!-- 3. Create a select input for t-shirt colour  -->
           <label for="tshirtColour">T-shirt Colour:</label>
-          <select id="tshirtColour" name="tshirtColour">
+          <select id="tshirtColour" name="tshirtColour" required>
           <option value="">--Select Colour--</option>
           <option value="red">Red</option>
           <option value="blue">Blue</option>
           <option value="green">Green</option>
           </select>
-          <br><br><br>
+          <br /><br />
 
         <!-- 4. Create a radio button for t-shirt size -->
-        <label>T-shirt Size:</label>
-        
-        <input type="radio" id="Xsmall" name="tshirtSize" value="Xsmall" />
-        <label for="Xsmall">Xsmall</label>
-        <input type="radio" id="small" name="tshirtSize" value="small" />
-        <label for="small">small</label>
-        <input type="radio" id="medium" name="tshirtSize" value="medium" />
-        <label for="medium">medium</label>
-        <input type="radio" id="large" name="tshirtSize" value="large" />
-        <label for="large">large</label>
-        <input type="radio" id="Xlarge" name="tshirtSize" value="Xlarge" />
-        <label for="Xlarge">Xlarge</label>
-        <input type="radio" id="XXlarge" name="tshirtSize" value="XXlarge" />
-        <label for="XXlarge">XXlarge</label>
-        <br><br><br>
+        <fieldset>
+          <legend>T-shirt Size:</legend>
+          <input type="radio" id="xsmall" name="tshirtSize" value="Xsmall" />
+          <label for="xsmall">X-Small</label>
+
+          <input type="radio" id="small" name="tshirtSize" value="Small" />
+          <label for="small">Small</label>
+
+          <input type="radio" id="medium" name="tshirtSize" value="Medium" />
+          <label for="medium">Medium</label>
+
+          <input type="radio" id="large" name="tshirtSize" value="Large" />
+          <label for="large">Large</label>
+
+          <input type="radio" id="xlarge" name="tshirtSize" value="Xlarge" />
+          <label for="xlarge">X-Large</label>
+
+          <input type="radio" id="xxlarge" name="tshirtSize" value="XXlarge" />
+          <label for="xxlarge">XX-Large</label>
+        </fieldset>
+        <br />
 
         <!-- 5. Create a submit button -->
         <input type="submit" value="Submit" />
@@ -62,7 +76,7 @@
 
         <!-- 6. Create a reset button -->
         <input type="reset" value="Reset" />
-        <br><br><br>
+        <br />
 
       </form>
     </main>
