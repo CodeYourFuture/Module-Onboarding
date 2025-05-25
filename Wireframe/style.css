@@ -18,9 +18,12 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 h1 {
    text-align: center;
-  background-color: rgb(224, 254, 254);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
+.description {
+  color: rgb(128, 128, 128);
+  text-align: center;
 }
 :root {
   --paper: oklch(7 0 0);
@@ -34,7 +37,6 @@ h1 {
  General rules for basic HTML elements in any context */
 body {
   background: var(--paper);
-  color: var(--ink);
   font: var(--font);
   width: 80%;
   margin-left: auto;
@@ -60,9 +62,10 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  positioon: absolute;
+  position: fixed;
+  left: 1;
   bottom: 0;
-  text-align: center;
+
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
