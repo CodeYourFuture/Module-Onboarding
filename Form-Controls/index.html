@@ -13,15 +13,53 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Customer Information</legend>
+        <div>
+        <label for="customer-name">Name</label><br>
+        <input type="text" name="customer-name" id="customer-name" minlength="2"  pattern=".*\S.*" placeholder="Enter your full name" 
+        required> 
+        </div><br>
+
+        <div>
+        <label for="customer-email">Email</label><br>
+        <input type="email" name="customer-email" id="customer-email" placeholder="name@example.com"  required>
+        </div><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Product Selection</legend>
+
+        <div>
+        <label for="color">Choose your T-shirt color</label><br>
+        <select name="color" id="color" required>
+          <option value="" disabled selected>Choose a color</option>
+          <option value="purple">Purple</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          </select>
+        </div><br>
+
+        <div>
+ 
+        <label for="size">Please choose from the sizes listed</label><br>
+        <select name="size" id="size" required>
+          <option value="" disabled selected>Choose a Size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+        </div><br>
+        </fieldset>
+        <button>Submit</button>
+ 
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+     <h2>By Sara Tahir</h2>
     </footer>
   </body>
 </html>
