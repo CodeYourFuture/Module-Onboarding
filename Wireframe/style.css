@@ -86,11 +86,15 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
 }
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  width: 100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -130,5 +134,12 @@ article {
     padding-bottom: var(--space);
     background-color: transparent;
     display: block;
+  }
+
+  .readme-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: var(--space);
   }
 }
