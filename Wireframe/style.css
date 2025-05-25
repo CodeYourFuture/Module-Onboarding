@@ -94,6 +94,7 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  border-top: 1px soild black;
   width: 100%;
 }
 /* ====== Articles Grid Layout ====
@@ -128,12 +129,7 @@ article {
 
   > img {
     grid-column: span 3;
-    max-height: 250px;
-    object-fit: contain;
-    border-bottom: var(--line);
-    padding-bottom: var(--space);
-    background-color: transparent;
-    display: block;
+  
   }
 
   
