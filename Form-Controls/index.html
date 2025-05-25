@@ -13,17 +13,30 @@
     </header>
     <main>
       <form>
+        <fieldset>
+          <legend>Personal Details</legend>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
+        </fieldset>
+        
+        <fieldset>
+          <legend>Item</legend>
+        <input type="radio" id="color" name="color">
+        <label for="color">Yellow:</label>
 
-        <label for="color">Color:</label>
-        <input type="text" id="color" name="color">
+        <input type="radio" id="color" name="color">
+        <label for="color">Red:</label>
+        
+        <input type="radio" id="color" name="color">
+        <label for="color">Blue:</label>
 
         <label for="size">Size:</label>
         <input type="number" id="size" name="size">
+        
+        </fieldset>
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
