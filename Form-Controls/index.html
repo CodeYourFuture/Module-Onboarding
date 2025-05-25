@@ -12,25 +12,24 @@
     </header>
     <main>
       <form>
-        <section>
+        <fieldset>
+          <legend>Your Information</legend>
+
           <label for="name">Your name:</label>
-          <span aria-label="required"><strong> * </strong></span>
-          <input type="text" id="name" name="user-name" placeholder="Enter your name" required>
+          <span aria-label="required"><strong>*</strong></span>
+          <input type="text" id="name" name="user-name" placeholder="Enter your full name"
+            pattern="^[A-Za-z]+( [A-Za-z]+)*$" required
+            oninvalid="this.setCustomValidity('Please enter only letters. No spaces at the beginning or end.')"
+            oninput="this.setCustomValidity('')">
           <br>
 
           <label for="email">Your email:</label>
           <span aria-label="required"><strong>*</strong></span>
           <input type="email" id="email" name="user-email" placeholder="Enter your email" required>
-          <br>
+        </fieldset>
 
-          <label for="password">Password:</label>
-          <span aria-label="required"><strong>*</strong></span>
-          <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
-        </section>
-
-        <section>
-          <h2>Choose your T-shirt</h2>
-          <p>Please fill all required information</p>
+        <fieldset>
+          <legend>Choose your T-shirt</legend>
 
           <label for="color">T-shirt color:</label>
           <span aria-label="required"><strong>*</strong></span>
@@ -41,6 +40,8 @@
             <option value="blue">Blue</option>
           </select>
           <br>
+
+          <p>All fields are required</p>
 
           <span aria-label="required">Choose your size:</span>
           <br>
@@ -61,7 +62,7 @@
 
           <label for="xxl">XXL</label>
           <input type="radio" id="xxl" name="size" value="XXL">
-        </section>
+        </fieldset>
 
         <div>
           <button type="submit">Submit</button>
@@ -73,3 +74,4 @@
     </footer>
   </body>
 </html>
+
