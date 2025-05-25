@@ -102,14 +102,29 @@ article {
   grid-template-columns: var(--space) 1fr var(--space);
 }
 
-article > * {
+article
+ {
   grid-column: 2 / 3;
+  border: var(--line);
+  padding: var(--space);
+
 }
 
 article > img {
   grid-column: span 3;
 }
 
+.column article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  
+}
 footer {
   position: fixed;
   bottom: 0;
