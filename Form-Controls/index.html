@@ -14,6 +14,7 @@
     <main>
       <form>
         <section>
+        <fieldset>
         <h2>Personal Details</h2>
         <p>
         <label for="name"><strong> Name:<span aria-hidden="true">*</span></strong></label>
@@ -24,9 +25,11 @@
         <strong>Email:<span aria-hidden="true">*</span></strong> </label>
         <input type="email" id="email" name="email" required>
         </p>
+        </fieldset>
         </section>
         
         <section>
+        <fieldset>
         <h2>Item</h2>
         <fieldset>
         <legend><strong>Color</strong></legend>
@@ -55,6 +58,7 @@
         <p>
         <label for="size">Select a size:</label>
         <select id="size" name="size">
+          <option value="none">--choose--</option>
           <option value="XS">Extra Small</option>
           <option value="S">Small</option>
           <option value="M">Medium</option>
@@ -63,6 +67,7 @@
           <option value="XXL">2X Large</option>
         </select>
         </p>
+        </fieldset>
         </fieldset>
       </section>
         
