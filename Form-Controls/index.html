@@ -9,10 +9,51 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>My T-Shirt Form</h1>
     </header>
     <main>
-      <form>
+      <form method="GET">
+        <div> <label>Name</label>
+        <input name="name" id="name">
+      </div>
+      <div> <label for="surname">Surname</label>
+        <input type="text" name="name" id="surname" required>
+      </div>
+      <div> <label>Email</label>
+        <input email="email" id="email">
+      </div>
+
+      <div>
+        Color Options:
+        <div>
+        <label for="Blue">Blue</label>
+        <input type="checkbox" name="Blue" id="Blue"</input>
+
+      </div>
+      <div>
+        <label for="Red">Red</label>
+        <input type="checkbox" name="Red" id="Red"</input>
+
+      </div>
+      <div>
+        <label for="Black">Black</label>
+        <input type="checkbox" name="Black" id="Black"</input>
+      </div>
+      <div>
+Choose a
+        <label for="Size">Size</label>
+        <select name="size" id="size">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+
+
+      </div>
+      </form>
+
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
