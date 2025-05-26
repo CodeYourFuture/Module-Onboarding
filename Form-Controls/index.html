@@ -9,11 +9,68 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1 style="text-align: center;">Product Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
+        <section>
+        <fieldset>
+        <h2>Personal Details</h2>
+        <p>
+        <label for="name"><strong> Name:<span aria-hidden="true">*</span></strong></label>
+        <input type="text" id="name" name="name" minlength="2" required>
+        </p>
+        <p>
+        <label for="email">
+        <strong>Email:<span aria-hidden="true">*</span></strong> </label>
+        <input type="email" id="email" name="email" required>
+        </p>
+        </fieldset>
+        </section>
+        
+        <section>
+        <fieldset>
+        <h2>Item</h2>
+        <fieldset>
+        <legend><strong>Color</strong></legend>
+        <ul>
+        <li>
+        <p>
+        <input type="radio" id="yellow" name="color" value="Yellow">
+        <label for="yellow">Yellow</label>
+        </p>
+        </li>
+        <li>
+        <p>
+        <input type="radio" id="red" name="color" value="Red">
+        <label for="red">Red</label>
+        </p>
+        </li>
+        <li>
+        <p>
+        <input type="radio" id="blue" name="color" value="Blue">
+        <label for="blue">Blue</label>
+        </p>
+        </li>
+        </fieldset>
+        <fieldset>
+        <legend><strong>Size</strong></legend>
+        <p>
+        <label for="size">Select a size:</label>
+        <select id="size" name="size">
+          <option value="none">--choose--</option>
+          <option value="XS">Extra Small</option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">Extra Large</option>
+          <option value="XXL">2X Large</option>
+        </select>
+        </p>
+        </fieldset>
+        </fieldset>
+      </section>
+        
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
@@ -21,7 +78,10 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+    <details>
+    <summary>By Nahom Mesfin</summary>
+    <p>&copy; 2025 nahom.inc. All rights reserved.</p>
+    </details>
     </footer>
   </body>
 </html>
