@@ -14,7 +14,7 @@
       <label for="name">Full Name:</label>
       <input type="text" id="name" name="name" required minlength="2"
              pattern="^(?=.*[A-Za-z])[A-Za-z\s'-]+$"
-             title="Please enter your full name with letters only. No spaces only." />
+             title="Please enter your full name with letters only (e.g., Firstname Lastname)" />
     <br><br>
 <!--Email -->
       <label for="email">Email Address:</label>
@@ -24,9 +24,21 @@
        <!-- T-Shirt Colour -->
       <fieldset>
         <legend>Select T-Shirt Colour:</legend>
-        <label><input type="radio" name="colour" value="green" required> Green</label><br>
-        <label><input type="radio" name="colour" value="blue"> Blue</label><br>
-        <label><input type="radio" name="colour" value="Yellow" >Yellow</label>
+       <div>
+  <input type="radio" id="green" name="colour" value="green" required>
+  <label for="green">Green</label>
+</div>
+
+<div>
+  <input type="radio" id="blue" name="colour" value="blue">
+  <label for="blue">Blue</label>
+</div>
+
+<div>
+  <input type="radio" id="yellow" name="colour" value="yellow">
+  <label for="yellow">Yellow</label>
+</div>
+
       </fieldset>
       <br>
      
