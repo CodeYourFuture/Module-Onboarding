@@ -7,7 +7,7 @@ body {
 
 .article1 img {
   width: 400px;
-  height: 200px;
+  height: auto;
   inline-size: 100%;
   block-size: auto;
 }
@@ -18,14 +18,11 @@ body {
 
 .article-container img {
   width: 400px;
+  height: auto;
   inline-size: auto;
 }
 
-.article2 img {
-  height: auto;
-  width: 100%;
-  display: block;
-}
+.article2 img,
 .article3 img {
   height: auto;
   width: 100%;
@@ -39,14 +36,16 @@ body {
 .article-container {
   display: flex;
   gap: 20px;
+  flex-direction: column;
 }
 
 .article-container > div {
   background-color: #f1f1f1;
+  padding: 10px;
 
 }
 .footer {
-  position-try-order: 100px;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
