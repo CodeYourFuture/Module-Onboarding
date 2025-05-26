@@ -10,117 +10,114 @@
   </head>
   <body>
     <header>
-      <!-- <h1>Product Pick</h1> -->
+      <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <h1>Payment form</h1>
-        <p>
-          Required fields are followed by
-          <strong><span aria-label="required">*</span></strong>
-        </p>
         <section>
-          <h2>Contact information</h2>
+          <h2>Customer information</h2>
           <fieldset>
-            <legend>Title</legend>
+            <legend>Identity</legend>
+            <label for="name">Name: </label>
+            <input 
+            type="text" 
+            id="name" 
+            name="user-name" 
+            pattern="[A-Za-z\s]{2,}"
+            required
+            title="Please enter your full name with at least two letters."
+            requuired
+             />
+
+            <label for="email">Email: </label>
+            <input
+            type="email"
+            id="mail"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+            title="Please enter a valid email address."
+            autocomplete="on"
+            />
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>Choose Colour</legend>
             <ul>
               <li>
-                <label for="title_1">
-                  <input type="radio" id="title_1" name="title" value="A" />
-                  Ace
-
+                <label for="gold">
+                  <input
+                    type="radio"
+                    id="gold"
+                    name="colour"
+                    value="gold"
+                    required
+                  />
+                  Gold
                 </label>
               </li>
               <li>
-                <label for="title_2">
-                  <input type="radio" id="title_2" name="title" value="K" />
-                  King
-
+                <label for="silver">
+                  <input
+                    type="radio"
+                    id="silver"
+                    name="colour"
+                    value="silver"
+                    required
+                  />
+                  Silver
                 </label>
               </li>
               <li>
-                <label for="title_3">
-                  <input type="radio" id="title_3" name="title" value="Q" />
-                  Queen
-
+                <label for="diamond">
+                  <input
+                    type="radio"
+                    id="diamond"
+                    name="colour"
+                    value="diamond"
+                    required
+                  />
+                  Diamond
                 </label>
               </li>
-            </ul>+
+            </ul>
           </fieldset>
-          <p>
-            <label for="name">
-              <span>Name: </span>
-              <strong><span aria-label="required">*</span></strong>
-            </label>
-            <input type="text" id="name" name="username" required />
-          </p>
-
-          <p>
-            <label for="mail">
-              <span>Email: </span>
-              <strong><span aria-label="required">*</span></strong>
-            </label>
-            <input type="email" id="mail" name="user-mail" required />
-          </p>
-
-          <p>
-            <label for="pwd">
-              <span>Password: </span>
-              <strong><span aria-label="required">*</span></strong>
-            </label>
-            <input type="password" id="pwd" name="password" required />
-          </p>
         </section>
         <section>
-          <h2>Payment information</h2>
-           <p>
-            <label for="card">
-              <span>Card type: </span>
-            </label>
-            <select id="card" name="card-type">
-              <option value="visa">Visa</option>
-              <option value="mastercard">MasterCard</option>
-              <option value="amex">American Express</option>
-              <option value="discover">Discover</option>
-          </p>
-          <p>
-          
-            <label for="number">
-              <span>Card number: </span>
-              <strong><span aria-label="required">*</span></strong>
-            </label>
-            <input type="tel" id="number" name="card-number" required />
-          </p>
-
-          <p>
-            <label for="expirattion">
-              <span>Expiration date: </span>
-              <strong><span aria-label="required">*</span></strong>
-            </label>
-            <input 
-              type="text" 
-              id="expirattion" 
-              name="expiration"
-              required
-              placeholder="MM/YY"
-              pattern="^(0[1-9]|1[0-2])\/?([0-9]{2})$"
-            
-             />
-          </p>
-
-          <p>
-            <label for="cvv">
-              <span>CVV: </span>
-              <strong><span aria-label="required">*</span></strong>
-            </label>
-            <input type="text" id="cvv" name="cvv" required />
-          </p>
-
-         
+          <fieldset>
+            <legend>Choose Size</legend>
+            <label for="size">Size: </label>
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
+              <option value="small">Extra Small</option>
+               <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="large">Extra Large</option>
+              <option value="large">Extra Extra Large</option>
+            </select>
+          </fieldset>
         </section>
         <section>
+          <fieldset>
+            <legend>Choose Delivery Date</legend>
+            <label for="delivery-date">Delivery Date: </label>
+            <input
+              type="date"
+              id="delivery-date"
+              name="delivery-date"
+              min="2025-01-01"
+              max="2025-12-31"
+              required 
+            /> 
+          </fieldset>
+        </section>
+        
+        <section>
           <p>
-            <button type="submit">Validate the  payment</button>
+            <button type="submit">Submit Details</button>
           </p>
         </section>
       
