@@ -3,25 +3,86 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>T-Shirt Order Form</title>
+    <meta name="description" content="T-Shirt" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your T-Shirt</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- This input satisfies the requirement to collect the user's name -->
+        <div>
+          <label for="username">Full Name</label>
+          <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          minlength="2"
+          pattern="^[A-Za-z][A-Za-z' -]*[A-Za-z]$"
+          title="Enter a valid name (letters, spaces, apostrophes, hyphens, no leading or trailing spaces)."
+        />        
+          <span> *</span>
+        </div>
+        <br />
+
+        <!-- This input satisfies the requirement to collect the user's email -->
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required /><span> *</span>
+        </div>
+        <br />
+
+        <!-- These radio buttons satisfy the requirement to let the user choose a T-shirt color -->
+        <fieldset>
+          <legend>Choose a color:</legend>
+          <div>
+            <input type="radio" name="color" id="red" value="red" required />
+            <label for="red">🟥 Red</label>
+          </div>
+          <br />
+          <div>
+            <input type="radio" name="color" id="green" value="green" />
+            <label for="green">🟩 Green</label>
+          </div>
+          <br />
+          <div>
+            <input type="radio" name="color" id="blue" value="blue" />
+            <label for="blue">🟦 Blue</label>
+          </div>
+          <br />
+          <div>
+            <input type="radio" name="color" id="black" value="black" />
+            <label for="black">⬛ Black</label
+            ><sup><small>most popular</small></sup>
+          </div>
+        </fieldset>
+        <br />
+        <!-- This dropdown satisfies the requirement to let the user choose a T-shirt size -->
+        <div>
+          <label for="size">Choose your T-shirt size:</label>
+          <select name="size" id="size" required>
+            <option value="" selected disabled>--Please choose a size--</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl" disabled>XXL --out of stock</option></select
+          ><span> *</span>
+        </div>
+        <br />
+        <button aria-label="Submit your T-shirt order" type="submit">
+          Submit Order
+        </button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>&copy;2025 By Loai Alshujaa</h2>
     </footer>
   </body>
 </html>
