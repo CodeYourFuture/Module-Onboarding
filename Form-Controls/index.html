@@ -6,7 +6,7 @@
 </head>
 <body>
   <h1>T-shirt order Form</h1>
-  <form  method="post">
+  <form method="post">
      <!-- Name -->
     <label for="name">Full Name:</label><br />
     <input type="text" id="name" name="name" required minlength="2"/><br /><br />
@@ -22,10 +22,9 @@
 <label for="colour-green">Green</label><br>
 <input type="radio" id="colour-blue" name="colour" value="blue">
 <label for="colour-blue">Blue</label><br>
-</fieldset>
+</fieldset><br/>
 <!--Size-->
-<fieldset>
-<label for="size">T-shirt size:</label>
+<label for="size">T-shirt size:</label><br/>
 <select id="size" name="size" required>
 <option value="">-- Select a size --</option>
 <option value="XS">XS</option>
@@ -34,10 +33,11 @@
   <option value="L">L</option>
 <option value="XL">XL</option>
 <option value="XXL">XXL</option>
-</select>
-</fieldset>
+</select><br/><br/>
 <!--submit-->
     <input type="submit" value="Submit" />
   </form>
+  <!--merged final version-->
+  <p>This is the correct merged line</p>
 </body>
 </html>
