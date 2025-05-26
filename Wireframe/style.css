@@ -3,6 +3,8 @@ body {
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
+  background-color: lightgrey);
+  font-size: auto;
   
 }
 
@@ -37,6 +39,7 @@ body {
   display: flex;
   gap: 20px;
   flex: 1 1 50%;
+  background-color: rgb(251, 252, 251);
 }
 .article3 {
   margin-bottom: auto;
@@ -46,7 +49,12 @@ body {
 }
 .read-more {
   border: none;
-  text-decoration: none;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+.read-more:hover {
+  color: #007bff;
+  cursor: pointer;
 }
 
 .article-container > div {
