@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata and document setup -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
@@ -8,13 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <!-- Page Header -->
     <header>
-      <h1>Product Pick</h1>
+      <h1>Product Pick</h1>  <!-- Main heading of the page -->
     </header>
     <main>
-
+      
+      <!-- Begin form for product selection -->
       <form method="post">
-        <!-- Validate Customer Name -->
+        
+        <!-- Full Name Input Field -->
         <label for="name">Full Name:</label>
         <input 
           type="text" 
@@ -26,7 +30,7 @@
         >
         <br><br>
       
-        <!-- Validate Customer Email -->
+        <!-- Email Address Input Field -->
         <label for="email">Email Address:</label>
         <input 
           type="email" 
@@ -36,7 +40,7 @@
         >
         <br><br>
       
-        <!-- T-Shirt Colour Selection -->
+        <!-- T-Shirt Colour Dropdown Selection -->
         <label for="colour">Choose a T-Shirt Colour:</label>
         <select id="colour" name="colour" required>
           <option value="" disabled selected>Select a colour</option>
@@ -46,7 +50,7 @@
         </select>
         <br><br>
       
-        <!-- T-Shirt Size Selection -->
+        <!-- T-Shirt Size Dropdown Selection -->
         <label for="size">Choose a T-Shirt Size:</label>
         <select id="size" name="size" required>
           <option value="" disabled selected>Select a size</option>
@@ -58,15 +62,16 @@
           <option value="XXL">XXL</option>
         </select>
         <br><br>
-      
-        <!-- Submit Button -->
+
+         <!-- Submit Button -->
         <input type="submit" value="Order T-Shirt">
       </form>
       
 
     </main>
+
+        <!-- Page Footer -->
     <footer>
-      <!-- change to your name-->
       <h2>By JESUS DEL MORAL</h2>
     </footer>
   </body>
