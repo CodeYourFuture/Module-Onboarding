@@ -38,9 +38,17 @@ main {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   height: 50px;
+   background-color: #4cc9f0;
+   width: 100%;
+   color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 /* === Articles Grid Layout =*/
 .articles {
@@ -86,10 +94,13 @@ article {
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+header {
+  text-align: center;      
+  padding: 20px 0;         
+}
 .read-more:hover {
-    background-color: #6b00b3;
-    color: #fff;
+    background-color: #03045e;
+    
 }
 
 .Wireframe {
