@@ -9,9 +9,12 @@
   <main>
   <form>
     
-    <!--Name -->
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" name="name" required minlength="2">
+
+      <!-- Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required minlength="2"
+             pattern="^(?=.*[A-Za-z])[A-Za-z\s'-]+$"
+             title="Please enter your full name with letters only. No spaces only." />
     <br><br>
 <!--Email -->
       <label for="email">Email Address:</label>
