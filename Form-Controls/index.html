@@ -18,12 +18,14 @@
         <div>
           <label for="username">Full Name</label>
           <input
-            type="text"
-            name="username"
-            id="username"
-            required
-            pattern="^[a-zA-Z]{2,}(?: [a-zA-Z]{2,})?$"
-          />
+          type="text"
+          id="username"
+          name="username"
+          required
+          minlength="2"
+          pattern="^[A-Za-z][A-Za-z' -]*[A-Za-z]$"
+          title="Enter a valid name (letters, spaces, apostrophes, hyphens, no leading or trailing spaces)."
+        />        
           <span> *</span>
         </div>
         <br />
