@@ -9,42 +9,46 @@
   <main>
   <form>
     
-
-      <!-- Name -->
+    <!-- Name -->
       <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required minlength="2"
-             pattern="^(?=.*[A-Za-z])[A-Za-z\s'-]+$"
-             title="Please enter your full name with letters only (e.g., Firstname Lastname)" />
-    <br><br>
-<!--Email -->
+      <input 
+        type="text"
+        id="name" 
+        name="name" 
+        required
+        minlength="2"
+        pattern="^(?=.*[A-Za-z])[A-Za-z\s'-]+$"
+        title="Please enter your full name with letters only (e.g., Firstname Lastname)" />
+    <br/><br/>
+
+   <!--Email -->
       <label for="email">Email Address:</label>
       <input type="email" id="email" name="email" required>
-      <br><br>
+      <br/><br/>
 
-       <!-- T-Shirt Colour -->
+    <!-- T-Shirt Colour -->
       <fieldset>
         <legend>Select T-Shirt Colour:</legend>
-       <div>
-  <input type="radio" id="green" name="colour" value="green" required>
-  <label for="green">Green</label>
-</div>
+        <div>
+           <input type="radio" id="green" name="colour" value="green" required>
+           <label for="green">Green</label>
+         </div>
 
-<div>
-  <input type="radio" id="blue" name="colour" value="blue">
-  <label for="blue">Blue</label>
-</div>
+         <div>
+           <input type="radio" id="blue" name="colour" value="blue">
+           <label for="blue">Blue</label>
+         </div>
 
-<div>
-  <input type="radio" id="yellow" name="colour" value="yellow">
-  <label for="yellow">Yellow</label>
-</div>
-
+         <div>
+          <input type="radio" id="yellow" name="colour" value="yellow">
+          <label for="yellow">Yellow</label>
+          </div>
       </fieldset>
-      <br>
+      <br/>
      
-      <!-- T-Shirt Size -->
-      <label for="size">Select Size:</label>
-      <select id="size" name="size" required>
+  <!-- T-Shirt Size -->
+    <label for="size">Select Size:</label>
+    <select id="size" name="size" required>
         <option value="">--Please choose a size--</option>
         <option value="XS">XS</option>
         <option value="S">S</option>
@@ -53,7 +57,7 @@
         <option value="XL">XL</option>
         <option value="XXL">XXL</option>
       </select>
-      <br><br>
+      <br/><br/>
 
     <!-- Submit -->
       <button type="submit">Submit</button>
