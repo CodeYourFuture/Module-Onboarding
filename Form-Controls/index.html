@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Order Your T-Shirt</title>
   </head>
   <body>
     <header>
-      <h1> Oreder Your Favorite T-Shirt</h1>
+      <h1>Order Your Favorite T-Shirt!</h1>
+      <p>Fill out this simple form to select your t-shirt color and size.</p>
     </header>
+
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
         <fieldset>
           <legend>Customer Information</legend>
 
@@ -28,10 +23,8 @@
             minlength="2"
             required
           />
+          <br /><br />
 
-          <br><br>
-
-          <!-- Customer email -->
           <label for="email">Email:</label>
           <input
             type="email"
@@ -41,32 +34,28 @@
           />
         </fieldset>
 
-        <br>
-
-        <!-- T-shirt colour (3 options only) -->
+        <br />
         <fieldset>
-          <legend>Choose a T-shirt Colour:</legend>
-
-          <label for="red">
-            <input type="radio" id="red" name="color" value="red" required />
+          <legend>T-Shirt Colour</legend>
+          <label>
+            <input type="radio" name="color" value="red" required />
             Red
-          </label><br>
-
-          <label for="blue">
-            <input type="radio" id="blue" name="color" value="blue" />
+          </label><br />
+          <label>
+            <input type="radio" name="color" value="blue" />
             Blue
-          </label><br>
-
-          <label for="green">
-            <input type="radio" id="green" name="color" value="green" />
+          </label><br />
+          <label>
+            <input type="radio" name="color" value="green" />
             Green
           </label>
         </fieldset>
 
-                <!-- T-shirt size (6 options) -->
+        <br />
+
         <fieldset>
-          <legend>Select a Size:</legend>
-          <label for="size">Size:</label>
+          <legend>Size</legend>
+          <label for="size">Select Size:</label>
           <select id="size" name="size" required>
             <option value="">--Select--</option>
             <option value="XS">XS</option>
@@ -77,14 +66,15 @@
             <option value="XXL">XXL</option>
           </select>
         </fieldset>
-        <br>
+
+        <br />
 
         <button type="submit">Submit Order</button>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By MOHAMED IBRAHIM</h2>
+      <p>By Mohamed Ibrahim | CodeYourFuture</p>
     </footer>
   </body>
 </html>
