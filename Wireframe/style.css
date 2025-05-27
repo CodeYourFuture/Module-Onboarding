@@ -94,4 +94,10 @@ article {
   > img {
     grid-column: span 3;
   }
+  .img-2nd{
+    height: 300px;
+    width: 500px;
+    object-fit:fill;
+    margin:auto;
+  }
 }
