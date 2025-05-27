@@ -80,6 +80,8 @@ a:hover{
 
 .c-site-footer
 {
+  position:fixed;
+  bottom: 0;
 text-align: center;
   border-top: var(--line);
   width: 100%;
