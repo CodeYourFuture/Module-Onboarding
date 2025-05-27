@@ -11,7 +11,8 @@ body {
   color: #333; 
   max-width: 1200px; 
   margin: 0 auto; 
-  padding: 20px; 
+  padding: 20px;
+   padding-bottom: 60px;
 }
 
 
@@ -121,17 +122,21 @@ article p {
   background-color: #333; 
   color: #fff; 
 }
-
-
 footer {
-  text-align: center; 
-  padding: 20px 0; 
-  border-top: 1px solid #ddd; 
-  margin-top: 20px; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 10px 0;
   font-style: italic;
-  color: #666; 
-  max-width: 100vw !important;
+  color: #666;
+  z-index: 1000;
 }
+
+
 
 
 footer a {
@@ -167,3 +172,6 @@ footer a:hover {
   .image-container {
     height: 250px; 
   }
+ 
+
+
