@@ -52,7 +52,7 @@ main> section:first-child{
   text-decoration: none;
   font-weight: bold;
   color: inherit;
-  background-color: rgba(97, 52, 174, 0.628);
+  background-color: rgba(23, 0, 59, 0.628);
   margin-top: var(--space);
 color:wheat;
 }
@@ -72,7 +72,9 @@ body {
   color: var(--ink);
   font: var(--font);
 }
- 
+ .read_more:hover {
+  background-color: #002b59; /* Even darker on hover for clarity */
+}
 a:hover{
     background-color: rgb(106, 20, 32);
 }
@@ -85,8 +87,8 @@ a:hover{
 text-align: center;
   border-top: var(--line);
   width: 100%;
-  background-color: var(--paper);
-  color: red;
+  background-color:  #f1f1f1;
+  color:#333;
   padding: var(--space);
   margin-top: var(--space);
   font-weight: bold;
