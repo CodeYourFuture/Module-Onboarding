@@ -94,7 +94,7 @@ main {
   padding-inline: var(--space);
 }
 
-main > *:first-child {
+main>*:first-child {
   grid-column: span 2;
 }
 
@@ -145,7 +145,7 @@ article a {
   margin-bottom: var(--space);
 }
 
-article > img {
+article>img {
   grid-column: span 3;
   width: 100%;
   height: auto;
