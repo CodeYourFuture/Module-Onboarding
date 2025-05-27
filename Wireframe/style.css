@@ -1,11 +1,9 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
-  background-color: lightgrey);
   font-size: auto;
-  
 }
 
 .article1 img {
@@ -33,13 +31,13 @@ body {
 
 .header {
   text-align: center;
+  background-color: #e6e3d641;
 }
 
 .article-container {
   display: flex;
   gap: 20px;
   flex: 1 1 50%;
-  background-color: rgb(251, 252, 251);
 }
 .article3 {
   margin-bottom: auto;
@@ -53,18 +51,21 @@ body {
   transition: all 0.3s ease;
 }
 .read-more:hover {
-  color: #007bff;
+  color: #5e04c4;
   cursor: pointer;
 }
 
 .article-container > div {
-  background-color: #f1f1f1;
   padding: 10px;
-
 }
 .footer {
   left: 0;
   bottom: 0;
   width: 100%;
   margin-top: 20px;
-  text-align: center;}
+  text-align: center;
+  font-size: 14px;
+  background-color: #e6e3d641;
+  padding: 10px;
+  z-index: 1000;
+}
