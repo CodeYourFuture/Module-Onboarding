@@ -52,8 +52,29 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: tomato;
+  height: 10%;
+}
+a {
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+  border: none;
+  cursor: pointer;
+  height: 20%;
+  margin-bottom: 40px;
+}
+a:hover {
+  background-color: rgb(255, 240, 240);
+  color: black;
+}
+
+header {
   text-align: center;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
