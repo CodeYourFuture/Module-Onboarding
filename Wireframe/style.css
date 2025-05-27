@@ -65,13 +65,7 @@ nav ul {
   border: var(--line);
 font-weight: bold;
 font-size: x-large;
-/* nav li a {
-  color: red;
-  text-decoration: none;
-  font-weight: bold;
-  padding: var(--space);
-  border: var(--line);
-} */
+}
 
 body {
   background: var(--paper);
@@ -84,14 +78,13 @@ a:hover{
 }
 
 
-footer {
-  /* position: fixed; */
-  text-align: center;
+.c-site-footer
+{
+text-align: center;
   border-top: var(--line);
   width: 100%;
   background-color: var(--paper);
   color: red;
   padding: var(--space);
   margin-top: var(--space);
-
 }
