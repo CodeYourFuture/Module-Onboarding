@@ -6,6 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   </head>
   <body>
     <header>
@@ -13,15 +14,51 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Customer details</legend>
+          <div>
+            <label for="name">Customer Name (required):</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">Email (required):</label>
+            <input type="email" id="email" name="email" required />
+
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>T-shirt color</legend>
+          <div>
+            <label for="color">Color (required):</label>
+            <select id="color" name="color" required>
+              <option value="" disabled selected>Select a color</option>
+              <option value="Yellow">Yellow</option>
+              <option value="Green">Green</option>
+              <option value="Red">Red</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div>
+            <label for="size">T-shirt size (required):</label>
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select size</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <button type="submit">Submit Order</button>
       </form>
     </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
+    <footer>2025 Innocent</footer>
   </body>
 </html>
+
