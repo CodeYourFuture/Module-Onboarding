@@ -22,7 +22,8 @@
           placeholder="Enter full name"
           autocomplete="name"
           maxlength="32"
-          pattern="[A-Za-z ]{2,32}"
+          minlength="3"
+          maxlength="25"
           required
           aria-describedby="nameHint"
         />
@@ -35,7 +36,6 @@
           name="user_email"
           autocomplete="email"
           placeholder="Enter your email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           required
         />
         <small id="emailHint">We'll never share your email.</small>
