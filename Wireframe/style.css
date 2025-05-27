@@ -92,3 +92,9 @@ text-align: center;
   font-weight: bold;
   font-size: 1.2em;
 }
+p{
+  padding: var(--space);
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
