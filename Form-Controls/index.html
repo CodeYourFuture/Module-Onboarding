@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Order form for Product Pick" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -12,15 +12,19 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
+      <form action="#" method="post">
         <fieldset>
-          <legend>Customer Details</legend>
+          <legend>
+            <h2>Customer Details</h2>
+          </legend>
+
           <!-- Name -->
           <div>
-            <label for="name">Name</label>
+            <label for="name">Name:</label><br />
             <input
               type="text"
               id="name"
+              name="name"
               placeholder="Your Name"
               minlength="2"
               required
@@ -30,10 +34,11 @@
 
           <!-- email -->
           <div>
-            <label for="email">E-mail</label>
+            <label for="email">E-mail:</label><br />
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="name@email.com"
               required
             />
@@ -43,37 +48,34 @@
         <br />
 
         <fieldset>
-          <legend>Order Details</legend>
+          <legend>
+            <h2>Order Details</h2>
+          </legend>
           <!-- colour 3 options -->
           <div>
             <fieldset>
-              <legend>Color</legend>
+              <legend>Color:</legend>
 
-              <label for="white"
-                ><input
+              <label for="white">
+                <input
                   type="radio"
                   name="color"
                   id="white"
                   value="white"
                   required
-                />White</label
-              >
-              <label for="grey"
-                ><input
-                  type="radio"
-                  name="color"
-                  id="grey"
-                  value="grey"
-                />Grey</label
-              >
-              <label for="black"
-                ><input
-                  type="radio"
-                  name="color"
-                  id="black"
-                  value="black"
-                />Black</label
-              >
+                />
+                White </label
+              ><br />
+
+              <label for="grey">
+                <input type="radio" name="color" id="grey" value="grey" />
+                Grey </label
+              ><br />
+
+              <label for="black">
+                <input type="radio" name="color" id="black" value="black" />
+                Black
+              </label>
             </fieldset>
           </div>
 
@@ -81,7 +83,7 @@
 
           <!-- size 6 options -->
           <div>
-            <label for="size">Size</label>
+            <label for="size">Size:</label><br />
             <select name="size" id="size" required>
               <option value="">- Select -</option>
               <option value="xs">XS</option>
@@ -97,12 +99,12 @@
         <br />
 
         <!-- Submit button -->
-        <button type="submit">Submit</button>
+        <button type="submit">Order</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Rashaad Ebrahim</h2>
     </footer>
   </body>
 </html>
