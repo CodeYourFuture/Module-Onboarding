@@ -9,71 +9,74 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Product pick</h1>
     </header>
     <main>
       <form>
         <section>
           <fieldset>
-  <h2>Customer information</h2>
-     <p>
-    <label for="name">
-      <span>Full Name: </span>
-    </label>
-    <input type="text" id="name" name="username" required pattern="[A-Za-z\s]{2,}"
-              title="Please enter a valid name (at least 2 letters)."/>
-  </p>
-  <p>
-    <label for="mail">
-      <span>Email: </span>
-    </label>
-    <input type="email" id="mail" name="user-mail" required />
-  </p>
-<fieldset>
-  <h2>Product specification</h2>
-  <p>
-    <label for="size">
-      <span>Select a size:</span>
-    </label>
-    <select id="size" name="product size">
-      <option value=""></option>
-      <option value="XS">XSmall</option>
-      <option value="S">Small</option>
-      <option value="M">Medium</option>
-      <option value="L">Large</option>
-      <option value="XL">XLarge</option>
-      <option value="XXL">XXLarge</option>
-      </select>
-  </p>
-  <p>
-    <label for="Colour">
-      <span>Select a colour:</span>
-    </label>
-    <select id="Colour" name="product colour">
-      <option value=""></option>
-      <option value="White">White</option>
-      <option value="Black">Black</option>
-      <option value="Blue">Blue</option>
-      </select>
-  </p>
-  <section>
-  <p>
-    <button type="submit"><strong>Place the order</strong></button>
-  </p>
-</section>
-  </fieldset>
-</fieldset>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your P  R message later-->
+            <legend><strong>Customer information</strong></legend>
+            <p>
+              <label for="name">
+                <span>Full Name: </span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="username"
+                required
+                pattern="[A-Za-z\s]{2,}"
+                title="Please enter a valid name (at least 2 letters)."
+              />
+            </p>
+            <p>
+              <label for="mail">
+                <span>Email: </span>
+              </label>
+              <input type="email" id="mail" name="user-mail" required />
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend><strong>Product specification</strong></legend>
+            <p>
+              <label for="size">
+                <span>Select a size:</span>
+              </label>
+              <select id="size" name="product-size">
+                <option value=""disabled hidden selected>Choose a size</option>
+                <option value="XS">XSmall</option>
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">XLarge</option>
+                <option value="XXL">XXLarge</option>
+              </select>
+            </p>
+            <p>
+              <label for="colour">
+                <span>Select a colour:</span>
+              </label>
+              <select id="colour" name="product-colour">
+                <option value=""disabled hidden selected>Choose a colour</option>
+                <option value="White">White</option>
+                <option value="Black">Black</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </p>
+            <section>
+              <p>
+                <button type="submit">
+                  <strong>Place the order</strong>
+                </button>
+              </p>
+            </section>
+          </fieldset>
         </section>
-          </form>
-       
+      </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By KhilolaRustam HOMEWORK SOLUTION</h2>
+      <h2>London|ITP-May-2025|Khilola Rustamova|Form-control|week1</h2>
     </footer>
   </body>
 </html>
