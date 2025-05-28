@@ -96,10 +96,11 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: var(--space);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: var(--space);
+  gap: var(--space);
 
   }
 
@@ -127,6 +128,11 @@ article {
   flex-direction: column;
   gap: var(--space);
 }
+
+main > article:first-of-type {
+  width: 100%;
+  max-width: 800px;
+  }
  
  article > img {
   grid-column: 1 /-1;
@@ -138,8 +144,24 @@ article {
 article h2 {
   margin: 0;
   color: var(--accent-dark);
+
 }
 
+.bottom-articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0;
 
-  
+  }
+
+  .bottom-articles article {
+    flex: 1 1 300px;
+    max-width: 420px;
+
+  }
+
 
