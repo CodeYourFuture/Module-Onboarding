@@ -23,8 +23,11 @@ body {
 }
 
 .article1 {
-  padding: 20px;
-  
+  padding: 20px;  
+}
+
+.article1 img {
+  width: 100%;
 }
 
 .article1 p,
