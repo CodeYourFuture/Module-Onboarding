@@ -17,42 +17,102 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
+  --paper: #90a1b9;
+  --paper2: #78909c;
+  --paper3: #546e7a;
+  --brand: #118cfd;
+  --accent: #d7ccc8;
+  --accent2: #bcaaa4;
+  --ink: #333;
+  --font: 100%/1.5 "Roboto", sans-serif, system-ui;
+  --space: clamp(12px, 12px + 4vw, 45px);
   --container: 1280px;
 }
+
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+
+*:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
 body {
   background: var(--paper);
-  color: var(--ink);
+  /* color: var(--ink); */
+  color: #222;
   font: var(--font);
+  margin: 0;
 }
+
 a {
-  padding: var(--space);
-  border: var(--line);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
   max-width: fit-content;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: var(--accent);
+  color: var(--ink);
 }
-img,
-svg {
+
+a:link,
+a:visited {
+  background-color: var(--accent);
+  transition: all 0.3s;
+}
+
+a:hover,
+a:active {
+  background-color: var(--accent2);
+}
+
+img {
   width: 100%;
   object-fit: cover;
+  background-color: var(--paper3);
+  overflow: hidden;
+
+  border-radius: 16px 16px 0px 0px;
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
+header {
+  text-align: center;
+  padding: 24px 0;
+  margin: 0;
+  margin-bottom: var(--space);
+  background-color: var(--ink);
+  color: var(--accent);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+}
+
 footer {
+  padding: 12px;
+  background-color: var(--ink);
   position: fixed;
   bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
   text-align: center;
+  font-size: 16px;
+  color: #d7ccc8;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -75,7 +135,10 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
-  border: var(--line);
+  background: var(--paper2);
+  border-radius: 16px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -86,4 +149,19 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.header_description {
+  font-size: 18px;
+
+  /* color: #ccc; */
+}
+
+.link-container {
+  margin-top: 20px;
 }
