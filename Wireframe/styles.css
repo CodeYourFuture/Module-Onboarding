@@ -23,13 +23,19 @@ body {
 }
 
 .article1 {
-    padding: 20px;
+  padding: 20px;
+  
+}
+
+.article1 p,
+.article1 h2 {
+  text-align: left;
 }
 
 .article2 img,
 .article3 img {
- max-width: 100%;
- height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -43,26 +49,22 @@ footer {
   background: #333;
   color: #f1f1f1;
 }
+
 .btn {
-   display: inline-block;
+  display: inline-block;
   padding: 12px 20px;
   font-size: 16px;
-  min-width: 48px;
-  min-height: 48px;
   margin-top: 16px;
-  background-color: #007bff;
-  color: white;
   text-decoration: none;
   border-radius: 6px;
   cursor: pointer;
+  text-align: left;
+  background-color: grey;
+  color: black;
+}
 
-}
 .btn:hover {
-    background-color: #0056b3;
-    color: white;
-}
-.btn-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  background-color: #0056b3;
+  color: white;
+ 
 }
