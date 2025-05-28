@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Order form for Product Pick" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,15 +13,102 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>
+            <h2>Customer Details</h2>
+          </legend>
+
+          <!-- Name -->
+          <div>
+            <p>
+              <label for="name">Name:</label>
+            </p>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              minlength="2"
+              required
+            />
+          </div>
+          <br />
+
+          <!-- email -->
+          <div>
+            <p>
+              <label for="email">E-mail:</label>
+            </p>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@email.com"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>
+            <h2>Order Details</h2>
+          </legend>
+          <!-- colour 3 options -->
+          <div>
+            <p>Color:</p>
+
+            <label for="white">
+              <input
+                type="radio"
+                name="color"
+                id="white"
+                value="white"
+                required
+              />
+              White
+            </label>
+
+            <label for="grey">
+              <input type="radio" name="color" id="grey" value="grey" />
+              Grey
+            </label>
+
+            <label for="black">
+              <input type="radio" name="color" id="black" value="black" />
+              Black
+            </label>
+          </div>
+
+          <br />
+
+          <!-- size 6 options -->
+          <div>
+            <p>
+              <label for="size">Size:</label><br />
+            </p>
+            <select name="size" id="size" required>
+              <option value="">- Select -</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <br />
+
+        <!-- Submit button -->
+        <button type="submit">Order</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Rashaad Ebrahim</h2>
     </footer>
   </body>
 </html>
