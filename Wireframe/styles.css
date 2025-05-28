@@ -64,10 +64,12 @@ footer {
   text-align: left;
   background-color: grey;
   color: black;
+  font-weight: bold;
 }
 
 .btn:hover {
   background-color: #0056b3;
   color: white;
+  font-weight: bold;
  
 }
