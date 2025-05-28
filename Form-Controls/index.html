@@ -15,34 +15,81 @@
       <form>
         <!-- Name -->
         <div>
-          <label for="">Name</label>
-          <input type="text" />
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            minlength="2"
+            required
+          />
         </div>
+        <br />
 
         <!-- email -->
         <div>
-          <label for="">E-mail</label>
-          <input type="text" />
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="name@email.com"
+            required
+          />
         </div>
+        br
 
         <!-- colour 3 options -->
         <div>
-          <label for="">Colour</label>
-          <input type="text" />
+          <fieldset>
+            <legend>Color</legend>
+
+            <label for="white"
+              ><input
+                type="radio"
+                name="color"
+                id="white"
+                value="white"
+                required
+              />White</label
+            >
+            <label for="grey"
+              ><input
+                type="radio"
+                name="color"
+                id="grey"
+                value="grey"
+              />Grey</label
+            >
+            <label for="black"
+              ><input
+                type="radio"
+                name="color"
+                id="black"
+                value="black"
+              />Black</label
+            >
+          </fieldset>
         </div>
+
+        <br />
 
         <!-- size 6 options -->
         <div>
-          <label for="">Size</label>
-          <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+          <label for="size">Size</label>
+          <select name="size" id="size" required>
+            <option value="">- Select -</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
           </select>
         </div>
+        <br />
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
