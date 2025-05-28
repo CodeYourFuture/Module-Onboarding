@@ -16,19 +16,22 @@
         <!--All fields are required-->
         <!-- 1. customer's name: only characters allowed, at least two characters long-->
         <fieldset>
+          <legend>Personal info:</legend>
               <label for="name">Name</label>
                 <input type="text" id="name" name="name"
-                pattern="[A-Za-z\s]{2,}" required>
+                pattern="[A-Za-z][A-Za-z\s]{1,}" required>
         </fieldset>
 
         <!-- 2. customer's email: type "email" ensures valid email input-->
         <fieldset>
+          <legend>Contact:</legend>
               <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
         </fieldset>
 
         <!-- 3. colour options: black - white - blue; only one option allowed--> 
         <fieldset>
+          <legend>T-shirt colour:</legend>
               <label for="colour">Please select the colour</label>
                 <select name="colour" id="colour" required>
                   <option value="">None</option>
@@ -40,6 +43,7 @@
 
         <!-- 4. size options: XS, S, M, L, XL, XXL; only one option allowed--> 
         <fieldset>
+          <legend>T-shirt size:</legend>
               <label for="size">Please select the size</label>
                 <select name="size" id="size" required>
                   <option value="">None</option>
