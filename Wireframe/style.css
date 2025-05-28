@@ -5,6 +5,10 @@ body {
   margin-right: auto;
   font-size: auto;
 }
+.main {
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
 
 .article1 img {
   width: 400px;
@@ -46,9 +50,10 @@ body {
   margin-top: 15px;
 }
 .read-more {
-  border: none;
-  text-decoration: underline;
+  border: 1px solid #5e04c4;
+  text-decoration: none;
   transition: all 0.3s ease;
+  background-color: #e6e3d641;
 }
 .read-more:hover {
   color: #5e04c4;
@@ -59,13 +64,15 @@ body {
   padding: 10px;
 }
 .footer {
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  margin-top: 20px;
+  line-height: 0.50px;
+  margin-top: 10px;
   text-align: center;
+  padding: 10px;
   font-size: 14px;
   background-color: #e6e3d641;
-  padding: 10px;
   z-index: 1000;
 }
