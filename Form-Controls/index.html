@@ -13,15 +13,50 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <form method="get">
+  <!-- Customer Name -->
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required pattern="[A-Za-z\s\-']{2,50}" title="Please enter a valid name (letters, spaces, hyphens, apostrophes only)">
+  <br>
+  <br>
+
+  <!-- Customer Email -->
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+  <br>
+
+  <!-- T-Shirt Colour -->
+  <label for="color">Choose a T-shirt Colour:</label>
+  <select id="color" name="color" required>
+    <option value="">--Please choose an option--</option>
+    <option value="black">Black</option>
+    <option value="white">White</option>
+    <option value="navy">Navy</option>
+  </select>
+  <br>
+  <br>
+
+  <!-- T-Shirt Size -->
+  <label for="size">Choose a T-shirt Size:</label>
+  <select id="size" name="size" required>
+    <option value="">--Please choose a size--</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+  </select>
+  <br>
+  <br>
+
+  <button type="submit">Submit</button>
+</form>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Payman IB</h2>
     </footer>
   </body>
 </html>
