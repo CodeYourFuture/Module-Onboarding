@@ -15,14 +15,15 @@
       <form>
         <!-- write your html here-->
         <!-- 
-          - [ ] My form is semantic html.
-          - [ ] All inputs have associated labels.
+          - [x] My form is semantic html.
+          - [x] All inputs have associated labels.
           - [ ] My Lighthouse Accessibility score is 100.
-          - [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
-          - [ ] I require a valid email.
-          - [ ] I require one colour from a defined set of 3 colours.
-          - [ ] I require one size from a defined set of 6 sizes.-->
-          <legend><h3>Personal Information</h3></legend>
+          - [x] I require a valid name. I have defined a valid name as a text string of two characters or more.
+          - [x] I require a valid email.
+          - [x] I require one colour from a defined set of 3 colours.
+          - [x] I require one size from a defined set of 6 sizes.-->
+          <fieldset>
+            <legend><h3>Personal Information</h3></legend>
           <p>
             <label for="firstname">Firstname:</label>
             <input type="text" id="firstname" name="firstname" required minlength="2" />
@@ -33,8 +34,30 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
           </p>
-              
-            
+          </fieldset>   
+          <fieldset>
+            <legend><h3>Product Information</h3></legend>
+            <p>
+              <label for="colour">Colour:</label>
+              <select id="colour" name="colour" required>
+                <option value="" disabled selected>Select a colour</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </select>
+            </p>
+            <p>
+              <label for="size">Size:</label>
+              <select id="size" name="size" required>
+                <option value="" disabled selected>Select a size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">X-Large</option>
+                <option value="xxlarge">XX-Large</option>
+              </select>
+            </p>
+          </fieldset> 
       </form>
     </main>
     <footer>
