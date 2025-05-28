@@ -13,15 +13,64 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+         <label for="customer-name">Customer Name:</label><br />
+        <input
+          type="text"
+          id="customer-name"
+          name="customer-name"
+          minlength="2"
+          required
+        ><br><br>       
+        <label for="customer-email">Email:</label><br>
+        <input
+          type="email"
+          id="customer-email"
+          name="customer-email"
+          required
+        /><br><br>
+        <fieldset>
+          <legend>Choose a T-shirt Colour:</legend>
+          <input
+            type="radio"
+            id="color-red"
+            name="color"
+            value="red"
+            required
+          />
+          <label for="color-red">Red</label>
+
+          <input
+            type="radio"
+            id="color-blue"
+            name="color"
+            value="blue"
+          />
+          <label for="color-blue">Blue</label>
+
+          <input
+            type="radio"
+            id="color-green"
+            name="color"
+            value="green"
+          />
+          <label for="color-green">Green</label>
+        </fieldset><br>
+        <label for="size">Select Size:</label>
+        <select id="size" name="size" required>
+          <option value="">--Select Size--</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>Pretty Taruvinga</p>
     </footer>
   </body>
 </html>
