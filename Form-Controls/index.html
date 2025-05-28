@@ -16,17 +16,20 @@
       <form>
         <fieldset>
           <legend>Bill details:</legend>
-          <p>
+          <br>
+          <div>
             <label for="name">Full name:</label>
-            <input type="text" id="name" name="name" pattern="^(?=.*[A-Za-z])[A-Za-z ]{4,}$" title="Only letters and spaces are allowed. At least 4 characters." placeholder="Full Name" required></p>
-
-          <p>
+            <input type="text" id="name" name="name" pattern="^(?=.*[A-Za-z])[A-Za-z ]{4,}$" title="Only letters and spaces are allowed. At least 4 characters." placeholder="Full Name" required></div>
+            <br>
+          <div>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="email@mail.com" required></p>  
+            <input type="email" id="email" name="email" placeholder="email@mail.com" required></div>
+            <br> 
         </fieldset>
         <fieldset>
           <legend>Item details:</legend> <!--I group data by item details: color, size, item -->
-          <p>
+          <div>
+          <br>
             <label for="item">Item:</label>
             <select id="item" name="item" required>
               <option value="" selected disabled>Select an option</option>
@@ -35,8 +38,9 @@
               <option value="sweater">Sweater</option>
               <option value="hat">Hat</option>
             </select>
-          </p>
-          <p>Size:
+          </div>
+          <br>
+          <div>Size:
             <label for="size-xs">XS</label>
             <input type="radio" id="size-xs" name="size_item" value="XS" required>
             <label for="size-s">S</label>
@@ -49,8 +53,9 @@
             <input type="radio" id="size-xl" name="size_item" value="XL">
             <label for="size-xxl">XXL</label>
             <input type="radio" id="size-xxl" name="size_item" value="XXL">
-          </p>
-          <p>
+          </div>
+          <br>
+          <div>
             <label for="color">Color:</label>
             <select id="color" name="color" required>
               <option value="" selected disabled>Select an option</option>
@@ -61,8 +66,10 @@
               <option value="Grey">Grey</option>
               <option value="Yellow">Yellow</option>
             </select>
-          </p>
+          </div>
+          <br>
         </fieldset>
+        <br>
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
       </form>
