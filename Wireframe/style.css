@@ -52,7 +52,12 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  background-color: #f1f1f1; /* optional: gives it a background */
+  border: 1px solid black;   /* fixed invalid border */
+  z-index: 1000;
+  left:0px;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -74,6 +79,8 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+.title{text-align: center;}
+.content{text-align: center;}
 article {
   border: var(--line);
   padding-bottom: var(--space);
