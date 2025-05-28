@@ -15,13 +15,31 @@
       <form>
         <!-- write your html here-->
         <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          - [ ] My form is semantic html.
+          - [ ] All inputs have associated labels.
+          - [ ] My Lighthouse Accessibility score is 100.
+          - [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
+          - [ ] I require a valid email.
+          - [ ] I require one colour from a defined set of 3 colours.
+          - [ ] I require one size from a defined set of 6 sizes.-->
+          <legend><h3>Personal Information</h3></legend>
+          <p>
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname" required minlength="2" />
+            <Label for="lastname">Lastname:</Label>
+            <input type="text" id="lastname" name="lastname" required minlength="2" />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+              
+            
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Mustaf Asani</h2>
     </footer>
   </body>
 </html>
