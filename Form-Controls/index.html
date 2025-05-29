@@ -16,13 +16,25 @@
         <p>All fields are required</p>
         <fieldset>
           <legend>Your Information</legend>
-          <br>
+          
+          
           <label for="name">Your name:</label>
+          <br>
           <span  ><strong>*</strong></span>
-          <input type="text" id="name" name="user-name" placeholder="Enter your full name"
-            pattern=".*\s+.*" required  autocomplete="name"
-            oninvalid="this.setCustomValidity('Please enter only letters. No spaces at the beginning or end.')"
-            oninput="this.setCustomValidity('')">
+          <input
+          type="text"
+          id="name"
+          name="user-name"
+          placeholder="Enter your full name"
+          required
+          autocomplete="name"
+          pattern="^[A-Za-z]+(?:\s[A-Za-z]+)*$"
+          oninvalid="this.setCustomValidity('Please enter only letters. No leading or trailing spaces.')"
+          oninput="this.setCustomValidity('')">
+          
+        
+        
+        
           <br>
           <br>
 
@@ -39,7 +51,6 @@
 
           <label for="color">T-shirt color:</label>
           <br>
-
           <span  ><strong>*</strong></span>
           <select name="color" id="color" required >
             <option value="">-- Please choose a color --</option>
@@ -56,6 +67,8 @@
            
           <br>
          <label for="size" >choose your size: </label>
+         <br>
+
           <select name="size" id="size" required >
             <option value="">-- Please choose a size --</option>
             <br>
