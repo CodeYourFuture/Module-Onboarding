@@ -99,11 +99,11 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   text-align: center;
-  padding-top: 0.5%;
+  padding-top: 0.1%;
   background-color: #DCC7AA;
   color: #1d1d1e;
   width: 100%;
@@ -216,7 +216,6 @@ article.Branch {
 .Branch h2 {
   margin: 0.5px;
   font-size: 90%;
-  padding-top: 0%;
   padding-bottom: -10%;
   color: black;
   font-size: 25px;
@@ -234,8 +233,6 @@ article.Branch {
 .Branch li {
   color: #fefefe;
   font-size: 80%;
-  padding-top: 0.rem;
-  padding-bottom: 0.rem;
 } 
 .Branch a {
   padding: 0.5rem; 
