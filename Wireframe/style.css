@@ -27,13 +27,24 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
+  background: none;
+  color: #494d5f;
   font: var(--font);
+  height: 10%;
+  position: relative;
+  padding-bottom: 1rem;
+  background-image: url("5667001.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+
 }
+
 a {
-  padding: var(--space);
-  border: var(--line);
+  padding: 0.5rem; 
+  border-width: 1px;
+  border-radius: 4%;
+  background-color: #F7882F;
+  color:#fefefe;
   max-width: fit-content;
 }
 img,
@@ -41,6 +52,44 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+.scaleA {
+  width: 100px;
+  height: 100px;
+  object-fit: fill;  
+  margin-left: auto;
+  margin-right: 10rem;
+  padding-top: 1rem;
+}
+
+header {
+
+  background-color: #DCC7AA;
+  color: rgb(7, 7, 7);
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: 'Trocchi', serif;
+  margin-left: 60px;
+  margin-right: 60px;
+  line-height: 0.8em;
+}
+
+h1 {
+  font-family: 'Trocchi', serif;
+  margin: 5px 0;
+  font-size: 2.5rem;
+  line-height: 0.8em;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  color: #fefefe;
+}
+
+ul li {
+  color:rgb(49, 58, 58);
+}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -52,7 +101,12 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   text-align: center;
+  padding-top: 0.1%;
+  background-color: #DCC7AA;
+  color: #1d1d1e;
+  width: 100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,4 +140,106 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+article.README {
+  padding-bottom: calc(var(--space) / 2); 
+  max-width: 50%; 
+  max-height: 100%;
+  margin: 0 auto; 
+  opacity: 0.85;
+  margin-top: 8px;
+}
+
+article.Wireframe {
+  padding-bottom: calc(var(--space) / 2); 
+  max-width: 80; 
+  max-height: 100%;
+  margin: 0 auto; 
+  opacity: 0.85;
+}
+
+article.Branch {
+  padding-bottom: calc(var(--space) / 2); 
+  max-width: 90%; 
+  max-height: 100%;
+  margin: 0 auto; 
+  opacity: 0.85;
+}
+
+.README p {
+  margin: 5px;
+  font-size: 12px;
+  color: black;
+}
+
+.README h2 {
+  color: black;
+  font-size: 15px;
+  text-decoration: underline;
+  margin: 4px;
+}
+.README fieldset{
+  padding-bottom: 0.1rem;
+  margin-bottom: 1rem;
+  margin-right: 0rem;
+}
+
+.README li {
+  font-size: 12px;
+}
+.Wireframe {
+  background-color:#6B7A8F;
+}
+
+.Wireframe h2 {
+  color: black;
+  font-size: 25px;
+  margin: 4px;
+  text-decoration: underline;
+}
+.Wireframe p {
+  margin: 4px;
+  font-size: 90%;
+  color: #fefefe;
+}
+
+.Wireframe li {
+  color: #fefefe;
+  font-size: 80%;
+
+}
+.Branch {
+   background-color:#6B7A8F;
+}
+
+.Branch h2 {
+  margin: 0.5px;
+  font-size: 90%;
+  padding-bottom: -10%;
+  color: black;
+  font-size: 25px;
+  margin: 4px;
+  text-decoration: underline;
+}
+
+.Branch p {
+  margin-top: 0.5px;
+  font-size: 90%;
+  padding-bottom: -18%;
+  color: #fefefe;
+}
+
+.Branch li {
+  color: #fefefe;
+  font-size: 80%;
+} 
+.Branch a {
+  padding: 0.5rem; 
+  border-width: 0.5px;
+  border-radius: 4%;
+  background-color: #F7882F;
+  color:#fefefe;
+  max-width: fit-content;
+  padding-bottom: 0.0%;
 }
