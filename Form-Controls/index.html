@@ -37,8 +37,9 @@
         this will also help you fill in your PR message later-->
 
         <fieldset>
-          <legend>Customer Information</legend>
+          <h2><legend>Customer Information</legend></h2>
           <br>
+          <h3>
         <div class="form-group">
             <label for="firstName">First Name *</label>
             <input type="text" id="firstName" name="firstName" placeholder="Your First Name" pattern="[A-Za-z]{2,}" title="First name must contain only letters and be at least 2 characters long" required>
@@ -58,25 +59,29 @@
             <input type="email" id="email" name="email" placeholder="Your Email Address" title="Please enter a valid email address (e.g., name@example.com)" required>
         </div>
         <br>
+        </h3>
         </fieldset>
         <br>
         
         <fieldset>
-          <legend>Order Selection</legend>
+          <h2><legend>Order Selection</legend></h2>
           <br>
          <div class="form-group">
-            T-Shirt Choice *<br>
+            <h3>T-Shirt Choice *<br></div></h3>
+            <h4>
             <input class="radioButton" type="radio" id="black" name="color" value="Black" required>
-            <label for="black">Black</label><br>
+            <label for="black">Black</label><br><br>
             <input class="radioButton" type="radio" id="white" name="color" value="White">
-            <label for="white">White</label><br>
+            <label for="white">White</label><br><br>
             <input class="radioButton" type="radio" id="grey" name="color" value="Grey">
-            <label for="grey">Grey</label>
+            <label for="grey">Grey</label><br>
+            </h2>
         </div>
         <br>
         
          <div class="form-group">
-            <label for="size">T-Shirt Size *</label>
+            <h3><label for="size">T-Shirt Size *</label></h3>
+            <h4>
             <select id="size" name="size" required>
                 <option value="" disabled selected>Select a size</option>
                 <option value="XS">XS</option>
@@ -86,6 +91,7 @@
                 <option value="XL">XL</option>
                 <option value="XXL">XXL</option>
             </select>
+            </h4>
         </div>
         </fieldset>
         <br>
