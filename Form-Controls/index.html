@@ -8,6 +8,7 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
@@ -15,32 +16,34 @@
   <main>
     <form>
       <!-- getting the customer's name by defining it's a real name by making sure its restricted from less then 2 alphabetic characters-->
-      <div style="display: inline-block; margin-right: 10px;">
+      <div>
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" pattern="[a-zA-Z]{2,}" required/>
-      </div>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" pattern="[a-zA-Z]{2,}" required>
+      </div><br>
 
-      <div style="display: inline-block;">
+      <div>
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name" pattern="[a-zA-Z]{2,}" required/>
-      </div>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name" pattern="[a-zA-Z]{2,}" required>
+      </div><br>
 
       <!-- getting the customer's email and making sure its valid -->
       <div>
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
-      </div>
+      </div><br>
 
-      <!-- adding a <radio> element for being able to choose between the colors of the t-shirts-->
-      <div>
-        <label for="color">Choose a color:</label>
+      <!-- Using a <fieldset> element to group related radio inputs for choosing the color of the t-shirts -->
+      <fieldset>
+        <legend>Choose a color:</legend>
         <label for="black">Black:</label>
         <input type="radio" id="black" name="color" value="black" required>
+
         <label for="white">White:</label>
         <input type="radio" id="white" name="color" value="white" required>
+
         <label for="gray">Gray:</label>
         <input type="radio" id="gray" name="color" value="gray" required>
-      </div>
+      </fieldset><br>
       <!-- use a <select> type element for being able to choose between the size's of the t-shirts (XS, S, M, L, XL, XXL)-->
       <div>
         <label for="size">Choose a size:</label>
@@ -53,7 +56,7 @@
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
         </select>
-      </div>
+      </div><br>
       <!-- add a submit button to the page-->
       <div>
         <input type="submit" value="Submit">
