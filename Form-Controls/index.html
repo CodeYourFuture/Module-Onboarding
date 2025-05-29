@@ -5,13 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <style>
-      input, select, button {
-        min-height: 44px;
-        font-size: 16px;
-        margin-bottom: 10px;
-      }
-    </style> -->
     
   </head>
   <body>
@@ -20,13 +13,14 @@
     </header>
     <main>
       <form>
+        <p>All fields are required</p>
         <fieldset>
           <legend>Your Information</legend>
-
+          <br>
           <label for="name">Your name:</label>
           <span  ><strong>*</strong></span>
           <input type="text" id="name" name="user-name" placeholder="Enter your full name"
-            pattern="^[A-Za-z]+( [A-Za-z]+)*$" required  autocomplete="name"
+            pattern=".*\s+.*" required  autocomplete="name"
             oninvalid="this.setCustomValidity('Please enter only letters. No spaces at the beginning or end.')"
             oninput="this.setCustomValidity('')">
           <br>
@@ -41,28 +35,32 @@
         </fieldset>
 
         <fieldset>
-          <br>
           <legend>Choose your T-shirt</legend>
 
           <label for="color">T-shirt color:</label>
+          <br>
+
           <span  ><strong>*</strong></span>
           <select name="color" id="color" required >
             <option value="">-- Please choose a color --</option>
+            
             <option value="red">Red</option>
+           
             <option value="green">Green</option>
+           
             <option value="blue">Blue</option>
+            <br>
+             
           </select>
-          <br>
-          <br>
 
-          <p>All fields are required</p>
+           
           <br>
-
          <label for="size" >choose your size: </label>
           <select name="size" id="size" required >
             <option value="">-- Please choose a size --</option>
-            <option value="S">S</option>
+            <br>
             <option value="XS">XS</option>
+            <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
@@ -76,6 +74,8 @@
         </div>
       </form>
     </main>
+    <br>
+    <br>
     <footer>
       <h2>By MOHAMMAD ALDALI</h2>
     </footer>
