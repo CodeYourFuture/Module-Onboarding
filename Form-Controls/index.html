@@ -15,7 +15,7 @@
       <form>
         <!--Name-->
         <label for="name">Full name:</label>
-        <input type="text" id="name" name="name" required minlength="2">
+        <input type="text" id="name" name="name" required pattern=".*\S.*">
         <br><br>
         
         
@@ -53,11 +53,10 @@
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
         </select>
-        <br><br><br><br><br><br><br><br><br>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <br><br>
+        <!--Button-->
+        <button type="Submit">Submit</button>
+        
       </form>
     </main>
     <footer>
