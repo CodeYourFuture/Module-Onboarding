@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>T-Shirt Order Form</title>
+    <meta name="description" content="Order your custom t-shirt" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,68 +13,58 @@
     </header>
     <main>
       <form>
-        <!-- 
-          Requirements:
-          1. Collect customer name (required, min 2 chars)
-          2. Collect valid email (required)
-          3. Offer 3 color options (required)
-          4. Offer 6 size options (required)
-          5. All fields required
-          6. No form action needed
-          7. Semantic HTML
-          8. All inputs must have labels
-          9. 100% Lighthouse accessibility
-        -->
         <fieldset>
           <legend>Customer Information</legend>
-          
+
           <div>
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required minlength="2">
+            <input type="text" id="name" name="name" required minlength="2" 
+                   pattern=".*\S+.*" title="Please enter at least 2 non-space characters">
           </div>
-          
+
           <div>
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required 
+                   title="Please enter a valid email address">
           </div>
         </fieldset>
-        
+
         <fieldset>
           <legend>T-Shirt Options</legend>
-          
+
           <div>
             <label for="color">Select Color:</label>
-            <select id="color" name="color" required>
+            <select id="color" name="color" required aria-required="true">
               <option value="">-- Please choose --</option>
               <option value="red">Red</option>
               <option value="blue">Blue</option>
               <option value="green">Green</option>
             </select>
           </div>
-          
-          <div>
-            <p>Select Size:</p>
-            
+
+          <div role="group" aria-labelledby="size-heading">
+            <p id="size-heading">Select Size:</p>
+
             <input type="radio" id="xs" name="size" value="XS" required>
             <label for="xs">XS</label>
-            
+
             <input type="radio" id="s" name="size" value="S">
             <label for="s">S</label>
-            
+
             <input type="radio" id="m" name="size" value="M">
             <label for="m">M</label>
-            
+
             <input type="radio" id="l" name="size" value="L">
             <label for="l">L</label>
-            
+
             <input type="radio" id="xl" name="size" value="XL">
             <label for="xl">XL</label>
-            
+
             <input type="radio" id="xxl" name="size" value="XXL">
             <label for="xxl">XXL</label>
           </div>
         </fieldset>
-        
+
         <button type="submit">Place Order</button>
       </form>
     </main>
