@@ -87,3 +87,6 @@ article {
     grid-column: span 3;
   }
 }
+.heading {
+  text-align: center;
+}
