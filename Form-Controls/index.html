@@ -14,86 +14,91 @@ Writing that out as a series of questions to ask yourself:
 All fields are required. Do not write a form action for this project.-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Creation of a Form</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
+
+    <h1>Sample T-Shirt Order Form</h1>
+
+    <form action="#" method="post">
         <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
         </div>
+
         <br>
+
         <div>
-            <label for="password">Password </label> 
-            <input type="password" name="password" required>
-           
-        </div>
-        <br>
-        <div>
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input type="email" name="email" id="email" required>
         </div>
-        <br>
-        <fieldset> 
 
+        <br>
+
+        <fieldset>
             <legend>Sizes of T-Shirt</legend>
+
+            <div>
                 <label for="xs">Xtra-Small</label>
-                <input type="checkbox" name="sizes[]" id="xs"> 
-            
+                <input type="checkbox" name="sizes[]" id="xs" value="xs">
+            </div>
             <div>
                 <label for="small">Small</label>
-                <input type="checkbox" name="sizes[]" id="small">
+                <input type="checkbox" name="sizes[]" id="small" value="small">
             </div>
             <div>
                 <label for="m">Medium</label>
-                <input type="checkbox" name="sizes[]" id="m">
+                <input type="checkbox" name="sizes[]" id="m" value="m">
             </div>
             <div>
                 <label for="l">Large</label>
-                <input type="checkbox" name="sizes[]" id="l">
+                <input type="checkbox" name="sizes[]" id="l" value="l">
             </div>
             <div>
-                <label for="xl">XtrLarge</label>
-                <input type="checkbox" name="sizes[]" id="xl">
+                <label for="xl">Xtra-Large</label>
+                <input type="checkbox" name="sizes[]" id="xl" value="xl">
             </div>
             <div>
-                <label for="xxl">Double Xtra Large</label>
-                <input type="checkbox" name="sizes[]" id="xxl">
+                <label for="xxl">Double Xtra-Large</label>
+                <input type="checkbox" name="sizes[]" id="xxl" value="xxl">
             </div>
-        
         </fieldset>
-        <br>
-        
-        <fieldset> 
-            <legend>Colors of the T-Shirts</legend> 
-            <label for="color">Colors</label>
-                <select name="color[]" id="color" multiple>
-                    <option value="green">Green</option>
-                    <option value="Red">Red </option>
-                    <option value="blue">Blue</option>
-                    <option value="purple">Purple</option>
-                    <option value="yellow">Yellow</option>
-                    <option value="black">Black</option>
-                    
-                </select> 
-          
-        
-        </fieldset>
-        <br><br>
-        <div>
-            <label for="date">Delivery date</label>
-            <input type="date" name="date" id="date">
-        </div><br>        
 
-        <button type="submit">Submit The Form</button>
-        
+        <br>
+
+        <fieldset>
+            <legend>Colors of the T-Shirts</legend>
+            <label for="color">Choose colors:</label>
+            <select name="color[]" id="color">
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+                <option value="yellow">Yellow</option>
+                <option value="black">Black</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <div>
+            <label for="date">Delivery Date:</label>
+            <input type="date" name="date" id="date">
+        </div>
+
+        <br><br>
+
+        <div>
+            <button type="submit">Submit Order</button>
+        </div>
     </form>
+
     <footer>
-       <p>&copy; Umar Mohammed ITP-2025</p>
-      </footer>
+        <p>&copy; Umar Mohammed ITP-2025</p>
+    </footer>
+
 </body>
 </html>
