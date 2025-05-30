@@ -1,7 +1,13 @@
-body {
-  font-family: Arial, sans-serif;
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -16,19 +22,22 @@ header {
 }
 
 main {
-  padding: 2rem;
+  flex: 1 0 auto;
+  padding: 2rem 0;
+  padding-bottom: 0; /* Remove extra bottom padding */
 }
 
 .article {
   border: 1px solid #ddd;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1rem 2rem; /* Add horizontal padding to articles */
   display: flex;
   flex-direction: column;
 }
 
 .article.large {
   width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .articles-grid {
@@ -55,13 +64,12 @@ main {
 }
 
 .image-placeholder img {
-  max-width: 100%; /* Ensures the image does not exceed the width of its container */
-  height: auto; /* Maintains the aspect ratio */
-  display: block; /* Prevents inline spacing issues */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .article .content {
-  overflow: hidden; /* Ensure proper layout when using float */
   text-align: left; /* Align text content to the left */
 }
 
@@ -85,8 +93,7 @@ main {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  position: static; /* Make sure the footer is not fixed */
   width: 100%;
   background-color: #f0f0f0;
   text-align: center;
