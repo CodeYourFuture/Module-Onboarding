@@ -36,11 +36,6 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
 .description {
   text-align: center;
 }
