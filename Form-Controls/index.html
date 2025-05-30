@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Meks Couture T-shirts</title>
-    <meta name="description" content="" />
+    <meta name="description" content="A simple form to take customer order of T-shirts" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -14,28 +14,58 @@
     <main>
       <form>
         <div>
-          <label>Name</label>
-          <input>
+          <label for="name">Name</label>
+          <input name="name" id="name" type="">
         </div>
 
         <div>
-          <label>Email</label>
-          <input>
+          <label>
+            Email
+            <input name="e-mail" type="email">
+          </label>             
         </div>
 
         <div>
-          <label>Size</label>
-          <input>
+          <label for="uid">UID</label>
+          <input name="unique_customer_id" id="uid" type="password">
         </div>
-
+        
+        T-Shirt colour selection.
         <div>
-          <label>Colour</label>
-          <input>
+          <label for="black">black</label>
+          <input name="colour" id="black" type="radio" value="black">
+        </div>
+        <div>
+          <label for="white">white</label>
+          <input name="colour" id="white" type="radio" value="white">
+        </div>
+        <div>
+          <label for="grey">grey</label>
+          <input name="colour" id="grey" type="radio" value="grey">
         </div>
 
         
         <div>
-          <button>Place your order!</button>
+          <label for="size">Size</label>
+          <select name="t-Shirt_size" id="size">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+
+        
+
+        
+        <div>
+          <button type="reset">clear form</button>
+        </div>
+
+        <div>
+          <button type="submit">Place your order!</button>
         </div>
         
         <!-- write your html here-->
