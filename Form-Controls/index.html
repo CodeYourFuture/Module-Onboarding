@@ -15,7 +15,7 @@
       <form>
         <div>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" minlength="2" required />       
+          <input type="text" id="name" name="name" minlength="2" required pattern="\S.*" />
         </div>
         <br/>
         <div>
@@ -27,14 +27,15 @@
         <fieldset>
           <legend>Color and Size</legend>
           <label for="color">Choose a color:</label>
-          <select id="color" name="color">
+          <select id="color" name="color" required>
+            <option value="" disabled selected>Select a color</option>
             <option value="Black">Black</option>
             <option value="White">White</option>
             <option value="Blue">Blue</option>
           </select>
-         
-          <label for="size">Choose a size:</label>
-          <select id="size" name="size">
+          
+          <select id="size" name="size" required>
+            <option value="" disabled selected>Select a size</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
