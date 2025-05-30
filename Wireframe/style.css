@@ -24,7 +24,7 @@ header {
 main {
   flex: 1 0 auto;
   padding: 2rem 0;
-  padding-bottom: 0; /* Remove extra bottom padding */
+  padding-bottom: 3.5rem; /* Prevents content from being hidden behind the fixed footer */
 }
 
 .article {
@@ -93,11 +93,14 @@ main {
 }
 
 footer {
-  position: static; /* Make sure the footer is not fixed */
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background-color: #f0f0f0;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
   color: #333;
+  z-index: 100;
 }
