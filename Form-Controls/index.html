@@ -19,11 +19,11 @@
         this will also help you fill in your PR message later-->
         <!--customer name -->
         <label for="name">Your Name:</label>
-        <input tybe="text" id="name" name="name" required minlength="2">
+        <input type="text" id="name" name="name" required minlength="2" pattern="^\S(.*\S)?$" >
 
         <!--customer email-->
         <label for="email">Your Email:</label>
-        <input tybe="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required>
         <!--T-shirt color 3 colours-->
         <label for="colour">Choose a Colour:</label>
         <select id="colour" name="colour" required>
@@ -35,7 +35,7 @@
 
         </select>
         <!--T-shirt size  6 -->
-        <label for="size">Choose a size</label>
+        <label for="size">Choose a size:</label>
         <select id="size" name="size" required>
           <option value="">Select a size</option>
           <option value="s">S</option>
@@ -48,12 +48,12 @@
           
         </select>
 
-        <input tybe="submit" value="Confirm Order">
-        <input tybe="rest" value="Rest"
+        <input type="submit" value="Confirm Order">
+       
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
+   
       <h2>By SANA ALVAREZ</h2>
     </footer>
   </body>
