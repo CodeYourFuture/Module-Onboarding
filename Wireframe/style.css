@@ -52,6 +52,7 @@ main {
   gap: var(--space);
 }
 
+/* Makes the first article span both columns */
 .full-span {
   grid-column: left / end;
 }
@@ -65,6 +66,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: var(--space);
+  background: var(--paper);
 }
 
 a {
