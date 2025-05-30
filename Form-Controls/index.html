@@ -3,25 +3,75 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>T-Shirt Selection Form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-SHIRT PICK</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+          <label for="name">Name</label>
+        <input type="text" name="name" id="name" minlength="2" required>
+        </div>
+        <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        </div>
+        <fieldset>
+        <legend>Color</legend>
+        <div>
+        <label for="green">Green</label>
+        <input type="radio" name="Color" id="green" value="green" required>
+        </div>
+        <div>
+          <label for="red">Red</label>
+        <input type="radio" name="Color" id="red"value="red" required>
+        </div>
+        <div>
+       <label for="yellow">Yellow</label>
+        <input type="radio" name="Color" id="yellow" value="yellow" required>   
+        </div>
+        </fieldset>
+        <fieldset>
+        <legend>
+          Size
+        </legend>
+        <div>
+          <label for="XS">XS</label>
+          <input type="radio" name="Size" id="XS"  value="XS" required>
+        </div>
+        <div>
+          <label for="S">S</label>
+          <input type="radio" name="Size" id="S"  value="S"required>
+        </div>
+        <div>
+        <label for="M">M</label>
+          <input type="radio" name="Size" id="M"  value="M"required>
+          </div>
+          <div>
+        <label for="L">L</label>
+          <input type="radio" name="Size" id="L"  value="L"required>
+          </div>
+          <div>
+        <label for="XL">XL</label>
+          <input type="radio" name="Size" id="XL"  value="XL"required>
+          </div>
+          <div>
+        <label for="XXL">XXL</label>
+          <input type="radio" name="Size" id="XXL"  value="XXL"required>
+          </div>
+          </fieldset>
+        <div>
+        <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Mohammed Hussein</h2>
     </footer>
   </body>
 </html>
