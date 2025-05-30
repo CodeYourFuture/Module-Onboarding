@@ -23,6 +23,7 @@ As well as useful links to learn more */
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+  --viewport-height: 60px; /* Height of the bottom viewport */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -54,10 +55,24 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
   border: 1px solid black;
   padding: 20px;
+  margin-bottom: var(--viewport-height); /* Prevent overlap with viewport */
 }
 footer {
+  /*
   bottom: 0;
   text-align: center;
+  */
+
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: var(--viewport-height); /* Fixed height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000; /* Ensures it stays above other content */
+            background-color: var(--paper); /* prevents overlap with main */
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
