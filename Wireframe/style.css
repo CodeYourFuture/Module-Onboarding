@@ -90,3 +90,8 @@ article {
 .heading {
   text-align: center;
 }
+.footer-text {
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--ink);
+}
