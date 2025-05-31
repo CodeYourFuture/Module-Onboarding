@@ -66,6 +66,16 @@ footer p {
   text-align: center;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+}
+
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
