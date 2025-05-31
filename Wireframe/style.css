@@ -108,7 +108,7 @@ article {
 main>article:nth-child(2),
 main>article:nth-child(3) {
   display: grid;
-  grid-template-rows: 1fr 50px minmax(100px,200px) 50px;
+  grid-template-rows: 1fr 50px minmax(300px,1fr) 50px;
 
   >{
     margin-top: 0;
