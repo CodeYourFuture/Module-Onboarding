@@ -77,7 +77,7 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-section {
+div {
   display: grid;
   grid-template-columns: repeat(2,minmax(300px,1fr));
   gap: var(--space);
