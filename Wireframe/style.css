@@ -27,7 +27,7 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 header { font-family:Helvetica;
-                background:rgb(214, 217, 219);
+                background:rgb(150, 155, 157);
                 margin-left: auto;
                 margin-right: auto;
                 color:rgb(10, 15, 15);
@@ -36,7 +36,7 @@ header { font-family:Helvetica;
 
  body {
   background:rgb(rgb(35, 187, 233));
-  color: rgb(216, 221, 222);
+  color: rgb(150, 157, 159);
   font: var(sans-serif);
 }
 a {
