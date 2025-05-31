@@ -32,6 +32,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 header {
@@ -50,6 +51,7 @@ header {
   display: grid;
   grid-template-columns: [left] 1fr [right] 1fr [end];
   gap: var(--space);
+  
 
 }
 
@@ -68,6 +70,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 10px 0;
+  margin-top: 50px;
   background: var(--paper);
   border-top: 5px solid #ddd;
 }
@@ -84,7 +87,8 @@ a {
   margin: 0 20px 20px;
 }
 
-img, svg {
+img,
+svg {
   width: 100%;
   object-fit: cover;
 }
@@ -97,10 +101,10 @@ article {
   grid-template-columns: var(--space) 1fr var(--space);
 }
 
-article > * {
+article>* {
   grid-column: 2/3;
 }
 
-article > img {
+article>img {
   grid-column: span 3;
 }
