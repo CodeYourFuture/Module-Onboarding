@@ -13,15 +13,73 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+       <h1>Ahmad's shope</h1>
+       <p>
+        Required fields are followed by <strong><span aria-label="Required">*</span></strong>
+       </p>
+       <section>
+        <h2>Contact information</h2>
+        <p>
+          <label for="name">
+            <span>Name: </span>
+           <strong><span aria-label="Required">*</span></strong>
+          </label>
+          <input type="text" id="name" name="Customer-s Name" minlength="2" required />
+        </p>
+        <p>
+          <label for="email">
+            <span>Email: </span>
+           <strong><span aria-label="Required">*</span></strong>
+          </label>
+          <input type="email" id="email" name="Customer-s Email" required />
+        </p>
+       </section>
+       <section>
+        <h2>Size &Colour</h2>
+        <fieldset>
+          <legend>T-shirt's Colour<strong><span aria-label="Required">*</span></strong></legend>
+           <ul>
+          
+          <li><label for="color1">
+            <input type="radio" id="color1" name="colour" value="red" required />
+            Red
+          </label></li>
+          <li><label for="color2">
+            <input type="radio" id="color2" name="colour" value="blue" required />
+            Blue </label>
+            </li>
+            <li>
+            <label for="color3">
+            <input type="radio" id="color3" name="colour" value="green" required />
+            Green </label>
+            </li>
+           </ul>
+        </fieldset>
+                  <p>
+                  <!-- <legend>Size</legend> -->
+                  <label for="size">
+                    <span>Size: </span>
+                   <strong><span aria-label="Required">*</span></strong>
+                   </label>
+                   <select name="size" id="size" required>
+                   <option value="Xsmall">XS</option>
+                    <option value="Small">S</option>
+                    <option value="Medium">M</option>
+                    <option value="Large">L</option>
+                    <option value="Xlarge">XL</option>
+                    <option value="XXlarge">XXL</option>
+                   </select>
+                  </p>
+
+        
+       </section>
+       <button type="submit">confirm
+               </button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+  
+      <h2>By Ahmad Hmedan</h2>
     </footer>
   </body>
 </html>
