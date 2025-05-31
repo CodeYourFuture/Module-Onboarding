@@ -18,11 +18,11 @@
         <legend>Personal information:</legend>
         <p>
            <label for="FirstName">First Name:</label>
-             <input type="text" id="FirstName" name="FirstName" placeholder="Jane" minlength="2" pattern="[A-Za-zÀ-ÿ ,.'-]+$" required>
+             <input type="text" id="FirstName" name="FirstName" placeholder="Jane" minlength="2"  pattern="^(?!\s*$)[A-Za-zÀ-ÿ ,.'-]+$" required>
             </p>
             <p>
            <label for="lastName">Last Name:</label>
-             <input type="text" id="lastName" name="lastName" placeholder="Doe" minlength="2" required pattern="[A-Za-zÀ-ÿ ,.'-]+$">
+             <input type="text" id="lastName" name="lastName" placeholder="Doe" minlength="2"  pattern="^(?!\s*$)[A-Za-zÀ-ÿ ,.'-]+$" required>
             </p>
             <p>
              <label for="mail">Enter your email:</label>
@@ -31,13 +31,13 @@
                   </fieldset>
                   <br>
 <fieldset>
-  <legend>Choose one of our colour:</legend>
+  <legend>Choose one of our color:</legend>
 
- <p> <input type="radio" name="colour" id="color_1" value="Red" required> 
+ <p> <input type="radio" name="color" id="color_1" value="Red" required> 
   <label for="color_1">Small</label> </p>
-  <p> <input type="radio" name="colour" id="color_2" value="Green" required> 
+  <p> <input type="radio" name="color" id="color_2" value="Green" required> 
     <label for="color_2">Medium</label> </p>
-    <p> <input type="radio" name="colour" id="color_3" value="Black" required> 
+    <p> <input type="radio" name="color" id="color_3" value="Black" required> 
       <label for="color_3">Large</label> </p>
         </fieldset>
      <br>
@@ -46,12 +46,12 @@
     <label for="sizes">Choose your size:</label>
      <select name="size" id="sizes" required>
       <option value="">Choose size</option>
-      <option value="extraSmall">Extra small</option>
+      <option value="extra-small">Extra small</option>
       <option value="small">Small</option>
       <option value="medium">Medium</option>
-      <option value="Large">Large</option>
-      <option value="extraLarge"> Extra Large</option>
-      <option value="XXLarge">XX Large</option>
+      <option value="large">Large</option>
+      <option value="extra-large"> Extra Large</option>
+      <option value="xx-large">XX Large</option>
        </select>
         </p>
   <br>
