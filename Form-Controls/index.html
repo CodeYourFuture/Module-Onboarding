@@ -13,59 +13,45 @@
     </header>
     <main>
       <form>
-        <!--this is input field name-->
-        <label for="name"
-          >Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="user_name"
-            minlength="2"
-            size="30"
-            required
-          />
-        
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="user_name"
+          minlength="2"
+          size="30"
+          pattern="[A-Z-a-z]{2}"
+          title="name must be a characters"
+        />
         <br /><br />
-        <!--this is input field Email-->
-        <label for="mail"
-          >Email:</label>
-          <input 
-            type="email"
-            id="mail"
-            name="user_email"
-            size="23"
-            required
-          />
-        
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email" size="23" required />
         <br /><br />
-        <!--this are the sizes options     -->
         <label for="sizes">Choose a size :</label>
         <select id="sizes" name="size" required>
           <option value="" disabled selected>select your size</option>
-          <option  value="xs">xs</option>
-          <option  value="s">s</option>
-          <option  value="m">m</option>
-          <option value="l">l</option>
-          <option value="xl">xl</option>
-          <option value="xxl">xxl</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
         </select>
+        <br /><br />
+        <fieldset>
+          <legend>Choose a color:</legend>
+          <label for="colorRed"> Red :</label>
+          <input type="radio" id="colorRed" name="color" value="Red" required />
+          <label for="colorBlue">blue :</label>
+          <input type="radio" id="colorBlue" name="color" value="blue" />
+          <label for="colorBlack"> black :</label>
+          <input type="radio" id="colorBlack" name="color" value="black" />
+        </fieldset>
         <br />
-        <br />
-        <!--setting up the colors options-->
-
-        <label for="colors"> Choose a color :</label> <br><br>
-        <label for="colorRed"> Red :</label>
-        <input type="radio" id="colorRed" name="color" value="Red" required />
-        <label for="colorBlue">blue :</label>
-        <input type="radio" id="colorBlue" name="color" value="blue"/>
-        <label for="colorBlack"> black :</label>
-        <input type="radio" id="colorBlack" name="color" value="black"/>
-
+        <input type="submit" value="Submit" />
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <!--this is my name-->
       <h2>By Georges Pofou</h2>
     </footer>
   </body>
