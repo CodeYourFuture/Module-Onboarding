@@ -41,6 +41,9 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+.heading {
+  text-align: center;
+}
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
