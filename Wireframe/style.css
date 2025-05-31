@@ -62,12 +62,12 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
-
-  color: white;
-  background-color: black;
-  margin: 10px;
+  left: 0;
   width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
 
 }
 /* ====== Articles Grid Layout ====
