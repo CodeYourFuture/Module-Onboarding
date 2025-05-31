@@ -12,16 +12,65 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+      <form id="order-form" action="/submit-order" method="POST">
+  <fieldset>
+    <legend>Confirm Your Identity</legend>
+
+    <label for="name">Full Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      minlength="2"
+      pattern="^[A-Za-z\s'-]{2,50}$"
+      title="Please enter a valid name (letters, spaces, hyphens, and apostrophes only)"
+      placeholder="Your full name"
+      autocomplete="name"
+    >
+
+    <label for="email">Email address:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
+      title="Please enter a valid email address"
+      placeholder="you@example.com"
+      autocomplete="email"
+    >
+  </fieldset>
+
+  <fieldset>
+    <legend>Select Your T-Shirt Options</legend>
+
+    <label for="color">Colour:</label>
+    <select id="color" name="color" required>
+      <option value="" disabled selected>Select colour</option>
+      <option value="white">White</option>
+      <option value="black">Black</option>
+      <option value="red">Red</option>
+    </select>
+
+    <label for="size">Size:</label>
+    <select id="size" name="size" required>
+      <option value="" disabled selected>Select size</option>
+      <option value="S">Extra Small (XS)</option>
+      <option value="S">Small (S)</option>
+      <option value="M">Medium (M)</option>
+      <option value="L">Large (L)</option>
+      <option value="XL">Extra Large (XL)</option>
+      <option value="XXL">Double Extra Large (XXL)</option>
+    </select>
+  </fieldset>
+
+  <button type="submit">Place Order</button>
+</form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Valentyn Pronchenko</h2>
     </footer>
   </body>
 </html>
