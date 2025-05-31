@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>My Form Exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -13,15 +13,49 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+       <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" minlength="2" required />
+       </div>
+       <br>
+       <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+       </div>
+       <br>
+
+       <fieldset>
+          <legend>T-Shirt Colour</legend>
+          <label for="colour">Choose a colour:</label>
+          <select id="colour" name="colour" required>
+            <option value="">--please choose--</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>T-Shirt Size</legend>
+          <label for="size">Choose a size:</label>
+          <select id="size" name="size" required>
+            <option value="">--please choose--</option> 
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>           
+          </select>
+        </fieldset>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Welid Omer</h2>
     </footer>
   </body>
 </html>
