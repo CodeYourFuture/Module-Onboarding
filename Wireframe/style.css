@@ -95,11 +95,13 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
 
-  >*:first-child {
-    grid-column: span 2;
+  > *:nth-child(2) {
+    grid-column: span 2;  
   }
 
 }
+
+
 
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -122,15 +124,3 @@ article {
     grid-column: span 3;
   }
 }
-
-
-/* main>article:nth-child(2),
-main>article:nth-child(3) {
-  display: grid;
-  grid-template-rows: 1fr 80px minmax(80px,150px) 50px;
-
-  >h2{
-    margin-top: 10px;
-  }
-
-} */
