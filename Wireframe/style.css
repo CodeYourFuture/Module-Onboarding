@@ -79,11 +79,12 @@ https://gridbyexample.com/learn/
 */
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,minmax(300px,1fr));
   gap: var(--space);
   > *:first-child {
     grid-column: span 2;
   }
+
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -108,9 +109,10 @@ article {
 main>article:nth-child(2),
 main>article:nth-child(3) {
   display: grid;
-  grid-template-rows: 1fr 50px minmax(300px,1fr) 50px;
+  grid-template-rows: 1fr 50px minmax(100px,1fr) 50px;
 
-  >{
-    margin-top: 0;
+  >h2{
+    margin-top: 10px;
   }
+
 }
