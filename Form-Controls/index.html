@@ -15,19 +15,21 @@
       <form>
         <div>
           <label for="name">Name</label>
-          <input name="name" id="name" type="">
+          <input name="name" id="name" type="" placeholder="your registered firstname" required>
         </div>
 
         <div>
           <label>
             Email
-            <input name="e-mail" type="email">
+            <input name="e-mail" type="email" required>
           </label>             
         </div>
 
         <div>
           <label for="uid">UID</label>
-          <input name="unique_customer_id" id="uid" type="password">
+          <input name="unique_customer_id" id="uid" type="password" placeholder="your unique 4-digit code"
+          pattern="\d{4}" maxlength="4" minlength="4"
+          required>
         </div>
         
         T-Shirt colour selection.
@@ -57,7 +59,10 @@
           </select>
         </div>
 
-        
+        <div>
+          <label for="date">Preffered delivery date</label>
+          <input name="date" id="date" type="date" required>
+        </div>
 
         
         <div>
