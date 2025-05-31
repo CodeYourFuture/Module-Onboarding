@@ -18,19 +18,12 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
-  color: black;
+  --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
 }
-
-header h1,
-header p {
-  text-align: center;
-}
-
-
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -38,26 +31,16 @@ body {
   color: var(--ink);
   font: var(--font);
 }
-
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
-
-p {
-  margin-bottom: 1rem;
-  /* or as needed */
-}
-
-
-
 img,
 svg {
   width: 100%;
   object-fit: cover;
 }
-
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -66,9 +49,11 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-
-
-
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -80,12 +65,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-
-  >*:first-child {
+  > *:first-child {
     grid-column: span 2;
   }
 }
-
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -97,26 +80,10 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-
-  >* {
+  > * {
     grid-column: 2/3;
   }
-
-  >img {
+  > img {
     grid-column: span 3;
   }
-}
-
-.container {
-  gap: 24px;
-}
-
-
-footer {
-  text-align: center;
-  background-color: white;
-  padding: 24px;
-  text-align: center;
-  color: black;
-  border-top: 1px solid white;
 }
