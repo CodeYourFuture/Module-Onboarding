@@ -90,7 +90,7 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
+section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
