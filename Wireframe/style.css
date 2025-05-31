@@ -36,6 +36,9 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
+.smallImage{
+ width:200;
+}
 img,
 svg {
   width: 100%;
