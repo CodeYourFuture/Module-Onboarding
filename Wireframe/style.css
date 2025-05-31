@@ -31,7 +31,8 @@ header { font-family:Helvetica;
                 margin-left: auto;
                 margin-right: auto;
                 color:rgb(10, 15, 15);
-              text-align: center;}
+              text-align: left;
+            }
 
  body {
   background:rgb(rgb(35, 187, 233));
@@ -49,7 +50,7 @@ svg {
   
   width: 100%;
   object-fit: cover;
-  height: auto;
+  height: 100%;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -63,7 +64,7 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
+  text-align: left;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
