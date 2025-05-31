@@ -77,9 +77,9 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-section {
+main {
   display: grid;
-  grid-template-columns: repeat(2,minmax(300px,1fr));
+  grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
     grid-column: span 2;
@@ -97,6 +97,7 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+  grid-template-rows: auto 80px minmax(80px,1fr) 50px;
   > * {
     grid-column: 2/3;
   }
@@ -106,7 +107,7 @@ article {
 }
 
 
-main>article:nth-child(2),
+/* main>article:nth-child(2),
 main>article:nth-child(3) {
   display: grid;
   grid-template-rows: 1fr 80px minmax(80px,150px) 50px;
@@ -115,4 +116,4 @@ main>article:nth-child(3) {
     margin-top: 10px;
   }
 
-}
+} */
