@@ -1,88 +1,84 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
-}
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
-body {
-  background-color: var(--paper);
-  color: lightblue;
-  font: var(--font);
-}
+      --paper: #545f77;
+      --font: 100%/1.5 system-ui;
+      --space: clamp(6px, 6px + 2vw, 15px);
+      --line: 1px solid lightblue;
+      --container: 1200px;
+    }
 
-h1 {
-  color: white;
-  text-align: center;
-}
+    body {
+      background-color: var(--paper);
+      color: #e0f0ff;
+      font: var(--font);
+      margin: 0;
+      line-height: 1.6;
+    }
 
-h2 {
-	color: #182199;
-	text-align: left;
-}
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-img,
-svg {
-  width: 100%;
-  object-fit: scale-down;
-}
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: relative;
-  bottom: 0;
-  text-align: center;
-}
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: auto;
-  }
-}
+    header, footer {
+      text-align: center;
+      padding: var(--space);
+    }
 
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: auto;
-  }
-}
+    h1, h2 {
+      color: #1c31d4;
+    }
+
+    a {
+      display: inline-block;
+      padding: var(--space);
+      border: var(--line);
+      text-decoration: none;
+      color: #e0f0ff;
+    }
+
+    a:focus,
+    a:hover {
+      outline: 2px solid yellow;
+      outline-offset: 2px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+
+    main {
+      max-width: var(--container);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space);
+      padding: var(--space);
+    }
+
+    main > article:first-child {
+      grid-column: span 2;
+    }
+
+    article {
+      border: var(--line);
+      padding: var(--space);
+      background-color: #111;
+    }
+
+    article:first-child img {
+      max-height: 550px;
+      object-fit: cover;
+    }
+
+    figure {
+      margin: 0 0 var(--space) 0;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    footer {
+      font-size: 1rem;
+      color: #bbb;
+    }
+
