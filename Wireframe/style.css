@@ -43,13 +43,14 @@ header {
   justify-content: center;
 }
 
-main {
+.container {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
   flex: 1;
   display: grid;
   grid-template-columns: [left] 1fr [right] 1fr [end];
   gap: var(--space);
+
 }
 
 /* Makes the first article span both columns */
@@ -61,13 +62,14 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  right: 0;
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--space);
+  padding: 10px 0;
   background: var(--paper);
+  border-top: 5px solid #ddd;
 }
 
 a {
@@ -75,6 +77,11 @@ a {
   border: var(--line);
   max-width: fit-content;
   margin: 0 auto;
+}
+
+.read-more-btn {
+  border: 1px solid #333;
+  margin: 0 20px 20px;
 }
 
 img, svg {
