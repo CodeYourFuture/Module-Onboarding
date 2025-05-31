@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>T-Shirt Order Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1>Order Your T-Shirt</h1>
+    </header>
+    <main>
+      <form>
+        <div style="margin-bottom: 1rem;">
+            <label for="name"> Full Name: </label><br/>
+            <input type="text" id="name" name="name" minlength="2" required autocomplete="name"/>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+            <label for="email"> Email Address:</label><br/>
+            <input type="email" id="email" name="email" required autocomplete="email"/>
+        </div>
+
+        <fieldset style="margin-bottom: 1rem;">
+            <legend>Choose a T-Shirt Colour:</legend>
+            <div style="margin-bottom: 0.75rem;">
+            <label style="display: inline-block; padding:0.5rem;">
+                <input type="radio" name="color" value="purple" required/> Purple 
+            </label>
+            </div>
+
+            <div style="margin-bottom: 0.75rem;">
+            <label style="display: inline-block; padding:0.5rem;">
+                <input type="radio" name="color" value="blue" required/> Blue
+            </label>
+            </div>
+
+            <div style="margin-bottom: 0.75rem;">
+            <label style="display: inline-block; padding:0.5rem;">
+                <input type="radio" name="color" value="pink" required/> Pink
+            </label>
+            </div>
+        </fieldset>
+
+        <div style="margin-bottom: 1rem;">
+        <label for="size">Select Your Size:</label><br/>
+        <select id="size" name="size" required>
+            <option value="" >--Select Size--</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+        </div>
+
+        <div>
+            <button type="submit">Submit Order</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <h2>By Sophie Cowie</h2>
+    </footer>
+  </body>
+</html>
