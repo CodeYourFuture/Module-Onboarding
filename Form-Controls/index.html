@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <title>Custom T-Shirt Order Form</title>
+    <meta
+      name="description"
+      content="Order a custom T-shirt with your size and colour"
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
   </head>
   <body>
-    <fieldset>
     <header>
       <h1>Order Your T-Shirt</h1>
     </header>
     <main>
       <form action="results.html" method="get">
-        <!--Customer's name -->
+        <!-- Customer's name -->
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required minlength="2" />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          pattern=".*\S.*"
+          autocomplete="name"
+        >
         <br><br>
-        <!-- Customer's password -->
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required minlength="8" />
-        <br><br>
-         <!-- Customer's email -->
-         <label for="email">Email:</label>
-         <input type="email" id="email" name="email" required />
-         <br><br>
-         <!-- T-shirt colour -->
-  <fieldset>
-    <legend>Select a Colour:</legend>
-    <label><input type="radio" name="color" value="red" required /> Red</label><br>
-    <label><input type="radio" name="color" value="blue" /> Blue</label><br>
-    <label><input type="radio" name="color" value="green" /> Green</label>
-  </fieldset>
-  <br>
-  <!-- T-shirt size -->
-  <label for="size">Select Your Size:</label>
-  <select name="size" id="size" required>
-    <option value="">--Choose--</option>
-    <option value="XS">XS</option>
-    <option value="S">S</option>
-    <option value="M">M</option>
-    <option value="L">L</option>
-    <option value="XL">XL</option>
-    <option value="XXL">XXL</option>
-  </select>
-  <br><br>
 
-  <!-- Submit button -->
-  <button type="submit">Submit</button>
-  </fieldset>
-   </form>
+        <!-- Customer's email -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          autocomplete="email"
+        >
+        <br ><br >
+
+        <!-- T-shirt colour -->
+        <fieldset>
+          <legend>Select a Colour:</legend>
+          <label
+            ><input type="radio" name="color" value="red" required > Red</label
+          ><br >
+          <label><input type="radio" name="color" value="blue" > Blue</label
+          ><br >
+          <label><input type="radio" name="color" value="green" > Green</label>
+        </fieldset>
+        <br >
+
+        <!-- T-shirt size -->
+        <label for="size">Select Your Size:</label>
+        <select name="size" id="size" required autocomplete="off">
+          <option value="">--Choose--</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+        <br ><br>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer>
-      <!-- change to your name-->
       <h2>By MERHAWIT TEAGES</h2>
     </footer>
-    </script>
   </body>
 </html>
