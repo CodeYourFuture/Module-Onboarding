@@ -36,6 +36,10 @@ a {
   border: var(--line);
   max-width: fit-content;
 
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+
 }
 img,
 svg {
@@ -52,7 +56,7 @@ header{
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 footer {
