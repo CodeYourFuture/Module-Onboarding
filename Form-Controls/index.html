@@ -20,9 +20,6 @@
       </p>
     </section>
     <main>
-      <!-- 1) Validate the name and Email of the customer using validate attribute
-        2) 3 different color for the t-shirt, we can use radio button for this
-        3) size of th t-shirt mus be on of these XS, S, M, L, XL, XXL -->
       <form>
         <div>
           <fieldset>
@@ -57,9 +54,12 @@
         <br />
         <fieldset>
           <legend>What color should the T-shirt be?</legend>
-          <label for="color">color</label>
+          <label for="color">
+            <span>color:</span>
+            <strong><span aria-hidden="true">*</span></strong>
+          </label>
           <select id="color" name="color" required>
-            <option  value="" disabled selected>Select a Color</option>
+            <option value="" disabled selected>Select a Color</option>
             <option value="white">White</option>
             <option value="blue">Blue</option>
             <option value="black">Black</option>
@@ -68,9 +68,12 @@
         <br />
         <fieldset>
           <legend>What size should the T-shirt be?</legend>
-          <label for="size">Size</label>
+          <label for="size">
+            <span>Size:</span>
+            <strong><span aria-hidden="true">*</span></strong>
+          </label>
           <select id="size" name="size" required>
-            <option  value="" disabled selected>Select a size</option>
+            <option value="" disabled selected>Select a Size</option>
             <option value="xs">XS</option>
             <option value="s">S</option>
             <option value="m">M</option>
