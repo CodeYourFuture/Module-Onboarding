@@ -1,91 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>My form exercise</title>
-    <meta name="description" content="T-shirt order form" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body style="font-family: sans-serif; margin: 1rem; line-height: 1.6;">
-    <header>
-      <h1>Product Pick</h1>
-    </header>
+<form>
+  <fieldset>
+    <legend>Order Form</legend>
 
-    <main>
-      <form action="#" method="post">
-        <h2>Order Form</h2>
+    <p>
+      <label for="customerName">Customer Name:</label><br />
+      <input type="text" id="customerName" name="customerName" required />
+    </p>
 
-        <div style="margin-bottom: 1.5rem;">
-          <label for="customerName" style="display: block; margin-bottom: 0.5rem;">Customer Name:</label>
-          <input
-            type="text"
-            id="customerName"
-            name="customerName"
-            required
-            pattern="^[a-zA-Z\s'-]+$"
-            title="Please enter a valid name containing only letters, spaces, hyphens, and apostrophes."
-            style="padding: 16px; font-size: 1rem; width: 100%; max-width: 300px;"
-          />
-        </div>
+    <p>
+      <label for="customerEmail">Customer Email:</label><br />
+      <input type="email" id="customerEmail" name="customerEmail" required />
+    </p>
 
-        <div style="margin-bottom: 1.5rem;">
-          <label for="customerEmail" style="display: block; margin-bottom: 0.5rem;">Customer Email:</label>
-          <input
-            type="email"
-            id="customerEmail"
-            name="customerEmail"
-            required
-            style="padding: 16px; font-size: 1rem; width: 100%; max-width: 300px;"
-          />
-        </div>
+    <p>
+      <label for="tshirtColour">T-Shirt Colour:</label><br />
+      <select id="tshirtColour" name="tshirtColour" required>
+        <option value="">Please select a colour</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+    </p>
 
-        <div style="margin-bottom: 1.5rem;">
-          <label for="tshirtColour" style="display: block; margin-bottom: 0.5rem;">T-Shirt Colour:</label>
-          <select
-            id="tshirtColour"
-            name="tshirtColour"
-            required
-            style="padding: 16px; font-size: 1rem; width: 100%; max-width: 300px;"
-          >
-            <option value="" disabled selected>Please select a colour</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-          </select>
-        </div>
+    <p>
+      <label for="tshirtSize">T-Shirt Size:</label><br />
+      <select id="tshirtSize" name="tshirtSize" required>
+        <option value="">Please select a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+    </p>
 
-        <div style="margin-bottom: 1.5rem;">
-          <label for="tshirtSize" style="display: block; margin-bottom: 0.5rem;">T-Shirt Size:</label>
-          <select
-            id="tshirtSize"
-            name="tshirtSize"
-            required
-            style="padding: 16px; font-size: 1rem; width: 100%; max-width: 300px;"
-          >
-            <option value="" disabled selected>Please select a size</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-          </select>
-        </div>
-
-        <div style="margin-top: 2rem;">
-          <button
-            type="submit"
-            id="submit"
-            style="padding: 16px 24px; font-size: 1rem; cursor: pointer; background-color: #007bff; color: white; border: none; min-width: 48px; min-height: 48px;"
-          >
-            Submit Order
-          </button>
-        </div>
-      </form>
-    </main>
-
-    <footer style="margin-top: 2rem; font-size: 0.9rem; color: #555;">
-      <p>By HOMEWORK SOLUTION</p>
-      <p>Created By @Houssam Lahlah</p>
-    </footer>
-  </body>
-</html>
+    <p>
+      <button type="submit">Submit Order</button>
+    </p>
+  </fieldset>
+</form>
