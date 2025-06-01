@@ -20,8 +20,8 @@
           name="user_name"
           minlength="2"
           size="30"
-          pattern="[A-Z-a-z]{2}"
-          title="name must be a characters"
+         pattern="[A-Za-z ]{2,}"
+          title="Name must be at least 2 alphabetic characters" 
         />
         <br /><br />
         <label for="mail">Email:</label>
@@ -40,12 +40,18 @@
         <br /><br />
         <fieldset>
           <legend>Choose a color:</legend>
-          <label for="colorRed"> Red :</label>
+          <label for="colorRed"> 
           <input type="radio" id="colorRed" name="color" value="Red" required />
-          <label for="colorBlue">blue :</label>
+           Red
+          </label>
+          <label for="colorBlue">
           <input type="radio" id="colorBlue" name="color" value="blue" />
-          <label for="colorBlack"> black :</label>
+          blue
+          </label>
+          <label for="colorBlack"> 
           <input type="radio" id="colorBlack" name="color" value="black" />
+          black 
+          </label>
         </fieldset>
         <br />
         <input type="submit" value="Submit" />
