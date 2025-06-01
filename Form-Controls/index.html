@@ -13,50 +13,53 @@
     </header>
     <main>
       <form>
+        <div>
         <section>
           <h2>Customer</h2>
           <fieldset>
             <legend>Enter your details</legend>
-        <div>
+        <p>
           <label for="name">Name</label>
-          <input name="name" id="name" type="" placeholder="your registered firstname" required>
-        </div>
+          <input name="name" id="name"  type="text" placeholder="your registered firstname" required>
+        </p>
 
-        <div>
-          <label>
-            Email
-            <input name="e-mail" type="email" required>
-          </label>             
-        </div>
+        <p>
+          <label for="email" >Email</label>
+            <input name="e-mail" id="email" type="email" required>              
+        </p>
 
-        <div>
+        <p>
           <label for="uid">UID</label>
-          <input name="unique_customer_id" id="uid" type="password" placeholder="your unique 4-digit code"
+          <input name="unique_customer_id" id="uid"
+          type="password" 
+          placeholder="your unique 4-digit code"
           pattern="\d{4}" maxlength="4" minlength="4"
           required>
-        </div>
+        </p>
           </fieldset>
         </section>
+        </div>
 
+        <div>
         <section>
           <h3>T-Shirt Info</h3>
           <fieldset>
             
-        <div>
+        <p>
           <label for="black">black</label>
           <input name="colour" id="black" type="radio" value="black">
-        </div>
-        <div>
+        </p>
+        <p>
           <label for="white">white</label>
           <input name="colour" id="white" type="radio" value="white">
-        </div>
-        <div>
+        </p>
+        <p>
           <label for="grey">grey</label>
           <input name="colour" id="grey" type="radio" value="grey" required>
-        </div>
+        </p>
 
         
-        <div>
+        <p>
           <label for="size">Size</label>
           <select name="t-Shirt_size" id="size" required>
             <option value="XS">XS</option>
@@ -66,9 +69,10 @@
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
           </select>
-        </div>
+        </p>
           </fieldset>
         </section>
+        </div>
 
         <section>
           <fieldset>
@@ -82,22 +86,15 @@
           <button type="submit">Place your order!</button>
         </div>
           </fieldset>
-        </section>
-
         <div>
           <button type="reset">clear form</button>
-        </div>
-          
-        
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        </div>    
+        </section>
+                  
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h4>Meks Couture</h4>
+      <p>Meks Couture</p>
     </footer>
   </body>
 </html>
