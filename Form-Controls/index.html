@@ -25,12 +25,11 @@ All fields are required. Do not write a form action for this project.-->
 
     <form action="#" method="post">
         <div>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
         </div>
 
-        <br>
-
+       
         <div>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email">
@@ -40,33 +39,37 @@ All fields are required. Do not write a form action for this project.-->
 
         <fieldset>
             <legend>Sizes of T-Shirt</legend>
-
+        
             <div>
                 <label for="xs">Xtra-Small</label>
-                <input type="checkbox" name="sizes[]" id="xs" value="xs">
+                <input type="radio" name="size" id="xs" value="Xtra-Small">
             </div>
+        
             <div>
                 <label for="small">Small</label>
-                <input type="checkbox" name="sizes[]" id="small" value="small">
+                <input type="radio" name="size" id="small" value="Small">
             </div>
+        
             <div>
                 <label for="m">Medium</label>
-                <input type="checkbox" name="sizes[]" id="m" value="m">
+                <input type="radio" name="size" id="m" value="Medium">
             </div>
+        
             <div>
                 <label for="l">Large</label>
-                <input type="checkbox" name="sizes[]" id="l" value="l">
+                <input type="radio" name="size" id="l" value="Large">
             </div>
+        
             <div>
-                <label for="xl">Xtra-Large</label>
-                <input type="checkbox" name="sizes[]" id="xl" value="xl">
+                <label for="xl">XtrLarge</label>
+                <input type="radio" name="size" id="xl" value="XtrLarge">
             </div>
+        
             <div>
-                <label for="xxl">Double Xtra-Large</label>
-                <input type="checkbox" name="sizes[]" id="xxl" value="xxl">
+                <label for="xxl">Double Xtra Large</label>
+                <input type="radio" name="size" id="xxl" value="Double Xtra Large">
             </div>
-        </fieldset>
-
+            </fieldset>
         <br>
 
         <fieldset>
@@ -83,11 +86,6 @@ All fields are required. Do not write a form action for this project.-->
         </fieldset>
 
         <br>
-
-        <div>
-            <label for="date">Delivery Date:</label>
-            <input type="date" name="date" id="date">
-        </div>
 
         <br><br>
 
