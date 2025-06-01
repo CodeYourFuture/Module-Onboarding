@@ -11,21 +11,38 @@
     <header>
       <h1>T-shirt form</h1>
     </header>
+    <form method="get">
     <h3>Please complete this form by confirming your name and selecting you t-shirt colour and size. </h3>
     <main>
         <div>
-        <label for="First name">First Name</label> <!-- name field -->
+        <label for="name">First Name</label> <!-- name field -->
         <input type="text" name="name" id="First name" required> <!-- input element added for label -->
         </div>
-
+<br>
         <div>
-        <label for="Last name">Last Name</label> <!-- Last name field -->
-        <input type="text" name="name" id="Last name"> <!-- input element added for label -->
+        <label for="name">Last Name</label> <!-- Last name field -->
+        <input type="text" name="name" id="name" required> <!-- input element added for label -->
         </div>
-
+<br>
         <div>
         <label for="Email address">Email address</label> <!-- email address field -->
-        <input type="text" name="name" id="Email address"> <!-- input element added for label -->
+        <input type="email" name="email" id="email" required> <!-- input element added for label -->
+        </div>
+<br>
+       <p>Select a T-shirt colour</p>
+        <div>
+        <label for="colour">White</label>
+        <input type="radio" name="colour" id="White" value="White">
+        </div>
+
+         <div>
+        <label for="colour">Black</label>
+        <input type="radio" name="colour" id="Black" value="Black">
+        </div>
+
+         <div>
+        <label for="colour">Red</label>
+        <input type="radio" name="colour" id="Red" value="Red">
         </div>
 
         <button type="submit">Submit</button> 
