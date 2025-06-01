@@ -42,23 +42,36 @@ body{
 
 .title {
 text-align: center;
+
 }
 h1{
   font-size: 50px;
+  font-weight: 700;
 }
-h5{
-  font-size: 30px;
+.title p {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 5px;
 }
-button{
+
+.btn-cta {
+  display: inline-block;
   border: 2px solid black;
   font-size: 20px;
-  padding: 10px 10px;
+  padding: 6px 12px;
   color: black;
   border-radius: 2px;
   text-align: center;
-  margin: 20px 20px;
-  
+  margin: 10px;
+  background-color: white;
+  transition: background-color 0.3s;
 }
+
+.btn-cta:hover {
+  background-color: #eee;
+}
+  
+
 
 img{
   width: 100%;
@@ -67,25 +80,43 @@ img{
 
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-.box1 {
-  border-style: solid;
-  color: black;
-  margin: 10px 20px;
+
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+ .box1 {
+  border:1px solid black;
+  margin: 20px 0px;
+
+  
   
 }
-h3,h4{
-  font-size: 20px;
-  margin: 8px 8px;
-}
-.box2 {
-  border-style: solid;
-  color: black;
-  
-}
+
+.box2,
 .box3 {
-  border-style: solid;
-  color: black;
-  width: 435px;
+  border: 1px solid black;
+  width: 48%;
+  
+  
+}
+
+
+article p {
+  font-size: 18px;
+  margin: 8px;
+}
+
+article h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 8px
+
 }
 
 
@@ -94,37 +125,37 @@ h3,h4{
 
   .row {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    
+   
     
   }
 
   @media (max-width: 768px) {
-
     .row {
-  
       flex-direction: column;
-  
-    }
-    .box2 {
-      margin-bottom: 10px;
-
-    }
-    .box3{
-      width: 435px;
+      align-items: center;
     }
   
+    .box2,
+    .box3 {
+      width: 100%;
+    }
   }
  
   .footer {
-    height: 80px;
-    background: #d5cbcb;
-    margin-top: 10px;
-    padding-top: 20px;
-    width: 100%;
-    color: black;
-    text-align: center;
-}
+    background-color: #f0f0f0;   
+    text-align: center;          
+    padding: 20px 0;             
+    font-size: 16px;             
+    color: solid black;                 
+    border-top: 2px solid #000;  
+    font-style: italic;
+  
+  }
+
+
  
   
   
