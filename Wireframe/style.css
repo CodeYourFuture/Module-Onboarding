@@ -11,11 +11,17 @@
   --line: 1px solid #ccc;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font: var(--font);
   background: #fff;
   color: #111;
   padding: var(--space);
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -39,6 +45,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  flex-grow: 1;
 }
 
 /* Large article on top */
@@ -86,7 +93,7 @@ main {
   flex-grow: 1;
 }
 
-/* Force button to bottom */
+/* "Read more" link styling */
 .side-by-side article a {
   align-self: flex-start;
   margin-top: auto;
@@ -117,7 +124,7 @@ a:hover {
 }
 
 footer {
-  margin-top: 3rem;
+  margin-top: auto;
   text-align: center;
   font-size: 0.9rem;
   color: #666;
