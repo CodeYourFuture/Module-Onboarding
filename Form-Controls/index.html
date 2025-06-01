@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>T-shirt form</h1>
-    </header>
-    <form method="get">
-    <h3>Please complete this form by confirming your name and selecting you t-shirt colour and size. </h3>
-    <main>
+<head>
+  <meta charset="UTF-8">
+  <title>T-shirt Form</title>
+</head>
+<body>
+  <header>
+    <h1>T-shirt Form</h1>
+  </header>
+
+  <main>
+    <form method="get" aria-label="T-shirt Order Form">
+      <h3>Please complete this form by confirming your name and selecting your T-shirt colour and size.</h3>
+
+      <div>
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" required>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" required>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+      <br>
+
+      <fieldset>
+        <legend>Select a T-shirt Colour</legend>
+
         <div>
-        <label for="name">First Name</label> <!-- name field -->
-        <input type="text" name="name" id="First name" required> <!-- input element added for label -->
-        </div>
-<br>
-        <div>
-        <label for="name">Last Name</label> <!-- Last name field -->
-        <input type="text" name="name" id="name" required> <!-- input element added for label -->
-        </div>
-<br>
-        <div>
-        <label for="Email address">Email address</label> <!-- email address field -->
-        <input type="email" name="email" id="email" required> <!-- input element added for label -->
-        </div>
-<br>
-       <p>Select a T-shirt colour</p>
-        <div>
-        <label for="colour">White</label>
-        <input type="radio" name="colour" id="White" value="White">
+          <input type="radio" name="colour" id="colour-white" value="White">
+          <label for="colour-white">White</label>
         </div>
 
-         <div>
-        <label for="colour">Black</label>
-        <input type="radio" name="colour" id="Black" value="Black">
+        <div>
+          <input type="radio" name="colour" id="colour-black" value="Black">
+          <label for="colour-black">Black</label>
         </div>
 
-         <div>
-        <label for="colour">Red</label>
-        <input type="radio" name="colour" id="Red" value="Red">
-        </div>
-<br>
-<p>Select a T-shirt size</p>
         <div>
-        <label for="size">Size</label>
-        <select>
-          <option value="XS">XS</option>/option>
-          <option value="S">S</option>/option>
-          <option value="M">M</option>/option>
-          <option value="L">L</option>/option>
-          <option value="XL">XL</option>/option>
-          <option value="XL">XXL</option>/option>
+          <input type="radio" name="colour" id="colour-red" value="Red">
+          <label for="colour-red">Red</label>
+        </div>
+      </fieldset>
+
+      <br>
+
+      <div>
+        <label for="size">Select a T-shirt Size</label>
+        <select name="size" id="size" required>
+          <option value="">-- Please choose a size --</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
         </select>
-        </div>
+      </div>
+
+      <br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
 
         <br>
         <button type="submit">Submit</button> 
