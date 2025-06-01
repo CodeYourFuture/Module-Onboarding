@@ -32,15 +32,19 @@ body {
   font: Arial, sans-serif;
 }
 a {
- display: inline-block;
- padding: 0.5em 1em;
- color: blue;
- text-decoration: none;
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: blue;
+  text-decoration: none;
+  margin-top: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+
 }
 a:hover {
   text-decoration: underline;
+  color: blue;
 }
-
 
 img,
 svg {
@@ -66,12 +70,16 @@ header {
   text-align: center;
 }
 
-
 footer {
   text-align: center;
   padding: 1rem;
   background: lightgrey;
   color: blue;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -84,8 +92,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  
- > *:first-child {
+
+  > *:first-child {
     grid-column: span 2;
   }
 }
@@ -94,17 +102,24 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-article {
-  border: var(--line);
+
+section {
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  
-  > * {
-    grid-column: 2/3;
-  }
- > img {
-    grid-column: span 3;}
-  }
-  
+  /* grid-template-columns: var(--space) 1fr var(--space);*/
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+  margin: auto;
+  background: gray; 
+}
+
+article:first-child {
+  grid-column: 1 / 3; /* span from grid column line 1 to 3 (i.e., span 2 columns) */
+}
+
+article {
+  border: var(--line);
+  padding: 1rem;
+}
