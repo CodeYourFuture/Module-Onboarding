@@ -13,6 +13,10 @@
     </header>
     <main>
       <form>
+        <section>
+          <h2>Customer</h2>
+          <fieldset>
+            <legend>Enter your details</legend>
         <div>
           <label for="name">Name</label>
           <input name="name" id="name" type="" placeholder="your registered firstname" required>
@@ -31,8 +35,13 @@
           pattern="\d{4}" maxlength="4" minlength="4"
           required>
         </div>
-        
-        T-Shirt colour selection.
+          </fieldset>
+        </section>
+
+        <section>
+          <h3>T-Shirt Info</h3>
+          <fieldset>
+            
         <div>
           <label for="black">black</label>
           <input name="colour" id="black" type="radio" value="black">
@@ -43,13 +52,13 @@
         </div>
         <div>
           <label for="grey">grey</label>
-          <input name="colour" id="grey" type="radio" value="grey">
+          <input name="colour" id="grey" type="radio" value="grey" required>
         </div>
 
         
         <div>
           <label for="size">Size</label>
-          <select name="t-Shirt_size" id="size">
+          <select name="t-Shirt_size" id="size" required>
             <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
@@ -58,20 +67,27 @@
             <option value="XXL">XXL</option>
           </select>
         </div>
+          </fieldset>
+        </section>
 
+        <section>
+          <fieldset>
+            <legend>Delivery info</legend>
         <div>
           <label for="date">Preffered delivery date</label>
           <input name="date" id="date" type="date" required>
         </div>
-
-        
-        <div>
-          <button type="reset">clear form</button>
-        </div>
-
+         
         <div>
           <button type="submit">Place your order!</button>
         </div>
+          </fieldset>
+        </section>
+
+        <div>
+          <button type="reset">clear form</button>
+        </div>
+          
         
         <!-- write your html here-->
         <!-- 
