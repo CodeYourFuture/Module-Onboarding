@@ -1,27 +1,76 @@
+<!--Task
+We are selling t-shirts. Write a form to collect the following data:
+
+Our customers already have accounts, so we know their addresses and charging details already. We don't need to collect that data. We want to confirm they are the right person, then get them to choose a colour and then pick a delivery date.
+
+Writing that out as a series of questions to ask yourself:
+
+1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+5. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?
+
+All fields are required. Do not write a form action for this project.-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>T-Shirt Order Form</title>
   </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
+<body>
+  <h2>T-Shirt Order Confirmation</h2>
+  <form>
+    <!-- 1. Customer Name -->
+    <label for="name">Full Name:</label>
+    <input
+  type="text"
+  id="name"
+  name="name"
+  required
+  pattern="^[A-Za-z\-]{2,50}$"
+  title="Name must be 2–50 characters and contain only letters and hyphens. No spaces allowed."
+/>
+
+    <!-- 2. Customer Email -->
+    <label for="email">Email Address:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+    />
+
+    <!-- 3. T-Shirt Colour -->
+    <label for="color">Choose a Colour:</label>
+    <select id="color" name="color" required>
+      <option value="">--Select--</option>
+      <option value="black">Black</option>
+      <option value="white">White</option>
+      <option value="navy">Navy</option>
+    </select>
+
+    <!-- 4. T-Shirt Size -->
+    <label for="size">Choose a Size:</label>
+    <select id="size" name="size" required>
+      <option value="">--Select--</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+ 
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+  
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+        <p>&copy; Umar Mohammed ITP-2025</p>
     </footer>
-  </body>
+
+</body>
 </html>
