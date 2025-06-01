@@ -8,60 +8,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    
     <header>
       <h2>Collecting Data</h2>
     </header>
-     <form>
-    <section> 
-       <fieldset>
-        <legend>Personal information:</legend>
-        <p>
-           <label for="FirstName">First Name:</label>
-             <input type="text" id="FirstName" name="FirstName" placeholder="Jane" minlength="2"  pattern="^(?!\s*$)[A-Za-zÀ-ÿ ,.'-]+$" required>
-            </p>
-            <p>
-           <label for="lastName">Last Name:</label>
-             <input type="text" id="lastName" name="lastName" placeholder="Doe" minlength="2"  pattern="^(?!\s*$)[A-Za-zÀ-ÿ ,.'-]+$" required>
-            </p>
-            <p>
-             <label for="mail">Enter your email:</label>
-               <input type="email" id="email" name="email" placeholder="example@domain.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
-                </p>
-                  </fieldset>
-                  <br>
-<fieldset>
-  <legend>Choose one of our color:</legend>
-
- <p> <input type="radio" name="color" id="color_1" value="Red" required> 
-  <label for="color_1">Small</label> </p>
-  <p> <input type="radio" name="color" id="color_2" value="Green" required> 
-    <label for="color_2">Medium</label> </p>
-    <p> <input type="radio" name="color" id="color_3" value="Black" required> 
-      <label for="color_3">Large</label> </p>
+    <form>
+      <section>
+        <fieldset>
+          <legend>Personal information:</legend>
+          <p>
+            <label for="FirstName">First Name:</label>
+            <input
+              type="text"
+              id="FirstName"
+              name="FirstName"
+              placeholder="Jane"
+              minlength="2"
+              pattern="^(?!\s*$)[A-Za-zÀ-ÿ ,.'-]+$"
+              required
+            />
+          </p>
+          <p>
+            <label for="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Doe"
+              minlength="2"
+              pattern="^(?!\s*$)[A-Za-zÀ-ÿ ,.'-]+$"
+              required
+            />
+          </p>
+          <p>
+            <label for="mail">Enter your email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@domain.com"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              required
+            />
+          </p>
         </fieldset>
-     <br>
-  
-  <p>
-    <label for="sizes">Choose your size:</label>
-     <select name="size" id="sizes" required>
-      <option value="">Choose size</option>
-      <option value="extra-small">Extra small</option>
-      <option value="small">Small</option>
-      <option value="medium">Medium</option>
-      <option value="large">Large</option>
-      <option value="extra-large"> Extra Large</option>
-      <option value="xx-large">XX Large</option>
-       </select>
+        <br />
+        <fieldset>
+          <legend>Choose one of our color:</legend>
+
+          <p>
+            <input
+              type="radio"
+              name="color"
+              id="color_1"
+              value="Red"
+              required
+            />
+            <label for="color_1">Red</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="color"
+              id="color_2"
+              value="Green"
+              required
+            />
+            <label for="color_2">Green</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="color"
+              id="color_3"
+              value="Black"
+              required
+            />
+            <label for="color_3">Black</label>
+          </p>
+        </fieldset>
+        <br />
+
+        <p>
+          <label for="sizes">Choose your size:</label>
+          <select name="size" id="sizes" required>
+            <option value="">Choose size</option>
+            <option value="extra-small">Extra small</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extra-large">Extra Large</option>
+            <option value="xx-large">XX Large</option>
+          </select>
         </p>
-  <br>
-     <button type="submit">Submit</button>
-
-
-         
-        
-
-     </section>
-      </form>
+        <br />
+        <button type="submit">Submit</button>
+      </section>
+    </form>
   </body>
 </html>
