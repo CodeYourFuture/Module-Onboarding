@@ -15,85 +15,59 @@ All fields are required. Do not write a form action for this project.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Creation of a Form</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>T-Shirt Order Form</title>
+  </head>
 <body>
+  <h2>T-Shirt Order Confirmation</h2>
+  <form id="tshirtForm" action="/submit-order" method="POST">
+    <!-- 1. Customer Name -->
+    <label for="name">Full Name:</label>
+    <input
+  type="text"
+  id="name"
+  name="name"
+  required
+  pattern="^[A-Za-z\-]{2,50}$"
+  title="Name must be 2–50 characters and contain only letters and hyphens. No spaces allowed."
+/>
 
-    <h1>Sample T-Shirt Order Form</h1>
+    <!-- 2. Customer Email -->
+    <label for="email">Email Address:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+    />
 
-    <form action="#" method="post">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
-        </div>
+    <!-- 3. T-Shirt Colour -->
+    <label for="color">Choose a Colour:</label>
+    <select id="color" name="color" required>
+      <option value="">--Select--</option>
+      <option value="black">Black</option>
+      <option value="white">White</option>
+      <option value="navy">Navy</option>
+    </select>
 
-       
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-        </div>
+    <!-- 4. T-Shirt Size -->
+    <label for="size">Choose a Size:</label>
+    <select id="size" name="size" required>
+      <option value="">--Select--</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+ 
 
-        <br>
+    <button type="submit">Submit Order</button>
+  </form>
 
-        <fieldset>
-            <legend>Sizes of T-Shirt</legend>
-        
-            <div>
-                <label for="xs">Xtra-Small</label>
-                <input type="radio" name="size" id="xs" value="Xtra-Small">
-            </div>
-        
-            <div>
-                <label for="small">Small</label>
-                <input type="radio" name="size" id="small" value="Small">
-            </div>
-        
-            <div>
-                <label for="m">Medium</label>
-                <input type="radio" name="size" id="m" value="Medium">
-            </div>
-        
-            <div>
-                <label for="l">Large</label>
-                <input type="radio" name="size" id="l" value="Large">
-            </div>
-        
-            <div>
-                <label for="xl">XtrLarge</label>
-                <input type="radio" name="size" id="xl" value="XtrLarge">
-            </div>
-        
-            <div>
-                <label for="xxl">Double Xtra Large</label>
-                <input type="radio" name="size" id="xxl" value="Double Xtra Large">
-            </div>
-            </fieldset>
-        <br>
-
-        <fieldset>
-            <legend>Colors of the T-Shirts</legend>
-            <label for="color">Choose colors:</label>
-            <select name="color[]" id="color">
-                <option value="green">Green</option>
-                <option value="red">Red</option>
-                <option value="blue">Blue</option>
-                <option value="purple">Purple</option>
-                <option value="yellow">Yellow</option>
-                <option value="black">Black</option>
-            </select>
-        </fieldset>
-
-        <br>
-
-        <br><br>
-
-        <div>
-            <button type="submit">Submit Order</button>
-        </div>
-    </form>
-
+  
     <footer>
         <p>&copy; Umar Mohammed ITP-2025</p>
     </footer>
