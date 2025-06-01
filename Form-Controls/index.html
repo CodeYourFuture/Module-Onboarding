@@ -13,46 +13,51 @@
     <form method="get" aria-label="T-shirt Order Form">
       <h2>Please complete this form by confirming your name and selecting your T-shirt colour and size.</h2>
 
-      <div style="margin-bottom: 16px;">
-        <label for="first-name">First Name</label><br>
-        <input type="text" name="first-name" id="first-name" required style="min-height: 48px; min-width: 200px;">
+      <div>
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" required>
       </div>
 
-      <div style="margin-bottom: 16px;">
-        <label for="last-name">Last Name</label><br>
-        <input type="text" name="last-name" id="last-name" required style="min-height: 48px; min-width: 200px;">
+      <br>
+
+      <div>
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" required>
       </div>
 
-      <div style="margin-bottom: 16px;">
-        <label for="email">Email Address</label><br>
-        <input type="email" name="email" id="email" required style="min-height: 48px; min-width: 200px;">
+      <br>
+
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required>
       </div>
 
-      <fieldset style="margin-bottom: 16px;">
-        <legend>Select a T-shirt Colour</legend>
+      <br>
 
-        <div style="margin-bottom: 12px;">
-          <label for="colour-white" style="display: inline-flex; align-items: center; min-height: 48px;">
-            <input type="radio" name="colour" id="colour-white" value="White" style="margin-right: 10px;"> White
-          </label>
-        </div>
+      <fieldset>
+  <legend>Select a T-shirt Colour</legend>
 
-        <div style="margin-bottom: 12px;">
-          <label for="colour-black" style="display: inline-flex; align-items: center; min-height: 48px;">
-            <input type="radio" name="colour" id="colour-black" value="Black" style="margin-right: 10px;"> Black
-          </label>
-        </div>
+  <div>
+    <input type="radio" name="colour" id="colour-white" value="White">
+    <label for="colour-white">White</label>
+  </div>
 
-        <div style="margin-bottom: 12px;">
-          <label for="colour-red" style="display: inline-flex; align-items: center; min-height: 48px;">
-            <input type="radio" name="colour" id="colour-red" value="Red" style="margin-right: 10px;"> Red
-          </label>
-        </div>
-      </fieldset>
+  <div>
+    <input type="radio" name="colour" id="colour-black" value="Black">
+    <label for="colour-black">Black</label>
+  </div>
 
-      <div style="margin-bottom: 12px;">
-        <label for="size">Select a T-shirt Size</label><br>
-        <select name="size" id="size" required style="min-height: 48px; min-width: 200px;">
+  <div>
+    <input type="radio" name="colour" id="colour-red" value="Red">
+    <label for="colour-red">Red</label>
+  </div>
+</fieldset>
+
+      <br>
+
+      <div>
+        <label for="size">Select a T-shirt Size</label>
+        <select name="size" id="size" required>
           <option value="">-- Please choose a size --</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
@@ -63,12 +68,14 @@
         </select>
       </div>
 
-      <button type="submit" style="min-height: 48px; min-width: 120px;">Submit</button>
+      <br>
+
+      <button type="submit">Submit</button>
     </form>
   </main>
-
-  <footer>
-    <h2>By MIRABEL ADOM</h2>
-  </footer>
-</body>
+    <footer>
+      
+      <h2>By MIRABEL ADOM</h2>
+    </footer>
+  </body>
 </html>
