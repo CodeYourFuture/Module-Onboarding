@@ -3,83 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>T-shirt Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 16px;
-    }
-
-    form div,
-    fieldset div {
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 16px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    select {
-      padding: 12px;
-      font-size: 16px;
-      width: 100%;
-      max-width: 400px;
-      box-sizing: border-box;
-    }
-
-    fieldset {
-      border: none;
-      padding: 0;
-    }
-
-    fieldset legend {
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
-
-    /* Radio button styles */
-    fieldset div {
-      display: flex;
-      align-items: center;
-      margin-bottom: 16px;
-    }
-
-    input[type="radio"] {
-      width: 24px;
-      height: 24px;
-      margin-right: 12px;
-    }
-
-    label[for^="colour-"] {
-      font-size: 18px;
-      padding: 12px 0;
-      cursor: pointer;
-    }
-
-    button[type="submit"] {
-      padding: 14px 28px;
-      font-size: 16px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      min-height: 48px;
-      min-width: 48px;
-    }
-
-    button[type="submit"]:hover {
-      background-color: #0056b3;
-    }
-
-    footer {
-      margin-top: 40px;
-      text-align: center;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -90,29 +13,62 @@
     <form method="get" aria-label="T-shirt Order Form">
       <h2>Please complete this form by confirming your name and selecting your T-shirt colour and size.</h2>
 
-      <div>
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name" required>
+      <div style="margin-bottom: 16px;">
+        <label for="first-name">First Name</label><br>
+        <input type="text" name="first-name" id="first-name" required style="min-height: 48px; min-width: 200px;">
       </div>
 
-      <div>
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name" required>
+      <div style="margin-bottom: 16px;">
+        <label for="last-name">Last Name</label><br>
+        <input type="text" name="last-name" id="last-name" required style="min-height: 48px; min-width: 200px;">
       </div>
 
-      <div>
-        <label for="email">Email Address</label>
-        <input type="email" name="email" id="email" required>
+      <div style="margin-bottom: 16px;">
+        <label for="email">Email Address</label><br>
+        <input type="email" name="email" id="email" required style="min-height: 48px; min-width: 200px;">
       </div>
 
-      <fieldset>
+      <fieldset style="margin-bottom: 16px;">
         <legend>Select a T-shirt Colour</legend>
 
-        <div>
-          <input type="radio" name="colour" id="colour-white" value="White">
-          <label for="colour-white">White</label>
+        <div style="margin-bottom: 12px;">
+          <label for="colour-white" style="display: inline-flex; align-items: center; min-height: 48px;">
+            <input type="radio" name="colour" id="colour-white" value="White" style="margin-right: 10px;"> White
+          </label>
         </div>
 
-        <div>
-          <input type="radio"
+        <div style="margin-bottom: 12px;">
+          <label for="colour-black" style="display: inline-flex; align-items: center; min-height: 48px;">
+            <input type="radio" name="colour" id="colour-black" value="Black" style="margin-right: 10px;"> Black
+          </label>
+        </div>
 
+        <div style="margin-bottom: 12px;">
+          <label for="colour-red" style="display: inline-flex; align-items: center; min-height: 48px;">
+            <input type="radio" name="colour" id="colour-red" value="Red" style="margin-right: 10px;"> Red
+          </label>
+        </div>
+      </fieldset>
+
+      <div style="margin-bottom: 12px;">
+        <label for="size">Select a T-shirt Size</label><br>
+        <select name="size" id="size" required style="min-height: 48px; min-width: 200px;">
+          <option value="">-- Please choose a size --</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+
+      <button type="submit" style="min-height: 48px; min-width: 120px;">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <h2>By MIRABEL ADOM</h2>
+  </footer>
+</body>
+</html>
