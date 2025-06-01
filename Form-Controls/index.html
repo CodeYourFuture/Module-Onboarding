@@ -7,6 +7,29 @@
   <title>T-Shirt order form</title>
   <meta name="description" content="Order your custom t-shirt by choosing a size and color">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <style>
+    form label,
+    form input,
+    form select,
+    form fieldset,
+    form button {
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 1em;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 0.5em;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -20,32 +43,33 @@
     <form aria-labelledby="form-heading">
       <!-- Name -->
       <label for="name">Full Name: </label>
-      <input type="text" id="name" name="name" minlength="2" autocomplete="name" required> <br><br>
+      <input type="text" id="name" name="name" minlength="2" autocomplete="name" required pattern=".*\S.*"
+        title="Please enter at least one non-space character">
 
       <!-- E-mail -->
       <label for="email">Email address: </label>
-      <input type="email" id="email" name="email" autocomplete="email" required> <br><br>
+      <input type="email" id="email" name="email" autocomplete="email" required>
 
 
       <!-- T-Shirt Colour -->
       <fieldset>
-        <legend>Select a T-Shirt Colour </legend> <br>
+        <legend>Select a T-Shirt Colour </legend> 
         <label>
           <input type="radio" name="colour" value="red" required> Red
-        </label> <br> <br>
+        </label>
 
         <label>
-          <input type="radio" name="colour" value="blue" > Blue
-        </label> <br> 
+          <input type="radio" name="colour" value="blue"> Blue
+        </label>
 
         <label>
-          <input type="radio" name="colour" value="green" > Green
-        </label> <br> 
+          <input type="radio" name="colour" value="green"> Green
+        </label>
 
-      </fieldset> <br> 
+      </fieldset>
 
       <!-- T-Shirt Size -->
-      <fieldset><br>
+      <fieldset>
         <label for="size">Select a size: </label>
         <select id="size" name="size" required>
           <option value="">--Select--</option>
@@ -55,11 +79,11 @@
           <option value="L">L</option>
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
-        </select> <br> 
+        </select> <br>
 
-      </fieldset> 
-      <br>
-      <button type="submit">Submit Order</button> <br> <br>
+      </fieldset>
+    
+      <button type="submit">Submit Order</button>
     </form>
 
 
