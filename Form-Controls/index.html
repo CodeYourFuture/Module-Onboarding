@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-       <!-- Customer Name -->
-  <label for="name">Full Name:</label>
-  <input type="text" id="name" name="name" required minlength="2" />
 
-  <!-- Customer Email -->
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 
-  <!-- T-shirt Colour (3 options) -->
-  <p>Choose a t-shirt colour:</p>
-  <label>
-    <input type="radio" name="color" value="red" required />
-    Red
-  </label>
-  <label>
-    <input type="radio" name="color" value="blue" />
-    Blue
-  </label>
-  <label>
-    <input type="radio" name="color" value="green" />
-    Green
-  </label>
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
 
-  <!-- T-shirt Size (6 options) -->
-  <label for="size">Choose a size:</label>
-  <select id="size" name="size" required>
-    <option value="">--Select size--</option>
-    <option value="XS">XS</option>
-    <option value="S">S</option>
-    <option value="M">M</option>
-    <option value="L">L</option>
-    <option value="XL">XL</option>
-    <option value="XXL">XXL</option>
-  </select>
+  <main>
+    <form>
+      <!-- Customer Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required minlength="2" />
 
-  <!-- Submit Button -->
-  <br><br>
-  <button type="submit">Submit</button>
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By Sofayas Solomon</h2>
-    </footer>
-  </body>
+      <br><br>
+
+      <!-- Customer Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <br><br>
+
+      <!-- T-shirt Colour -->
+      <fieldset>
+        <legend>Choose a t-shirt colour:</legend>
+        <label>
+          <input type="radio" name="color" value="red" required />
+          Red
+        </label>
+        <label>
+          <input type="radio" name="color" value="blue" />
+          Blue
+        </label>
+        <label>
+          <input type="radio" name="color" value="green" />
+          Green
+        </label>
+      </fieldset>
+
+      <br>
+
+      <!-- T-shirt Size -->
+      <label for="size"><strong>Choose a size:</strong></label>
+      <select id="size" name="size" required>
+        <option value="">--Select size--</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <br><br>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <h2>By Sofayas Solomon</h2>
+  </footer>
+</body>
+
 </html>
