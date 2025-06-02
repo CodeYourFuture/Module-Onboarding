@@ -26,7 +26,7 @@ As well as useful links to learn more */
    --font: 105%/1.6 'Inter', system-ui, sans-serif;
   --space: clamp(12px, 2vw, 24px);
   --shadow: 0 4px  16px rgba(0, 0, 0, 0.05);
-  --container: 1100px;
+  --container: 800px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -78,6 +78,13 @@ header h1 {
   margin-bottom: var(--space);
   font-size: 2rem;
  }
+
+ .page-description {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -129,9 +136,10 @@ article {
   gap: var(--space);
 }
 
-main > article:first-of-type {
+main > article:first-of-type
+  .bottom-articles {
   width: 100%;
-  max-width: 800px;
+  max-width: var(--wide-container);
   }
  
  article > img {
@@ -148,20 +156,16 @@ article h2 {
 }
 
 .bottom-articles {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  justify-content: center;
   width: 100%;
-  max-width: 900px;
-  margin: 0;
+  max-width: 800px;
 
   }
 
-  .bottom-articles article {
-    flex: 1 1 300px;
-    max-width: 420px;
 
-  }
+    
+
 
 
