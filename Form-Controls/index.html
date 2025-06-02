@@ -11,17 +11,78 @@
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form action="results.html" method="GET">
+        <fieldset>
+          <legend>Customer's Details</legend>
+
+       <p>
+        <label for ="name">Name </label>
+         <input type="text" name="name" id="name" required minlength="2"/>
+        </p>
+        
+         <p>
+        <label for ="email">Email</label>
+      <input type= "email" name="email" id="email" required/>
+         </p>
+         </fieldset>
+        
+       <fieldset>
+        <legend>T.shirt Details</legend>
+
+        <p> 
+        <label for="colour">Colour</label>
+        <select name="colour" id="colour" required> 
+          <option value="blue">Blue</option>
+          <option value="black">Black</option>
+          <option value="pink">Pink</option>
+        </select>
+        </p>
+
+      <fieldset>
+        <legend><span aria-label= "required"> Size</span></legend>
+
+      <p>
+        <input type="radio" required name="size" id="r1" value="XS"/>
+        <label for="r1">XS</label>
+      </p>
+
+      <p>
+        <input type="radio" required name="size" id="r2" value="S" />
+        <label for="r2">S</label>
+      </p>
+
+        <p> 
+      <input type="radio" required name="size" id="r3" value="M" />
+        <label for="r3">M</label>
+      </p>
+
+      <p>  
+      <input type="radio" required name="size" id="r4" value="l" />
+        <label for="r4">L</label>
+      </p>
+
+      <p>
+        <input type="radio" required name="size" id="r5" value="xl" />
+        <label for="r5">XL</label>
+      </p>
+
+      <p>
+        <input type="radio" required name="size" id="r6" value="xxl" />
+        <label for="r6">XXL</label>
+      </p>
+      </fieldset>
+
+        <p>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+         </p>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By JENNIFER ISIDIENU</h2>
     </footer>
   </body>
 </html>
