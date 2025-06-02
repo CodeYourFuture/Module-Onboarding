@@ -120,6 +120,8 @@ section {
   background: white; 
 }
 
+
+
 article:first-child {
   grid-column: 1 / 3; /* span from grid column line 1 to 3 (i.e., span 2 columns) */
 }
