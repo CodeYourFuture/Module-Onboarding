@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+
+      <fieldset>
+        <legend>User details</legend>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" minlength="2" placeholder="Enter your name" required pattern=".*\S.*"
+          title="Name must contain at least one non-space character." />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter you Email" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Order details</legend>
+
+        <label for="colour">Colour</label>
+        <select name="colour" id="colour">
+          <option value="" selected disabled>Select a colour</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+
+        <label for="size">Size</label>
+        <select name="size" id="size">
+          <option value="" selected disabled>Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+      </fieldset>
+      <button type="submit">Place Order</button>
+
+    </form>
+  </main>
+  <footer>
+    <h2>By HOMEWORK SOLUTION</h2>
+  </footer>
+</body>
+
 </html>
