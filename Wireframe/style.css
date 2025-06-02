@@ -124,10 +124,15 @@ a:hover {
 }
 
 footer {
-  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
   text-align: center;
   font-size: 0.9rem;
   color: #666;
   padding: 1rem 0;
   border-top: var(--line);
+  z-index: 100;
 }
