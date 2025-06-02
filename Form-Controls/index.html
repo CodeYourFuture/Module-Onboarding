@@ -1,27 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Your t-shirt combo</h1>
+    <p>Hi there! We already know who you are but to give you the best experience possible, we'd like to confirm that
+      we've got your t-shirt needs and details all correct. 😉</p>
+  </header>
+  <main>
+
+    <form>
+      <fieldset>
+
+        <legend>T-shirt preference </legend>
+
+        <br>
+
+        <div>
+          <label for="name">What's your name:</label>
+          <input name="name" id="name" type="text" placeholder="First and last name" required minlength="2">
+        </div>
+
+        <br>
+
+        <div>
+          <label for="email">What's your email address:</label>
+          <input name="email" id="email" type="email" placeholder="you@gmail.com" required>
+        </div>
+
+        <br>
+
+        <fieldset>
+
+          <legend>Which of these colors do you prefer?</legend>
+
+          <div>
+            <input type="radio" name="color" id="yellow" value="Yellow" required />
+            <label for="yellow">Yellow</label>
+          </div>
+
+          <br>
+
+          <div>
+            <input type="radio" name="color" id="pink" value="Pink" />
+            <label for="pink">Pink</label>
+          </div>
+
+          <br>
+
+          <div>
+            <input type="radio" name="color" id="blue" value="Blue" />
+            <label for="blue">Blue</label>
+          </div>
+
+
+        </fieldset>
+
+        <br>
+
+        <div>
+          <label for="size">Pick your size, superstar!</label>
+          <select name="size" id="size" required>
+
+            <option value="" disabled selected>Select your size</option>
+            <option value="XS" label="XS">XS</option>
+            <option value="S" label="S">S</option>
+            <option value="M" label="M">M</option>
+            <option value="L" label="L">L</option>
+            <option value="XL" label="XL">XL</option>
+            <option value="XXL" label="XXL">XXL</option>
+
+          </select>
+        </div>
+        <br>
+
+      </fieldset>
+
+      <br>
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </main>
+  <footer>
+
+    <h2>By Mirabelle</h2>
+  </footer>
+</body>
+
 </html>
