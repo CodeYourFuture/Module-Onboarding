@@ -9,6 +9,7 @@
   --space: clamp(6px, 6px + 2vw, 15px);
   --container: 1280px;
   --line: 1px solid #ccc;
+  --footer-height: 80px;
 }
 
 html, body {
@@ -46,6 +47,7 @@ main {
   flex-direction: column;
   gap: 2rem;
   flex-grow: 1;
+  padding-bottom: var(--footer-height); /* Prevent footer overlap */
 }
 
 /* Large article on top */
@@ -136,3 +138,23 @@ footer {
   border-top: var(--line);
   z-index: 100;
 }
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .side-by-side {
+    flex-direction: column;
+  }
+
+  .side-by-side article {
+    flex: 1 1 100%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
+
