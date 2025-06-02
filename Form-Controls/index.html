@@ -13,37 +13,39 @@
   </header>
   <main>
     <form>
+      <fieldset>
+       <legend>Order Your Tee-Shirt</legend>
       <p>
-        <label for="name">Name:<span aria-labelledby="name"></span></label>
-        <input type="text" id="name" name="user_name" minlength="2" required>
-
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" minlength="2" placeholder="e.g., John Doe" required>
+    </p>
+      <p>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email" placeholder="e.g., example@mail.com" required>
       </p>
       <p>
-        <label for="mail">Email:<span aria-labelledby="mail"></span></label>
-        <input type="email" id="mail" name="user_email" required>
+        <label for="colour">Colour of tee-shirt?</label>
+        <select id="colour" name="colour" required>
+          <option value="">--Choose colour--</option>
+          <option value="Green">Green</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Red">Red</option>
+          </select>
       </p>
       <p>
-        <label for="colour">Colour of tee-shirt?<span aria-labelledby="colour"></span></label>
-        <input type="text" id="colour" name="colour" list="colours" required>
-        <datalist id="colours">
-          <option>Green</option>
-          <option>Yellow</option>
-          <option>Red</option>
-        </datalist>
+        <label for="size">Size of tee-shirt?</label>
+<select id="size" name="size" required>
+  <option value="">--Choose size--</option>
+  <option value="XS">XS</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+  <option value="XXL">XXL</option>
+</select>
       </p>
-      <p>
-        <label for="size">Size of tee-shirt?<span aria-labelledby="size"></span></label>
-        <input type="text" id="size" name="size" list="sizes" required>
-        <datalist id="sizes">
-          <option>XS</option>
-          <option>S</option>
-          <option>M</option>
-          <option>L</option>
-          <option>XL</option>
-          <option>XXL</option>
-        </datalist>
-      </p>
-      <button type="submit" value="Submit">Submit</button>
+      <button type="submit">Submit</button>
+      </fieldset>
     </form>
   </main>
   <footer>
