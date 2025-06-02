@@ -9,11 +9,11 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h2>
+      <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-       <h2>Ahmad's shope</h1>
+       <h2>Ahmad's shope</h2>
        <p>
         Required fields are followed by <strong><span aria-label="Required">*</span></strong>
        </p>
@@ -24,7 +24,8 @@
             <span>Name: </span>
            <strong><span aria-label="Required">*</span></strong>
           </label>
-          <input type="text" id="name" name="Customer-s Name" minlength="2" required />
+          <input type="text" id="name" name="Customer-s Name" minlength="2"  pattern=".*\S.*" 
+              title="Name cannot be empty or only spaces" required />
         </p>
         <p>
           <label for="email">
@@ -70,8 +71,7 @@
       </form>
     </main>
     <footer>
-  
-      <h2>By Ahmad Hmedan</h2>
+        <h2>By Ahmad Hmedan</h2>
     </footer>
   </body>
 </html>
