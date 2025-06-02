@@ -1,27 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1 style="text-align: center;">Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <section>
+        <fieldset>
+          <h2>Personal Details</h2>
+          <p>
+            <label for="name"><strong> Name:</strong></label>
+            <input type="text" id="name" name="name" minlength="2" required pattern="\S+$">
+          </p>
+          <p>
+            <label for="email">
+              <strong>Email:</strong> </label>
+            <input type="email" id="email" name="email" required pattern="\S+$">
+          </p>
+        </fieldset>
+      </section>
+
+      <section>
+        <fieldset>
+          <h2>Item</h2>
+          <fieldset>
+            <legend><strong>Color</strong></legend>
+            <ul>
+              <li>
+                <p>
+                  <input type="radio" id="yellow" name="color" value="Yellow" required>
+                  <label for="yellow">Yellow</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input type="radio" id="red" name="color" value="Red">
+                  <label for="red">Red</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input type="radio" id="blue" name="color" value="Blue">
+                  <label for="blue">Blue</label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend><strong>Size</strong></legend>
+            <p>
+              <label for="size">Select a size:</label>
+              <select id="size" name="size" required>
+                <option value="" disabled selected>--choose one--</option>
+                <option value="XS">Extra Small</option>
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">Extra Large</option>
+                <option value="XXL">2X Large</option>
+              </select>
+            </p>
+            <p>
+              <button type="submit">
+                <span style="display: inline-block; line-height: 2.5;"><strong>
+                    Add To Basket
+                  </strong></span>
+              </button>
+            </p>
+          </fieldset>
+        </fieldset>
+      </section>
+    </form>
+  </main>
+  <footer>
+    <details>
+      <summary>By Nahom Mesfin</summary>
+      <p>&copy; 2025 nahom.inc. All rights reserved.</p>
+    </details>
+  </footer>
+</body>
+
 </html>
