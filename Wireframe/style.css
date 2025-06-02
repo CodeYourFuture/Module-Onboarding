@@ -16,44 +16,157 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+/* Base styling*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
+
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+
+
+
+body{
+  font-family: "Caveat",sans-serif;
+  color: black;
+  
+}
+
+
+.title {
+text-align: center;
+
+}
+h1{
+  font-size: 50px;
+  font-weight: 700;
+}
+.title p {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.btn-cta {
+  display: inline-block;
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 6px 12px;
+  color: black;
+  border-radius: 2px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #eee;
+}
+  
+
+
+img{
+  width: 100%;
+  height: auto;
+}
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+
+
+
+ .box1 {
+  border:1px solid black;
+  margin: 20px 0px;
+
+  
+  
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+.box2,
+.box3 {
+  border: 1px solid black;
+  width: 48%;
+  
+  
 }
+
+
+article p {
+  font-size: 18px;
+  margin: 8px;
+}
+
+article h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 8px
+
+}
+
+
+
+
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+   
+    
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box2,
+    .box3 {
+      width: 100%;
+    }
+  }
+ 
+  .footer {
+    background-color: #f0f0f0;   
+    text-align: center;          
+    padding: 20px 0;             
+    font-size: 16px;             
+    color: solid black;                 
+    border-top: 2px solid #000;  
+    font-style: italic;
+  
+  }
+
+
+ 
+  
+  
+  
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
+
+  
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -61,29 +174,10 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
-}
+
