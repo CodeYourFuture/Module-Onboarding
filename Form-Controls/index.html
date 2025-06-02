@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>T-Shirt Order Form</title>
-    <meta name="description" content="">
+    <title>T-Shirt Order Form - Product Pick</title>
+    <meta name="description" content="Order your custom t-shirt with color and size options">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -13,62 +13,69 @@
     </header>
 
     <main>
-      <!--Design: 
-          1.Size uses radio buttons -for clear options and easy access.
-          2.Color uses dropdown -for clear,simple choices and efficiency spacewise.
-          -->
+      <!-- 
+        UX Design Choices:
+        1. Size: Radio buttons for clear visual comparison of 6 options
+        2. Color: Dropdown for compact display of 3 simple choices
+        3. All fields required for complete submissions
+      -->
       <form>
-        
-        <div>
-          <label for="name">Full Name:</label><br>
-          <input type="text" id="name" name="name" required minlength="2"
-                 pattern=".*[^ ].*"
-                 title="Please enter a real name (no spaces only)"
-                 autocomplete="name">
-        </div>
-
-        
-        <div>
-          <label for="email">Email Address:</label><br>
-          <input type="email" id="email" name="email" required autocomplete="email"><br><br>
-        </div>
-
-        
-        <div>
-          <label for="color">T-shirt Color:</label><br>
-          <select id="color" name="color" required>
-            <option value="">--Select a Color--</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-          </select><br><br>
-        </div>
-
-        
+        <!-- Customer Info -->
         <fieldset>
-          <legend>T-shirt Size:</legend>
-          <input type="radio" id="xs" name="size" value="XS" required>
-          <label for="xs">XS</label><br>
-          
-          <input type="radio" id="s" name="size" value="S">
-          <label for="s">S</label><br>
-          
-          <input type="radio" id="m" name="size" value="M">
-          <label for="m">M</label><br>
-          
-          <input type="radio" id="l" name="size" value="L">
-          <label for="l">L</label><br>
-          
-          <input type="radio" id="xl" name="size" value="XL">
-          <label for="xl">XL</label><br>
-          
-          <input type="radio" id="xxl" name="size" value="XXL">
-          <label for="xxl">XXL</label><br><br>
+          <legend>Customer Information</legend>
+          <div>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required 
+                   minlength="2" pattern=".*[^ ].*" 
+                   title="Please enter at least 2 non-space characters"
+                   autocomplete="name">
+          </div>
+
+          <div>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required 
+                   autocomplete="email"><br><br>
+          </div>
         </fieldset>
 
-        
+        <!-- Product Selection -->
+        <fieldset>
+          <legend>T-Shirt Details</legend>
+          <div>
+            <label for="color">Color:</label><br>
+            <select id="color" name="color" required>
+              <option value="">--Select Color--</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select><br><br>
+          </div>
+
+          <fieldset>
+            <legend>Size:</legend>
+            <input type="radio" id="xs" name="size" value="XS" required>
+            <label for="xs">XS</label><br>
+            
+            <input type="radio" id="s" name="size" value="S">
+            <label for="s">S</label><br>
+            
+            <input type="radio" id="m" name="size" value="M">
+            <label for="m">M</label><br>
+            
+            <input type="radio" id="l" name="size" value="L">
+            <label for="l">L</label><br>
+            
+            <input type="radio" id="xl" name="size" value="XL">
+            <label for="xl">XL</label><br>
+            
+            <input type="radio" id="xxl" name="size" value="XXL">
+            <label for="xxl">XXL</label>
+          </fieldset>
+        </fieldset>
+
+        <!-- Submission -->
         <div>
-          <button type="submit">Submit</button>
+          <button type="submit" aria-label="Submit t-shirt order form">Place Order</button>
         </div>
       </form>
     </main>
