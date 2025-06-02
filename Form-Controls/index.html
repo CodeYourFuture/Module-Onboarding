@@ -19,27 +19,27 @@
         this will also help you fill in your PR message later-->
         <fieldset>
           <legend>Customer Details</legend>
-          <label>First Name</label>
-          <input type="text" name="firstName" id="firstName" placeholder="Jane" /><br />
-          <label>Last Name</label>
-          <input type="text" name="lastName" id="lastName" placeholder="Doe" /><br />
-          <label>Email</label>
-          <input type="email" name="email" id="email" placeholder="janedoe@gmail.com" /><br />
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" placeholder="Jane" required /><br />
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Doe" required /><br />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="janedoe@gmail.com" required /><br />
         </fieldset>
         <fieldset>
-          <legend>T-shirt Colours</legend>
-          <label for="red"><input required type="radio" name="red-grey-black" id="red" />Red</label>
-          <label for="radio"><input type="radio" name="red-grey-black" id="grey" />Grey</label>
-          <label for=""><input type="radio" name="red-grey-black" id="black" />Black</label>
+          <legend>Select your T-shirt colour </legend>
+          <label for="red"><input checked type="radio" name="red-grey-black" id="red" required />Red</label>
+          <label for="radio"><input type="radio" name="red-grey-black" id="grey" required />Grey</label>
+          <label for=""><input type="radio" name="red-grey-black" id="black" required />Black</label>
         </fieldset>
         <fieldset>
-          <legend>T-shirt Size</legend>
-          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="xs" />XS</label>
-          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="s" />S</label>
-          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="m" />M</label>
-          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="l" />L</label>
-          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="xl" />XL</label>
-          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="xxl" />XXL</label>
+          <legend>Select your T-shirt size</legend>
+          <label><input checked type="radio" name="xs-s-m-l-xl-xxl" id="xs" required />XS</label>
+          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="s" required />S</label>
+          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="m" required />M</label>
+          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="l" required />L</label>
+          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="xl" required />XL</label>
+          <label><input type="radio" name="xs-s-m-l-xl-xxl" id="xxl" required />XXL</label>
         </fieldset>
       </form>
     </main>
