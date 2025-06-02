@@ -20,7 +20,7 @@
           <h2>Personal Details</h2>
           <p>
             <label for="name"><strong> Name:<span aria-hidden="true">*</span></strong></label>
-            <input type="text" id="name" name="name" minlength="2" required>
+            <input type="text" id="name" name="name" minlength="2" required pattern="\S+$" title="No spaces allowed">
           </p>
           <p>
             <label for="email">
