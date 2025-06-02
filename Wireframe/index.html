@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic In HTML</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
+</head>
+<body>
+    <header class="c-site-header">
+        <h1> Welcome to <strong style="color:red;">Ahmad Hmedan</strong>'s wireframe</h1>
+       <p >Practice on HTML, CSS and Wireframe by made a webpage has three articles explain the purpose of Readme file in repo, Wireframe and Git branch. paraphrase this sentence</p>
+        <nav aria-label="Main Site Links">
+            <ul>
+                <li><a href="#first_article">Readme File</a></li>
+                <li><a href="#second_article">Wireframe</a></li>
+                <li><a href="#Third_article">Git</a></li>
+                </ul>
+        </nav>
+    </header> 
     <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
+        <section id="first_article">
+          
+            <article>
+                <img src="placeholder.svg" alt="Placeholder Image">
+                  <h2>What is the purpose of a README file?</h2>
+                <p>A README file is a text file that contains information about a project, such as its purpose, how to install and use it, and any other relevant details. It is typically the first file a user will see when they visit a project repository.</p>
+                <a class="read_more" href="article1.html">Read more</a>
+            </article>
+        </section>
+        <section id="second_article">
+            <article>
+                <img src="placeholder.svg" alt="Placeholder Image">
+                <h2>What is the purpose of a wireframe?</h2>
+                <p>A wireframe is a basic, two-dimensional visual representation of a web page, app interface, or product layout.</p>
+                <a class="read_more" href="article2.html">Read more</a>
+            </article>
+        </section>
+        <section id="Third_article">
+            <article>
+                <img src="placeholder.svg" alt="Placeholder Image">
+               <h2>What is a branch in Git?</h2>
+                <p>A branch in Git is a separate line of development that allows you to work on different features or fixes without affecting the main codebase. It enables parallel development and helps manage changes effectively.</p>
+                <a class="read_more" href="article3.html">Read more</a>
+            </article>
+        </section>
     </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+    <footer class="c-site-footer" >
+        <p>Footer usually contain conytact links and other information about the site overall</p>
     </footer>
-  </body>
+</body>
 </html>
