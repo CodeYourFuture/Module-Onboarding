@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Form controls">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
   <header>
@@ -14,17 +14,17 @@
   <main>
     <form>
       <p>
-        <label for="name">Name:<span aria-label="required">*</span></label>
-        <input type="text" id="name" name="user_name" minlength="2">
+        <label for="name">Name:<span aria-labelledby="name"></span></label>
+        <input type="text" id="name" name="user_name" minlength="2" required>
 
       </p>
       <p>
-        <label for="mail">Email:<span aria-label="required">*</span></label>
-        <input type="email" id="mail" name="user_email" />
+        <label for="mail">Email:<span aria-labelledby="mail"></span></label>
+        <input type="email" id="mail" name="user_email" required>
       </p>
       <p>
-        <label for="colour">Colour of tee-shirt?<span aria-label="required">*</span></label>
-        <input type="text" id="colour" name="colour" list="colours" required />
+        <label for="colour">Colour of tee-shirt?<span aria-labelledby="colour"></span></label>
+        <input type="text" id="colour" name="colour" list="colours" required>
         <datalist id="colours">
           <option>Green</option>
           <option>Yellow</option>
@@ -32,8 +32,8 @@
         </datalist>
       </p>
       <p>
-        <label for="size">Size of tee-shirt?<span aria-label="required">*</span></label>
-        <input type="text" id="size" name="size" list="sizes" required />
+        <label for="size">Size of tee-shirt?<span aria-labelledby="size"></span></label>
+        <input type="text" id="size" name="size" list="sizes" required>
         <datalist id="sizes">
           <option>XS</option>
           <option>S</option>
