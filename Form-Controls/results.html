@@ -9,7 +9,6 @@
 
     <p>name: <span id="name"></span></p>
     <p>email: <span id="email"></span></p>
-    <p>password: <span id="password"></span></p>
     <p>color: <span id="color"></span></p>
     <p>size: <span id="size"></span></p>
 
@@ -20,8 +19,6 @@
       const urlParams = new URLSearchParams(window.location.search);
       document.getElementById("name").textContent = urlParams.get("name");
       document.getElementById("email").textContent = urlParams.get("email");
-      document.getElementById("password").textContent =
-        urlParams.get("password");
       document.getElementById("color").textContent = urlParams.get("color");
       document.getElementById("size").textContent = urlParams.get("size");
     </script>
