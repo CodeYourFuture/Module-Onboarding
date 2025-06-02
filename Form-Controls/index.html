@@ -3,25 +3,79 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>T-Shirt Selection Form</title>
+    <meta name="description" content="
+    t-shirt form " />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-SHIRT PICK</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" minlength="2" required />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Color</legend>
+          <br />
+          <div>
+            <label for="green">Green</label>
+            <input
+              type="radio"
+              name="Color"
+              id="green"
+              value="green"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="red">Red</label>
+            <input type="radio" name="Color" id="red" value="red" required />
+          </div>
+          <br />
+          <div>
+            <label for="yellow">Yellow</label>
+            <input
+              type="radio"
+              name="Color"
+              id="yellow"
+              value="yellow"
+              required
+          </div>
+          <br />
+        </fieldset>
+        <legend></legend>
+        <br />
+          <label for="size">Size</label>
+          <select name="size" id="size" required>
+            <option value="" disabled selected>Select your size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          
+        <div>
+          <br />
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Mohammed Hussein</h2>
     </footer>
   </body>
 </html>
