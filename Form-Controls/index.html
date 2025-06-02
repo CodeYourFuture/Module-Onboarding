@@ -19,13 +19,13 @@
         <fieldset>
           <h2>Personal Details</h2>
           <p>
-            <label for="name"><strong> Name:<span aria-hidden="true">*</span></strong></label>
-            <input type="text" id="name" name="name" minlength="2" required pattern="\S+$" title="No spaces allowed">
+            <label for="name"><strong> Name:</strong></label>
+            <input type="text" id="name" name="name" minlength="2" required pattern="\S+$">
           </p>
           <p>
             <label for="email">
-              <strong>Email:<span aria-hidden="true">*</span></strong> </label>
-            <input type="email" id="email" name="email" required>
+              <strong>Email:</strong> </label>
+            <input type="email" id="email" name="email" required pattern="\S+$">
           </p>
         </fieldset>
       </section>
@@ -38,7 +38,7 @@
             <ul>
               <li>
                 <p>
-                  <input type="radio" id="yellow" name="color" value="Yellow">
+                  <input type="radio" id="yellow" name="color" value="Yellow" required>
                   <label for="yellow">Yellow</label>
                 </p>
               </li>
@@ -60,8 +60,8 @@
             <legend><strong>Size</strong></legend>
             <p>
               <label for="size">Select a size:</label>
-              <select id="size" name="size">
-                <option value="none">--choose--</option>
+              <select id="size" name="size" required>
+                <option value="" disabled selected>--choose one--</option>
                 <option value="XS">Extra Small</option>
                 <option value="S">Small</option>
                 <option value="M">Medium</option>
