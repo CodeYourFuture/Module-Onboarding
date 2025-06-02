@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>T-Shirt Order Form - Product Pick</title>
+    <meta name="description" content="Order your custom t-shirt with color and size options">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
+      <!-- 
+        UX Design Choices:
+        1. Size: Radio buttons for clear visual comparison of 6 options
+        2. Color: Dropdown for compact display of 3 simple choices
+        3. All fields required for complete submissions
+      -->
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Customer Info -->
+        <fieldset>
+          <legend>Customer Information</legend>
+          <div>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required 
+                   minlength="2" pattern=".*[^ ].*" 
+                   title="Please enter at least 2 non-space characters"
+                   autocomplete="name">
+          </div>
+
+          <div>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required 
+                   autocomplete="email"><br><br>
+          </div>
+        </fieldset>
+
+        <!-- Product Selection -->
+        <fieldset>
+          <legend>T-Shirt Details</legend>
+          <div>
+            <label for="color">Color:</label><br>
+            <select id="color" name="color" required>
+              <option value="">--Select Color--</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select><br><br>
+          </div>
+
+          <fieldset>
+            <legend>Size:</legend>
+            <input type="radio" id="xs" name="size" value="XS" required>
+            <label for="xs">XS</label><br>
+            
+            <input type="radio" id="s" name="size" value="S">
+            <label for="s">S</label><br>
+            
+            <input type="radio" id="m" name="size" value="M">
+            <label for="m">M</label><br>
+            
+            <input type="radio" id="l" name="size" value="L">
+            <label for="l">L</label><br>
+            
+            <input type="radio" id="xl" name="size" value="XL">
+            <label for="xl">XL</label><br>
+            
+            <input type="radio" id="xxl" name="size" value="XXL">
+            <label for="xxl">XXL</label>
+          </fieldset>
+        </fieldset>
+
+        <!-- Submission -->
+        <div>
+          <button type="submit" aria-label="Submit t-shirt order form">Place Order</button>
+        </div>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Nokwanda Phewa</h2>
     </footer>
   </body>
 </html>
