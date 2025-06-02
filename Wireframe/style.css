@@ -34,16 +34,21 @@ body {
 a {
   display: inline-block;
   padding: 0.5em 1em;
-  color: blue;
+  color: #0044cc;
   text-decoration: none;
   margin-top: 10px;
-  border: 2px solid #007bff;
+  border: 2px solid #0044cc;
   border-radius: 5px;
 
 }
 a:hover {
   text-decoration: underline;
-  color: blue;
+  color: #222;
+  background: #f9f9f9;
+}
+a:focus {
+  outline: 3px solid orange;
+  outline-offset: 2px;
 }
 
 img,
@@ -112,7 +117,7 @@ section {
   grid-gap: 0.5rem;
   padding: 0.5rem;
   margin: auto;
-  background: gray; 
+  background: white; 
 }
 
 article:first-child {
