@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required minlength="2" />
-        <br><br>
 
-       <label for="email">Email:</label>
-       <input type="email" id="email" name="email" required />
-       <br><br>
-     
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    form>* {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    fieldset {
+      margin-bottom: 1rem;
+    }
+
+    label,
+    select,
+    input,
+    button {
+      margin-top: 0.25rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required pattern=".*\S.*"
+        title="Name must include at least one non-space character" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
       <fieldset>
         <legend>Choose a colour:</legend>
-        <label><input type="radio" name="color" value="red" required /> Red</label>
-        <label><input type="radio" name="color" value="blue" required /> Blue</label>
-        <label><input type="radio" name="color" value="green" required /> Green</label>      
+        <label>
+          <input type="radio" name="color" value="red" required />
+          Red
+        </label>
+        <label>
+          <input type="radio" name="color" value="blue" required />
+          Blue
+        </label>
+        <label>
+          <input type="radio" name="color" value="green" required />
+          Green
+        </label>
       </fieldset>
-      <br> 
-     
-   <label for="size">Select your size:</label> 
-   <select id="size" name="size" required>
-       <option value="">--Choose a size--</option>
-       <option value="XS">XS</option>
-       <option value="S">S</option>
-       <option value="M">M</option>
-       <option value="L">L</option>
-       <option value="XL">XL</option>
-       <option value="XXL">XXL</option>
-    </select>
-  <br><br>
 
-  <button type="submit">Submit</button>
-       
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HENDRINE ZERAUA</h2>
-    </footer>
-  </body>
+      <label for="size">Select your size:</label>
+      <select id="size" name="size" required aria-required="true">
+        <option value="">--Choose a size--</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </main>
+  <footer>
+
+    <h2>By HENDRINE ZERAUA</h2>
+
+  </footer>
+</body>
+
 </html>
