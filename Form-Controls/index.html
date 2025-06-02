@@ -13,11 +13,18 @@
     </header>
 
     <main>
+      <!--Design: 
+          1.Size uses radio buttons -for clear options and easy access.
+          2.Color uses dropdown -for clear,simple choices and efficiency spacewise.
+          -->
       <form>
         
         <div>
           <label for="name">Full Name:</label><br>
-          <input type="text" id="name" name="name" required minlength="2" autocomplete="name"><br>
+          <input type="text" id="name" name="name" required minlength="2"
+                 pattern=".*[^ ].*"
+                 title="Please enter a real name (no spaces only)"
+                 autocomplete="name">
         </div>
 
         
@@ -28,7 +35,7 @@
 
         
         <div>
-          <label for="color">Choose a T-shirt Color:</label><br>
+          <label for="color">T-shirt Color:</label><br>
           <select id="color" name="color" required>
             <option value="">--Select a Color--</option>
             <option value="red">Red</option>
@@ -39,7 +46,7 @@
 
         
         <fieldset>
-          <legend>Select Size:</legend>
+          <legend>T-shirt Size:</legend>
           <input type="radio" id="xs" name="size" value="XS" required>
           <label for="xs">XS</label><br>
           
