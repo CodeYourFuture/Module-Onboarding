@@ -13,15 +13,48 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          <fieldset>
+            <legend><h2>Personal Information</h2></legend>
+          <p>
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" pattern=".*\S.*" title="firstname must not be only spaces" name="firstname" required minlength="2" />
+            <Label for="lastname">Lastname:</Label>
+            <input type="text" id="lastname" pattern=".*\S.*" title="lastname must not be only spaces" name="lastname" required minlength="2" />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+          </fieldset>   
+          <fieldset>
+            <legend><h2>Product Information</h2></legend>
+            <p>
+              <label for="colour">Colour:</label>
+              <select id="colour" name="colour" required>
+                <option value="" disabled selected>Select a colour</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </select>
+            </p>
+            <p>
+              <label for="size">Size:</label>
+              <select id="size" name="size" required>
+                <option value="" disabled selected>Select a size</option>
+                <option value="xsmall">X-Small</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">X-Large</option>
+                <option value="xxlarge">XX-Large</option>
+              </select>
+            </p>
+          </fieldset> 
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Mustaf Asani</h2>
     </footer>
   </body>
 </html>
