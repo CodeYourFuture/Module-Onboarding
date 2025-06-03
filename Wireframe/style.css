@@ -57,11 +57,24 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
 }
+
+main > *:first-child {
+  grid-column: span 2;
+}
+
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  background: var(--paper);
+  padding: var(--space);
+  z-index: 1000;
+  background-color: silver;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -70,29 +83,39 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
 article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
+}
+/* ====== Article Layout ====== 
+Setting the rules for how elements are placed in the article. 
+Now laying out just the INSIDE of the repeated card/article design.
+Keeping things orderly and separate is the key to good, simple CSS.
+*/
+article > * {
+  grid-column: 2 / 3;
+}
+
+article > img {
+  grid-column: span 3;
+}
+a {
+    padding: var(--space);
+    border: var(--line);
+    max-width: fit-content;
+    color: #000000;
+    background-color: #cffcd9;
+    border-radius: var(--space);
+}
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
   }
-  > img {
-    grid-column: span 3;
+
+  main > *:first-child {
+    grid-column: span 1;
   }
 }
