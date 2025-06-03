@@ -119,3 +119,6 @@ a {
     grid-column: span 1;
   }
 }
+.heading {
+  text-align: center;
+}
