@@ -9,43 +9,43 @@
   </head>
   <body>
     <header>
-      <h1 style="text-align: center;">Product Pick</h1>
+      <h1>Product Pick</h1>
     </header>
     <main>
-      <form style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 500px; margin: 20px auto;">
+      <form>
         <!-- Customer Name Input -->
-        <div style="margin-bottom: 15px;">
-          <label for="customerName" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Name:</label>
-          <input type="text" id="customerName" name="customerName" required minlength="2" placeholder="Enter your full name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        <div>
+          <label for="customerName">Name:</label>
+          <input type="text" id="customerName" name="customerName" required minlength="2" placeholder="Enter your full name">
         </div>
       
         <!-- Customer Email Input -->
-        <div style="margin-bottom: 15px;">
-          <label for="emailAddress" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Email:</label>
-          <input type="email" id="emailAddress" name="emailAddress" required placeholder="you@example.com" pattern="^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+([a-zA-Z]{2,63})$" title="Please enter a valid email address (e.g., user@example.com). Domain parts (like 'example') must start and end with a letter or number, can contain hyphens, and must be separated by dots. Ends with a top-level domain (e.g., .com)." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        <div>
+          <label for="emailAddress">Email:</label>
+          <input type="email" id="emailAddress" name="emailAddress" required placeholder="you@example.com" pattern="^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+([a-zA-Z]{2,63})$" title="Please enter a valid email address (e.g., user@example.com). Domain parts (like 'example') must start and end with a letter or number, can contain hyphens, and must be separated by dots. Ends with a top-level domain (e.g., .com).">
         </div>
       
         <!-- T-Shirt Colour Selection -->
-        <fieldset style="margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; padding: 10px 15px;">
-          <legend style="padding: 0 10px; font-weight: bold; color: #333;">Choose T-Shirt Colour:</legend>
-          <div style="margin-bottom: 8px;">
-            <input type="radio" id="colorRed" name="shirtColor" value="red" required style="margin-right: 8px; vertical-align: middle;">
-            <label for="colorRed" style="font-weight: normal; display: inline;">Red</label>
-          </div>
-          <div style="margin-bottom: 8px;">
-            <input type="radio" id="colorBlue" name="shirtColor" value="blue" style="margin-right: 8px; vertical-align: middle;">
-            <label for="colorBlue" style="font-weight: normal; display: inline;">Blue</label>
+        <fieldset>
+          <legend>Choose T-Shirt Colour:</legend>
+          <div>
+            <input type="radio" id="colourRed" name="shirtColour" value="red" required>
+            <label for="colourRed">Red</label>
           </div>
           <div>
-            <input type="radio" id="colorGreen" name="shirtColor" value="green" style="margin-right: 8px; vertical-align: middle;">
-            <label for="colorGreen" style="font-weight: normal; display: inline;">Green</label>
+            <input type="radio" id="colourBlue" name="shirtColour" value="blue">
+            <label for="colourBlue">Blue</label>
+          </div>
+          <div>
+            <input type="radio" id="colourGreen" name="shirtColour" value="green">
+            <label for="colourGreen">Green</label>
           </div>
         </fieldset>
       
         <!-- T-Shirt Size Selection -->
-        <div style="margin-bottom: 15px;">
-          <label for="shirtSize" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Choose Size:</label>
-          <select id="shirtSize" name="shirtSize" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        <div>
+          <label for="shirtSize">Choose Size:</label>
+          <select id="shirtSize" name="shirtSize" required>
             <option value="">-- Please choose a size --</option>
             <option value="xs">XS</option>
             <option value="s">S</option>
@@ -58,13 +58,12 @@
       
         <!-- Submit Section Button -->
         <div>
-          <button type="submit" style="background-color: #2E7D32; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; display: block; width: auto; margin: 10px 0 0 0;">Place Order</button>
+          <button type="submit">Place Order</button>
         </div>
       </form>
     </main>
     <footer>
-      <h2 style="text-align: center;">By Samuel Tarawally</h2>
+      <h2>By Samuel Tarawally</h2>
     </footer>
   </body>
 </html>
-  
