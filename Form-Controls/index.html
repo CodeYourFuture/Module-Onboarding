@@ -4,24 +4,67 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="T-Shirt Order Form" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1 style="text-align: center;">Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 500px; margin: 20px auto;">
+        <!-- Customer Name Input -->
+        <div style="margin-bottom: 15px;">
+          <label for="customerName" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Name:</label>
+          <input type="text" id="customerName" name="customerName" required minlength="2" placeholder="Enter your full name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        </div>
+      
+        <!-- Customer Email Input -->
+        <div style="margin-bottom: 15px;">
+          <label for="emailAddress" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Email:</label>
+          <input type="email" id="emailAddress" name="emailAddress" required placeholder="you@example.com" pattern="^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+([a-zA-Z]{2,63})$" title="Please enter a valid email address (e.g., user@example.com). Domain parts (like 'example') must start and end with a letter or number, can contain hyphens, and must be separated by dots. Ends with a top-level domain (e.g., .com)." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        </div>
+      
+        <!-- T-Shirt Colour Selection -->
+        <fieldset style="margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; padding: 10px 15px;">
+          <legend style="padding: 0 10px; font-weight: bold; color: #333;">Choose T-Shirt Colour:</legend>
+          <div style="margin-bottom: 8px;">
+            <input type="radio" id="colorRed" name="shirtColor" value="red" required style="margin-right: 8px; vertical-align: middle;">
+            <label for="colorRed" style="font-weight: normal; display: inline;">Red</label>
+          </div>
+          <div style="margin-bottom: 8px;">
+            <input type="radio" id="colorBlue" name="shirtColor" value="blue" style="margin-right: 8px; vertical-align: middle;">
+            <label for="colorBlue" style="font-weight: normal; display: inline;">Blue</label>
+          </div>
+          <div>
+            <input type="radio" id="colorGreen" name="shirtColor" value="green" style="margin-right: 8px; vertical-align: middle;">
+            <label for="colorGreen" style="font-weight: normal; display: inline;">Green</label>
+          </div>
+        </fieldset>
+      
+        <!-- T-Shirt Size Selection -->
+        <div style="margin-bottom: 15px;">
+          <label for="shirtSize" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Choose Size:</label>
+          <select id="shirtSize" name="shirtSize" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            <option value="">-- Please choose a size --</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </div>
+      
+        <!-- Submit Section Button -->
+        <div>
+          <button type="submit" style="background-color: #2E7D32; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; display: block; width: auto; margin: 10px 0 0 0;">Place Order</button>
+        </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2 style="text-align: center;">By Samuel Tarawally</h2>
     </footer>
   </body>
 </html>
+  
