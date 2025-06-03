@@ -1,22 +1,4 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-    :root {
+ :root {
       --paper: #545f77;
       --font: 100%/1.5 system-ui;
       --space: clamp(6px, 6px + 2vw, 15px);
@@ -54,7 +36,11 @@ As well as useful links to learn more */
       outline: 2px solid yellow;
       outline-offset: 2px;
     }
-
+    .focus-article {
+        width: 100%;
+       height: auto;
+       display: block;
+    }
     img {
       width: 100%;
       height: auto;
