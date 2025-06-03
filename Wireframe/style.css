@@ -64,13 +64,11 @@ h2 {
   margin: var(--space) 0;
 }
 
-
-
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  left: 25%;
+  left: 2%;
 }
 footer p {
   text-align: center;
