@@ -34,6 +34,7 @@ body {
 a {
   padding: var(--space);
   border: var(--line);
+  color:rgb(from color 215 215 215);
   max-width: fit-content;
 }
 img,
@@ -52,6 +53,8 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  font-family: helvetica;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
