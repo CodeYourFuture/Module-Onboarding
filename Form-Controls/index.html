@@ -1,46 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coursework</title>
-    <style>
-      :root {
-        --paper: oklch(7 0 0);
-        --ink: color-mix(in oklab, var(--color) 5%, black);
-        --font: 100%/1.5 system-ui;
-        --space: clamp(6px, 6px + 2vw, 15px);
-        --line: 1px solid;
-      }
-      body {
-        background: var(--paper);
-        color: var(--ink);
-        font: var(--font);
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <header><h1>🧐 CYF Coursework Disposable Branch Previews</h1></header>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
     <main>
-      <ol>
-        <li>
-          <h2><a href="/Wireframe">Project 1: Wireframe</a></h2>
-          <p>
-            Mentors:
-            <a href="Wireframe/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-        <li>
-          <h2><a href="/Form-Controls">Project 2: Form Controls</a></h2>
-          <p>
-            Mentors:
-            <a href="Form-Controls/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-      </ol>
+      
+      <form>
+       <section class="form-container">
+          <fieldset class="fieldset-one">
+              <div class="input-container">
+                  <label for="name">First Name</label>
+                  <input type="text" id="name" name="FirstName" minlength="2" maxlength="15" placeholder="Enter First Name" required>
+              </div>
+              <div class="input-container">
+                  <label for="surname">Surname</label>
+                  <input type="text" id="surname" name="Surname" minlength="2" maxlength="15" placeholder="Enter Surname" required>
+              </div>
+              <div class="input-container">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="Email" placeholder="Enter Your Email" required>
+              </div>
+          </fieldset>
+
+          <fieldset class="fieldset-two">
+              <legend>Please select color</legend>
+              <select class="selector" name="color" id="color" aria-label="Color selection" required>
+                  <option value="" disabled selected>Click to select color</option>
+                  <option class="red" value="red">Red</option>
+                  <option class="green" value="green">Green</option>
+                  <option class="blue" value="blue">Blue</option>
+              </select>
+          </fieldset>
+     
+        <fieldset class="fieldset-three">
+            <legend>Pick Size</legend>
+            <div class="size-container">
+                <div>
+                    <input type="radio" id="xs" name="size" value="xs" required>
+                    <label for="xs">XS</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="s" value="s" required>
+                    <label for="s">S</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="m" value="m" required>
+                    <label for="m">M</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="l" value="l" required>
+                    <label for="l">L</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="xl" value="xl" required>
+                    <label for="xl">XL</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="xxl" value="xxl" required>
+                    <label for="xxl">XXL</label>
+                </div>
+              </div>
+        </fieldset>
+        <fieldset>
+                <div class="amount-container">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" min="1" max="10" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="date">Delivery date</label>
+                    <input type="date" id="date" name="date" min="2025-01-03" max="2025-02-01" required>
+                </div>
+
+                <button type="submit">Order</button>
+                <button type="reset">Reset</button>
+        </fieldset>
+      </section>
+             
+      </form>
     </main>
-    <footer><a href="HOW_TO_REVIEW.md">HOW TO REVIEW MD</a></footer>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Obert Tilimandzi</h2>
+    </footer>
   </body>
 </html>
