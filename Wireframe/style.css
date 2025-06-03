@@ -1,5 +1,5 @@
- :root {
-      --paper: #545f77;
+:root {
+      --paper: ##3b465e;
       --font: 100%/1.5 system-ui;
       --space: clamp(6px, 6px + 2vw, 15px);
       --line: 1px solid lightblue;
@@ -8,7 +8,7 @@
 
     body {
       background-color: var(--paper);
-      color: #e0f0ff;
+      color: #ffffff;
       font: var(--font);
       margin: 0;
       line-height: 1.6;
@@ -20,7 +20,7 @@
     }
 
     h1, h2 {
-      color: #1c31d4;
+      color: #f0f8ff;
     }
 
     a {
@@ -84,4 +84,8 @@
     footer {
       font-size: 1rem;
       color: #bbb;
+    }
+    footer a {
+      color: #fff;
+      border-color: #fff;
     }
