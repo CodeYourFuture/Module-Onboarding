@@ -17,7 +17,7 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
+  --paper: rgb(231, 239, 247);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
@@ -49,10 +49,22 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+header {
+  text-align: center;
+}
+
 footer {
   position: fixed;
-  bottom: 0;
-  text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f2f2f2;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bolder;
+    /* vertically center text */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
