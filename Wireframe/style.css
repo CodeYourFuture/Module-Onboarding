@@ -33,10 +33,18 @@ body {
   padding-bottom: 80px;;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+  padding: 0.25em 0;
+  color: blue;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: var(--space);
 }
+
+a:hover {
+  background: #222;
+  color: white;
+}
+
 img,
 svg {
   width: 100%;
