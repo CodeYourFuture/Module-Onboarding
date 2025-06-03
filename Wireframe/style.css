@@ -55,9 +55,12 @@ main {
 }
 
 footer {
-  /* position: fixed; */
+  position: fixed;
   bottom: 0;
+  right: 50%;
+  translate: 50%;
   text-align: center;
+
 }
 
 /* ====== Articles Grid Layout ====
@@ -70,7 +73,9 @@ https://gridbyexample.com/learn/
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   gap: var(--space);
+  align-items: stretch;
 
   >*:first-child {
     grid-column: span 2;
@@ -96,24 +101,4 @@ article {
   >img {
     grid-column: span 3;
   }
-}
-
-
-
-article img {
-  height: 300px;
-  width: 300px;
-  display: block;
-  margin: 0 auto 1rem auto;
-}
-
-/* Remove extra padding/margin from all Read more links */
-article a {
-  display: inline-block;
-  margin: 0;
-  padding: 0.25em 0.5em;
-  text-decoration: underline;
-  color: #0074d9;
-  background: none;
-  border: 1px solid #0074d9;
 }
