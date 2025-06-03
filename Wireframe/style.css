@@ -68,14 +68,15 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 
 header {
   text-align: center;
+  font-size: 20px;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 0;
   background: lightgrey;
   color: blue;
-  position: 0;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -96,6 +97,7 @@ main {
   > *:first-child {
     grid-column: span 2;
   }
+  padding-bottom: 4rem;
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
