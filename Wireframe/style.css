@@ -93,6 +93,9 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+  grid-template-rows: auto auto auto 1fr;
+  /* Add this line */
+  align-content: start;
 
   >* {
     grid-column: 2/3;
@@ -100,9 +103,18 @@ article {
 
   >img {
     grid-column: span 3;
+    margin-bottom: 0px;
   }
+
+  >h2 {
+    margin: 10px 0;
+  }
+
+
 }
 
 article a {
   margin-top: auto;
+
+
 }
