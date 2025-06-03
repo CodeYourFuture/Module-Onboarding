@@ -55,14 +55,16 @@ header h1,p {
   margin: var(--space) 0;
 }
 
+article p{
+  text-align: left;
+}
+
 h2 {
   text-align: center;
   margin: var(--space) 0;
 }
 
-.second-line p{
-  text-align: left;
-}
+
 
 footer {
   position: fixed;
