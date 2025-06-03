@@ -13,15 +13,42 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend><strong>Customer Details</strong></legend><br />
+          <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" minlength="2" maxlength="40" pattern="[A-Za-z\s]{2,}" placeholder="Jane" required />
+          </div><br />
+          <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" minlength="2" maxlength="40" pattern="[A-Za-z\s]{2,}" placeholder="Doe" required />
+          </div><br />
+          <div><label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="janedoe@gmail.com" required />
+        </div><br />
+        </fieldset><br />
+        <fieldset>
+          <legend><strong>Select your t-shirt colour</strong></legend>
+          <label for="red"><input type="radio" name="red-grey-black" id="red" value="Red" required />Red</label>
+          <label for="grey"><input type="radio" name="red-grey-black" id="grey" value="Grey" required />Grey</label>
+          <label for="black"><input type="radio" name="red-grey-black" id="black" value="Black" required />Black</label>
+        </fieldset><br />
+        <fieldset>
+          <legend><strong>Select your t-shirt size</strong></legend>
+          <label><input type="radio" name="size" id="xs" value="XS" required />XS</label>
+          <label><input type="radio" name="size" id="s" value="S" required />S</label>
+          <label><input type="radio" name="size" id="m" value="M" required />M</label>
+          <label><input type="radio" name="size" id="l" value="L" required />L</label>
+          <label><input type="radio" name="size" id="xl" value="XL" required />XL</label>
+          <label><input type="radio" name="size" id="xxl" value="XXL" required />XXL</label>
+        </fieldset><br />
+        <div>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Fikiswa</h2>
     </footer>
   </body>
 </html>
