@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="T-Shirt Order Form" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- Customer Name Input -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="T-Shirt Order Form" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- Customer Name Input -->
+      <div>
+        <label for="customerName">Name:</label>
+        <input type="text" id="customerName" name="customerName" required minlength="2"
+          placeholder="Enter your full name">
+      </div>
+
+      <!-- Customer Email Input -->
+      <div>
+        <label for="emailAddress">Email:</label>
+        <input type="email" id="emailAddress" name="emailAddress" required placeholder="you@example.com"
+          pattern="^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+([a-zA-Z]{2,63})$"
+          title="Please enter a valid email address (e.g., user@example.com). Domain parts (like 'example') must start and end with a letter or number, can contain hyphens, and must be separated by dots. Ends with a top-level domain (e.g., .com).">
+      </div>
+
+      <!-- T-Shirt Colour Selection -->
+      <fieldset>
+        <legend>Choose T-Shirt Colour:</legend>
         <div>
-          <label for="customerName">Name:</label>
-          <input type="text" id="customerName" name="customerName" required minlength="2" placeholder="Enter your full name">
+          <input type="radio" id="colourRed" name="shirtColour" value="red" required>
+          <label for="colourRed">Red</label>
         </div>
-      
-        <!-- Customer Email Input -->
         <div>
-          <label for="emailAddress">Email:</label>
-          <input type="email" id="emailAddress" name="emailAddress" required placeholder="you@example.com" pattern="^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+([a-zA-Z]{2,63})$" title="Please enter a valid email address (e.g., user@example.com). Domain parts (like 'example') must start and end with a letter or number, can contain hyphens, and must be separated by dots. Ends with a top-level domain (e.g., .com).">
+          <input type="radio" id="colourBlue" name="shirtColour" value="blue">
+          <label for="colourBlue">Blue</label>
         </div>
-      
-        <!-- T-Shirt Colour Selection -->
-        <fieldset>
-          <legend>Choose T-Shirt Colour:</legend>
-          <div>
-            <input type="radio" id="colourRed" name="shirtColour" value="red" required>
-            <label for="colourRed">Red</label>
-          </div>
-          <div>
-            <input type="radio" id="colourBlue" name="shirtColour" value="blue">
-            <label for="colourBlue">Blue</label>
-          </div>
-          <div>
-            <input type="radio" id="colourGreen" name="shirtColour" value="green">
-            <label for="colourGreen">Green</label>
-          </div>
-        </fieldset>
-      
-        <!-- T-Shirt Size Selection -->
         <div>
-          <label for="shirtSize">Choose Size:</label>
-          <select id="shirtSize" name="shirtSize" required>
-            <option value="">-- Please choose a size --</option>
-            <option value="xs">XS</option>
-            <option value="s">S</option>
-            <option value="m">M</option>
-            <option value="l">L</option>
-            <option value="xl">XL</option>
-            <option value="xxl">XXL</option>
-          </select>
+          <input type="radio" id="colourGreen" name="shirtColour" value="green">
+          <label for="colourGreen">Green</label>
         </div>
-      
-        <!-- Submit Section Button -->
-        <div>
-          <button type="submit">Place Order</button>
-        </div>
-      </form>
-    </main>
-    <footer>
-      <h2>By Samuel Tarawally</h2>
-    </footer>
-  </body>
+      </fieldset>
+
+      <!-- T-Shirt Size Selection -->
+      <div>
+        <label for="shirtSize">Choose Size:</label>
+        <select id="shirtSize" name="shirtSize" required>
+          <option value="">-- Please choose a size --</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </div>
+
+      <!-- Submit Section Button -->
+      <div>
+        <button type="submit">Place Order</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <h2>By Samuel Tarawally</h2>
+  </footer>
+</body>
+
 </html>
