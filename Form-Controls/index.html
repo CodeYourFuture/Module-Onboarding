@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>Meks Couture T-shirts</title>
+    <meta name="description" content="A simple form to take customer order of T-shirts" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,15 +13,88 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+        <section>
+          <h2>Customer</h2>
+          <fieldset>
+            <legend>Enter your details</legend>
+        <p>
+          <label for="name">Name</label>
+          <input name="name" id="name"  type="text" minlength="2" placeholder="your registered firstname" required>
+        </p>
+
+        <p>
+          <label for="email" >Email</label>
+            <input name="e-mail" id="email" type="email" required>              
+        </p>
+
+        <p>
+          <label for="uid">UID</label>
+          <input name="unique_customer_id" id="uid"
+          type="password" 
+          placeholder="your unique 4-digit code"
+          pattern="\d{4}" maxlength="4" minlength="4"
+          required>
+        </p>
+          </fieldset>
+        </section>
+        </div>
+
+        <div>
+        <section>
+          <h3>T-Shirt Info</h3>
+          <fieldset>
+            
+        <p>
+          <label for="black">black</label>
+          <input name="colour" id="black" type="radio" value="black">
+        </p>
+        <p>
+          <label for="white">white</label>
+          <input name="colour" id="white" type="radio" value="white">
+        </p>
+        <p>
+          <label for="grey">grey</label>
+          <input name="colour" id="grey" type="radio" value="grey" required>
+        </p>
+
+        
+        <p>
+          <label for="size">Size</label>
+          <select name="t-Shirt_size" id="size" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </p>
+          </fieldset>
+        </section>
+        </div>
+
+        <section>
+          <fieldset>
+            <legend>Delivery info</legend>
+        <div>
+          <label for="date">Preffered delivery date</label>
+          <input name="date" id="date" type="date" required>
+        </div>
+         
+        <div>
+          <button type="submit">Place your order!</button>
+        </div>
+          </fieldset>
+        <div>
+          <button type="reset">clear form</button>
+        </div>    
+        </section>
+                  
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>Meks Couture</p>
     </footer>
   </body>
 </html>
