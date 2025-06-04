@@ -3,25 +3,96 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>My Form Exercise</title>
+    <meta name="description" content="T-shirt order form" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Customer Details</legend>
+
+          <p>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              minlength="2"
+              pattern=".*\S.*"
+              title="Name must contain at least one non-space character"
+            />
+          </p>
+
+          <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>T.shirt Details</legend>
+
+          <p>
+            <label for="color">Color</label>
+            <select name="color" id="color" required>
+            <option value="" disabled selected>-- Select a colour --</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+            <option value="pink">Pink</option>
+            </select>
+            </p>
+           </fieldset>
+
+        <fieldset>
+          <legend>Size <span aria-hidden="true">*</span></legend>
+
+          <p>
+         <input type="radio" required name="size" id="r1" value="XS" />
+         <label for="r1">XS</label>
+         </p>
+
+          <p>
+         <input type="radio" required name="size" id="r2" value="S" />
+         <label for="r2">S</label>
+         </p>
+
+         <p> 
+         <input type="radio" required name="size" id="r3" value="M" />
+         <label for="r3">M</label>
+         </p>
+
+         <p>  
+         <input type="radio" required name="size" id="r4" value="L" />
+         <label for="r4">L</label>
+         </p>
+
+         <p>
+         <input type="radio" required name="size" id="r5" value="XL" />
+         <label for="r5">XL</label>
+         </p>
+
+         <p>
+         <input type="radio" required name="size" id="r6" value="XXL" />
+         <label for="r6">XXL</label>
+         </p>
+        </fieldset>
+
+        <p>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </p>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Jennifer Isidienu</h2>
     </footer>
   </body>
 </html>
