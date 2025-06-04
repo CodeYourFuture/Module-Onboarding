@@ -18,11 +18,11 @@
           <fieldset class="fieldset-one">
               <div class="input-container">
                   <label for="name">First Name</label>
-                  <input type="text" id="name" name="FirstName" minlength="2" maxlength="15" placeholder="Enter First Name" required>
+                  <input type="text" id="name" name="FirstName" minlength="2" maxlength="15" placeholder="Enter First Name" required title="Only letters and single spaces allowed please check again."  pattern="^[A-Za-z]+(?: [A-Za-z]+)*$">
               </div>
               <div class="input-container">
                   <label for="surname">Surname</label>
-                  <input type="text" id="surname" name="Surname" minlength="2" maxlength="15" placeholder="Enter Surname" required>
+                  <input type="text" id="surname" name="Surname" minlength="2" maxlength="15" placeholder="Enter Surname" required title="Only letters and single spaces allowed please check again." pattern="^[A-Za-z]+(?: [A-Za-z]+)*$">
               </div>
               <div class="input-container">
                   <label for="email">Email</label>
