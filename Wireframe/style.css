@@ -136,14 +136,14 @@ footer {
 
 
 footer a {
-  color: #0066cc; 
+  color: #000648; 
   text-decoration: none; 
   transition: color 0.3s; 
 }
 
 footer a:hover {
   text-decoration: underline; 
-  color: #004c99; 
+  color: #070e5b; 
 }
 
 

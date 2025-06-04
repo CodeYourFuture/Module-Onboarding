@@ -1,153 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T-Shirt Order Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Order Form</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .radio-option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        select {
+            padding: 8px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-  <center>
-    <header>
-      <h1>T-Shirt Order Form</h1>
-      <p><em>Please complete this form to order your T-shirt</em></p>
-    </header>
-
-    <hr width="80%" />
-
-    <main>
-      
-      <table width="80%" cellspacing="10" cellpadding="5" align="center">
-        <tr>
-          <td colspan="2">
-            <form method="post" novalidate>
-              <fieldset>
-                <legend><b>Customer Information</b></legend>
-                <table width="100%" cellspacing="5" cellpadding="5">
-                  <tr>
-                    <td width="30%" align="right">
-                      <label for="customer-name"><b>Your Name:</b></label>
-                    </td>
-                    <td width="70%">
-                      <input 
-                        type="text" 
-                        id="customer-name" 
-                        name="customer-name" 
-                        required 
-                        minlength="2"
-                        size="40"
-                        aria-describedby="name-requirements">
-                      <br>
-                      <small id="name-requirements"><em>Name must be at least 2 characters long</em></small>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td align="right">
-                      <label for="customer-email"><b>Your Email:</b></label>
-                    </td>
-                    <td>
-                      <input 
-                        type="email" 
-                        id="customer-email" 
-                        name="customer-email" 
-                        required
-                        size="40"
-                        aria-describedby="email-requirements">
-                      <br>
-                      <small id="email-requirements"><em>Please enter a valid email address</em></small>
-                    </td>
-                  </tr>
-                </table>
-              </fieldset>
-              
-              <br>
-              
-              <fieldset>
-                <legend><b>T-shirt Details</b></legend>
-                <table width="100%" cellspacing="5" cellpadding="5">
-                  <tr>
-                    <td width="30%" align="right" valign="top">
-                      <b>T-shirt Color:</b> 
-                    </td>
-                    <td width="70%">
-                      <table cellspacing="5">
-                        <tr>
-                          <td>
-                            <input 
-                              type="radio" 
-                              id="color-blue" 
-                              name="tshirt-color" 
-                              value="blue" 
-                              required>
-                            <label for="color-blue"><font color="blue">Blue</font> </label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input 
-                              type="radio" 
-                              id="color-red" 
-                              name="tshirt-color" 
-                              value="red">
-                            <label for="color-red"><font color="red">Red </font></label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input 
-                              type="radio" 
-                              id="color-black" 
-                              name="tshirt-color" 
-                              value="black">
-                            <label for="color-black">Black</label>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  
-                  <tr>
-                    <td align="right" 
-                      <label for="tshirt-size"><b>T-shirt Size:</b></label>
-                    </td>
-                    <td>
-                      <select 
-                        id="tshirt-size" 
-                        name="tshirt-size" 
-                        required>
-                        <option value="">-- Select a size --</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                        <option value="XXL">XXL</option>
-                      </select>
-                    </td>
-                  </tr>
-                </table>
-              </fieldset>
-              
-              <br>
-              
-              <!-- Submit button -->
-              <center>
-                <button type="submit"><b>Place Order</b></button>
-              </center>
-            </form>
-          </td>
-        </tr>
-      </table>
-    </main>
-
-    <hr width="80%" />
+    <h1>T-Shirt Order Form</h1>
     
+    <form id="tshirt-order">
+        <fieldset>
+            <legend>Customer Information</legend>
+            
+            <div class="form-group">
+                <label for="name">Full Name (min 2 characters):</label>
+                <input type="text" id="name" name="name" required minlength="2">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </fieldset>
 
-    <footer>
-      <p><b>Thank you for shopping with us!</b></p>
-       <p><em>edited by <font color="red">Hadi Vahidi</font> thanks for reviewing &#10084</em></p>
-    </footer>
-  </center>
+        <fieldset>
+            <legend>T-Shirt Color</legend>
+            
+            <div class="radio-option">
+                <input type="radio" id="color-red" name="color" value="red" required>
+                <label for="color-red">Red</label>
+            </div>
+            
+            <div class="radio-option">
+                <input type="radio" id="color-blue" name="color" value="blue">
+                <label for="color-blue">Blue</label>
+            </div>
+            
+            <div class="radio-option">
+                <input type="radio" id="color-green" name="color" value="green">
+                <label for="color-green">Green</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>T-Shirt Size</legend>
+            
+            <div class="form-group">
+                <label for="size">Select Size:</label>
+                <select id="size" name="size" required>
+                    <option value="" disabled selected>Select a size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <button type="submit">Place Order</button>
+    </form>
 </body>
 </html>
