@@ -42,7 +42,7 @@ a {
 a:hover,
 a:focus {
   background: var(--paper);
-  color: red;
+  color: black;
 }
 img,
 svg {
@@ -58,7 +58,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  position: flex;
   bottom: 0;
   text-align: center;
   width: 100%;
