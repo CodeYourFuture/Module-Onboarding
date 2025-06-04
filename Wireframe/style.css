@@ -19,7 +19,7 @@
       padding: var(--space);
       position: relative;
     }
-      h1, {
+      h1 {
       font-size: 2rem;
       margin: 0;
       color: #63c4e2;
@@ -104,4 +104,3 @@
       color: #226691;
       border-color: #051215;
     }
-    
