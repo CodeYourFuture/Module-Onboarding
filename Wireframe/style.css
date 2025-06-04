@@ -20,7 +20,7 @@
     }
 
     h1, h2 {
-      color: #bbb;
+      color: #124c56;
     }
 
     a {
@@ -28,7 +28,7 @@
       padding: var(--space);
       border: var(--line);
       text-decoration: none;
-      color: #e0f0ff;
+      color: #085061;
     }
 
     a:focus,
@@ -83,9 +83,9 @@
 
     footer {
       font-size: 1rem;
-      color: #bbb;
+      color: #095a6f;
     }
     footer a {
-      color: #fff;
-      border-color: #fff;
+      color: #0a577a;
+      border-color: #07576b;
     }
