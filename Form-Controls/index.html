@@ -13,46 +13,42 @@
     </header>
     <main>
       <form method="GET">
-        <div> <label> Name</label>
-        <input name="name" id="name">
-      </div>
+        <!-- Customer Name -->
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" minlength="2" required />
+  <br /><br />
      
       <div> <label>Email</label>
         <input name="email" id="email">
-      </div>
+        <br /><br />
 
-      <div>
-        Color Option:
-        <div>
-        <label for="Blue">Blue</label>
-        <input type="checkbox" name="Blue" id="Blue"</input>
 
-      </div>
-      <div>
-        <label for="Red">Red</label>
-        <input type="checkbox" name="Red" id="Red"</input>
+  
+      
+        <label for="color">Choose a colour:</label>
+        <select id="color" name="color" required>
+          <option value="" disabled selected>Select a colour</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="black">Black</option>
+        </select>
 
-      </div>
-      <div>
-        <label for="Black">Black</label>
-        <input type="checkbox" name="Black" id="Black"</input>
-      </div>
-      <div>
-Choose a
-        <label for="Size">Size:</label>
-        <select name="size" id="size">
+        <br /><br />
+        <label for="size">Choose a size:</label>
+        <select id="size" name="size" required>
+          <option value="" disabled selected>Select a size</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>
           <option value="L">L</option>
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
+        </select>
 
-
-      </div>
+      
       
       </form>
-
+      <br /><br />
       <button type="submit">Place Order</button>
         <!-- write your html here-->
         <!-- 
