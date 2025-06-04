@@ -19,9 +19,24 @@
       padding: var(--space);
       position: relative;
     }
-
-    h1, h2 {
-      color: #124c56;
+      h1, {
+      font-size: 2rem;
+      margin: 0;
+      color: #63c4e2;
+    }
+      h2 {
+      font-size: 1.5rem;
+      margin: 0;
+      color: #63c4e2;
+    }
+     p {
+      margin: 0;
+      color: hsl(0, 11%, 76%);
+    }
+    p1 {
+      margin: 0;
+      color: #226691;
+      font-size: 1.2rem;
     }
     a {
       display: inline-block;
@@ -64,7 +79,7 @@
     article {
       border: var(--line);
       padding: var(--space);
-      background-color: #111;
+      background-color: hsl(0, 8%, 17%);
     }
 
     article:first-child img {
@@ -86,6 +101,7 @@
       color: #095a6f;
     }
     footer a {
-      color: #0a577a;
-      border-color: #07576b;
+      color: #226691;
+      border-color: #051215;
     }
+    
