@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My Form Exercise</title>
+  <meta name="description" content="T-shirt order form" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Order Your T-shirt</h1>
+  </header>
+
+  <main>
+    <form action="/submit-order" method="POST">
+      
+      <label for="fname">First Name:</label><br />
+      <input type="text" id="fname" name="fname" required pattern="[A-Za-z\s]+"
+        title="Name should only contain letters and spaces." /><br /><br />
+
+      
+      <label for="lname">Last Name:</label><br />
+      <input type="text" id="lname" name="lname" required pattern="[A-Za-z\s]+"
+        title="Name should only contain letters and spaces." /><br /><br />
+
+      
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        title="Enter a valid email address." /><br /><br />
+
+      
+      <label for="color">Select Color:</label><br />
+      <select id="color" name="color" required>
+        <option value="">Select color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="purple">Purple</option>
+      </select><br /><br />
+
+      
+      <label for="size">Select Size:</label><br />
+      <select id="size" name="size" required>
+        <option value="">Select size</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select><br /><br />
+
+      
+      <button type="submit">Order Now</button>
+    </form>
+  </main>
+
+  <footer>
+    <h2>By Kebrom Gebretinsay</h2>
+  </footer>
+</body>
 </html>
