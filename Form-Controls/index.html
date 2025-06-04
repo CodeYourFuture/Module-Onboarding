@@ -1,27 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"content="ie=edge">
+  <title>Form</title>
+</head>
+<body>
+  <form method="GET" enctype="multipart/form-data">
+    <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required>
+    <div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <div>
+   </div>
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" min="1" max="200" step="5">
+    <div>
+   </div>
+   <label for="date">Birthdate</label>
+   <input type="date" name="date" id="date" min="2019-06-10">
+   <div>
+</div>
+Favorite Food
+<div>
+  <label for="banana">Banana</label>
+  <input type="checkbox" name="banana" id="banana">
+</div>
+<div>
+  <label for="apple">Apple</label>
+  <input type="checkbox" name="apple" id="apple">
+  </div>
+  <div>
+    <div>
+      Gender
+    </div>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <div>
+      <div>
+    <label for="female">Female</label>
+   <input type="radio" name="gender" id="female" value="female">
+   <div>
+</div>
+ <div>
+  <label for="eyeColor">Eye Color</label>
+  <select NAME="eyeColor" id="eyeColor" multiple>
+    <option value="Green">Green</option>
+    <option  label="Red" value="Red"></option>
+    <option value="Pink">Pink</option>
+    </select>
+    <div>
+   </div>
+   <label for="bio">Bio</label>
+   <textarea id="bio" name="bio"></textarea>
+   <div>
+    <input type="hidden" name="hidden" value="hi">
+  </div>
+   <label for="file">File</label>
+   <input id="file" type="file" name="file">
+   <div>
+  </div>
+  <label for="phone">Phone</label>
+  <input type="tel" name="phone" id="phone">
+  <div>
+ </div>
+ <label for="url">URL</label>
+ <input type="url" name="url" id="url">
+ <div>
+   </div>
+   <label for="color">Color</label>
+   <input type="color" name="color" id="color">
+   <div>
+  </div>
+  <label>
+      Password
+    <input type="password" name="password" required>
+    <label>
+    <div>
+      <Button type="reset">Reset</Button>
+    <button type="submit "y5>Submit</button>
+  </form>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
 </html>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  form div {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="color"],
+  input[type="password"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  select[multiple] {
+    height: 100px;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4285f4;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  button[type="reset"] {
+    background-color: #ccc;
+    color: #000;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+</style>
+  
+    
