@@ -36,7 +36,7 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  text-align: center;
+  text-align: left;
   background-color: #f9f9f9;
 }
 
@@ -65,7 +65,7 @@ main {
 
 .section img {
   max-width: 100%;
-  height: auto;
+  height: 300px;
   display: block;
   margin: 0 auto 15px;
 }
