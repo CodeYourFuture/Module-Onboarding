@@ -99,7 +99,9 @@
     footer {
       font-size: 1rem;
       color: #095a6f;
-      position: relative;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
     footer a {
       color: #226691;
