@@ -35,7 +35,8 @@
     }
     .head-foot {
       margin: 0;
-      color: #226691;
+      color: #0fccce;
+      background-color: hsl(0, 8%, 17%);
       font-size: 1.2rem;
     }
     a {
@@ -97,18 +98,15 @@
     }
 
     footer {
-      font-size: 1rem;
-      color: #095a6f;
       position: fixed;
       bottom: 0;
       left: 0;
       width: 100%;
-      background: #090909;
       padding: .1rem;
       text-align: center;
       z-index: 1000;
     }
     footer a {
-      color: #226691;
+      color: #0fccce;
       border-color: #051215;
     }
