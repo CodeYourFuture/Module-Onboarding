@@ -15,22 +15,33 @@ As well as useful links to learn more */
  For you to explore and play with if you are interested
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
+
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
+  --paper: rgb(241, 233, 199);  
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
-}
+} 
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  text-align: center;
 }
+.p2 {
+  font-family: Arial; /*added new font*/
+}
+h1 { font-family: "Lucida Console";
+  font-size: 70px;
+  font-weight:200;
+  
+}
+
 a {
   padding: var(--space);
   border: var(--line);
@@ -52,8 +63,10 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
-}
+  }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
