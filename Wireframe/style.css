@@ -87,3 +87,25 @@ article {
     grid-column: span 3;
   }
 }
+/* My own changes */
+footer {
+  position: fixed; /* Fixes the footer relative to the viewport */
+  bottom: 0; /* Positions it at the very bottom */
+  left: 0; /* Stretch from left */
+  width: 100%; /* Full width */
+  background-color: #eee; /* Background color for visibility */
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+  z-index: 1000; /* Make sure it stays on top */
+}
+.desaturated-image {
+  display: block; /* Makes sure image starts on a new line */
+  margin-top: 0.5rem; /* Small gap between text and image */
+
+  /* Reduce saturation to 50% to make it less colorful */
+  filter: saturate(0.5);
+
+  max-width: 100%; /* Responsive image width */
+  height: auto;
+}
