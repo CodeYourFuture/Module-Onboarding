@@ -1,78 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Ahmad form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-       <h2>Ahmad's shope</h2>
-       <p>
-        Required fields are followed by <strong><span aria-label="Required">*</span></strong>
-       </p>
-       <section>
-        <h2>Contact information</h2>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Ahmad Form Exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h2>Product Pick</h2>
+  </header>
+
+  <main>
+    <form>
+      <h1>Ahmad's shop</h1>
+      <p>
+        Required fields are followed by <strong>*</strong>
+      </p>
+
+      <section>
+        <h2>Contact Information</h2>
+
         <div>
           <label for="name">
-            <span>Name: </span>
-           <strong><span aria-label="Required">*</span></strong>
+            Name: <strong>*</strong>
           </label>
-          <input type="text" id="name" name="Customer-s Name" minlength="2"  pattern=".*\S.*" 
-              title="Name cannot be empty or only spaces" required />
+          <input type="text" id="name" name="customer-name" minlength="2" pattern=".*\S.*"
+            title="Name cannot be empty or only spaces" required />
         </div>
-         
-         <p>
+        <br>
+        <br>
+        <div>
           <label for="email">
             <span>Email: </span>
-           <strong><span aria-label="Required">*</span></strong>
+            <strong>*</strong>
           </label>
-          <input type="email" id="email" name="Customer-s Email" required />
-        </p>
-       </section>
-       <section>
-        <h2>Size &Colour</h2>
+          <input type="email" id="email" name="customer-email" required />
+        </div>
+      </section>
+
+      <section>
+        <h2>Size & Colour</h2>
         <fieldset>
-          <legend>T-shirt's Colour<strong><span aria-label="Required">*</span></strong></legend>
+          <legend>T-shirt Colour <strong>*</strong></legend>
+
           <label for="color1">
             <input type="radio" id="color1" name="colour" value="red" required />
             Red
           </label>
           <label for="color2">
             <input type="radio" id="color2" name="colour" value="blue" />
-            Blue </label>
-                     <label for="color3">
+            Blue
+          </label>
+          <label for="color3">
             <input type="radio" id="color3" name="colour" value="green" />
-            Green </label>
-             </fieldset>
-             <p>
-                        <label for="size">
-                    <span>Size: </span>
-                   <strong><span aria-label="Required">*</span></strong>
-                   </label>
-                   <select name="size" id="size" required>
-                     <option value="" disabled selected>Select a size</option>
-                   <option value="Xsmall">XS</option>
-                    <option value="Small">S</option>
-                    <option value="Medium">M</option>
-                    <option value="Large">L</option>
-                    <option value="Xlarge">XL</option>
-                    <option value="XXlarge">XXL</option>
-                   </select>
-                  </p>
-            </section>
-       <button type="submit">confirm
-               </button>
-      </form>
-    </main>
-    <footer>
-        <h2>By Ahmad Hmedan</h2>
-    </footer>
-  </body>
+            Green
+          </label>
+        </fieldset>
+
+        <p>
+          <label for="size">
+            <span>Size: </span>
+            <strong>*</strong>
+          </label>
+          <select name="size" id="size" required>
+            <option value="" disabled selected>Select a size</option>
+            <option value="Xsmall">XS</option>
+            <option value="Small">S</option>
+            <option value="Medium">M</option>
+            <option value="Large">L</option>
+            <option value="Xlarge">XL</option>
+            <option value="XXlarge">XXL</option>
+          </select>
+        </p>
+      </section>
+
+      <button type="submit">Confirm</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>By Ahmad Hmedan</p>
+  </footer>
+</body>
+
 </html>
