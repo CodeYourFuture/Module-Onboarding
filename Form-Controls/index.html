@@ -1,27 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    
+    label, input[type="radio"], input[type="text"], input[type="email"] {
+      display: inline-block;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    input[type="radio"] {
+      width: 24px;
+      height: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    fieldset > div {
+      margin-bottom: 16px;
+    }
+
+    button {
+      padding: 14px 28px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>T-shirt Pick</h1>
+  </header>
+
+  <main role="main">
+    <form action="/my-handling-form-page" method="post" aria-label="T-shirt selection form">
+      <div class="form-group">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="user_name" required aria-required="true" />
+      </div>
+
+      <div class="form-group">
+        <label for="mail">Enter your email:</label>
+        <input type="email" id="mail" name="user_email" required aria-required="true" />
+      </div>
+
+      <fieldset>
+        <legend>What colour T-shirt would you like?</legend>
+        <div>
+          <input type="radio" id="black" name="colour" value="Black" required />
+          <label for="black">Black</label>
+        </div>
+        <div>
+          <input type="radio" id="white" name="colour" value="White" />
+          <label for="white">White</label>
+        </div>
+        <div>
+          <input type="radio" id="grey" name="colour" value="Grey" />
+          <label for="grey">Grey</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>What size do you want?</legend>
+        <div>
+          <input type="radio" id="size-xs" name="size" value="XS" required />
+          <label for="size-xs">XS</label>
+        </div>
+        <div>
+          <input type="radio" id="size-s" name="size" value="S" />
+          <label for="size-s">S</label>
+        </div>
+        <div>
+          <input type="radio" id="size-m" name="size" value="M" />
+          <label for="size-m">M</label>
+        </div>
+        <div>
+          <input type="radio" id="size-l" name="size" value="L" />
+          <label for="size-l">L</label>
+        </div>
+        <div>
+          <input type="radio" id="size-xl" name="size" value="XL" />
+          <label for="size-xl">XL</label>
+        </div>
+        <div>
+          <input type="radio" id="size-xxl" name="size" value="XXL" />
+          <label for="size-xxl">XXL</label>
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <button type="submit" aria-label="Submit your T-shirt selection">Submit</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <h2>By Victoria</h2>
+  </footer>
+</body>
 </html>
