@@ -61,9 +61,9 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  position: bottom; 
   bottom: 0;
-  text-align: center;
+  text-align:center;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
