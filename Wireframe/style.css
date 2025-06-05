@@ -16,74 +16,106 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+/* ====== Design Palette ======
+Fonts: system default
+Colors: greys for background/text
+====== Design Palette ====== */
+
+/* === Reset and Base Styles === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
+html, body {
+  height: 100%;
+  font-family: system-ui, sans-serif;
+}
+
+/* === Layout === */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f4f4f4;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
 main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
+
+/* === Articles === */
+article {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+article h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+article p {
+  margin-bottom: 0.75rem;
+}
+
+article a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
 footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
   position: fixed;
   bottom: 0;
-  text-align: center;
+  left: 0;
+  width: 100%;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+
+/* === Responsive Grid for Article Section === */
+.grid-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
+
+.grid-row article {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid-row article {
+    width: 45%;
   }
 }
