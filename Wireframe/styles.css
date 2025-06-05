@@ -1,44 +1,44 @@
 /* Reset some default styles */
 html, body {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
+height: 100%;
+margin: 0;
+font-family: Arial, sans-serif;
+display: flex;
+flex-direction: column;
 }
 
 body {
-  flex: 1;
+flex: 1;
 }
 
 main {
-  flex: 1;
-  padding: 20px;
+flex: 1;
+padding: 20px;
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
+background-color: #333;
+color: white;
+text-align: center;
+padding: 15px;
 }
 
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
+body {
+margin: 0;
+ont-family: sans-serif;
+}
 
-    .container {
-      display: flex;
-      flex-direction: column;
-    }
+.container {
+display: flex;
+flex-direction: column;
+}
 
-    .article1 {
-  width: 100%;
-  background-color: white;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
+.article1 {
+width: 100%;
+background-color: white;
+padding: 20px;
+box-sizing: border-box;
+margin-bottom: 20px;
 }
 
 /* Flexbox for side-by-side layout */
@@ -63,10 +63,10 @@ article {
 }
 
 footer {
-  border: 15px solid silver;
-  padding: 20px;
-  margin-top: 20px;
-  box-sizing: border-box;
+border: 15px solid silver;
+padding: 20px;
+margin-top: 20px;
+box-sizing: border-box;
 }
 
 h1 {
@@ -83,45 +83,45 @@ h4 {
     display: block;
 }
 article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
 }
 
 .full-width-image {
-    width: 100%;
-    height: auto;
-    display: block;
+width: 100%;height: auto;
+display: block;
 }
+
 
 /* Make articles responsive */
 article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 100%;
-    margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+max-width: 100%;
+margin: 0 auto;
 }
 
 /* Ensure side-by-side articles adapt to screen */
 .bottom-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 20px;
 }
 
 /* Style for mobile screens */
 @media (max-width: 768px) {
-    .bottom-row {
-        flex-direction: column;
-        align-items: center;
-    }
+.bottom-row {
+flex-direction: column;
+align-items: center;
+}
     
-    article {
-        max-width: 100%;
+.article {
+max-width: 100%;
     }
 }
 
