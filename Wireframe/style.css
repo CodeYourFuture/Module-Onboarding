@@ -17,7 +17,7 @@
     header, footer {
       text-align: center;
       padding: var(--space);
-      position: relative;
+      
     }
       h1 {
       font-size: 2rem;
@@ -99,6 +99,7 @@
     footer {
       font-size: 1rem;
       color: #095a6f;
+      position: relative;
     }
     footer a {
       color: #226691;
