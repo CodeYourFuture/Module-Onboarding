@@ -51,9 +51,10 @@ a {
 img,
 svg {
   width: 100%;
-  height: 100%; /* Make image fill its container */
-  object-fit: cover; /* This will crop if aspect ratios differ, but it's okay because the container has a fixed aspect ratio */
+  height: 100%; 
+  object-fit: cover; 
   display: block; /* Removes extra space below images */
+  
 }
 
 /* ====== Site Layout ======
