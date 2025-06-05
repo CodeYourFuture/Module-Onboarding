@@ -104,6 +104,8 @@ article {
   >img {
     grid-column: span 3;
     margin-bottom: 0px;
+    width: 100%;
+    height: 500px;
   }
 
   >h2 {
