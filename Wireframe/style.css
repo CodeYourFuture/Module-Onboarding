@@ -21,7 +21,7 @@ Fonts: system default
 Colors: greys for background/text
 ====== Design Palette ====== */
 
-/* Basic Reset */
+/* === Reset and Base Styles === */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,10 +30,10 @@ Colors: greys for background/text
 
 html, body {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
-/* Layout setup */
+/* === Layout === */
 body {
   display: flex;
   flex-direction: column;
@@ -50,12 +50,12 @@ main {
   flex: 1;
   padding: 1rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-/* Article styling */
+/* === Articles === */
 article {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -89,21 +89,33 @@ article a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+/* === Footer === */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #f4f4f4;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
-/* Responsive layout for side-by-side articles */
-@media (min-width: 768px) {
-  main {
-    justify-content: center;
-  }
+/* === Responsive Grid for Article Section === */
+.grid-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
 
-  main article:nth-child(2),
-  main article:nth-child(3) {
+.grid-row article {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid-row article {
     width: 45%;
   }
 }
