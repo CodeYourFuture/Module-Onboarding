@@ -14,8 +14,8 @@
     <main>
       <form>
         <!-- write your html here-->
-        <fieldset>
-          <label for="name"> Costumer Name: </label>
+        <p>
+          <label for="name"> Costumer Name: </label><br />
           <input
             type="text"
             name="name"
@@ -26,7 +26,22 @@
             placeholder="Full Name"
             required
           />
-          <label for="email"> Costumer Email: </label>
+        </p>
+        <p>
+          <label for="address"> Costumer Address: </label><br />
+          <input
+            type="text"
+            name="address"
+            id="address"
+            minlength="5"
+            maxlength="64"
+            pattern="[A-Za-z0-9\s,]{5,64}"
+            placeholder="Street, City, Zip Code"
+            required
+          />
+        </p>
+        <p>
+          <label for="email"> Costumer Email: </label><br />
           <input
             type="email"
             name="email"
@@ -35,13 +50,17 @@
             required
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           />
-          <label for="color">Color:</label>
+        </p>
+        <p>
+          <label for="color">Color:</label><br />
           <select id="color" name="color" required>
             <option value="RED">RED</option>
             <option value="BLUE">BLUE</option>
             <option value="GREEN">GREEN</option>
           </select>
-          <label for="size">Size:</label>
+        </p>
+        <p>
+          <label for="size">Size:</label><br />
           <select id="size" name="size" required>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -50,11 +69,11 @@
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
           </select>
-          <button type="submit">Submit</button>
-          <!-- 
+        </p>
+        <button type="submit">Submit</button>
+        <!--
             try writing out the requirements first as comments
             this will also help you fill in your PR message later-->
-        </fieldset>
       </form>
     </main>
     <footer>
