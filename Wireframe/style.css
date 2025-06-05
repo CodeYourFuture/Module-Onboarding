@@ -58,13 +58,15 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: flex;
+  position: fixed;
   bottom: 0;
-  text-align: center;
+  left: 0;
   width: 100%;
-  padding: var(--space);
-  background: rgba(252, 179, 179, 0.705);
+  background-color: #c0b2b2;
+  text-align: center;
+  padding: 1rem;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
