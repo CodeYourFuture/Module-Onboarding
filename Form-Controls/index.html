@@ -13,48 +13,69 @@
     </header>
     <main>
       <form method="GET">
-        <!-- Customer Name -->
-  <label for="name">Full Name:</label>
-  <input type="text" id="name" name="name" minlength="2" required />
-  <br /><br />
-     
-      <div> <label>Email</label>
-        <input name="email" id="email">
-        <br /><br />
 
-
-  
-      
-        <label for="color">Choose a colour:</label>
-        <select id="color" name="color" required>
-          <option value="" disabled selected>Select a colour</option>
-          <option value="red">Red</option>
-          <option value="blue">Blue</option>
-          <option value="black">Black</option>
-        </select>
-
-        <br /><br />
-        <label for="size">Choose a size:</label>
-        <select id="size" name="size" required>
-          <option value="" disabled selected>Select a size</option>
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
-        </select>
-
-      
-      
-      </form>
-      <br /><br />
-      <button type="submit">Place Order</button>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        <section>
+          <fieldset>
+            <legend><strong>Customer information</strong></legend>
+            <p>
+              <label for="name">
+                <span>Full Name: </span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="username"
+                required
+                pattern="[A-Za-z\s]{2,}"
+       
+                title="Please enter a valid name (at least 2 letters)."
+                />
+              </p>
+              <p>
+                <label for="mail">
+                  <span>Email: </span>
+                </label>
+                <input type="email" id="mail" name="user-mail" required />
+              </p>
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend><strong>Product specification</strong></legend>
+              <p>
+                <label for="size">
+                  <span>Select a size:</span>
+                </label>
+                <select id="size" name="product-size">
+                  <option value=""disabled hidden selected>Choose a size</option>
+                  <option value="XS">XSmall</option>
+                  <option value="S">Small</option>
+                  <option value="M">Medium</option>
+                  <option value="L">Large</option>
+                  <option value="XL">XLarge</option>
+                  <option value="XXL">XXLarge</option>
+                </select>
+              </p>
+              <p>
+                <label for="colour">
+                  <span>Select a colour:</span>
+                </label>
+                <select id="colour" name="product-colour">
+                  <option value=""disabled hidden selected>Choose a colour</option>
+                  <option value="White">White</option>
+                  <option value="Black">Black</option>
+                  <option value="Blue">Blue</option>
+                </select>
+              </p>
+              <section>
+                <p>
+                  <button type="submit">
+                    <strong>Place the order</strong>
+                  </button>
+                </p>
+              </section>
+            </fieldset>
+          </section>
+        </form>
     </main>
     <footer>
       <!-- change to your name-->
