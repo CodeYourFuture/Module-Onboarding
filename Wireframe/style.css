@@ -62,7 +62,7 @@ main {
 }
 footer {
   position: bottom; 
-  bottom: 0;
+  bottom: 0%;
   text-align:center;
 }
 /* ====== Articles Grid Layout ====
