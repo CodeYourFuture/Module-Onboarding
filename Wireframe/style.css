@@ -101,7 +101,12 @@
       color: #095a6f;
       position: fixed;
       bottom: 0;
+      left: 0;
       width: 100%;
+      background: #090909;
+      padding: .1rem;
+      text-align: center;
+      z-index: 1000;
     }
     footer a {
       color: #226691;
