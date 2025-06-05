@@ -12,6 +12,7 @@
       font: var(--font);
       margin: 0;
       line-height: 1.6;
+      padding-bottom: 80px;
     }
 
     header, footer {
