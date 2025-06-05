@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coursework</title>
-    <style>
-      :root {
-        --paper: oklch(7 0 0);
-        --ink: color-mix(in oklab, var(--color) 5%, black);
-        --font: 100%/1.5 system-ui;
-        --space: clamp(6px, 6px + 2vw, 15px);
-        --line: 1px solid;
-      }
-      body {
-        background: var(--paper);
-        color: var(--ink);
-        font: var(--font);
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-    </style>
-  </head>
-  <body>
-    <header><h1>🧐 CYF Coursework Disposable Branch Previews</h1></header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Wireframe</h1>
+        <p>Learn about README files, wireframes, and Git branches.</p>
+    </header>
     <main>
-      <ol>
-        <li>
-          <h2><a href="/Wireframe">Project 1: Wireframe</a></h2>
-          <p>
-            Mentors:
-            <a href="Wireframe/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-        <li>
-          <h2><a href="/Form-Controls">Project 2: Form Controls</a></h2>
-          <p>
-            Mentors:
-            <a href="Form-Controls/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-      </ol>
+        <section class="cards">
+            <div class="card card-large">
+                <div class="image-placeholder"></div>
+                <h2>What is the purpose of a README file?</h2>
+                <p>
+                    A README file introduces and explains a project. It provides important details such as how to install, run, and contribute to the project. It helps other developers understand the project's structure and purpose.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <div class="image-placeholder"></div>
+                    <h2>What is the purpose of a wireframe?</h2>
+                    <p>
+                        A wireframe is a visual guide that represents the layout of a webpage. It helps developers plan the structure and user experience before adding detailed content or styles.
+                    </p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+                <div class="card">
+                    <div class="image-placeholder"></div>
+                    <h2>What is a branch in Git?</h2>
+                    <p>
+                        A branch in Git is a separate line of development. It allows you to work on features or fixes without affecting the main project. Once your work is ready, you can merge the branch into the main codebase.
+                    </p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer><a href="HOW_TO_REVIEW.md">HOW TO REVIEW MD</a></footer>
-  </body>
+    <footer>
+        <p>Author: Pawel Broilo</p>
+        <p>Contact: pawel.broilo1985@gmail.com</p>
+        <h3>Wireframe Project</h3>
+    </footer>
+</body>
 </html>
