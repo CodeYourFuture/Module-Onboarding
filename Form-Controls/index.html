@@ -6,22 +6,105 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Optional CSS to make the footer visible and stick at the bottom */
+      body {
+        margin: 0;
+        padding-bottom: 60px; /* enough space for the fixed footer */
+        font-family: sans-serif;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #f0f0f0;
+        padding: 10px 0;
+        font-size: 14px;
+      }
+
+      form {
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      fieldset {
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>My T-Shirt Form</h1>
     </header>
+
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form method="GET">
+        <fieldset>
+          <legend><strong>Customer information</strong></legend>
+
+          <p>
+            <label for="name">Full Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="username"
+              required
+              pattern=".*\S.*"
+              title="Please enter a valid name (not just spaces)."
+            />
+          </p>
+
+          <p>
+            <label for="mail">Email:</label><br />
+            <input type="email" id="mail" name="user-mail" required />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Product specification</strong></legend>
+
+          <p>
+            <label for="size">Select a size:</label><br />
+            <select id="size" name="product-size" required>
+              <option value="" disabled hidden selected>Choose a size</option>
+              <option value="XS">XSmall</option>
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
+              <option value="XL">XLarge</option>
+              <option value="XXL">XXLarge</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="colour">Select a colour:</label><br />
+            <select id="colour" name="product-colour" required>
+              <option value="" disabled hidden selected>Choose a colour</option>
+              <option value="White">White</option>
+              <option value="Black">Black</option>
+              <option value="Blue">Blue</option>
+            </select>
+          </p>
+
+          <p>
+            <button type="submit"><strong>Place the order</strong></button>
+          </p>
+        </fieldset>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By GISBCODE</h2>
     </footer>
   </body>
 </html>
