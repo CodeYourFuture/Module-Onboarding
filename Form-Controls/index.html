@@ -1,27 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Order Form</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .radio-option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        select {
+            padding: 8px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>T-Shirt Order Form</h1>
+    
+    <form id="tshirt-order">
+        <fieldset>
+            <legend>Customer Information</legend>
+            
+            <div class="form-group">
+                <label for="name">Full Name (min 2 characters):</label>
+                <input type="text" id="name" name="name" required minlength="2">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>T-Shirt Color</legend>
+            
+            <div class="radio-option">
+                <input type="radio" id="color-red" name="color" value="red" required>
+                <label for="color-red">Red</label>
+            </div>
+            
+            <div class="radio-option">
+                <input type="radio" id="color-blue" name="color" value="blue">
+                <label for="color-blue">Blue</label>
+            </div>
+            
+            <div class="radio-option">
+                <input type="radio" id="color-green" name="color" value="green">
+                <label for="color-green">Green</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>T-Shirt Size</legend>
+            
+            <div class="form-group">
+                <label for="size">Select Size:</label>
+                <select id="size" name="size" required>
+                    <option value="" disabled selected>Select a size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <button type="submit">Place Order</button>
+    </form>
+</body>
 </html>
