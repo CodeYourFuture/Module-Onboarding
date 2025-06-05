@@ -48,6 +48,7 @@ a {
   margin-top: var(--space); /* Add some space above the link */
 }
 
+
 img,
 svg {
   width: 100%;
@@ -56,6 +57,8 @@ svg {
   display: block; /* Removes extra space below images */
   
 }
+
+
 
 /* ====== Site Layout ======
 Setting the overall rules for page regions
