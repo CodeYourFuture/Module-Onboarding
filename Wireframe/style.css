@@ -1,7 +1,7 @@
 /*==== Design Palette ====== */
 :root {
-  --paper:  #0d0d0d; 
-  --ink: #ffffff;;
+  --paper:   #fffff; 
+  --ink:  #000000;  
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
@@ -17,8 +17,9 @@ body {
 }
 a {
   padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+  color: var(--ink);
+  text-decoration: none;
+}
 }
 img,
 svg {
@@ -43,12 +44,14 @@ footer {
    bottom: 0;
    left: 0;
    height: 25px;
-   background-color: #03045e;
+   background-color:#f0f0f0;
    width: 100%;
-   color: #ffffff;
+   color:var(--ink);
    display: flex;
    align-items: center;
    justify-content: center;
+  border-top: 1px solid black;
+}
 }
 /* === Articles Grid Layout =*/
 .articles {
@@ -64,6 +67,7 @@ article {
     text-align: left;
     display: grid;
     grid-template-columns: var(--space) 1fr var(--space);
+
   > * {
     grid-column: 2/3;
   }
@@ -83,15 +87,17 @@ article {
   }
 }
 
-
+/* ====== Buttons and Links ====== */
 .read-more {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #1a1a1a;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    padding: 6px 12px;
+    background-color:#ffffff;
+    border: 2px solid  #000000;
+    color:  #000000;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    width: auto; 
+     max-width: fit-content; 
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 header {
@@ -99,19 +105,14 @@ header {
   padding: 20px 0;         
 }
 .read-more:hover {
-    background-color: #007BFF;
+    background-color: #000000;
    color: #ffffff;
     
 }
 
-.Wireframe {
-    
-    border-color:black;
-}
-.git {
-    
-    border-color: black;
-}
+/* ====== Special Classes ====== */
+.Wireframe ,
+.git,
 .Readfile {
     
     border-color: black;
