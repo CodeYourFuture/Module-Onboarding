@@ -15,36 +15,28 @@
     <form method="get" aria-label="T-shirt Order Form">
       <h2>Please complete this form by confirming your name and selecting your T-shirt colour and size.</h2>
 
-
-      <!-- First Name -->
       <div>
         <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name" required pattern="[a-zA-Z]*"
-          title="Please enter a valid first name using letters only. Numbers or special characters are not allowed.">
+        <input type="text" name="first-name" id="first-name" required aria-required="true" pattern="[a-zA-Z]*"
+          title="Please enter a valid last name using letters only. Numbers or special characters are not allowed.">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" required aria-required="true" pattern="[a-zA-Z]*"
+          title="Please enter a valid last name using letters only. Numbers or special characters are not allowed.">
       </div>
 
       <br>
 
-      <!-- Last Name -->
-      <div>
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name" required pattern="[a-zA-Z]*"
-          title="Please enter a valid first name using letters only. Numbers or special characters are not allowed.">
-      </div>
-
-      <br>
-
-      <!-- Email -->
-      <div>
-        <label for="email">Email Address</label>
-        <input type="email" name="email" id="email" required>
-      </div>
-      <br>
 
       <div>
-        <label for="email">Email Address</label>
-        <input type="email" name="email" id="email" required>
+        <label for="email">Email Address<span aria-hidden="true">*</span></label>
+        <input type="email" name="email" id="email" required aria-required="true">
       </div>
+
       <br>
 
       <fieldset>
@@ -88,7 +80,7 @@
   </main>
   <footer>
 
-    <h2>By MIRABEL ADOM</h2>
+    <h2>Test</h2>
   </footer>
 </body>
 
