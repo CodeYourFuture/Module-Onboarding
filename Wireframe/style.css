@@ -18,7 +18,7 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --ink: color-mix(in oklab, var(--color) 5%, rgb(207, 16, 16));
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
@@ -86,4 +86,22 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+header {
+  background-color: #f2f2f2;
+  color: black;
+  padding: var(--space);
+  border-bottom: var(--line);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+footer {
+  background-color: #f2f2f2;
+  color: black;
+  padding: var(--space);
+  width: 100%;
+  border-top: var(--line);
 }
