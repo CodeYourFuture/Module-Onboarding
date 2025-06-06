@@ -1,27 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Product Pick Form Controls</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Confirm your identity and choose your t-shirt colour and size. All fields required.">
+</head>
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+
+  <main>
+    <form name="tshirt-form" aria-describedby="form-instructions">
+      <p id="form-instructions">All fields are required. Please fill out your details and choose your t-shirt colour and size.</p>
+
+      <fieldset>
+        <legend>Confirm Your Details</legend>
+
+        <p>
+          <label for="name">Name:</label><br>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            minlength="2"
+            pattern=".*\S.*"
+            title="Name must be at least 2 characters and not just spaces"
+            aria-required="true"
+            placeholder="Enter your full name"
+          >
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            aria-required="true"
+            placeholder="example@example.com"
+            title="Please enter a valid email address"
+          >
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose a colour:</legend>
+
+        <p>
+          <label>
+            <input
+              type="radio"
+              name="colour"
+              value="red"
+              required
+              aria-required="true"
+            > Red
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input
+              type="radio"
+              name="colour"
+              value="blue"
+            > Blue
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input
+              type="radio"
+              name="colour"
+              value="green"
+            > Green
+          </label>
+        </p>
+      </fieldset>
+
+      <p>
+        <label for="size">Size:</label><br>
+        <select id="size" name="size" required aria-required="true" title="Select your t-shirt size">
+          <option value="" disabled selected>Select size…</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </p>
+
+      <p>
+        <button type="submit" aria-label="Submit your t-shirt selection">Submit</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Indira - HOMEWORK SOLUTION</p>
+  </footer>
+</body>
 </html>

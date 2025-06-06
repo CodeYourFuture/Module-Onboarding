@@ -32,6 +32,7 @@ There are some provided HTML and CSS files you can use to get started. You can u
 - [ ] The webpage is properly committed and pushed to a branch on GitHub.
 
 ## Resources
+## Checking
 
 - [Wireframe](https://www.productplan.com/glossary/wireframe/)
 - [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
