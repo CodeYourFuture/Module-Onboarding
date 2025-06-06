@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Form Controls</title>
+  <meta name="description" content="A form to select user details and products">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <h1>Users and Products</h1>
+  </header>
+
+  <main>
+    <form aria-labelledby="form-title" role="form">
+      <h2 id="form-title">User Details</h2>
+      
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required aria-required="true" title="Enter your name">
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true" title="Enter your email address">
+      </div>
+
+      <fieldset>
+        <legend>Choose a color:</legend>
+        <div>
+          <input type="radio" id="red" name="color" value="red" required>
+          <label for="red">Red</label>
+        </div>
+        <div>
+          <input type="radio" id="blue" name="color" value="blue">
+          <label for="blue">Blue</label>
+        </div>
+        <div>
+          <input type="radio" id="black" name="color" value="black">
+          <label for="black">Black</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="size">Choose a Size:</label>
+        <select name="size" id="size" required aria-required="true" title="Choose a Size">
+          <option value="" disabled selected>--Please choose an option--</option>
+          <option value="XS">Extra Small</option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">Extra Large</option>
+          <option value="XXL">Extra Extra Large</option>
+        </select>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>By Pawel Broilo</p>
+  </footer>
+</body>
+</html>
