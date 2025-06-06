@@ -7,21 +7,50 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+ 
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+       <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+
+        <label for="size">T-Shirt Size:</label>
+        <select id="size" name="size" required>
+          <option value="">Select size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+        <br />
+        <label for="color">T-Shirt Color:</label>
+        <select id="color" name="color" required>
+          <option value="">Select color</option>
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+        </select>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+          
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      
+      <h2>By Wahae Koela</h2>
     </footer>
   </body>
 </html>
