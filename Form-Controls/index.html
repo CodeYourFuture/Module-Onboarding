@@ -16,7 +16,7 @@
   <form>
     <div>
       <label for="name"> Name</label>
-      <input type="text" name="name" id="name" required>
+      <input type="text" name="name" id="name" required pattern=".*\S.*" title="Name cannot be empty or contain only spaces.">
     </div>
     <br>
     <div>
