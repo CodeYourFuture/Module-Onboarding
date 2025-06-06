@@ -13,19 +13,20 @@
       <h1>T-Shirt Order Form</h1>
     </header>
 
-
     <main>
       <form id="TshirtOrderForm" novalidate>
 
         <label for="CustomerName">Name:</label>
 
     <input 
-      type="Text" 
+      type="text" 
       id="CustomerName" 
       name="CustomerName" 
       required 
       minlength="2" 
       aria-describedby="NameHelp"
+      pattern=".*\S.*"
+      title="Name must include at least one non-space characters"
     />
 
 
@@ -59,7 +60,7 @@
     </fieldset>
     <br/>
     
-    <!-- T-shirt Size -->
+   
     <label for="sizeSelect">Size:</label>
     <select id="sizeSelect" name="size" required>
       <option value="">Select size</option>
