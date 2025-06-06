@@ -30,11 +30,16 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  margin: 0;
+  padding: 0;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 img,
 svg {
@@ -62,12 +67,16 @@ https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
 main {
+  max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 10);
+  padding: var(--space);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+}
+}
+main > article:first-child {
+  grid-column: span 2;
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -76,16 +85,20 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
-  padding-bottom: var(--space);
+  padding-bottom: calc(var(--space) * 3);
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  background-color: white;
+  color: black;
+}
+
+article > * {
+  grid-column: 2 / 3;
+}
+
+article > img {
+  grid-column: span 3;
 }
 
 header {
@@ -99,9 +112,19 @@ header {
   z-index: 1;
 }
 footer {
+  position: fixed;
+  bottom: 0;
   background-color: #f2f2f2;
   color: black;
   padding: var(--space);
   width: 100%;
   border-top: var(--line);
+  text-align: center;
+  z-index: 1;
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: calc(var(--space) * 8);
 }
