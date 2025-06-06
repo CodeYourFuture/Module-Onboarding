@@ -31,7 +31,7 @@ body {
   font: var(--font);
 }
 h2{
-    background: rgba(252, 179, 179, 0.705);
+    background: #879bc0e7;
 
 }
 a {
@@ -42,7 +42,7 @@ a {
 a:hover,
 a:focus {
   background: var(--paper);
-  color: black;
+  color: rgb(243, 10, 204);
 }
 img,
 svg {
@@ -62,7 +62,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #c0b2b2;
+  background-color:#879bc0e7;
   text-align: center;
   padding: 1rem;
 }
