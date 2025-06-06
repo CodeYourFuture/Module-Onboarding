@@ -27,14 +27,22 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
   color: var(--ink);
   font: var(--font);
+}
+h2{
+    background: #879bc0e7;
+
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+}
+a:hover,
+a:focus {
+  background: var(--paper);
+  color: rgb(243, 10, 204);
 }
 img,
 svg {
@@ -52,8 +60,13 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:#879bc0e7;
   text-align: center;
+  padding: 1rem;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
