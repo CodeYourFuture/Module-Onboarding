@@ -5,133 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wireframe</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        font-family: Arial, sans-serif;
-      }
-
-      main {
-        flex: 1;
-        padding: 1rem;
-      }
-
-      footer {
-        background-color: #f2f2f2;
-        padding: 1rem;
-        text-align: center;
-        margin-top: auto;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-      }
-
-      section {
-        margin-bottom: 2rem;
-      }
-
-      a {
-        display: inline-block;
-        margin-top: 0.5rem;
-        color: #0645ad;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
   </head>
-
   <body>
     <header>
-      <div>
-        <h1>Wireframe to Code</h1>
-        <p>Understanding README files, wireframes, and branches in Git.</p>
-      </div>
+      <h1>Wireframe to Code</h1>
+      <p>Understanding README files, wireframes, and branches in Git.</p>
     </header>
 
     <main>
-      <section class="readme-section">
+      <section aria-labelledby="readme-heading">
         <article>
           <figure>
             <img src="readme-image.jpg" alt="Picture of a README file" />
             <figcaption>Fig 1 – README File Image</figcaption>
           </figure>
-          <h2>Purpose of a README File</h2>
-          <p>
-            A README file is a crucial document that introduces a project.
+          <h2 id="readme-heading">Purpose of a README File</h2>
+          <p>A README file is a crucial document that introduces a project. 
             It explains what the project is, what it does, and why it exists.
           </p>
-          <p>
-            It also provides setup instructions and helps users understand, use,
+          <p>It also provides setup instructions and helps users understand, use, 
             or contribute to the project effectively.
           </p>
-          <nav aria-label="External resource about README files">
-            <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank" rel="noopener noreferrer">
+          <p>
+            <a href="https://docs.github.com/en/repositories/managing-your-repositorys-
+            settings-and-features/customizing-your-repository/about-readmes" 
+            target="_blank" rel="noopener noreferrer">
               Learn more about README files
             </a>
-          </nav>
+          </p>
         </article>
       </section>
 
-      <section class="wireframe-section">
+      <section aria-labelledby="wireframe-heading">
         <article>
           <figure>
             <img src="wireframe-image.png" alt="Image showing wireframe" />
             <figcaption>Fig 2 – Wireframe Image</figcaption>
           </figure>
-          <h2>Purpose of a Wireframe</h2>
+          <h2 id="wireframe-heading">Purpose of a Wireframe</h2>
           <p>
             A wireframe is a basic, two-dimensional visual representation of a web page, 
-            app interface or product layout. It depicts only functionality, not the true
-            style and visual elements of the final product.
+            app interface, or product layout. It depicts only functionality, 
+            not the true style and visual elements of the final product.
           </p>
-          <nav aria-label="External resource about wireframes">
-            <a href="https://www.productplan.com/glossary/wireframe/" target="_blank" rel="noopener noreferrer">
+          <p>
+            <a href="https://www.productplan.com/glossary/wireframe/" 
+            target="_blank" rel="noopener noreferrer">
               Learn more about wireframes
             </a>
-          </nav>
+          </p>
         </article>
       </section>
 
-      <section class="branch-section">
+      <section aria-labelledby="git-heading">
         <article>
           <figure>
             <img src="branch-in-git.png" alt="Diagram of Git branching structure" />
             <figcaption>Fig 3 – Git Branch Illustration</figcaption>
           </figure>
-          <h2>Explaining a Branch in Git</h2>
-          <p>
-            A branch in Git represents a separate line of development.
+          <h2 id="git-heading">Explaining a Branch in Git</h2>
+          <p>A branch in Git represents a separate line of development. 
             It’s a pointer to a snapshot of your project at a given time.
           </p>
-          <p>
-            As you commit on that branch, Git updates it to reflect your changes.
+          <p>As you commit on that branch, Git updates it to reflect your changes. 
             This allows isolated work on features or fixes before merging them into the main project.
           </p>
-          <nav aria-label="External resource about Git branches">
-            <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank" rel="noopener noreferrer">
+          <p>
+            <a href="https://git-scm.com/book/en/v2/Git-Branching-
+            Branches-in-a-Nutshell" target="_blank" rel="noopener noreferrer">
               Learn more about Git branches
             </a>
-          </nav>
+          </p>
         </article>
       </section>
     </main>
 
-    <footer role="contentinfo">
-      <p>
-        An exercise in the Code Your Future Self Learning Programme.
-      </p>
+    <footer>
+      <p>An Exercise in the Code Your Future Self Learning Programme.</p>
     </footer>
   </body>
 </html>
