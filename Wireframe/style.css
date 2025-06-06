@@ -109,12 +109,17 @@ header {
    color: #ffffff;
     
 }
+.Wireframe
+ {
+  border-color:  #2c3e50; ;
+}
+ 
+.git
+ {
+  border-color: #3498db;;
+}
 
-/* ====== Special Classes ====== */
-.Wireframe ,
-.git,
 .Readfile {
-    
-    border-color: black;
+  border-color: black;
 }
 
