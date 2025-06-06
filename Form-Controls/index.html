@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>T-shirt Form</title>
 </head>
+
 <body>
   <header>
     <h1>T-shirt Form</h1>
@@ -13,45 +15,58 @@
     <form method="get" aria-label="T-shirt Order Form">
       <h2>Please complete this form by confirming your name and selecting your T-shirt colour and size.</h2>
 
+
+      <!-- First Name -->
       <div>
         <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name" required required pattern="[A-Za-z\s'-]+" title="Please enter a valid first name (letters only)">
+        <input type="text" name="first-name" id="first-name" 
+               required pattern="[a-zA-Z]*" 
+               title="Please enter a valid first name using letters only. Numbers or special characters are not allowed.">
       </div>
 
       <br>
 
+      <!-- Last Name -->
       <div>
         <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name" required pattern= "[A-Za-z\s'-]+" title="Please enter a valid first name (letters only)">
+        <input type="text" name="last-name" id="last-name" 
+        required pattern="[a-zA-Z]*" 
+        title= "Please enter a valid first name using letters only. Numbers or special characters are not allowed.">
       </div>
 
+      <br>
+
+      <!-- Email -->
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required>
+      </div>
       <br>
 
       <div>
         <label for="email">Email Address</label>
         <input type="email" name="email" id="email" required>
       </div>
-
       <br>
 
       <fieldset>
-  <legend>Select a T-shirt Colour</legend>
+        <legend>Select a T-shirt Colour</legend>
 
-  <div>
-    <input type="radio" name="colour" id="colour-white" value="White">
-    <label for="colour-white">White</label>
-  </div>
+        <div>
+          <input type="radio" name="colour" id="colour-white" value="White">
+          <label for="colour-white">White</label>
+        </div>
 
-  <div>
-    <input type="radio" name="colour" id="colour-black" value="Black">
-    <label for="colour-black">Black</label>
-  </div>
+        <div>
+          <input type="radio" name="colour" id="colour-black" value="Black">
+          <label for="colour-black">Black</label>
+        </div>
 
-  <div>
-    <input type="radio" name="colour" id="colour-red" value="Red">
-    <label for="colour-red">Red</label>
-  </div>
-</fieldset>
+        <div>
+          <input type="radio" name="colour" id="colour-red" value="Red">
+          <label for="colour-red">Red</label>
+        </div>
+      </fieldset>
 
       <br>
 
@@ -73,9 +88,10 @@
       <button type="submit">Submit</button>
     </form>
   </main>
-    <footer>
-      
-      <h2>By MIRABEL ADOM</h2>
-    </footer>
-  </body>
+  <footer>
+
+    <h2>By MIRABEL ADOM</h2>
+  </footer>
+</body>
+
 </html>
