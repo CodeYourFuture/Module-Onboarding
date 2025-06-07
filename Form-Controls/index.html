@@ -11,8 +11,9 @@
       <fieldset>
         <legend>Customer Information</legend>
 
-        <label for="name">Full Name (min 2 characters):</label>
-        <input type="text" id="name" name="name" minlength="2" required />
+        <label for="name">Full Name (letters only, min 2 characters):</label>
+        <input type="text" id="name" name="name" pattern="[A-Za-z ]{2,}" title="Please enter at least 2 letters. Numbers and symbols are not allowed." required />
+
         <br><br>
 
         <label for="email">Email Address:</label>
@@ -33,14 +34,33 @@
       <br>
 
       <fieldset>
-        <legend>Select a T-Shirt Size</legend>
-        <label><input type="radio" name="size" value="XS" required> XS</label><br>
-        <label><input type="radio" name="size" value="S"> S</label><br>
-        <label><input type="radio" name="size" value="M"> M</label><br>
-        <label><input type="radio" name="size" value="L"> L</label><br>
-        <label><input type="radio" name="size" value="XL"> XL</label><br>
-        <label><input type="radio" name="size" value="XXL"> XXL</label>
-      </fieldset>
+  <legend>Select a T-Shirt Size</legend>
+
+  <label style="display: inline-block; min-height: 44px;">
+    <input type="radio" name="size" value="XS" required> XS
+  </label><br>
+
+  <label style="display: inline-block; min-height: 44px;">
+    <input type="radio" name="size" value="S"> S
+  </label><br>
+
+  <label style="display: inline-block; min-height: 44px;">
+    <input type="radio" name="size" value="M"> M
+  </label><br>
+
+  <label style="display: inline-block; min-height: 44px;">
+    <input type="radio" name="size" value="L"> L
+  </label><br>
+
+  <label style="display: inline-block; min-height: 44px;">
+    <input type="radio" name="size" value="XL"> XL
+  </label><br>
+
+  <label style="display: inline-block; min-height: 44px;">
+    <input type="radio" name="size" value="XXL"> XXL
+  </label>
+</fieldset>
+
       <br>
       <button type="submit">Submit Order</button>
     </form>
