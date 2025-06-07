@@ -9,10 +9,8 @@
 </head>
 
 <body>
-  <a href="#main-content"
-    style="position: absolute; top: -40px; left: 0; background: #000; color: white; padding: 8px;">Skip to main
-    content</a>
-
+  <a href="#main-content" style="position: absolute; top: -40px; left: 0; background: #000; color: white; padding: 8px;">Skip to main content</a>
+  
   <header>
     <h1>T-shirt Order Form</h1>
   </header>
@@ -20,7 +18,7 @@
   <main id="main-content">
     <form method="get">
       <h2 id="form-title">T-shirt Order Details</h2>
-
+      
       <section aria-labelledby="form-instructions">
         <p id="form-instructions">
           Please complete this form by confirming your name and selecting your T-shirt colour and size.
@@ -30,23 +28,25 @@
 
       <fieldset>
         <legend>Personal Information</legend>
-
+        
         <div>
           <label for="first-name">
             First Name <span aria-hidden="true">*</span>
             <span hidden>(required)</span>
           </label>
-          <input type="text" name="first-name" id="first-name" required aria-required="true" pattern="[a-zA-Z\- ]+"
-            title="Letters, spaces, and hyphens only" aria-describedby="first-name-help">
-        </div>
+          <input type="text" name="first-name" id="first-name" required aria-required="true"
+            pattern="[a-zA-Z\- ]+" title="Letters, spaces, and hyphens only"
+            aria-describedby="first-name-help">
+         </div>
 
         <div>
           <label for="last-name">
             Last Name <span aria-hidden="true">*</span>
             <span hidden>(required)</span>
           </label>
-          <input type="text" name="last-name" id="last-name" required aria-required="true" pattern="[a-zA-Z\- ]+"
-            title="Letters, spaces, and hyphens only" aria-describedby="last-name-help">
+          <input type="text" name="last-name" id="last-name" required aria-required="true"
+            pattern="[a-zA-Z\- ]+" title="Letters, spaces, and hyphens only"
+            aria-describedby="last-name-help">
         </div>
 
         <div>
@@ -54,7 +54,8 @@
             Email Address <span aria-hidden="true">*</span>
             <span hidden>(required)</span>
           </label>
-          <input type="email" name="email" id="email" required aria-required="true" aria-describedby="email-help">
+          <input type="email" name="email" id="email" required aria-required="true"
+            aria-describedby="email-help">
           <p id="email-help">We'll send your order confirmation to this address</p>
         </div>
       </fieldset>
@@ -64,19 +65,18 @@
           T-shirt Color <span aria-hidden="true">*</span>
           <span hidden>(required)</span>
         </legend>
-
+        
         <div role="radiogroup" aria-required="true" style="display: grid; gap: 16px;">
           <label for="colour-white" style="display: block; padding: 12px; border: 1px solid #ddd;">
-            <input type="radio" name="colour" id="colour-white" value="White" required aria-required="true"
-              style="margin-right: 8px;">
+            <input type="radio" name="colour" id="colour-white" value="White" required aria-required="true" style="margin-right: 8px;">
             White
           </label>
-
+          
           <label for="colour-black" style="display: block; padding: 12px; border: 1px solid #ddd;">
             <input type="radio" name="colour" id="colour-black" value="Black" style="margin-right: 8px;">
             Black
           </label>
-
+          
           <label for="colour-red" style="display: block; padding: 12px; border: 1px solid #ddd;">
             <input type="radio" name="colour" id="colour-red" value="Red" style="margin-right: 8px;">
             Red
@@ -89,7 +89,8 @@
           T-shirt Size <span aria-hidden="true">*</span>
           <span hidden>(required)</span>
         </label>
-        <select name="size" id="size" required aria-required="true" aria-describedby="size-help">
+        <select name="size" id="size" required aria-required="true"
+          aria-describedby="size-help">
           <option value="">-- Please choose a size --</option>
           <option value="XS">Extra Small (XS)</option>
           <option value="S">Small (S)</option>
@@ -108,8 +109,8 @@
     </form>
   </main>
 
-  footer>
-  <h2>Mirabel Adom</h2>
+  <footer>
+    <h2>Mirabel Adom</h2>
   </footer>
 </body>
 
@@ -118,3 +119,5 @@
 </body>
 
 </html>
+
+ 
