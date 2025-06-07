@@ -46,6 +46,16 @@ main {
   margin-bottom: 10px;
 }
 
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: 15px solid black; /* ← This is the key change */
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .bottom-row {
