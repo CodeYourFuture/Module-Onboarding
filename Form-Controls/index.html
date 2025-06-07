@@ -3,66 +3,75 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>T-shirt Form</title>
+  <title>T-shirt Order Form</title>
 </head>
 
 <body>
   <header>
-    <h1>T-shirt Form</h1>
+    <h1>T-shirt Order Form</h1>
   </header>
 
   <main>
-    <form method="get" aria-label="T-shirt Order Form">
-      <h2>Please complete this form by confirming your name and selecting your T-shirt colour and size.</h2>
+    <form method="get" aria-labelledby="form-heading">
+      <h2 id="form-heading">Complete the form to order your T-shirt</h2>
+      <p id="form-instructions">All fields marked with an asterisk (*) are required.</p>
 
+      <!-- First Name -->
       <div>
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name" required aria-required="true" pattern="[a-zA-Z]*"
-          title="Please enter a valid last name using letters only. Numbers or special characters are not allowed.">
+        <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+        <input type="text" name="first-name" id="first-name" required aria-required="true"
+          aria-describedby="first-name-desc" pattern="[a-zA-Z]*"
+          title="Please enter a valid first name using letters only.">
+        <span id="first-name-desc" class="sr-only">Letters only, no numbers or special characters.</span>
       </div>
 
       <br>
 
+      <!-- Last Name -->
       <div>
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name" required aria-required="true" pattern="[a-zA-Z]*"
-          title="Please enter a valid last name using letters only. Numbers or special characters are not allowed.">
+        <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+        <input type="text" name="last-name" id="last-name" required aria-required="true"
+          aria-describedby="last-name-desc" pattern="[a-zA-Z]*"
+          title="Please enter a valid last name using letters only.">
+        <span id="last-name-desc" class="sr-only">Letters only, no numbers or special characters.</span>
       </div>
 
       <br>
 
-
+      <!-- Email -->
       <div>
-        <label for="email">Email Address<span aria-hidden="true">*</span></label>
+        <label for="email">Email Address <span aria-hidden="true">*</span></label>
         <input type="email" name="email" id="email" required aria-required="true">
       </div>
 
       <br>
 
-      <fieldset>
-        <legend>Select a T-shirt Colour</legend>
+      <!-- T-shirt Colour -->
+      <fieldset aria-labelledby="colour-legend">
+        <legend id="colour-legend">Select a T-shirt Colour <span aria-hidden="true">*</span></legend>
 
         <div>
-          <input type="radio" name="colour" id="colour-white-1" value="White">
-          <label for="colour-white-1">White</label>
+          <input type="radio" name="colour" id="colour-white" value="White" required aria-required="true">
+          <label for="colour-white">White</label>
         </div>
 
         <div>
-          <input type="radio" name="colour" id="colour-black-1" value="Black">
-          <label for="colour-black-1">Black</label>
+          <input type="radio" name="colour" id="colour-black" value="Black">
+          <label for="colour-black">Black</label>
         </div>
 
         <div>
-          <input type="radio" name="colour" id="colour-red-1" value="Red">
-          <label for="colour-red-1">Red</label>
+          <input type="radio" name="colour" id="colour-red" value="Red">
+          <label for="colour-red">Red</label>
         </div>
       </fieldset>
 
       <br>
 
+      <!-- T-shirt Size -->
       <div>
-        <label for="size">Select a T-shirt Size</label>
-        <select name="size" id="size" required>
+        <label for="size">Select a T-shirt Size <span aria-hidden="true">*</span></label>
+        <select name="size" id="size" required aria-required="true">
           <option value="">-- Please choose a size --</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
@@ -82,33 +91,6 @@
   <footer>
     <h2>Mirabel Adom</h2>
   </footer>
-</body>
-
-</html>
-<br>
-
-<div>
-  <label for="size">Select a T-shirt Size</label>
-  <select name="size" id="size" required>
-    <option value="">-- Please choose a size --</option>
-    <option value="XS">XS</option>
-    <option value="S">S</option>
-    <option value="M">M</option>
-    <option value="L">L</option>
-    <option value="XL">XL</option>
-    <option value="XXL">XXL</option>
-  </select>
-</div>
-
-<br>
-
-<button type="submit">Submit</button>
-</form>
-</main>
-<footer>
-
-  <h2>Mirabel Adom</h2>
-</footer>
 </body>
 
 </html>
