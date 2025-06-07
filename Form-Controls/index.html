@@ -14,7 +14,8 @@
     <form action="/my-handling-form-page" method="post" aria-label="T-shirt selection form">
       <div class="form-group">
         <label for="name">Enter your name:</label>
-        <input type="text" id="name" name="user_name" required aria-required="true" />
+        <input type="text" id="name" name="user_name" required aria-required="true" pattern=".*\S.*"
+        title="Name must contain at least one non-space character"/>
       </div>
 
       <div class="form-group">
