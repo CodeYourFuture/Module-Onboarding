@@ -1,33 +1,38 @@
-# 🤝 Welcome to your Onboarding Module
+# Wireframe
 
-## 🔑 Do the prep
+![Wireframe](./wireframe.png)
 
-Before you try to complete the work in this repo, go to your curriculum and work through the prep. The prep shows you how to complete the work in this repo. Start with the prep.
+Using the provided wireframe and resources, write a new webpage explaining:
 
-Your workflow should always be:
+1. What is the purpose of a README file?
+1. What is the purpose of a wireframe?
+1. What is a branch in Git?
 
-```mermaid
-graph LR
-    Begin[Prep]:::green --> Next[Backlog] --> Attend[Class] --> Evaluate[Success] --> Begin
+There are some provided HTML and CSS files you can use to get started. You can use these files as a starting point or create your own files from scratch. You _must_ modify the HTML and CSS files to meet the acceptance criteria and you must check this criteria yourself before you submit your work.
 
-    classDef green fill:#90EE90,color:black
-```
+## Learning Objectives
 
-### 🥁 Rhythm of the Week
+<!--{{<objectives>}}>-->
 
-Get into a rhythm of working through the coursework:
+- [ ] Use semantic HTML tags to structure the webpage
+- [ ] Create three articles, each including a title, summary, and a link
+- [ ] Check a webpage against a wireframe layout
+- [ ] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
+- [ ] Use version control by committing often and pushing regularly to GitHub
+<!--{{</objectives>}}>-->
 
-```mermaid
-graph LR
-    Tuesday[Prep] --> Wednesday[Backlog] --> Friday[Demo] --> Saturday[Class] --> Sunday/Monday[Review] --> Tuesday
-```
+## Acceptance Criteria
 
-## 📅 Planning and managing your work
+- [ ] Semantic HTML tags are used to structure the webpage.
+- [ ] The page scores 100 for Accessibility in the Lighthouse audit.
+- [ ] The page header includes a title and description.
+- [ ] The articles section has three unique articles, each including a title, summary, and a link.
+- [ ] The page footer is fixed to the bottom of the viewport.
+- [ ] The webpage is styled using a linked .css file.
+- [ ] The webpage is properly committed and pushed to a branch on GitHub.
 
-All the coursework is listed as issues on this repo. These issues are mirrored on your curriculum backlog page.
+## Resources
 
-You will copy these issues to your Coursework Planner, which is one repo that will hold all your coursework and assignments for the entire course.
-
-If you do not already have your own Coursework Planner, set one up now:
-
-https://github.com/CodeYourFuture/Coursework-Planner
+- [Wireframe](https://www.productplan.com/glossary/wireframe/)
+- [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
