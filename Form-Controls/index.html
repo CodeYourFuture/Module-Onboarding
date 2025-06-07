@@ -18,12 +18,11 @@
           <input type="text" name="name" id="name" placeholder="Your Name" minlength="2" required pattern=".*\S.*"> <br><br>
         </div>
 
-        <div> 
-         <label for="email">Email</label>    
-         <input type="email" name="Email"id="Email" placeholder="Your Email" required><br><br>
-        </div> 
-
         <div>
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" placeholder="Your Email" required><br><br>
+</div> 
+div>
             <label for="color">T-shirt Color</label>
             <select id="color" name="tshirt_color" required> 
               <option value="" disabled selected>Select a color</option>
@@ -34,21 +33,22 @@
 
             </select> <br><br>
         </div>
-          <div>
-              <label for="size">tshirt_size</label>
-              <select id="size" name="T-shirt Color" required> 
-              <option value="" disabled selected>Select size</option>
-               <option value="XS">XS</option>
-               <option value="S">S</option>
-               <option value="M">M</option>
-               <option value="L">L</option>
-               <option value="XL">XL</option>
-               <option value="XXL">XXL</option>
-              </select><br><br>
-           </div>
-         <button>Submit</button>
-          
-        
+
+        <div>
+          <label for="size">T-shirt Size</label>
+          <select id="size" name="tshirt_size" required> 
+           <option value="" disabled selected>Select size</option>
+           <option value="XS">XS</option>
+           <option value="S">S</option>
+           <option value="M">M</option>
+           <option value="L">L</option>
+           <option value="XL">XL</option>
+           <option value="XXL">XXL</option>
+         </select><br><br>
+       </div>
+     <button type="submit">Submit</button>
+
+
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
