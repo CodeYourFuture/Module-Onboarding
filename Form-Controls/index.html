@@ -13,7 +13,7 @@
     </header>
     <main>
       <form>
-          <!--This requires a minimum of two characters-->        <label for="name">Full Name</label>
+          <!--This requires a minimum of two characters-->        <label for="name">Full Name:</label>
         <div>
          <input type="text" name="name" id="name" placeholder="Enter your full name" minlength="2" required >
         </div>
@@ -21,13 +21,15 @@
          <!--This field requires a valid email address-->
           <label for="email">Email Address:</label>
           <div>
-          <input type="email" name="email" id="email" placeholder="name@example.com" required >
+            <input type="email" name="email" id="email" placeholder="name@example.com" required >
         </div>
         <br>
          <!--This field requires selecting a color from three options-->
           <div>
-          <label for="colour">Select T-shirt color:</label>
+            <label for="colour">Select T-shirt color:</label>
+             <br>
             <select name="colour" id="colour" required>
+              <option value="" disabled selected >Select Colour:</option>
               <option value="Green">Green</option>
               <option value="Black">Black</option>
               <option value="Red">Red</option>
@@ -38,7 +40,7 @@
           <label for="size">Select T-shirt Size:</label>
         <div>
           <select name="size" id="size" required>
-          <option value="" disabled selected>Select a size:</option>
+          <option value="" disabled selected >Select a size:</option>
           <option label="XS" value="XS">XS</option>
           <option label="S" value="S">S</option>
           <option label="M" value="M">M</option>
