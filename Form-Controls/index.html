@@ -9,115 +9,114 @@
 </head>
 
 <body>
-  <a href="#main-content" style="position: absolute; top: -40px; left: 0; background: #000; color: white; padding: 8px;">Skip to main content</a>
-  
   <header>
     <h1>T-shirt Order Form</h1>
   </header>
 
-  <main id="main-content">
+  <main>
     <form method="get">
-      <h2 id="form-title">T-shirt Order Details</h2>
-      
-      <section aria-labelledby="form-instructions">
-        <p id="form-instructions">
+      <div aria-labelledby="form-instructions-heading form-instructions-text">
+        <h2 id="form-instructions-heading">Order Instructions</h2>
+        <p id="form-instructions-text">
           Please complete this form by confirming your name and selecting your T-shirt colour and size.
           All fields marked with an asterisk (<span aria-hidden="true">*</span>) are required.
         </p>
-      </section>
+      </div>
 
       <fieldset>
-        <legend>Personal Information</legend>
-        
+        <legend>
+          <h2>Personal Information</h2>
+        </legend>
+
         <div>
           <label for="first-name">
             First Name <span aria-hidden="true">*</span>
             <span hidden>(required)</span>
           </label>
-          <input type="text" name="first-name" id="first-name" required aria-required="true"
-            pattern="[a-zA-Z\- ]+" title="Letters, spaces, and hyphens only"
-            aria-describedby="first-name-help">
-         </div>
+          <input type="text" name="first-name" id="first-name" required pattern="^[^\d]*$"
+            title="Numbers are not allowed in names" aria-describedby="first-name-help first-name-error"
+            oninput="this.value=this.value.replace(/[0-9]/g,'')">
+          <span id="first-name-help" hidden>First name help text</span>
+          <span id="first-name-error" role="alert" hidden>Error: Numbers are not allowed in names</span>
+        </div>
+
+        <br>
 
         <div>
           <label for="last-name">
             Last Name <span aria-hidden="true">*</span>
             <span hidden>(required)</span>
           </label>
-          <input type="text" name="last-name" id="last-name" required aria-required="true"
-            pattern="[a-zA-Z\- ]+" title="Letters, spaces, and hyphens only"
-            aria-describedby="last-name-help">
+          <input type="text" name="last-name" id="last-name" required pattern="^[^\d]*$"
+            title="Numbers are not allowed in names" aria-describedby="last-name-help last-name-error"
+            oninput="this.value=this.value.replace(/[0-9]/g,'')">
+          <span id="last-name-help" hidden>Last name help text</span>
+          <span id="last-name-error" role="alert" hidden>Error: Numbers are not allowed in names</span>
         </div>
+
+        <br>
 
         <div>
           <label for="email">
             Email Address <span aria-hidden="true">*</span>
             <span hidden>(required)</span>
           </label>
-          <input type="email" name="email" id="email" required aria-required="true"
-            aria-describedby="email-help">
-          <p id="email-help">We'll send your order confirmation to this address</p>
+          <input type="email" name="email" id="email" required>
         </div>
       </fieldset>
 
       <fieldset>
         <legend>
-          T-shirt Color <span aria-hidden="true">*</span>
-          <span hidden>(required)</span>
+          <h2>T-shirt Colours</h2>
         </legend>
-        
-        <div role="radiogroup" aria-required="true" style="display: grid; gap: 16px;">
-          <label for="colour-white" style="display: block; padding: 12px; border: 1px solid #ddd;">
-            <input type="radio" name="colour" id="colour-white" value="White" required aria-required="true" style="margin-right: 8px;">
+
+        <div role="radiogroup" aria-required="true">
+          <h3 id="color-heading">Options <span aria-hidden="true">*</span></h3>
+          <label aria-labelledby="color-heading">
+            <input type="radio" name="colour" value="White" required>
             White
           </label>
-          
-          <label for="colour-black" style="display: block; padding: 12px; border: 1px solid #ddd;">
-            <input type="radio" name="colour" id="colour-black" value="Black" style="margin-right: 8px;">
+          <label aria-labelledby="color-heading">
+            <input type="radio" name="colour" value="Black">
             Black
           </label>
-          
-          <label for="colour-red" style="display: block; padding: 12px; border: 1px solid #ddd;">
-            <input type="radio" name="colour" id="colour-red" value="Red" style="margin-right: 8px;">
+          <label aria-labelledby="color-heading">
+            <input type="radio" name="colour" value="Red">
             Red
           </label>
         </div>
+
+        <br>
+
+        <div>
+          <label for="size">
+            T-shirt Size <span aria-hidden="true">*</span>
+            <span hidden>(required)</span>
+          </label>
+          <select name="size" id="size" required>
+            <option value="">-- Please choose a size --</option>
+            <option value="XS">Extra Small (XS)</option>
+            <option value="S">Small (S)</option>
+            <option value="M">Medium (M)</option>
+            <option value="L">Large (L)</option>
+            <option value="XL">Extra Large (XL)</option>
+            <option value="XXL">Double Extra Large (XXL)</option>
+          </select>
+        </div>
       </fieldset>
 
-      <div>
-        <label for="size">
-          T-shirt Size <span aria-hidden="true">*</span>
-          <span hidden>(required)</span>
-        </label>
-        <select name="size" id="size" required aria-required="true"
-          aria-describedby="size-help">
-          <option value="">-- Please choose a size --</option>
-          <option value="XS">Extra Small (XS)</option>
-          <option value="S">Small (S)</option>
-          <option value="M">Medium (M)</option>
-          <option value="L">Large (L)</option>
-          <option value="XL">Extra Large (XL)</option>
-          <option value="XXL">Double Extra Large (XXL)</option>
-        </select>
-        <p id="size-help">See our size guide for measurements</p>
-      </div>
+      <br>
 
       <div>
-        <button type="submit" style="padding: 12px 24px; margin-right: 8px;">Submit Order</button>
-        <button type="reset" style="padding: 12px 24px;">Clear Form</button>
+        <button type="submit">Submit Order</button>
+        <button type="reset">Clear Form</button>
       </div>
     </form>
   </main>
 
   <footer>
-     <h2>Mirabel Adom</h2>
+    <h2>Mirabel Adom</h2>
   </footer>
 </body>
 
 </html>
-</footer>
-</body>
-
-</html>
-
- 
