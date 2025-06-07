@@ -13,62 +13,96 @@
 
   <main>
     <form action="/my-handling-form-page" method="post" aria-label="T-shirt selection form">
-      <div class="form-group">
-        <label for="name">Enter your name:</label>
+      <div>
+        <label for="name">Enter your name:</label><br>
         <input type="text" id="name" name="user_name" required aria-required="true" pattern=".*\S.*"
         title="Name must contain at least one non-space character">
       </div>
 
-      <div class="form-group">
-        <br><label for="mail">Enter your email:</label>
+      <br>
+
+      <div>
+        <label for="mail">Enter your email:</label><br>
         <input type="email" id="mail" name="user_email" required aria-required="true">
       </div>
 
-      <br> <fieldset>
-        <legend>What colour T-shirt would you like?</legend> 
+      <br>
+
+      <fieldset>
+        <legend>What colour T-shirt would you like?</legend>
         <div>
-          <input type="radio" id="black" name="colour" value="Black" required>
-          <label for="black">Black</label>
+          <label for="black">
+            <input type="radio" id="black" name="colour" value="Black" required>
+            Black
+          </label>
         </div>
+        <br>
         <div>
-          <input type="radio" id="white" name="colour" value="White">
-          <label for="white">White</label>
+          <label for="white">
+            <input type="radio" id="white" name="colour" value="White">
+            White
+          </label>
         </div>
+        <br>
         <div>
-          <input type="radio" id="grey" name="colour" value="Grey">
-          <label for="grey">Grey</label>
+          <label for="grey">
+            <input type="radio" id="grey" name="colour" value="Grey">
+            Grey
+          </label>
         </div>
       </fieldset>
 
-      <br> <fieldset>
+      <br>
+
+      <fieldset>
         <legend>What size do you want?</legend>
+
         <div>
-          <input type="radio" id="size-xs" name="size" value="XS" required>
-          <label for="size-xs">XS</label>
+          <label for="size-xs">
+            <input type="radio" id="size-xs" name="size" value="XS" required>
+            XS
+          </label>
         </div>
+        <br>
         <div>
-          <input type="radio" id="size-s" name="size" value="S">
-          <label for="size-s">S</label>
+          <label for="size-s">
+            <input type="radio" id="size-s" name="size" value="S">
+            S
+          </label>
         </div>
+        <br>
         <div>
-          <input type="radio" id="size-m" name="size" value="M">
-          <label for="size-m">M</label>
+          <label for="size-m">
+            <input type="radio" id="size-m" name="size" value="M">
+            M
+          </label>
         </div>
+        <br>
         <div>
-          <input type="radio" id="size-l" name="size" value="L">
-          <label for="size-l">L</label>
+          <label for="size-l">
+            <input type="radio" id="size-l" name="size" value="L">
+            L
+          </label>
         </div>
+        <br>
         <div>
-          <input type="radio" id="size-xl" name="size" value="XL">
-          <label for="size-xl">XL</label>
+          <label for="size-xl">
+            <input type="radio" id="size-xl" name="size" value="XL">
+            XL
+          </label>
         </div>
+        <br>
         <div>
-          <input type="radio" id="size-xxl" name="size" value="XXL">
-          <label for="size-xxl">XXL</label>
+          <label for="size-xxl">
+            <input type="radio" id="size-xxl" name="size" value="XXL">
+            XXL
+          </label>
         </div>
       </fieldset>
 
-      <br> <div class="form-group">
+      <br>
+
+      <div>
         <button type="submit" aria-label="Submit your T-shirt selection">Submit</button>
       </div>
     </form>
