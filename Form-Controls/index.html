@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="A product selection form to collect customer preferences and delivery details." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
    
   </head>
@@ -26,10 +26,9 @@
             pattern="[A-Za-z\s]{2,}"
             required
             title="Please enter your full name with at least two letters."
-            requuired
              />
 
-            <label for="email">Email: </label>
+            <label for="mail">Email: </label>
             <input
             type="email"
             id="mail"
@@ -88,16 +87,18 @@
         <section>
           <fieldset>
             <legend>Choose Size</legend>
-            <label for="size">Size: </label>
+            <label for="size">
+              Size: 
             <select id="size" name="size" required>
               <option value="" disabled selected>Select a size</option>
-              <option value="small">Extra Small</option>
-               <option value="small">Small</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-              <option value="large">Extra Large</option>
-              <option value="large">Extra Extra Large</option>
+              <option value="xs">Extra Small</option>
+              <option value="s">Small</option>
+              <option value="m">Medium</option>
+              <option value="l">Large</option>
+              <option value="xl">Extra Large</option>
+              <option value="xxl">Extra Extra Large</option>
             </select>
+            </label>
           </fieldset>
         </section>
         <section>
