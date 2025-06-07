@@ -38,7 +38,6 @@
           </label>
           <input type="text" name="first-name" id="first-name" required aria-required="true" pattern="[a-zA-Z\- ]+"
             title="Letters, spaces, and hyphens only" aria-describedby="first-name-help">
-          <p id="first-name-help">Enter your first name using letters only</p>
         </div>
 
         <div>
@@ -48,7 +47,6 @@
           </label>
           <input type="text" name="last-name" id="last-name" required aria-required="true" pattern="[a-zA-Z\- ]+"
             title="Letters, spaces, and hyphens only" aria-describedby="last-name-help">
-          <p id="last-name-help">Enter your last name using letters only</p>
         </div>
 
         <div>
@@ -67,21 +65,22 @@
           <span hidden>(required)</span>
         </legend>
 
-        <div role="radiogroup" aria-required="true">
-          <div>
-            <input type="radio" name="colour" id="colour-white" value="White" required aria-required="true">
-            <label for="colour-white">White</label>
-          </div>
+        <div role="radiogroup" aria-required="true" style="display: grid; gap: 16px;">
+          <label for="colour-white" style="display: block; padding: 12px; border: 1px solid #ddd;">
+            <input type="radio" name="colour" id="colour-white" value="White" required aria-required="true"
+              style="margin-right: 8px;">
+            White
+          </label>
 
-          <div>
-            <input type="radio" name="colour" id="colour-black" value="Black">
-            <label for="colour-black">Black</label>
-          </div>
+          <label for="colour-black" style="display: block; padding: 12px; border: 1px solid #ddd;">
+            <input type="radio" name="colour" id="colour-black" value="Black" style="margin-right: 8px;">
+            Black
+          </label>
 
-          <div>
-            <input type="radio" name="colour" id="colour-red" value="Red">
-            <label for="colour-red">Red</label>
-          </div>
+          <label for="colour-red" style="display: block; padding: 12px; border: 1px solid #ddd;">
+            <input type="radio" name="colour" id="colour-red" value="Red" style="margin-right: 8px;">
+            Red
+          </label>
         </div>
       </fieldset>
 
@@ -103,14 +102,14 @@
       </div>
 
       <div>
-        <button type="submit">Submit Order</button>
-        <button type="reset">Clear Form</button>
+        <button type="submit" style="padding: 12px 24px; margin-right: 8px;">Submit Order</button>
+        <button type="reset" style="padding: 12px 24px;">Clear Form</button>
       </div>
     </form>
   </main>
 
-  <footer>
-    <h2>Mirabel Adom</h2>
+  footer>
+  <h2>Mirabel Adom</h2>
   </footer>
 </body>
 
