@@ -20,7 +20,6 @@
         <label for="first-name">First Name <span aria-hidden="true">*</span></label>
         <input type="text" name="first-name" id="first-name" required aria-required="true" aria-describedby="first-name-desc"
           pattern="[a-zA-Z]*" title="Please enter a valid first name using letters only.">
-        <span id="first-name-desc" class="sr-only">Letters only, no numbers or special characters.</span>
       </div>
 
       <br>
@@ -29,7 +28,7 @@
         <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
         <input type="text" name="last-name" id="last-name" required aria-required="true" aria-describedby="last-name-desc"
           pattern="[a-zA-Z]*" title="Please enter a valid last name using letters only.">
-        <span id="last-name-desc" class="sr-only">Letters only, no numbers or special characters.</span>
+        
       </div>
 
       <br>
@@ -42,22 +41,24 @@
 
       <br>
 
-      <fieldset>
-        <legend>Select a T-shirt Colour</legend>
+         <fieldset aria-labelledby="colour-legend">
+        <legend id="colour-legend">Select a T-shirt Colour <span aria-hidden="true">*</span></legend>
 
-        <div>
-          <input type="radio" name="colour" id="colour-white" value="White">
-          <label for="colour-white">White</label>
-        </div>
+        <div class="radio-group">
+          <label class="radio-option" for="colour-white">
+            <input type="radio" name="colour" id="colour-white" value="White" required aria-required="true">
+            White
+          </label>
 
-        <div>
-          <input type="radio" name="colour" id="colour-black" value="Black">
-          <label for="colour-black">Black</label>
-        </div>
+          <label class="radio-option" for="colour-black">
+            <input type="radio" name="colour" id="colour-black" value="Black">
+            Black
+          </label>
 
-        <div>
-          <input type="radio" name="colour" id="colour-red" value="Red">
-          <label for="colour-red">Red</label>
+          <label class="radio-option" for="colour-red">
+            <input type="radio" name="colour" id="colour-red" value="Red">
+            Red
+          </label>
         </div>
       </fieldset>
 
