@@ -2,31 +2,31 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fff;
+  color: #000;
 }
 
 header,
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #e0e0e0;
 }
 
 main {
   padding: 20px;
 }
 
-/* Article styling */
 .article1,
 .article2,
 .article3 {
-  border: 15px solid blue;
+  border: 2px solid #00008b; /* Dark blue for contrast */
   padding: 15px;
   margin-bottom: 20px;
-  background-color: white;
+  background-color: #ffffff;
   box-sizing: border-box;
 }
 
-/* Layout for bottom two articles */
 .bottom-row {
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +39,6 @@ main {
   min-width: 300px;
 }
 
-/* Make image fit container */
 .full-width-image {
   width: 100%;
   height: auto;
@@ -48,16 +47,26 @@ main {
 }
 
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #000;
+  color: #fff;
   text-align: center;
   padding: 20px;
   margin-top: 20px;
   box-sizing: border-box;
-  border: 15px solid black; /* ← This is the key change */
+  border: 2px solid #fff;
 }
 
-/* Responsive design */
+a {
+  color: #0645AD;
+  text-decoration: underline;
+}
+
+a:focus,
+a:hover {
+  outline: 2px dashed #000;
+  outline-offset: 2px;
+}
+
 @media (max-width: 768px) {
   .bottom-row {
     flex-direction: column;
