@@ -3,89 +3,119 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>T-shirt Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-shirt Order Form</title>
+  <meta name="description" content="Order your custom T-shirt by selecting color and size">
 </head>
 
 <body>
+  <a href="#main-content"
+    style="position: absolute; top: -40px; left: 0; background: #000; color: white; padding: 8px;">Skip to main
+    content</a>
+
   <header>
-    <h1>T-shirt Form</h1>
+    <h1>T-shirt Order Form</h1>
   </header>
 
-  <main>
-    <form method="get" aria-label="T-shirt Order Form">
-      <h2>Please complete this form by confirming your name and selecting your T-shirt colour and size.</h2>
-       <p id="form-instructions">All fields marked with an asterisk (*) are required.</p>
+  <main id="main-content">
+    <form method="get">
+      <h2 id="form-title">T-shirt Order Details</h2>
 
-     <div>
-        <label for="first-name">First Name <span aria-hidden="true">*</span></label>
-        <input type="text" name="first-name" id="first-name" required aria-required="true" aria-describedby="first-name-desc"
-          pattern="[a-zA-Z]*" title="Please enter a valid first name using letters only.">
-      </div>
+      <section aria-labelledby="form-instructions">
+        <p id="form-instructions">
+          Please complete this form by confirming your name and selecting your T-shirt colour and size.
+          All fields marked with an asterisk (<span aria-hidden="true">*</span>) are required.
+        </p>
+      </section>
 
-      <br>
+      <fieldset>
+        <legend>Personal Information</legend>
 
-         <div>
-        <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
-        <input type="text" name="last-name" id="last-name" required aria-required="true" aria-describedby="last-name-desc"
-          pattern="[a-zA-Z]*" title="Please enter a valid last name using letters only.">
-        
-      </div>
-
-      <br>
-
-
-      <div>
-        <label for="email">Email Address<span aria-hidden="true">*</span></label>
-        <input type="email" name="email" id="email" required aria-required="true">
-      </div>
-
-      <br>
-
-         <fieldset aria-labelledby="colour-legend">
-        <legend id="colour-legend">Select a T-shirt Colour <span aria-hidden="true">*</span></legend>
-
-        <div class="radio-group">
-          <label class="radio-option" for="colour-white">
-            <input type="radio" name="colour" id="colour-white" value="White" required aria-required="true">
-            White
+        <div>
+          <label for="first-name">
+            First Name <span aria-hidden="true">*</span>
+            <span hidden>(required)</span>
           </label>
+          <input type="text" name="first-name" id="first-name" required aria-required="true" pattern="[a-zA-Z\- ]+"
+            title="Letters, spaces, and hyphens only" aria-describedby="first-name-help">
+          <p id="first-name-help">Enter your first name using letters only</p>
+        </div>
 
-          <label class="radio-option" for="colour-black">
-            <input type="radio" name="colour" id="colour-black" value="Black">
-            Black
+        <div>
+          <label for="last-name">
+            Last Name <span aria-hidden="true">*</span>
+            <span hidden>(required)</span>
           </label>
+          <input type="text" name="last-name" id="last-name" required aria-required="true" pattern="[a-zA-Z\- ]+"
+            title="Letters, spaces, and hyphens only" aria-describedby="last-name-help">
+          <p id="last-name-help">Enter your last name using letters only</p>
+        </div>
 
-          <label class="radio-option" for="colour-red">
-            <input type="radio" name="colour" id="colour-red" value="Red">
-            Red
+        <div>
+          <label for="email">
+            Email Address <span aria-hidden="true">*</span>
+            <span hidden>(required)</span>
           </label>
+          <input type="email" name="email" id="email" required aria-required="true" aria-describedby="email-help">
+          <p id="email-help">We'll send your order confirmation to this address</p>
         </div>
       </fieldset>
 
-      <br>
+      <fieldset>
+        <legend>
+          T-shirt Color <span aria-hidden="true">*</span>
+          <span hidden>(required)</span>
+        </legend>
+
+        <div role="radiogroup" aria-required="true">
+          <div>
+            <input type="radio" name="colour" id="colour-white" value="White" required aria-required="true">
+            <label for="colour-white">White</label>
+          </div>
+
+          <div>
+            <input type="radio" name="colour" id="colour-black" value="Black">
+            <label for="colour-black">Black</label>
+          </div>
+
+          <div>
+            <input type="radio" name="colour" id="colour-red" value="Red">
+            <label for="colour-red">Red</label>
+          </div>
+        </div>
+      </fieldset>
 
       <div>
-        <label for="size">Select a T-shirt Size</label>
-        <select name="size" id="size" required>
+        <label for="size">
+          T-shirt Size <span aria-hidden="true">*</span>
+          <span hidden>(required)</span>
+        </label>
+        <select name="size" id="size" required aria-required="true" aria-describedby="size-help">
           <option value="">-- Please choose a size --</option>
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
+          <option value="XS">Extra Small (XS)</option>
+          <option value="S">Small (S)</option>
+          <option value="M">Medium (M)</option>
+          <option value="L">Large (L)</option>
+          <option value="XL">Extra Large (XL)</option>
+          <option value="XXL">Double Extra Large (XXL)</option>
         </select>
+        <p id="size-help">See our size guide for measurements</p>
       </div>
 
-      <br>
-
-      <button type="submit">Submit</button>
+      <div>
+        <button type="submit">Submit Order</button>
+        <button type="reset">Clear Form</button>
+      </div>
     </form>
   </main>
-  <footer>
 
+  <footer>
     <h2>Mirabel Adom</h2>
   </footer>
+</body>
+
+</html>
+</footer>
 </body>
 
 </html>
