@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="A product selection form to collect customer preferences and delivery details." />
+    <meta
+      name="description"
+      content="A product selection form to collect customer preferences and delivery details."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-   
   </head>
   <body>
     <header>
@@ -19,24 +21,24 @@
           <fieldset>
             <legend>Identity</legend>
             <label for="name">Name: </label>
-            <input 
-            type="text" 
-            id="name" 
-            name="user-name" 
-            pattern="[A-Za-z\s]{2,}"
-            required
-            title="Please enter your full name with at least two letters."
-             />
+            <input
+              type="text"
+              id="name"
+              name="user-name"
+              pattern="[A-Za-z\s]{2,}"
+              required
+              title="Please enter your full name with at least two letters."
+            />
 
             <label for="mail">Email: </label>
             <input
-            type="email"
-            id="mail"
-            name="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            required
-            title="Please enter a valid email address."
-            autocomplete="on"
+              type="email"
+              id="mail"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+              title="Please enter a valid email address."
+              autocomplete="on"
             />
           </fieldset>
         </section>
@@ -88,16 +90,16 @@
           <fieldset>
             <legend>Choose Size</legend>
             <label for="size">
-              Size: 
-            <select id="size" name="size" required>
-              <option value="" disabled selected>Select a size</option>
-              <option value="xs">Extra Small</option>
-              <option value="s">Small</option>
-              <option value="m">Medium</option>
-              <option value="l">Large</option>
-              <option value="xl">Extra Large</option>
-              <option value="xxl">Extra Extra Large</option>
-            </select>
+              Size:
+              <select id="size" name="size" required>
+                <option value="" disabled selected>Select a size</option>
+                <option value="xs">Extra Small</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+                <option value="xl">Extra Large</option>
+                <option value="xxl">Extra Extra Large</option>
+              </select>
             </label>
           </fieldset>
         </section>
@@ -111,24 +113,20 @@
               name="delivery-date"
               min="2025-01-01"
               max="2025-12-31"
-              required 
-            /> 
+              required
+            />
           </fieldset>
         </section>
-        
+
         <section>
           <p>
             <button type="submit">Submit Details</button>
           </p>
         </section>
-      
-       
       </form>
     </main>
     <footer>
-
       <p>© 2025 Abayie</p>
-      
     </footer>
   </body>
 </html>
