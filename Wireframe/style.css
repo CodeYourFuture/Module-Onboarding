@@ -1,3 +1,21 @@
+/* Here are some starter styles
+You can edit these or replace them entirely 
+It's showing you a common way to organise CSS 
+And includes solutions to common problems 
+As well as useful links to learn more */
+
+/* ====== Design Palette ======
+ This is our "design palette".
+ It sets out the colours, fonts, styles etc to be used in this design 
+ At work, a designer will give these to you based on the corporate brand, but while you are learning
+ You can design it yourself if you like
+ Inspect the starter design with Devtools
+ Click on the colour swatches to see what is happening
+ I've put some useful CSS you won't have learned yet
+ For you to explore and play with if you are interested
+ https://web.dev/articles/min-max-clamp
+ https://scrimba.com/learn-css-variables-c026
+====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -8,12 +26,7 @@
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-header {text-align:center;}
-
-h1 {color: blue;}
-
- body {
-  margin: 40px;
+body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
@@ -23,38 +36,10 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
-img, src
+img,
 svg {
   width: 100%;
-  height: 100%;
   object-fit: cover;
-}
-
-.fixed-height {
-  height: 250px; /* or any height you want */
-  width: 100%;   /* full width of container */
-  object-fit: cover; /* ensures image fills the area without distortion */
-}
-
-.side-by-side {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap; /* stack on smaller screens */
-  margin-top: 20px;
-}
-
-.side-by-side article {
-  flex: 1 1 400px;
-  max-width: 450px;
-}
-
-.article-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-  margin-bottom: 1rem;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
