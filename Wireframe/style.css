@@ -77,4 +77,28 @@ footer {
       main {
         flex: 1;
       }
+/* Ensure the body takes the full viewport height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
+/* Make the page-wrapper a flex container */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Allow main content to grow and push footer to the bottom */
+main {
+  flex: 1;
+}
+
+/* Optional: Style footer */
+footer {
+  background: #f2f2f2;
+  text-align: center;
+  padding: 1em;
+}
