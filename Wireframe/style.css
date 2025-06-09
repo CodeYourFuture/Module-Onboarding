@@ -15,7 +15,7 @@ main {
   padding: 20px;
 }
 
-/* Article styling */
+
 .article1,
 .article2,
 .article3 {
@@ -26,7 +26,7 @@ main {
   box-sizing: border-box;
 }
 
-/* Layout for bottom two articles */
+
 .bottom-row {
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +39,7 @@ main {
   min-width: 300px;
 }
 
-/* Make image fit container */
+
 .full-width-image {
   width: 100%;
   height: auto;
@@ -54,11 +54,29 @@ footer {
   padding: 20px;
   margin-top: 20px;
   box-sizing: border-box;
-  border: 15px solid black; /* ← This is the key change */
+  border: 15px solid black; 
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 768px) 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  flex: 1;
+}
+
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1em;
+}
   .bottom-row {
     flex-direction: column;
   }
