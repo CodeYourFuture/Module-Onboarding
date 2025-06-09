@@ -6,11 +6,16 @@ body {
 
 header,
 footer {
-  background-color: #f1f1f1;
   text-align: center;
-  padding: 1em;
+  padding: 20px;
+  background-color: #f0f0f0;
 }
 
+main {
+  padding: 20px;
+}
+
+/* Article styling */
 .article1,
 .article2,
 .article3 {
@@ -21,21 +26,20 @@ footer {
   box-sizing: border-box;
 }
 
-/* ✅ Flexbox for Article 2 and 3 container */
+/* Layout for bottom two articles */
 .bottom-row {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 0 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .article2,
 .article3 {
-  flex: 1 1 45%;
+  flex: 1;
   min-width: 300px;
 }
 
+/* Make image fit container */
 .full-width-image {
   width: 100%;
   height: auto;
@@ -50,28 +54,13 @@ footer {
   padding: 20px;
   margin-top: 20px;
   box-sizing: border-box;
-  border: 15px solid black; 
+  border: 15px solid black; /* ← This is the key change */
 }
 
-/* ✅ Responsive layout: stack articles vertically below 768px */
+/* Responsive design */
 @media (max-width: 768px) {
   .bottom-row {
     flex-direction: column;
   }
-
-  .article2,
-  .article3 {
-    flex: 1 1 100%;
-  }
-
-  html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1;
-  }
 }
+
