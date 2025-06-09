@@ -6,13 +6,9 @@ body {
 
 header,
 footer {
+  background-color: #f1f1f1;
   text-align: center;
-  padding: 20px;
-  background-color: #f0f0f0;
-}
-
-main {
-  padding: 20px;
+  padding: 1em;
 }
 
 
@@ -26,11 +22,9 @@ main {
   box-sizing: border-box;
 }
 
-
-.bottom-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  .bottom-row {
+    flex-direction: column;
+  }
 }
 
 .article2,
@@ -66,18 +60,7 @@ html, body {
   flex-direction: column;
 }
 
-
 main {
   flex: 1;
 }
-
-
-footer {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 1em;
-}
-  .bottom-row {
-    flex-direction: column;
-  }
 }
