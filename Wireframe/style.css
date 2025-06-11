@@ -45,6 +45,15 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+h1 {
+  text-align: center;
+}
+.wireframe-description{
+  text-align: center;
+  max-width: 110ch;
+  margin: auto;
+}
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
