@@ -49,9 +49,9 @@ h1 {
   text-align: center;
 }
 .wireframe-description{
-  text-align: center;
+  text-align: left;
   max-width: 110ch;
-  margin: auto;
+  margin: 0 auto;
 }
 
 main {
