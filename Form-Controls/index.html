@@ -1,73 +1,73 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1 style="text-align: center;">Product Pick</h1>
-    </header>
-    </main>
-      <h2>Personal Details</h2>
-      <fieldset>
-      <form>
-  <label for="name"><strong>Name:</strong></label><br>
-  <input type="text" id="name" name="name"minlength="2" required pattern="\S+$"><br>
-  <label for="Email">Email:</label><br>
-  <input type="text" id="Emial" name="Emial"minlength="2" required pattern="\S+$">
-  </fieldset>
-</form>
-    <h2>Choose your favorite color:</h2>
-  <fieldset>
-<form>
-  <input type="radio" id="Red" name="fav_color" value="Red">
-  <label for="Red">Red</label><br>
-  <input type="radio" id="Blue" name="fav_color" value="Blue">
-  <label for="Blue">Blue</label><br>
-  <input type="radio" id="Yellow" name="fav_color" value="Yellow">
-  <label for="Yellow">Yellow</label>
-</form>
-</fieldset>
-<h2>choose size</h2>
-<fieldset>
-<form> 
-    <select id="size" name="size" required>
-      <option value=""disabled selected>-- Select Size --</option>
-      <option value="XS">XS</option>
-      <option value="S">S</option>
-      <option value="M">M</option>
-      <option value="L">L</option>
-      <option value="XL">XL</option>
-      <option value="XXL">XXL</option>
-      <option value="3XL">3XL</option>
-    </select>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1 style="text-align: center;">Product Pick</h1>
+  </header>
+
+  <main>
+    <h2>Personal Details</h2>
     <form action="/action_page.php">
-    </fieldset>
+      <fieldset>
+        <label for="name"><strong>Name:</strong></label><br>
+        <input type="text" id="name" name="name" minlength="2" required pattern="\S+$"><br>
 
-  <label for="name"><strong>First name:</strong></label><br>
-  <input type="text" id="fname" value=""><br><br>
-  <fieldset>
-                <p>
-              <button type="submit">
-                <span style="display: inline-block; line-height: 2.5;"><strong>
-                    submit
-                  </strong></span>
-              </button>
-            </p>
-            </fieldset>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+      </fieldset>
 
-</body>
-</html>
+      <h2>Choose your favorite color:</h2>
+      <fieldset>
+        <input type="radio" id="Red" name="fav_color" value="Red">
+        <label for="Red">Red</label><br>
 
-</footer>
- <details>
+        <input type="radio" id="Blue" name="fav_color" value="Blue">
+        <label for="Blue">Blue</label><br>
+
+        <input type="radio" id="Yellow" name="fav_color" value="Yellow">
+        <label for="Yellow">Yellow</label>
+      </fieldset>
+
+      <h2>Choose Size</h2>
+      <fieldset>
+        <label for="size"><strong>Size:</strong></label><br>
+        <select id="size" name="size" required>
+          <option value="" disabled selected>-- Select Size --</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+          <option value="3XL">3XL</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="fname"><strong>First Name:</strong></label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <button type="submit">
+          <span style="display: inline-block; line-height: 2.5;">
+            <strong>Submit</strong>
+          </span>
+        </button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <details>
       <summary>By Tesfalem Hailu</summary>
-      <p>&copy; 2025 hope web inc. All rights reserved.</p>
+      <p>&copy; 2025 Hope Web Inc. All rights reserved.</p>
     </details>
-</footer>
-  </body>
+  </footer>
+</body>
 </html>
