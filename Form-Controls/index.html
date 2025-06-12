@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>My Form Exercise</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Accessible form for selecting a product" />
+  <meta name="description" content="Form for selecting product details" />
 </head>
 
 <body>
@@ -21,7 +21,6 @@
         <h2>Personal Details</h2>
         <fieldset>
           <legend>Your Information</legend>
-
           <p>
             <label for="name"><strong>Name:</strong></label>
             <input 
@@ -32,7 +31,6 @@
               required 
               pattern="\S.{1,}" />
           </p>
-
           <p>
             <label for="email"><strong>Email:</strong></label>
             <input 
@@ -48,8 +46,8 @@
       <section>
         <h2>Item Selection</h2>
         <fieldset>
-          <legend>Choose Color</legend>
-          <ul style="list-style: none; padding: 0;">
+          <legend>Color</legend>
+          <ul style="list-style: none; padding-left: 0;">
             <li>
               <input type="radio" id="yellow" name="color" value="Yellow" required />
               <label for="yellow">Yellow</label>
@@ -66,9 +64,9 @@
         </fieldset>
 
         <fieldset>
-          <legend>Select Size</legend>
+          <legend>Size</legend>
           <p>
-            <label for="size">Size:</label>
+            <label for="size">Select a size:</label>
             <select id="size" name="size" required>
               <option value="" disabled selected>--choose one--</option>
               <option value="XS">Extra Small</option>
@@ -87,7 +85,6 @@
           </p>
         </fieldset>
       </section>
-
     </form>
   </main>
 
