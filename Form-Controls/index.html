@@ -16,23 +16,28 @@
     <h2>Personal Details</h2>
     <form>
       <fieldset>
-        <label for="name"><strong>Name:</strong></label><br>
-        <input type="text" id="name" name="name" minlength="2" required pattern="\S+$"><br>
-
-        <label for="email"><strong>Email:</strong></label><br>
-        <input type="email" id="email" name="email" required><br>
-      </fieldset>
-
-      <h2>Choose your favorite color:</h2>
-      <fieldset>
-        <input type="radio" id="Red" name="fav_color" value="Red">
-        <label for="Red">Red</label><br>
-
-        <input type="radio" id="Blue" name="fav_color" value="Blue">
-        <label for="Blue">Blue</label><br>
-
-        <input type="radio" id="Yellow" name="fav_color" value="Yellow">
-        <label for="Yellow">Yellow</label>
+            <legend><strong>Color</strong></legend>
+            <ul>
+              <li>
+                <p>
+                  <input type="radio" id="yellow" name="color" value="Yellow" required>
+                  <label for="yellow">Yellow</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input type="radio" id="red" name="color" value="Red">
+                  <label for="red">Red</label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input type="radio" id="blue" name="color" value="Blue">
+                  <label for="blue">Blue</label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
       </fieldset>
 
       <h2>Choose Size</h2>
