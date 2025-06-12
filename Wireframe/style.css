@@ -5,8 +5,16 @@
         --space: clamp(6px, 6px + 2vw, 15px);
         --line: 1px solid #ccc;
         --container: 1280px;
-      }
-
+        h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  margin-top: 20px;
+        }
+  .wireframe-title {text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  margin-top: 20px;}
       body {
         background-color: var(--paper);
         color: var(--ink);
