@@ -69,4 +69,6 @@
         bottom: 0;
         left: 0;
         font-family: Arial, sans-serif;
+        border: solid;
+        color: #ccc;
       }
