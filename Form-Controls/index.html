@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>My Form Exercise</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Accessible product selection form" />
+  <meta name="description" content="Accessible form for selecting a product" />
 </head>
 
 <body>
@@ -16,55 +16,60 @@
 
   <main>
     <form action="#" method="post" novalidate>
-
-      <!-- Personal Details Section -->
-      <section aria-labelledby="personal-heading">
-        <h2 id="personal-heading">Personal Details</h2>
+      
+      <section>
+        <h2>Personal Details</h2>
         <fieldset>
-          <legend>Enter your information</legend>
+          <legend>Your Information</legend>
 
           <p>
             <label for="name"><strong>Name:</strong></label>
-            <input type="text" id="name" name="name" minlength="2" required pattern="\S.{1,}" aria-required="true"
-              aria-describedby="name-desc">
-            <small id="name-desc">Enter your name (at least 2 characters).</small>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              minlength="2" 
+              required 
+              pattern="\S.{1,}" />
           </p>
 
           <p>
             <label for="email"><strong>Email:</strong></label>
-            <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-desc">
-            <small id="email-desc">Enter a valid email address.</small>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required 
+              pattern="\S+.*" />
           </p>
         </fieldset>
       </section>
 
-      <!-- Item Selection Section -->
-      <section aria-labelledby="item-heading">
-        <h2 id="item-heading">Item Selection</h2>
+      <section>
+        <h2>Item Selection</h2>
         <fieldset>
-          <legend>Choose your preferences</legend>
+          <legend>Choose Color</legend>
+          <ul style="list-style: none; padding: 0;">
+            <li>
+              <input type="radio" id="yellow" name="color" value="Yellow" required />
+              <label for="yellow">Yellow</label>
+            </li>
+            <li>
+              <input type="radio" id="red" name="color" value="Red" />
+              <label for="red">Red</label>
+            </li>
+            <li>
+              <input type="radio" id="blue" name="color" value="Blue" />
+              <label for="blue">Blue</label>
+            </li>
+          </ul>
+        </fieldset>
 
-          <div role="group" aria-labelledby="color-label">
-            <p id="color-label"><strong>Color:</strong></p>
-            <ul style="list-style: none; padding-left: 0;">
-              <li>
-                <input type="radio" id="yellow" name="color" value="Yellow" required aria-required="true">
-                <label for="yellow">Yellow</label>
-              </li>
-              <li>
-                <input type="radio" id="red" name="color" value="Red">
-                <label for="red">Red</label>
-              </li>
-              <li>
-                <input type="radio" id="blue" name="color" value="Blue">
-                <label for="blue">Blue</label>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <label for="size"><strong>Size:</strong></label>
-            <select id="size" name="size" required aria-required="true" aria-describedby="size-desc">
+        <fieldset>
+          <legend>Select Size</legend>
+          <p>
+            <label for="size">Size:</label>
+            <select id="size" name="size" required>
               <option value="" disabled selected>--choose one--</option>
               <option value="XS">Extra Small</option>
               <option value="S">Small</option>
@@ -73,8 +78,7 @@
               <option value="XL">Extra Large</option>
               <option value="XXL">2X Large</option>
             </select>
-            <small id="size-desc">Select your preferred size.</small>
-          </div>
+          </p>
 
           <p>
             <button type="submit">
@@ -83,6 +87,7 @@
           </p>
         </fieldset>
       </section>
+
     </form>
   </main>
 
