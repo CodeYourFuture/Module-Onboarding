@@ -17,73 +17,119 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+    --primary: #392f5a;
+    --accent: #9dd9d2;
+    --secondary: #ff8811; /*changes for accessibility score*/
+    --background: #fff8f0;
+    --highlight: #f4d06f;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background);
+    color: var(--primary);
+    padding-bottom: 60px; /* Footer height */
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+
+.page-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--primary);
+    color: var(--background);
+    margin-bottom: 2rem;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+
+.card {
+    background: var(--background);
+    color: var(--primary);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
+
+.card:hover {
+    transform: translateY(-5px);
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+
+.hero-card {
+    margin: 0 1rem;
+    background: var(--primary);
+    color: var(--highlight);
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+
+.card-group {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 4px solid var(--highlight);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h2 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid var(--accent);
+}
+
+.card-link:hover {
+    color: var(--secondary);
+    border-bottom-color: var(--secondary);
+}
+
+.card-link:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--background);
+    text-align: center;
+    padding: 1rem;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .card-group {
+        flex-direction: column;
+    }
+    
+    .hero-card {
+        margin: 0;
+    }
 }
