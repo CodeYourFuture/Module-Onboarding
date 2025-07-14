@@ -4,24 +4,77 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Order your custom t-shirt"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#392f5a"/>
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+        <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        <form class="tshirt-form" id="orderForm">
+            <fieldset>
+                <legend class="sr-only"><h2>Your Details</h2></legend>
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name:<br>
+                        <input type="text" id="fullname" name="fullname" required 
+                               pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]{2,50}$"
+                               title="Please enter your full name (letters and spaces only)"
+                               minlength="2"
+                               maxlength="50"
+                               aria-describedby="nameHelp"
+                               autocomplete="name">
+                        <div id="nameHelp" class="help-text">As it appears on your account</div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:<br>
+                        <input type="email" id="email" name="email" 
+                               required
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                               title="Please enter a valid email address"
+                               aria-describedby="emailHelp"
+                               autocomplete="email">
+                        <div id="emailHelp" class="help-text">We'll send confirmation here</div>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend class="sr-only"><h2>T-Shirt Details</h2></legend>
+                
+                <div class="form-group" role="radiogroup" aria-labelledby="colorHeading">
+                    <h3 id="colorHeading">Choose Color:</h3>
+                    <div class="options-group">
+                        <label><input type="radio" name="color" value="red" required>Red</label>
+                        <label><input type="radio" name="color" value="blue">Blue</label>
+                        <label><input type="radio" name="color" value="green">Green</label>
+                    </div>
+                </div>
+
+                <div class="form-group" role="group" aria-labelledby="sizeHeading">
+                    <h3 id="sizeHeading">Choose Size: <br></h3>
+                    <div class="options-group" data-required="true">
+                        <label><input type="radio" name="size" value="XS" required>XS</label>
+                        <label><input type="radio" name="size" value="S">S</label>
+                        <label><input type="radio" name="size" value="M">M</label>
+                        <label><input type="radio" name="size" value="L">L</label>
+                        <label><input type="radio" name="size" value="XL">XL</label>
+                        <label><input type="radio" name="size" value="XXL">XXL</label>
+                    </div>
+                </div>
+            </fieldset>
+
+
+    <button type="submit" value="Place Order" aria-label="Submit order form">Place Order</button>
+</form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h4>By Dawud Vermeulen </h4>
     </footer>
   </body>
 </html>
