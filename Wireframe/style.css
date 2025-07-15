@@ -20,9 +20,10 @@ As well as useful links to learn more */
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
+  --space: clamp(6px, 6px + 2vw, 25px);
   --line: 1px solid;
   --container: 1280px;
+
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -32,8 +33,7 @@ body {
   font: var(--font);
 }
 a {
-  padding: var(--space);
-  border: var(--line);
+ 
   max-width: fit-content;
 }
 img,
@@ -53,6 +53,14 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--paper);
+  left: 0;
+  color: var(--ink);
+  border-top: var(--line);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -63,11 +71,23 @@ https://gridbyexample.com/learn/
 */
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  
   gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
+  grid-template-columns: 1fr;
+  padding: 10px;
+
+  @media (min-width: 768px) {
+
+    padding: 100px;
+    grid-template-columns: 1fr 1fr;
+    > *:first-child {
+     
+      grid-column: span 2;
+    }
   }
+
+  
+  
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -85,5 +105,18 @@ article {
   }
   > img {
     grid-column: span 3;
+  }
+  > a {
+    padding: var(--space);
+    border: var(--line);
+  }
+
+}
+header {
+
+  width: 100%;
+ 
+  > *{
+    text-align: center;
   }
 }
