@@ -13,15 +13,83 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
+        
         <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          1.What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+          2.What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+          3.What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+          4.What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL-->
+
+        
+
+        
+        <label for="text">Enter your Name</label>
+        <br/>
+        <input type = "text" id="fullname" name="Full Name" placeholder="eg Muna Lulu" required minlength="2"/>
+        <br/>
+        <label for="email">Enter your email</label>
+        <br/>
+        <input type = "email" id="mail" name="Email" placeholder="eg munalulu01@gmail.com" required/>
+        <br/>
+        <button>Submit</button>
+        <br/>
+
+        <fieldset>
+          
+          <legend>Select Your T-shirt color</legend>
+          <ul>
+            <li>
+              <label for="pink">Pink</label>
+              <input type="radio" id="pink" name="color" value="pink" checked />
+            </li>
+            <li>
+              <label for="beige">Beige</b></label>
+              <input type="radio" id="beige" name="color" value="beige" />
+            </li>
+            <li>
+              <label for="navy blue">Navy Blue</label>
+              <input type="radio" id="navy blue" name="color" value="navy blue" />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Now Pick A Size</legend>
+          <ul>
+            <li>
+              <label for="xs">XS</label>
+              <input type="radio" id="xs" name="size" value="xs" checked />
+            </li>
+            <li>
+              <label for="s">S</label>
+              <input type="radio" id="s" name="size" value="s" />
+            </li>
+            <li>
+              <label for="m">M</label>
+              <input type="radio" id="m" name="size" value="m" />
+            </li>
+            <li>
+              <label for="l">L</label>
+              <input type="radio" id="l" name="size" value="l" />
+            </li>
+            <li>
+              <label for="xl">XL</label>
+              <input type="radio" id="xl" name="size" value="xl" />
+            </li>
+            <li>
+              <label for="xxl">XXL</label>
+              <input type="radio" id="xxl" name="size" value="xxl" />
+            </li>
+            
+          </ul>
+        </fieldset>
+        
+        
+
+
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Revive Mapfumo</h2>
     </footer>
   </body>
 </html>
