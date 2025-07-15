@@ -1,89 +1,160 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
   --container: 1280px;
+  --line: 1px solid #ccc;
+  --footer-height: 80px;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
+html, body {
+  height: 100%;
+}
+
 body {
-  background: var(--paper);
-  color: var(--ink);
   font: var(--font);
-}
-a {
+  background: #fff;
+  color: #111;
   padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header .description {
+  font-style: italic;
+  color: #555;
+}
+
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-grow: 1;
+  padding-bottom: var(--footer-height); /* Prevent footer overlap */
 }
+
+/* Large article on top */
+.large-article {
+  border: var(--line);
+  padding: var(--space);
+  background-color: #f9f9f9;
+}
+
+.large-article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--space);
+}
+
+.side-by-side {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.side-by-side article {
+  flex: 1 1 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: var(--line);
+  padding: var(--space);
+  background-color: #f9f9f9;
+}
+
+.side-by-side article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--space);
+}
+
+.side-by-side article h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.side-by-side article p {
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* "Read more" link styling */
+.side-by-side article a {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #eee;
+}
+
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
   text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 1rem 0;
+  border-top: var(--line);
+  z-index: 100;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .side-by-side {
+    flex-direction: column;
+  }
+
+  .side-by-side article {
+    flex: 1 1 100%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
   }
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
-}
+
