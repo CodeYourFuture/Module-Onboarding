@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFM Luxury - Order Form</title>
+  <link rel="stylesheet" href="style.css"
+</head>
+<body>
+  
+  <header>
+    <h1 class="logo">IFM Luxury</h1>
+  </header>
+
+  
+  <form>
+    
+    <div>
+      <label for="customer-name">Full Name:</label>
+      <input 
+        type="text" 
+        id="customer-name" 
+        name="customer-name" 
+        minlength="2" 
+        required 
+        placeholder="Enter your name">
+    </div>
+
+    
+
+    <div>
+      <label for="customer-email">Email Address:</label>
+      <input 
+        type="email" 
+        id="customer-email" 
+        name="customer-email" 
+        required 
+        placeholder="Enter your email">
+    </div>
+    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+      <div>
+        <label for="tshirt-colour">T-Shirt Colour:</label>
+        <select id="tshirt-colour" name="tshirt-colour" required>
+          <option value="" disabled selected>-- Select Colour --</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+      </div>
+      <div>
+        <label for="tshirt-size">T-Shirt Size:</label>
+        <select id="tshirt-size" name="tshirt-size" required>
+          <option value="" disabled selected>-- Select Size --</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+    </div>
+    <div style="margin-top: 1rem;">
+      <button type="submit">Submit Order</button>
+    </div>
+    <p style="margin-top: 1rem;">Need help? <a href="#">Ask for help</a>.</p>
+  </form>
+</body>
 </html>
