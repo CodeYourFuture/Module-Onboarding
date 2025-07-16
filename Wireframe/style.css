@@ -27,18 +27,22 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
+  background: rgb(191, 189, 189);
   color: var(--ink);
   font: var(--font);
+  padding-bottom: 80px;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  background-color: rgb(159, 107, 107);
+  text-decoration: none;
 }
 img,
 svg {
   width: 100%;
+  height: 400px;
   object-fit: cover;
 }
 /* ====== Site Layout ====== 
@@ -49,11 +53,17 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
+  footer { 
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    color: red;
+    text-align: center;
+    
+    
+    
+    
+  }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -74,8 +84,18 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+
+
+ .wireframe h2:hover{
+  color: lime;
+
+}
+.branch h2:hover{
+  color: chartreuse;
+  
+}
 article {
-  border: var(--line);
+  border: solid rgb(34, 189, 221);
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -87,3 +107,25 @@ article {
     grid-column: span 3;
   }
 }
+header{
+  
+  text-align: center;
+}
+header p {
+  color: rgb(3, 79, 28);
+}
+.readme-file{
+  background-color: aliceblue;
+  font-size: large;
+}
+.wireframe {
+background-color: antiquewhite;
+}
+.branch {
+  background-color: antiquewhite;
+  }
+  span{
+    color: rgb(170, 125, 213);
+    
+
+  }
