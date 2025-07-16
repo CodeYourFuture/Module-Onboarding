@@ -30,7 +30,10 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  margin: 0%;
+  background:gray;
 }
+
 a {
   padding: var(--space);
   border: var(--line);
@@ -49,10 +52,15 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+header{
+  text-align: center;
+}
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  background: rgb(99, 97, 97);
+  width: 100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -74,8 +82,13 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+#img2,#img3{
+  height: 420px;
+}
 article {
   border: var(--line);
+  border-radius: 15px;
+  overflow: hidden;
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -87,3 +100,4 @@ article {
     grid-column: span 3;
   }
 }
+
