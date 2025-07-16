@@ -21,26 +21,47 @@ As well as useful links to learn more */
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
+  --picline: 3px ridge;
   --line: 1px solid;
   --container: 1280px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
+  background-color: rgb(219, 216, 213);
   color: var(--ink);
   font: var(--font);
 }
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  color: rgb(7, 99, 102);
 }
+
 img,
 svg {
+
   width: 100%;
+  padding: var(--space);
+  border: var(--picline);
+  max-width: fit-content;
+  color: rgb(9, 61, 63);
   object-fit: cover;
 }
+
+h1 {
+  text-align: center;
+  font-style: italic;
+}
+
+#PDescription {
+  text-align: center;
+  font-style: italic;
+}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -49,11 +70,17 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  background-color: rgb(218, 197, 219);
+  padding: 1px;
+  font-style: italic;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -65,10 +92,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+
+  >*:first-child {
     grid-column: span 2;
   }
 }
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -80,10 +109,13 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
+
+
+  >* {
     grid-column: 2/3;
   }
-  > img {
+
+  >img {
     grid-column: span 3;
   }
 }
