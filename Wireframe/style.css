@@ -30,7 +30,12 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+} 
+
+header {
+  text-align: center;
 }
+
 a {
   padding: var(--space);
   border: var(--line);
@@ -48,11 +53,18 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  height: 90%;
 }
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
+        padding: 15px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        font-family: Arial, sans-serif;
+        border: solid;
+        background-color: #ccc;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
