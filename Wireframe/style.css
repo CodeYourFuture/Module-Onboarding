@@ -31,6 +31,7 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
 a {
   padding: var(--space);
   border: var(--line);
@@ -41,18 +42,42 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+article {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+article h2 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  background-color: #f0f0f0;
+  margin-bottom: 2rem;
+}
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  background-color: #f0f0f0;
+  margin-top: 2rem;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
