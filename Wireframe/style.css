@@ -1,89 +1,142 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --paper: #ffffffdd; /* Light background color */
+  --ink: #000000; /* Dark text color */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+  --line: 1px solid #ccc; /* Light border */
+  --container: 900px;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
 a {
   padding: var(--space);
   border: var(--line);
-  max-width: fit-content;
+  text-decoration: none;
+  color: #004080; 
+  font-weight: 600;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  min-height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--space);
+  padding: var(--space);
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 100px; 
 }
+
+/* Top article (full width) */
+.top-article {
+  width: 100%;
+  border: var(--line);
+  background: #fff;
+  padding: 15px;
+}
+
+/* Bottom two side-by-side articles */
+.articles-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.articles-row article {
+  flex: 1;
+  min-width: 300px;
+  border: var(--line);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 15px;
+  justify-content: space-between;
+}
+.articles-row article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Footer styling */
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--paper);
   text-align: center;
+  padding: var(--space);
+  z-index: 10;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+
+/* All article links */
+article a {
+  border: 1px solid #000000;
+  padding: 8px;
+  display: inline-block;
+  background-color: #fff;
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
+
+/* General image styling */
+article img,
+.top-article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Image dimensions (Lighthouse fix) */
+img[alt="README File Diagram"] {
+  width: 900px;
+  height: 351.75px;
+}
+
+img[alt="wireframe File Diagram"] {
+  width: 400px;
+  height: 295px;
+}
+
+img[alt="branch in Git Diagram"] {
+  width: 400px;
+  height: 295px;
+}
+
+/* Headings and text inside articles */
+article h2 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+article p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Mobile responsive layout */
+@media screen and (max-width: 768px) {
+  .articles-row {
+    flex-direction: column;
   }
 }
