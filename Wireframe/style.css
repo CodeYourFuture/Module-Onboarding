@@ -16,6 +16,39 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.articles {
+  column-count: 2;
+}
+
+header p,
+h1 {
+  text-align: center;
+}
+
+article p {
+  text-align: justify;
+}
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -31,6 +64,7 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
 a {
   padding: var(--space);
   border: var(--line);
@@ -39,6 +73,7 @@ a {
 img,
 svg {
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 /* ====== Site Layout ====== 
@@ -53,7 +88,12 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+  background-color: white;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
