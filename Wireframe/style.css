@@ -87,3 +87,16 @@ article {
     grid-column: span 3;
   }
 }
+
+/**additions**/
+header {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
