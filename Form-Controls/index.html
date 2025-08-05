@@ -6,22 +6,64 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Product Pick</h1><br>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        <div class="container">
+          <form>
+              <!-- write your html here-->
+            <!-- try writing out the requirements first-->
+    
+        <h2>T-Shirt Order Form</h2>
+        <form id="tshirtOrderForm">
+            <label for="name">Confirm your Name:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only)."><br>
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="color">T-Shirt Color:</label>
+            <select id="color" name="color" required>
+                <option value="" disabled selected>Select a color</option>
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="white">White</option>
+                <option value="pink">Pink</option>
+            </select><br>
+    
+            <label for="qtt">Quantity:</label>
+            <input type="number" id="qtt" name="quantity" required><br>
+            
+            <label for="size">T-Shirt Size:</label>
+            <select id="size" name="size" required>
+                <option value="" disabled selected>Select a size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+        </select><br>
+    
+           
+    
+            <label for="date">Select a date:</label>
+        <input type="date" id="date" name="date" min="2025-02-10" max="2025-03-10" required>
+              <button type="submit">Submit</button>
+        </form><br>
+    
+        
+     
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Maheag Special Solutions</h2>
     </footer>
   </body>
 </html>
