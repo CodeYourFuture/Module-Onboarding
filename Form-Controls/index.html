@@ -4,24 +4,58 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="T-shirt order form" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <header>
+    <header role="banner">
       <h1>Product Pick</h1>
     </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+      <main role="main" aria-labelledby="order-title">
+        <form id="tshirt-order" aria-labelledby="order-title">
+          <h2 id="order-title">Order your T-shirt</h2>
+    
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{2,}" title="Please enter at least 2 characters" aria-label="Name input field">
+    
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required 
+                aria-describedby="email-error" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                title="Please enter a valid email address (e.g., user@example.com)" />
+            <span id="email-error" class="error-message" aria-live ="polite" hidden>Please enter a valid email address</span>
+        </p>
+
+          <p>
+            <label for="color">T-Shirt Color:</label>
+            <select name="color" id="color" required aria-label="Select T-shirt color">
+            <option value="">Select a color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+      </select>
+      </p>
+
+      <p>
+      <label for="size">T-shirt Size:</label>
+      <select name="size" id="size" required aria-label="Select T-shirt size">
+        <option value="">Select a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+      </p>
+
+      <button type="submit" aria-label="Submit the T-shirt order">Order T-Shirt</button>
+    </form>
+  </main>
+  <footer role="contentinfo">
+    <h2> Giosef Ferraro</h2>
+  </footer>
+</body>
 </html>
