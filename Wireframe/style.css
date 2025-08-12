@@ -24,6 +24,10 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
+header{
+  text-align: center;
+}
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -31,13 +35,20 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
+.page{
+  margin: 100px;
+
+}
+
+
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
-img,
-svg {
+img {
   width: 100%;
   object-fit: cover;
 }
@@ -50,7 +61,6 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
   bottom: 0;
   text-align: center;
 }
