@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="form to pick up cloth for existing users" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,15 +14,62 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Bill details:</legend>
+          <br>
+          <div>
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="name" pattern="^(?=.*[A-Za-z])[A-Za-z ]{4,}$" title="Only letters and spaces are allowed. At least 4 characters." placeholder="Full Name" required></div>
+            <br>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email@mail.com" required></div>
+            <br> 
+        </fieldset>
+        <fieldset>
+          <legend>Item details:</legend> <!--I group data by item details: color, size, item -->
+          <div>
+          <br>
+            <label for="item">Item:</label>
+            <select id="item" name="item" required>
+              <option value="" selected disabled>Select an option</option>
+              <option value="t-shirt">T-shirt</option>
+              <option value="shorts">Shorts</option>
+              <option value="sweater">Sweater</option>
+              <option value="hat">Hat</option>
+            </select>
+          </div>
+          <br>
+          <div>Size:
+            <label><input type="radio" name="size_item" value="XS" required>XS</label>
+            <label><input type="radio" name="size_item" value="S">S</label>
+            <label><input type="radio" name="size_item" value="M">M</label>
+            <label><input type="radio" name="size_item" value="L">L</label>
+            <label><input type="radio" name="size_item" value="XL">XL</label>
+            <label><input type="radio" name="size_item" value="XXL">XXL</label>
+          </div>
+          <br>
+          <div>
+            <label for="color">Color:</label>
+            <select id="color" name="color" required>
+              <option value="" selected disabled>Select an option</option>
+              <option value="Red">Red</option>
+              <option value="Green">Green</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Grey">Grey</option>
+              <option value="Yellow">Yellow</option>
+            </select>
+          </div>
+          <br>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p> &copy; Nataliia_Volkova </p>
     </footer>
   </body>
 </html>
