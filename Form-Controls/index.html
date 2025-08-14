@@ -1,27 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Shirt Order Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<main>
+
   <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+    <h1>T-Shirt Order Form</h1>
+    <form aria-label="T-Shirt Order Form">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <fieldset>
+        <legend>T-Shirt Size</legend>
+
+        <div>
+          <input type="radio" name="size" id="xs" value="XS" required />
+          <label for="xs">X-Small</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="small" value="S" />
+          <label for="small">Small</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="medium" value="M" />
+          <label for="medium">Medium</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="large" value="L" />
+          <label for="large">Large</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="xl" value="XL" />
+          <label for="xl">X-Large</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="xxl" value="XXL" />
+          <label for="xxl">XX-Large</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="Colours">T-Shirt Colour</label>
+        <select name="Colours" id="Colours" required>
+          <option value="" disabled selected>Select a colour</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+</main>
+<footer>
+  <h2>Dylan Maeder</h2>
+</footer>
+</body>
+
 </html>
