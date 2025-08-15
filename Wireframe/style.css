@@ -1,89 +1,181 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
-}
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+/* Basic settings */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+
+/* Header */
+header {
+  text-align: center;
+  padding: 25px 0 2vw;
+  background-color: #0c0f0a;
+  color: #fff;
+  border: 3px solid #f5cb5c;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #f5cb5c;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
+header p {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+/* Main Layout */
 main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  display: block;
+  background-color:#333533 ;
+
 }
+
+.articles:first-child {
+  background-color: #333533;
+  color: #f4f4f4;
+  margin: 0 auto ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #f5cb5c;
+}
+
+
+.main-article img {
+  width: 100%;
+  height: 420px;
+
+
+}
+
+.main-article h2 {
+  color: #f5cb5c;
+  font-weight: bold;
+  padding: 0 10px;
+
+}
+
+.main-article p {
+  font-size: 18px;
+  line-height: 1.6;
+  
+}
+
+/* Sub-articles container */
+.sub-articles {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin-bottom: 60px;
+
+}
+
+
+
+/* Sub-article styling */
+.sub-article {
+  display: flex;
+  flex-direction: column;
+  background-color: #333533;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 4px solid #f5cb5c;
+
+
+}
+
+
+.sub-article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+
+}
+
+.sub-article h2 {
+  margin-top: 10px;
+  color: #f5cb5c;
+  padding-left: 10px;
+}
+
+.sub-article p {
+   flex-grow: 1; 
+  margin-bottom: 10px;
+  color: #f4f4f4;
+  padding-left: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.sub-article a {
+
+  display: inline-block;
+  padding: 10px 15px ;
+  background-color: #0c0f0a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  width: fit-content;
+  min-width: 120px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  margin: 10px auto  ;
+
+
+}
+
+
+/* Footer */
 footer {
+  text-align: center;
+  background-color: #222;
+  color: #fff;
   position: fixed;
   bottom: 0;
-  text-align: center;
+  width: 100%;
+  height: 60px;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+
+/* Link styling */
+a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #0c0f0a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+
+
+
+a:hover {
+  background-color: #f5cb5c;
 }
+
+
+
+  @media (min-width: 1441px) {
+    body {
+        font-size: 20px;
+    }
+
+    .main-article {
+        width: 99.9%;
+
+        margin: 0 auto;
+    }
+
+    .main-article img {
+        height: 420px;
+    }
+
+    .sub-article a {
+         width: 110px;
+         padding: 10px 0;
+     }
+    }
