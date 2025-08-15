@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="Order your custom T-shirt by filling out this simple form with your name, email, color, and size preferences." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>T-Shirt Order Form</h1>
+  </header>
+  <main>
+    <form>
+      <!-- Customer Name (at least 2 characters) -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" minlength="2" required aria-required="true" autocomplete="name"
+        pattern="[A-Za-z\s]{2,}" title="Name must be at least 2 letters and contain only letters and spaces.">
+
+      <!-- Customer Email (must be valid) -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+
+      <!-- T-shirt Color (3 options only) -->
+      <fieldset>
+        <legend>Choose a color:</legend>
+        <input type="radio" id="colour-red" name="color" value="red" required aria-required="true">
+        <label for="colour-red">Red</label><br>
+
+        <input type="radio" id="colour-blue" name="color" value="blue">
+        <label for="colour-blue">Blue</label><br>
+
+        <input type="radio" id="colour-green" name="color" value="green">
+        <label for="colour-green">Green</label>
+      </fieldset>
+
+      <!-- T-shirt Size (6 options only) -->
+      <label for="size">Choose a size:</label>
+      <select id="size" name="size" required aria-required="true">
+        <option value="" disabled selected>Select size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <h2>By Iroshan Herath</h2>
+  </footer>
+</body>
+
 </html>

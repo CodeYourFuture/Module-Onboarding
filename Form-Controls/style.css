@@ -1,0 +1,50 @@
+/* style.css */
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label,
+legend {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Make radio buttons and labels easier to tap */
+input[type="radio"] {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+fieldset label {
+  font-size: 1.1em;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Add spacing between form elements */
+form > * {
+  margin-bottom: 18px;
+}
+
+/* Make the submit button a larger touch target */
+button[type="submit"] {
+  min-width: 48px;
+  min-height: 48px;
+  font-size: 1.1em;
+  padding: 12px 24px;
+  cursor: pointer;
+}
