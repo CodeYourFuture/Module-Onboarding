@@ -6,6 +6,21 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      label{
+        margin: 10px;
+      }
+      input{
+        size: 20px;
+        margin: 10px;
+      }
+      fieldset{
+        margin-bottom: 20px;
+      }
+      select{
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -13,15 +28,55 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          <fieldset>
+            <legend>Please Enter your account</legend>
+            <div>
+
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name" placeholder="Enter Your Full Name" required >
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="Enter Your Email" required>  
+
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Choose your T-Shirt</legend>
+            <hr> 
+            Colour:          
+              <div>
+                <label for="red">Red</label>
+                <input type="radio" name="colour" id="red">
+              </div>
+              <div>
+                <label for="white">White</label>
+                <input type="radio" name="colour" id="white">
+              </div>
+              <div>
+                <label for="yellow">Yellow</label>
+                <input type="radio" name="colour" id="yellow">
+              </div>
+              <hr>
+              <label for="size">Size:</label>
+              <select name="size of the T-Shirt" id="size" required>
+                <option value="extraSmall">XS</option>
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="extraLarge">XL</option>
+                <option value="doubleExtraLarge">XXL</option>
+              </select>
+          <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </div>    
+          </fieldset>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>By Hatef Eidi</p>
     </footer>
   </body>
 </html>
