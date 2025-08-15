@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- Customer Name (at least 2 characters) -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" minlength="2" required aria-required="true" autocomplete="name"
+        pattern="[A-Za-z\s]{2,}" title="Name must be at least 2 letters and contain only letters and spaces.">
+
+      <br>
+      <!-- Customer Email (must be valid) -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+
+      <br>
+      <!-- T-shirt Colour (3 options only) -->
+      <fieldset>
+        <legend>Choose a colour:</legend>
+        <label>
+          <input type="radio" name="colour" value="red" required aria-required="true">
+          Red
+        </label>
+        <label>
+          <input type="radio" name="colour" value="blue">
+          Blue
+        </label>
+        <label>
+          <input type="radio" name="colour" value="green">
+          Green
+        </label>
+      </fieldset>
+
+      <br>
+      <!-- T-shirt Size (6 options only) -->
+      <label for="size">Choose a size:</label>
+      <select id="size" name="size" required aria-required="true">
+        <option value="" disabled selected>Select size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By HOMEWORK SOLUTION</h2>
+  </footer>
+</body>
+
 </html>
