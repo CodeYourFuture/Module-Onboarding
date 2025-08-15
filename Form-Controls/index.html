@@ -4,24 +4,87 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your T-Shirt</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <p>All fields are required</p>
+        <fieldset>
+          <legend>Your Information</legend>
+          
+          
+          <label for="name">Your name:</label>
+          <br>
+          <span  ><strong>*</strong></span>
+          <input
+          type="text"
+          id="name"
+          name="user-name"
+          placeholder="Enter your full name"
+          required
+          autocomplete="name"
+          pattern="^[A-Za-z]+(?:\s[A-Za-z]+)*$"
+          oninvalid="this.setCustomValidity('Please enter only letters. No leading or trailing spaces.')"
+          oninput="this.setCustomValidity('')">
+          
+        
+        
+        
+          <br>
+          <br>
+
+          <label for="email">Your email:</label>
+          <br>
+          <span  ><strong>*</strong></span>
+          <input type="email" id="email" name="user-email" placeholder="Enter your email"
+            required  autocomplete="email">
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Choose your T-shirt</legend>
+        
+          <label for="color">Color: <span><strong>*</strong></span></label>
+          <select name="color" id="color" required>
+            <option value="">-- Please choose a color --</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </select>
+        
+          <br><br>
+        
+          <label for="size">Size: <span><strong>*</strong></span></label>
+          <select name="size" id="size" required>
+            <option value="">-- Please choose a size --</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </fieldset>
+        
+       
+
+        <div>
+          <button type="submit" aria-label="submit form">Submit</button>
+        </div>
       </form>
     </main>
+     
+     
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By MOHAMMAD ALDALI</h2>
     </footer>
   </body>
 </html>
+
+
+
+
