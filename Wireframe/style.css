@@ -16,74 +16,97 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
-}
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+/* General styles */
+/* General styles */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
+header,
 main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  padding: 20px;
 }
-footer {
-  position: fixed;
-  bottom: 0;
+
+header {
+  background: #222; /* Darker background for better contrast */
+  color: #f8f9fa; /* Slightly lighter text */
   text-align: center;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
+
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
+  padding-bottom: 10px; /* Added padding at the bottom to avoid content behind footer */
+}
+
+article {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #bbb; /* Slightly darker border for better contrast */
+  border-radius: 5px;
+  flex: 1; /* Ensure all articles take up equal space */
+}
+
+article h2 {
+  margin-top: 0;
+}
+
+article a {
+  color: #0056b3; /* Darker blue for better contrast */
+  text-decoration: none;
+}
+
+article a:hover,    
+article a:focus {
+  text-decoration: underline; /* Provide a visual cue on hover */
+}
+
+/* Flex container for side-by-side articles */
+.article-row {
+  display: flex; /* Align children side by side */
+  gap: 20px; /* Add space between articles */
+  flex-wrap: wrap;
+  justify-content: space-between; /* Allow articles to wrap to the next line if needed */
+}
+
+/* Ensure each article is responsive */
+.article-row article {
+  flex: 0 0 48%; /* Articles will take up 48% of the container width */
+  box-sizing: border-box; /* Prevent overflow of content */
+}
+
+/* Adjust layout for small screens */
+@media (max-width: 768px) {
+  .article-row article {
+    flex: 0 0 100%; /* On small screens, stack articles one below the other */
   }
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+
+.button {
+  display: inline-block; /* Makes it behave like a button */
+  padding: 10px 20px; /* Add some space inside the button */
+  font-size: 16px; /* Adjust the font size */
+  color: #fff; /* White text for good contrast */
+  background-color: #0056b3; /* Darker blue for better contrast */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  text-align: center; 
+  cursor: pointer; /* Pointer cursor for clickable effect */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button:hover  {
+  background-color: #003d80; /* Even darker blue on hover */
+}
+
+/* Footer styling */
+footer {
+  background: #222; /* Darker background for better contrast */
+  color: #f8f9fa; /* Slightly lighter text */
+  text-align: center;
+  padding: 10px 0; /* Adjusted padding */
+  width: 100%;
+  bottom: 0;
 }
