@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- write your html here-->
+      <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+      <div>
+        <label for="UserName">Enter your Name: </label>
+        <input type="text" id="UserName" required placeholder="Please enter your name:" minlength="2"
+          pattern="[A-Za-z\s]+" title="Please enter letters only.">
+      </div>
+
+
+      <div>
+        <label for="UserEmail"> Enter your Email: </label>
+        <input type="Email" id="UserEmail" required placeholder="Please enter your email:">
+
+      </div>
+      <div>
+        <label for="ProductType">Choose your item: </label>
+        <select name="ProductType" id="ProductType" required>
+          <option value="">--Please choose an item--</option>
+          <option value="tshirt">T-shirt</option>
+          <option value="sweater">Sweater</option>
+          <option value="bagel">Bagel</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="UserColor"> Choose your Color: </label>
+        <select name="UserColor" id="UserColor" required>
+          <option value="">--Please choose your color--</option>
+          <option value="red">Red</option>
+          <option value="blue">blue</option>
+          <option value="green">green</option>
+
+        </select>
+      </div>
+
+      <div>
+        <label for="UserSize"> Choose your size: </label>
+        <select name="UserSize" id="UserSize" required>
+          <option value="">--Please choose your size color--</option>
+          <option value="xs"> XS</option>
+          <option value="s"> S</option>
+          <option value="m"> M</option>
+          <option value="l"> L</option>
+          <option value="xl"> XL</option>
+          <option value="xxl"> XXL</option>
+
+        </select>
+      </div>
+
+      <div>
+        <button type="submit"> Submit</button>
+      </div>
+
+
+
+    </form>
+
+
+
+  </main>
+  <footer>
+
+    <h2> Aida Eslami</h2>
+  </footer>
+</body>
+
 </html>
