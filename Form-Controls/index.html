@@ -9,10 +9,35 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Please choose your T-Shirt</h1>
     </header>
     <main>
       <form>
+       <p> <span style="color:red">*</span><span><label for="FullName">Name: </label><input type="text" id="FullName" name="FullName" required pattern="[A-Za-z]{3,}"></span></p>
+        <span style="color:red">*</span><label for="EmailAddress">Your Email Address: </label><input type="text" id="EmailAddress" name="EmailAddress" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"></span>
+        <p><span style="color:red">*</span><label for="colour">T-Shirt Colour:</label>
+          <select id="colour" name="colour" required >
+            <option selected="selected" disabled="disabled">Please choose your colour</option>
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="black">Black</option>
+          </select>
+        </span></p>
+        <p><span style="color:red">*</span><label for="size">T-Shirt Size: </label>
+          <select id="size" name="size" required>
+            <option selected="selected" disabled="disabled">Please choose your size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </p>
+
+        <p>All fields marked with (<span style="color:red">*</span>) are mandatory</p>
+        <button>Sumbit</button>
+        
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
@@ -21,7 +46,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>Marco Martin Camon - 2025</h2>
     </footer>
   </body>
 </html>
