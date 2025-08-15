@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Submitted Info</title>
+  </head>
+  <body>
+    <h2>Thank you! Here are your details:</h2>
+
+    <p>name: <span id="name"></span></p>
+    <p>email: <span id="email"></span></p>
+    <p>color: <span id="color"></span></p>
+    <p>size: <span id="size"></span></p>
+
+    <br />
+    <a href="index.html">Back to Form</a>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      document.getElementById("name").textContent = urlParams.get("name");
+      document.getElementById("email").textContent = urlParams.get("email");
+      document.getElementById("color").textContent = urlParams.get("color");
+      document.getElementById("size").textContent = urlParams.get("size");
+    </script>
+  </body>
+</html>
