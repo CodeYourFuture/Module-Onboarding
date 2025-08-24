@@ -1,81 +1,86 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --paper: oklch(98% 0 0);
+  --ink: color-mix(in oklab, var(--color) 100%, black 10%);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+  --color-primary: oklch(70% 0.1 240);   /* Soft Blue */
+  --color-secondary: oklch(75% 0.1 60);  /* Warm Orange */
+  --color-accent: oklch(65% 0.08 150);  /* Muted Green */
+  --color-highlight: oklch(80% 0.05 300); /* Gentle Purple */
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
+.main-title {
+  text-align: center;
+}
+header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 body {
-  background: var(--paper);
+  background: grayscale(0.95);
   color: var(--ink);
   font: var(--font);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  --color: var(--color-primary);
 }
+
 a {
   padding: var(--space);
-  border: var(--line);
+  border: var(--line) var(--color-accent);
   max-width: fit-content;
+  height: 30px;
+  color:var(--color-accent);
+  bottom: 0;
 }
-img,
+article > a:last-child {
+  align-self:end
+}
+
+img ,
 svg {
   width: 100%;
+  height: 300px;
   object-fit: cover;
+  margin:0;
+  border: var(--line) var(--color-highlight);
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding: var(--space); 
 }
+
 footer {
-  position: fixed;
+  position : fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  border-top: var(--line) var(--color-accent);
+  color: var(--color-accent);
+  padding:var(--space);
+  background-color: rgb(235, 232, 94);
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
+    margin-top: 0%;
     grid-column: span 2;
   }
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
+
 article {
-  border: var(--line);
+  border: var(--line) var(--color-highlight);
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -87,3 +92,8 @@ article {
     grid-column: span 3;
   }
 }
+
+article p {
+  color : var(--color-primary)
+}
+
